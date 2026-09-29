@@ -11,14 +11,14 @@
             "id": "559bd0d1b507dc74",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "30-Exam/Question-Bank.md",
-                "mode": "source",
-                "source": false
+                "aFile": "30-Exam/External-Flashcards-Quizlet.md",
+                "bFile": "30-Exam/External-Flashcards-Quizlet.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Question-Bank"
+              "icon": "diff",
+              "title": "Diff: External-Flashcards-Quizlet  (Working Tree)"
             }
           }
         ]
@@ -201,10 +201,21 @@
   },
   "active": "559bd0d1b507dc74",
   "lastOpenFiles": [
+    "00-Home.md",
     "30-Exam/Mock-Exam-100.md",
+    "30-Exam/External-Practice-Questions.md",
+    "30-Exam/External-Flashcards-Quizlet.md",
     "30-Exam/Answer-Key.md",
-    "10-MOCs/MOC-Module-01.md",
+    "20-Notes/Module-10/10-LO03a-Windows-Disk-Encryption-BitLocker-Device-Encryption-TPM.md",
+    "20-Notes/Module-07/07-LO01a-Common-Mobile-Usage-Policies.md",
+    "20-Notes/Module-07/07-LO02a-Enterprise-Mobile-Security-Risks.md",
+    "20-Notes/Module-01/01-LO12a-Continual-Adaptive-Security-Strategy.md",
+    "20-Notes/Module-01/01-LO10-Hacking-Methodologies-Frameworks.md",
+    "20-Notes/Module-01/01-LO09-Supply-Chain-Attacks.md",
+    "20-Notes/Module-01/01-LO07-Cloud-Specific-Attacks.md",
+    "20-Notes/Module-01/01-LO01-Essential-Terminologies.md",
     "30-Exam/Question-Bank.md",
+    "10-MOCs/MOC-Module-01.md",
     "20-Notes/Module-02/02-LO07-Security-Trends-and-Threats.md",
     "20-Notes/Module-02/02-LO06-Asset-Management.md",
     "20-Notes/Module-02/02-LO05-Admin-Security-Measures.md",
@@ -216,19 +227,8 @@
     "20-Notes/Module-02/02-LO01-Regulatory-Frameworks-Compliance.md",
     "20-Notes/Module-01/01-LO02-Network-Level-Attacks.md",
     "20-Notes/Module-04/04-LO01-Firewall-Concerns-Capabilities-Limitations.md",
-    "10-MOCs/MOC-Module-04.md",
-    "10-MOCs/MOC-Module-03.md",
-    "10-MOCs/MOC-Module-02.md",
-    "10-MOCs/MOC-Module-05.md",
-    "10-MOCs/MOC-Module-06.md",
-    "10-MOCs/MOC-Module-07.md",
-    "10-MOCs/MOC-Module-08.md",
-    "50-Templates/Atomic-Note.md",
     "40-Canvas/03-technical-network-security-map.canvas",
     "40-Canvas/02-security-policy-flow.canvas",
-    "40-Canvas/01-attack-and-defense-strategies.canvas",
-    "20-Notes/Module-03/03-LO01-Access-Control-Models.md",
-    "20-Notes/Module-01/01-LO01-Essential-Terminologies.md",
-    "20-Notes/Module-01/01-LO06-Mobile-Device-Attacks.md"
+    "40-Canvas/01-attack-and-defense-strategies.canvas"
   ]
 }
