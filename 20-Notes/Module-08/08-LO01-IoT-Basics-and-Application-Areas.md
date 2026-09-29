@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "08"
 lo: "01"
-tags: [concept, mod/08]
+tags: [concept, mod/08, flashcard/08]
 topic: "IoT Devices — Basics, Need, and Application Areas"
 exam_weight: unknown
 status: done
@@ -56,18 +57,22 @@ unresolved: []
 - **IT/networks:** printers, faxes, copiers, PBX monitors
 
 ## Cards
-Q:: IoT definition in one line?
-A:: Internet of Things (IoT) / Internet of Everything (IoE) — web-enabled devices that sense, collect, and send data via embedded sensors, communication hardware, and processors.
-#flashcard
-Q:: What is a "thing" in IoT?
-A:: A device implanted on natural, man-made, or machine-made objects that can communicate over a network.
-#flashcard
-Q:: IoT interaction types?
-A:: H2H (human-to-human, without PC), H2T (human-to-things), T2T (things-to-things).
-#flashcard
-Q:: Four primary IoT technology systems?
-A:: Sensing technology · IoT gateways · cloud server/data storage · remote control via mobile apps.
-#flashcard
-Q:: IIoT three growth approaches?
-A:: Increased production (revenue) · intelligent technology changing how goods are made · new hybrid business models.
-#flashcard
+IoT definition in one line?
+?
+Internet of Things (IoT) / Internet of Everything (IoE) — web-enabled devices that sense, collect, and send data via embedded sensors, communication hardware, and processors.
+
+What is a "thing" in IoT?
+?
+A device implanted on natural, man-made, or machine-made objects that can communicate over a network.
+
+IoT interaction types?
+?
+H2H (human-to-human, without PC), H2T (human-to-things), T2T (things-to-things).
+
+Four primary IoT technology systems?
+?
+Sensing technology · IoT gateways · cloud server/data storage · remote control via mobile apps.
+
+IIoT three growth approaches?
+?
+Increased production (revenue) · intelligent technology changing how goods are made · new hybrid business models.

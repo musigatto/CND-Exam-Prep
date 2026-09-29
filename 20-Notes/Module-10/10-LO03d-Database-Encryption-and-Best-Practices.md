@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "10"
 lo: "03"
-tags: [concept, process, command, crypto, mod/10]
+tags: [concept, process, command, crypto, mod/10, flashcard/10]
 topic: "Database Encryption — SQL Server TDE, Always Encrypted, Oracle TDE"
 exam_weight: unknown
 status: done
@@ -47,18 +48,22 @@ unresolved: []
 - Strong passwords + key management; rotate certs; test restore; never store keys in plaintext; encrypt at rest + in transit
 
 ## Cards
-Q:: TDE: key hierarchy order and default algorithm?
-A:: DEK → certificate → master key; default AES-128 (also AES-192/256, 3DES).
-#flashcard
-Q:: Which statement turns on TDE for a database?
-A:: `ALTER DATABASE <db> SET ENCRYPTION ON`.
-#flashcard
-Q:: Always Encrypted randomized vs deterministic?
-A:: Randomized = different ciphertext each time, no equality ops; Deterministic = same ciphertext for same plaintext, enables equality lookups/joins.
-#flashcard
-Q:: Where are Always Encrypted keys held, and what does the engine see?
-A:: Keys stored client-side (Column Master Key/Column Encryption Key); engine never sees plaintext or keys → protects at rest + in transit.
-#flashcard
-Q:: Oracle TDE: what can be encrypted and what enables the keystore?
-A:: Specific table columns or entire tablespace; wallet opened via `ALTER SYSTEM SET ENCRYPTION WALLET OPEN`.
-#flashcard
+TDE: key hierarchy order and default algorithm?
+?
+DEK → certificate → master key; default AES-128 (also AES-192/256, 3DES).
+
+Which statement turns on TDE for a database?
+?
+`ALTER DATABASE <db> SET ENCRYPTION ON`.
+
+Always Encrypted randomized vs deterministic?
+?
+Randomized = different ciphertext each time, no equality ops; Deterministic = same ciphertext for same plaintext, enables equality lookups/joins.
+
+Where are Always Encrypted keys held, and what does the engine see?
+?
+Keys stored client-side (Column Master Key/Column Encryption Key); engine never sees plaintext or keys → protects at rest + in transit.
+
+Oracle TDE: what can be encrypted and what enables the keystore?
+?
+Specific table columns or entire tablespace; wallet opened via `ALTER SYSTEM SET ENCRYPTION WALLET OPEN`.

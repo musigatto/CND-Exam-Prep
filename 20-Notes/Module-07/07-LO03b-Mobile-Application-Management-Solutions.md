@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "07"
 lo: "03"
-tags: [concept, tool, process, mod/07]
+tags: [concept, tool, process, mod/07, flashcard/07]
 topic: "Mobile Application Management (MAM) Solutions"
 exam_weight: unknown
 status: done
@@ -32,15 +33,18 @@ unresolved: []
 - **Scalefusion MAM:** distributes in-house + public apps via Scalefusion Enterprise Store or Google Play
 
 ## Cards
-Q:: MAM in one line?
-A:: Secure, manage, and distribute enterprise applications on mobile devices without interfering with device ownership; separates enterprise apps/data from personal content.
-#flashcard
-Q:: Core MAM services?
-A:: App delivery (enterprise app store), licensing, configuration, authorization, usage tracking, lifecycle mgmt, updating, performance monitoring, user auth, crash reporting, access control, version mgmt, push, reporting, usage analytics, event mgmt, app wrapping.
-#flashcard
-Q:: Intune MAM configurations?
-A:: Intune MDM + MAM (devices enrolled in Intune MDM) and MAM-WE (MAM without device enrollment).
-#flashcard
-Q:: MAM examples?
-A:: Microsoft Intune, MobileIron, App47, Scalefusion (resembles config/example table from courseware).
-#flashcard
+MAM in one line?
+?
+Secure, manage, and distribute enterprise applications on mobile devices without interfering with device ownership; separates enterprise apps/data from personal content.
+
+Core MAM services?
+?
+App delivery (enterprise app store), licensing, configuration, authorization, usage tracking, lifecycle mgmt, updating, performance monitoring, user auth, crash reporting, access control, version mgmt, push, reporting, usage analytics, event mgmt, app wrapping.
+
+Intune MAM configurations?
+?
+Intune MDM + MAM (devices enrolled in Intune MDM) and MAM-WE (MAM without device enrollment).
+
+MAM examples?
+?
+Microsoft Intune, MobileIron, App47, Scalefusion (resembles config/example table from courseware).

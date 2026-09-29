@@ -64,7 +64,7 @@ Highest-weighted: **Endpoint Protection (20%)** → Windows, Linux, mobile, and 
 
 ## How this vault uses it
 
-- Distribution stays **5 questions per module × 20 modules = 100** — see [[AGENTS]].
+- Distribution stays **5 questions per module × 20 modules = 100** — see the repo `AGENTS.md`.
 - Blueprint weights inform **which domains to study deeper**, not how many questions to write.
 - Third-party weight tables are rejected — see [[External-Practice-Questions]].
 

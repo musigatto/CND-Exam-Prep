@@ -1,7 +1,8 @@
 ---
+
 type: moc
 module: "06"
-tags: [concept, mod/06]
+tags: [concept, mod/06, flashcard/06]
 topic: "Module 06 — Endpoint Security - Linux Systems"
 exam_weight: unknown
 status: done
@@ -65,12 +66,14 @@ views:
 - LO04c `security=apparmor` enablement — boot parameter placement not fully captured (OCR line).
 
 ## Cards
-Q:: Module 06 subject scope?
-A:: Linux endpoint security: OS + concerns, install/patching, hardening, user/password management, network + remote access, security tools/frameworks.
-#flashcard
-Q:: Approach to Linux hardening in one line?
-A:: Minimal install + patch → disable services/uninstall software → repository + AV hygiene → integrity (Secure Boot, GPG packages, rootkits, IMA/EVM, FIM) → strong PAM passwords/permissions → kernel + firewall (sysctl/iptables/UFW) → secure remote (SSH/SFTP chroot) → audit (Lynis/AppArmor/SELinux/OpenSCAP).
-#flashcard
-Q:: Favorite Linux crackable exam items?
-A:: Perm tables + SUID commands + PAM params + iptables rule pairs + distro patch commands + chroot SFTP sshd_config + SELinux modes + OpenSCAP install commands.
-#flashcard
+Module 06 subject scope?
+?
+Linux endpoint security: OS + concerns, install/patching, hardening, user/password management, network + remote access, security tools/frameworks.
+
+Approach to Linux hardening in one line?
+?
+Minimal install + patch → disable services/uninstall software → repository + AV hygiene → integrity (Secure Boot, GPG packages, rootkits, IMA/EVM, FIM) → strong PAM passwords/permissions → kernel + firewall (sysctl/iptables/UFW) → secure remote (SSH/SFTP chroot) → audit (Lynis/AppArmor/SELinux/OpenSCAP).
+
+Favorite Linux crackable exam items?
+?
+Perm tables + SUID commands + PAM params + iptables rule pairs + distro patch commands + chroot SFTP sshd_config + SELinux modes + OpenSCAP install commands.

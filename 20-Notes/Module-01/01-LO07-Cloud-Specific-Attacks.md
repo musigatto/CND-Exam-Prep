@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "01"
 lo: "07"
-tags: [threat, mod/01]
+tags: [threat, mod/01, flashcard/01]
 topic: "Cloud-specific Attack Techniques"
 exam_weight: unknown
 status: done
@@ -61,14 +62,19 @@ Data breach/loss · abuse & nefarious use of cloud services · insecure interfac
 | R10 | Non-Production Environment Exposure — dev/test envs increase unauthorized access risk |
 
 ## Cards
-Q:: What is a wrapping attack?
-A:: During SOAP message translation in the TLS layer, the attacker duplicates the body, modifies the original, and sends it as a legitimate user; the server authenticates the duplicated signature.
-#flashcard
+What is a wrapping attack?
+?
+During SOAP message translation in the TLS layer, the attacker duplicates the body, modifies the original, and sends it as a legitimate user; the server authenticates the duplicated signature.
+<!--SR:!2026-09-30,1,230-->
 
-Q:: What is a Man-in-the-Cloud attack?
-A:: Advanced MITM exploiting cloud synchronization services (Google Drive, DropBox) via stolen sync tokens for data compromise, C&C, and exfiltration.
-#flashcard
 
-Q:: Name five side-channel attack kinds.
-A:: Timing attack, data remanence, acoustic cryptanalysis, power monitoring, differential fault analysis.
-#flashcard
+What is a Man-in-the-Cloud attack?
+?
+Advanced MITM exploiting cloud synchronization services (Google Drive, DropBox) via stolen sync tokens for data compromise, C&C, and exfiltration.
+<!--SR:!2026-09-30,1,230-->
+
+
+Name five side-channel attack kinds.
+?
+Timing attack, data remanence, acoustic cryptanalysis, power monitoring, differential fault analysis.
+<!--SR:!2026-09-30,1,230-->

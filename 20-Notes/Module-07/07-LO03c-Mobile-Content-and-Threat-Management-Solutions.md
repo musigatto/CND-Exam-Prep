@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "07"
 lo: "03"
-tags: [concept, tool, threat, process, mod/07]
+tags: [concept, tool, threat, process, mod/07, flashcard/07]
 topic: "Mobile Content Management (MCM) and Mobile Threat Defense (MTD)"
 exam_weight: unknown
 status: done
@@ -55,18 +56,22 @@ unresolved: []
 - **Wandera MTD:** multi-level protection for users, endpoints, corporate apps; controls unwanted access, prevents data breaches
 
 ## Cards
-Q:: MCM main components?
-A:: File storage + file sharing services; secure access to corporate data via authorized apps; wipe-out for specific users.
-#flashcard
-Q:: MCM templating approaches?
-A:: Multi-client (different site versions on the same domain) · multi-site (mobile sites on a targeted sub-domain).
-#flashcard
-Q:: What does MTD add beyond MDM/MAM?
-A:: Insights into app characteristics, threat protection, user behavior, dynamic threat reaction, continuous device-health/trust visibility — extends EMM/MDM.
-#flashcard
-Q:: MTD protection levels in the mobile enterprise?
-A:: Device level (OS/config/firmware checks, privilege escalation) · network level (traffic monitoring, spoofed certs, TLS/SSL stripping, MITM detection) · application level (sandboxing, code analysis, anti-malware signatures, reverse engineering, static/dynamic testing).
-#flashcard
-Q:: MTD vendor examples?
-A:: MobileIron, Lookout, Wandera.
-#flashcard
+MCM main components?
+?
+File storage + file sharing services; secure access to corporate data via authorized apps; wipe-out for specific users.
+
+MCM templating approaches?
+?
+Multi-client (different site versions on the same domain) · multi-site (mobile sites on a targeted sub-domain).
+
+What does MTD add beyond MDM/MAM?
+?
+Insights into app characteristics, threat protection, user behavior, dynamic threat reaction, continuous device-health/trust visibility — extends EMM/MDM.
+
+MTD protection levels in the mobile enterprise?
+?
+Device level (OS/config/firmware checks, privilege escalation) · network level (traffic monitoring, spoofed certs, TLS/SSL stripping, MITM detection) · application level (sandboxing, code analysis, anti-malware signatures, reverse engineering, static/dynamic testing).
+
+MTD vendor examples?
+?
+MobileIron, Lookout, Wandera.

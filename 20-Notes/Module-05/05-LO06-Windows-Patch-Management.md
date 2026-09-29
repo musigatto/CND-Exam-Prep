@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "05"
 lo: "06"
-tags: [concept, command, tool, mod/05]
+tags: [concept, command, tool, mod/05, flashcard/05]
 topic: "Windows Patch Management"
 exam_weight: unknown
 status: done
@@ -56,21 +57,26 @@ Remote patch management = **planning, deciding, prioritizing updates** to OS, so
 Also listed: Itarian Patch Management · Automox · Atera · Kaseya VSA · HEAT PatchLink · Ivanti Windows Patch · Comodo ONE · Quest KACE · Symantec Patch Management Solution.
 
 ## Cards
-Q:: Patch vs service pack vs version upgrade?
-A:: Patch = fix for one vulnerability; SP = fixes + functionality; upgrade = fixes + improved security features.
-#flashcard
-Q:: Enable automatic updates (command)?
-A:: `sc config wuauserv start= auto`; or Services.msc → Windows Update → Automatic.
-#flashcard
-Q:: Auto-update registry key?
-A:: `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU` → DWORD NoAutoUpdate.
-#flashcard
-Q:: Prevent force restarts after updates (registry)?
-A:: `HKLM\SOFTWARE\Microsoft\Windows\Windows Update\AU` → NoAutoRebootWithLoggedOnUser = 1; GPO: 'No auto-restart with logged on users…'.
-#flashcard
-Q:: Which tool extends WSUS/SCCM?
-A:: SolarWinds Patch Manager.
-#flashcard
-Q:: Tool that detects vulnerabilities before an attacker does?
-A:: GFI LanGuard.
-#flashcard
+Patch vs service pack vs version upgrade?
+?
+Patch = fix for one vulnerability; SP = fixes + functionality; upgrade = fixes + improved security features.
+
+Enable automatic updates (command)?
+?
+`sc config wuauserv start= auto`; or Services.msc → Windows Update → Automatic.
+
+Auto-update registry key?
+?
+`HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU` → DWORD NoAutoUpdate.
+
+Prevent force restarts after updates (registry)?
+?
+`HKLM\SOFTWARE\Microsoft\Windows\Windows Update\AU` → NoAutoRebootWithLoggedOnUser = 1; GPO: 'No auto-restart with logged on users…'.
+
+Which tool extends WSUS/SCCM?
+?
+SolarWinds Patch Manager.
+
+Tool that detects vulnerabilities before an attacker does?
+?
+GFI LanGuard.

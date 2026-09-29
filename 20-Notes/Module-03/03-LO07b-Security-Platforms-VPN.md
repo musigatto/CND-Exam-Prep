@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "03"
 lo: "07"
-tags: [tool, protocol, concept, mod/03]
+tags: [tool, protocol, concept, mod/03, flashcard/03]
 topic: "Security Platforms: Load Balancers, UTM, SIEM, NAC, VPN, SOAR"
 exam_weight: unknown
 status: done
@@ -58,21 +59,26 @@ unresolved: []
 - Distinguished from SIEM: SIEM correlates/analyzes events; SOAR connects automation to the tools to execute responses/playbooks
 
 ## Cards
-Q:: Load balancer purpose + example algorithms?
-A:: Routes client traffic to least-loaded/most-available server. Algorithms: round-robin, least-connections, least-loaded.
-#flashcard
-Q:: UTM biggest risks?
-A:: Single point-of-failure + single point-of-compromise; one console = overall need, but less specialized.
-#flashcard
-Q:: How does SIEM act on detected threats?
-A:: Correlates/analyzes events, then communicates with + reconfigures firewall and IPS rules to respond.
-#flashcard
-Q:: NAC main purpose?
-A:: Restrict/allow end-user network access based on a security policy; blocks systems lacking AV/IPS.
-#flashcard
-Q:: VPN tunneling protocol layers?
-A:: Layer 2 (data link) or layer 3 (network, OSI). Common: IPsec, PPTP, L2TP, SSL.
-#flashcard
-Q:: SOAR three elements?
-A:: Orchestration (connect tools), Automation (replace manual tasks), Response (single dashboard IR actions).
-#flashcard
+Load balancer purpose + example algorithms?
+?
+Routes client traffic to least-loaded/most-available server. Algorithms: round-robin, least-connections, least-loaded.
+
+UTM biggest risks?
+?
+Single point-of-failure + single point-of-compromise; one console = overall need, but less specialized.
+
+How does SIEM act on detected threats?
+?
+Correlates/analyzes events, then communicates with + reconfigures firewall and IPS rules to respond.
+
+NAC main purpose?
+?
+Restrict/allow end-user network access based on a security policy; blocks systems lacking AV/IPS.
+
+VPN tunneling protocol layers?
+?
+Layer 2 (data link) or layer 3 (network, OSI). Common: IPsec, PPTP, L2TP, SSL.
+
+SOAR three elements?
+?
+Orchestration (connect tools), Automation (replace manual tasks), Response (single dashboard IR actions).

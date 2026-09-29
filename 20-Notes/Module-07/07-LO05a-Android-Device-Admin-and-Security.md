@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "07"
 lo: "05"
-tags: [concept, tool, protocol, bestpractice, mod/07]
+tags: [concept, tool, protocol, bestpractice, mod/07, flashcard/07]
 topic: "Android Device Administration API and Security"
 exam_weight: unknown
 status: done
@@ -55,19 +56,22 @@ Additional API capabilities: **prompt user to set a new password · lock device 
 - Turn off: **visible passwords** (don't display on screen) · **use secure credentials** (apps accessing secure certs/credentials) · **Wi-Fi** (prevent accidental wireless connection) — found at **Settings → Connections** or **Settings → More → Security**
 
 ## Cards
-Q:: Android Device Administration API origin + purpose?
-<!--SR:!2026-09-30,1,230-->
-A:: Introduced in Android 2.2; system-level device administration for security-aware enterprise apps; device-admin apps enforce policies (email clients, remote-wipe security apps, device management).
-#flashcard
-Q:: Key Android Device Admin policies?
-A:: Password enabled · min password length · alphanumeric/complex password (Android 3.0) · password expiration/history · max failed attempts (wipe) · inactivity lock (1–60 min) · storage encryption (3.0) · disable camera (4.0).
-#flashcard
-Q:: Which policy wipes the device?
-A:: Maximum failed password attempts — device wipes its data after the allowed number of wrong entries; remotely resettable to factory defaults.
-#flashcard
-Q:: Android hardening top countermeasures?
-A:: Screen locks · never root · official market only · Google Android AV · no direct APK downloads · OS updates · encryption · AppLock · GPS on · remote-erase apps (Lookout, 3cX, SeekDroid) · per-app permissions review.
-#flashcard
-Q:: Settings path for disabling visible passwords/secure credentials?
-A:: Settings → Connections or Settings → More → Security (most Android devices).
-#flashcard
+Android Device Administration API origin + purpose?
+?
+Introduced in Android 2.2; system-level device administration for security-aware enterprise apps; device-admin apps enforce policies (email clients, remote-wipe security apps, device management).
+
+Key Android Device Admin policies?
+?
+Password enabled · min password length · alphanumeric/complex password (Android 3.0) · password expiration/history · max failed attempts (wipe) · inactivity lock (1–60 min) · storage encryption (3.0) · disable camera (4.0).
+
+Which policy wipes the device?
+?
+Maximum failed password attempts — device wipes its data after the allowed number of wrong entries; remotely resettable to factory defaults.
+
+Android hardening top countermeasures?
+?
+Screen locks · never root · official market only · Google Android AV · no direct APK downloads · OS updates · encryption · AppLock · GPS on · remote-erase apps (Lookout, 3cX, SeekDroid) · per-app permissions review.
+
+Settings path for disabling visible passwords/secure credentials?
+?
+Settings → Connections or Settings → More → Security (most Android devices).

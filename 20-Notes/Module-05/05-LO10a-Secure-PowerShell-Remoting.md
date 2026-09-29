@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "05"
 lo: "10"
-tags: [concept, process, tool, command, protocol, mod/05]
+tags: [concept, process, tool, command, protocol, mod/05, flashcard/05]
 topic: "Secure PowerShell Remoting"
 exam_weight: unknown
 status: done
@@ -87,27 +88,34 @@ PS Remoting gives access to **almost everything** → prime attack target. Harde
 - **Remove local administrators** on PCs/servers aggressively
 
 ## Cards
-Q:: PS Remoting protocol + ports?
-A:: WSMAN/WinRM; 5985 HTTP, 5986 HTTPS; traffic encrypted even over 5985.
-#flashcard
-Q:: Default permission to PS Remoting endpoints?
-A:: System administrators + Remote Management Users.
-#flashcard
-Q:: How are workgroups protected in PS Remoting?
-A:: Enable SSL/HTTPS with certificates and add them to trusted hosts — avoids MITM. (AD uses Kerberos.)
-#flashcard
-Q:: Three PS logging types?
-A:: Module (pipeline), Transcript (every session), Script block (executed code, de-obfuscation).
-#flashcard
-Q:: Execution policies, strictest to loosest?
-A:: Restricted → AllSigned → RemoteSigned → Unrestricted. Enforce via GPO (bypassable otherwise); Computer Configuration > User Configuration.
-#flashcard
-Q:: Why disable PowerShell 2.0?
-A:: Security risk used by attackers to execute malicious code (`Disable-WindowsOptionalFeature -FeatureName MicrosoftWindowsPowerShellv2Root`).
-#flashcard
-Q:: What does Constrained Language Mode block?
-A:: COM objects, unapproved .NET types, XAML-based workflows, PowerShell classes.
-#flashcard
-Q:: Best enforcement of Constrained Language Mode?
-A:: Device Guard UMCI (can't be easily disabled by admins); AppLocker script rules in Allow Mode best under least privilege.
-#flashcard
+PS Remoting protocol + ports?
+?
+WSMAN/WinRM; 5985 HTTP, 5986 HTTPS; traffic encrypted even over 5985.
+
+Default permission to PS Remoting endpoints?
+?
+System administrators + Remote Management Users.
+
+How are workgroups protected in PS Remoting?
+?
+Enable SSL/HTTPS with certificates and add them to trusted hosts — avoids MITM. (AD uses Kerberos.)
+
+Three PS logging types?
+?
+Module (pipeline), Transcript (every session), Script block (executed code, de-obfuscation).
+
+Execution policies, strictest to loosest?
+?
+Restricted → AllSigned → RemoteSigned → Unrestricted. Enforce via GPO (bypassable otherwise); Computer Configuration > User Configuration.
+
+Why disable PowerShell 2.0?
+?
+Security risk used by attackers to execute malicious code (`Disable-WindowsOptionalFeature -FeatureName MicrosoftWindowsPowerShellv2Root`).
+
+What does Constrained Language Mode block?
+?
+COM objects, unapproved .NET types, XAML-based workflows, PowerShell classes.
+
+Best enforcement of Constrained Language Mode?
+?
+Device Guard UMCI (can't be easily disabled by admins); AppLocker script rules in Allow Mode best under least privilege.

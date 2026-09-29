@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "07"
 lo: "03"
-tags: [concept, tool, process, policy, mod/07]
+tags: [concept, tool, process, policy, mod/07, flashcard/07]
 topic: "Mobile Device Management (MDM) Solutions"
 exam_weight: unknown
 status: done
@@ -74,18 +75,22 @@ unresolved: []
 - **Microsoft Intune:** manage iOS/Android/Windows/macOS securely · device/app compliance · org-data-safe policies (org-owned + personal) · single unified solution for devices/apps/users/groups · control access/share of data
 
 ## Cards
-Q:: MDM in one line?
-A:: Deploy, secure, monitor, and manage company/employee-owned devices via an MDM server management console + MDM agents on the devices.
-#flashcard
-Q:: MDM delivery methods?
-A:: Premise-based (high control, larger up-front) · SaaS-based (no on-site servers, monthly/annual fees) · managed services-based (orgs lacking expertise; status reports provided).
-#flashcard
-Q:: MDM key feature list?
-A:: Security mgmt · device config mgmt · inventory/tracking · OTA app distribution · enterprise policy mgmt · password enforcement · data encryption enforcement · network integration · remote data wipe · blacklisting/whitelisting.
-#flashcard
-Q:: MDM selection factors (short list)?
-A:: Custom app store · application security scanning · browser filtering · encryption levels · selective wipe · auto-provisioning · architecture (sandbox/virtual/integrated) · inventory + reports.
-#flashcard
-Q:: Example MDM vendors?
-A:: VMware Workspace ONE, IBM MaaS360, XenMobile, Absolute, Sicap DMC, SOTI MobiControl, Scalefusion, ManageEngine, MobileIron, MediaContact, Beachhead SimplySecure, Microsoft Intune.
-#flashcard
+MDM in one line?
+?
+Deploy, secure, monitor, and manage company/employee-owned devices via an MDM server management console + MDM agents on the devices.
+
+MDM delivery methods?
+?
+Premise-based (high control, larger up-front) · SaaS-based (no on-site servers, monthly/annual fees) · managed services-based (orgs lacking expertise; status reports provided).
+
+MDM key feature list?
+?
+Security mgmt · device config mgmt · inventory/tracking · OTA app distribution · enterprise policy mgmt · password enforcement · data encryption enforcement · network integration · remote data wipe · blacklisting/whitelisting.
+
+MDM selection factors (short list)?
+?
+Custom app store · application security scanning · browser filtering · encryption levels · selective wipe · auto-provisioning · architecture (sandbox/virtual/integrated) · inventory + reports.
+
+Example MDM vendors?
+?
+VMware Workspace ONE, IBM MaaS360, XenMobile, Absolute, Sicap DMC, SOTI MobiControl, Scalefusion, ManageEngine, MobileIron, MediaContact, Beachhead SimplySecure, Microsoft Intune.

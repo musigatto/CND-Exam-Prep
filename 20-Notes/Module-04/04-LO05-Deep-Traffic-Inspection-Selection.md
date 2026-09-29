@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "04"
 lo: "05"
-tags: [concept, tool, mod/04]
+tags: [concept, tool, mod/04, flashcard/04]
 topic: "Deep Traffic Inspection Firewall Selection"
 exam_weight: unknown
 status: done
@@ -32,12 +33,14 @@ Choose a firewall by validating deep-traffic-inspection capability. Three select
 - Requirement: choose a vendor using the **vulnerability approach** — blocks exploitation attempts at **both network and application layers**
 
 ## Cards
-Q:: Two techniques of traffic normalization?
-A:: (1) clean up malformed packets, (2) drop illegal packets — normalized at every protocol layer before payload inspection.
-#flashcard
-Q:: Why stream-based inspection for fighten evasion?
-A:: Segment/pseudo-packet-only inspection misses malicious payloads spread across boundaries; stream inspection needs more RAM+CPU.
-#flashcard
-Q:: Exploit-based vs vulnerability-based detection?
-A:: Exploit-based: 100% signature match (can't cover every evasion); vulnerability-based: block exploitation at network+application layers (preferred).
-#flashcard
+Two techniques of traffic normalization?
+?
+(1) clean up malformed packets, (2) drop illegal packets — normalized at every protocol layer before payload inspection.
+
+Why stream-based inspection for fighten evasion?
+?
+Segment/pseudo-packet-only inspection misses malicious payloads spread across boundaries; stream inspection needs more RAM+CPU.
+
+Exploit-based vs vulnerability-based detection?
+?
+Exploit-based: 100% signature match (can't cover every evasion); vulnerability-based: block exploitation at network+application layers (preferred).

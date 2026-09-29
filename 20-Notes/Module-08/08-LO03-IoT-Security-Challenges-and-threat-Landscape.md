@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "08"
 lo: "03"
-tags: [threat, concept, bestpractice, mod/08]
+tags: [threat, concept, bestpractice, mod/08, flashcard/08]
 topic: "IoT Security Challenges, Risks, Threat Landscape, and OWASP Top 10"
 exam_weight: unknown
 status: done
@@ -90,27 +91,31 @@ unresolved: []
 10. **Lack of Device Management** (asset mgmt, update mgmt, secure decommissioning, monitoring)
 
 ## Cards
-Q:: Key inherent IoT issues (top 6)?
-A:: No security/privacy · vulnerable web interfaces · legal/regulatory gaps · default/weak/hardcoded credentials · cleartext protocols + open ports · coding errors (buffer overflow).
-#flashcard
-Q:: Why are IoT DDoS/cryptojacking effective?
-A:: IoT devices are usually never turned off, and many use default/hardcoded credentials.
-#flashcard
-Q:: OWASP #1 IoT vulnerability?
-A:: Weak, guessable, or hardcoded passwords.
-#flashcard
-Q:: DDoS-from-hacked-IoT four phases?
-A:: Identify + take over → reprogram device → activate → launch DDoS.
-#flashcard
-Q:: Process-layer IoT threat impacts?
-A:: Intellectual property theft, theft, repudiation → lawsuits, reputational damage.
-#flashcard
+Key inherent IoT issues (top 6)?
+?
+No security/privacy · vulnerable web interfaces · legal/regulatory gaps · default/weak/hardcoded credentials · cleartext protocols + open ports · coding errors (buffer overflow).
+
+Why are IoT DDoS/cryptojacking effective?
+?
+IoT devices are usually never turned off, and many use default/hardcoded credentials.
+
+OWASP #1 IoT vulnerability?
+?
+Weak, guessable, or hardcoded passwords.
+
+DDoS-from-hacked-IoT four phases?
+?
+Identify + take over → reprogram device → activate → launch DDoS.
+
+Process-layer IoT threat impacts?
+?
+Intellectual property theft, theft, repudiation → lawsuits, reputational damage.
+
 
 ## Cards (verified set 617277655)
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-Q:: JTAG
-A:: It is a standard interface to test and debug chips with debugging software to know how a chip respond to multiple commands.  _(Mod 08 p31)_
-#flashcard
-
+JTAG
+?
+It is a standard interface to test and debug chips with debugging software to know how a chip respond to multiple commands.  _(Mod 08 p31)_

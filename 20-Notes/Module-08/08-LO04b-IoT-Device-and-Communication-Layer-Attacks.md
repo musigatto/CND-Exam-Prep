@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "08"
 lo: "04"
-tags: [threat, process, protocol, mod/08]
+tags: [threat, process, protocol, mod/08, flashcard/08]
 topic: "IoT Device and Communication Layer Attacks & Countermeasures"
 exam_weight: unknown
 status: done
@@ -79,28 +80,34 @@ unresolved: []
 - **Application-protocol attacks** (CoAP/MQTT): DDoS high-bandwidth amplification; counter: authentication token, TLS/DTLS
 
 ## Cards
-Q:: Top IoT device-layer attacks?
-A:: Node tampering, jamming/RF interference, malicious node/tag injection, spoofing, tag cloning, replay, timing/Side-Channel, eavesdropping, hardware trojan, outage.
-#flashcard
-Q:: RFID relay attack countermeasures?
-A:: Timers, challenge-response, distance-bounding protocols.
-<!--SR:!2026-09-30,1,230-->
-#flashcard
-Q:: Bluesnarfing vs BlueBugging?
-A:: Bluesnarfing = gains access to data via OBEX Push; BlueBugging = remote control of device via OBEX Push/FTP (place calls, AT commands).
-#flashcard
-Q:: Bluetooth KNOB attack?
-A:: Weakens Bluetooth encryption entropy from 8 to 1 byte.
-#flashcard
-Q:: WEP attack tools?
-A:: Korek, Chopchop, Fragmentation, FMS, PTW; Google Replay attack.
-#flashcard
-Q:: Michael attack target?
-A:: TKIP countermeasure flaw → forge fragmented packets (fix: CCMP/AES).
-#flashcard
-Q:: KillerBee?
-A:: ZigBee exploitation tool suite: zbdump, zbconvert, zbreplay, zbstumbler, zbfind, zbinject.
-#flashcard
-Q:: RPL attacks?
-A:: DOG (denial-of-game), global repair attack, version-number modification, DAO inconsistencies.
-#flashcard
+Top IoT device-layer attacks?
+?
+Node tampering, jamming/RF interference, malicious node/tag injection, spoofing, tag cloning, replay, timing/Side-Channel, eavesdropping, hardware trojan, outage.
+
+RFID relay attack countermeasures?
+?
+Timers, challenge-response, distance-bounding protocols.
+
+Bluesnarfing vs BlueBugging?
+?
+Bluesnarfing = gains access to data via OBEX Push; BlueBugging = remote control of device via OBEX Push/FTP (place calls, AT commands).
+
+Bluetooth KNOB attack?
+?
+Weakens Bluetooth encryption entropy from 8 to 1 byte.
+
+WEP attack tools?
+?
+Korek, Chopchop, Fragmentation, FMS, PTW; Google Replay attack.
+
+Michael attack target?
+?
+TKIP countermeasure flaw → forge fragmented packets (fix: CCMP/AES).
+
+KillerBee?
+?
+ZigBee exploitation tool suite: zbdump, zbconvert, zbreplay, zbstumbler, zbfind, zbinject.
+
+RPL attacks?
+?
+DOG (denial-of-game), global repair attack, version-number modification, DAO inconsistencies.

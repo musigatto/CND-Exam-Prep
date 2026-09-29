@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "09"
 lo: "02"
-tags: [tool, command, process, mod/09]
+tags: [tool, command, process, mod/09, flashcard/09]
 topic: "Sandbox Tools — Windows Sandbox, Firejail, Sandboxie, WDAG, Others"
 exam_weight: unknown
 status: done
@@ -48,24 +49,30 @@ unresolved: []
 - **Enterprise-managed mode** (Group Policy, Intune/SCCM/MDM): Network Isolation policy — Enterprise resource domains hosted in the cloud → `*.microsoft.com` (enterprise cloud resources); Domains categorized as both work and personal → neutral resources `bing.com`; enable **Turn on Windows Defender Application Guard in Enterprise Mode** (Option: Edge ONLY / Edge AND Office / isolated Windows environments); trusted URLs open on host, untrusted auto-redirect to hardware-isolated environment
 
 ## Cards
-Q:: Windows Sandbox prerequisite?
-A:: Virtualization enabled (Task Manager → Virtualization: Enabled); Windows Sandbox feature via Windows Features.
-#flashcard
-Q:: Firejail mechanism + examples?
-A:: SUID + Linux namespaces + seccomp-bpf; private network stack/process table/mount table; `firejail firefox`, `firejail vlc`.
-#flashcard
-Q:: Sandboxie (Sophos) isolation?
-A:: Blocks malware, viruses, ransomware, zero-day; stops websites from modifying system files/folders.
-#flashcard
-Q:: Shadow Defender behavior?
-A:: Virtualizes drives; rebooting discards changes; Commit Now persists.
-#flashcard
-Q:: WDAG isolates?
-A:: Microsoft Edge — blocks access to local storage, memory, installed apps, corporate network endpoints.
-#flashcard
-Q:: WDAG enable command?
-A:: Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard.
-#flashcard
-Q:: WDAG enterprise-mode trusted/neutral config?
-A:: *.microsoft.com (enterprise cloud), bing.com (neutral), then enable Application Guard in Enterprise Mode.
-#flashcard
+Windows Sandbox prerequisite?
+?
+Virtualization enabled (Task Manager → Virtualization: Enabled); Windows Sandbox feature via Windows Features.
+
+Firejail mechanism + examples?
+?
+SUID + Linux namespaces + seccomp-bpf; private network stack/process table/mount table; `firejail firefox`, `firejail vlc`.
+
+Sandboxie (Sophos) isolation?
+?
+Blocks malware, viruses, ransomware, zero-day; stops websites from modifying system files/folders.
+
+Shadow Defender behavior?
+?
+Virtualizes drives; rebooting discards changes; Commit Now persists.
+
+WDAG isolates?
+?
+Microsoft Edge — blocks access to local storage, memory, installed apps, corporate network endpoints.
+
+WDAG enable command?
+?
+Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard.
+
+WDAG enterprise-mode trusted/neutral config?
+?
+*.microsoft.com (enterprise cloud), bing.com (neutral), then enable Application Guard in Enterprise Mode.

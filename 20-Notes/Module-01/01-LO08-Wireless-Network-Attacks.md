@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "01"
 lo: "08"
-tags: [threat, mod/01]
+tags: [threat, mod/01, flashcard/01]
 topic: "Wireless Network-specific Attack Techniques"
 exam_weight: unknown
 status: done
@@ -39,14 +40,16 @@ unresolved: []
 > Rogue AP 4 ways: trusted iface · untrusted iface · wireless card add · enable wireless on already-trusted device.
 
 ## Cards
-Q:: Wardriving tools?
-A:: KisMAC, NetStumbler, WaveStumbler.
-#flashcard
+Wardriving tools?
+?
+KisMAC, NetStumbler, WaveStumbler.
 
-Q:: What is an evil twin AP?
-A:: A fraudulent access point that appears legitimate, used for MITM to intercept TCP sessions or SSL/SSH tunnels.
-#flashcard
 
-Q:: Two fragmentation attack forms?
-A:: Ping of Death (oversized fragmented ICMP) and Tiny Fragment (small fragments leak TCP header, evade filtering).
-#flashcard
+What is an evil twin AP?
+?
+A fraudulent access point that appears legitimate, used for MITM to intercept TCP sessions or SSL/SSH tunnels.
+
+
+Two fragmentation attack forms?
+?
+Ping of Death (oversized fragmented ICMP) and Tiny Fragment (small fragments leak TCP header, evade filtering).

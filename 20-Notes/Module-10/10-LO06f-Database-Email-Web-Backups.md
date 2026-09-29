@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "10"
 lo: "06"
-tags: [process, command, tool, mod/10]
+tags: [process, command, tool, mod/10, flashcard/10]
 topic: "Database, Email, and Website Backups"
 exam_weight: unknown
 status: done
@@ -41,12 +42,14 @@ RMAN> BACKUP DATABASE PLUS ARCHIVELOG;
 - Backup mailbox stores (Exchange DB / mail spool) consistently with services stopped or via VSS snaps.
 
 ## Cards
-Q:: Cold (offline) Oracle backup procedure order.
-A:: SHUTDOWN IMMEDIATE → STARTUP MOUNT → BACKUP DATABASE → ALTER DATABASE OPEN.
-#flashcard
-Q:: What is required for a hot backup of Oracle via RMAN?
-A:: ARCHIVELOG mode enabled; use `BACKUP DATABASE PLUS ARCHIVELOG`.
-#flashcard
-Q:: What does a full cPanel backup include besides files?
-A:: MySQL databases, email configuration, and related config; plus website files.
-#flashcard
+Cold (offline) Oracle backup procedure order.
+?
+SHUTDOWN IMMEDIATE → STARTUP MOUNT → BACKUP DATABASE → ALTER DATABASE OPEN.
+
+What is required for a hot backup of Oracle via RMAN?
+?
+ARCHIVELOG mode enabled; use `BACKUP DATABASE PLUS ARCHIVELOG`.
+
+What does a full cPanel backup include besides files?
+?
+MySQL databases, email configuration, and related config; plus website files.

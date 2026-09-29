@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "02"
 lo: "04"
-tags: [process, mod/02]
+tags: [process, mod/02, flashcard/02]
 topic: "Security Awareness Training"
 exam_weight: unknown
 status: done
@@ -59,20 +60,21 @@ unresolved: []
 7. **Implement policy processes** — clear policy documentation using existing templates (email, password policies); edit to fit org needs
 
 ## Cards
-Q:: Training cadence for employees?
-<!--SR:!2026-09-30,1,230-->
-A:: On joining and periodically thereafter.
-#flashcard
+Training cadence for employees?
+?
+On joining and periodically thereafter.
 
-Q:: Two data classification top-level rules?
-<!--SR:!2026-09-29,0,230-->
-A:: Secret users access secret→unclassified (NOT Top Secret); Top Secret users access all levels; unclassified = anyone, no permissions.
-#flashcard
 
-Q:: Social engineering techniques to train against?
-A:: Tailgating/piggy-backing · password-change ruse · name-dropping · relaxing conversation · new-hire ruse.
-#flashcard
+Two data classification top-level rules?
+?
+Secret users access secret→unclassified (NOT Top Secret); Top Secret users access all levels; unclassified = anyone, no permissions.
 
-Q:: Steps to implement awareness training?
-A:: Buy-in from top → gap analysis → regular schedule → performance review → phishing simulations → educate failures → implement policy processes.
-#flashcard
+
+Social engineering techniques to train against?
+?
+Tailgating/piggy-backing · password-change ruse · name-dropping · relaxing conversation · new-hire ruse.
+
+
+Steps to implement awareness training?
+?
+Buy-in from top → gap analysis → regular schedule → performance review → phishing simulations → educate failures → implement policy processes.

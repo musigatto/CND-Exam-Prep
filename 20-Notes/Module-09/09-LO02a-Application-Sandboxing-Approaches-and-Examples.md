@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "09"
 lo: "02"
-tags: [concept, process, bestpractice, mod/09]
+tags: [concept, process, bestpractice, mod/09, flashcard/09]
 topic: "Application Sandboxing — Approaches, Examples, Browser Isolation"
 exam_weight: unknown
 status: done
@@ -44,24 +45,30 @@ unresolved: []
 - Edit → Preferences → **Security (Enhanced) → Sandbox protections**: Enable Protected Mode at startup · Create Protected Mode log file · **Run in AppContainer** · Protected View (Off / Files from potentially unsafe locations / All files)
 
 ## Cards
-Q:: Sandboxing definition / goal?
-A:: Run untrusted or untested third-party programs in a sealed container that blocks access to critical system resources; extra layer over host/OS.
-#flashcard
-Q:: Sandbox limitation (important)?
-A:: Not robust against advanced malware targeting the OS kernel.
-#flashcard
-Q:: Two sandbox approaches?
-A:: Isolation-based (program isolated from system). Rule-based (shares resources per policies).
-#flashcard
-Q:: Windows UAC integrity levels vs sandbox?
-A:: Edge Protected Mode runs low integrity; standard user = medium; elevated admin = high.
-#flashcard
-Q:: Chrome site-isolation flag methods?
-A:: chrome://flags Strict-Origin-Isolation Enabled, or Chrome shortcut Target --site-per-process.
-#flashcard
-Q:: Firefox sandbox preference?
-A:: about:support (Sandbox listing) or about:config security.sandbox.content.level.
-#flashcard
-Q:: Acrobat Protected Mode?
-A:: Security (Enhanced) → Sandbox protections: Protected Mode at startup, AppContainer, Protected View modes.
-#flashcard
+Sandboxing definition / goal?
+?
+Run untrusted or untested third-party programs in a sealed container that blocks access to critical system resources; extra layer over host/OS.
+
+Sandbox limitation (important)?
+?
+Not robust against advanced malware targeting the OS kernel.
+
+Two sandbox approaches?
+?
+Isolation-based (program isolated from system). Rule-based (shares resources per policies).
+
+Windows UAC integrity levels vs sandbox?
+?
+Edge Protected Mode runs low integrity; standard user = medium; elevated admin = high.
+
+Chrome site-isolation flag methods?
+?
+chrome://flags Strict-Origin-Isolation Enabled, or Chrome shortcut Target --site-per-process.
+
+Firefox sandbox preference?
+?
+about:support (Sandbox listing) or about:config security.sandbox.content.level.
+
+Acrobat Protected Mode?
+?
+Security (Enhanced) → Sandbox protections: Protected Mode at startup, AppContainer, Protected View modes.

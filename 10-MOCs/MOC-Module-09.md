@@ -1,7 +1,8 @@
 ---
+
 type: moc
 module: "09"
-tags: [concept, mod/09]
+tags: [concept, mod/09, flashcard/09]
 topic: "Module 09 — Administrative Application Security"
 exam_weight: unknown
 status: done
@@ -62,18 +63,22 @@ views:
 - A few in-slide vendor screens had OCR noise (license/SolarWinds tables); content kept to legible terms, no invented numbers.
 
 ## Cards
-Q:: Courseware's 5 application-security admin practices?
-A:: Application whitelisting · blacklisting · sandboxing · patch management · application-level firewall (WAF).
-#flashcard
-Q:: Whitelisting vs blacklisting philosophy?
-A:: Whitelist = trust-centric allow-only-approved/deny-by-default; blacklist = threat-centric allow-by-default-denies-known-bad.
-#flashcard
-Q:: Best whitelisting exam facts?
-A:: SRP = 4 rules (path/hash/cert/internet-zone .msi); AppLocker = exe/msi/dll; PUA = Set-MpPreference -PUAProtection 1; DisallowRun registry; Endpoint Central path+hash.
-#flashcard
-Q:: Sandbox top exam items?
-A:: Isolation vs rule-based; fails vs kernel malware; UAC integrity levels (low/med/high); Firefox security.sandbox.content.level; Windows Sandbox needs virtualization; Firejail SUID+seccomp-bpf; WDAG Edge SLAT + Enable-WindowsOptionalFeature.
-#flashcard
-Q:: WAF top exam items?
-A:: Layer 7; 3 types (network/host/cloud); 5 deployments (reverse proxy/L2 bridge/out-of-band/server-resident/cloud); URLScan reject criteria; NAXSI positive-model; can't read DB commands; WS need managed session for anti-automation.
-#flashcard
+Courseware's 5 application-security admin practices?
+?
+Application whitelisting · blacklisting · sandboxing · patch management · application-level firewall (WAF).
+
+Whitelisting vs blacklisting philosophy?
+?
+Whitelist = trust-centric allow-only-approved/deny-by-default; blacklist = threat-centric allow-by-default-denies-known-bad.
+
+Best whitelisting exam facts?
+?
+SRP = 4 rules (path/hash/cert/internet-zone .msi); AppLocker = exe/msi/dll; PUA = Set-MpPreference -PUAProtection 1; DisallowRun registry; Endpoint Central path+hash.
+
+Sandbox top exam items?
+?
+Isolation vs rule-based; fails vs kernel malware; UAC integrity levels (low/med/high); Firefox security.sandbox.content.level; Windows Sandbox needs virtualization; Firejail SUID+seccomp-bpf; WDAG Edge SLAT + Enable-WindowsOptionalFeature.
+
+WAF top exam items?
+?
+Layer 7; 3 types (network/host/cloud); 5 deployments (reverse proxy/L2 bridge/out-of-band/server-resident/cloud); URLScan reject criteria; NAXSI positive-model; can't read DB commands; WS need managed session for anti-automation.

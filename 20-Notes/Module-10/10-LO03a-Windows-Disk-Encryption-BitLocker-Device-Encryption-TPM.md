@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "10"
 lo: "03"
-tags: [concept, process, command, crypto, mod/10]
+tags: [concept, process, command, crypto, mod/10, flashcard/10]
 topic: "Data at Rest Encryption — Windows Device Encryption, BitLocker, TPM"
 exam_weight: unknown
 status: done
@@ -49,15 +50,18 @@ unresolved: []
 - (TPM required; recovery key fallback)
 
 ## Cards
-Q:: Name the 4 categories of data-at-rest encryption.
-A:: Disk · file-level · removable media · database.
-#flashcard
-Q:: Which two prereqs does Windows device encryption require?
-A:: TPM + UEFI.
-#flashcard
-Q:: How to check TPM status?
-A:: `tpm.msc` → "The TPM is ready for use"; spec version shown.
-#flashcard
-Q:: BitLocker cipher support?
-A:: AES-CBC and AES-XTS, 128-bit or 256-bit.
-#flashcard
+Name the 4 categories of data-at-rest encryption.
+?
+Disk · file-level · removable media · database.
+
+Which two prereqs does Windows device encryption require?
+?
+TPM + UEFI.
+
+How to check TPM status?
+?
+`tpm.msc` → "The TPM is ready for use"; spec version shown.
+
+BitLocker cipher support?
+?
+AES-CBC and AES-XTS, 128-bit or 256-bit.

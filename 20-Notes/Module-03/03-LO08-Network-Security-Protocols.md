@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "03"
 lo: "08"
-tags: [protocol, crypto, mod/03]
+tags: [protocol, crypto, mod/03, flashcard/03]
 topic: "Essential Network Security Protocols"
 exam_weight: unknown
 status: done
@@ -80,24 +81,30 @@ Security protocols work at network, transport, application layers. RADIUS, TACAC
 - Deployment: LAN-internal IP ⇄ firewall (external IP) ⇄ Internet ⇄ firewall ⇄ LAN-internal IP (**IPsec tunnel**)
 
 ## Cards
-Q:: RADIUS RFCs + transport?
-A:: RFC 2865 (auth) / RFC 2866 (accounting); client-server on the application layer via UDP (or TCP) as transport; PAP/CHAP/EAP auth.
-#flashcard
-Q:: RADIUS vs TACACS+ encryption?
-A:: RADIUS encrypts only the password (UDP); TACACS+ encrypts the whole session including username+password (TCP 49), AAA separated.
-#flashcard
-Q:: Kerberos main protection + identity proof?
-A:: Protects against replay attacks and eavesdropping; proves identity on non-secure networks via tickets (TGT then service ticket).
-#flashcard
-Q:: PGP session key handling?
-A:: One-time session key encrypts the message; the key itself is encrypted with the recipient's public key and sent alongside.
-#flashcard
-Q:: S/MIME cryptographic services?
-A:: Authentication, message integrity, non-repudiation, privacy, data security (RSA-based, separate keys for signing and encryption).
-#flashcard
-Q:: SSL channel-security properties?
-A:: Private (encrypted after handshake), authenticated (server always, client optional), reliable (integrity check).
-#flashcard
-Q:: IPsec services?
-A:: AH = sender authentication only; ESP = sender authentication + data encryption; peer auth, data origin auth, integrity, confidentiality, replay protection.
-#flashcard
+RADIUS RFCs + transport?
+?
+RFC 2865 (auth) / RFC 2866 (accounting); client-server on the application layer via UDP (or TCP) as transport; PAP/CHAP/EAP auth.
+
+RADIUS vs TACACS+ encryption?
+?
+RADIUS encrypts only the password (UDP); TACACS+ encrypts the whole session including username+password (TCP 49), AAA separated.
+
+Kerberos main protection + identity proof?
+?
+Protects against replay attacks and eavesdropping; proves identity on non-secure networks via tickets (TGT then service ticket).
+
+PGP session key handling?
+?
+One-time session key encrypts the message; the key itself is encrypted with the recipient's public key and sent alongside.
+
+S/MIME cryptographic services?
+?
+Authentication, message integrity, non-repudiation, privacy, data security (RSA-based, separate keys for signing and encryption).
+
+SSL channel-security properties?
+?
+Private (encrypted after handshake), authenticated (server always, client optional), reliable (integrity check).
+
+IPsec services?
+?
+AH = sender authentication only; ESP = sender authentication + data encryption; peer auth, data origin auth, integrity, confidentiality, replay protection.

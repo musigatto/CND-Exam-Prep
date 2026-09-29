@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "05"
 lo: "01"
-tags: [concept, mod/05]
+tags: [concept, mod/05, flashcard/05]
 topic: "Windows OS and Security Concerns"
 exam_weight: unknown
 status: done
@@ -37,24 +38,30 @@ Windows = most widely used OS (PCs, private + government); support for servers +
 - Root causes: **unpatched OS · improper configurations · unused services/processes enabled · weak passwords · lack of anti-malware**
 
 ## Cards
-Q:: Windows ring model?
-A:: Ring 0 = kernel (most privileged) → rings 1/2 = drivers → ring 3 = user mode/apps (least privileged).
-#flashcard
-Q:: User mode vs kernel mode?
-A:: User = private virtual address space, no direct HW access, isolates apps; kernel = unrestricted access, crashes can take the OS down.
-#flashcard
-Q:: Environment subsystems?
-A:: Win32 · OS/2 · POSIX (replaced by WSL on Win10/Server 2019).
-#flashcard
-Q:: Integral subsystems?
-A:: Security subsystem · Workstation service (redirector/client) · Server service (serves shares).
-#flashcard
-Q:: Security Reference Monitor?
-A:: Primary authority implementing Windows security rules; decides object/resource access via ACLs.
-#flashcard
-Q:: Windows security concern root causes?
-A:: Unpatched OS, improper configurations, unnecessary services/processes enabled, weak passwords, missing anti-malware.
-#flashcard
-Q:: WSL?
-A:: Windows Subsystem for Linux — compatibility layer running Linux binaries on Windows 10 / Server 2019; replaced POSIX subsystem.
-#flashcard
+Windows ring model?
+?
+Ring 0 = kernel (most privileged) → rings 1/2 = drivers → ring 3 = user mode/apps (least privileged).
+
+User mode vs kernel mode?
+?
+User = private virtual address space, no direct HW access, isolates apps; kernel = unrestricted access, crashes can take the OS down.
+
+Environment subsystems?
+?
+Win32 · OS/2 · POSIX (replaced by WSL on Win10/Server 2019).
+
+Integral subsystems?
+?
+Security subsystem · Workstation service (redirector/client) · Server service (serves shares).
+
+Security Reference Monitor?
+?
+Primary authority implementing Windows security rules; decides object/resource access via ACLs.
+
+Windows security concern root causes?
+?
+Unpatched OS, improper configurations, unnecessary services/processes enabled, weak passwords, missing anti-malware.
+
+WSL?
+?
+Windows Subsystem for Linux — compatibility layer running Linux binaries on Windows 10 / Server 2019; replaced POSIX subsystem.

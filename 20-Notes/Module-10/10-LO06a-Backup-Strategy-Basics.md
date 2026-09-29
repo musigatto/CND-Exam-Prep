@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "10"
 lo: "06"
-tags: [process, bestpractice, concept, mod/10]
+tags: [process, bestpractice, concept, mod/10, flashcard/10]
 topic: "Backup Basics — Definition, Data Loss Causes, Strategy, Media"
 exam_weight: unknown
 status: done
@@ -59,15 +60,18 @@ unresolved: []
 | **Tape drives** | no limit | Enterprise-level media; easy store/transport; expensive |
 
 ## Cards
-Q:: Primary purposes of a data backup?
-A:: Reinstate a system to its normal working state after damage, or recover data/information following data loss or corruption.
-#flashcard
-Q:: Four categories of data-loss causes.
-A:: Human error · crimes · natural causes (power/software/hardware) · natural disaster.
-#flashcard
-Q:: 8-step data backup strategy?
-A:: Identify critical data → select backup media → backup technology → RAID levels → backup method → backup types → right solution → recovery drill test.
-#flashcard
-Q:: Backup media selection factors?
-A:: Cost, reliability, speed, availability, usability.
-#flashcard
+Primary purposes of a data backup?
+?
+Reinstate a system to its normal working state after damage, or recover data/information following data loss or corruption.
+
+Four categories of data-loss causes.
+?
+Human error · crimes · natural causes (power/software/hardware) · natural disaster.
+
+8-step data backup strategy?
+?
+Identify critical data → select backup media → backup technology → RAID levels → backup method → backup types → right solution → recovery drill test.
+
+Backup media selection factors?
+?
+Cost, reliability, speed, availability, usability.

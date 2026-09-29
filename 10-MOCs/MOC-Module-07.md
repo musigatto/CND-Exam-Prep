@@ -1,7 +1,8 @@
 ---
+
 type: moc
 module: "07"
-tags: [concept, mod/07]
+tags: [concept, mod/07, flashcard/07]
 topic: "Module 07 — Endpoint Security - Mobile Devices"
 exam_weight: unknown
 status: done
@@ -64,12 +65,14 @@ views:
 - COBO implementation paragraph: OCR garbled wording on "device that runs a single application... otherwise smartphones with prohibited personal use" — kept the verified list; no invented specifics.
 
 ## Cards
-Q:: Module 07 subject scope?
-A:: Mobile endpoint security: mobile usage policies (BYOD/COPE/COBO/CYOD), risks + guidelines, management solutions (MDM/MAM/MCM/MTD/MEM/EMM/UEM), general best practices, Android + iOS specific security.
-#flashcard
-Q:: Mobile management stack hierarchy?
-A:: MDM → MAM → MCM → MTD → MEM; EMM = comprehensive (MDM+MAM+MTM+MCM+MEM); UEM extends MDM+EMM to all internet-enabled devices via a single interface.
-#flashcard
-Q:: Favorite crackable exam items?
-A:: Approach definitions + COPE/CYOD/COBO traits · 5-step implementations · risk categories · MDM delivery methods + features · Intune MAM-WE · MCM multi-client/multi-site · MTD levels · EMM deploy phases · UEM per-app VPN · Find My Device prerequisites/actions · Android Device Admin policies (wipe, disable camera 4.0, complex 3.0) · iOS Alpine + Lost Mode.
-#flashcard
+Module 07 subject scope?
+?
+Mobile endpoint security: mobile usage policies (BYOD/COPE/COBO/CYOD), risks + guidelines, management solutions (MDM/MAM/MCM/MTD/MEM/EMM/UEM), general best practices, Android + iOS specific security.
+
+Mobile management stack hierarchy?
+?
+MDM → MAM → MCM → MTD → MEM; EMM = comprehensive (MDM+MAM+MTM+MCM+MEM); UEM extends MDM+EMM to all internet-enabled devices via a single interface.
+
+Favorite crackable exam items?
+?
+Approach definitions + COPE/CYOD/COBO traits · 5-step implementations · risk categories · MDM delivery methods + features · Intune MAM-WE · MCM multi-client/multi-site · MTD levels · EMM deploy phases · UEM per-app VPN · Find My Device prerequisites/actions · Android Device Admin policies (wipe, disable camera 4.0, complex 3.0) · iOS Alpine + Lost Mode.

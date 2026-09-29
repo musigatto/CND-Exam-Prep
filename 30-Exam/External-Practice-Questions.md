@@ -41,7 +41,7 @@ unresolved:
 | CertificationPractice | 20 | No | 312-38 | https://certificationpractice.com/practice-exams/ec-council-certified-network-defender-cnd |
 | Daypo "CND 2" | 12 | No | CND v2 (2022) | https://www.daypo.com/cnd-2.html |
 | PracticeTestGeeks PDF | 4 | Yes (all B) | generic | https://practicetestgeeks.com/pdf/Certified_Network_Defender_Practice_Test_Questions_and_Answers.pdf |
-| A Guide to Cloud | 0 | — | CND v3 | paywalled — exam facts only, see [[#A Guide to Cloud — exam facts (not PDF-sourced)]] |
+| A Guide to Cloud | 0 | — | CND v3 | paywalled — exam facts only, see [[#A Guide to Cloud — exam facts (third-party, partly wrong)]] |
 | Quizlet | 0 | — | — | HTTP 403 anti-bot, not retrieved |
 
 **Total harvested: 46 questions.**
@@ -132,7 +132,7 @@ unresolved:
 - Stateful inspection firewall
 
 **Answer: Application-level gateway**
-> Derived from courseware — Mod 04 LO#02 p? — "Application level gateways can filter packets at the application layer of the OSI model"; "An application-level proxy works as a proxy server and filters connections for specific services"
+> Derived from courseware — Mod 04 pp17-20 — "Application level gateways can filter packets at the application layer of the OSI model"; "An application-level proxy works as a proxy server and filters connections for specific services"
 
 **C02.** Which deployment topology allows a Web Application Firewall (WAF) to inspect traffic by sitting directly in the path of the connection, terminating the session from the client, and initiating a new separate connection to the web server?
 - Port Mirroring
@@ -147,7 +147,7 @@ unresolved:
 - Recovery Point Objective (RPO)
 
 **Answer: Recovery Point Objective (RPO)**
-> Derived from courseware — Mod 17 p? — "Recovery point objective (RPO) is the maximum time frame for which an organization loses data after a major IT outage"
+> Derived from courseware — Mod 17 p14 — "Recovery point objective (RPO) is the maximum time frame for which an organization loses data after a major IT outage"
 
 **C04.** A network administrator discovers that internal users are bypassing port-based blocking rules by tunneling Peer-to-Peer (P2P) file-sharing traffic over port 443. Which firewall technology should be deployed to identify and block this traffic based on the application signature within the payload?
 - Next-Generation Firewall (NGFW)
@@ -156,7 +156,7 @@ unresolved:
 - Stateful Inspection Firewall
 
 **Answer: Next-Generation Firewall (NGFW)**
-> Derived from courseware — Mod 04 p? — "Next generation firewall (NGFW) ... moves beyond port/protocol inspection"; "Multilayered protection: It provides multilayered protection by inspecting traffic from layers 2–7"
+> Derived from courseware — Mod 04 pp26-27 — "Next generation firewall (NGFW) ... moves beyond port/protocol inspection"; "Multilayered protection: It provides multilayered protection by inspecting traffic from layers 2–7"
 
 **C05.** Executive management is deciding on the budget allocation for cybersecurity insurance and requires an assessment of high-level trends regarding the financial motives of global threat actors and the potential impact on business continuity. Which type of threat intelligence provides this non-technical, long-term context?
 - Operational Threat Intelligence
@@ -165,7 +165,7 @@ unresolved:
 - Strategic Threat Intelligence
 
 **Answer: Strategic Threat Intelligence**
-> Derived from courseware — Mod 20 p? — "Strategic threat intelligence provides high-level information regarding the cyber security posture, threats, and their impact on the business ... consumed by high-level executives"
+> Derived from courseware — Mod 20 p10 — "Strategic threat intelligence provides high-level information regarding the cyber security posture, threats, and their impact on the business ... consumed by high-level executives"
 
 **C06.** An administrator wants to prevent brute-force attacks against the root account on a Linux server by disabling direct root login over SSH. Which directive in the `/etc/ssh/sshd_config` file should be modified to achieve this?
 - `RestrictUser root`
@@ -174,7 +174,7 @@ unresolved:
 - `PermitRootLogin no`
 
 **Answer: `PermitRootLogin no`**
-> Derived from courseware — Mod 06 p? — "Search for the line in the file - #PermitRootLogin no / Remove the '#' from the beginning of the line. PermitRootLogin no"
+> Derived from courseware — Mod 06 p107 — "Search for the line in the file - #PermitRootLogin no / Remove the '#' from the beginning of the line. PermitRootLogin no"
 
 **C07.** A financial institution determines that the cost of implementing a redundant data center to mitigate the risk of a regional outage significantly exceeds the potential financial loss from such an event. Consequently, the board formally documents the decision to operate without the redundancy and absorb the potential cost if an outage occurs. Which risk management strategy has the organization adopted?
 - Risk Acceptance
@@ -183,7 +183,7 @@ unresolved:
 - Risk Mitigation
 
 **Answer: Risk Acceptance**
-> Derived from courseware — Mod 18 p? — "Risks are accepted when the effort to address, transfer, or mitigate has exceeded the impact of the risk on the network"
+> Derived from courseware — Mod 18 p21 — "Risks are accepted when the effort to address, transfer, or mitigate has exceeded the impact of the risk on the network"
 
 **C08.** A network administrator arrives at a workstation that is suspected of being controlled by a remote attacker. To ensure the preservation of volatile evidence, which action should be avoided immediately?
 - Photographing the screen
@@ -192,7 +192,7 @@ unresolved:
 - Documenting the current state
 
 **Answer: Restarting the system**
-> Derived from courseware — Mod 16 p? — "Do not change the state of suspected device ... If the suspected device is ON, then leave it ON ... Changing the state may destroy" (evidence). Restart is the only option that changes state and destroys volatile evidence.
+> Derived from courseware — Mod 16 p26 — "Do not change the state of suspected device ... If the suspected device is ON, then leave it ON ... Changing the state may destroy" (evidence). Restart is the only option that changes state and destroys volatile evidence.
 
 **C09.** While monitoring network traffic, an administrator observes a large volume of data being transferred to a suspicious external IP address from a critical finance server. To halt the exfiltration while retaining the ability to analyze the contents of the system's RAM, which action should be taken immediately?
 - Disconnect the network cable
@@ -201,7 +201,7 @@ unresolved:
 - Reboot the server into safe mode
 
 **Answer: Disconnect the network cable**
-> Derived from courseware — Mod 16 p? — "Do not change the state of suspected device" + "Do not perform actions that will damage the integrity of the evidence". Pulling the cable halts exfiltration without powering down, so RAM survives. Shutdown / power-off / safe-mode all destroy it.
+> Derived from courseware — Mod 16 pp15-26 — "Do not change the state of suspected device" + "Do not perform actions that will damage the integrity of the evidence". Pulling the cable halts exfiltration without powering down, so RAM survives. Shutdown / power-off / safe-mode all destroy it.
 
 **C10.** During the deployment of full disk encryption on corporate laptops, the security team mandates that the decryption keys must only be released if the boot sequence remains unmodified. Which component facilitates this integrity check?
 - Hardware Security Module (HSM)
@@ -210,7 +210,7 @@ unresolved:
 - Unified Extensible Firmware Interface (UEFI)
 
 **Answer: Trusted Platform Module (TPM)**
-> Derived from courseware — Mod 05 p? — "TPM in conjunction with Secure Boot ensures the integrity of the boot process. BitLocker, Windows' native encryption feature, leverages TPM to safeguard the system drive."
+> Derived from courseware — Mod 05 p153 — "TPM in conjunction with Secure Boot ensures the integrity of the boot process. BitLocker, Windows' native encryption feature, leverages TPM to safeguard the system drive."
 
 **C11.** Organizations often define the maximum acceptable amount of data loss measured in time, such as losing no more than four hours of work. Which metric is used to specify this data tolerance limit?
 - Recovery Time Objective (RTO)
@@ -219,7 +219,7 @@ unresolved:
 - Recovery Point Objective (RPO)
 
 **Answer: Recovery Point Objective (RPO)**
-> Derived from courseware — Mod 17 p? — "Recovery point objective (RPO) is the maximum time frame for which an organization loses data after a major IT outage"
+> Derived from courseware — Mod 17 p14 — "Recovery point objective (RPO) is the maximum time frame for which an organization loses data after a major IT outage"
 
 **C12.** An organization deploys Opportunistic Wireless Encryption (OWE) on its guest wireless network to protect against passive eavesdropping without requiring users to enter credentials. Because OWE does not use a pre-shared password or 802.1X authentication, which mechanism does it use to generate the Pairwise Master Key (PMK) used to derive traffic-encryption keys?
 - An unauthenticated Diffie-Hellman key exchange using public keys carried in the 802.11 Association Request and Response frames.
@@ -234,7 +234,7 @@ unresolved:
 - Threat Modeling
 
 **Answer: Attack Surface Analysis**
-> Derived from courseware — Mod 19 p? — "The attack surface is the sum of all possible security exposures ... through which attackers can gain access"
+> Derived from courseware — Mod 19 p5 — "The attack surface is the sum of all possible security exposures ... through which attackers can gain access"
 
 **C14.** A Chief Information Security Officer (CISO) is hesitant to authorize full remote wipes for employee-owned devices suspected of being compromised. What is the primary legal and ethical challenge driving this hesitation in a Bring Your Own Device (BYOD) environment?
 - The high cost of licensing required to issue wipe commands to non-corporate devices
@@ -249,7 +249,7 @@ unresolved:
 - Risk Transfer
 
 **Answer: Risk Transfer**
-> Derived from courseware — Mod 18 p? — "Transferring the risk treatment responsibility to another party or organization". PCI DSS context: Mod 12 p?
+> Derived from courseware — Mod 18 p21 — "Transferring the risk treatment responsibility to another party or organization". PCI DSS context: Mod 12 p45
 
 **C16.** A multinational corporation is implementing a Single Sign-On (SSO) solution to allow employees to access third-party SaaS applications using their internal Active Directory credentials. Which XML-based standard is primarily used to exchange authentication and authorization data between the Identity Provider (IdP) and the Service Provider (SP) in this scenario?
 - RADIUS
@@ -258,7 +258,7 @@ unresolved:
 - TACACS+
 
 **Answer: SAML**
-> Derived from courseware — Mod 12 p? — "Use SAML Session Tags for Attribute-based Access Control"; "Create and configure the SAML role". SSO: Mod 03 p? SAML is the only XML-based IdP↔SP option.
+> Derived from courseware — Mod 12 pp92-94 — "Use SAML Session Tags for Attribute-based Access Control"; "Create and configure the SAML role". SSO: Mod 03 p55 SAML is the only XML-based IdP↔SP option.
 
 **C17.** After failed authentication attempts, locked-out accounts currently remain locked indefinitely, requiring a manual administrator reset. Which policy setting enables automatic unlocking after a defined timeframe?
 - Enforce password history
@@ -273,7 +273,7 @@ unresolved:
 - Screened subnet
 
 **Answer: Screened subnet**
-> Derived from courseware — Mod 04 p? — "The screened subnet architecture consists of two screening routers: one is placed between the perimeter net and the internal network and the other is placed between the perimeter net and the external network ... If the firewall is compromised, access to the intranet will not be possible."
+> Derived from courseware — Mod 04 p32 — "The screened subnet architecture consists of two screening routers: one is placed between the perimeter net and the internal network and the other is placed between the perimeter net and the external network ... If the firewall is compromised, access to the intranet will not be possible."
 
 **C19.** A security analyst is calculating a CVSS v3.x score for a vulnerability found on a legacy server that is physically air-gapped and isolated from the rest of the network. To calculate an environment-specific severity score that reflects this deployment context, which CVSS metric group must be adjusted?
 - Environmental Metrics
@@ -288,7 +288,7 @@ unresolved:
 - Device-to-Cloud
 
 **Answer: Device-to-Gateway**
-> Derived from courseware — Mod 08 p? — IoT Communication Models: "Device-to-Gateway Model"; "Gateways help manage traffic between IoT devices and connected networks". Contrast Device-To-Cloud (Mod 08) where the device talks to the cloud directly.
+> Derived from courseware — Mod 08 pp15-16 — — IoT Communication Models: "Device-to-Gateway Model"; "Gateways help manage traffic between IoT devices and connected networks". Contrast Device-To-Cloud (Mod 08) where the device talks to the cloud directly.
 
 ---
 
@@ -304,7 +304,7 @@ unresolved:
 - Risk Identification, Risk Assessment, Risk Monitoring & Review, Risk Treatment
 
 **Answer: Risk Identification, Risk Assessment, Risk Treatment, Risk Monitoring & Review**
-> Derived from courseware — Mod 18 p? — phases in order: "Risk Management Phase: Risk Identification" → "Risk Assessment" → "Risk Treatment" → "Risk Tracking & Review"
+> Derived from courseware — Mod 18 pp13-24 — — phases in order: "Risk Management Phase: Risk Identification" → "Risk Assessment" → "Risk Treatment" → "Risk Tracking & Review"
 
 **D02.** John has implemented \_\_\_\_\_\_\_\_ in the network to restrict the limit of public IP addresses in his organization and to enhance the firewall filtering technique.
 - DMZ
@@ -313,7 +313,7 @@ unresolved:
 - NAT
 
 **Answer: NAT**
-> Derived from courseware — Mod 04 p? — Firewall Capabilities list: "Performs network address Translation (NAT)"
+> Derived from courseware — Mod 04 p8 — — Firewall Capabilities list: "Performs network address Translation (NAT)"
 
 **D03.** What command is used to terminate certain processes in an Ubuntu system?
 - `#grep Kill [Target Process]`
@@ -334,7 +334,7 @@ unresolved:
 - Usability
 
 **Answer: Data Integrity**
-> Derived from courseware — Mod 03 p? — "Digital signatures use the asymmetric key algorithms to provide data integrity"
+> Derived from courseware — Mod 03 p77 — "Digital signatures use the asymmetric key algorithms to provide data integrity"
 
 **D06.** Phishing-like attempts that present users a fake usage bill of the cloud provider is an example of a
 - Cloud to service attack surface
@@ -343,7 +343,7 @@ unresolved:
 - Cloud to user attack surface
 
 **Answer: Cloud to user attack surface**
-> Derived from courseware — Mod 19 p? — Cloud Attack Surface table includes "Cloud to User — Cloud interface exposed to User"
+> Derived from courseware — Mod 19 p50 — Cloud Attack Surface table includes "Cloud to User — Cloud interface exposed to User"
 
 **D07.** Disaster Recovery is a \_\_\_\_\_\_\_\_\_.
 - Operation-centric strategy
@@ -358,7 +358,7 @@ unresolved:
 - Asymmetric encryption; public key
 
 **Answer: Asymmetric encryption; public key**
-> Derived from courseware — Mod 03 p? — "asymmetric encryption uses two separate keys ... the public key is used for encrypting messages"; "With the help of the public key and the new result, the verifier checks whether the digital signature was created with the related private key". Hashing only DETECTS tampering (Mod 03), it does not prevent it.
+> Derived from courseware — Mod 03 pp75-78 — "asymmetric encryption uses two separate keys ... the public key is used for encrypting messages"; "With the help of the public key and the new result, the verifier checks whether the digital signature was created with the related private key". Hashing only DETECTS tampering (Mod 03), it does not prevent it.
 
 **D09.** Which BC/DR activity includes action taken toward resuming all services that are dependent on business-critical applications?
 - Response
@@ -367,7 +367,7 @@ unresolved:
 - Restoration
 
 **Answer: Resumption**
-> Derived from courseware — Mod 17 p? — "The objective of this section is to discuss the prevention, response, resumption, recovery, and restoration activities". Restoration (Mod 17) is repair of the primary site, only for physical damage.
+> Derived from courseware — Mod 17 p15 — "The objective of this section is to discuss the prevention, response, resumption, recovery, and restoration activities". Restoration (Mod 17) is repair of the primary site, only for physical damage.
 
 **D10.** Which subdirectory in `/var/log` directory stores information related to Apache web server?
 - `/var/log/maillog`
@@ -382,7 +382,7 @@ unresolved:
 - Userns
 
 **Answer: Seccomp**
-> Derived from courseware — Mod 11 p? — Docker Security Features: "Fine grained per-syscall control (via seccomp)"; "Default profile limits many syscalls"
+> Derived from courseware — Mod 11 p120 — — Docker Security Features: "Fine grained per-syscall control (via seccomp)"; "Default profile limits many syscalls"
 
 **D12.** Which of the following things need to be identified during attack surface visualization?
 - Attacker's tools, techniques, and procedures
@@ -391,7 +391,7 @@ unresolved:
 - Assets, topologies, and policies of the organization
 
 **Answer: Assets, topologies, and policies of the organization**
-> Derived from courseware — Mod 19 p? — Attack Surface Visualization: "Identify the assets, topologies, and policies of the organization"
+> Derived from courseware — Mod 19 p11 — — Attack Surface Visualization: "Identify the assets, topologies, and policies of the organization"
 
 ---
 
@@ -444,35 +444,40 @@ unresolved:
 | C17 | Policy setting for automatic unlock after a defined timeframe | No lockout-**duration** setting is named | Mod 05 password policy covers complexity, age, length only; Mod 08:339 "Use the 'Lock Out' feature to lock out accounts in the case of excessive invalid login attempts" |
 | C19 | CVSS metric group for environment-specific severity | Only a `CVSS Score` column header exists; no metric groups described | Mod 06:27 CVE search view exposes `CVSS Scores` and `EPSS scores` as filter columns only |
 | D03 | Command to terminate a process in Ubuntu | No process-termination command anywhere in the corpus | Mod 06: "Disabling Unnecessary Services" covers service removal, not `kill` |
-| D04 | Effect of a main-node failure in a tree topology | `Tree Topology` does not appear in the corpus | Mod 06:24 "Hierarchical File System \u2014 arranges directories and files in a tree like structure" (filesystem, not network) |
+| D04 | Effect of a main-node failure in a tree topology | `Tree Topology` does not appear in the corpus | Mod 06:24 "Hierarchical File System — arranges directories and files in a tree like structure" (filesystem, not network) |
 | D07 | Disaster Recovery as a "business-centric" strategy | `business-centric` does not appear | Mod 17: "BC ... ensure the continuity of an organization's critical business functions"; "DR refers to an organization's ability to restore the data and applications critical to an organization's operations" |
 | D10 | Which `/var/log` subdirectory holds Apache logs | **No option matches the PDF.** The courseware says `/var/log/apache2/access.log`; `/var/log/httpd` is the RHEL/CentOS path and is not in the courseware | Mod 15: `sudo tail -100 /var/log/apache2/access.log` (Debian/Ubuntu) |
 
 ---
 
-> [!danger] Third-party weights — do NOT promote to blueprint
-> These domain percentages come from a third-party vendor page, **not** the EC-Council courseware. `AGENTS.md` requires exam weights to be traceable to source. Keep out of [[00-Home]] progress tables until independently confirmed.
+## A Guide to Cloud — exam facts (third-party, partly wrong)
 
-| Detail | Value |
-|--------|-------|
-| Exam Code | CND-V3 |
-| Duration | 240 minutes |
-| Questions | 100 |
-| Pass Score | 70% |
-| Cost | $450 USD |
-| Provider | Pearson VUE / ECC Exam |
-| Validity | 3 years (ECE required) |
-| Question Types | Multiple choice |
+> [!danger] Superseded by official source
+> These claims come from a **third-party vendor page**, not EC-Council.
+> The official facts now live in [[Exam-Facts]]. **Do not use this section for anything.**
 
-Vendor-claimed domain weights:
+| Detail | Third-party claim | Official (EC-Council) |
+|--------|-------------------|----------------------|
+| Exam Code | CND-V3 | 312-38 |
+| Duration | 240 minutes | 4 hours - agrees |
+| Questions | 100 | 100 - agrees |
+| Pass Score | **70%** | **WRONG** - cut score varies **60%-85%** by exam form |
+| Question Types | Multiple choice | Multiple Choice - agrees |
+| Cost | $450 USD | not sourced here |
+| Provider | Pearson VUE / ECC Exam | EC-Council Exam Portal / Pearson VUE (Mod 01 p13) |
+| Validity | 3 years (ECE required) | not sourced here |
 
-| Domain | Weight |
-|--------|--------|
-| Network Defense Fundamentals & Strategies | 14% |
-| Network Perimeter Security | 18% |
-| Endpoint Security — Windows, Linux, Mobile, IoT | 20% |
-| Application & Data Security | 14% |
-| Enterprise Virtual, Cloud & Wireless Security | 14% |
-| Incident Detection, Response & Threat Intelligence | 20% |
+Vendor-claimed domain weights - **rejected**, they contradict the official blueprint:
+
+| Domain (vendor wording) | Vendor weight | Official blueprint v4.0 |
+|-------------------------|---------------|------------------------|
+| Network Defense Fundamentals & Strategies | 14% | Network Defense Management 10% |
+| Network Perimeter Security | 18% | Network Perimeter Protection 10% |
+| Endpoint Security - Windows, Linux, Mobile, IoT | 20% | Endpoint Protection 20% |
+| Application & Data Security | 14% | Application and Data Protection 10% |
+| Enterprise Virtual, Cloud & Wireless Security | 14% | Enterprise Virtual, Cloud, and Wireless Network Protection 15% |
+| Incident Detection, Response & Threat Intelligence | 20% | Incident Detection 10% |
+
+Only the 6-domain grouping shape is similar; **every weight differs**. Use [[Exam-Facts]].
 
 Practice questions on that site are paywalled ($9, 20 free without account). Not retrieved.

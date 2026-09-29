@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "06"
 lo: "05"
-tags: [concept, tool, command, threat, crypto, mod/06]
+tags: [concept, tool, command, threat, crypto, mod/06, flashcard/06]
 topic: "Linux Kernel, Firewall, Wrappers, Port Monitoring, IPv6"
 exam_weight: unknown
 status: done
@@ -105,24 +106,30 @@ unresolved: []
 - Check flag value: `cat /proc/sys/net/ipv6/conf/all/disable_ipv6`
 
 ## Cards
-Q:: Kernel hardening via which file + what default?
-A:: /etc/sysctl.conf read at boot by sysctl. Defaults: ip_forward=0, send_redirects=0, accept_redirects=0, source_route=0, rp_filter=1, syncookies=1, log_martians=1, exec-shield=1.
-#flashcard
-Q:: iptables three chains?
-A:: INPUT (incoming vs rule, IP+port), FORWARD (routes incoming to destination), OUTPUT (output allow/deny). Check `iptables -L -n -v`.
-#flashcard
-Q:: UFW basic workflow?
-A:: install → `ufw status verbose` → `ufw enable` → default deny incoming / allow outgoing → add rules by service/port/proto/IP; delete with `ufw delete allow <n>`.
-#flashcard
-Q:: TCP Wrappers allow/deny files + order?
-A:: Only first matching rule considered; TCPD allows via /etc/hosts.allow, denies via /etc/hosts.deny; verify support `ldd $(which sshd) | grep libwrap`.
-#flashcard
-Q:: netstat/ss option meanings?
-A:: -t TCP, -u UDP, -n numeric (no DNS), -l listening only, -p PID+process name → `netstat -tulpn` / `ss -tulpn`; lsof `-nP -iTCP -sTCP:LISTEN`.
-#flashcard
-Q:: How to disable IPv6?
-A:: sysctl.conf disable_ipv6=1 (all/default/lo) or GRUB `ipv6.disable=1` + update-grub; or sysctl -w one-liners.
-#flashcard
-Q:: What can block which? firewall vs TCPD?
-A:: Firewall = network-layer, cannot inspect encrypted connections. TCPD = app-layer ACL → filters even HTTPS; complements firewall, never on firewall host.
-#flashcard
+Kernel hardening via which file + what default?
+?
+/etc/sysctl.conf read at boot by sysctl. Defaults: ip_forward=0, send_redirects=0, accept_redirects=0, source_route=0, rp_filter=1, syncookies=1, log_martians=1, exec-shield=1.
+
+iptables three chains?
+?
+INPUT (incoming vs rule, IP+port), FORWARD (routes incoming to destination), OUTPUT (output allow/deny). Check `iptables -L -n -v`.
+
+UFW basic workflow?
+?
+install → `ufw status verbose` → `ufw enable` → default deny incoming / allow outgoing → add rules by service/port/proto/IP; delete with `ufw delete allow <n>`.
+
+TCP Wrappers allow/deny files + order?
+?
+Only first matching rule considered; TCPD allows via /etc/hosts.allow, denies via /etc/hosts.deny; verify support `ldd $(which sshd) | grep libwrap`.
+
+netstat/ss option meanings?
+?
+-t TCP, -u UDP, -n numeric (no DNS), -l listening only, -p PID+process name → `netstat -tulpn` / `ss -tulpn`; lsof `-nP -iTCP -sTCP:LISTEN`.
+
+How to disable IPv6?
+?
+sysctl.conf disable_ipv6=1 (all/default/lo) or GRUB `ipv6.disable=1` + update-grub; or sysctl -w one-liners.
+
+What can block which? firewall vs TCPD?
+?
+Firewall = network-layer, cannot inspect encrypted connections. TCPD = app-layer ACL → filters even HTTPS; complements firewall, never on firewall host.

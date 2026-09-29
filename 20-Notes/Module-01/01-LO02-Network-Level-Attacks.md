@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "01"
 lo: "02"
-tags: [threat, mod/01]
+tags: [threat, mod/01, flashcard/01]
 topic: "Network-level Attack Techniques"
 exam_weight: unknown
 status: done
@@ -90,19 +91,25 @@ unresolved: []
 - Warning signs: inexplicable account activity, backdoor trojans, unusual file transfers/uploads, unusual DB activity
 
 ## Cards
-Q:: Two types of DoS and examples?
-A:: Bandwidth (flood traffic) and Connectivity (exhaust resources); e.g. TCP SYN flood, UDP flood, ICMP Smurf flood, intermittent flooding.
-#flashcard
-
-Q:: How does a DHCP starvation attack work and two mitigations?
+Two types of DoS and examples?
+?
+Bandwidth (flood traffic) and Connectivity (exhaust resources); e.g. TCP SYN flood, UDP flood, ICMP Smurf flood, intermittent flooding.
 <!--SR:!2026-09-30,1,230-->
-A:: Floods DHCP server with fake DHCP requests (Gobbler) to exhaust the IP pool → DoS. Mitigate with port security and DHCP snooping.
-#flashcard
 
-Q:: Vertical vs horizontal privilege escalation?
-A:: Vertical = same account → higher-privilege account; Horizontal = one user account → another with equal privileges.
-#flashcard
 
-Q:: Why is ARP easy to poison?
-A:: ARP provides no authenticity verification; hosts even accept unsolicited ARP replies.
-#flashcard
+How does a DHCP starvation attack work and two mitigations?
+?
+Floods DHCP server with fake DHCP requests (Gobbler) to exhaust the IP pool → DoS. Mitigate with port security and DHCP snooping.
+<!--SR:!2026-09-30,1,230-->
+
+
+Vertical vs horizontal privilege escalation?
+?
+Vertical = same account → higher-privilege account; Horizontal = one user account → another with equal privileges.
+<!--SR:!2026-10-03,4,270-->
+
+
+Why is ARP easy to poison?
+?
+ARP provides no authenticity verification; hosts even accept unsolicited ARP replies.
+<!--SR:!2026-09-30,1,230-->

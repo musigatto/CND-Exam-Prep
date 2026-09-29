@@ -1,7 +1,8 @@
 ---
+
 type: moc
 module: "10"
-tags: [concept, mod/10]
+tags: [concept, mod/10, flashcard/10]
 topic: "Module 10 — Data Security"
 exam_weight: unknown
 status: done
@@ -29,7 +30,7 @@ unresolved:
 
 ## Technical focus
 - **LO01 importance:** critical data (identified via business impact analysis) · data-loss causes→effects (brand, fines, litigation, shareholder value) · data secured = prevent destruction/modification/disclosure + recover + retention/destruction policies · **3 states table** (at rest / in use / in transit) w/ controls (encryption, SSL/TLS, PGP/S-MIME, DLP, access control, memory encryption) · 7 data-security technologies (access control, encryption, masking, resilience/backup, destruction, retention, hardware security).
-- **LO02 access controls:** models RBAC / rule-based (RB-RBAC) / MAC / DAC not mutually exclusive; logical via ACLs, Group Policy, account restrictions, passwords/tokens · **Win ACL**: access token vs ACE, 6 ACE types (3 generic: deny/allow in DACL, audit in SACL; 3 object-specific), explicit vs inherited, share vs NTFS perms (file: Full/Modify/R&X/Read/Write; folder adds List), FAT n/a, special perms path · **Linux ACL**: `yum install acl`, `mount -t ext3 -o acl`, fstab acl option, Access vs Default ACL, `setfacl -m/-x/-b`, `setfacl -m d:o:rx /Testdir`, `getfacl` (user::rw-, user:alice:r-, group::r-, mask::r-, other:r--) · Group Policy least-privilege/lockout · account restrictions (logon hours, expiration; `pam_time` `/etc/security/time.conf` `Login;*;!Martin;MoTuWeThFr0800-2000`) · third-party Folder Guard/Folder Lock/Protected Folder.
+- **LO02 access controls:** models RBAC / rule-based (RB-RBAC) / MAC / DAC not mutually exclusive; logical via ACLs, Group Policy, account restrictions, passwords/tokens · **Win ACL**: access token vs ACE, 6 ACE types (3 generic: deny/allow in DACL, audit in SACL; 3 object-specific), explicit vs inherited, share vs NTFS perms (file: Full/Modify/R&X/Read/Write; folder adds List), FAT n/a, special perms path · **Linux ACL**: `yum install acl`, `mount -t ext3 -o acl`, fstab acl option, Access vs Default ACL, `setfacl -m/-x/-b`, `setfacl -m d:o:rx /Testdir`, `getfacl` (`user::rw-`, `user:alice:r-`, `group::r-`, `mask::r-`, `other:r--`) · Group Policy least-privilege/lockout · account restrictions (logon hours, expiration; `pam_time` `/etc/security/time.conf` `Login;*;!Martin;MoTuWeThFr0800-2000`) · third-party Folder Guard/Folder Lock/Protected Folder.
 - **LO03 at-rest encryption:** 4 categories (disk, file-level, removable media, database) · disk vs file-level pros (simplicity/performance vs per-file/public-key) · **Windows Device Encryption** (TPM+UEFI prereq; msinfo32 "Device Encryption Support"; Settings→Update & Security→Device encryption) · **TPM 2.0** (Windows 11 req; Compatibility check "Compatible TPM not found"; Recovery→Troubleshoot→UEFI Firmware Settings; `tpm.msc`) · **BitLocker** (AES-CBC/XTS 128/256; full volume; Control Panel "Manage BitLocker"; BitLocker To Go USB) · **EFS** (Win 2000+, not Home; `cipher /e`, `cipher /w:dir`; Advanced Attributes "Encrypt content to secure data"; Encryption Warning file vs folder) · third-party file tools (AxCrypt 256-bit AES, idoo, AES Crypt, Cryptomator, Encrypto, Boxcryptor) · **FileVault 2** (startup disk; recovery key) · **dm-crypt** Plain vs LUKS (header/master key, change pwd w/o re-encrypt, multiple keys, brute-force protection; `cryptsetup`) · Android (dm-crypt AES-128-CBC; 4 states Default/PIN/Password/Pattern; pw ≥6 chars + ≥1 number; ≥1 hr charged) · iOS (default full encryption; passcode links keys; custom alphanumeric) · third-party disk tools (VeraCrypt IDRiX/TrueCrypt-based, Symantec Drive Encryption, GiliSoft, SecureDoc WinMagic, DriveCrypt, ShareCrypt, DCPP, Rohos, Cryptainer LE, PocketCrypt, east-tec) · **DB at rest**: SQL Server **TDE** (DB encryption key→certificate→master key; `ALTER DATABASE SET ENCRYPTION ON`), column/cell-level, **Always Encrypted** (client-side; randomized vs deterministic; at rest+in motion, on-site+cloud; admin can't read data), Oracle **TDE** (columns or tablespace; **wallet**; `ENCRYPTION WALLET OPEN`).
 - **LO04 secure communication:** browser↔web; 6-step cert handshake; standard vs **EV SSL**; certificate Details fields (Issued To/By, validity, SHA-256 fingerprints, public key) · view in Chrome/Edge/Firefox · **IIS**: Server Certificates → Create Certificate Request (DN: common name = domain www.luxurytreats.com, Organization, OU, City Lehi, State UT, Country US; **Microsoft RSA SChannel CSP**, bit length) → Complete Certificate Request → Bindings https/443 · DB↔web: **SQL Server Force Encryption** (Configuration Manager → Protocols for MSSQLSERVER → Flags → Force Encryption Yes → restart; FQDN cert) · Oracle Advanced Security SSL (CA, wallet, cipher suites) · **email**: Outlook S/MIME (Trust Center → Email Security → encrypt outgoing; Signing cert + hash algorithm; encryption cert + algorithm; "Send these certs with signed messages"; Office 365 → Encrypt → Encrypt with S/MIME; 2019/2016 → Permissions → Do Not Forward) · O365 Message Encryption (IRM; E3) · Gmail S/MIME (Workspace).
 - **LO05 masking:** def (obfuscation/anonymization; preserve format, change keys `2424 XXXX XXXX 3421`); protect non-prod data, insider threats, third parties, GDPR compliance · types SDM (at rest) / DDM (in transit, role-based, proxy alters SQL) / on-the-fly (environment-to-environment) · **algorithms** (character scrambling, lookup substitution, nulling out, shuffling, number/date variance, masking out `X`, date aging, pseudonymization, averaging) · **techniques** (nulling/nullify, substitution w/ valid card numbers, shuffling, data shifting, tokenization, **FPE**, hashing) · SQL Server DDM (`default()`, `email()` masks; partial/random) · Oracle **F.A.S.T.** = Find → Access → Secure → Test; EM discovery jobs (15/16-digit CC, 9-digit SSN patterns; Sensitive Column Type CREDITCARDNUMBER; masking definition job like HR_Employee_Mask).
@@ -70,30 +71,38 @@ views:
 - A few vendor-screenshot tables had 200-dpi OCR noise (Oracle TDE wizard, SSL vendor pages); content kept to legible terms, no invented numbers.
 
 ## Cards
-Q:: Matching data state → control (SSL/TLS, PGP/S-MIME, memory encryption)?
-A:: at rest → encryption/password/tokenization; in transit → SSL/TLS + email encryption PGP/S-MIME + firewall/DLP; in use → authentication + full memory encryption + strong identity + patching.
-#flashcard
-Q:: 4 data-at-rest encryption categories?
-A:: Disk · file-level · removable media · database.
-#flashcard
-Q:: SQL Server TDE key hierarchy + enable statement?
-A:: Database encryption key (DEK) → certificate → master key; `ALTER DATABASE <db> SET ENCRYPTION ON`.
-#flashcard
-Q:: Always Encrypted randomized vs deterministic?
-A:: Randomized = less predictable (no equality lookups); deterministic = same ciphertext for same plaintext (enables equality).
-#flashcard
-Q:: Oracle data masking F.A.S.T.?
-A:: Find (discovery) → Access → Secure (masking definition/job) → Test.
-#flashcard
-Q:: Oracle cold backup sequence?
-A:: SHUTDOWN IMMEDIATE → STARTUP MOUNT → BACKUP DATABASE → ALTER DATABASE OPEN (no archive logs needed when closed).
-#flashcard
-Q:: NIST SP 800-88 sanitization methods vs DoD 5220.22-M passes?
-A:: NIST = Clear, Purge, Destroy; DoD = 3-pass overwrite (zeros → ones → random, final-pass verified).
-#flashcard
-Q:: 3 DLP types by data phase?
-A:: Endpoint DLP (data in use) · Network DLP (data in transit) · Storage DLP (data at rest).
-#flashcard
-Q:: Data integrity checking methods listed in courseware?
-A:: Checksums/hashes (MD5, SHA-256, SHA-3) · parity checks · CRC · data validation rules · ECC · digital signatures.
-#flashcard
+Matching data state → control (SSL/TLS, PGP/S-MIME, memory encryption)?
+?
+at rest → encryption/password/tokenization; in transit → SSL/TLS + email encryption PGP/S-MIME + firewall/DLP; in use → authentication + full memory encryption + strong identity + patching.
+
+4 data-at-rest encryption categories?
+?
+Disk · file-level · removable media · database.
+
+SQL Server TDE key hierarchy + enable statement?
+?
+Database encryption key (DEK) → certificate → master key; `ALTER DATABASE <db> SET ENCRYPTION ON`.
+
+Always Encrypted randomized vs deterministic?
+?
+Randomized = less predictable (no equality lookups); deterministic = same ciphertext for same plaintext (enables equality).
+
+Oracle data masking F.A.S.T.?
+?
+Find (discovery) → Access → Secure (masking definition/job) → Test.
+
+Oracle cold backup sequence?
+?
+SHUTDOWN IMMEDIATE → STARTUP MOUNT → BACKUP DATABASE → ALTER DATABASE OPEN (no archive logs needed when closed).
+
+NIST SP 800-88 sanitization methods vs DoD 5220.22-M passes?
+?
+NIST = Clear, Purge, Destroy; DoD = 3-pass overwrite (zeros → ones → random, final-pass verified).
+
+3 DLP types by data phase?
+?
+Endpoint DLP (data in use) · Network DLP (data in transit) · Storage DLP (data at rest).
+
+Data integrity checking methods listed in courseware?
+?
+Checksums/hashes (MD5, SHA-256, SHA-3) · parity checks · CRC · data validation rules · ECC · digital signatures.

@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "06"
 lo: "02"
-tags: [concept, process, tool, command, bestpractice, mod/06]
+tags: [concept, process, tool, command, bestpractice, mod/06, flashcard/06]
 topic: "Linux Installation and Patching"
 exam_weight: unknown
 status: done
@@ -69,21 +70,26 @@ Hardening starts at install; patch management keeps kernel + software current.
 - Configure **automatic software updates** (simple config change on all distributions)
 
 ## Cards
-Q:: Ubuntu minimal installation effect?
-A:: Fewer packages (~80 removed): desktop + browser + core tools; prevents installing third-party/untrusted apps that may be vulnerable to new exploits.
-#flashcard
-Q:: What do BIOS + boot loader passwords block?
-A:: BIOS: changing settings, booting system. Boot loader (GRUB/LILO): single-user mode, GRUB console, non-secure OS on dual-boot.
-#flashcard
-Q:: GRUB password hash command?
-A:: `grub-mkpasswd-pbkdf2` → paste hash via `password_pbkdf2 name <hash>` + `set superusers=` in `/etc/grub.d/40_custom`.
-#flashcard
-Q:: Debian manual patch commands?
-A:: `apt-get update` (fetch list), `apt-get upgrade` (upgrade current), `apt-get dist-upgrade` (install new). Red Hat: `yum check-update` / `yum update`. SUSE: `zypper`.
-#flashcard
-Q:: Discouraged when hardening installation?
-A:: Install more than needed; leave OS unprotected on hostile network pre-hardening; no update mechanism; single / volume for everything.
-#flashcard
-Q:: Why separate `/tmp` with nodev,noexec,nosuid?
-A:: Prevents resource exhaustion, device creation, binary execution, and setuid files in /tmp; sticky bit stops cross-user file deletion.
-#flashcard
+Ubuntu minimal installation effect?
+?
+Fewer packages (~80 removed): desktop + browser + core tools; prevents installing third-party/untrusted apps that may be vulnerable to new exploits.
+
+What do BIOS + boot loader passwords block?
+?
+BIOS: changing settings, booting system. Boot loader (GRUB/LILO): single-user mode, GRUB console, non-secure OS on dual-boot.
+
+GRUB password hash command?
+?
+`grub-mkpasswd-pbkdf2` → paste hash via `password_pbkdf2 name <hash>` + `set superusers=` in `/etc/grub.d/40_custom`.
+
+Debian manual patch commands?
+?
+`apt-get update` (fetch list), `apt-get upgrade` (upgrade current), `apt-get dist-upgrade` (install new). Red Hat: `yum check-update` / `yum update`. SUSE: `zypper`.
+
+Discouraged when hardening installation?
+?
+Install more than needed; leave OS unprotected on hostile network pre-hardening; no update mechanism; single / volume for everything.
+
+Why separate `/tmp` with nodev,noexec,nosuid?
+?
+Prevents resource exhaustion, device creation, binary execution, and setuid files in /tmp; sticky bit stops cross-user file deletion.

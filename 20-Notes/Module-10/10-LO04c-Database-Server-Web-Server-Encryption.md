@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "10"
 lo: "04"
-tags: [protocol, process, tool, crypto, mod/10]
+tags: [protocol, process, tool, crypto, mod/10, flashcard/10]
 topic: "Securing Communication − Database Server to Web Server"
 exam_weight: unknown
 status: done
@@ -30,9 +31,10 @@ unresolved: []
 - Encrypt DB-to-storage as well: DB servers write plaintext to SAN/NAS unless encryption configured (see LO06 storage notes)
 
 ## Cards
-Q:: Which two DB platforms get transport encryption in this subsection?
-A:: MS SQL Server (Force Encryption) and Oracle (Advanced Security SSL).
-#flashcard
-Q:: SQL Server: where is Force Encryption enabled?
-A:: SQL Server Configuration Manager → Protocols for MSSQLSERVER → Flags → Force Encryption = Yes → Apply → restart SQL Server service.
-#flashcard
+Which two DB platforms get transport encryption in this subsection?
+?
+MS SQL Server (Force Encryption) and Oracle (Advanced Security SSL).
+
+SQL Server: where is Force Encryption enabled?
+?
+SQL Server Configuration Manager → Protocols for MSSQLSERVER → Flags → Force Encryption = Yes → Apply → restart SQL Server service.

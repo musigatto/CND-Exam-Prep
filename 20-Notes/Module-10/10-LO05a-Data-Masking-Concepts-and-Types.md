@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "10"
 lo: "05"
-tags: [concept, process, tool, mod/10]
+tags: [concept, process, tool, mod/10, flashcard/10]
 topic: "Data Masking — Concepts, Types, Reasons"
 exam_weight: unknown
 status: done
@@ -36,18 +37,22 @@ unresolved: []
 - Choose type by: org size, **location (cloud vs on-premise)**, complexity of data to secure
 
 ## Cards
-Q:: What is data masking?
-A:: Hiding original data with random characters/other data, minimizing exposure of PII, PHI, PCI card data, IP while keeping a realistic format.
-#flashcard
-Q:: SDM vs DDM vs on-the-fly masking?
-A:: SDM = mask at rest (DB copy); DDM = mask in transit (role-based, proxy alters SQL); on-the-fly = transform between source and target environments.
-#flashcard
-Q:: 4 reasons to include masking in data security?
-A:: Nonproduction data protection · insider threats · third-party sharing · regulatory compliance (GDPR).
-#flashcard
-Q:: Masked card example `2424 6789 4545 3421`?
-A:: `2424 XXXX XXXX 3421` — format preserved, key values changed.
-#flashcard
-Q:: What factors guide data masking type selection?
-A:: Organization size · location (cloud vs on-premise) · complexity of data to secure.
-#flashcard
+What is data masking?
+?
+Hiding original data with random characters/other data, minimizing exposure of PII, PHI, PCI card data, IP while keeping a realistic format.
+
+SDM vs DDM vs on-the-fly masking?
+?
+SDM = mask at rest (DB copy); DDM = mask in transit (role-based, proxy alters SQL); on-the-fly = transform between source and target environments.
+
+4 reasons to include masking in data security?
+?
+Nonproduction data protection · insider threats · third-party sharing · regulatory compliance (GDPR).
+
+Masked card example `2424 6789 4545 3421`?
+?
+`2424 XXXX XXXX 3421` — format preserved, key values changed.
+
+What factors guide data masking type selection?
+?
+Organization size · location (cloud vs on-premise) · complexity of data to secure.

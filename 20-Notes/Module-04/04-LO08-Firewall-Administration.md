@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "04"
 lo: "08"
-tags: [process, bestpractice, policy, mod/04]
+tags: [process, bestpractice, policy, mod/04, flashcard/04]
 topic: "Firewall Administration Activities"
 exam_weight: unknown
 status: done
@@ -62,18 +63,22 @@ Administration = managing firewall devices/software to maintain security. Includ
 - Policy controls: allow only internal IPs through the firewall · block traffic containing private addresses · block all outbound VLAN workgroup traffic · block broadcast traffic + traffic from servers needing no external connectivity
 
 ## Cards
-Q:: Firewall remote management protection?
-A:: Encryption + strong user auth; HTTPS (SSL over HTTP) GUI; unique user IDs/passwords, token-based RADIUS.
-#flashcard
-Q:: Failover mechanism?
-A:: Heartbeat-based services shift traffic to backup firewall; primary+backup behind a single MAC address.
-#flashcard
-Q:: Firewall backup policy?
-A:: Full 'day zero' backups (not incremental) before production release; in-built backup facilities; UNIX /var holds logs+spools.
-#flashcard
-Q:: On security incident, first actions?
-A:: Temporarily disable remote access + revoke user authentication; correlate events via NTP-synchronized firewall.
-#flashcard
-Q:: Client access to external hosts?
-A:: Never direct — through firewall as proxy; a firewall combines application-level packet filtering + domain-level proxy.
-#flashcard
+Firewall remote management protection?
+?
+Encryption + strong user auth; HTTPS (SSL over HTTP) GUI; unique user IDs/passwords, token-based RADIUS.
+
+Failover mechanism?
+?
+Heartbeat-based services shift traffic to backup firewall; primary+backup behind a single MAC address.
+
+Firewall backup policy?
+?
+Full 'day zero' backups (not incremental) before production release; in-built backup facilities; UNIX /var holds logs+spools.
+
+On security incident, first actions?
+?
+Temporarily disable remote access + revoke user authentication; correlate events via NTP-synchronized firewall.
+
+Client access to external hosts?
+?
+Never direct — through firewall as proxy; a firewall combines application-level packet filtering + domain-level proxy.

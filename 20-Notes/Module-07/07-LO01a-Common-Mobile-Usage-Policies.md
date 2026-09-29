@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "07"
 lo: "01"
-tags: [concept, policy, mod/07]
+tags: [concept, policy, mod/07, flashcard/07]
 topic: "Common Mobile Usage Policies"
 exam_weight: unknown
 status: done
@@ -28,9 +29,10 @@ Organizations follow **4 approaches** to grant employees permission to use mobil
 - **Integration and application:** how closely the device is integrated into the daily workflow · installed/running applications · should personal applications be restricted?
 
 ## Cards
-Q:: The four mobile use approaches in enterprise?
-A:: BYOD (Bring Your Own Device) · COPE (Company Owned, Personally Enabled) · COBO (Company Owned, Business Only) · CYOD (Choose Your Own Device).
-#flashcard
-Q:: What three areas do the decision questions cover when choosing a mobile approach?
-A:: Device specific (type, selection, cost, providers) · management and support · integration and application.
-#flashcard
+The four mobile use approaches in enterprise?
+?
+BYOD (Bring Your Own Device) · COPE (Company Owned, Personally Enabled) · COBO (Company Owned, Business Only) · CYOD (Choose Your Own Device).
+
+What three areas do the decision questions cover when choosing a mobile approach?
+?
+Device specific (type, selection, cost, providers) · management and support · integration and application.

@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "08"
 lo: "05"
-tags: [process, tool, bestpractice, mod/08]
+tags: [process, tool, bestpractice, mod/08, flashcard/08]
 topic: "IoT Security Measures — Visibility & Segmentation (M01–M05)"
 exam_weight: unknown
 status: done
@@ -37,18 +38,22 @@ unresolved: []
 - Deny by default; allow only required north-south traffic
 
 ## Cards
-Q:: Security measures M01–M05?
-A:: Complete visibility → IoT asset maps → behavior monitoring → ecosystem-interface understanding → network segmentation.
-#flashcard
-Q:: Asset discovery tools for IoT (M01)?
-A:: AssetExplorer (ManageEngine), ServiceNow ITSM, Azure IoT Hub, AWS IoT Device Management.
-#flashcard
-Q:: IoT asset map tool (M02)?
-A:: Oracle IoT Asset Monitoring Cloud Service.
-#flashcard
-Q:: IoT behavior monitoring tools (M03)?
-A:: Domotz Pro, TeamViewer IoT, Azure IoT Hub, AWS IoT Device Management.
-#flashcard
-Q:: OWASP #3 — insecure ecosystem interfaces?
-A:: Web/mobile/cloud → weak authentication, weak encryption, missing filtering.
-#flashcard
+Security measures M01–M05?
+?
+Complete visibility → IoT asset maps → behavior monitoring → ecosystem-interface understanding → network segmentation.
+
+Asset discovery tools for IoT (M01)?
+?
+AssetExplorer (ManageEngine), ServiceNow ITSM, Azure IoT Hub, AWS IoT Device Management.
+
+IoT asset map tool (M02)?
+?
+Oracle IoT Asset Monitoring Cloud Service.
+
+IoT behavior monitoring tools (M03)?
+?
+Domotz Pro, TeamViewer IoT, Azure IoT Hub, AWS IoT Device Management.
+
+OWASP #3 — insecure ecosystem interfaces?
+?
+Web/mobile/cloud → weak authentication, weak encryption, missing filtering.

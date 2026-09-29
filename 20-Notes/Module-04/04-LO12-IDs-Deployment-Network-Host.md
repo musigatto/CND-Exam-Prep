@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "04"
 lo: "12"
-tags: [bestpractice, process, mod/04]
+tags: [bestpractice, process, mod/04, flashcard/04]
 topic: "Effective IDS Deployment (Network & Host)"
 exam_weight: unknown
 status: done
@@ -35,18 +36,22 @@ unresolved: []
 - Large-scale HIDS = many false alarms, expensive, requires additional software + maintenance per host
 
 ## Cards
-Q:: IDS staged deployment benefit?
-A:: Discovers where security/sensors are needed, lets admins adapt; initial stage requires highest maintenance.
-#flashcard
-Q:: NIDS sensor order of deployment?
-A:: IDS management console first, then sensors incrementally at choke points/gateways/DMZ.
-#flashcard
-Q:: Outside-firewall sensor tuning (L1)?
-A:: Least-sensitive attacks, logs attempts only (no alerts) to avoid false alarms.
-#flashcard
-Q:: DMZ sensor (L2) coverage?
-A:: Perimeter + firewall-bypass detection; web/FTP servers; low-moderate impact attacks; also outbound.
-#flashcard
-Q:: HIDS deployment approach?
-A:: Critical servers first → management console → then every host, only if manageable (costly, many false alarms).
-#flashcard
+IDS staged deployment benefit?
+?
+Discovers where security/sensors are needed, lets admins adapt; initial stage requires highest maintenance.
+
+NIDS sensor order of deployment?
+?
+IDS management console first, then sensors incrementally at choke points/gateways/DMZ.
+
+Outside-firewall sensor tuning (L1)?
+?
+Least-sensitive attacks, logs attempts only (no alerts) to avoid false alarms.
+
+DMZ sensor (L2) coverage?
+?
+Perimeter + firewall-bypass detection; web/FTP servers; low-moderate impact attacks; also outbound.
+
+HIDS deployment approach?
+?
+Critical servers first → management console → then every host, only if manageable (costly, many false alarms).

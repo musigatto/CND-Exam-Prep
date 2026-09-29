@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "02"
 lo: "05"
-tags: [process, mod/02]
+tags: [process, mod/02, flashcard/02]
 topic: "Other Administrative Security Measures"
 exam_weight: unknown
 status: done
@@ -34,14 +35,16 @@ Personnel security measures from **selection/hiring of staff or contractors → 
   - Real-time **remote desktop viewing & control** · program logging · SpyAnywhere cloud access + real-time log viewing · email log delivery · FTP log delivery
 
 ## Cards
-Q:: Leaving-process actions?
-A:: Remove access rights + collect assets · remove org data from personal devices · change passwords · deactivate email & remote-access accounts · debriefing · remove biometric/badge codes.
-#flashcard
+Leaving-process actions?
+?
+Remove access rights + collect assets · remove org data from personal devices · change passwords · deactivate email & remote-access accounts · debriefing · remove biometric/badge codes.
 
-Q:: Employee monitoring purpose?
-A:: Detect policy-violation activity, measure & enhance productivity, and secure corporate resources (e.g., Spytech SpyAgent).
-#flashcard
 
-Q:: SpyAgent monitoring features (key)?
-A:: Keystroke logging · screenshots · email/social/chat monitoring · webcam/mic recording · remote desktop viewing & control · clipboard logging · email/FTP log delivery.
-#flashcard
+Employee monitoring purpose?
+?
+Detect policy-violation activity, measure & enhance productivity, and secure corporate resources (e.g., Spytech SpyAgent).
+
+
+SpyAgent monitoring features (key)?
+?
+Keystroke logging · screenshots · email/social/chat monitoring · webcam/mic recording · remote desktop viewing & control · clipboard logging · email/FTP log delivery.

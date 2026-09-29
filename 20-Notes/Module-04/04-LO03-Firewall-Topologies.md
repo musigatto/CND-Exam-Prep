@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "04"
 lo: "03"
-tags: [concept, mod/04]
+tags: [concept, mod/04, flashcard/04]
 topic: "Firewall Topologies"
 exam_weight: unknown
 status: done
@@ -41,15 +42,18 @@ Three architectures: **Bastion Host · Screened Subnet · Multi-homed Firewall**
 - Place a **separate firewall for each isolated zone** based on security demand
 
 ## Cards
-Q:: Screened subnet alias + structure?
-A:: "Triple-homed firewall" (single FW, 3 interfaces: Internet/DMZ/intranet); DMZ hosts public services; compromises FW can't reach intranet.
-#flashcard
-Q:: Dual-homed host key property?
-A:: Two NICs (untrusted + trusted); no direct routing between them — firewall is the intermediary.
-#flashcard
-Q:: Topology for a simple network with no public services?
-A:: Bastion host (single layer of protection; fine for corporate surfing, not web/email hosting).
-#flashcard
-Q:: Topology when two or more network zones exist?
-A:: Multi-homed firewall (per-interface security policies; trusted network stays safe if DMZ breached).
-#flashcard
+Screened subnet alias + structure?
+?
+"Triple-homed firewall" (single FW, 3 interfaces: Internet/DMZ/intranet); DMZ hosts public services; compromises FW can't reach intranet.
+
+Dual-homed host key property?
+?
+Two NICs (untrusted + trusted); no direct routing between them — firewall is the intermediary.
+
+Topology for a simple network with no public services?
+?
+Bastion host (single layer of protection; fine for corporate surfing, not web/email hosting).
+
+Topology when two or more network zones exist?
+?
+Multi-homed firewall (per-interface security policies; trusted network stays safe if DMZ breached).

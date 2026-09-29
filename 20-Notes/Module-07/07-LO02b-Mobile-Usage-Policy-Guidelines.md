@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "07"
 lo: "02"
-tags: [concept, policy, bestpractice, mod/07]
+tags: [concept, policy, bestpractice, mod/07, flashcard/07]
 topic: "Security Guidelines for Mobile Usage Policies"
 exam_weight: unknown
 status: done
@@ -41,12 +42,14 @@ Allowed methods (access gateway): **No authentication** · **Domain only** · **
 - Specify whether the **domain password can be cached** on the device or must be re-entered each access
 
 ## Cards
-Q:: Which devices are disallowed under the admin mobile guidelines?
-A:: Jailbroken (iOS) and rooted (Android) devices; also devices with a poor security record.
-#flashcard
-Q:: Access gateway authentication methods?
-A:: No authentication · Domain only · SMS authentication · RSA SecurID only · Domain + RSA SecurID. Enforce a session timeout.
-#flashcard
-Q:: BYOD employee-separation rule on leaving?
-A:: State whether total device wipe or selective wipe of specific apps/data is required; keep organization and personal data maintained separately.
-#flashcard
+Which devices are disallowed under the admin mobile guidelines?
+?
+Jailbroken (iOS) and rooted (Android) devices; also devices with a poor security record.
+
+Access gateway authentication methods?
+?
+No authentication · Domain only · SMS authentication · RSA SecurID only · Domain + RSA SecurID. Enforce a session timeout.
+
+BYOD employee-separation rule on leaving?
+?
+State whether total device wipe or selective wipe of specific apps/data is required; keep organization and personal data maintained separately.

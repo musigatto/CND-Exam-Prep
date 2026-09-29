@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "10"
 lo: "08"
-tags: [concept, process, tool, mod/10]
+tags: [concept, process, tool, mod/10, flashcard/10]
 topic: "Data Loss Prevention (DLP)"
 exam_weight: unknown
 status: done
@@ -42,21 +43,26 @@ unresolved: []
 **Symantec DLP** (Broadcom; single web console, on-prem/cloud/mobile) · **McAfee Total Protection for DLP** (ePolicy Orchestrator) · **Quantum DLP** (Check Point) · **Trustwave DLP** (web comms, HTTP/HTTPS/FTP) · **Digital Guardian** (scanning endpoints/servers + cloud) · **Forcepoint Enterprise DLP** (user-risk scoring) · **DriveStrike** (lost/stolen device locate/lock/wipe) · **Retrospect** · **Safend** (**Data Protection Suite**)
 
 ## Cards
-Q:: What is DLP?
-A:: Software products + processes that prevent users from sending confidential corporate data outside the organization.
-#flashcard
-Q:: Name the 3 DLP types and what data phase each protects.
-A:: Endpoint DLP = data in use · Network DLP = data in transit · Storage DLP = data at rest.
-#flashcard
-Q:: Where is Network DLP typically installed and what does it scan?
-A:: At the network perimeter; scans all data in transit — email, social media, SSL, IM across ports/protocols.
-#flashcard
-Q:: What inspection channels does MyDLP (open source) support?
-A:: Web, email, instant messaging, printers, removable storage devices, screenshots.
-#flashcard
-Q:: Key DLP implementation best practice regarding false positives?
-A:: Implement with a minimal base to reduce false positives, then enhance gradually as sensitive data is identified.
-#flashcard
-Q:: Which Microsoft solution provides endpoint DLP and integrates with AIP?
-A:: Windows Information Protection (WIP); Windows Defender ATP evaluates content, Azure Information Protection aggregates labeled files.
-#flashcard
+What is DLP?
+?
+Software products + processes that prevent users from sending confidential corporate data outside the organization.
+
+Name the 3 DLP types and what data phase each protects.
+?
+Endpoint DLP = data in use · Network DLP = data in transit · Storage DLP = data at rest.
+
+Where is Network DLP typically installed and what does it scan?
+?
+At the network perimeter; scans all data in transit — email, social media, SSL, IM across ports/protocols.
+
+What inspection channels does MyDLP (open source) support?
+?
+Web, email, instant messaging, printers, removable storage devices, screenshots.
+
+Key DLP implementation best practice regarding false positives?
+?
+Implement with a minimal base to reduce false positives, then enhance gradually as sensitive data is identified.
+
+Which Microsoft solution provides endpoint DLP and integrates with AIP?
+?
+Windows Information Protection (WIP); Windows Defender ATP evaluates content, Azure Information Protection aggregates labeled files.

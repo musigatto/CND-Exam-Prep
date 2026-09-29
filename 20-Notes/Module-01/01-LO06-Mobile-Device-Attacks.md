@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "01"
 lo: "06"
-tags: [threat, mod/01]
+tags: [threat, mod/01, flashcard/01]
 topic: "Mobile Device-specific Attack Techniques"
 exam_weight: unknown
 status: done
@@ -50,10 +51,13 @@ unresolved: []
 > Android=`su`+`chmod` (root) · iOS=kernel patches (jailbreak). Bluebugging = control. Bluesnarfing = steal.
 
 ## Cards
-Q:: Difference between bluesnarfing and bluebugging?
-A:: Bluesnarfing steals information via Bluetooth; bluebugging gains control over the device via Bluetooth.
-#flashcard
+Difference between bluesnarfing and bluebugging?
+?
+Bluesnarfing steals information via Bluetooth; bluebugging gains control over the device via Bluetooth.
+<!--SR:!2026-09-30,1,230-->
 
-Q:: How is Android rooting implemented?
-A:: Exploiting firmware vulnerabilities and copying the su binary to a PATH location (e.g. /system/xbin/su) with executable permissions via chmod.
-#flashcard
+
+How is Android rooting implemented?
+?
+Exploiting firmware vulnerabilities and copying the su binary to a PATH location (e.g. /system/xbin/su) with executable permissions via chmod.
+<!--SR:!2026-09-30,1,230-->

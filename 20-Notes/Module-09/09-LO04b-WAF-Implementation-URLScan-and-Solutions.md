@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "09"
 lo: "04"
-tags: [tool, command, threat, bestpractice, mod/09]
+tags: [tool, command, threat, bestpractice, mod/09, flashcard/09]
 topic: "WAF Implementation — URLScan and WAF Solutions"
 exam_weight: unknown
 status: done
@@ -39,22 +40,26 @@ unresolved: []
 | **FortiWeb (Fortinet)** | ML-enabled protection for known + unknown vulnerabilities |
 
 ## Cards
-Q:: URLScan purpose?
-A:: IIS WAF tool filtering HTTP requests; SQL injection + XSS protection; rejects risky requests with HTTP 404.
-#flashcard
-Q:: URLScan reject criteria list?
-A:: Request verb · file extension · suspicious URL encoding · non-ASCII chars · specified char sequences · specified headers.
-#flashcard
-Q:: NAXSI model?
-A:: Open-source positive-model WAF for Nginx; no signature updates needed, low rule maintenance.
-#flashcard
-Q:: WebKnight placement?
-A:: ISAPI filter for Microsoft IIS; blocks bad requests.
-#flashcard
-Q:: AppWall special coverage?
-<!--SR:!2026-09-30,1,230-->
-A:: Behind-CDN attacks, API manipulation, Slowloris, dynamic floods, brute-force on login pages.
-#flashcard
-Q:: Wallarm scope?
-A:: APIs, microservices, web apps; OWASP API Top 10, API abuse, automated threats, real-time.
-#flashcard
+URLScan purpose?
+?
+IIS WAF tool filtering HTTP requests; SQL injection + XSS protection; rejects risky requests with HTTP 404.
+
+URLScan reject criteria list?
+?
+Request verb · file extension · suspicious URL encoding · non-ASCII chars · specified char sequences · specified headers.
+
+NAXSI model?
+?
+Open-source positive-model WAF for Nginx; no signature updates needed, low rule maintenance.
+
+WebKnight placement?
+?
+ISAPI filter for Microsoft IIS; blocks bad requests.
+
+AppWall special coverage?
+?
+Behind-CDN attacks, API manipulation, Slowloris, dynamic floods, brute-force on login pages.
+
+Wallarm scope?
+?
+APIs, microservices, web apps; OWASP API Top 10, API abuse, automated threats, real-time.

@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "05"
 lo: "02"
-tags: [concept, tool, mod/05]
+tags: [concept, tool, mod/05, flashcard/05]
 topic: "Windows Security Components"
 exam_weight: unknown
 status: done
@@ -58,56 +59,68 @@ Windows security model = collection of **user-mode + kernel-mode processes** tha
 - Table 5.1 — kernel security support functions/macros (for file-system filter drivers): `SecLookupAccountName` (name→SID+domain) · `SecLookupAccountSid` (SID→name+domain) · `SecLookupWellKnownSid` (well-known type→local SID) · `SecMakeSPN`/`SecMakeSPNEx`/`SecMakeSPNEx2` (SPN strings for security service providers)
 
 ## Cards
-Q:: Windows security blocks/components?
-A:: SRM · LSASS · SAM · WinLogon/NetLogon · Registry · Access control · Active Directory.
-#flashcard
-Q:: SRM function + location?
-A:: Enforces ACL-based access control over subjects→objects, logs for auditing; kernel component `system32\Ntoskrnl.exe`.
-#flashcard
-Q:: LSASS role/location?
-A:: `lsass.exe`; local-logon authentication, local security policies, issues access tokens, audit messages to Event Log.
-#flashcard
-Q:: SAM store + location?
-A:: Hashed local logon credentials; `samsrv.dll`, DB in `C:\Windows\System32\config\`.
-#flashcard
-Q:: DC logon-database usage?
-A:: DC uses AD database; SAM only for DSRM boot / local logon (DSRM password stored in SAM).
-#flashcard
-Q:: Credential providers?
-A:: COM objects in LogonUI collecting password/PIN/biometrics (authui.dll, SmartcardCredentialProvider.dll).
-#flashcard
-Q:: NetLogon functions?
-A:: Identify DC, set up secure channel, send auth request to DC, return result; used for AD logons.
-#flashcard
-Q:: KSecDD?
-A:: Kernel-mode library `ksecdd.sys` for ALPC; kernel-mode security ↔ LSASS in user mode; SecLookup*/SecMakeSPN* functions.
-#flashcard
+Windows security blocks/components?
+?
+SRM · LSASS · SAM · WinLogon/NetLogon · Registry · Access control · Active Directory.
+
+SRM function + location?
+?
+Enforces ACL-based access control over subjects→objects, logs for auditing; kernel component `system32\Ntoskrnl.exe`.
+
+LSASS role/location?
+?
+`lsass.exe`; local-logon authentication, local security policies, issues access tokens, audit messages to Event Log.
+
+SAM store + location?
+?
+Hashed local logon credentials; `samsrv.dll`, DB in `C:\Windows\System32\config\`.
+
+DC logon-database usage?
+?
+DC uses AD database; SAM only for DSRM boot / local logon (DSRM password stored in SAM).
+
+Credential providers?
+?
+COM objects in LogonUI collecting password/PIN/biometrics (authui.dll, SmartcardCredentialProvider.dll).
+
+NetLogon functions?
+?
+Identify DC, set up secure channel, send auth request to DC, return result; used for AD logons.
+
+KSecDD?
+?
+Kernel-mode library `ksecdd.sys` for ALPC; kernel-mode security ↔ LSASS in user mode; SecLookup*/SecMakeSPN* functions.
+
 
 ## Cards (verified set 617277655)
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-Q:: Security Reference Monitor (SRM)
-A:: enforces an access control policy (ACL) over the ability of subjects to carry out operations on objects in a system. It is responsible for controlling access of a user to Windows resources.  _(Mod 05 p17)_
-#flashcard
+Security Reference Monitor (SRM)
+?
+enforces an access control policy (ACL) over the ability of subjects to carry out operations on objects in a system. It is responsible for controlling access of a user to Windows resources.  _(Mod 05 p17)_
 
-Q:: Local Security Authority Subsystem (LSASS)
-A:: implements local security policies privileges granted to users and groups, system security auditing settings, user authentication, and sends security audit messages to the event log.  _(Mod 05 p19)_
-#flashcard
 
-Q:: Security Accounts Manager (SAM)
-A:: is a database that stores the logon credentials of local users and groups. It is a user-mode component that saves the data that is used by LSASS.  _(Mod 05 p21)_
-#flashcard
+Local Security Authority Subsystem (LSASS)
+?
+implements local security policies privileges granted to users and groups, system security auditing settings, user authentication, and sends security audit messages to the event log.  _(Mod 05 p19)_
 
-Q:: Network logon service (NetLogon)
-A:: a service or a dynamic-link library file that runs continuously in the background. Therefore, it will not stop running unless it is forcibly stopped, or it incurs a runtime error. It can be stopped or restarted using the command-line terminal. It is used for AD logons.  _(Mod 05 p30)_
-#flashcard
 
-Q:: Windows logon application (WinLogon)
-A:: used when a user wants to login to system locally. It is a user-mode running process and is responsible for managing user authorization sessions. It is activated when the system is turned on and runs in the background  _(Mod 05 p27)_
-#flashcard
+Security Accounts Manager (SAM)
+?
+is a database that stores the logon credentials of local users and groups. It is a user-mode component that saves the data that is used by LSASS.  _(Mod 05 p21)_
 
-Q:: CPs
-A:: a Windows security component. Credential providers (CPs) are in-process component object model (COM) objects. They run in the LogonUI process and are used to get username and password, smartcard PIN, or biometric data.  _(Mod 05 p29)_
-#flashcard
 
+Network logon service (NetLogon)
+?
+a service or a dynamic-link library file that runs continuously in the background. Therefore, it will not stop running unless it is forcibly stopped, or it incurs a runtime error. It can be stopped or restarted using the command-line terminal. It is used for AD logons.  _(Mod 05 p30)_
+
+
+Windows logon application (WinLogon)
+?
+used when a user wants to login to system locally. It is a user-mode running process and is responsible for managing user authorization sessions. It is activated when the system is turned on and runs in the background  _(Mod 05 p27)_
+
+
+CPs
+?
+a Windows security component. Credential providers (CPs) are in-process component object model (COM) objects. They run in the LogonUI process and are used to get username and password, smartcard PIN, or biometric data.  _(Mod 05 p29)_

@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "06"
 lo: "06"
-tags: [concept, tool, command, crypto, mod/06]
+tags: [concept, tool, command, crypto, mod/06, flashcard/06]
 topic: "Linux Security Tools and Frameworks"
 exam_weight: unknown
 status: done
@@ -72,21 +73,26 @@ unresolved: []
 | **Grsecurity** | grsecurity.net | Hardened kernel: intelligent access control, memory-corruption exploit prevention, host of hardening (no config needed) |
 
 ## Cards
-Q:: Lynis purpose?
-A:: Open-source security auditing + hardening + compliance testing (PCI/HIPAA/SOX); modular, uses only discovered system components → keeps system clean.
-#flashcard
-Q:: AppArmor vs SELinux?
-A:: Both MAC on LSM. AppArmor: per-program profiles (text in /etc/apparmor.d/), aa-enforce, apparmor_status. SELinux: kernel-level, TE + RBAC + MLS, 3 modes enforcing/permissive/disabled.
-#flashcard
-Q:: SELinux modes?
-A:: enforcing (policy enforced/blocks), permissive (warnings + logs), disabled (no policy). Config /etc/selinux/config SELINUX=; status via sestatus.
-#flashcard
-Q:: SCAP components?
-A:: CVE, CCE, CPE, CVSS, XCCDF, OVAL, OCIL 2.0, Asset Identification, ARF, CCSS, TMSAD — XML namespaced standards (NIST).
-#flashcard
-Q:: OpenSCAP install + basic run?
-A:: Ubuntu `apt-get install libopenscap8`; Fedora `dnf install openscap-scanner`; RHEL/CentOS `yum install openscap-scanner`; OVAL: `oscap oval eval --results ... --report report.html <oval.xml>`.
-#flashcard
-Q:: Name additional hardening tools?
-A:: Bastille Linux, JShielder, nixarmor, bane, Grsecurity (kernel exploit prevention), Comodo Antivirus.
-#flashcard
+Lynis purpose?
+?
+Open-source security auditing + hardening + compliance testing (PCI/HIPAA/SOX); modular, uses only discovered system components → keeps system clean.
+
+AppArmor vs SELinux?
+?
+Both MAC on LSM. AppArmor: per-program profiles (text in /etc/apparmor.d/), aa-enforce, apparmor_status. SELinux: kernel-level, TE + RBAC + MLS, 3 modes enforcing/permissive/disabled.
+
+SELinux modes?
+?
+enforcing (policy enforced/blocks), permissive (warnings + logs), disabled (no policy). Config /etc/selinux/config SELINUX=; status via sestatus.
+
+SCAP components?
+?
+CVE, CCE, CPE, CVSS, XCCDF, OVAL, OCIL 2.0, Asset Identification, ARF, CCSS, TMSAD — XML namespaced standards (NIST).
+
+OpenSCAP install + basic run?
+?
+Ubuntu `apt-get install libopenscap8`; Fedora `dnf install openscap-scanner`; RHEL/CentOS `yum install openscap-scanner`; OVAL: `oscap oval eval --results ... --report report.html <oval.xml>`.
+
+Name additional hardening tools?
+?
+Bastille Linux, JShielder, nixarmor, bane, Grsecurity (kernel exploit prevention), Comodo Antivirus.

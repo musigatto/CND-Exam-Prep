@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "03"
 lo: "05"
-tags: [crypto, mod/03]
+tags: [crypto, mod/03, flashcard/03]
 topic: "Cryptographic Algorithms"
 exam_weight: unknown
 status: done
@@ -64,43 +65,50 @@ unresolved: []
 - Runs underlying hash **twice** → protects from **length-extension attacks**; key/output size e.g., 128-bit (MD5) or 160-bit (SHA-1); verifies data integrity + message authentication
 
 ## Cards
-Q:: DES vs 3DES keys?
-A:: DES 64-bit block / 56-bit key; 3DES = DES thrice (encrypt K1, decrypt K2, encrypt K3) — independent keys most secure, identical keys least.
-#flashcard
+DES vs 3DES keys?
+?
+DES 64-bit block / 56-bit key; 3DES = DES thrice (encrypt K1, decrypt K2, encrypt K3) — independent keys most secure, identical keys least.
 
-Q:: AES parameters?
-A:: 128-bit block; key sizes 128/192/256; iterated block cipher (NIST).
-#flashcard
 
-Q:: RC6 vs RC5?
-A:: RC6 adds integer multiplication + four 4-bit working registers.
-#flashcard
+AES parameters?
+?
+128-bit block; key sizes 128/192/256; iterated block cipher (NIST).
 
-Q:: DSA basis + hash size?
-A:: FIPS 186 digital signature standard; 320-bit signature, 512–1024-bit security.
-#flashcard
 
-Q:: RSA digital envelope?
-A:: DES-encrypted message + RSA-encrypted DES key.
-#flashcard
+RC6 vs RC5?
+?
+RC6 adds integer multiplication + four 4-bit working registers.
 
-Q:: SHA generations?
-A:: SHA-1 (160-bit, deprecated), SHA-2 (SHA-256/512 + truncations), SHA-3 (sponge construction).
-#flashcard
 
-Q:: HMAC key property?
-A:: Uses inner+outer keys; executes hash twice → resists length-extension attacks.
-#flashcard
+DSA basis + hash size?
+?
+FIPS 186 digital signature standard; 320-bit signature, 512–1024-bit security.
+
+
+RSA digital envelope?
+?
+DES-encrypted message + RSA-encrypted DES key.
+
+
+SHA generations?
+?
+SHA-1 (160-bit, deprecated), SHA-2 (SHA-256/512 + truncations), SHA-3 (sponge construction).
+
+
+HMAC key property?
+?
+Uses inner+outer keys; executes hash twice → resists length-extension attacks.
+
 
 ## Cards (verified set 617277655)
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-Q:: Secure Hashing Algorithm (SHA)
-A:: generate a cryptographically one-way hash and is published by NIST as a Federal Information Standard  _(Mod 03 p94)_
-#flashcard
+Secure Hashing Algorithm (SHA)
+?
+generate a cryptographically one-way hash and is published by NIST as a Federal Information Standard  _(Mod 03 p94)_
 
-Q:: Digital Signature Algorithm
-A:: It is a Federal Information Processing Standard (FIPS) for digital signatures.  _(Mod 03 p90)_
-#flashcard
 
+Digital Signature Algorithm
+?
+It is a Federal Information Processing Standard (FIPS) for digital signatures.  _(Mod 03 p90)_

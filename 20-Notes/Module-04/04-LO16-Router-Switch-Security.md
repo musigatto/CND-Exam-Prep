@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "04"
 lo: "16"
-tags: [bestpractice, process, mod/04]
+tags: [bestpractice, process, mod/04, flashcard/04]
 topic: "Router & Switch Security Measures, Recommendations, Best Practices"
 exam_weight: unknown
 status: done
@@ -55,18 +56,22 @@ unresolved: []
 - Time-out sessions + user access rights; keep config file offline + control access; review switch security logs; AAA for local + remote access
 
 ## Cards
-Q:: Why harden routers?
-A:: Prevent info disclosure, router disablement/reconfiguration, internal/external attacks via router, traffic rerouting.
-#flashcard
-Q:: Three key router disables?
-A:: IP directed broadcasts, IP source routing, HTTP configuration (clear text); plus ARP/proxy ARP.
-#flashcard
-Q:: Switch port-security MAC methods?
-A:: Static (single MAC), dynamic (CAM default), sticky (port-assigned MAC; lost if not saved over reboot).
-#flashcard
-Q:: Switch layer-2 attack types?
-A:: MAC flooding, DHCP spoofing, ARP spoofing.
-#flashcard
-Q:: Switch hardening controls?
-A:: SSH, ACLs/VLAN ACLs, DHCP snooping, DAI, port security, port auth, STP root/BPDU guards, disable DTP/CDP/auto-trunking, AAA.
-#flashcard
+Why harden routers?
+?
+Prevent info disclosure, router disablement/reconfiguration, internal/external attacks via router, traffic rerouting.
+
+Three key router disables?
+?
+IP directed broadcasts, IP source routing, HTTP configuration (clear text); plus ARP/proxy ARP.
+
+Switch port-security MAC methods?
+?
+Static (single MAC), dynamic (CAM default), sticky (port-assigned MAC; lost if not saved over reboot).
+
+Switch layer-2 attack types?
+?
+MAC flooding, DHCP spoofing, ARP spoofing.
+
+Switch hardening controls?
+?
+SSH, ACLs/VLAN ACLs, DHCP snooping, DAI, port security, port auth, STP root/BPDU guards, disable DTP/CDP/auto-trunking, AAA.

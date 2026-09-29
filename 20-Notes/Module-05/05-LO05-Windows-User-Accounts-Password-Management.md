@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "05"
 lo: "05"
-tags: [concept, policy, command, mod/05]
+tags: [concept, policy, command, mod/05, flashcard/05]
 topic: "Windows User Account and Password Management"
 exam_weight: unknown
 status: done
@@ -62,33 +63,39 @@ unresolved: []
 - GPO: Computer Configuration → Admin Templates → **System → Device Guard → Turn On Virtualization Based Security** → Enabled; Platform Security Level: **Secure Boot** or **Secure Boot + DMA Protection** (requires Win10 / Server 2016+)
 
 ## Cards
-Q:: Three Windows account types?
-A:: Administrator (full access), Standard (own files only), Guest (read/write only).
-#flashcard
-Q:: Disable guest account (command)?
-A:: `net user guest /active:No`; policy: Local Policies → Security Options → 'Accounts: Guest account status'.
-#flashcard
-Q:: Disable vs delete an account?
-A:: Disabled = restorable; deleted = cannot be restored.
-#flashcard
-Q:: Password complexity requirements?
-A:: Not contain account name/2+ consecutive name chars; ≥6 chars; 3 of 4 categories (upper, lower, digits, non-alphabetic).
-#flashcard
-Q:: Default maximum password age?
-A:: 42 days.
-#flashcard
-Q:: Credential Guard protects what?
-A:: LANMAN password hashes + Kerberos TGT; thwarts pass-the-hash; hashes can't be decrypted even if extracted.
-#flashcard
-Q:: Why worry about local administrator SID?
-A:: If attackers know the admin account's SID they can compromise the system even when the account name is changed.
-#flashcard
+Three Windows account types?
+?
+Administrator (full access), Standard (own files only), Guest (read/write only).
+
+Disable guest account (command)?
+?
+`net user guest /active:No`; policy: Local Policies → Security Options → 'Accounts: Guest account status'.
+
+Disable vs delete an account?
+?
+Disabled = restorable; deleted = cannot be restored.
+
+Password complexity requirements?
+?
+Not contain account name/2+ consecutive name chars; ≥6 chars; 3 of 4 categories (upper, lower, digits, non-alphabetic).
+
+Default maximum password age?
+?
+42 days.
+
+Credential Guard protects what?
+?
+LANMAN password hashes + Kerberos TGT; thwarts pass-the-hash; hashes can't be decrypted even if extracted.
+
+Why worry about local administrator SID?
+?
+If attackers know the admin account's SID they can compromise the system even when the account name is changed.
+
 
 ## Cards (verified set 617277655)
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-Q:: Microsoft Windows Defender Credential Guard (WDCG)
-A:: protects login credentials by restricting their interaction with the components of the system. When Credential Guard is enabled, only privileged software can access the credentials.  _(Mod 05 p81)_
-#flashcard
-
+Microsoft Windows Defender Credential Guard (WDCG)
+?
+protects login credentials by restricting their interaction with the components of the system. When Credential Guard is enabled, only privileged software can access the credentials.  _(Mod 05 p81)_

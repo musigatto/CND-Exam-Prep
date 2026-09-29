@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "05"
 lo: "10"
-tags: [concept, process, tool, command, protocol, crypto, mod/05]
+tags: [concept, process, tool, command, protocol, crypto, mod/05, flashcard/05]
 topic: "Network Services and Protocol Security (RDP, DNS, SMB)"
 exam_weight: unknown
 status: done
@@ -98,36 +99,46 @@ Configure Windows network services + protocols against attacks.
 Weak spots attackers exploit on Windows: **unpatched OS · improper configurations · weak passwords · missing anti-malware · unnecessary services/processes left enabled**. Baseline = Microsoft-recommended config set.
 
 ## Cards
-Q:: RDP default port and encryption scope?
-A:: TCP 3389; tunneling encrypts data between client and server only — terminal-server authentication is unencrypted (guessable → MITM).
-#flashcard
-Q:: Scoping the RDP firewall rule?
-A:: Restrict the RDP rule's Scope to specific remote IP addresses; rejections happen at the firewall, freeing server resources.
-#flashcard
-Q:: RDP gateway encryption path?
-A:: Internal hops use 3389; from the gateway to the client the data is encrypted over HTTPS port 443 with SSL certs.
-#flashcard
-Q:: Why is plain 3389 insecure?
-A:: Password-protected only (not encrypted) → susceptible to brute-force.
-#flashcard
-Q:: What does NLA do?
-A:: Requires authentication before the RDP session is established, sending credentials securely via the client's security service provider.
-#flashcard
-Q:: Remote Credential Guard protection?
-A:: No passwords in memory / no hashes → defeats pass-the-hash and brute-force; redirects Kerberos requests to the client device. Restricted Admin = credentials not delegated.
-#flashcard
-Q:: DNSSEC guarantees vs non-guarantees?
-A:: Guarantees authenticity, integrity, non-existence of name/type; does NOT guarantee confidentiality or DoS protection.
-#flashcard
-Q:: Threat mitigated by DNSSEC?
-A:: DNS cache poisoning and DNS spoofing (validates the key attached to the DNS server response against TLD/root data).
-#flashcard
-Q:: How to spot a malicious domain in DNS logs?
-A:: Unusual random-character names; log via DNS Management Console → Debug Logging → "Log packets for debugging".
-#flashcard
-Q:: SMB version to disable and why?
-A:: SMB 1.0 — legacy, weak; keep SMB 2.0/3.0+ (2.02+ signing, 3.0+ encryption, 3.1.1+ pre-auth integrity). Registry: SMB1 = 0.
-#flashcard
-Q:: SMB encryption details?
-A:: AES-CCM; end-to-end; no IPsec/WAN accelerators; per-share (Set-SmbShare) or server-wide (Set-SmbServerConfiguration).
-#flashcard
+RDP default port and encryption scope?
+?
+TCP 3389; tunneling encrypts data between client and server only — terminal-server authentication is unencrypted (guessable → MITM).
+
+Scoping the RDP firewall rule?
+?
+Restrict the RDP rule's Scope to specific remote IP addresses; rejections happen at the firewall, freeing server resources.
+
+RDP gateway encryption path?
+?
+Internal hops use 3389; from the gateway to the client the data is encrypted over HTTPS port 443 with SSL certs.
+
+Why is plain 3389 insecure?
+?
+Password-protected only (not encrypted) → susceptible to brute-force.
+
+What does NLA do?
+?
+Requires authentication before the RDP session is established, sending credentials securely via the client's security service provider.
+
+Remote Credential Guard protection?
+?
+No passwords in memory / no hashes → defeats pass-the-hash and brute-force; redirects Kerberos requests to the client device. Restricted Admin = credentials not delegated.
+
+DNSSEC guarantees vs non-guarantees?
+?
+Guarantees authenticity, integrity, non-existence of name/type; does NOT guarantee confidentiality or DoS protection.
+
+Threat mitigated by DNSSEC?
+?
+DNS cache poisoning and DNS spoofing (validates the key attached to the DNS server response against TLD/root data).
+
+How to spot a malicious domain in DNS logs?
+?
+Unusual random-character names; log via DNS Management Console → Debug Logging → "Log packets for debugging".
+
+SMB version to disable and why?
+?
+SMB 1.0 — legacy, weak; keep SMB 2.0/3.0+ (2.02+ signing, 3.0+ encryption, 3.1.1+ pre-auth integrity). Registry: SMB1 = 0.
+
+SMB encryption details?
+?
+AES-CCM; end-to-end; no IPsec/WAN accelerators; per-share (Set-SmbShare) or server-wide (Set-SmbServerConfiguration).

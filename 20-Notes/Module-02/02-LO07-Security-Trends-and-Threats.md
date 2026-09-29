@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "02"
 lo: "07"
-tags: [process, mod/02]
+tags: [process, mod/02, flashcard/02]
 topic: "Staying Up to Date on Security Trends and Threats"
 exam_weight: unknown
 status: done
@@ -80,22 +81,26 @@ Study periodically released reports from reputable vendors/orgs:
 - Be respectful/considerate; build trust for lasting professional relationships
 
 ## Cards
-Q:: Six methods to stay up to date?
-A:: News sources · conferences & webinars · communities/groups · reports & research · security competitions · network with professionals.
-#flashcard
+Six methods to stay up to date?
+?
+News sources · conferences & webinars · communities/groups · reports & research · security competitions · network with professionals.
 
-Q:: Most popular & up-to-date breaking news source (courseware)?
-A:: thehackernews.com.
-#flashcard
 
-Q:: Key CERTs?
-A:: US-CERT (US), CERT-EU (EU), CERT-In (India).
-#flashcard
+Most popular & up-to-date breaking news source (courseware)?
+?
+thehackernews.com.
 
-Q:: Oldest & largest cybersecurity conference?
-A:: DEF CON (31 cited) — Las Vegas.
-#flashcard
 
-Q:: Competition example?
-A:: National Cyber League (NCL) Games.
-#flashcard
+Key CERTs?
+?
+US-CERT (US), CERT-EU (EU), CERT-In (India).
+
+
+Oldest & largest cybersecurity conference?
+?
+DEF CON (31 cited) — Las Vegas.
+
+
+Competition example?
+?
+National Cyber League (NCL) Games.

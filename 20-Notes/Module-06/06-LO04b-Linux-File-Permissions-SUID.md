@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "06"
 lo: "04"
-tags: [process, tool, command, policy, concept, mod/06]
+tags: [process, tool, command, policy, concept, mod/06, flashcard/06]
 topic: "Linux File Permissions, Ownership, SUID/SGID"
 exam_weight: unknown
 status: done
@@ -97,21 +98,26 @@ Typical numeric permission settings for important system files:
 - Find no-owner files: `find / -xdev \( -nouser -o -nogroup \) -print`
 
 ## Cards
-Q:: chmod numeric values?
-A:: r=4, w=2, x=1 (0 none). Common: 600 private, 644 owner-write/others-read, 755 owner-all/others-rx, 700 owner-only, 777 no restrictions, 666 all rw.
-#flashcard
-Q:: chown/chgrp usage?
-A:: `chown user file`; `chown user:group file`; `chgrp groupName file` (group only).
-#flashcard
-Q:: Find SUID/SGID binaries?
-A:: `find / -perm +4000` (SUID), `find / -perm +2000` (SGID), combined `find / \( -perm -4000 -o -perm -2000 \) -print`; remove with `chmod a-s <file>`.
-#flashcard
-Q:: Standard permission for /etc/shadow vs /etc/passwd?
-A:: /etc/shadow = 400 (encrypted passwords); /etc/passwd = 644 (account info, no passwords).
-#flashcard
-Q:: Locate world-writable files?
-A:: `find /dir -xdev -perm +o=w ! \( -type d -perm +o=t \) ! -type l -print`; fix: `chmod o-w file`, `chmod +t /path/to/dir`; prevent: `umask 002`.
-#flashcard
-Q:: SUID/SGID risk?
-A:: Programs run with owner/group owner privileges; vulnerabilities in SUID/SGID binaries → privilege escalation.
-#flashcard
+chmod numeric values?
+?
+r=4, w=2, x=1 (0 none). Common: 600 private, 644 owner-write/others-read, 755 owner-all/others-rx, 700 owner-only, 777 no restrictions, 666 all rw.
+
+chown/chgrp usage?
+?
+`chown user file`; `chown user:group file`; `chgrp groupName file` (group only).
+
+Find SUID/SGID binaries?
+?
+`find / -perm +4000` (SUID), `find / -perm +2000` (SGID), combined `find / \( -perm -4000 -o -perm -2000 \) -print`; remove with `chmod a-s <file>`.
+
+Standard permission for /etc/shadow vs /etc/passwd?
+?
+/etc/shadow = 400 (encrypted passwords); /etc/passwd = 644 (account info, no passwords).
+
+Locate world-writable files?
+?
+`find /dir -xdev -perm +o=w ! \( -type d -perm +o=t \) ! -type l -print`; fix: `chmod o-w file`, `chmod +t /path/to/dir`; prevent: `umask 002`.
+
+SUID/SGID risk?
+?
+Programs run with owner/group owner privileges; vulnerabilities in SUID/SGID binaries → privilege escalation.

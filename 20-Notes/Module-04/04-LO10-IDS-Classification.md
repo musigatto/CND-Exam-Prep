@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "04"
 lo: "10"
-tags: [concept, mod/04]
+tags: [concept, mod/04, flashcard/04]
 topic: "IDS Classification"
 exam_weight: unknown
 status: done
@@ -56,21 +57,26 @@ Classified by: **approach · protected system · structure · data source · beh
 - **Network packets**: header (source/dest address, control info) + payload (body/user data); both can carry malicious content — **capture before final destination** = efficient detection
 
 ## Cards
-Q:: IDS classification bases?
-A:: Approach, protected system, structure, data source, behavior (after attack), analysis timing.
-#flashcard
-Q:: Signature vs anomaly detection tradeoff?
-A:: Signature: few false alarms but known attacks only; anomaly: finds unknown attacks but high false-positive rate.
-#flashcard
-Q:: Active vs passive IDS?
-A:: Active auto-blocks without admin; passive only monitors/analyzes/alerts and logs.
-#flashcard
-Q:: NIDS vs HIDS placement?
-A:: NIDS: network boundaries behind FW/routers/VPN/wireless; HIDS: on the host (sensitive public servers).
-#flashcard
-Q:: Interval-based vs real-time IDS?
-A:: Interval: offline "store and forward", no active response; real-time: on-the-fly, continuous feed, more RAM+disk.
-#flashcard
-Q:: IDS data sources?
-A:: Audit trails (system/app/user evidence) and network packets (header+payload captured pre-destination).
-#flashcard
+IDS classification bases?
+?
+Approach, protected system, structure, data source, behavior (after attack), analysis timing.
+
+Signature vs anomaly detection tradeoff?
+?
+Signature: few false alarms but known attacks only; anomaly: finds unknown attacks but high false-positive rate.
+
+Active vs passive IDS?
+?
+Active auto-blocks without admin; passive only monitors/analyzes/alerts and logs.
+
+NIDS vs HIDS placement?
+?
+NIDS: network boundaries behind FW/routers/VPN/wireless; HIDS: on the host (sensitive public servers).
+
+Interval-based vs real-time IDS?
+?
+Interval: offline "store and forward", no active response; real-time: on-the-fly, continuous feed, more RAM+disk.
+
+IDS data sources?
+?
+Audit trails (system/app/user evidence) and network packets (header+payload captured pre-destination).

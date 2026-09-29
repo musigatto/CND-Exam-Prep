@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "05"
 lo: "08"
-tags: [concept, command, tool, mod/05]
+tags: [concept, command, tool, mod/05, flashcard/05]
 topic: "Windows OS Security Hardening Techniques"
 exam_weight: unknown
 status: done
@@ -69,24 +70,30 @@ Configure OS security parameters correctly and ensure policies reduce system exp
 - PowerShell: `Get-PSDrive -PSProvider Registry`; `Set-Location HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion; Get-ChildItem`
 
 ## Cards
-Q:: LM vs NT hash?
-A:: <15-char passwords → LM hash, else NT hash; both brute-forceable — block LM storage via 'Network security: Do not store LAN Manager hash value on next password change'.
-#flashcard
-Q:: Example Windows services to disable when unused?
-A:: IIS, FTP, SQL Server, proxy services, Telnet, Universal Plug and Play.
-#flashcard
-Q:: Disable Remote Desktop (commands)?
-A:: `net stop termservice`, then `sc config termservice start= disabled`.
-#flashcard
-Q:: Windows Defender quick scan vs full scan?
-A:: Quick = areas where malware usually hides; full = all files and applications.
-#flashcard
-Q:: Registry hives (key names)?
-A:: HKLM (machine) · HKCU (current user; new subkey each logon) · HKCC (hardware profile) · HKCR (file extensions + COM registration).
-#flashcard
-Q:: Registry monitoring tool?
-A:: Process Monitor (Sysinternals) — real-time registry (and file/system) activity.
-#flashcard
-Q:: Firewall default rule behavior?
-A:: Inbound connections blocked unless an allow rule matches; outbound connections allowed unless a block rule matches.
-#flashcard
+LM vs NT hash?
+?
+<15-char passwords → LM hash, else NT hash; both brute-forceable — block LM storage via 'Network security: Do not store LAN Manager hash value on next password change'.
+
+Example Windows services to disable when unused?
+?
+IIS, FTP, SQL Server, proxy services, Telnet, Universal Plug and Play.
+
+Disable Remote Desktop (commands)?
+?
+`net stop termservice`, then `sc config termservice start= disabled`.
+
+Windows Defender quick scan vs full scan?
+?
+Quick = areas where malware usually hides; full = all files and applications.
+
+Registry hives (key names)?
+?
+HKLM (machine) · HKCU (current user; new subkey each logon) · HKCC (hardware profile) · HKCR (file extensions + COM registration).
+
+Registry monitoring tool?
+?
+Process Monitor (Sysinternals) — real-time registry (and file/system) activity.
+
+Firewall default rule behavior?
+?
+Inbound connections blocked unless an allow rule matches; outbound connections allowed unless a block rule matches.

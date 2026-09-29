@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "04"
 lo: "17"
-tags: [concept, process, tool, mod/04]
+tags: [concept, process, tool, mod/04, flashcard/04]
 topic: "Zero-Trust Security with Software-Defined Perimeter (SDP)"
 exam_weight: unknown
 status: done
@@ -67,30 +68,38 @@ unresolved: []
 - Others: Open Source SDP (Waverley Labs) · Absolute ZTNA (risk/compliance context) · Perimeter81 (mTLS, segmentation) · Cisco Software-Defined Access (SDA, zero-trust workplace + IoT) · NetMotion SDP · AppGate SDP · GoodAccess · Wandera (zero-day blocking, cloud SDP per-app isolated connections)
 
 ## Cards
-Q:: SDP name + founder?
-A:: "Black Cloud", identity-centric security framework by the Cloud Security Alliance (CSA).
-#flashcard
-Q:: Three SDP pillars?
-A:: Zero trust (micro-segmentation, least privilege), identity-centric (identity not IP), built for the cloud (scalable).
-#flashcard
-Q:: How SDP defeats static firewalls?
-A:: Dynamic logical firewall with one rule — deny all connections; rules added/removed per authorized user; prevents lateral movement.
-#flashcard
-Q:: SDP reverse of TCP?
-A:: SDP authenticates/authorizes first then connects; TCP connects, authenticates, then passes data.
-#flashcard
-Q:: SDP three components?
-A:: Client (initiating host), controller (auth + policy), gateway (accepting host, controller-directed).
-#flashcard
-Q:: SPA in SDP?
-A:: Single-Packet Authorization — client sends HMAC-based one-time password packet as first packet; invalid packets rejected (minimizes DDoS impact).
-#flashcard
-Q:: SDP workflow steps?
-A:: Controllers online → gateways online+authenticate → client authenticates → controller picks authorized gateways → instructs gateway → sends list to client → mutual VPN established.
-#flashcard
-Q:: SDP deployment models?
-A:: Client-to-gateway, client-to-server, server-to-server, client-to-server-to-client, client-to-gateway-to-client, gateway-to-gateway.
-#flashcard
-Q:: SDP vs traditional NAC (examples)?
-A:: Fine-grained per-user/app control vs all-or-nothing VLAN; VPN replaced vs VPN required; dynamic attr + identity integration vs 802.1X; reduced audit scope vs SIEM consolidation.
-#flashcard
+SDP name + founder?
+?
+"Black Cloud", identity-centric security framework by the Cloud Security Alliance (CSA).
+
+Three SDP pillars?
+?
+Zero trust (micro-segmentation, least privilege), identity-centric (identity not IP), built for the cloud (scalable).
+
+How SDP defeats static firewalls?
+?
+Dynamic logical firewall with one rule — deny all connections; rules added/removed per authorized user; prevents lateral movement.
+
+SDP reverse of TCP?
+?
+SDP authenticates/authorizes first then connects; TCP connects, authenticates, then passes data.
+
+SDP three components?
+?
+Client (initiating host), controller (auth + policy), gateway (accepting host, controller-directed).
+
+SPA in SDP?
+?
+Single-Packet Authorization — client sends HMAC-based one-time password packet as first packet; invalid packets rejected (minimizes DDoS impact).
+
+SDP workflow steps?
+?
+Controllers online → gateways online+authenticate → client authenticates → controller picks authorized gateways → instructs gateway → sends list to client → mutual VPN established.
+
+SDP deployment models?
+?
+Client-to-gateway, client-to-server, server-to-server, client-to-server-to-client, client-to-gateway-to-client, gateway-to-gateway.
+
+SDP vs traditional NAC (examples)?
+?
+Fine-grained per-user/app control vs all-or-nothing VLAN; VPN replaced vs VPN required; dynamic attr + identity integration vs 802.1X; reduced audit scope vs SIEM consolidation.

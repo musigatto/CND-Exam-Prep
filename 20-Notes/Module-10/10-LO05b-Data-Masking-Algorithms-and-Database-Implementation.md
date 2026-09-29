@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "10"
 lo: "05"
-tags: [concept, process, command, tool, mod/10]
+tags: [concept, process, command, tool, mod/10, flashcard/10]
 topic: "Data Masking — Algorithms, Techniques, Implementations"
 exam_weight: unknown
 status: done
@@ -52,21 +53,26 @@ Four-step approach: **F**ind → **A**ccess → **S**ecure → **T**est
 - Improves security, accelerates analytics/development; remains compliant across sources (preserves referential integrity)
 
 ## Cards
-Q:: Name the 4 data masking types by environment.
-A:: Static (at rest), Dynamic (in transit/role-based), On-the-fly (between environments); plus DB proxies for DDM.
-#flashcard
-Q:: Three distinguishing masking algorithms for numbers/dates/IQ.
-A:: Number/Date Variance (random %), Date Aging (policy per field), Averaging/Data Generalization (average values).
-#flashcard
-Q:: What technique replaces card numbers w/ valid-looking but fake numbers?
-A:: Substitution (meets card-provider validation rules).
-#flashcard
-Q:: Tokenization vs format-preserving encryption?
-A:: Tokenization = unique tokens map back to original (IDs, cards); FPE = encrypts preserving length/character set (phones, cards).
-#flashcard
-Q:: What does the F.A.S.T. acronym in Oracle data masking mean?
-A:: Find → Access → Secure → Test.
-#flashcard
-Q:: Which SQL Server DDM mask function masks the entire field per data type?
-A:: `default()` — e.g., `alter table employee alter column empname ... masked with (Function='default()')`.
-#flashcard
+Name the 4 data masking types by environment.
+?
+Static (at rest), Dynamic (in transit/role-based), On-the-fly (between environments); plus DB proxies for DDM.
+
+Three distinguishing masking algorithms for numbers/dates/IQ.
+?
+Number/Date Variance (random %), Date Aging (policy per field), Averaging/Data Generalization (average values).
+
+What technique replaces card numbers w/ valid-looking but fake numbers?
+?
+Substitution (meets card-provider validation rules).
+
+Tokenization vs format-preserving encryption?
+?
+Tokenization = unique tokens map back to original (IDs, cards); FPE = encrypts preserving length/character set (phones, cards).
+
+What does the F.A.S.T. acronym in Oracle data masking mean?
+?
+Find → Access → Secure → Test.
+
+Which SQL Server DDM mask function masks the entire field per data type?
+?
+`default()` — e.g., `alter table employee alter column empname ... masked with (Function='default()')`.

@@ -1,7 +1,8 @@
 ---
+
 type: moc
 module: "05"
-tags: [concept, mod/05]
+tags: [concept, mod/05, flashcard/05]
 topic: "Module 05 — Endpoint Security - Windows Systems"
 exam_weight: unknown
 status: done
@@ -69,15 +70,18 @@ views:
 - LO09 SMM defense methods — second method (Supervisor SMI handler) only fully captured.
 
 ## Cards
-Q:: Module 05 subject scope?
-A:: Windows endpoint security: OS components/features, baseline, accounts/passwords, patches, access, hardening, AD security, network services/protocol security.
-#flashcard
-Q:: PS Remoting default ports?
-A:: 5985 (HTTP/WinRM) and 5986 (HTTPS); traffic encrypted even over 5985.
-#flashcard
-Q:: DNSSEC guarantees and what it does NOT provide?
-A:: Authenticity, integrity, non-existence of name/type; NOT confidentiality or DoS protection.
-#flashcard
-Q:: SMB versions with security features from strongest down?
-A:: 3.1.1+ pre-auth integrity · 3.0/3.02 secure dialect · 3.0+ encryption + insecure guest blocking · 2.02+ signing.
-#flashcard
+Module 05 subject scope?
+?
+Windows endpoint security: OS components/features, baseline, accounts/passwords, patches, access, hardening, AD security, network services/protocol security.
+
+PS Remoting default ports?
+?
+5985 (HTTP/WinRM) and 5986 (HTTPS); traffic encrypted even over 5985.
+
+DNSSEC guarantees and what it does NOT provide?
+?
+Authenticity, integrity, non-existence of name/type; NOT confidentiality or DoS protection.
+
+SMB versions with security features from strongest down?
+?
+3.1.1+ pre-auth integrity · 3.0/3.02 secure dialect · 3.0+ encryption + insecure guest blocking · 2.02+ signing.

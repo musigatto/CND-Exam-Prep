@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "02"
 lo: "03"
-tags: [policy, mod/02]
+tags: [policy, mod/02, flashcard/02]
 topic: "Security Policy — Design & Development Fundamentals"
 exam_weight: unknown
 status: done
@@ -114,22 +115,26 @@ Overview · Document Control · Policy Statements · Document Location · Purpos
 | **Prudent** | All services blocked by default; network defender enables safe/necessary services individually; maximum security + everything logged |
 
 ## Cards
-Q:: Three goals of a security policy?
-A:: (1) Reduce/eliminate legal liability; (2) protect confidential & proprietary information; (3) prevent computing resource waste.
-#flashcard
+Three goals of a security policy?
+?
+(1) Reduce/eliminate legal liability; (2) protect confidential & proprietary information; (3) prevent computing resource waste.
 
-Q:: Four security requirement types?
-A:: Discipline · Safeguard · Procedural · Assurance.
-#flashcard
 
-Q:: EISP vs ISSP vs SSSP?
-A:: EISP=enterprise scope/direction; ISSP=issue-specific (acceptable use, password…); SSSP=system-specific (DMZ, servers, cloud).
-#flashcard
+Four security requirement types?
+?
+Discipline · Safeguard · Procedural · Assurance.
 
-Q:: Internet access policies — paranoid vs prudent?
-A:: Paranoid forbids everything; Prudent blocks all by default then enables each safe/necessary service and logs everything.
-#flashcard
 
-Q:: Step 3 & 4 of policy creation?
-A:: 3 = include senior management/staff (policy without mgmt consent is illegal); 4 = set clear penalties and enforce them.
-#flashcard
+EISP vs ISSP vs SSSP?
+?
+EISP=enterprise scope/direction; ISSP=issue-specific (acceptable use, password…); SSSP=system-specific (DMZ, servers, cloud).
+
+
+Internet access policies — paranoid vs prudent?
+?
+Paranoid forbids everything; Prudent blocks all by default then enables each safe/necessary service and logs everything.
+
+
+Step 3 & 4 of policy creation?
+?
+3 = include senior management/staff (policy without mgmt consent is illegal); 4 = set clear penalties and enforce them.

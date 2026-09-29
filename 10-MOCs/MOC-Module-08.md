@@ -1,7 +1,8 @@
 ---
+
 type: moc
 module: "08"
-tags: [concept, mod/08]
+tags: [concept, mod/08, flashcard/08]
 topic: "Module 08 — Endpoint Security - IoT Devices"
 exam_weight: unknown
 status: done
@@ -68,12 +69,14 @@ views:
 - The IoT stack-wise principle table compresses several figure pages (cleartext figure content); only layer-row countermeasures stated in text are recorded.
 
 ## Cards
-Q:: Module 08 subject scope?
-A:: IoT endpoint security: IoT/IoE basics + app areas, ecosystem/architecture/communication models, security challenges + OWASP Top 10, stack-wise security + device/communication/cloud/process layer attacks, 27 security measures, tools + best practices, and standards (AIOTI/NIST/DHS/GSMA).
-#flashcard
-Q:: 4 IoT communication models?
-A:: Device-to-Device · Device-to-Cloud · Device-to-Gateway · Back-end Data-Sharing (cloud-to-cloud).
-#flashcard
-Q:: Favorite crackable exam items?
-A:: H2H/H2T/T2T + 4 component systems · 4-layer architecture · model↔protocol mappings (ZigBee/Z-Wave; IEEE 802.15.4) · 12 inherent issues · OWASP #1 · DDoS 4 phases + JTAG · stack-wise layer counters (edge IPsec ESP; cloud SIEM/IDPS) · Bluesnarfing vs BlueBugging vs Bluejacking vs BlueSmack · KNOB entropy 8→1 · WEP families Korek/Chopchop/Fragmentation/FMS/PTW · Michael→CCMP · KillerBee AES-128 · RPL DOG · M-numbers (M02 asset maps, M06 PACL/VACL, M08 RloT Scanner, M18 Unplug n' Pray, M20 pcWRT, M21 X1/X2/X3, M25 Stackdriver, M27 Shodan) · SeaCat 48101 · GSMA 8 areas · DHS 6 principles · Common Criteria ISO/IEC 15408.
-#flashcard
+Module 08 subject scope?
+?
+IoT endpoint security: IoT/IoE basics + app areas, ecosystem/architecture/communication models, security challenges + OWASP Top 10, stack-wise security + device/communication/cloud/process layer attacks, 27 security measures, tools + best practices, and standards (AIOTI/NIST/DHS/GSMA).
+
+4 IoT communication models?
+?
+Device-to-Device · Device-to-Cloud · Device-to-Gateway · Back-end Data-Sharing (cloud-to-cloud).
+
+Favorite crackable exam items?
+?
+H2H/H2T/T2T + 4 component systems · 4-layer architecture · model↔protocol mappings (ZigBee/Z-Wave; IEEE 802.15.4) · 12 inherent issues · OWASP #1 · DDoS 4 phases + JTAG · stack-wise layer counters (edge IPsec ESP; cloud SIEM/IDPS) · Bluesnarfing vs BlueBugging vs Bluejacking vs BlueSmack · KNOB entropy 8→1 · WEP families Korek/Chopchop/Fragmentation/FMS/PTW · Michael→CCMP · KillerBee AES-128 · RPL DOG · M-numbers (M02 asset maps, M06 PACL/VACL, M08 RloT Scanner, M18 Unplug n' Pray, M20 pcWRT, M21 X1/X2/X3, M25 Stackdriver, M27 Shodan) · SeaCat 48101 · GSMA 8 areas · DHS 6 principles · Common Criteria ISO/IEC 15408.

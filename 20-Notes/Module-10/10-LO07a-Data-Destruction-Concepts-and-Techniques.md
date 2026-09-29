@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "10"
 lo: "07"
-tags: [process, command, tool, mod/10]
+tags: [process, command, tool, mod/10, flashcard/10]
 topic: "Data Destruction Concepts and Techniques"
 exam_weight: unknown
 status: done
@@ -47,18 +48,22 @@ Delete / Reformat · Wipe · Overwriting data · Erasure · **Degaussing** · Ph
 - **Shredding**: breaks media into pieces **≤ 2 mm**; for data-center/stockpiles of old drives
 
 ## Card
-Q:: What is data destruction and its main purpose?
-A:: Destroying stored data into an unreadable form so it can't be accessed/exploited; purpose = restrict unauthorized disclosure via proper disposal/destruction of media.
-#flashcard
-Q:: Name the 4 data destruction techniques.
-A:: Clearing · Purging · Destroying · Disposal.
-#flashcard
-Q:: Clearing protects against which attack? Purging?
-A:: Clearing vs keyboard/simple recovery attacks; purging vs laboratory (signal-processing) attacks.
-#flashcard
-Q:: Degaussing applies to which media and what side-effect?
-A:: Magnetic media only (not optical CD/DVD); typically makes the HDD inoperable and can damage nearby devices.
-#flashcard
-Q:: Shredding requirement for destroyed pieces?
-A:: Pieces no larger than 2 mm.
-#flashcard
+What is data destruction and its main purpose?
+?
+Destroying stored data into an unreadable form so it can't be accessed/exploited; purpose = restrict unauthorized disclosure via proper disposal/destruction of media.
+
+Name the 4 data destruction techniques.
+?
+Clearing · Purging · Destroying · Disposal.
+
+Clearing protects against which attack? Purging?
+?
+Clearing vs keyboard/simple recovery attacks; purging vs laboratory (signal-processing) attacks.
+
+Degaussing applies to which media and what side-effect?
+?
+Magnetic media only (not optical CD/DVD); typically makes the HDD inoperable and can damage nearby devices.
+
+Shredding requirement for destroyed pieces?
+?
+Pieces no larger than 2 mm.

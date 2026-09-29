@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "01"
 lo: "01"
-tags: [concept, mod/01]
+tags: [concept, mod/01, flashcard/01]
 topic: "Essential Terminologies Related to Network Security Attacks"
 exam_weight: unknown
 status: done
@@ -66,18 +67,25 @@ unresolved: []
 - Motives: disrupt continuity · fear/chaos via critical infrastructure · state military objectives · info theft · revenge · financial loss to target · data manipulation · ransom · propagating beliefs · reputation damage
 
 ## Cards
-Q:: Risk formula?
-A:: Risk = Asset + Threat + Vulnerability
-#flashcard
+Risk formula?
+?
+Risk = Asset + Threat + Vulnerability
+<!--SR:!2026-10-03,4,270-->
 
-Q:: Attack formula?
-A:: Attack = Motive (Goal) + Method (TTPs) + Vulnerability
-#flashcard
 
-Q:: Why are insider attacks more dangerous than external?
-A:: Insiders know network architecture, security policies, and regulations; defenses typically focus on external attacks.
-#flashcard
+Attack formula?
+?
+Attack = Motive (Goal) + Method (TTPs) + Vulnerability
+<!--SR:!2026-09-30,1,230-->
 
-Q:: Three classes of security vulnerabilities?
-A:: Technological (protocol/OS/device), Configuration (accounts, misconfig, defaults), Security policy (unwritten, gaps, awareness).
-#flashcard
+
+Why are insider attacks more dangerous than external?
+?
+Insiders know network architecture, security policies, and regulations; defenses typically focus on external attacks.
+<!--SR:!2026-10-03,4,270-->
+
+
+Three classes of security vulnerabilities?
+?
+Technological (protocol/OS/device), Configuration (accounts, misconfig, defaults), Security policy (unwritten, gaps, awareness).
+<!--SR:!2026-09-30,1,230-->

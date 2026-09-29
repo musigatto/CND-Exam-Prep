@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "04"
 lo: "04"
-tags: [concept, mod/04]
+tags: [concept, mod/04, flashcard/04]
 topic: "Hardware / Software / Host / Network / Internal / External Firewalls"
 exam_weight: unknown
 status: done
@@ -44,18 +45,22 @@ Three comparisons: hardware vs software · host vs network · external vs intern
   - ☒ need additional subnets · problematic for moving systems · expensive devices
 
 ## Cards
-Q:: Hardware vs software firewall cost/placement?
-A:: Hardware: dedicated perimeter device (Cisco ASA/FortiGate), pricier, faster; software: per-host program (Windows FW/iptables/UFW), cheap, resource-heavy.
-#flashcard
-Q:: Host vs network-based firewall example each?
-A:: Host: Windows Firewall/iptables/UFW (software, per device); network: pfSense/SmoothWall/Cisco SonicWall (hardware, perimeter).
-#flashcard
-Q:: Host-based firewall analysis order?
-A:: Packet inspection (L3/L4, MAC/IP/ports) → stateful filter validation → application-layer validation.
-#flashcard
-Q:: External firewall primary role?
-A:: Limit protected↔public traffic, protect DMZ + legacy devices without firewalls; block new external→internal connections.
-#flashcard
-Q:: Internal firewalls sit where?
-A:: Between two segments of the same org (or two orgs on the same network); segment + monitor, contain malicious spread.
-#flashcard
+Hardware vs software firewall cost/placement?
+?
+Hardware: dedicated perimeter device (Cisco ASA/FortiGate), pricier, faster; software: per-host program (Windows FW/iptables/UFW), cheap, resource-heavy.
+
+Host vs network-based firewall example each?
+?
+Host: Windows Firewall/iptables/UFW (software, per device); network: pfSense/SmoothWall/Cisco SonicWall (hardware, perimeter).
+
+Host-based firewall analysis order?
+?
+Packet inspection (L3/L4, MAC/IP/ports) → stateful filter validation → application-layer validation.
+
+External firewall primary role?
+?
+Limit protected↔public traffic, protect DMZ + legacy devices without firewalls; block new external→internal connections.
+
+Internal firewalls sit where?
+?
+Between two segments of the same org (or two orgs on the same network); segment + monitor, contain malicious spread.

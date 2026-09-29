@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "05"
 lo: "07"
-tags: [concept, policy, command, mod/05]
+tags: [concept, policy, command, mod/05, flashcard/05]
 topic: "User Access Management"
 exam_weight: unknown
 status: done
@@ -72,37 +73,44 @@ Controls how Windows restricts users/groups → resources: file/folder access ·
 - JEA sessions run under a **virtual account created per session** and removed when the session ends → credentials never saved on the machine → reduced attack vectors
 
 ## Cards
-Q:: NTFS permission unique to folders (not files)?
-A:: List Folder Contents (only when inherited by folders; Read & Execute applies to files too).
-#flashcard
-Q:: FAT vs NTFS file permissions?
-A:: NTFS = per-file/folder permissions + backup/restore; FAT = no per-file/folder permissions.
-#flashcard
-Q:: UAC core behavior?
-A:: Apps run at standard-user privileges until an administrator authorizes elevation; prevents malware from changing security settings/AV.
-#flashcard
-Q:: What does a SID's RID enable for attackers?
-A:: RIDs are predetermined for some accounts — attacker replaces RID with an administrative account's to get admin privileges (block via 'Network access: Do not allow anonymous enumeration of SAM accounts and shares').
-#flashcard
-Q:: Policy to block Control Panel?
-A:: User Configuration → Admin Templates → Control Panel → 'Prohibit access to Control Panel and PC settings' (blocks Control.exe/SystemSettings.exe).
-#flashcard
-Q:: Policy to block Command Prompt?
-A:: User Configuration → Admin Templates → System → 'Prevent access to the command prompt'; also governs .cmd/.bat batch files.
-#flashcard
-Q:: JEA — what does it limit?
-A:: The cmdlets/admin privileges of an account; needs a PS role capability file (visible cmdlets) + PS session configuration file (who may run them); uses per-session virtual account.
-#flashcard
+NTFS permission unique to folders (not files)?
+?
+List Folder Contents (only when inherited by folders; Read & Execute applies to files too).
+
+FAT vs NTFS file permissions?
+?
+NTFS = per-file/folder permissions + backup/restore; FAT = no per-file/folder permissions.
+
+UAC core behavior?
+?
+Apps run at standard-user privileges until an administrator authorizes elevation; prevents malware from changing security settings/AV.
+
+What does a SID's RID enable for attackers?
+?
+RIDs are predetermined for some accounts — attacker replaces RID with an administrative account's to get admin privileges (block via 'Network access: Do not allow anonymous enumeration of SAM accounts and shares').
+
+Policy to block Control Panel?
+?
+User Configuration → Admin Templates → Control Panel → 'Prohibit access to Control Panel and PC settings' (blocks Control.exe/SystemSettings.exe).
+
+Policy to block Command Prompt?
+?
+User Configuration → Admin Templates → System → 'Prevent access to the command prompt'; also governs .cmd/.bat batch files.
+
+JEA — what does it limit?
+?
+The cmdlets/admin privileges of an account; needs a PS role capability file (visible cmdlets) + PS session configuration file (who may run them); uses per-session virtual account.
+
 
 ## Cards (verified set 617277655)
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-Q:: User Account Control (UAC)
-A:: is a key access control enforcement feature in Windows that improves the security of the OS by limiting application software to standard user privileges until an administrator authorizes an elevation  _(Mod 05 p98)_
-#flashcard
+User Account Control (UAC)
+?
+is a key access control enforcement feature in Windows that improves the security of the OS by limiting application software to standard user privileges until an administrator authorizes an elevation  _(Mod 05 p98)_
 
-Q:: Just Enough administration (JEA)
-A:: a security technology used to limit the number of cmdlets or administration privileges of administrator, user, or service accounts.  _(Mod 05 p106)_
-#flashcard
 
+Just Enough administration (JEA)
+?
+a security technology used to limit the number of cmdlets or administration privileges of administrator, user, or service accounts.  _(Mod 05 p106)_

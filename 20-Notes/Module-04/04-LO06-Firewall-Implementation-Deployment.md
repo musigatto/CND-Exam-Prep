@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "04"
 lo: "06"
-tags: [process, tool, policy, mod/04]
+tags: [process, tool, policy, mod/04, flashcard/04]
 topic: "Firewall Implementation and Deployment Process"
 exam_weight: unknown
 status: done
@@ -63,33 +64,39 @@ Five phases: **Planning → Configuring → Testing → Deploying → Managing &
 - Scope includes: extending life, keeping it operating, confirming protective coverage, improving performance, checking updates, verifying components
 
 ## Cards
-Q:: Firewall deployment phases?
-A:: Planning → Configuring → Testing → Deploying → Managing & Maintaining.
-#flashcard
-Q:: Firewall policy creation steps?
-A:: 1 key apps → 2 vulnerabilities → 3 cost-benefit → 4 app traffic matrix → 5 ruleset from matrix.
-#flashcard
-Q:: Ruleset review cadence + implicit rule?
-A:: Review/update every 6 months; implicit deny blocks all traffic not explicitly allowed.
-#flashcard
-Q:: Blacklist vs whitelist ruleset?
-A:: Blacklist: allow all, deny listed. Whitelist: deny all, allow only listed (stricter).
-#flashcard
-Q:: Firewall log placement?
-A:: Centralized secure server/syslog; huge volumes (≥10k events/s) need specialized software.
-#flashcard
-Q:: Test-network evaluation attributes?
-A:: Connectivity, ruleset, app compatibility, management, logging, performance, security, component interoperability, policy sync.
-#flashcard
-Q:: Maintenance activities?
-A:: Patches, policy updates on new threats, 6-month review, log analysis, regular ruleset/policy backups.
-#flashcard
+Firewall deployment phases?
+?
+Planning → Configuring → Testing → Deploying → Managing & Maintaining.
+
+Firewall policy creation steps?
+?
+1 key apps → 2 vulnerabilities → 3 cost-benefit → 4 app traffic matrix → 5 ruleset from matrix.
+
+Ruleset review cadence + implicit rule?
+?
+Review/update every 6 months; implicit deny blocks all traffic not explicitly allowed.
+
+Blacklist vs whitelist ruleset?
+?
+Blacklist: allow all, deny listed. Whitelist: deny all, allow only listed (stricter).
+
+Firewall log placement?
+?
+Centralized secure server/syslog; huge volumes (≥10k events/s) need specialized software.
+
+Test-network evaluation attributes?
+?
+Connectivity, ruleset, app compatibility, management, logging, performance, security, component interoperability, policy sync.
+
+Maintenance activities?
+?
+Patches, policy updates on new threats, 6-month review, log analysis, regular ruleset/policy backups.
+
 
 ## Cards (verified set 617277655)
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-Q:: Firewalk
-A:: is used for reconnaissance purpose where it discovers firewall rules using an IP TTL expiration technique.  _(Mod 04 p62)_
-#flashcard
-
+Firewalk
+?
+is used for reconnaissance purpose where it discovers firewall rules using an IP TTL expiration technique.  _(Mod 04 p62)_

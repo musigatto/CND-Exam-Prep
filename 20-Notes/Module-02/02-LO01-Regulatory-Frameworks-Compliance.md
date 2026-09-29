@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "02"
 lo: "01"
-tags: [policy, mod/02]
+tags: [policy, mod/02, flashcard/02]
 topic: "Obtain Regulatory Frameworks Compliance"
 exam_weight: unknown
 status: done
@@ -74,18 +75,21 @@ Assessment inputs: financial institution letters · NIST publications · industr
 | 5.3 Anti-virus actively running; policy for disabled cases | Provision for detecting malware when protection disabled |
 
 ## Cards
-Q:: Order the security hierarchy from top to bottom?
-A:: Regulatory Frameworks → Policies → Standards → Procedures (SOP) → Guidelines.
-#flashcard
+Order the security hierarchy from top to bottom?
+?
+Regulatory Frameworks → Policies → Standards → Procedures (SOP) → Guidelines.
 
-Q:: Standards vs guidelines · mandatory?
-A:: Standards = specific low-level MANDATORY controls (e.g., password complexity, DES/AES/RSA). Guidelines = non-mandatory recommendations/best practices, reviewed more often.
-#flashcard
 
-Q:: Why is compliance not optional?
-A:: Investment worth more than cost of risks: improved security, minimized losses, maintained trust, increased control.
-#flashcard
+Standards vs guidelines · mandatory?
+?
+Standards = specific low-level MANDATORY controls (e.g., password complexity, DES/AES/RSA). Guidelines = non-mandatory recommendations/best practices, reviewed more often.
 
-Q:: What defines scope per HIPAA/SOX/FISMA/GLBA/PCI-DSS?
-A:: HIPAA=healthcare data · SOX=US public companies & accounting · FISMA=federal agencies · GLBA=financial products/services · PCI-DSS=cardholder data.
-#flashcard
+
+Why is compliance not optional?
+?
+Investment worth more than cost of risks: improved security, minimized losses, maintained trust, increased control.
+
+
+What defines scope per HIPAA/SOX/FISMA/GLBA/PCI-DSS?
+?
+HIPAA=healthcare data · SOX=US public companies & accounting · FISMA=federal agencies · GLBA=financial products/services · PCI-DSS=cardholder data.

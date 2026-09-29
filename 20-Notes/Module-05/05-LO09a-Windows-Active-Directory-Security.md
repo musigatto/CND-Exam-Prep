@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "05"
 lo: "09"
-tags: [concept, process, tool, command, bestpractice, mod/05]
+tags: [concept, process, tool, command, bestpractice, mod/05, flashcard/05]
 topic: "Windows Active Directory Security Best Practices"
 exam_weight: unknown
 status: done
@@ -95,33 +96,42 @@ AD connects every domain system → compromise of AD = compromise of network. Pr
   - Centralized logging (**SIEM**); user-behavioral analysis systems; **enhanced auditing**; **PowerShell module logging**; CMD process logging + forward logs to central log server
 
 ## Cards
-Q:: AD attack method that reuses the password hash instead of the plaintext against the Domain Admins account?
-A:: Pass-the-hash (often via an infiltrated LM hash).
-#flashcard
-Q:: Risk of a default Administrator account in the Domain Admins group?
-A:: Domain Admins is tied to every domain system; privilege escalation (pass-the-hash) on one machine exposes the whole domain.
-#flashcard
-Q:: LAPS purpose and scope?
-A:: Random unique local Administrator passwords stored in AD for domain-joined systems; manages only the local Administrator account; needs a client-side extension; Windows only.
-#flashcard
-Q:: Two AD schema attributes added by LAPS?
-A:: Administrative password + password expiration date/time (via Update-AdmPwdADSchema).
-#flashcard
-Q:: NTLM vs NTLMv2 hashing?
-A:: NTLM = MD4 for passwords (Unicode, up to 127 chars, 128-bit MD4); NTLMv2 = MD4 for passwords and MD5 for usernames/server names, response differs each time.
-#flashcard
-Q:: Goal of blocking NTLM v1 in a domain?
-A:: Force NTLMv2 (and Kerberos) so passwords are not transmitted in weaker form.
-#flashcard
-Q:: AD events that indicate compromise?
-A:: Admin-group changes, wrong-password attempts, locked-out-account usage, account lockouts, AV-setting changes, privileged-account activity.
-#flashcard
-Q:: Event ID + logon types that reveal remote vs local logon?
-A:: 4624; Type 2 = local logon, Type 10 = remote logon.
-#flashcard
-Q:: KRBTGT password best practice?
-A:: Change every year, or whenever an AD administrator leaves.
-#flashcard
-Q:: WDigest hardening?
-A:: Set `HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest` to 0.
-#flashcard
+AD attack method that reuses the password hash instead of the plaintext against the Domain Admins account?
+?
+Pass-the-hash (often via an infiltrated LM hash).
+
+Risk of a default Administrator account in the Domain Admins group?
+?
+Domain Admins is tied to every domain system; privilege escalation (pass-the-hash) on one machine exposes the whole domain.
+
+LAPS purpose and scope?
+?
+Random unique local Administrator passwords stored in AD for domain-joined systems; manages only the local Administrator account; needs a client-side extension; Windows only.
+
+Two AD schema attributes added by LAPS?
+?
+Administrative password + password expiration date/time (via Update-AdmPwdADSchema).
+
+NTLM vs NTLMv2 hashing?
+?
+NTLM = MD4 for passwords (Unicode, up to 127 chars, 128-bit MD4); NTLMv2 = MD4 for passwords and MD5 for usernames/server names, response differs each time.
+
+Goal of blocking NTLM v1 in a domain?
+?
+Force NTLMv2 (and Kerberos) so passwords are not transmitted in weaker form.
+
+AD events that indicate compromise?
+?
+Admin-group changes, wrong-password attempts, locked-out-account usage, account lockouts, AV-setting changes, privileged-account activity.
+
+Event ID + logon types that reveal remote vs local logon?
+?
+4624; Type 2 = local logon, Type 10 = remote logon.
+
+KRBTGT password best practice?
+?
+Change every year, or whenever an AD administrator leaves.
+
+WDigest hardening?
+?
+Set `HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest` to 0.

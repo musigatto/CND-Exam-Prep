@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "08"
 lo: "05"
-tags: [process, tool, command, bestpractice, mod/08]
+tags: [process, tool, command, bestpractice, mod/08, flashcard/08]
 topic: "IoT Security Measures — Access, Vuln Mgmt, Firmware (M06–M10)"
 exam_weight: unknown
 status: done
@@ -38,21 +39,26 @@ unresolved: []
 - Result: reduce attack surface
 
 ## Cards
-Q:: Security measures M06–M10?
-A:: Limit access (ACL/PACL/VACL) → monitor malware/ransomware → vulnerability scan → firmware updates → close insecure network services.
-#flashcard
-Q:: PACL vs VACL?
-A:: PACL = Policy-based access control list; VACL = VLAN access control lists.
-#flashcard
-Q:: IoT malware to monitor (M07)?
-A:: Mirai, Echobot, Torii, Dark Nexus, WannaCry (EternalBlue).
-#flashcard
-Q:: IoT vuln scanners (M08)?
-A:: RloT Scanner, beSTORM; also Nexpose, Qualys, Tenable, Cloudpassage Halo, AlienVault USM.
-#flashcard
-Q:: Firmware update best practice (M09)?
-A:: Vet in sandbox, OTA where supported, sign updates, rollback plan.
-#flashcard
-Q:: Port/service closure command (M10)?
-A:: sudo nmap -sS -sU -O <target> · netstat -tulpn · nmap --top-ports 1000 <target>.
-#flashcard
+Security measures M06–M10?
+?
+Limit access (ACL/PACL/VACL) → monitor malware/ransomware → vulnerability scan → firmware updates → close insecure network services.
+
+PACL vs VACL?
+?
+PACL = Policy-based access control list; VACL = VLAN access control lists.
+
+IoT malware to monitor (M07)?
+?
+Mirai, Echobot, Torii, Dark Nexus, WannaCry (EternalBlue).
+
+IoT vuln scanners (M08)?
+?
+RloT Scanner, beSTORM; also Nexpose, Qualys, Tenable, Cloudpassage Halo, AlienVault USM.
+
+Firmware update best practice (M09)?
+?
+Vet in sandbox, OTA where supported, sign updates, rollback plan.
+
+Port/service closure command (M10)?
+?
+sudo nmap -sS -sU -O <target> · netstat -tulpn · nmap --top-ports 1000 <target>.

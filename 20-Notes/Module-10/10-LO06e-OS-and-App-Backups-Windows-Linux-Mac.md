@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "10"
 lo: "06"
-tags: [process, tool, command, mod/10]
+tags: [process, tool, command, mod/10, flashcard/10]
 topic: "OS and Application Backups — Windows, Linux, macOS"
 exam_weight: unknown
 status: done
@@ -32,12 +33,14 @@ unresolved: []
 - Backup app configs + databases consistently (see LO06f): coordinate app stops / VSS writers / dump+log shipping.
 
 ## Cards
-Q:: File History frequency range?
-A:: Every 10 minutes up to daily (saved versions browsable by time).
-#flashcard
-Q:: Time Machine retention schedule?
-A:: Hourly (past 24 h), daily (past month), weekly (all remaining history); supports encrypted backups.
-#flashcard
-Q:: Two CLI tools for Linux file backup?
-A:: `tar` (archives) and `rsync` (incremental sync); `dd` for raw block images.
-#flashcard
+File History frequency range?
+?
+Every 10 minutes up to daily (saved versions browsable by time).
+
+Time Machine retention schedule?
+?
+Hourly (past 24 h), daily (past month), weekly (all remaining history); supports encrypted backups.
+
+Two CLI tools for Linux file backup?
+?
+`tar` (archives) and `rsync` (incremental sync); `dd` for raw block images.

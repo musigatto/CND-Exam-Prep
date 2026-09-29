@@ -1,7 +1,8 @@
 ---
+
 type: moc
 module: "04"
-tags: [concept, mod/04]
+tags: [concept, mod/04, flashcard/04]
 topic: "Module 04 — Network Perimeter Security"
 exam_weight: unknown
 status: done
@@ -73,15 +74,18 @@ views:
 - Table 4.1 (LO02) OCR-unreadable; firewalls/tech details kept from readable prose only.
 
 ## Cards
-Q:: Module 04 covers which perimeter devices?
-A:: Firewalls, IDS/IPS, routers, switches, and SDP for zero-trust.
-#flashcard
-Q:: False positive rate formula?
-A:: FP / (FP + true negative); false negative rate = FN / (FN + true positive).
-#flashcard
-Q:: Where should an IDS sit for encrypted traffic?
-A:: Behind a VPN termination with SSL decryption, so it can match decrypted payloads.
-#flashcard
-Q:: SDP reverse of TCP?
-A:: TCP connects → authenticates → transfers data; SDP verifies identity/device first, then connects (mutual VPN).
-#flashcard
+Module 04 covers which perimeter devices?
+?
+Firewalls, IDS/IPS, routers, switches, and SDP for zero-trust.
+
+False positive rate formula?
+?
+FP / (FP + true negative); false negative rate = FN / (FN + true positive).
+
+Where should an IDS sit for encrypted traffic?
+?
+Behind a VPN termination with SSL decryption, so it can match decrypted payloads.
+
+SDP reverse of TCP?
+?
+TCP connects → authenticates → transfers data; SDP verifies identity/device first, then connects (mutual VPN).

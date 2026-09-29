@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "03"
 lo: "01"
-tags: [concept, mod/03]
+tags: [concept, mod/03, flashcard/03]
 topic: "Access Control — Principles, Models, and Implementation"
 exam_weight: unknown
 status: done
@@ -89,26 +90,31 @@ Access control models specify **how a subject can access an object**.
 | **PIP** — Policy Information Point | Retrieves data needed for policy evaluation / PDP decisions |
 
 ## Cards
-Q:: Access control terminologies?
-A:: Subject = user/process accessing; Object = resource (file/device); Reference Monitor checks rules; Operation = action on object.
-#flashcard
+Access control terminologies?
+?
+Subject = user/process accessing; Object = resource (file/device); Reference Monitor checks rules; Operation = action on object.
 
-Q:: Bell-LaPadula two properties?
-A:: Simple security = no read-up; *-property = no write-down (confidentiality).
-#flashcard
 
-Q:: Biba three axioms?
-A:: Simple integrity = no read-down; *-integrity = no write-up; invocation = no invoking higher-level subject (integrity).
-#flashcard
+Bell-LaPadula two properties?
+?
+Simple security = no read-up; *-property = no write-down (confidentiality).
 
-Q:: RBAC rules?
-A:: Role assignment · role authorization · transaction authorization.
-#flashcard
 
-Q:: XACML roles?
-A:: PDP (decision) · PEP (enforcement/inspect) · PAP (admin) · PIP (information).
-#flashcard
+Biba three axioms?
+?
+Simple integrity = no read-down; *-integrity = no write-up; invocation = no invoking higher-level subject (integrity).
 
-Q:: ABAC attribute types?
-A:: Subject/user · object/resource · environmental/context · action.
-#flashcard
+
+RBAC rules?
+?
+Role assignment · role authorization · transaction authorization.
+
+
+XACML roles?
+?
+PDP (decision) · PEP (enforcement/inspect) · PAP (admin) · PIP (information).
+
+
+ABAC attribute types?
+?
+Subject/user · object/resource · environmental/context · action.

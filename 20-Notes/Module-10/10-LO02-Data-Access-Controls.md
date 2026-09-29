@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "10"
 lo: "02"
-tags: [concept, process, protocol, command, mod/10]
+tags: [concept, process, protocol, command, mod/10, flashcard/10]
 topic: "Data Access Control — Models, ACLs (Windows/Linux), Restrictions"
 exam_weight: unknown
 status: done
@@ -57,36 +58,41 @@ unresolved: []
 - Third-party folder tools: **Folder Guard**, **Folder Lock**, **Protected Folder**
 
 ## Cards
-Q:: Name the logical access control mechanisms.
-A:: Access control lists (ACLs) · group policies · account restrictions · passwords / access tokens.
-#flashcard
-Q:: How many ACE types exist and under which ACLs?
-A:: 6 — 3 generic (access-denied, access-allowed in DACL; system-audit in system ACL) + 3 object-specific variants.
-#flashcard
-Q:: Linux: how to mount a filesystem with ACL support?
-A:: `mount -t ext3 -o acl [device] [mount]` (install with `yum install acl`; persist via /etc/fstab acl option).
-#flashcard
-Q:: Linux: how to set a default ACL granting others rx on /Testdir?
-A:: `setfacl -m d:o:rx /Testdir`.
-#flashcard
-Q:: What does the pam_time rule `Login;*;!Martin;MoTuWeThFr0800-2000` mean?
-<!--SR:!2026-09-30,1,230-->
-A:: All services/tty, user Martin barred except weekdays 08:00–20:00.
-#flashcard
+Name the logical access control mechanisms.
+?
+Access control lists (ACLs) · group policies · account restrictions · passwords / access tokens.
+
+How many ACE types exist and under which ACLs?
+?
+6 — 3 generic (access-denied, access-allowed in DACL; system-audit in system ACL) + 3 object-specific variants.
+
+Linux: how to mount a filesystem with ACL support?
+?
+`mount -t ext3 -o acl [device] [mount]` (install with `yum install acl`; persist via /etc/fstab acl option).
+
+Linux: how to set a default ACL granting others rx on /Testdir?
+?
+`setfacl -m d:o:rx /Testdir`.
+
+What does the pam_time rule `Login;*;!Martin;MoTuWeThFr0800-2000` mean?
+?
+All services/tty, user Martin barred except weekdays 08:00–20:00.
+
 
 ## Cards (verified set 617277655)
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-Q:: # setfacl -x u:guest test
-A:: remove all access ACL rules of test file for the guest user.  _(Mod 10 p18)_
-#flashcard
+# setfacl -x u:guest test
+?
+remove all access ACL rules of test file for the guest user.  _(Mod 10 p18)_
 
-Q:: # setfacl -m u:user1:rwx test
-A:: set read and write permission in the ACL of test file for the guest.  _(Mod 10 p18)_
-#flashcard
 
-Q:: # setfacl -m d:o:rx /Testdir
-A:: This command is used to set default ACL for test directory.  _(Mod 10 p18)_
-#flashcard
+# setfacl -m u:user1:rwx test
+?
+set read and write permission in the ACL of test file for the guest.  _(Mod 10 p18)_
 
+
+# setfacl -m d:o:rx /Testdir
+?
+This command is used to set default ACL for test directory.  _(Mod 10 p18)_

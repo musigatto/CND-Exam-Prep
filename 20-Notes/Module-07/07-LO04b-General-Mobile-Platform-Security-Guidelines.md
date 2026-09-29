@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "07"
 lo: "04"
-tags: [bestpractice, policy, tool, threat, mod/07]
+tags: [bestpractice, policy, tool, threat, mod/07, flashcard/07]
 topic: "General Mobile Platform Security Guidelines"
 exam_weight: unknown
 status: done
@@ -85,15 +86,18 @@ unresolved: []
 10. Check for spelling mistakes, grammatical errors, language inconsistency
 
 ## Cards
-Q:: Passcode recommendations?
-A:: Strong passcode, max length · idle-timeout auto-lock · lockout/wipe after attempts · eight-character passcodes · erase data ON to prevent guessing.
-#flashcard
-Q:: Remote wipe service examples?
-A:: Find My Device (Android) and Find My iPhone / FindMyPhone (iOS); report loss/theft to IT to disable certificates + access methods.
-#flashcard
-Q:: Access gateway authentication methods?
-A:: No authentication · Domain only · SMS authentication · RSA SecurID only · Domain + RSA SecurID.
-#flashcard
-Q:: SMS phishing countermeasures (top items)?
-A:: Don't reply without verifying source · don't click links · don't reply to requests for personal/financial info · review bank's SMS policy · block texts from the internet · never call numbers from SMS · avoid non-telephonic numbers.
-#flashcard
+Passcode recommendations?
+?
+Strong passcode, max length · idle-timeout auto-lock · lockout/wipe after attempts · eight-character passcodes · erase data ON to prevent guessing.
+
+Remote wipe service examples?
+?
+Find My Device (Android) and Find My iPhone / FindMyPhone (iOS); report loss/theft to IT to disable certificates + access methods.
+
+Access gateway authentication methods?
+?
+No authentication · Domain only · SMS authentication · RSA SecurID only · Domain + RSA SecurID.
+
+SMS phishing countermeasures (top items)?
+?
+Don't reply without verifying source · don't click links · don't reply to requests for personal/financial info · review bank's SMS policy · block texts from the internet · never call numbers from SMS · avoid non-telephonic numbers.

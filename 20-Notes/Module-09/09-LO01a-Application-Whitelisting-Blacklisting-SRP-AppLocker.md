@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "09"
 lo: "01"
-tags: [concept, process, bestpractice, mod/09]
+tags: [concept, process, bestpractice, mod/09, flashcard/09]
 topic: "Application Whitelisting and Blacklisting — Approaches, SRP, AppLocker"
 exam_weight: unknown
 status: done
@@ -57,27 +58,34 @@ unresolved: []
 - Rule collections: **Executable Rules · Script Rules · Windows Installer Rules · Packaged app rules**
 
 ## Cards
-Q:: Whitelisting = ? / philosophy?
-A:: Allow-list control (trust-centric): allow only approved apps, deny by default → blocks everything not whitelisted.
-#flashcard
-Q:: Whitelisting mitigates which attack class?
-A:: Zero-day attacks (blocks vuln code execution while patches/signatures lag).
-#flashcard
-Q:: Blacklisting = ? / philosophy?
-A:: Deny-list control (threat-centric): block known-bad apps, allow by default (AV, spam filters, IDS/IPS).
-#flashcard
-Q:: Blacklisting's main weakness?
-A:: Cannot stop zero-day attacks and is never comprehensive (unknown theats slip through).
-#flashcard
-Q:: SRP rule types (4)?
-A:: Path · Hash · Certificate · Internet Zone rules (of the default Disallowed level).
-#flashcard
-Q:: Most common whitelisting via SRP — two big caveats?
-A:: A Disallowed app can still be run by copying it elsewhere; internet zone rules apply only to .msi.
-#flashcard
-Q:: AppLocker controls which files?
-A:: Executables, Windows Installer files, and DLLs (default rules = folder paths).
-#flashcard
-Q:: AppLocker rule collections?
-A:: Executable · Script · Windows Installer · Packaged app rules.
-#flashcard
+Whitelisting = ? / philosophy?
+?
+Allow-list control (trust-centric): allow only approved apps, deny by default → blocks everything not whitelisted.
+
+Whitelisting mitigates which attack class?
+?
+Zero-day attacks (blocks vuln code execution while patches/signatures lag).
+
+Blacklisting = ? / philosophy?
+?
+Deny-list control (threat-centric): block known-bad apps, allow by default (AV, spam filters, IDS/IPS).
+
+Blacklisting's main weakness?
+?
+Cannot stop zero-day attacks and is never comprehensive (unknown theats slip through).
+
+SRP rule types (4)?
+?
+Path · Hash · Certificate · Internet Zone rules (of the default Disallowed level).
+
+Most common whitelisting via SRP — two big caveats?
+?
+A Disallowed app can still be run by copying it elsewhere; internet zone rules apply only to .msi.
+
+AppLocker controls which files?
+?
+Executables, Windows Installer files, and DLLs (default rules = folder paths).
+
+AppLocker rule collections?
+?
+Executable · Script · Windows Installer · Packaged app rules.

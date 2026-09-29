@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "03"
 lo: "07"
-tags: [tool, mod/03]
+tags: [tool, mod/03, flashcard/03]
 topic: "Essential Network Security Solutions — Appliances & Analyzers"
 exam_weight: unknown
 status: done
@@ -60,30 +61,36 @@ unresolved: []
 - Tools: **OpenDNS** (3 predefined filtering levels + custom categories/allow-list) · **Netsentron** (schools/businesses; blocks porn/offensive/unapproved sites; remote file work) · **Net Nanny** (parental: Windows/Mac/Android/iPhone/iPod/iPad; blocks porn, masks profanity, time limits, alerts/reports, per-user profiles)
 
 ## Cards
-Q:: IDS vs IPS placement?
-A:: IPS is in-line (blocks/drops/corrects); IDS sits off-side via a network tap (monitors, cannot act directly).
-#flashcard
+IDS vs IPS placement?
+?
+IPS is in-line (blocks/drops/corrects); IDS sits off-side via a network tap (monitors, cannot act directly).
 
-Q:: Three detection methods in an IDS?
-A:: Signature-based → anomaly-based (statistical) → stateful protocol analysis.
-#flashcard
 
-Q:: Honeypot deployment types?
-A:: Production (in production network, looks real) vs Research (analyze attacker steps for countermeasures).
-#flashcard
+Three detection methods in an IDS?
+?
+Signature-based → anomaly-based (statistical) → stateful protocol analysis.
 
-Q:: Honeypot design types?
-A:: Pure · low-interaction (fake common services) · high-interaction (real systems via VM, costly).
-#flashcard
 
-Q:: Proxy server main function?
-A:: Intercepts/filters client requests and serves them on behalf of real servers, hiding internal IPs; extra defense layer.
-#flashcard
+Honeypot deployment types?
+?
+Production (in production network, looks real) vs Research (analyze attacker steps for countermeasures).
 
-Q:: Protocol analyzer NIC mode?
-A:: Promiscuous mode to capture all packets on the network.
-#flashcard
 
-Q:: Web content filter protections?
-A:: Malware, phishing, pharming; filters by keywords, URLs, contextual analysis.
-#flashcard
+Honeypot design types?
+?
+Pure · low-interaction (fake common services) · high-interaction (real systems via VM, costly).
+
+
+Proxy server main function?
+?
+Intercepts/filters client requests and serves them on behalf of real servers, hiding internal IPs; extra defense layer.
+
+
+Protocol analyzer NIC mode?
+?
+Promiscuous mode to capture all packets on the network.
+
+
+Web content filter protections?
+?
+Malware, phishing, pharming; filters by keywords, URLs, contextual analysis.

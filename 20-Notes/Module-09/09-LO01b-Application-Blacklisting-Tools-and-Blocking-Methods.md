@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "09"
 lo: "01"
-tags: [tool, command, policy, process, mod/09]
+tags: [tool, command, policy, process, mod/09, flashcard/09]
 topic: "Application Blacklisting Tools and Blocking Methods"
 exam_weight: unknown
 status: done
@@ -58,21 +59,26 @@ unresolved: []
 | McAfee Application Control | **default-Deny, Detect-and-Deny, Verify-and-Deny**; well-known/unknown/known-bad classification |
 
 ## Cards
-Q:: Endpoint Central block methods?
-A:: Path rule (by name/extension) and hash value (blocks even renamed exe); two policies per exe allowed.
-#flashcard
-Q:: Endpoint Central two blacklisting features?
-A:: Block Executable (targeted block) + Prohibit Software (auto detect/uninstall + approvals + reports).
-#flashcard
-Q:: PUA PowerShell command?
-A:: Set-MpPreference -PUAProtection 1 (admin; alternatives: Block / AuditMode / Disable / Not configured).
-#flashcard
-Q:: Turn off Windows Installer options?
-A:: Never (users can install/upgrade) · For non-managed apps only (admin-assigned) · Always (disables).
-#flashcard
-Q:: Registry DisallowRun steps (hash)?
-A:: HKCU\...\Policies → key Explorer → DWORD DisallowRun=1 → key DisallowRun → strings 1,2,3 = exe names → restart.
-#flashcard
-Q:: McAfee Application Control whitelisting modes?
-A:: default-Deny · Detect-and-Deny · Verify-and-Deny whitelisting.
-#flashcard
+Endpoint Central block methods?
+?
+Path rule (by name/extension) and hash value (blocks even renamed exe); two policies per exe allowed.
+
+Endpoint Central two blacklisting features?
+?
+Block Executable (targeted block) + Prohibit Software (auto detect/uninstall + approvals + reports).
+
+PUA PowerShell command?
+?
+Set-MpPreference -PUAProtection 1 (admin; alternatives: Block / AuditMode / Disable / Not configured).
+
+Turn off Windows Installer options?
+?
+Never (users can install/upgrade) · For non-managed apps only (admin-assigned) · Always (disables).
+
+Registry DisallowRun steps (hash)?
+?
+HKCU\...\Policies → key Explorer → DWORD DisallowRun=1 → key DisallowRun → strings 1,2,3 = exe names → restart.
+
+McAfee Application Control whitelisting modes?
+?
+default-Deny · Detect-and-Deny · Verify-and-Deny whitelisting.

@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "07"
 lo: "06"
-tags: [bestpractice, tool, policy, mod/07]
+tags: [bestpractice, tool, policy, mod/07, flashcard/07]
 topic: "iOS Security Guidelines and Tools"
 exam_weight: unknown
 status: done
@@ -52,18 +53,22 @@ iOS devices have built-in security features that should be enabled/configured ap
 - Others: **Norton Mobile Security** · **LastPass Password Manager** · **McAfee Total Protection** · **SplashID Safe Password Manager** · **Webroot SecureWeb Browser** · **Wickr Me — Private Messenger** · **1Password** · **GadgetTrak** · **iLocalis** · **GPS Tracker by FollowMee**
 
 ## Cards
-Q:: iOS passcode/erase configuration paths?
-A:: Settings → Touch ID and Passcode (Turn Passcode On, Erase Data, Voice Dial OFF); Auto-Lock: Settings → General → Auto-Lock.
-#flashcard
-Q:: Default iPhone root password and the fix?
-A:: Default root password is "Alpine" — must be changed. Never jailbreak/root in enterprise environments.
-#flashcard
-Q:: Find My iPhone Lost Mode?
-A:: iOS 6+ feature: locks the device with a passcode + custom message (e.g., contact number); tracks whereabouts and recent location history.
-#flashcard
-Q:: Find My iPhone setup path?
-A:: Settings → [your name] → iCloud → Find My iPhone → turn on Find My iPhone + Send Last Location (iOS 10.2-: Settings → iCloud).
-#flashcard
-Q:: Key iOS hardening items?
-A:: App Store only · no sensitive data on client-side DB or iCloud · no jailbreak · trusted third-party apps · ask-to-join Wi-Fi · Safari privacy settings + Do Not Track · disable BT/Wi-Fi when idle · regular Apple patches.
-#flashcard
+iOS passcode/erase configuration paths?
+?
+Settings → Touch ID and Passcode (Turn Passcode On, Erase Data, Voice Dial OFF); Auto-Lock: Settings → General → Auto-Lock.
+
+Default iPhone root password and the fix?
+?
+Default root password is "Alpine" — must be changed. Never jailbreak/root in enterprise environments.
+
+Find My iPhone Lost Mode?
+?
+iOS 6+ feature: locks the device with a passcode + custom message (e.g., contact number); tracks whereabouts and recent location history.
+
+Find My iPhone setup path?
+?
+Settings → [your name] → iCloud → Find My iPhone → turn on Find My iPhone + Send Last Location (iOS 10.2-: Settings → iCloud).
+
+Key iOS hardening items?
+?
+App Store only · no sensitive data on client-side DB or iCloud · no jailbreak · trusted third-party apps · ask-to-join Wi-Fi · Safari privacy settings + Do Not Track · disable BT/Wi-Fi when idle · regular Apple patches.

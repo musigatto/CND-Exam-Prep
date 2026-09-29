@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "06"
 lo: "03"
-tags: [process, tool, command, concept, mod/06]
+tags: [process, tool, command, concept, mod/06, flashcard/06]
 topic: "Linux File Integrity Checking Tools (FIM)"
 exam_weight: unknown
 status: done
@@ -82,27 +83,34 @@ File integrity monitoring (FIM) verifies file permissions and cryptographic chec
 - Schedule via cron: `sudo crontab -e`
 
 ## Cards
-Q:: FIM working model?
-A:: Centralized policy → auto-retrieved → compares local filesystem vs system baseline → violations logged in report + sent to central repo; policy = JSON script with risk levels.
-#flashcard
-Q:: Tripwire workflow commands?
-A:: `tripwire --init` → policy `/etc/tripwire/twpol.txt` → `twadmin --create-cfgfile -s site.key /etc/tripwire/twcfg.txt` → cron `tripwire --check` daily.
-#flashcard
-Q:: AIDE commands?
-A:: Init `sudo aide --init`; config `/etc/aide/aide.conf`; update `sudo aide --update`; check `sudo aide --check` (or `# aide --check`); cron daily.
-#flashcard
-Q:: Samhain config settings?
-A:: FILE_CHECKS (monitor list), HIDE_MODIFIED, IGNORE_LIST, REPORT_LEVEL (1 min / 3 detailed), SYSLOG_FACILITY (e.g., LOG_LOCAL4); init `samhain -t init`; logs `/var/log/samhain.log`.
-#flashcard
-Q:: OSSEC key features?
-A:: LIDS, file integrity monitoring (forensic copies), active response (firewall + self-healing), compliance auditing (PCI-DSS/CIS), rootkit/malware detection, system inventory; alerts via `tail -f /var/ossec/logs/alerts/alerts.log`.
-#flashcard
-Q:: IMA + TPM?
-A:: IMA = measure + appraise subsystems; hashes data before load, sends hashes to TPM to protect from alteration; enable `CONFIG_INTEGRITY=y CONFIG_IMA=y`; policies `/etc/ima/ima-policy` (e.g., `func=H`).
-#flashcard
-Q:: auditd rule to monitor /etc/passwd?
-A:: `sudo auditctl -w /etc/passwd -p wa -k passwd_changes` — -w path, -p permissions (w write, a attribute), -k key. Query with `ausearch -i -k <key>` and `aureport -x`.
-#flashcard
-Q:: inotifywait usage?
-A:: `inotifywait /path` (once), `inotifywait --monitor /path` (continuous), `inotifywait --event modify /path` (modification events).
-#flashcard
+FIM working model?
+?
+Centralized policy → auto-retrieved → compares local filesystem vs system baseline → violations logged in report + sent to central repo; policy = JSON script with risk levels.
+
+Tripwire workflow commands?
+?
+`tripwire --init` → policy `/etc/tripwire/twpol.txt` → `twadmin --create-cfgfile -s site.key /etc/tripwire/twcfg.txt` → cron `tripwire --check` daily.
+
+AIDE commands?
+?
+Init `sudo aide --init`; config `/etc/aide/aide.conf`; update `sudo aide --update`; check `sudo aide --check` (or `# aide --check`); cron daily.
+
+Samhain config settings?
+?
+FILE_CHECKS (monitor list), HIDE_MODIFIED, IGNORE_LIST, REPORT_LEVEL (1 min / 3 detailed), SYSLOG_FACILITY (e.g., LOG_LOCAL4); init `samhain -t init`; logs `/var/log/samhain.log`.
+
+OSSEC key features?
+?
+LIDS, file integrity monitoring (forensic copies), active response (firewall + self-healing), compliance auditing (PCI-DSS/CIS), rootkit/malware detection, system inventory; alerts via `tail -f /var/ossec/logs/alerts/alerts.log`.
+
+IMA + TPM?
+?
+IMA = measure + appraise subsystems; hashes data before load, sends hashes to TPM to protect from alteration; enable `CONFIG_INTEGRITY=y CONFIG_IMA=y`; policies `/etc/ima/ima-policy` (e.g., `func=H`).
+
+auditd rule to monitor /etc/passwd?
+?
+`sudo auditctl -w /etc/passwd -p wa -k passwd_changes` — -w path, -p permissions (w write, a attribute), -k key. Query with `ausearch -i -k <key>` and `aureport -x`.
+
+inotifywait usage?
+?
+`inotifywait /path` (once), `inotifywait --monitor /path` (continuous), `inotifywait --event modify /path` (modification events).

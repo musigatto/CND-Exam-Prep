@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "10"
 lo: "07"
-tags: [process, command, tool, policy, mod/10]
+tags: [process, command, tool, policy, mod/10, flashcard/10]
 topic: "Data Destruction Tools, Standards, Best Practices"
 exam_weight: unknown
 status: done
@@ -50,18 +51,22 @@ unresolved: []
 6. **Recycle the e-waste** (prevents reuse/recovery of sensitive info; environment-safe)
 
 ## Cards
-Q:: Sequence for wiping a disk with Windows DiskPart.
-A:: `diskpart` → `list disk` → `select disk 1` → `clean` → `create partition primary` → `select partition 1` → `active` → `format FS=NTFS label=Data quick` → `assign letter=w` → `exit`.
-#flashcard
-Q:: Why is DBAN unsuitable for full sanitization/audit?
-A:: May not fully sanitize the entire drive, cannot detect/erase SSDs, and provides no certificate of data removal for audits/compliance.
-#flashcard
-Q:: What are the 3 NIST SP 800-88 sanitization methods?
-A:: Clear (overwrite user-addressable memory) · Purge (including SSD-specific vendor commands) · Destroy (physical).
-#flashcard
-Q:: The three passes of DoD 5220.22-M?
-A:: Pass 1 binary zeros → Pass 2 binary ones → Pass 3 random bit pattern (final pass verified).
-#flashcard
-Q:: PCI DSS requirement for disposed card data?
-A:: Req 9.10 — render cardholder data (CHD) unreadable and unrecoverable once no longer needed.
-#flashcard
+Sequence for wiping a disk with Windows DiskPart.
+?
+`diskpart` → `list disk` → `select disk 1` → `clean` → `create partition primary` → `select partition 1` → `active` → `format FS=NTFS label=Data quick` → `assign letter=w` → `exit`.
+
+Why is DBAN unsuitable for full sanitization/audit?
+?
+May not fully sanitize the entire drive, cannot detect/erase SSDs, and provides no certificate of data removal for audits/compliance.
+
+What are the 3 NIST SP 800-88 sanitization methods?
+?
+Clear (overwrite user-addressable memory) · Purge (including SSD-specific vendor commands) · Destroy (physical).
+
+The three passes of DoD 5220.22-M?
+?
+Pass 1 binary zeros → Pass 2 binary ones → Pass 3 random bit pattern (final pass verified).
+
+PCI DSS requirement for disposed card data?
+?
+Req 9.10 — render cardholder data (CHD) unreadable and unrecoverable once no longer needed.

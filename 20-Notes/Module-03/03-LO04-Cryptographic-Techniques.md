@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "03"
 lo: "04"
-tags: [crypto, mod/03]
+tags: [crypto, mod/03, flashcard/03]
 topic: "Cryptographic Security Techniques"
 exam_weight: unknown
 status: done
@@ -62,32 +63,35 @@ unresolved: []
 - **Elements**: **Witness** (secret info) · **Challenge** (verifier randomly picks multiple questions) · **Response** (prover computes answer; repeats → guessing unlikely)
 
 ## Cards
-Q:: Symmetric vs asymmetric for data volumes?
-A:: Symmetric single key → large data; asymmetric (public/private) keys → small data.
-#flashcard
+Symmetric vs asymmetric for data volumes?
+?
+Symmetric single key → large data; asymmetric (public/private) keys → small data.
 
-Q:: Hashing applications + limitation?
-A:: Password storage, file/message integrity; limitation = collisions (worse with shorter hashes).
-#flashcard
 
-Q:: Digital certificate purpose?
-A:: Bind public key to owner via trusted CA; ensure non-repudiation.
-#flashcard
+Hashing applications + limitation?
+?
+Password storage, file/message integrity; limitation = collisions (worse with shorter hashes).
 
-Q:: PKI components?
-A:: CA (issue/verify) · RA (verifier) · certificate management system · directories.
-#flashcard
 
-Q:: ZKP properties + elements?
-A:: Completeness, soundness, zero-knowledge; Witness, Challenge, Response.
-#flashcard
+Digital certificate purpose?
+?
+Bind public key to owner via trusted CA; ensure non-repudiation.
+
+
+PKI components?
+?
+CA (issue/verify) · RA (verifier) · certificate management system · directories.
+
+
+ZKP properties + elements?
+?
+Completeness, soundness, zero-knowledge; Witness, Challenge, Response.
+
 
 ## Cards (verified set 617277655)
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-Q:: Public key infrastructure
-A:: is treated as the most effective method for providing verification during electronic transactions  _(Mod 03 p82)_
-<!--SR:!2026-09-30,1,230-->
-#flashcard
-
+Public key infrastructure
+?
+is treated as the most effective method for providing verification during electronic transactions  _(Mod 03 p82)_

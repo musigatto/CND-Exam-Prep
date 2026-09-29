@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "03"
 lo: "03"
-tags: [process, mod/03]
+tags: [process, mod/03, flashcard/03]
 topic: "Identity and Access Management (IAM)"
 exam_weight: unknown
 status: done
@@ -84,30 +85,36 @@ Common methods: Passwords · Biometrics · Token management. Wired + wireless ne
 | **Ping Identity** | Cloud-hosted IAM for on-prem + cloud apps; admin access-control toolkit |
 
 ## Cards
-Q:: Four IAM areas?
-A:: Authentication · Authorization · User management · Central user (identity) repository.
-#flashcard
+Four IAM areas?
+?
+Authentication · Authorization · User management · Central user (identity) repository.
 
-Q:: Authentication factors?
-A:: Something you know (password) · Something you have (token/card) · Something you are (biometrics).
-#flashcard
 
-Q:: 2FA combos?
-A:: Password+smart card · password+biometrics · password+OTP · smart card+biometrics.
-#flashcard
+Authentication factors?
+?
+Something you know (password) · Something you have (token/card) · Something you are (biometrics).
 
-Q:: Token-based auth advantages?
-A:: Security, scalability, cross-origin sharing, revocation, statelessness.
-#flashcard
 
-Q:: Centralized vs decentralized authorization?
-A:: Centralized = single DB/unit for all resources (easy, cheap); decentralized = per-resource DB, flexible but cascading/cyclic auth issues.
-#flashcard
+2FA combos?
+?
+Password+smart card · password+biometrics · password+OTP · smart card+biometrics.
 
-Q:: Accounting purpose?
-A:: Track user actions → trend analysis, breach detection, forensics (AAA: Authentication/Authorization/Accounting).
-#flashcard
 
-Q:: Provierre/deprovisioning benefit?
-A:: Eradicates idle "zombie" accounts; auto-removes access on departure.
-#flashcard
+Token-based auth advantages?
+?
+Security, scalability, cross-origin sharing, revocation, statelessness.
+
+
+Centralized vs decentralized authorization?
+?
+Centralized = single DB/unit for all resources (easy, cheap); decentralized = per-resource DB, flexible but cascading/cyclic auth issues.
+
+
+Accounting purpose?
+?
+Track user actions → trend analysis, breach detection, forensics (AAA: Authentication/Authorization/Accounting).
+
+
+Provierre/deprovisioning benefit?
+?
+Eradicates idle "zombie" accounts; auto-removes access on departure.

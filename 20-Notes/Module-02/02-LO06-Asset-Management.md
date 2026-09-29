@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "02"
 lo: "06"
-tags: [process, mod/02]
+tags: [process, mod/02, flashcard/02]
 topic: "IT Asset Management (ITAM)"
 exam_weight: unknown
 status: done
@@ -75,23 +76,26 @@ unresolved: []
 - **Continuous improvement** — different scanning techniques, refresh DB; add new purchases/leases/assets from new facilities
 
 ## Cards
-Q:: Three ITAM data components?
-A:: Financial, physical, contractual data.
-#flashcard
+Three ITAM data components?
+?
+Financial, physical, contractual data.
 
-Q:: Six ITAM types?
-A:: Physical/hardware, software, network, digital, mobile device, cloud asset management.
-#flashcard
 
-Q:: ITAM process phases?
-A:: Identification & Categorization → Asset Tracking → Asset Maintenance.
-#flashcard
+Six ITAM types?
+?
+Physical/hardware, software, network, digital, mobile device, cloud asset management.
 
-Q:: Lansweeper discovery highlight?
-A:: Network-wide asset discovery without installing agents/software on systems (works for IoT too).
-#flashcard
 
-Q:: Asset categorization criteria?
-<!--SR:!2026-09-30,1,230-->
-A:: Type · usage · location · owner/department · lifecycle stage · vendor/manufacturer · criticality · license type.
-#flashcard
+ITAM process phases?
+?
+Identification & Categorization → Asset Tracking → Asset Maintenance.
+
+
+Lansweeper discovery highlight?
+?
+Network-wide asset discovery without installing agents/software on systems (works for IoT too).
+
+
+Asset categorization criteria?
+?
+Type · usage · location · owner/department · lifecycle stage · vendor/manufacturer · criticality · license type.

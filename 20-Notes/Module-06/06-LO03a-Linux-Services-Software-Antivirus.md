@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "06"
 lo: "03"
-tags: [process, tool, command, threat, bestpractice, mod/06]
+tags: [process, tool, command, threat, bestpractice, mod/06, flashcard/06]
 topic: "Linux OS Hardening — Services, Software, Antivirus, Repositories"
 exam_weight: unknown
 status: done
@@ -70,21 +71,26 @@ Open ports of running services can be exploited by intruders. Disable all unnece
 - Only install needed packages (bare minimum)
 
 ## Cards
-Q:: systemctl service commands?
-A:: List: `systemctl --type service`; stop: `systemctl stop [service]`; disable: `systemctl disable [service]`; kill process: `kill -9 [pid]`.
-#flashcard
-Q:: Five legacy services to remove from Linux servers?
-A:: telnet-server, rsh-server, ypserv (NIS), tftp-server, talk-server — all unencrypted/insecure. Check `rpm -q <pkg>`, remove `yum erase <pkg>`.
-#flashcard
-Q:: Deborphan purpose + usage?
-A:: Lists unused packages/libraries. `sudo apt-get install deborphan`, then `deborphan --guess-all`; remove via `deborphan --guess-data | xargs sudo aptitude -y purge`.
-#flashcard
-Q:: Ubuntu repository types?
-A:: Main (Canonical-supported FOSS), Universe (community), Restricted (proprietary drivers, limited support), Multiverse (copyright/legal-restricted, paid). Not all audited; disable unsafe ones in Software & Updates.
-#flashcard
-Q:: ClamAV install (Debian/RHEL)?
-A:: Debian: `apt-get update && apt-get install clamav`. RHEL/CentOS: `yum install -y epel-release && yum install -y clamav`. Fedora adds clamav-update.
-#flashcard
-Q:: Why remove unnecessary packages?
-A:: Older/untrusted packages introduce vulnerabilities or waste resources; uninstalls leave dependent files. Use autoremove/clean/autoclean/purge.
-#flashcard
+systemctl service commands?
+?
+List: `systemctl --type service`; stop: `systemctl stop [service]`; disable: `systemctl disable [service]`; kill process: `kill -9 [pid]`.
+
+Five legacy services to remove from Linux servers?
+?
+telnet-server, rsh-server, ypserv (NIS), tftp-server, talk-server — all unencrypted/insecure. Check `rpm -q <pkg>`, remove `yum erase <pkg>`.
+
+Deborphan purpose + usage?
+?
+Lists unused packages/libraries. `sudo apt-get install deborphan`, then `deborphan --guess-all`; remove via `deborphan --guess-data | xargs sudo aptitude -y purge`.
+
+Ubuntu repository types?
+?
+Main (Canonical-supported FOSS), Universe (community), Restricted (proprietary drivers, limited support), Multiverse (copyright/legal-restricted, paid). Not all audited; disable unsafe ones in Software & Updates.
+
+ClamAV install (Debian/RHEL)?
+?
+Debian: `apt-get update && apt-get install clamav`. RHEL/CentOS: `yum install -y epel-release && yum install -y clamav`. Fedora adds clamav-update.
+
+Why remove unnecessary packages?
+?
+Older/untrusted packages introduce vulnerabilities or waste resources; uninstalls leave dependent files. Use autoremove/clean/autoclean/purge.

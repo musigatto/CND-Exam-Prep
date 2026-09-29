@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "04"
 lo: "15"
-tags: [tool, concept, mod/04]
+tags: [tool, concept, mod/04, flashcard/04]
 topic: "NIDS & HIDS Solutions"
 exam_weight: unknown
 status: done
@@ -49,21 +50,26 @@ unresolved: []
 - Also monitors user activities, assesses system configuration, detects vulnerabilities
 
 ## Cards
-Q:: NIDS tools covered?
-A:: Snort (signature/protocol/anomaly rules), Zeek/Bro (behavioral + network analysis), Suricata (IDS/IPS, multi-gigabit, Eve JSON logging).
-#flashcard
-Q:: Snort capabilities?
-A:: Real-time traffic analysis, packet logging, protocol analysis, content matching; detects DoS, OS fingerprinting, buffer overflows, stealth port scans, SMB/CGI attacks.
-#flashcard
-Q:: Zeek (Bro) features?
-A:: Behavioral-based, high-performance networks, full logging, application-layer semantic analysis + state, domain-specific scripting; integrate logs with ELK for visualization.
-#flashcard
-Q:: Suricata features?
-A:: IDS/IPS + NSM + offline pcap; multi-gigabit single instance; auto protocol detection; Lua scripting; Eve JSON + YAML/SIEM integration.
-#flashcard
-Q:: OSSEC features?
-A:: HIDS: log analysis, integrity checking (FIM), Windows registry monitoring, rootkit detection, time-based alerting, active response.
-#flashcard
-Q:: Wazuh origin + role?
-A:: Fork of OSSEC; agent-level anomaly + signature detection, monitors user activity, config assessment, vulnerability detection.
-#flashcard
+NIDS tools covered?
+?
+Snort (signature/protocol/anomaly rules), Zeek/Bro (behavioral + network analysis), Suricata (IDS/IPS, multi-gigabit, Eve JSON logging).
+
+Snort capabilities?
+?
+Real-time traffic analysis, packet logging, protocol analysis, content matching; detects DoS, OS fingerprinting, buffer overflows, stealth port scans, SMB/CGI attacks.
+
+Zeek (Bro) features?
+?
+Behavioral-based, high-performance networks, full logging, application-layer semantic analysis + state, domain-specific scripting; integrate logs with ELK for visualization.
+
+Suricata features?
+?
+IDS/IPS + NSM + offline pcap; multi-gigabit single instance; auto protocol detection; Lua scripting; Eve JSON + YAML/SIEM integration.
+
+OSSEC features?
+?
+HIDS: log analysis, integrity checking (FIM), Windows registry monitoring, rootkit detection, time-based alerting, active response.
+
+Wazuh origin + role?
+?
+Fork of OSSEC; agent-level anomaly + signature detection, monitors user activity, config assessment, vulnerability detection.

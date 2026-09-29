@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "09"
 lo: "04"
-tags: [concept, tool, threat, mod/09]
+tags: [concept, tool, threat, mod/09, flashcard/09]
 topic: "Web Application Firewalls — Types, Deployment, Benefits, Limitations"
 exam_weight: unknown
 status: done
@@ -51,24 +52,30 @@ unresolved: []
 - No protection from **false positives**
 
 ## Cards
-Q:: WAF working + layer?
-A:: Rule-based filter before the web app; protects at layer 7 where standard firewalls/IDS-IPS fall short.
-#flashcard
-Q:: Three WAF types?
-A:: Network/hardware-based · Host/software-based · Cloud-hosted.
-#flashcard
-Q:: Host vs network WAF granularity?
-A:: Host gives more control (single server, any server, no hardware); network covers all apps/network via IP/port but less granular + pricey hardware.
-#flashcard
-Q:: WAF deployment options (5)?
-A:: Reverse proxy · Layer-2 bridge · Out of band · Server resident · Internet hosted/cloud.
-#flashcard
-Q:: Out-of-band WAF advantage?
-A:: Least impact (not in-line); copies traffic via monitoring port; avoids false-positive outages.
-#flashcard
-Q:: WAF benefits list?
-A:: Cookie encryption/signature · CSRF protection + URL encryption (parameter tampering) · data-validation depth-testing · compliance (PCI, HIPAA, GDPR).
-#flashcard
-Q:: WAF limits?
-A:: Not replacement for auth/input filtering · can't read DB commands · partial session-fixation/anti-automation · no false-positive protection · needs ongoing management.
-#flashcard
+WAF working + layer?
+?
+Rule-based filter before the web app; protects at layer 7 where standard firewalls/IDS-IPS fall short.
+
+Three WAF types?
+?
+Network/hardware-based · Host/software-based · Cloud-hosted.
+
+Host vs network WAF granularity?
+?
+Host gives more control (single server, any server, no hardware); network covers all apps/network via IP/port but less granular + pricey hardware.
+
+WAF deployment options (5)?
+?
+Reverse proxy · Layer-2 bridge · Out of band · Server resident · Internet hosted/cloud.
+
+Out-of-band WAF advantage?
+?
+Least impact (not in-line); copies traffic via monitoring port; avoids false-positive outages.
+
+WAF benefits list?
+?
+Cookie encryption/signature · CSRF protection + URL encryption (parameter tampering) · data-validation depth-testing · compliance (PCI, HIPAA, GDPR).
+
+WAF limits?
+?
+Not replacement for auth/input filtering · can't read DB commands · partial session-fixation/anti-automation · no false-positive protection · needs ongoing management.

@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "01"
 lo: "12"
-tags: [concept, mod/01]
+tags: [concept, mod/01, flashcard/01]
 topic: "Security Controls and Defense Elements"
 exam_weight: unknown
 status: done
@@ -36,10 +37,11 @@ unresolved: []
 - Blue team responsibilities: determine adequacy of security measures, examine security status & deficiencies, propose effective defenses
 
 ## Cards
-Q:: Three categories of physical security controls with examples?
-A:: Prevention (fences, locks, biometrics, mantraps), Deterrence (security guards, warning signs), Detection (CCTV, alarms).
-#flashcard
+Three categories of physical security controls with examples?
+?
+Prevention (fences, locks, biometrics, mantraps), Deterrence (security guards, warning signs), Detection (CCTV, alarms).
 
-Q:: Major elements required for effective security strategy implementation?
-A:: Technology, well-defined Operations, and skilled People (blue team).
-#flashcard
+
+Major elements required for effective security strategy implementation?
+?
+Technology, well-defined Operations, and skilled People (blue team).

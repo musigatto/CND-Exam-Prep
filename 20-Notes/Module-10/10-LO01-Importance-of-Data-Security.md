@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "10"
 lo: "01"
-tags: [concept, threat, process, mod/10]
+tags: [concept, threat, process, mod/10, flashcard/10]
 topic: "Data Security Importance — Critical Data, States, Technologies"
 exam_weight: unknown
 status: done
@@ -57,18 +58,22 @@ unresolved: []
 | **Hardware-based security** | Protect device physically, not only via software (hardened devices) |
 
 ## Cards
-Q:: What are the three states of data?
-A:: Data at rest (inactive, stored) · data in use (RAM/CPU/database, actively processed) · data in transit (moving across the network).
-#flashcard
-Q:: Which state does SSL/TLS and email encryption (PGP, S/MIME) protect?
-A:: Data in transit.
-#flashcard
-Q:: How is business-critical data identified?
-A:: Business impact analysis → identify critical functions/data + dependent processes → evaluate impact of data damage on the business.
-#flashcard
-Q:: What makes data "secured" (3 provisions)?
-A:: Restrict destruction/modification/disclosure · recover lost/modified data after incidents · retention + destruction policies.
-#flashcard
-Q:: Name the 7 data security technologies.
-A:: Access control · encryption · masking · resilience/backup · destruction · retention · hardware-based security.
-#flashcard
+What are the three states of data?
+?
+Data at rest (inactive, stored) · data in use (RAM/CPU/database, actively processed) · data in transit (moving across the network).
+
+Which state does SSL/TLS and email encryption (PGP, S/MIME) protect?
+?
+Data in transit.
+
+How is business-critical data identified?
+?
+Business impact analysis → identify critical functions/data + dependent processes → evaluate impact of data damage on the business.
+
+What makes data "secured" (3 provisions)?
+?
+Restrict destruction/modification/disclosure · recover lost/modified data after incidents · retention + destruction policies.
+
+Name the 7 data security technologies.
+?
+Access control · encryption · masking · resilience/backup · destruction · retention · hardware-based security.

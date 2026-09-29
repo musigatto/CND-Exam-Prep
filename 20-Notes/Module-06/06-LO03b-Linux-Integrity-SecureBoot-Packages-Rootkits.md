@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "06"
 lo: "03"
-tags: [concept, process, tool, command, crypto, mod/06]
+tags: [concept, process, tool, command, crypto, mod/06, flashcard/06]
 topic: "Linux System Integrity Checking — Secure Boot, Package, Rootkits, IMA/EVM"
 exam_weight: unknown
 status: done
@@ -55,21 +56,26 @@ Verifies authenticity/integrity of bootloader, packages, kernel modules, files.
   - Commonly part of solutions such as **SELinux (Security-Enhanced Linux)** or **AppArmor**
 
 ## Cards
-Q:: Secure Boot requirement?
-A:: UEFI firmware with Secure Boot; signed bootloader (e.g., GRUB2) and signed kernel with valid signatures from a trusted CA.
-#flashcard
-Q:: How do package managers verify integrity?
-A:: GPG keys — APT (Debian/Ubuntu), YUM/DNF (/etc/yum.repos.d GPG key URL), zypper (SUSE). Manual: `rpm --checksig package.rpm`, `dpkg-sig --verify package.deb`.
-#flashcard
-Q:: Rootkit detection tools + commands?
-A:: `chkrootkit` (trojans/malware in binaries; `sudo apt-get install chkrootkit`, run `./chkrootkit`) · `rkhunter` (backdoors, network/kernel checks; config `/etc/rkhunter.conf`, `rkhunter --check`, baseline `--propupd`).
-#flashcard
-Q:: IMA vs EVM?
-A:: IMA measures/records/evaluates hashes (serializes log of measured content). EVM extends IMA — monitors file extended attributes, uses public keys to verify/sign hashes.
-#flashcard
-Q:: Kernel integrity monitoring techniques?
-A:: Checksums/hashing, File Integrity Monitoring, Secure Boot. Module integrity: module signing, security policies, kernel module whitelisting.
-#flashcard
-Q:: Why use official repositories + GPG keys?
-A:: Untrusted sources may contain compromised or malicious packages; keys verify signature authenticity. Always use official/trusted repositories.
-#flashcard
+Secure Boot requirement?
+?
+UEFI firmware with Secure Boot; signed bootloader (e.g., GRUB2) and signed kernel with valid signatures from a trusted CA.
+
+How do package managers verify integrity?
+?
+GPG keys — APT (Debian/Ubuntu), YUM/DNF (/etc/yum.repos.d GPG key URL), zypper (SUSE). Manual: `rpm --checksig package.rpm`, `dpkg-sig --verify package.deb`.
+
+Rootkit detection tools + commands?
+?
+`chkrootkit` (trojans/malware in binaries; `sudo apt-get install chkrootkit`, run `./chkrootkit`) · `rkhunter` (backdoors, network/kernel checks; config `/etc/rkhunter.conf`, `rkhunter --check`, baseline `--propupd`).
+
+IMA vs EVM?
+?
+IMA measures/records/evaluates hashes (serializes log of measured content). EVM extends IMA — monitors file extended attributes, uses public keys to verify/sign hashes.
+
+Kernel integrity monitoring techniques?
+?
+Checksums/hashing, File Integrity Monitoring, Secure Boot. Module integrity: module signing, security policies, kernel module whitelisting.
+
+Why use official repositories + GPG keys?
+?
+Untrusted sources may contain compromised or malicious packages; keys verify signature authenticity. Always use official/trusted repositories.

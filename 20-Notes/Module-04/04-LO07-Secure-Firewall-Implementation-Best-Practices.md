@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "04"
 lo: "07"
-tags: [bestpractice, process, policy, mod/04]
+tags: [bestpractice, process, policy, mod/04, flashcard/04]
 topic: "Secure Firewall Implementation Best Practices"
 exam_weight: unknown
 status: done
@@ -39,21 +40,26 @@ unresolved: []
 - **Don't**: overlook scalability · rely on packet filtering alone · be unsympathetic to hardware needs · cut back on additional security · implement without SSL encryption · use underpowered hardware · allow **telnet access** through the firewall · allow **direct connections between internal clients and outside services**
 
 ## Cards
-Q:: Firewall log backup cadence + purpose?
-A:: Monthly to secondary storage; backup before/after rule changes; for legal/future reference after incidents.
-#flashcard
-Q:: Default inbound rule posture?
-A:: Default 'deny' inbound with explicit 'allow' rules; implicit deny at end of ruleset blocks everything not allowed.
-#flashcard
-Q:: Secure email access design?
-A:: Separate email network zone firewalled from DMZ + internal network; email + webmail servers placed in it.
-#flashcard
-Q:: Rule lifecycle management?
-A:: Add expiration dates to temporary rules, review for cleanup; test policies before implementing.
-#flashcard
-Q:: Firewall audit frequency + password policy?
-A:: Audits at least once a year; change firewall passwords regularly (≈ every 6 months).
-#flashcard
-Q:: Key firewall don'ts?
-A:: No telnet access through FW, no direct internal-client↔outside-service connections, don't rely on packet filtering alone, don't skip SSL.
-#flashcard
+Firewall log backup cadence + purpose?
+?
+Monthly to secondary storage; backup before/after rule changes; for legal/future reference after incidents.
+
+Default inbound rule posture?
+?
+Default 'deny' inbound with explicit 'allow' rules; implicit deny at end of ruleset blocks everything not allowed.
+
+Secure email access design?
+?
+Separate email network zone firewalled from DMZ + internal network; email + webmail servers placed in it.
+
+Rule lifecycle management?
+?
+Add expiration dates to temporary rules, review for cleanup; test policies before implementing.
+
+Firewall audit frequency + password policy?
+?
+Audits at least once a year; change firewall passwords regularly (≈ every 6 months).
+
+Key firewall don'ts?
+?
+No telnet access through FW, no direct internal-client↔outside-service connections, don't rely on packet filtering alone, don't skip SSL.

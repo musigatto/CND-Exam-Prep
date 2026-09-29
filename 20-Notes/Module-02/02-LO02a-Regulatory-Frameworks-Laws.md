@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "02"
 lo: "02"
-tags: [policy, mod/02]
+tags: [policy, mod/02, flashcard/02]
 topic: "Regulatory Frameworks and Laws — PCI-DSS, HIPAA, GDPR, SOX, GLBA"
 exam_weight: unknown
 status: done
@@ -87,22 +88,26 @@ unresolved:
 - Security/encryption requirements: administrative, technical, physical standards for customer records; encryption to reduce disclosure/alteration risk (key mgmt, reliability, securing encrypted endpoints)
 
 ## Cards
-Q:: Six high-level PCI-DSS requirements?
-A:: Build/Maintain a Secure Network · Protect Cardholder Data · Maintain a Vulnerability Management Program · Implement Strong Access Control Measures · Regularly Monitor & Test Networks · Maintain an Information Security Policy.
-#flashcard
+Six high-level PCI-DSS requirements?
+?
+Build/Maintain a Secure Network · Protect Cardholder Data · Maintain a Vulnerability Management Program · Implement Strong Access Control Measures · Regularly Monitor & Test Networks · Maintain an Information Security Policy.
 
-Q:: HIPAA Administrative Simplification Rules?
-A:: Electronic Transaction & Code Sets · Privacy Rule · Security Rule · National Provider Identifier (NPI, 10-digit intelligence-free) · Enforcement Rule.
-#flashcard
 
-Q:: GDPR controller vs processor?
-A:: Controller = determines purposes/means of processing; Processor = processes data on behalf of the controller.
-#flashcard
+HIPAA Administrative Simplification Rules?
+?
+Electronic Transaction & Code Sets · Privacy Rule · Security Rule · National Provider Identifier (NPI, 10-digit intelligence-free) · Enforcement Rule.
 
-Q:: SOX Section 302 and Section 404?
-A:: 302: senior mgmt certifies accuracy of financial statements. 404: management + auditors establish internal controls and report on their effectiveness.
-#flashcard
 
-Q:: GLBA penalty caps?
-A:: Org ≤ $100,000 per violation; officers/directors personally liable ≤ $10,000 each; fines or imprisonment ≤ 5 years.
-#flashcard
+GDPR controller vs processor?
+?
+Controller = determines purposes/means of processing; Processor = processes data on behalf of the controller.
+
+
+SOX Section 302 and Section 404?
+?
+302: senior mgmt certifies accuracy of financial statements. 404: management + auditors establish internal controls and report on their effectiveness.
+
+
+GLBA penalty caps?
+?
+Org ≤ $100,000 per violation; officers/directors personally liable ≤ $10,000 each; fines or imprisonment ≤ 5 years.

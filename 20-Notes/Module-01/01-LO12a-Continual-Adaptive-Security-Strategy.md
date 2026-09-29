@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "01"
 lo: "12"
-tags: [process, mod/01]
+tags: [process, mod/01, flashcard/01]
 topic: "Continual/Adaptive Security Strategy"
 exam_weight: unknown
 status: done
@@ -35,14 +36,16 @@ unresolved: []
 - Pairs: Predict→Protect · Detect→Respond; mapped onto People, Technology, Assets, Operations, Physical contexts
 
 ## Cards
-Q:: Four network security approaches?
-A:: Preventive, Reactive, Retrospective, Proactive.
-#flashcard
+Four network security approaches?
+?
+Preventive, Reactive, Retrospective, Proactive.
 
-Q:: Four activities of adaptive security?
-A:: Protect, Detect, Respond, Predict.
-#flashcard
 
-Q:: Which approach includes IDs/SIMS/TRS/IPS?
-A:: Reactive approach (complements preventive for attacks it failed to avert).
-#flashcard
+Four activities of adaptive security?
+?
+Protect, Detect, Respond, Predict.
+
+
+Which approach includes IDs/SIMS/TRS/IPS?
+?
+Reactive approach (complements preventive for attacks it failed to avert).

@@ -1,8 +1,9 @@
 ---
+
 type: note
 module: "04"
 lo: "01"
-tags: [threat, tool, bestpractice, mod/04]
+tags: [threat, tool, bestpractice, mod/04, flashcard/04]
 topic: "Firewall Concerns, Capabilities, and Limitations"
 exam_weight: unknown
 status: done
@@ -38,12 +39,14 @@ unresolved: []
 - Infected external devices (laptop, phone, drive) plugged in bypass it; sometimes CPU slower than network interface
 
 ## Cards
-Q:: Firewall core function?
-A:: Gateway/filtering device enforcing the network security policy between private network and Internet (first line of defense).
-#flashcard
-Q:: Typical firewall capabilities?
-A:: Prevent scanning, control traffic, user auth, filter packets/services/protocols, traffic logging, NAT, malware prevention.
-#flashcard
-Q:: Key firewall limitations vs malware?
-A:: Not an antivirus substitute; can't stop zero-day/new viruses, backdoor/insider, social engineering, password misuse, tunneled traffic.
-#flashcard
+Firewall core function?
+?
+Gateway/filtering device enforcing the network security policy between private network and Internet (first line of defense).
+
+Typical firewall capabilities?
+?
+Prevent scanning, control traffic, user auth, filter packets/services/protocols, traffic logging, NAT, malware prevention.
+
+Key firewall limitations vs malware?
+?
+Not an antivirus substitute; can't stop zero-day/new viruses, backdoor/insider, social engineering, password misuse, tunneled traffic.
