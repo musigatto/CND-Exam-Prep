@@ -22,6 +22,7 @@ unresolved: []
 > 
 
 ## Cards
-Q:: 
-A:: 
-#flashcard
+Tag this note `flashcard` in the frontmatter above to make the cards reviewable.
+Front text
+?
+Back text  _(Mod NN pNN)_

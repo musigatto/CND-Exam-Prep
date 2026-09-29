@@ -11,14 +11,14 @@
             "id": "559bd0d1b507dc74",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "30-Exam/External-Flashcards-Quizlet.md",
-                "bFile": "30-Exam/External-Flashcards-Quizlet.md",
-                "aRef": ""
+                "file": "20-Notes/Module-01/01-LO01-Essential-Terminologies.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: External-Flashcards-Quizlet  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "01-LO01-Essential-Terminologies"
             }
           }
         ]
@@ -179,6 +179,16 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "e4f5475b24625678",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
           }
         ],
         "currentTab": 5
@@ -196,11 +206,14 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "559bd0d1b507dc74",
+  "active": "5c4e72b32a26ca2e",
   "lastOpenFiles": [
+    "20-Notes/Module-01/01-LO01-Essential-Terminologies.md",
+    "10-MOCs/MOC-Module-20.md",
     "30-Exam/Question-Bank.md",
     "30-Exam/Mock-Exam-100.md",
     "30-Exam/External-Practice-Questions.md",
@@ -217,7 +230,6 @@
     "20-Notes/Module-01/01-LO10-Hacking-Methodologies-Frameworks.md",
     "20-Notes/Module-01/01-LO09-Supply-Chain-Attacks.md",
     "20-Notes/Module-01/01-LO07-Cloud-Specific-Attacks.md",
-    "20-Notes/Module-01/01-LO01-Essential-Terminologies.md",
     "10-MOCs/MOC-Module-01.md",
     "20-Notes/Module-02/02-LO07-Security-Trends-and-Threats.md",
     "20-Notes/Module-02/02-LO06-Asset-Management.md",
@@ -226,7 +238,6 @@
     "20-Notes/Module-02/02-LO03b-Security-Policy-Documents.md",
     "20-Notes/Module-02/02-LO03a-Security-Policy-Fundamentals.md",
     "20-Notes/Module-02/02-LO02b-ISO-Standards-DMCA-FISMA-Cyber-Laws.md",
-    "20-Notes/Module-02/02-LO02a-Regulatory-Frameworks-Laws.md",
     "40-Canvas/03-technical-network-security-map.canvas",
     "40-Canvas/02-security-policy-flow.canvas",
     "40-Canvas/01-attack-and-defense-strategies.canvas"
