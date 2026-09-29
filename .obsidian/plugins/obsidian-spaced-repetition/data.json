@@ -1,7 +1,7 @@
 {
   "settings": {
     "flashcardTags": [
-      "#flashcards"
+      "#flashcard"
     ],
     "flashcardTagsToIgnore": [],
     "convertFoldersToDecks": false,

@@ -56,6 +56,7 @@ Additional API capabilities: **prompt user to set a new password · lock device 
 
 ## Cards
 Q:: Android Device Administration API origin + purpose?
+<!--SR:!2026-09-30,1,230-->
 A:: Introduced in Android 2.2; system-level device administration for security-aware enterprise apps; device-admin apps enforce policies (email clients, remote-wipe security apps, device management).
 #flashcard
 Q:: Key Android Device Admin policies?

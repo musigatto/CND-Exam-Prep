@@ -5,12 +5,17 @@ tags: [exam, mod/01]
 topic: "CND Mock Exam — 100 shuffled, no answers"
 exam_weight: high
 status: draft
-unresolved: []
+unresolved:
+  - "Mock is a stub: only Module 01 items exist (50 of 100). Remaining 50 require modules 11-20."
+  - "No pass mark is applied when self-grading; official cut score is form-dependent (60-85%), see [[Exam-Facts]]."
 ---
 # Mock Exam 100
 
 > [!warning] No answers here.
-> 4 hours · 100 single-best-answer · score ≥ 60% to pass. Grade via [[Answer-Key]].
+> 4 hours · 100 single-best-answer · official format is Multiple Choice.
+> **There is no fixed pass score** — EC-Council's cut score varies by form (60%–85%).
+> Self-grade as a percentage and compare against your own target. See [[Exam-Facts]].
+> Grade via [[Answer-Key]].
 
 ## Instructions
 - Same 100 items as the [[Question-Bank]], shuffled.

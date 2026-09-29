@@ -50,6 +50,7 @@ unresolved: []
 ## Cards
 Q:: IoT device-check best practices?
 A:: Secure boot, change defaults, disable unused services, firmware updates, disable Telnet port 23, monitor port 48101.
+<!--SR:!2026-09-29,0,230-->
 #flashcard
 Q:: SeaCat.io?
 A:: Open-source mutual-TLS (mTLS) tunnel from Teskalabs; gateway + client for constrained devices.

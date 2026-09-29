@@ -52,6 +52,7 @@ Q:: WebKnight placement?
 A:: ISAPI filter for Microsoft IIS; blocks bad requests.
 #flashcard
 Q:: AppWall special coverage?
+<!--SR:!2026-09-30,1,230-->
 A:: Behind-CDN attacks, API manipulation, Slowloris, dynamic floods, brute-force on login pages.
 #flashcard
 Q:: Wallarm scope?

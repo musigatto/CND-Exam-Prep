@@ -45,6 +45,7 @@ Be turned on · signed in to a **Google account** · connected to **mobile data 
 ## Cards
 Q:: Find My Device prerequisites?
 A:: On · signed into Google account · mobile-data/Wi-Fi connected · visible on Google Play · location enabled · Find My Device on.
+<!--SR:!2026-09-30,1,230-->
 #flashcard
 Q:: Find My Device actions?
 A:: Play sound (full volume 5 min) · Lock (PIN/pattern/password + message/phone number) · Erase (permanent; SD card may survive; service stops working).

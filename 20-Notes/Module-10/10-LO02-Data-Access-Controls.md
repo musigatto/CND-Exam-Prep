@@ -70,6 +70,7 @@ Q:: Linux: how to set a default ACL granting others rx on /Testdir?
 A:: `setfacl -m d:o:rx /Testdir`.
 #flashcard
 Q:: What does the pam_time rule `Login;*;!Martin;MoTuWeThFr0800-2000` mean?
+<!--SR:!2026-09-30,1,230-->
 A:: All services/tty, user Martin barred except weekdays 08:00–20:00.
 #flashcard
 

@@ -88,5 +88,6 @@ A:: Completeness, soundness, zero-knowledge; Witness, Challenge, Response.
 
 Q:: Public key infrastructure
 A:: is treated as the most effective method for providing verification during electronic transactions  _(Mod 03 p82)_
+<!--SR:!2026-09-30,1,230-->
 #flashcard
 

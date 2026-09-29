@@ -60,10 +60,12 @@ unresolved: []
 
 ## Cards
 Q:: Training cadence for employees?
+<!--SR:!2026-09-30,1,230-->
 A:: On joining and periodically thereafter.
 #flashcard
 
 Q:: Two data classification top-level rules?
+<!--SR:!2026-09-29,0,230-->
 A:: Secret users access secret→unclassified (NOT Top Secret); Top Secret users access all levels; unclassified = anyone, no permissions.
 #flashcard
 

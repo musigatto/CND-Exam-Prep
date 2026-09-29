@@ -125,6 +125,7 @@ A:: Read-only scan (/f not specified); add /f to fix, /r to find bad sectors and
 #flashcard
 Q:: Get-FileHash default algorithm + full options?
 A:: Default SHA256; options SHA1, SHA256, SHA384, SHA512, MD5.
+<!--SR:!2026-09-30,1,230-->
 #flashcard
 Q:: OSSEC integrity checker + hashes used?
 A:: Syscheck — periodic MD5/SHA1 checksum comparison on configured files/registry entries.

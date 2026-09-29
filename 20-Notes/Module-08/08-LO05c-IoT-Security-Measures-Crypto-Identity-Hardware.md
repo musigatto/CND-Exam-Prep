@@ -41,6 +41,7 @@ A:: E2E encryption → E2E security & identity mgmt → strong authentication �
 #flashcard
 Q:: E2EE protocols for IoT (M11)?
 A:: TLS v1.2/1.3, IPsec ESP, DTLS, AES-256; no plaintext HTTP/Telnet/MQTT.
+<!--SR:!2026-09-30,1,230-->
 #flashcard
 Q:: IoT identity mgmt (M12)?
 A:: X.509 / mTLS device identity, PKI/private CA, certificate rotation.

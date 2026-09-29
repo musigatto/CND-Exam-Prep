@@ -92,5 +92,6 @@ A:: Network-wide asset discovery without installing agents/software on systems (
 #flashcard
 
 Q:: Asset categorization criteria?
+<!--SR:!2026-09-30,1,230-->
 A:: Type · usage · location · owner/department · lifecycle stage · vendor/manufacturer · criticality · license type.
 #flashcard

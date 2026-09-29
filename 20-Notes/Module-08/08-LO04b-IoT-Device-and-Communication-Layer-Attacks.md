@@ -84,6 +84,7 @@ A:: Node tampering, jamming/RF interference, malicious node/tag injection, spoof
 #flashcard
 Q:: RFID relay attack countermeasures?
 A:: Timers, challenge-response, distance-bounding protocols.
+<!--SR:!2026-09-30,1,230-->
 #flashcard
 Q:: Bluesnarfing vs BlueBugging?
 A:: Bluesnarfing = gains access to data via OBEX Push; BlueBugging = remote control of device via OBEX Push/FTP (place calls, AT commands).

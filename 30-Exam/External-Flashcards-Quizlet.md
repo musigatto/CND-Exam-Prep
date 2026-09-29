@@ -148,6 +148,7 @@ clean partial packages  _(Mod 06 p24)_
 sudo apt-get clean
 ?
 This command cleans the apt cache  _(Mod 06 p24)_
+<!--SR:!2026-09-30,1,230-->
 
 sudo apt autoremove application-name
 ?

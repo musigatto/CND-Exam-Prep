@@ -95,6 +95,7 @@ A:: Bandwidth (flood traffic) and Connectivity (exhaust resources); e.g. TCP SYN
 #flashcard
 
 Q:: How does a DHCP starvation attack work and two mitigations?
+<!--SR:!2026-09-30,1,230-->
 A:: Floods DHCP server with fake DHCP requests (Gobbler) to exhaust the IP pool → DoS. Mitigate with port security and DHCP snooping.
 #flashcard
 
