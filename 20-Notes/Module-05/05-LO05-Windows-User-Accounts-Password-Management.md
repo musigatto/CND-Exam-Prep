@@ -83,3 +83,12 @@ A:: LANMAN password hashes + Kerberos TGT; thwarts pass-the-hash; hashes can't b
 Q:: Why worry about local administrator SID?
 A:: If attackers know the admin account's SID they can compromise the system even when the account name is changed.
 #flashcard
+
+## Cards (verified set 617277655)
+
+> Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
+
+Q:: Microsoft Windows Defender Credential Guard (WDCG)
+A:: protects login credentials by restricting their interaction with the components of the system. When Credential Guard is enabled, only privileged software can access the credentials.  _(Mod 05 p81)_
+#flashcard
+

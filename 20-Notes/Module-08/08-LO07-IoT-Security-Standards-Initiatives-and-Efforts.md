@@ -67,3 +67,20 @@ A:: Secure boot · storage · key mgmt · OTA updates · app isolation · DDoS p
 Q:: Common Criteria standard for IoT eval?
 A:: ISO/IEC 15408 — EAL 1–7 evaluation (FIPS 140-3 = crypto modules).
 #flashcard
+
+## Cards (verified set 617277655)
+
+> Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
+
+Q:: AT&T
+A:: AT&T developed The CEO's Guide to Securing the Internet of Things  _(Mod 08 p135)_
+#flashcard
+
+Q:: U.S Department of Homeland Security
+A:: U.S DHS developed Strategic Principles for Securing the Internet of Things.  _(Mod 08 p128)_
+#flashcard
+
+Q:: ENISA
+A:: ENISA developed 'Baseline Security Recommendations for Internet of Things  _(Mod 08 p135)_
+#flashcard
+

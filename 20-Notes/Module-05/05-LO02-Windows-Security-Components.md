@@ -82,3 +82,32 @@ A:: Identify DC, set up secure channel, send auth request to DC, return result; 
 Q:: KSecDD?
 A:: Kernel-mode library `ksecdd.sys` for ALPC; kernel-mode security ↔ LSASS in user mode; SecLookup*/SecMakeSPN* functions.
 #flashcard
+
+## Cards (verified set 617277655)
+
+> Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
+
+Q:: Security Reference Monitor (SRM)
+A:: enforces an access control policy (ACL) over the ability of subjects to carry out operations on objects in a system. It is responsible for controlling access of a user to Windows resources.  _(Mod 05 p17)_
+#flashcard
+
+Q:: Local Security Authority Subsystem (LSASS)
+A:: implements local security policies privileges granted to users and groups, system security auditing settings, user authentication, and sends security audit messages to the event log.  _(Mod 05 p19)_
+#flashcard
+
+Q:: Security Accounts Manager (SAM)
+A:: is a database that stores the logon credentials of local users and groups. It is a user-mode component that saves the data that is used by LSASS.  _(Mod 05 p21)_
+#flashcard
+
+Q:: Network logon service (NetLogon)
+A:: a service or a dynamic-link library file that runs continuously in the background. Therefore, it will not stop running unless it is forcibly stopped, or it incurs a runtime error. It can be stopped or restarted using the command-line terminal. It is used for AD logons.  _(Mod 05 p30)_
+#flashcard
+
+Q:: Windows logon application (WinLogon)
+A:: used when a user wants to login to system locally. It is a user-mode running process and is responsible for managing user authorization sessions. It is activated when the system is turned on and runs in the background  _(Mod 05 p27)_
+#flashcard
+
+Q:: CPs
+A:: a Windows security component. Credential providers (CPs) are in-process component object model (COM) objects. They run in the LogonUI process and are used to get username and password, smartcard PIN, or biometric data.  _(Mod 05 p29)_
+#flashcard
+

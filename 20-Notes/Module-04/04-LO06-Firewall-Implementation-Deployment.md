@@ -84,3 +84,12 @@ A:: Connectivity, ruleset, app compatibility, management, logging, performance, 
 Q:: Maintenance activities?
 A:: Patches, policy updates on new threats, 6-month review, log analysis, regular ruleset/policy backups.
 #flashcard
+
+## Cards (verified set 617277655)
+
+> Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
+
+Q:: Firewalk
+A:: is used for reconnaissance purpose where it discovers firewall rules using an IP TTL expiration technique.  _(Mod 04 p62)_
+#flashcard
+

@@ -91,3 +91,16 @@ A:: SHA-1 (160-bit, deprecated), SHA-2 (SHA-256/512 + truncations), SHA-3 (spong
 Q:: HMAC key property?
 A:: Uses inner+outer keys; executes hash twice → resists length-extension attacks.
 #flashcard
+
+## Cards (verified set 617277655)
+
+> Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
+
+Q:: Secure Hashing Algorithm (SHA)
+A:: generate a cryptographically one-way hash and is published by NIST as a Federal Information Standard  _(Mod 03 p94)_
+#flashcard
+
+Q:: Digital Signature Algorithm
+A:: It is a Federal Information Processing Standard (FIPS) for digital signatures.  _(Mod 03 p90)_
+#flashcard
+

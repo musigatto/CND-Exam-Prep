@@ -96,3 +96,20 @@ A:: Third-generation; traditional L3–L4 + application layer 7 (DPI, encrypted-
 Q:: Cloud firewall alias + types?
 A:: FaaS (firewall as a service); types: SaaS firewalls, NGFWs in virtual datacenters (PaaS/IaaS).
 #flashcard
+
+## Cards (verified set 617277655)
+
+> Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
+
+Q:: Network Address Translation (NAT)
+A:: firewall technology helps hide the internal network's configuration and thereby reduces the success of attacks on the network or system. It can act as a firewall filtering technique where it allows only those connections that originate inside a network and can block the connections that originate outside the network.  _(Mod 04 p23)_
+#flashcard
+
+Q:: Application proxy
+A:: An application-level proxy works as a proxy server. It correlates with the gateway server and separates the enterprise network from the Internet.  _(Mod 04 p20)_
+#flashcard
+
+Q:: Stateful multi-layer inspection
+A:: These firewalls filter packets at the network layer, determine whether session packets are legitimate, and evaluate the contents of packets at the application layer.  _(Mod 04 p19)_
+#flashcard
+

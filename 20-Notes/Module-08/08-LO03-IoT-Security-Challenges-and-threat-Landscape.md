@@ -105,3 +105,12 @@ A:: Identify + take over → reprogram device → activate → launch DDoS.
 Q:: Process-layer IoT threat impacts?
 A:: Intellectual property theft, theft, repudiation → lawsuits, reputational damage.
 #flashcard
+
+## Cards (verified set 617277655)
+
+> Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
+
+Q:: JTAG
+A:: It is a standard interface to test and debug chips with debugging software to know how a chip respond to multiple commands.  _(Mod 08 p31)_
+#flashcard
+

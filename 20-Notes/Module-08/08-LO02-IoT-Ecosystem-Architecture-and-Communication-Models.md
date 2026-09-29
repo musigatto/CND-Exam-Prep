@@ -73,3 +73,48 @@ A:: Extends device-to-cloud: device data is accessed/analyzed later by authorize
 Q:: Cloud gateway functions?
 A:: Authenticate/authorize devices · data compression · secure device↔cloud transfer · protocol compatibility gateway.
 #flashcard
+
+## Cards (verified set 617277655)
+
+> Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
+
+Q:: IoT User applications
+A:: These applications help change the behavior of the application controls.  _(Mod 08 p13)_
+#flashcard
+
+Q:: IoT Control applications
+A:: Control applications send automatic commands and alerts to actuators and helps in investigating problematic cases and enhancing security by identifying security breaches.  _(Mod 08 p12)_
+#flashcard
+
+Q:: IoT Gateways
+A:: Gateways are devices through which data are transmitted from things to the cloud and vice versa.  _(Mod 08 p11)_
+#flashcard
+
+Q:: IoT Streaming data processors
+A:: These processors ensure that no data can be lost or corrupted  _(Mod 08 p11)_
+#flashcard
+
+Q:: IoT Cloud layer
+A:: his layer consists of servers hosted in the cloud that accept, store, and process the sensor data received from IoT gateways.  _(Mod 08 p15)_
+#flashcard
+
+Q:: IoT Communication layer
+A:: The communication layer includes the components of communication protocols and networks used for connectivity and edge computing.  _(Mod 08 p14)_
+#flashcard
+
+Q:: IoT Process Layer
+A:: The process layer gathers information and processes the received information. It includes decision making based on the information derived from policies and procedures of IoT computing.  _(Mod 08 p15)_
+#flashcard
+
+Q:: Device-to-Device model
+A:: In this type of communication, connected devices interact with each other through the Internet but primarily use protocols such as ZigBee, Z-Wave, or Bluetooth.  _(Mod 08 p16)_
+#flashcard
+
+Q:: Device-to-Cloud model
+A:: In this type of communication, devices communicate with the cloud, rather than directly communicating with the client, to send or receive data or commands.  _(Mod 08 p17)_
+#flashcard
+
+Q:: Device-to-Gateway model
+A:: In the device-to-gateway communication model, the IoT device communicates with an intermediate device called a gateway, which in turn communicates with a cloud service.  _(Mod 08 p17)_
+#flashcard
+

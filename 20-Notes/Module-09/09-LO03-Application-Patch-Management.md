@@ -64,3 +64,12 @@ A:: Ensure patches don't break apps; tests on a few systems → deploy if succes
 Q:: SolarWinds Patch Manager features?
 A:: WSUS + SCCM integration, vulnerability mgmt, pre-tested packages, compliance reports, dashboard; patched 3rd-party apps (Adobe, Java, etc.).
 #flashcard
+
+## Cards (verified set 617277655)
+
+> Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
+
+Q:: Application Patch Management
+A:: Application patch management is the process of ensuring the security of applications on hosts by regularly deploying new or missing patches.  _(Mod 09 p68)_
+#flashcard
+

@@ -72,3 +72,20 @@ A:: `setfacl -m d:o:rx /Testdir`.
 Q:: What does the pam_time rule `Login;*;!Martin;MoTuWeThFr0800-2000` mean?
 A:: All services/tty, user Martin barred except weekdays 08:00–20:00.
 #flashcard
+
+## Cards (verified set 617277655)
+
+> Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
+
+Q:: # setfacl -x u:guest test
+A:: remove all access ACL rules of test file for the guest user.  _(Mod 10 p18)_
+#flashcard
+
+Q:: # setfacl -m u:user1:rwx test
+A:: set read and write permission in the ACL of test file for the guest.  _(Mod 10 p18)_
+#flashcard
+
+Q:: # setfacl -m d:o:rx /Testdir
+A:: This command is used to set default ACL for test directory.  _(Mod 10 p18)_
+#flashcard
+

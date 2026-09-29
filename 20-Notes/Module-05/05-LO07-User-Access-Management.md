@@ -93,3 +93,16 @@ A:: User Configuration → Admin Templates → System → 'Prevent access to the
 Q:: JEA — what does it limit?
 A:: The cmdlets/admin privileges of an account; needs a PS role capability file (visible cmdlets) + PS session configuration file (who may run them); uses per-session virtual account.
 #flashcard
+
+## Cards (verified set 617277655)
+
+> Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
+
+Q:: User Account Control (UAC)
+A:: is a key access control enforcement feature in Windows that improves the security of the OS by limiting application software to standard user privileges until an administrator authorizes an elevation  _(Mod 05 p98)_
+#flashcard
+
+Q:: Just Enough administration (JEA)
+A:: a security technology used to limit the number of cmdlets or administration privileges of administrator, user, or service accounts.  _(Mod 05 p106)_
+#flashcard
+

@@ -63,3 +63,12 @@ A:: Mutually-authenticated TLS for constrained IoT devices + cloud.
 Q:: Additional IoT security tools (top 4)?
 A:: PwnPulse · Allot · Cisco IoT Threat Defense · AWS IoT Device Defender (also SecEdge, net-Shield, Noddos, Trustwave, Subex, libsecurity-go).
 #flashcard
+
+## Cards (verified set 617277655)
+
+> Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
+
+Q:: DigiCert IoT Security Solutions
+A:: It protect private data and home networks while preventing unauthorized access using PKI-based security solutions for consumer IoT devices.  _(Mod 08 p116)_
+#flashcard
+

@@ -168,3 +168,12 @@ A:: Virtualization-isolated secrets (NTLM pwds, Kerberos TGTs, app credentials);
 Q:: Vulnerable Driver Blocklist registry key?
 A:: `HKLM\SYSTEM\CurrentControlSet\Control\CI\Config` → `VulnerableDriverBlocklistEnable` = 1.
 #flashcard
+
+## Cards (verified set 617277655)
+
+> Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
+
+Q:: Windows Integrity Control (WIC)
+A:: is an access control mechanism for controlling the interactions between objects based on their integrity or level of trustworthiness.  _(Mod 05 p41)_
+#flashcard
+

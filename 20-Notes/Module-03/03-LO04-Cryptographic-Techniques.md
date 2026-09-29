@@ -81,3 +81,12 @@ A:: CA (issue/verify) · RA (verifier) · certificate management system · direc
 Q:: ZKP properties + elements?
 A:: Completeness, soundness, zero-knowledge; Witness, Challenge, Response.
 #flashcard
+
+## Cards (verified set 617277655)
+
+> Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
+
+Q:: Public key infrastructure
+A:: is treated as the most effective method for providing verification during electronic transactions  _(Mod 03 p82)_
+#flashcard
+
