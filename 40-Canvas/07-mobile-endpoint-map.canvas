@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"Module 07 — Endpoint Security: Mobile Devices\nPolicy → Risks → Manage Stack → Best Practices → Android/iOS","x":-560,"y":-2330,"width":400,"height":60,"color":"5"},
+		{"id":"b1","type":"text","text":"Mobile Usage Policies (LO01)\nBYOD (Own Device) · CYOD (Choose from\ncompany list) · COPE (Company-Owned,\nPersonally Enabled) · COBO (Business Only)\nDecision: device, mgmt/support, integration\n5-step impl: requirements → device/data mgmt\n→ policies → security → support","x":-1650,"y":-2120,"width":370,"height":170,"color":"1"},
+		{"id":"b2","type":"text","text":"Risks + Guidelines (LO02)\n4 categories: physical (theft/flash) · network\n(eavesdrop) · system (SwiftKey) · app (malware)\nTop-10 policy risks (lost/stolen, data leakage,\ndisgruntled employees, bypass policies...)\nAdmin vs employee guidelines · gateway auth\nmethods (Domain, SMS, RSA SecurID)","x":-1650,"y":-1860,"width":370,"height":180,"color":"2"},
+		{"id":"b3","type":"text","text":"Core Mgmt (LO03a/b)\nMDM: console + agents · premise/SaaS/managed\nfeatures (OTA apps, remote wipe, black/white\nlist) · MAM: enterprise app store, version mgmt,\napp wrapping · Intune MDM+MAM vs MAM-WE","x":-1650,"y":-1600,"width":370,"height":160,"color":"3"},
+		{"id":"b4","type":"text","text":"Content + Threat (LO03c)\nMCM: file storage + sharing · access control,\nmulti-client/multi-site templates · location-\nbased delivery\nMTD: extends EMM/MDM · device/network/app\nlevels · malware, phishing, network attacks ·\nMobileIron, Lookout, Wandera","x":-1650,"y":-1360,"width":370,"height":190,"color":"4"},
+		{"id":"b5","type":"text","text":"Email + EMM + UEM (LO03d)\nMEM: S/MIME + SCEP · attachment control\nEMM = MDM+MAM+MTM+MCM+MEM (4-phase\ndeploy: Plan/Design/Deploy/Implement)\nUEM: single interface · per-app VPN · app\ncontainerization · certificate identity","x":-1650,"y":-1090,"width":370,"height":180,"color":"6"},
+		{"id":"b6","type":"text","text":"General Best Practices (LO04)\nApp: no saved passwords, 2FA, SSL/TLS,\ncontainerization, jailbreak protection\nData: device + OTA encryption, backups,\nprivate data centers, no public Wi-Fi\nPlatform: passcode/erase data, no root/\njailbreak, remote wipe (Find My Device /\nFind My iPhone), SMS-phishing countermeasures","x":-1150,"y":-2120,"width":410,"height":210,"color":"2"},
+		{"id":"b7","type":"text","text":"Android Security (LO05)\nDevice Admin API (Android 2.2): password\npolicies, complex pwd (3.0), max failed attempts\n→ wipe, inactivity lock 1-60 min, storage\nencryption (3.0), disable camera (4.0)\nNo root · official market · no direct APKs\nFind My Device (Play sound/Lock/Erase)\nTools: Kaspersky · X-Ray scanner · Where's My\nDroid · Lookout/3cX/SeekDroid","x":-1150,"y":-1830,"width":410,"height":230,"color":"3"},
+		{"id":"b8","type":"text","text":"iOS Security (LO06)\nPasscode Lock · change root pwd from Alpine\nno jailbreak · App Store only · Ask to Join\nNetworks · Erase Data · Geotagging off · Safari\nprivacy + Do Not Track · disable BT/Wi-Fi\nFind My iPhone: Lost Mode (iOS 6+), Find My\nnetwork, Send Last Location\nTools: Avira Mobile Security, Norton, LastPass","x":-1150,"y":-1510,"width":410,"height":210,"color":"1"},
+		{"id":"flow","type":"text","text":"Flow\nChoose approach → map risks → layer\nmanagement (MDM→MAM→MCM→MTD→\nMEM→EMM→UEM) → apply general best\npractices → harden the two platforms\nPolicy is the base: management tools only\ndeliver benefits when backed by strong mobile\ndevice security practices.","x":-80,"y":-1900,"width":420,"height":180,"color":"5"},
+		{"id":"end","type":"text","text":"Module Summary points\nBYOD, CYOD, COPE, COBO approaches grant\nthe permissions · MDM deploys/secures/\nmonitors/manages devices · EMM is the\ncomprehensive solution (MDM, MAM, MTM,\nMCM, MEM) · mobility management delivers\nonly with strong security practices","x":440,"y":-1900,"width":420,"height":170,"color":"5"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"b1","fromSide":"right","toNode":"b2","toSide":"left"},
+		{"id":"e2","fromNode":"b2","fromSide":"right","toNode":"b3","toSide":"left"},
+		{"id":"e3","fromNode":"b3","fromSide":"right","toNode":"b4","toSide":"left"},
+		{"id":"e4","fromNode":"b4","fromSide":"right","toNode":"b5","toSide":"left"},
+		{"id":"e5","fromNode":"b3","fromSide":"bottom","toNode":"b6","toSide":"right"},
+		{"id":"e6","fromNode":"b6","fromSide":"bottom","toNode":"b7","toSide":"right"},
+		{"id":"e7","fromNode":"b7","fromSide":"bottom","toNode":"b8","toSide":"right"},
+		{"id":"e8","fromNode":"b1","fromSide":"bottom","toNode":"flow","toSide":"left"},
+		{"id":"e9","fromNode":"flow","fromSide":"right","toNode":"end","toSide":"left"}
+	]
+}

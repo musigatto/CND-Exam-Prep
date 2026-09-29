@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"Module 06 — Endpoint Security: Linux Systems\nInstall → Harden → Access → Network → Assure","x":-560,"y":-2330,"width":400,"height":60,"color":"5"},
+		{"id":"b1","type":"text","text":"Install + Patch (LO01/02)\nArchitecture: HW→kernel→shell→app / X-Server\nMinimal install (Ubuntu, ~80 pkgs) · patch\ncommands (apt/yum/zypper/swaret)\nBIOS + GRUB/LILO passwords\n/tmp nodev,noexec,nosuid · separate /var,/home","x":-1650,"y":-2120,"width":370,"height":160,"color":"1"},
+		{"id":"b2","type":"text","text":"Service + Software (LO03a)\nsystemctl stop/disable · remove legacy:\ntelnet/rsh/ypserv/tftp/talk\nDeborphan · uninstall/purge/autoremove\nUbuntu repos (Main/Universe/Restricted/\nMultiverse) · ClamAV (apt/yum)","x":-1650,"y":-1880,"width":370,"height":160,"color":"2"},
+		{"id":"b3","type":"text","text":"Integrity (LO03b/c)\nSecure Boot (UEFI signed bootloader/kernel)\nGPG package verify · rpm --checksig\nchkrootkit · rkhunter\nIMA measure/appraise + EVM + TPM\nFIM: Tripwire · AIDE · Samhain · OSSEC\ninotifywait · auditd (-w -p wa -k)","x":-1650,"y":-1640,"width":370,"height":160,"color":"3"},
+		{"id":"b4","type":"text","text":"Users + Passwords (LO04a/b/c)\nlogin.defs PASS_MAX/MIN/WARN_DAYS\nPAM pam_pwquality minlen/maxrepeat/ucredit/\nlcredit/dcredit/ocredit · pam_tally2 lockout\nremember= opasswd history · remove nullok\nlastlog -b 90 · usermod -L\nchmod/chown · perm table (/etc/shadow 400,\n/etc/passwd 644) · SUID `find / -perm +4000`\nworld-writable chmod o-w · umask 002\nX11 off (runlevel 3) · quota · USB block","x":-1130,"y":-2120,"width":410,"height":220,"color":"2"},
+		{"id":"b5","type":"text","text":"Network Security (LO05a)\nsysctl.conf: syncookies, rp_filter, log_martians,\nexec-shield, ip_forward=0\niptables: INPUT/FORWARD/OUTPUT · block IP/port/\nXMAS/NULL/fragment ping flood\nUFW: default deny incoming / allow outgoing\nTCP Wrappers (hosts.allow/deny, libwrap,\nL7 filtering) · netstat/ss -tulpn · nmap -sT/-sU\nIPv6 off (sysctl disable_ipv6 / GRUB)","x":-1130,"y":-1820,"width":410,"height":190,"color":"3"},
+		{"id":"b6","type":"text","text":"Remote Access (LO05b)\nsshd_config: PermitRootLogin no, AllowUsers,\nX11Forwarding no, MaxAuthTries 5, Ciphers\nCTR, ClientAliveInterval 900 · LogLevel VERBOSE\nChroot SFTP: Subsystem internal-sftp\nMatch group sftponly · ChrootDirectory /sftp/\nForceCommand internal-sftp","x":-1130,"y":-1540,"width":410,"height":170,"color":"1"},
+		{"id":"b7","type":"text","text":"Assurance Tools (LO06)\nLynis: audit + compliance (PCI/HIPAA/SOX)\nAppArmor: aa-enforce · apparmor_status\nprofiles /etc/apparmor.d\nSELinux: TE + RBAC + MLS · enforcing/\npermissive/disabled · sestatus\nOpenSCAP: SCAP components (XCCDF/OVAL)\noscap xccdf eval · libopenscap8\nBastille/JShielder/nixarmor/bane/Grsecurity","x":-1130,"y":-1280,"width":410,"height":210,"color":"6"},
+		{"id":"flow","type":"text","text":"Flow\n1 install/patch → 2 reduce surface →\n3 verify integrity → 4 lock users/passwords →\n5 firewall + remote security → 6 audit/tooling\nEvery layer attackable; patches + passwords are\nengineering, PAM/SELinux/AppArmor are policy.","x":-80,"y":-1900,"width":420,"height":160,"color":"5"},
+		{"id":"end","type":"text","text":"Module Summary points\nopen-source, widely deployed (enterprise/gov)\nlatest version prevents many attacks\nremove unnecessary services/packages = reduced\nattack surface · strong access + password\npolicies discourage unauthorized access ·\nAppArmor per-program profiles · SELinux\nkernel-level MAC","x":440,"y":-1900,"width":420,"height":170,"color":"5"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"b1","fromSide":"right","toNode":"b2","toSide":"left"},
+		{"id":"e2","fromNode":"b2","fromSide":"right","toNode":"b3","toSide":"left"},
+		{"id":"e3","fromNode":"b3","fromSide":"right","toNode":"b4","toSide":"right"},
+		{"id":"e4","fromNode":"b4","fromSide":"right","toNode":"b5","toSide":"right"},
+		{"id":"e5","fromNode":"b5","fromSide":"right","toNode":"b6","toSide":"right"},
+		{"id":"e6","fromNode":"b6","fromSide":"right","toNode":"b7","toSide":"top"},
+		{"id":"e7","fromNode":"b1","fromSide":"bottom","toNode":"flow","toSide":"left"},
+		{"id":"e8","fromNode":"flow","fromSide":"right","toNode":"end","toSide":"left"}
+	]
+}

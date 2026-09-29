@@ -1,0 +1,36 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"Module 05 — Endpoint Security: Windows Systems\nIntegrity → Access → AD → Network Services","x":-560,"y":-1860,"width":400,"height":60,"color":"5"},
+		{"id":"int_title","type":"text","text":"System Integrity (LO03/LO09b)","x":-1500,"y":-1620,"width":460,"height":50,"color":"6"},
+		{"id":"int1","type":"text","text":"Features\nUAC · Code Signing · Driver Signing (WHQL)\nTPM (keys/measure/attest) · WRP (WFP)\nSMM protection","x":-1650,"y":-1490,"width":330,"height":120,"color":"2"},
+		{"id":"int2","type":"text","text":"Check ladder\nSFC /scannow → DISM /ScanHealth→/CheckHealth\n→/RestoreHealth → chkdsk c: /f /r","x":-1270,"y":-1490,"width":330,"height":120,"color":"3"},
+		{"id":"int3","type":"text","text":"Verify + monitor\nPowerShell: New-FileCatalog/Test-FileCatalog\nGet-FileHash (SHA256 default)\nTripwire FIM/SCM · OSSEC Syscheck (MD5/SHA1)","x":-890,"y":-1490,"width":340,"height":120,"color":"1"},
+		{"id":"acc_title","type":"text","text":"Access + Accounts (LO05/07/08)","x":-1500,"y":-1220,"width":460,"height":50,"color":"6"},
+		{"id":"acc1","type":"text","text":"Accounts/passwords\nAdmin/Standard/Guest · disable guest+admin\npassword complexity/age/length · Credential Guard","x":-1650,"y":-1090,"width":330,"height":110,"color":"2"},
+		{"id":"acc2","type":"text","text":"User access\nNTFS perms · UAC EnableUA · SID/RID enumeration\nrestrict Control Panel/CMD · JEA","x":-1270,"y":-1090,"width":330,"height":110,"color":"2"},
+		{"id":"acc3","type":"text","text":"Hardening\nBIOS password · LM-hash off · prohibit install\ndisable services/RDP · AV · Defender Firewall\nregistry monitoring (Process Monitor)","x":-890,"y":-1090,"width":340,"height":110,"color":"2"},
+		{"id":"ad_title","type":"text","text":"Active Directory Security (LO09a)","x":-1500,"y":-820,"width":460,"height":50,"color":"6"},
+		{"id":"ad1","type":"text","text":"Protect accounts\nLSA protection · clean Domain Admins\n(pass-the-hash) · LAPS (CSE + schema)","x":-1650,"y":-690,"width":330,"height":100,"color":"3"},
+		{"id":"ad2","type":"text","text":"Auth + monitor\nblock NTLMv1 (Kerberos) · Event 4624/4625\nEvent Viewer filters · ELK/Lepide/Splunk/WEF","x":-1270,"y":-690,"width":330,"height":100,"color":"3"},
+		{"id":"ad3","type":"text","text":"PS cmdlets\nGet-ADDefaultDomainPasswordPolicy\nget/set ADUser · Search-ADAccount (-LockedOut,\n-AccountInactive) · Disable/Unlock-ADAccount","x":-890,"y":-690,"width":340,"height":100,"color":"1"},
+		{"id":"ad4","type":"text","text":"Best practices\nProtected Users · tiered admin · KRBTGT yearly\nFGPP · WDigest=0 · LLMNR/NetBIOS off\nsegment + IDS + SIEM logging","x":-500,"y":-690,"width":340,"height":100,"color":"3"},
+		{"id":"svc_title","type":"text","text":"Network Services + Protocols (LO10)","x":130,"y":-1620,"width":520,"height":50,"color":"6"},
+		{"id":"ps1","type":"text","text":"PS Remoting\nWSMAN/WinRM · 5985/5986\n4 endpoints (admins + Remote Mgmt Users)\nlogging: module/transcript/script-block\nPS 2.0 off · exec policy · Constrained Language\nAppLocker · Device Guard UMCI","x":-60,"y":-1490,"width":340,"height":130,"color":"1"},
+		{"id":"rdp1","type":"text","text":"RDP (3389)\nlimit users (Remote Desktop Users only)\nfirewall scoping · RDP gateway 443/SSL\nNLA · Remote Credential Guard /\nRestricted Admin (no creds/hashes)","x":320,"y":-1490,"width":340,"height":130,"color":"2"},
+		{"id":"dns1","type":"text","text":"DNS\nDNSSEC: authenticity/integrity/non-existence\n(nOT confidentiality/DoS) · DS records\nDebug Logging → catch random malicious domains","x":700,"y":-1490,"width":340,"height":130,"color":"3"},
+		{"id":"smb1","type":"text","text":"SMB\nSMB 1.0 OFF (registry SMB1=0 | mrxsmb10 Start=4)\n3.1.1+ pre-auth integrity · 3.0+ encryption (AES-CCM)\nEncryptData per-share/server · 2.02+ signing","x":1080,"y":-1490,"width":340,"height":130,"color":"3"},
+		{"id":"end","type":"text","text":"Failure drivers (Module Summary)\nUnpatched OS · improper config · weak passwords\nno anti-malware · unnecessary services/processes","x":350,"y":-1220,"width":440,"height":110,"color":"6"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"int1","fromSide":"right","toNode":"int2","toSide":"left"},
+		{"id":"e2","fromNode":"int2","fromSide":"right","toNode":"int3","toSide":"left"},
+		{"id":"e3","fromNode":"acc1","fromSide":"right","toNode":"acc2","toSide":"left"},
+		{"id":"e4","fromNode":"acc2","fromSide":"right","toNode":"acc3","toSide":"left"},
+		{"id":"e5","fromNode":"ad1","fromSide":"right","toNode":"ad2","toSide":"left"},
+		{"id":"e6","fromNode":"ad2","fromSide":"right","toNode":"ad3","toSide":"left"},
+		{"id":"e7","fromNode":"ad3","fromSide":"right","toNode":"ad4","toSide":"left"},
+		{"id":"e8","fromNode":"ps1","fromSide":"right","toNode":"rdp1","toSide":"left"},
+		{"id":"e9","fromNode":"rdp1","fromSide":"right","toNode":"dns1","toSide":"left"},
+		{"id":"e10","fromNode":"dns1","fromSide":"right","toNode":"smb1","toSide":"left"}
+	]
+}
