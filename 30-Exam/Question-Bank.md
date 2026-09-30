@@ -25,7 +25,8 @@ unresolved:
 | 07 — Endpoint Security - Mobile Devices | Q031–Q035 | [[Answer-Key#Module 07]] |
 | 08 — Endpoint Security - IoT Devices | Q036–Q040 | [[Answer-Key#Module 08]] |
 | 09 — Administrative Application Security | Q041–Q045 | [[Answer-Key#Module 09]] |
-| 10 — Data Security | Q046–Q050 | [[Answer-Key#Module 10]] |
+| 10 - Data Security | Q046-Q050 | [[Answer-Key#Module 10]] |
+| 11 — Enterprise Virtual Network Security | Q051–Q055 | [[Answer-Key#Module 11]] |
 
 ## Module 01 — Network Attack and Defense Strategies (Q001–Q005)
 
@@ -347,5 +348,38 @@ unresolved:
 - C) Disposal — guarantees complete erasure of non-confidential media
 - D) Destroying — applies only to software-based erasure
 
+## Module 11 — Enterprise Virtual Network Security (Q051–Q055)
+
+**Q051.** In OS-assisted (para) virtualization, who translates the guest's commands into binary instructions for the computer hardware, and is the VMM involved in the request and response operations?
+- A) The VMM translates the commands and forwards the result to the host OS
+- B) The guest OS translates its own commands, and the VMM is not involved in the request and response operations
+- C) The microprocessor translates the commands using special virtualization instructions, and the VMM still allocates resources
+- D) The guest OS and the VMM each translate, depending on the type of resource being requested
+
+**Q052.** An attacker with a foothold on a switch floods the CAM table with a large number of fake MAC addresses. Once the table is full, what happens, and what is this attack called?
+- A) The switch drops all frames with unknown destinations; this is DHCP starvation
+- B) Traffic that has no MAC entry floods out to all ports of the VLAN, making it easier for the attacker to view and retrieve traffic; this is MAC flooding
+- C) The ARP table is poisoned so the attacker impersonates the gateway; this is an ARP attack
+- D) The attacker becomes the new root bridge and installs junk data; this is a spanning-tree attack
+
+**Q053.** According to the courseware, attacks on the SDN Data Plane fall into exactly three attack types. Which set is correct?
+- A) Device Attack, Protocol Attack, Side Channel Attack
+- B) Device Attack, Protocol Attack, Northbound API Attack
+- C) Device Attack, Protocol Attack, Control Plane Attack
+- D) Firmware Attack, TCAM Attack, Timing Attack
+
+**Q054.** Docker provides five native network drivers, used through Docker network commands. Which set lists them correctly?
+- A) Host, Bridge, Overlay, MACVLAN, None
+- B) Host, Bridge, Overlay, macvlan, ipvlan
+- C) Host, Bridge, MACVLAN, Overlay, macvtap
+- D) Bridge, Overlay, MACVLAN, macvtap, IPAM
+
+**Q055.** Under Kubernetes RBAC, a user wants to create a ClusterRole that grants read access to pods across the entire cluster. According to the courseware, when may that user do so?
+- A) When they already hold every permission contained in the role, at the same scope as the role - which for a ClusterRole means cluster-wide
+- B) When they hold read access to pods in at least one namespace
+- C) Whenever they are authenticated to the cluster, because the RBAC API already prevents privilege escalation
+- D) Only after a cluster administrator assigns that ClusterRole to them
+
 ## Draft scaffold
-- Modules 09–20: one 5-item block each, generated from the corresponding module OCR content.
+- Modules 12-20: one 5-item block each, generated from the corresponding module OCR content.
+- Module 11 LOs not sampled by Q051-Q055, kept as the next candidate source for this module: LO01 (traditional-model failure points, the 10 virtualization risks), LO02 levels-vs-types trap, LO05 (NFVI/VNF/MANO, the ElGamal + co-resident GnuPG side channel), LO07 (container secrets, 8 rules), LO08 (Docker Cgroups/LSMs/Capabilities/Seccomp/Userns, DCT, StackRox, hadolint), LO09 (pods non-isolated by default and policies additive, PodSecurityPolicy, aesgcm envelope encryption).

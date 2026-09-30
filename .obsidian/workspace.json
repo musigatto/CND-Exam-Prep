@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30-Exam/External-Flashcards-Quizlet.md",
+                "file": "20-Notes/Module-11/11-LO03h-VLAN-Security.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "External-Flashcards-Quizlet"
+              "title": "11-LO03h-VLAN-Security"
             }
           }
         ]
@@ -210,10 +210,34 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "976a6555c14bf078",
+  "active": "af740e2914eb5166",
   "lastOpenFiles": [
-    "30-Exam/External-Flashcards-Quizlet.md",
+    "20-Notes/Module-12/12-LO07b-Cloud-Security-Tools.md",
+    "20-Notes/Module-12/12-LO07a-Cloud-Security-Best-Practices-and-Compliance.md",
+    "20-Notes/Module-12/12-LO06k-GCP-Monitoring-Logging-and-Compliance.md",
+    "20-Notes/Module-12/12-LO06j-GCP-DDoS-Mitigation-and-Network-Best-Practices.md",
+    "20-Notes/Module-12/12-LO06i-GCP-Defense-in-Depth-and-VPC.md",
+    "20-Notes/Module-12/12-LO06h-GCP-Encryption-and-Cloud-KMS.md",
+    "20-Notes/Module-12/12-LO06g-GCP-Predefined-Roles-and-Logging-Roles.md",
+    "20-Notes/Module-12/12-LO06f-GCP-Organization-Policies.md",
+    "20-Notes/Module-12/12-LO06e-GCP-Service-Account-Key-Rotation.md",
+    "20-Notes/Module-12/12-LO06d-GCP-Primitive-Roles-and-Separate-Service-Accounts.md",
+    "20-Notes/Module-12/12-LO06c-GCP-IAM-Security-Best-Practices.md",
+    "20-Notes/Module-12/12-LO06b-GCP-Service-Accounts.md",
+    "20-Notes/Module-12/12-LO06a-GCP-Shared-Responsibility-and-IAM.md",
+    "20-Notes/Module-12/12-LO05o-Azure-Security-Checklist.md",
+    "20-Notes/Module-12/12-LO05n-Azure-Monitoring-Logging-and-Compliance.md",
+    "20-Notes/Module-12/12-LO05m-Azure-Network-Best-Practices-and-Geo-Replication.md",
+    "20-Notes/Module-12/12-LO05l-Azure-Antimalware-and-Network-Architecture.md",
+    "20-Notes/Module-12/12-LO05k-Azure-Firewall-and-Network-Security-Groups.md",
+    "20-Notes/Module-12/12-LO05j-Azure-Load-Balancing.md",
+    "20-Notes/Module-12/12-LO05i-Azure-Inbound-Access-Control.md",
+    "40-Canvas/08-iot-endpoint-map.canvas",
+    "20-Notes/Module-12/12-LO05h-Azure-Encryption-in-Transit.md",
+    "40-Canvas/11-enterprise-virtual-network-security-map.canvas",
+    "40-Canvas/10-data-security-map.canvas",
     "30-Exam/Exam-Facts.md",
+    "30-Exam/External-Flashcards-Quizlet.md",
     "00-Home.md"
   ]
 }
