@@ -1,70 +1,41 @@
 {
   "main": {
-    "id": "30ebd03adee8f0f7",
+    "id": "102edfe54e1db863",
     "type": "split",
     "children": [
       {
-        "id": "08dd17f1c582ec9b",
+        "id": "317147e26e346636",
         "type": "tabs",
         "children": [
           {
-            "id": "559bd0d1b507dc74",
+            "id": "8233dd42d781086a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "30-Exam/External-Flashcards-Quizlet.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
               "title": "External-Flashcards-Quizlet"
             }
-          },
-          {
-            "id": "11eaab1bb633b129",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "20-Notes/Module-05/05-LO07-User-Access-Management.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "05-LO07-User-Access-Management"
-            }
-          },
-          {
-            "id": "c207e8e82ca855eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "30-Exam/External-Practice-Questions.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "External-Practice-Questions"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "816a9a5f3a9094bb",
+    "id": "cfd4f9f66e36e092",
     "type": "split",
     "children": [
       {
-        "id": "998759c013508b9a",
+        "id": "9499701a48a6d0a8",
         "type": "tabs",
         "children": [
           {
-            "id": "5c4e72b32a26ca2e",
+            "id": "1800735ff9166932",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -79,7 +50,7 @@
             }
           },
           {
-            "id": "68fa16681a022409",
+            "id": "90fc10ca36f67bfd",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -96,7 +67,7 @@
             }
           },
           {
-            "id": "7c79f188eb8f3a44",
+            "id": "39afe12e6f31773b",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -115,20 +86,20 @@
     "width": 300
   },
   "right": {
-    "id": "576a7cd0da0b33a3",
+    "id": "5dad8208df7d24fc",
     "type": "split",
     "children": [
       {
-        "id": "0c761c3657c60e5d",
+        "id": "bf9b821c590d4629",
         "type": "tabs",
         "children": [
           {
-            "id": "677ebfab11f89a7c",
+            "id": "89951fe33960cf48",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "20-Notes/Module-01/01-Application-Level-Attacks.md",
+                "file": "30-Exam/External-Flashcards-Quizlet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,12 +113,12 @@
             }
           },
           {
-            "id": "9999b69028a40353",
+            "id": "3c7c9e0867b1f9d4",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "20-Notes/Module-01/01-Application-Level-Attacks.md",
+                "file": "30-Exam/External-Flashcards-Quizlet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -156,7 +127,7 @@
             }
           },
           {
-            "id": "7a54cbf8e2ff38a9",
+            "id": "472a45d774132109",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -171,7 +142,7 @@
             }
           },
           {
-            "id": "2940d48db73b8f25",
+            "id": "6ce188d884c146df",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -185,12 +156,12 @@
             }
           },
           {
-            "id": "9bab6fec4cc6fbf2",
+            "id": "1bd2a84c39cc68c3",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "30-Exam/External-Practice-Questions.md",
+                "file": "30-Exam/External-Flashcards-Quizlet.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -200,17 +171,7 @@
             }
           },
           {
-            "id": "0b5c7177181f3d94",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
-          },
-          {
-            "id": "e4f5475b24625678",
+            "id": "976a6555c14bf078",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -218,9 +179,19 @@
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
+          },
+          {
+            "id": "af740e2914eb5166",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -239,36 +210,10 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "0b5c7177181f3d94",
+  "active": "976a6555c14bf078",
   "lastOpenFiles": [
-    "30-Exam/External-Flashcards-Verification.md",
-    "30-Exam/Exam-Facts.md",
-    "40-Canvas/01-attack-and-defense-strategies.canvas",
-    "40-Canvas/02-security-policy-flow.canvas",
-    "20-Notes/Module-01/01-LO13-Defense-in-Depth-Strategy.md",
-    "20-Notes/Module-01/01-LO12b-Security-Controls-Defense-Elements.md",
-    "20-Notes/Module-01/01-LO12a-Continual-Adaptive-Security-Strategy.md",
-    "20-Notes/Module-01/01-LO11-Network-Defense-Goal-Benefits-Challenges.md",
-    "20-Notes/Module-01/01-LO10-Hacking-Methodologies-Frameworks.md",
-    "20-Notes/Module-01/01-LO09-Supply-Chain-Attacks.md",
-    "20-Notes/Module-01/01-LO08-Wireless-Network-Attacks.md",
-    "20-Notes/Module-01/01-LO07-Cloud-Specific-Attacks.md",
-    "20-Notes/Module-01/01-LO06-Mobile-Device-Attacks.md",
-    "20-Notes/Module-01/01-LO05-Email-Attacks.md",
-    "20-Notes/Module-01/01-LO04-Social-Engineering-Attacks.md",
-    "20-Notes/Module-01/01-LO03-Application-Level-Attacks.md",
-    "20-Notes/Module-01/01-LO02-Network-Level-Attacks.md",
-    "20-Notes/Module-02/02-LO01-Regulatory-Frameworks-Compliance.md",
-    "20-Notes/Module-01/01-LO01-Essential-Terminologies.md",
-    "20-Notes/Module-02/02-LO06-Asset-Management.md",
-    "20-Notes/Module-02/02-LO07-Security-Trends-and-Threats.md",
-    "30-Exam/Question-Bank.md",
-    "30-Exam/Answer-Key.md",
-    "20-Notes/Module-05/05-LO07-User-Access-Management.md",
     "30-Exam/External-Flashcards-Quizlet.md",
-    "30-Exam/Mock-Exam-100.md",
-    "30-Exam/External-Practice-Questions.md",
-    "10-MOCs/MOC-Module-01.md",
-    "40-Canvas/03-technical-network-security-map.canvas"
+    "30-Exam/Exam-Facts.md",
+    "00-Home.md"
   ]
 }

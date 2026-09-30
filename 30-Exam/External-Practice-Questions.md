@@ -7,7 +7,8 @@ exam_weight: unknown
 status: draft
 unresolved:
   - "AguidetoCloud CND-V3 domain weights (14/18/20/14/14/20%) are third-party and CONTRADICT the official blueprint v4.0. Rejected. See [[Exam-Facts]]."
-  - "AguidetoCloud 'Pass Score 70%' is third-party and WRONG. Official cut score varies 60-85% by exam form."
+  - "AguidetoCloud 'Pass Score 70%' is third-party and WRONG. Handbook p65 sec 1.6: passing criteria 'may vary from exam to exam'; EC-Council states 60-85% by form."
+  - "OpenExamPrep 200 items retrieved in full but NOT imported: answer key is A39/B58.5/C2.5/D0 and the correct option is the longest 78% of the time. See the section below."
   - "Quizlet set 617277655 returned HTTP 403 (anti-bot). Not retrieved. No bypass attempted."
   - "32 items originally had no published answer key. 23 now answered from the module PDFs. 9 remain unanswerable — see 'Not answerable from the PDFs'."
   - "C02 reverse-proxy WAF topology: mod09 WAF section lists hardware/network, software, host-based and layer-2 bridge. No reverse proxy. Unanswerable."
@@ -43,6 +44,48 @@ unresolved:
 | PracticeTestGeeks PDF | 4 | Yes (all B) | generic | https://practicetestgeeks.com/pdf/Certified_Network_Defender_Practice_Test_Questions_and_Answers.pdf |
 | A Guide to Cloud | 0 | — | CND v3 | paywalled — exam facts only, see [[#A Guide to Cloud — exam facts (third-party, partly wrong)]] |
 | Quizlet | 0 | — | — | HTTP 403 anti-bot, not retrieved |
+| OpenExamPrep | **200** | Yes (index + explanation) | CND v3 | `open-exam-prep.com/data/question-bank/cnd.json` — **rejected, see below** |
+
+---
+
+## OpenExamPrep — 200 questions, retrieved but REJECTED for drilling
+
+> [!danger] Do not drill these. The answer key is positionally broken.
+> Retrieved in full (JSON, 200 items, 4 options each, correct answer + explanation, no
+> registration). The questions are *well-formed and the answers are defensible*, but the
+> **key distribution is unusable**, so practising on it teaches two wrong heuristics.
+
+| Position | Correct | Expected on a real 4-option exam |
+|----------|---------|-----------------------------------|
+| A | 78 (39.0%) | ~50 (25%) |
+| B | **117 (58.5%)** | ~50 |
+| C | 5 (2.5%) | ~50 |
+| D | **0 (0.0%)** | ~50 |
+
+**Not one of the 200 has D as the correct answer.** Two exploitable artefacts:
+
+| Heuristic | Score on this set | Score on a real exam |
+|-----------|-------------------|----------------------|
+| Always pick the **longest** option | 157/200 = **78%** | ~25% |
+| Always pick **B** | 117/200 = **58%** | ~25% |
+| Pick **B**, else the longest | 174/200 = **87%** | ~25% |
+
+The correct answer is the longest option **78%** of the time (chance = 25%) and the shortest only
+**5%**. The generator writes qualified, multi-clause answers and short confident distractors.
+
+> [!warning] Their own disclaimer
+> "our practice questions are **independently developed simulations, not actual, recalled, or
+> sponsor-provided exam items**." That is consistent with the handbook's item-confidentiality
+> clause — see [[Exam-Facts]]. No site can legitimately hold real 312-38 items.
+
+**Kept for one reason only:** its 200 items are distributed across the 8 blueprint domains in
+exactly the published proportions (10/10/20/10/15/10/10/15), which independently corroborated the
+official weights now recorded in [[Exam-Facts]]. That is now confirmed against the official PDF,
+so this source adds nothing further and **its items are not imported into the vault.**
+
+Other notes: all 200 are stamped `lastUpdated: 2026-03-10`; difficulty split 60 easy / 100 medium /
+40 hard; 19 topics. Data path was found in the site's JS bundle
+(`/data/question-bank/{exam}.json`), not linked from the page HTML.
 
 **Total harvested: 46 questions.**
 **Answers: 14 published · 23 PDF-derived · 9 not answerable from the PDFs.**

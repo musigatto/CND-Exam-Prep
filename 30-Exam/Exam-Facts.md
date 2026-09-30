@@ -6,67 +6,96 @@ topic: "Official CND exam facts and blueprint domain weights"
 exam_weight: high
 status: done
 unresolved:
-  - "Blueprint v4.0 'No. Of Questions' column does not reconcile with 100 x weight%. Not used to derive per-domain counts."
-  - "The blueprint weights EXAM DOMAINS, not the 20 courseware modules. Any module -> domain mapping is inference and is not recorded here. Question bank therefore stays at 5 per module."
-  - "Blueprint v4.0 excerpt captured from search engine text of the official PDF; domains 7-8 weights and Incident Response weight not captured verbatim. Re-read the PDF before citing."
+  - "Blueprint v4.0 prints 'No. Of Questions = 5' for EVERY domain (8 x 5 = 40), which contradicts the 100-question exam. The Weightage column is the reliable one; the question-count column appears to be a leftover from an earlier exam length. Distribution below is derived from Weightage."
+  - "Handbook p18 says 'clicking on the selected response(s)'. The '(s)' leaves open whether multi-select items exist. EC-Council does not state single-answer-only anywhere in the handbook. Treat as unresolved."
+  - "The downloaded handbook file is named CND-Handbook-v6.1.pdf but its internal footer reads 'CND Candidate Handbook v6.3'."
+  - "Blueprint v4.0 page 1 extracted text says 'CND Exam Blueprint v3.0' while the document title says v4.0."
 ---
 # Official CND Exam Facts
 
-> [!info] Source
-> EC-Council official certification page + CND Exam Blueprint v4.0.
-> Courseware PDF `Module 01` p13 states only duration/questions and defers passing score to the FAQ.
+> [!info] Sources — both official, both downloaded and read
+> - **CND Exam Blueprint v4.0** — `cert.eccouncil.org/wp-content/uploads/2024/04/CND-Exam-Blueprint-v4.pdf`
+> - **CND Candidate Handbook** — `cert.eccouncil.org/images/doc/CND-Handbook-v6.1.pdf`
+>
+> Third-party restatements of these facts live in [[External-Practice-Questions]] and are
+> **not** authoritative. Where they differ from the tables here, these tables win.
 
 ## Exam format
 
 | Detail | Value | Source |
 |--------|-------|--------|
-| Exam code | 312-38 | EC-Council official page |
-| Title | Certified Network Defender (CND) | EC-Council official page |
-| Number of questions | 100 | Official page + Module 01 p13 |
-| Duration | 4 hours | Official page + Module 01 p13 |
-| Question type | Multiple Choice | EC-Council official page |
+| Exam code | 312-38 | Blueprint header |
+| Title | Certified Network Defender (CND) | Blueprint header |
+| Number of questions | 100 | Handbook p7, p46; Module 01 p13 |
+| Duration | 4 hours | Handbook p7, p46; Module 01 p13 |
+| Question format | Multiple choice, "clicking on the selected response(s)" | Handbook p18 |
 | Delivery | EC-Council Exam Portal / Pearson VUE | Module 01 p13 |
-| Passing criteria | **Cut score varies by exam form, range 60%–85%** | EC-Council official page |
+| Credential | ANAB-accredited | Handbook p7, p46 |
 
-> [!danger] No fixed pass score
-> There is **no** single passing percentage. The cut score is form-dependent (60%–85%).
-> Any vault file claiming a fixed `60%` or `70%` is wrong. See [[Mock-Exam-100]].
-
-Courseware wording, `Module 01` p13, exam details table:
+Courseware wording, `Module 01` p13:
 
 ```
 Exam Title | Exam Code | Availability | Duration | Questions | Passing Score
 CND        | 312-38    | EC-Council Exam Portal / VUE | 4 Hours | 100 | Pleas[e see FAQ]
 ```
 
-## Blueprint v4.0 domain weights
+> [!danger] No fixed pass score — now confirmed officially
+> - Handbook p65 §1.6: "**Passing Criteria** shall mean passing criteria for an EC-Council
+>   certification exam **which may vary from exam to exam**."
+> - Handbook p19: a panel "will answer and rate all items to deduce a **minimum passing or cut
+>   score**. **Scores vary from one exam to another** due to the score dependence on the items
+>   pool difficulty."
+> - EC-Council's certification page states the cut score **ranges 60%–85%** by exam form.
+>
+> **Never hardcode 60% or 70% as a pass mark.** See [[Mock-Exam-100]].
 
-> [!warning] Domains ≠ modules
-> The blueprint weights **exam domains**. The courseware is split into 20 modules.
-> No official module→domain mapping exists, so the question bank keeps its
-> equal 5-per-module distribution rather than inheriting a guess.
+You may mark questions and review them before ending the test (Handbook p46).
 
-| Domain | Weightage |
-|--------|-----------|
-| Network Defense Management | 10% |
-| Network Perimeter Protection | 10% |
-| Endpoint Protection | 20% |
-| Enterprise Virtual, Cloud, and Wireless Network Protection | 15% |
-| Incident Detection | 10% |
-| Application and Data Protection | 10% |
+## Blueprint v4.0 — official domain weights
 
-Highest-weighted: **Endpoint Protection (20%)** → Windows, Linux, mobile, and IoT endpoint controls.
+| # | Domain | Weightage | Questions implied by weight |
+|---|--------|-----------|------------------------------|
+| 1 | Network Defense Management | 10% | 10 |
+| 2 | Network Perimeter Protection | 10% | 10 |
+| 3 | Endpoint Protection | **20%** | 20 |
+| 4 | Application and Data Protection | 10% | 10 |
+| 5 | Enterprise Virtual, Cloud, and Wireless Network Protection | 15% | 15 |
+| 6 | Incident Detection | 10% | 10 |
+| 7 | Incident Response | 10% | 10 |
+| 8 | Incident Prediction | 15% | 15 |
+| | **Total** | **100%** | **100** |
 
-> [!caution] Partial capture
-> Weights above are transcribed from the official v4.0 PDF but only a subset was
-> captured verbatim. Treat as a study-priority signal, not an exam-authoritative table,
-> until the PDF is re-read. See `unresolved:`.
+Highest-weighted: **Endpoint Protection, 20%** — Windows, Linux, mobile and IoT endpoint controls.
+Then Enterprise Virtual/Cloud/Wireless and Incident Prediction at 15% each.
 
-## How this vault uses it
+## Module → domain mapping (from the blueprint, not inferred)
 
-- Distribution stays **5 questions per module × 20 modules = 100** — see the repo `AGENTS.md`.
-- Blueprint weights inform **which domains to study deeper**, not how many questions to write.
-- Third-party weight tables are rejected — see [[External-Practice-Questions]].
+The blueprint's **sub-domain labels are the courseware module names**, so this mapping is read
+directly off the PDF rather than guessed:
+
+| Domain | Courseware modules |
+|--------|--------------------|
+| Network Defense Management | 01 Network Attack and Defense Strategies · 02 Administrative Network Security · 03 Technical Network Security |
+| Network Perimeter Protection | 04 Network Perimeter Security |
+| Endpoint Protection | 05 Windows · 06 Linux · 07 Mobile · 08 IoT |
+| Application and Data Protection | 09 Administrative Application Security · 10 Data Security |
+| Enterprise Virtual, Cloud, and Wireless | 11 Enterprise Virtual · 12 Enterprise Cloud · 13 Enterprise Wireless |
+| Incident Detection | 14 Network Traffic Monitoring · 15 Network Logs Monitoring |
+| Incident Response | 16 Incident Response and Forensic Investigation |
+| Incident Prediction | 17 BC/DR · 18 Risk Management · 19 Attack Surface · 20 Threat Intelligence |
+
+3+1+4+2+3+2+1+4 = 20 modules. ✔
+
+Weights are **not** divisible per module (10% over 3 modules is 3.33% each), so a strict
+per-module split is impossible. The vault therefore uses **5 questions per module** as a flat
+approximation — see the repo `AGENTS.md`.
+
+## Exam item confidentiality — no real dumps exist
+
+Handbook p61–p65 makes exam items protected confidential information, forbids reverse
+engineering them, and defines a formal **Exam Item Evaluation** challenge process. Consequence:
+**no website can legitimately be selling real 312-38 items.** Every third-party question set is a
+simulation. See [[External-Practice-Questions]] for the sources tried and their defects.
 
 ## Related
 - [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]]
