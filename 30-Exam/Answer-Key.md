@@ -1,4 +1,4 @@
-﻿---
+---
 type: exam
 module: "key"
 tags: [exam, mod/01]

@@ -1,4 +1,4 @@
-﻿---
+---
 type: note
 module: "12"
 lo: "04"

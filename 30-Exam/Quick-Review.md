@@ -1,4 +1,4 @@
-﻿---
+---
 type: exam
 module: "bank"
 tags: [exam]
