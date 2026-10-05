@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "08"
 lo: "04"
-tags: [threat, process, mod/08, flashcard/08]
+tags: [threat, process, mod/08]
 topic: "IoT Cloud and Process Layer Attacks & Countermeasures"
 exam_weight: unknown
 status: done
@@ -46,23 +46,7 @@ unresolved: []
 - **Mirai botnet** exploits default credentials in IoT devices
 - **Cross-site scripting (XSS)** on IoT control dashboards; insecure web interfaces → command injection
 
-## Cards
-IoT cloud-layer attacks?
-?
-Account/theft, data-in-transit compromise, key/cert storage attacks, malware injection, botnets, backdoor/DoS, cloud service interruption.
 
-IoT data-at-rest encryption standard?
-?
-AES-256 (ex: RSA 2048 + AES-256; TLS 1.2 across web).
 
-Cloud data-transit countermeasures?
-?
-TLS v1.2, IPsec, DTLS, subnet-firewall ACLs, network redundancy.
 
-Process-layer IoT counters?
-?
-Governance/policies, audit programs, user training, incident response, continuous improvement.
 
-Mirai?
-?
-Botnet that exploits default credentials in IoT devices.

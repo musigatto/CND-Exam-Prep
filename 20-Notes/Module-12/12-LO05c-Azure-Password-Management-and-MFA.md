@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "05"
-tags: [policy, bestpractice, mod/12, flashcard/12]
+tags: [policy, bestpractice, mod/12]
 topic: "Azure AD password management (SSPR, password protection) and MFA enforcement"
 exam_weight: unknown
 status: done
@@ -28,12 +28,12 @@ unresolved:
 
 1. Use the **Azure AD self-service password reset (SSPR)** feature to set up an SSPR for users, and
    the **Azure AD Password Reset Registration Activity report** to monitor registered users.
-   _(p164)_
+   _(Mod 12 p164)_
 2. Use **Azure AD password protection for the Windows Server Active Directory agents on-premise**
    to **extend banned password lists to your existing infrastructure**. _(pp164, 167)_
 
 - "SSPR … allows the employees of an organization to **reset their passwords without contacting
-  the helpdesk**." _(p164)_
+  the helpdesk**." _(Mod 12 p164)_
 
 **Advantages of SSPR** _(p164, as printed)_:
 
@@ -47,9 +47,9 @@ unresolved:
 ## Azure AD password protection _(Mod 12 p167)_
 
 - "It allows organizations to **block common local words in addition to the global banned password
-  list**." _(p167)_
+  list**." _(Mod 12 p167)_
 - Reach: "Azure AD password protection can be used for **Windows Server Active Directory agents
-  on-premise** to extend the banned password lists to the existing infrastructure." _(p167)_
+  on-premise** to extend the banned password lists to the existing infrastructure." _(Mod 12 p167)_
 
 **Walkthrough** _(pp167–168)_:
 1. Go to **Azure AD Active Directory settings** and click on **Security**. _(p167, Fig 12.83)_
@@ -104,24 +104,8 @@ Related: [[12-LO04f-AWS-Password-Policy-and-MFA]] ·
 `[[12-LO05b-Azure-AD-SSO-and-Conditional-Access]]` ·
 `[[12-LO05e-Azure-Privileged-Identity-Management]]`
 
-## Cards
 
-The four advantages the courseware claims for Azure AD self-service password reset
-?
-Reduced cost — support-assisted reset accounts for 20% of an organization's IT expenditure · improved user experience (no helpdesk call) · lower helpdesk volume · mobility — reset from any location
 
-What do Azure AD password protection agents add on-premise?
-?
-They extend the banned password lists to the existing Windows Server AD infrastructure, so organizations can block common local words in addition to the global banned password list
 
-The SSPR areas the walkthrough configures
-?
-Properties — enable SSPR and select Selected, then Save · Authentication methods — number of methods and available methods · Registration — who registers at sign-in and the re-confirmation days · Notifications — option, then Save
 
-What does Security Defaults enforce, and what is the printed effectiveness claim?
-?
-It enforces MFA to block 99.9% of identity-related attacks, and users must register for and use Azure AD MFA with the Microsoft Authenticator app using notifications; it blocks attacks such as password spray, replay and phishing
 
-Steps to enable Security Defaults
-?
-Azure portal → Azure Active Directory → Properties → Manage security defaults → set Enable security defaults to Yes → Save

@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "10"
 lo: "04"
-tags: [protocol, process, tool, crypto, mod/10, flashcard/10]
+tags: [protocol, process, tool, crypto, mod/10]
 topic: "Email Encryption & S/MIME (Outlook, Office 365, Gmail)"
 exam_weight: unknown
 status: done
@@ -36,15 +36,5 @@ unresolved: []
 ## Gmail S/MIME (Workspace)
 - Admin-enable S/MIME for domain; per-message: Encrypt (S/MIME) → view details / sign
 
-## Cards
-Where is the Outlook "Encrypt contents and attachments for outgoing messages" toggle?
-?
-File → Options → Trust Center → Trust Center Settings → Email Security.
 
-What three cert/algorithm settings does Outlook S/MIME let you change?
-?
-Signing certificate, encryption certificate, hash/encryption algorithms (+ format, send-cert-with-sign).
 
-What must S/MIME recipients have to read encrypted incoming mail?
-?
-Your public certificate (available to them) and their own private key; Exchange publishes certs to GAL.

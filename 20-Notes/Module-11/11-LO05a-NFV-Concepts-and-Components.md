@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "05"
-tags: [concept, mod/11, flashcard/11]
+tags: [concept, mod/11]
 topic: "NFV concepts and components"
 exam_weight: unknown
 status: done
@@ -77,32 +77,13 @@ Figure slide captions: NFV *"is a network virtualization approach that decouples
 
 ## Lock in
 1. **Decoupling** from proprietary appliances is what produces the **OPEX/CAPEX** and fast-deployment benefits. _(p79)_
-2. **VNF ≠ VM** — a VNF may span many VMs (one function each) or sit wholly on one VM. _(pp79–p80)_
+2. **VNF ≠  VM** — a VNF may span many VMs (one function each) or sit wholly on one VM. _(pp79–p80)_
 3. **EMS = proprietary interface; MANO↔OSS/BSS = standard interfaces.** _(p80)_
 4. **Only the Orchestrator manages software resources**; **VNF Manager owns life-cycle actions**; **VIM owns compute/storage/network resource communication**. _(p80)_
 
-## Cards
 
-Courseware definition of NFV
-?
-A network virtualization approach that **decouples network functions from proprietary hardware appliances** so they run as software on standardized hardware / in virtual resources. Decoupled functions named: firewalls, traffic control, virtual routing. Benefit: minimizes OPEX and CAPEX, enables easy deployment of new services.
 
-Three principal elements of the NFV architecture
-?
-**NFVI** (infrastructure) · **VNFs** (virtualized network functions) · **NFV MANO** (management and orchestration).
 
-Three subparts of NFVI
-?
-**Hardware resources** (network devices, servers, storage) · **Virtualization layer** (contains the hypervisor) · **Virtual resources** (virtual networks, virtual storages, virtual servers).
 
-EMS: what does it manage and over what kind of interface?
-?
-Accounting, configuration, performance and security management of a VNF, over a **proprietary interface**; a single EMS can manage **multiple VNFs**.
 
-MANO's three components and their jobs
-?
-**VIM** — control/manage communication from the VNF to computing, storage and network resources plus virtualization · **VNF Manager** — life-cycle actions: updates, query, installation, termination, scale-up/down · **Orchestrator** — controls orchestration, manages software resources and NFV infrastructure.
 
-How is a VNF deployed onto VMs, and how does MANO reach the operator's OSS/BSS?
-?
-A VNF can run on **multiple VMs** (one function per VM) or **entirely on a single VM**. MANO combines with the decoupled **OSS/BSS** using **standard interfaces**.

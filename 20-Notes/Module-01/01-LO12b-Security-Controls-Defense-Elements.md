@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "01"
 lo: "12"
-tags: [concept, mod/01, flashcard/01]
+tags: [concept, mod/01]
 topic: "Security Controls and Defense Elements"
 exam_weight: unknown
 status: done
@@ -36,12 +36,5 @@ unresolved: []
   - Roles: Network Administrator (manages entire network) · Network Security Administrator (maintains security solutions) · Network Security Engineer (develops countermeasures) · Security Architect (supervises implementation) · Security Analyst (maintains privacy/integrity; evaluates security measures) · Network Technician (hardware/software components) · End User
 - Blue team responsibilities: determine adequacy of security measures, examine security status & deficiencies, propose effective defenses
 
-## Cards
-Three categories of physical security controls with examples?
-?
-Prevention (fences, locks, biometrics, mantraps), Deterrence (security guards, warning signs), Detection (CCTV, alarms).
 
 
-Major elements required for effective security strategy implementation?
-?
-Technology, well-defined Operations, and skilled People (blue team).

@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "03"
 lo: "08"
-tags: [protocol, crypto, mod/03, flashcard/03]
+tags: [protocol, crypto, mod/03]
 topic: "Essential Network Security Protocols"
 exam_weight: unknown
 status: done
@@ -15,13 +15,13 @@ unresolved: [IPsec layer (module body classifies it at network layer with AH/ESP
 
 Security protocols work at network, transport, application layers. RADIUS, TACACS+, Kerberos, PGP, S/MIME, S-HTTP, HTTPS, TLS, SSL, IPsec.
 
-- **Transport layer:** SSL (client⇄server communication security)
+- **Transport layer:** SSL (client⇔server communication security)
 - **Network layer:** IPsec (authenticates packets during transmission)
-- **Application layer:** PGP (encryption/decryption), S/MIME (email security), Secure HTTP (wwW data), HTTPS (network data), Kerberos (client-server model), RADIUS (remote-access servers ⇄ central server), TACACS+ (client-server model)
-- Also covered here: ICMP (resolve network communication problems), TCP (establishes/manages conversations), UDP (connectionless transport), SNMP (monitor/manage devices on LAN/WAN; components: **SNMP manager · SNMP agent · MIB**; standard language for routers/servers/printers ⇄ NMS)
+- **Application layer:** PGP (encryption/decryption), S/MIME (email security), Secure HTTP (wwW data), HTTPS (network data), Kerberos (client-server model), RADIUS (remote-access servers ⇔ central server), TACACS+ (client-server model)
+- Also covered here: ICMP (resolve network communication problems), TCP (establishes/manages conversations), UDP (connectionless transport), SNMP (monitor/manage devices on LAN/WAN; components: **SNMP manager · SNMP agent · MIB**; standard language for routers/servers/printers ⇔ NMS)
 
 ## RADIUS
-- Livingston Enterprises; centralized **AAA** for remote-access servers ⇄ central server; client-server, **application layer**, **UDP** or TCP transport; de-facto standard for remote user auth — RFC **2865** (auth) / **2866** (accounting)
+- Livingston Enterprises; centralized **AAA** for remote-access servers ⇔ central server; client-server, **application layer**, **UDP** or TCP transport; de-facto standard for remote user auth — RFC **2865** (auth) / **2866** (accounting)
 - Auth methods: PAP, CHAP, EAP
 - Components: access clients · access servers · RADIUS proxies · RADIUS servers · user account databases
 - Messages = UDP, one message per UDP payload (header + attributes)
@@ -29,7 +29,7 @@ Security protocols work at network, transport, application layers. RADIUS, TACAC
 - Packet types: `Access-Request (Username, Password)` · `Access-Accept / Access-Reject (UserService, FramedProtocol)` · `Access-Challenge (optional, ReplyMessage)` · Accounting-request / Accounting-response
 
 ## TACACS+
-- Cisco, derived from TACACS; **performs AAA separately** (unlike RADIUS); primarily **device administration** (switches, routers, firewalls via centralized servers); encrypts the **entire** client⇄server communication incl. **username + password** (sniffing protection)
+- Cisco, derived from TACACS; **performs AAA separately** (unlike RADIUS); primarily **device administration** (switches, routers, firewalls via centralized servers); encrypts the **entire** client⇔server communication incl. **username + password** (sniffing protection)
 - Process: user requests connection → AAA client gets resource request → client sends REQUEST to AAA server (after auth already done) for service shell → server RESPONSE (pass/fail) → client grants/denies service shell
 - Example auth: user initiates → router/user exchange auth params → router sends params to server → server REPLY
 
@@ -65,7 +65,7 @@ Security protocols work at network, transport, application layers. RADIUS, TACAC
 
 ## TLS
 - Secure communication between client-server apps over the internet; prevents eavesdropping/tampering
-- Properties: symmetric crypto (confidentiality/reliability client⇄server) · public-key crypto (authenticate applications) · auth codes maintain data reliability
+- Properties: symmetric crypto (confidentiality/reliability client⇔server) · public-key crypto (authenticate applications) · auth codes maintain data reliability
 - Two protocols: **TLS Record Protocol** (connection security via encryption) · **TLS Handshake Protocol** (server + client authentication before communication)
 
 ## SSL
@@ -76,35 +76,13 @@ Security protocols work at network, transport, application layers. RADIUS, TACAC
 
 ## IPsec
 - Network-layer protocol for secure **IP-level** communication; encrypts + authenticates **each IP packet**; end-to-end security at the internet layer of the IP suite; supports **network-level peer authentication, data origin authentication, data integrity, confidentiality (encryption), replay protection**
-- Applied in VPNs + remote user access; between hosts, security gateways, or gateway⇄host (side note: module body also contains one line saying it works at the application layer — see unresolved)
+- Applied in VPNs + remote user access; between hosts, security gateways, or gateway⇔host (side note: module body also contains one line saying it works at the application layer — see unresolved)
 - Two services: **AH** (authentication of sender only) · **ESP** (sender authentication + data encryption)
-- Deployment: LAN-internal IP ⇄ firewall (external IP) ⇄ Internet ⇄ firewall ⇄ LAN-internal IP (**IPsec tunnel**)
+- Deployment: LAN-internal IP ⇔ firewall (external IP) ⇔ Internet ⇔ firewall ⇔ LAN-internal IP (**IPsec tunnel**)
 
-## Cards
-RADIUS RFCs + transport?
-?
-RFC 2865 (auth) / RFC 2866 (accounting); client-server on the application layer via UDP (or TCP) as transport; PAP/CHAP/EAP auth.
 
-RADIUS vs TACACS+ encryption?
-?
-RADIUS encrypts only the password (UDP); TACACS+ encrypts the whole session including username+password (TCP 49), AAA separated.
 
-Kerberos main protection + identity proof?
-?
-Protects against replay attacks and eavesdropping; proves identity on non-secure networks via tickets (TGT then service ticket).
 
-PGP session key handling?
-?
-One-time session key encrypts the message; the key itself is encrypted with the recipient's public key and sent alongside.
 
-S/MIME cryptographic services?
-?
-Authentication, message integrity, non-repudiation, privacy, data security (RSA-based, separate keys for signing and encryption).
 
-SSL channel-security properties?
-?
-Private (encrypted after handshake), authenticated (server always, client optional), reliable (integrity check).
 
-IPsec services?
-?
-AH = sender authentication only; ESP = sender authentication + data encryption; peer auth, data origin auth, integrity, confidentiality, replay protection.

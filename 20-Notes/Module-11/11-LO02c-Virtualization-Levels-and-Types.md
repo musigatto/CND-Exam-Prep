@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "02"
-tags: [concept, mod/11, flashcard/11]
+tags: [concept, mod/11]
 topic: "Virtualization levels and types"
 exam_weight: unknown
 status: done
@@ -43,25 +43,9 @@ Two **separate** taxonomies. Do not merge them. "The design of a virtual environ
 
 _(Mod 11 p12)_
 
-## Cards
 
-Levels of virtualization — list the four
-?
-**Storage Device** (striping/mirroring; RAID) · **File System** · **Server** (partition of the server OS environment / hard drive) · **Fabric** (virtual devices independent of physical hardware; SAN).
 
-Which technologies achieve fabric-level virtualization, and what do they create?
-?
-**SAN** (storage area network); a **massive pool of storage areas** for the different VMs on the hardware, with virtual devices independent of the physical computer hardware.
 
-Types of virtualization — list the four
-?
-**Operating System** · **Network** · **Server** · **Desktop**.
 
-Network virtualization — the two directions
-?
-Multiple physical networks **combined into a single software-based virtual network**, **or** a single physical network **divided into multiple independent virtual networks**. Both are an abstraction of network resources.
 
-Desktop virtualization — where does the desktop and the data live?
-?
-The desktop OS instance lives in a **central server on the cloud** (hosted on a remote central server, possibly a cluster) and is accessed from **any device**; the data and files are **not stored on the user's system** but in the cloud.
 

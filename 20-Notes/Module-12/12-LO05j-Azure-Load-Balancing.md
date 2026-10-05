@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "05"
-tags: [concept, process, mod/12, flashcard/12]
+tags: [concept, process, mod/12]
 topic: "Azure load balancing — Application Gateway, Traffic Manager, Load Balancer"
 exam_weight: unknown
 status: done
@@ -43,23 +43,23 @@ unresolved:
 
 ## Application Gateway — walkthrough _(Mod 12 pp208–209)_
 
-1. "On the Azure **homepage**, click on **Application Gateways**." _(p208)_
-2. "Click on **create application gateway**." _(p209)_
-3. "Fill in the details and click on **Review + create**." _(p209)_
+1. "On the Azure **homepage**, click on **Application Gateways**." _(Mod 12 p208)_
+2. "Click on **create application gateway**." _(Mod 12 p209)_
+3. "Fill in the details and click on **Review + create**." _(Mod 12 p209)_
 
-Blade tabs visible in Fig 12.136 _(p209)_: **Basics · Frontends · Backends · Configuration · Review +
+Blade tabs visible in Fig 12.136 _(Mod 12 p209)_: **Basics · Frontends · Backends · Configuration · Review +
 create**; fields *Subscription · Application gateway name · Region (`West US 2`) · Tier (`Standard
 V2`) (label garbled)*. Fig 12.135 also shows a **Public / Private** column and
 "No application gateways to display". The steps end at Review + create — see `unresolved:`.
 
 ## Load Balancer — walkthrough _(Mod 12 pp209–212)_
 
-1. "On the Azure **homepage**, click on **Load balancers**." _(p209)_
-2. "Click on **Create load balancer**." _(p210)_
-3. "Fill in the details and click on **Review + create**." _(p210)_
-4. "After validation, click on **create**." _(p211)_
-5. "Click on **Go to resource**." _(p211)_
-6. "Thus, a **load balancer is created**." _(p212)_
+1. "On the Azure **homepage**, click on **Load balancers**." _(Mod 12 p209)_
+2. "Click on **Create load balancer**." _(Mod 12 p210)_
+3. "Fill in the details and click on **Review + create**." _(Mod 12 p210)_
+4. "After validation, click on **create**." _(Mod 12 p211)_
+5. "Click on **Go to resource**." _(Mod 12 p211)_
+6. "Thus, a **load balancer is created**." _(Mod 12 p212)_
 
 Blade items visible in the creation/deployment figures _(pp211–212)_: **Frontend IP configuration ·
 Inbound rule · Outbound rule · Backend pool · Health probe · Load balancing rule · NAT rules ·
@@ -69,24 +69,7 @@ them in the text; the screenshot blurb for Fig 12.141 says it "Balance[s] IPv4 a
 handles "TCP/UDP-based protocols … protocols used for voice and messaging", "improves application
 uptime … traffic to healthy nodes" and provides network address translation (NAT).
 
-## Cards
 
-The three load-balancing options the courseware names and what each is for
-?
-Azure Application Gateway — an HTTP web traffic load balancer doing end-to-end SSL encryption and SSL termination at the gateway · Azure Traffic Manager — load balances connections to services based on user locations (global, nearest data center) · external or internal Azure Load Balancer — distributes incoming requests across multiple VMs for higher availability
 
-What Azure Application Gateway offloads from the back-end web servers
-?
-Encryption and decryption overhead — it terminates SSL at the gateway, implements end-to-end SSL encryption, and ensures unencrypted traffic flows to the back-end servers
 
-The Azure Application Gateway creation steps actually printed
-?
-On the Azure homepage click Application Gateways, click create application gateway, fill in the details and click Review + create — no further create or Go to resource step is given
 
-The Azure Load Balancer creation steps actually printed
-?
-On the Azure homepage click Load balancers, click Create load balancer, fill in the details and click Review + create, after validation click create, click Go to resource — then the load balancer is created
-
-How the courseware justifies Azure Traffic Manager performance
-?
-Global Load Balancing routes to the nearest data center, and connectivity to the nearest data center is faster than to a distant one

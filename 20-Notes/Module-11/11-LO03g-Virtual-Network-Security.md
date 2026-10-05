@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "03"
-tags: [bestpractice, mod/11, flashcard/11]
+tags: [bestpractice, mod/11]
 topic: "Virtual Network Security"
 exam_weight: unknown
 status: done
@@ -39,24 +39,8 @@ Twelve recommendations, verbatim from the courseware. _(Mod 11 p59)_
 | 11 | To protect switches from **MAC spoofing** attacks, enable **MAC address filtering** | _(p59)_ |
 | 12 | **Disconnect NICs** (network interface controllers) to prevent outsiders from connecting to the network easily | _(p59)_ |
 
-## Cards
 
-Front: List the four virtual-network recommendations that concern identity, standards, data and accountability.
-?
-Assure a robust identity · Ensure security on open standards · Protect operational reference data · Provide accountability and traceability. _(Mod 11 p59)_
 
-Front: Which recommendation covers data in transit between hosts and clients?
-?
-Use cryptographic controls like SSL encryption on the network traffic between the hosts and the clients. _(Mod 11 p59)_
 
-Front: How do the recommendations counter MAC spoofing?
-?
-Enable MAC address filtering on the switches. _(Mod 11 p59)_
 
-Front: What physical-layer recommendation prevents unauthorized device connections?
-?
-Disconnect network interface controllers (NIC) to prevent outsiders from connecting to the network easily. _(Mod 11 p59)_
 
-Front: Name the four network-architecture recommendations.
-?
-Use segregation in networks · clearly define security dependencies and trust boundaries · make systems secure by default · provide manageable security controls. _(Mod 11 p59)_

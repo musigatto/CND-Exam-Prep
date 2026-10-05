@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "05"
 lo: "08"
-tags: [concept, command, tool, mod/05, flashcard/05]
+tags: [concept, command, tool, mod/05]
 topic: "Windows OS Security Hardening Techniques"
 exam_weight: unknown
 status: done
@@ -69,31 +69,9 @@ Configure OS security parameters correctly and ensure policies reduce system exp
 - Monitor in real time with **Process Monitor** (Sysinternals, `www.sysinternals.com`) — regular monitoring/auditing exposes traces of malicious registry activity
 - PowerShell: `Get-PSDrive -PSProvider Registry`; `Set-Location HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion; Get-ChildItem`
 
-## Cards
-LM vs NT hash?
-?
-<15-char passwords → LM hash, else NT hash; both brute-forceable — block LM storage via 'Network security: Do not store LAN Manager hash value on next password change'.
 
-Example Windows services to disable when unused?
-?
-IIS, FTP, SQL Server, proxy services, Telnet, Universal Plug and Play.
 
-Disable Remote Desktop (commands)?
-?
-`net stop termservice`, then `sc config termservice start= disabled`.
 
-Windows Defender quick scan vs full scan?
-?
-Quick = areas where malware usually hides; full = all files and applications.
 
-Registry hives (key names)?
-?
-HKLM (machine) · HKCU (current user; new subkey each logon) · HKCC (hardware profile) · HKCR (file extensions + COM registration).
 
-Registry monitoring tool?
-?
-Process Monitor (Sysinternals) — real-time registry (and file/system) activity.
 
-Firewall default rule behavior?
-?
-Inbound connections blocked unless an allow rule matches; outbound connections allowed unless a block rule matches.

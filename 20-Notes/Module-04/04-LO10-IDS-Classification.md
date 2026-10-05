@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "04"
 lo: "10"
-tags: [concept, mod/04, flashcard/04]
+tags: [concept, mod/04]
 topic: "IDS Classification"
 exam_weight: unknown
 status: done
@@ -17,19 +17,19 @@ Classified by: **approach · protected system · structure · data source · beh
 
 ## Approach-based IDS
 - **Signature-based (misuse detection)**: monitors data-packet patterns vs pre-configured attack **signatures** via string comparisons
-  - ☑ minimal false alarms · quickly identifies specific tools/techniques · helps fast incident handling
-  - ☒ **only known threats** (constant signature updates) · tight signatures miss common variants
+  - ~ minimal false alarms · quickly identifies specific tools/techniques · helps fast incident handling
+  - ~ **only known threats** (constant signature updates) · tight signatures miss common variants
   - Example signatures: telnet login as root (policy violation); OS log status code 645 = auditing disabled
 - **Anomaly-based**: builds **statistics of normal traffic** over a time interval (bandwidth, protocols, ports, connected devices, failed logons, CPU levels); alarms on deviations
-  - ☑ detects abnormal behavior/symptoms + **unknown attacks** without clear detail; info feeds misuse-detector signatures; detects probes early, wide attack range
-  - ☒ **high false-positive rate** (unpredictable users/networks); needs extensive baseline event set; static model may miss known attacks
+  - ~ detects abnormal behavior/symptoms + **unknown attacks** without clear detail; info feeds misuse-detector signatures; detects probes early, wide attack range
+  - ~ **high false-positive rate** (unpredictable users/networks); needs extensive baseline event set; static model may miss known attacks
 - **Stateful protocol analysis**: compares observed events vs predefined benign-activity profiles **per protocol** to find state deviations; detects unpredictable command sequences (repeated/arbitrary commands), command-length variations, attribute min/max anomalies; for authenticated protocols tracks authenticator per session (records suspicious-activity authenticator); analyzes network/transport/application-layer behavior
 
 ## Anomaly vs Misuse Detection Systems
 - **Anomaly Detection System**: algorithms detect discrepancies; two steps: (1) gather data-flow info, (2) real-time processing to classify normal/anomalous; can detect via AI, neural networks, data mining, statistical methods
-  - ☑ detects probes → early warnings · detects wide attack range ☒ legitimate-but-unmodeled behavior = false positive; single model across varying traffic can fail
+  - ~ detects probes → early warnings · detects wide attack range ~ legitimate-but-unmodeled behavior = false positive; single model across varying traffic can fail
 - **Misuse Detection System**: defines abnormal behavior first, then normal; **predefined rules** (rule-based languages, state-transition analysis, expert systems)
-  - ☑ more accurate, fewer false alarms ☒ **can't detect new attacks** (predefined rules)
+  - ~ more accurate, fewer false alarms ~ **can't detect new attacks** (predefined rules)
 
 ## Behavior-based IDS (reaction)
 - Model of normal/valid behavior extracted from reference info; compare with current activity → alarm on deviation
@@ -56,27 +56,8 @@ Classified by: **approach · protected system · structure · data source · beh
   - Reasons: identify attack signs (event analysis) · recurring intrusions · system vulnerabilities · develop access/user signatures · define anomaly-detection traffic rules · basic defense
 - **Network packets**: header (source/dest address, control info) + payload (body/user data); both can carry malicious content — **capture before final destination** = efficient detection
 
-## Cards
-IDS classification bases?
-?
-Approach, protected system, structure, data source, behavior (after attack), analysis timing.
 
-Signature vs anomaly detection tradeoff?
-?
-Signature: few false alarms but known attacks only; anomaly: finds unknown attacks but high false-positive rate.
 
-Active vs passive IDS?
-?
-Active auto-blocks without admin; passive only monitors/analyzes/alerts and logs.
 
-NIDS vs HIDS placement?
-?
-NIDS: network boundaries behind FW/routers/VPN/wireless; HIDS: on the host (sensitive public servers).
 
-Interval-based vs real-time IDS?
-?
-Interval: offline "store and forward", no active response; real-time: on-the-fly, continuous feed, more RAM+disk.
 
-IDS data sources?
-?
-Audit trails (system/app/user evidence) and network packets (header+payload captured pre-destination).

@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "06"
-tags: [concept, policy, mod/12, flashcard/12]
+tags: [concept, policy, mod/12]
 topic: "GCP shared responsibility model and GCP IAM"
 exam_weight: unknown
 status: done
@@ -80,36 +80,20 @@ Cross-module: `[[12-LO02a-Cloud-Security-Shared-Responsibility]]` ·
 
 _(Mod 12 p247)_
 
-**Members — 7, identical in the figure and the body list** _(p247)_:
+**Members — 7, identical in the figure and the body list** _(Mod 12 p247)_:
 `Google account` · `Service account` · `Google group` · `Google Workspace account` ·
 `Cloud Identity domain` · `All authenticated users` · `All user(s)`.
 
 **Google account** — "constitutes a **developer, an administrator, or any individual** who
-connects to the Google cloud with an identity such as an email address." _(p247)_
+connects to the Google cloud with an identity such as an email address." _(Mod 12 p247)_
 
 Nothing else is defined on p247 — the remaining six members are only named. Their
 definitions start in [[12-LO06b-GCP-Service-Accounts]] (service account, Google group, G Suite
 domain, Cloud Identity domain, role, permission), and the rules that constrain them in
 [[12-LO06c-GCP-IAM-Security-Best-Practices]].
 
-## Cards
 
-Features listed under LO#06
-?
-GCP shared responsibility model · GCP IAM features and best practice to implement IAM securely · GCP encryption and key management (data at rest / data in transit) · GCP network security measures · GCP data storage security · GCP monitoring and logging
 
-In Google's shared responsibility model, which rows stay with the **user** at each layer
-?
-IaaS: guest OS/data/content down to content (everything above network) · PaaS: deployment · usage · access policies · content · SaaS: access policies · content — content and access policies are the customer's at all three layers
 
-The three divisions of the GCP IAM model
-?
-Principal (an identity — an email address) · Roles (a collection of permissions) · Policy (binds a set of members to a role, via one or more bindings)
 
-The seven GCP IAM members
-?
-Google account · Service account · Google group · Google Workspace account · Cloud Identity domain · All authenticated users · All users
 
-GCP IAM stated purpose
-?
-Granular access to specific Google Cloud resources, preventing unauthorized access, under POLP (principle of least privilege) — administrators control access by implementing IAM policies

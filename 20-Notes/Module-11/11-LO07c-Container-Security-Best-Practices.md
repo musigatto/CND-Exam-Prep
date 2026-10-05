@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "07"
-tags: [bestpractice, mod/11, flashcard/11]
+tags: [bestpractice, mod/11]
 topic: "Container Security Best Practices"
 exam_weight: unknown
 status: done
@@ -49,26 +49,10 @@ Slide list: do not trust a container's software · know what is happening within
 | **Compliance** | Situation-specific laws, frameworks and compliance benchmarks (**FISMA, NIST**, etc.) |
 | **Holistic approach** | Adopt a holistic approach and perform **security benchmarking** |
 
-"Lock down the operating system" ← OS hardening layer: [[05-LO08-Windows-OS-Security-Hardening]]. Isolation + least privilege: [[03-LO02-Zero-Trust-and-Distributed-Access]]. Docker mechanics behind DCT / bench: [[11-LO08a-Docker-Security-Measures]], [[11-LO08b-Docker-Security-Tools]].
+"Lock down the operating system" â† OS hardening layer: [[05-LO08-Windows-OS-Security-Hardening]]. Isolation + least privilege: [[03-LO02-Zero-Trust-and-Distributed-Access]]. Docker mechanics behind DCT / bench: [[11-LO08a-Docker-Security-Measures]], [[11-LO08b-Docker-Security-Tools]].
 
-## Cards
 
-NIST's six container recommendations, condensed.
-?
-Tailor operational culture and technical processes; use container-specific host OSes instead of general-purpose; group only same-purpose, same-sensitivity, same-threat-posture containers per host kernel; adopt container-specific vulnerability management for images; consider hardware-based countermeasures for trusted computing; use container-aware runtime defense tools. _(Mod 11 p117)_
 
-The closing best-practice list: four items about the container's own environment and permissions.
-?
-Control root access; check the container runtime; lock down the operating system; embrace isolation and least privilege - plus centrally managed access controls. _(Mod 11 p118)_
 
-Hardening bullet: list the six concrete configuration rules.
-?
-Configure against benchmarks, adopt control features for host/daemon/kernel, avoid privileged mode execution, avoid noisy neighbors, limit resources such as CPU/memory, permit network traffic only on default bridge. _(Mod 11 p118)_
 
-Health-check and sprawl items in the best-practice prose.
-?
-Ensure appropriate life cycle management, delete drifted containers, control container sprawl, adopt continuous monitoring of container traffic, ensure service log management. _(Mod 11 p118)_
 
-Two process/file/device restrictions named in the best-practice prose.
-?
-Avoid using the AUFS driver, and enable user namespace - with privileges based on roles, RBAC, and authentication/authorization. _(Mod 11 p118)_

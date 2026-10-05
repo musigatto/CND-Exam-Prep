@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "06"
-tags: [bestpractice, policy, mod/12, flashcard/12]
+tags: [bestpractice, policy, mod/12]
 topic: "GCP IAM security best practices and temporary access"
 exam_weight: unknown
 status: done
@@ -132,7 +132,7 @@ _(p252 for steps 1–7 and the step-7 lead-in, p253 for step 8)_
 - "To ensure that a user **cannot access a resource after the stated expiration date and
   time**, **conditional role binding** can be used to grant **time-bounded access** to a
   resource."
-- Two interfaces for the expression _(p253)_:
+- Two interfaces for the expression _(Mod 12 p253)_:
 
 | Interface | Printed as |
 |---|---|
@@ -174,33 +174,14 @@ _(p252 for steps 1–7 and the step-7 lead-in, p253 for step 8)_
    selecting **Run Linter** at the top-right of the text box."
 3. **Click Save**; then **Save** again from **Edit permissions** to update the allow policy.
 
-_(p254)_
+_(Mod 12 p254)_
 
 Upstream: [[12-LO06b-GCP-Service-Accounts]] · downstream:
 [[12-LO06e-GCP-Service-Account-Key-Rotation]]
 
-## Cards
 
-When is a GCP **basic role** acceptable
-?
-When a predefined role is not offered by the service · when you want to give a project broader permission · in test/development environments · for a small team that does not need granular permissions — otherwise assign the minimum predefined or custom role
 
-The four service-account-key rotation steps, in order
-?
-Create a new key → switch apps to utilize the new key → disable the old key → delete the old key if certain it is no longer required
 
-Service account keys vs encryption keys
-?
-Distinct — data is normally encrypted using encryption keys, and safe access to Google Cloud APIs is achieved via service account keys; never check the keys into source code or leave them in the Downloads directory
 
-Service Account User role: project-level vs single-account grant
-?
-Project level → access to all service accounts in the project including any future ones; single account → access only to that account, and the principal can pretend to be it (roles/iam.serviceAccountUser)
 
-How does the courseware grant temporary access
-?
-Conditional role binding for time-bounded access, so a user cannot reach the resource after the stated expiration date and time — add an IAM condition to an existing binding via the Condition Builder (condition type Expiring Access, by From, Time Date range) or the Condition Editor (CEL expression, Run Linter to validate)
 
-Which GCP roles let you change permissions without full administrative access
-?
-Project IAM Admin and Folder IAM Admin — grant them only to those who must change permissions; grant owner (roles/owner) only when universal access is necessary

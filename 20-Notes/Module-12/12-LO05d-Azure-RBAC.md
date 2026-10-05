@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "05"
-tags: [concept, policy, mod/12, flashcard/12]
+tags: [concept, policy, mod/12]
 topic: "Azure IAM role-based access control (RBAC)"
 exam_weight: unknown
 status: done
@@ -45,9 +45,9 @@ unresolved:
 ## The two objects you must be able to name
 
 **Role** = a bundle of permissions, chosen from built-ins or custom. **Assignment** = role + security
-principal + scope. _(p171)_
+principal + scope. _(Mod 12 p171)_
 
-**Scope** — the level the assignment applies to, from broad to narrow _(p171)_:
+**Scope** — the level the assignment applies to, from broad to narrow _(Mod 12 p171)_:
 
 | Scope | Printed as |
 |---|---|
@@ -60,9 +60,9 @@ principal + scope. _(p171)_
 
 | Principal | Where the courseware names it |
 |---|---|
-| **User** | Members tab, "assign the selected role to Azure AD users" _(p173)_ |
+| **User** | Members tab, "assign the selected role to Azure AD users" _(Mod 12 p173)_ |
 | **Group** | Members tab _(pp173–174)_ |
-| **Service principal** | Members tab, "or applications" _(p173)_ |
+| **Service principal** | Members tab, "or applications" _(Mod 12 p173)_ |
 | **Managed identity** — *user-assigned* or *system-assigned* | Members tab; "In the Select managed identities pane, select whether the type is user-assigned managed identity or system-assigned managed identity" _(p174, Fig 12.94)_ |
 
 Result of the walkthrough: "The **security principal is assigned the role at the selected
@@ -71,24 +71,24 @@ scope**." _(p176, Fig 12.97)_
 ## Walkthrough — click path only _(Mod 12 pp171–176)_
 
 1. **Sign on to the Azure portal** and in the **Search box** search for the scope to grant access
-   to (Management groups, Subscriptions, Resource groups). _(p171)_
+   to (Management groups, Subscriptions, Resource groups). _(Mod 12 p171)_
 2. **Click on the specific resource** for that scope. _(p172, Fig 12.87)_
 3. **Click on Access control (IAM).** _(p172, Fig 12.88)_
-4. **Click on the Role assignments tab** to view the role assignments at this scope. _(p172)_
+4. **Click on the Role assignments tab** to view the role assignments at this scope. _(Mod 12 p172)_
 5. **Click Add > Add role assignment.** _(p172, Fig 12.89)_
 6. **Select the role** that is needed from the **Roles tab**; "Click on **View** to get details
    about a role in the **Details** column." _(p173, Figs 12.90–12.91)_
 7. On the **Members** tab select **User, group, or service principal** to assign the selected role
    to Azure AD users, groups, or applications. _(p173, Fig 12.92)_
 8. **Click on Select members** to select the users, groups or applications. _(p174, Fig 12.93)_
-9. **Click on Select** to add more users, groups or applications to the Members list. _(p174)_
+9. **Click on Select** to add more users, groups or applications to the Members list. _(Mod 12 p174)_
 10. **Select Managed identity** to assign the selected role to one or more managed identities;
     **Click Select members**; in the pane select **user-assigned managed identity** or
     **system-assigned managed identity**. _(p174, Fig 12.94 — also shows *All system-assigned
     managed identities* and a *Virtual machine* entry)_
-11. **Click Select** to add the managed identities to the Members list. _(p175)_
-12. In the **Description** box enter an **optional** description for this role assignment. _(p175)_
-13. **Click Next.** _(p175)_
+11. **Click Select** to add the managed identities to the Members list. _(Mod 12 p175)_
+12. In the **Description** box enter an **optional** description for this role assignment. _(Mod 12 p175)_
+13. **Click Next.** _(Mod 12 p175)_
 14. **Click Add condition** if you want to refine the role assignments **based on the storage
     blob attributes** — the figure's role is **Storage Blob Data Reader**, and the pane reads "Add
     an optional check to your role assignment for more fine-grained control". _(p175, Fig 12.95)_
@@ -101,24 +101,8 @@ Cross-module: least privilege `[[03-LO01-Access-Control-Models]]` ·
 AWS role comparison `[[12-LO04e-AWS-Least-Privilege-and-Policy-Types]] ·
 upstream `[[12-LO05b-Azure-AD-SSO-and-Conditional-Access]]`
 
-## Cards
 
-The four RBAC best practices stated for Azure
-?
-Use RBAC for least privilege and granular access control · assign permissions on a subscription, resource group or single resource scope · use built-in roles to segregate duties and grant only the access required for the job · grant the RBAC security reader role to security teams
 
-Azure RBAC scopes named by the courseware
-?
-Rules: subscription · resource group · single resource — the walkthrough step 1 additionally searches Management groups, Subscriptions and Resource groups
 
-Azure RBAC security principal types
-?
-User · group · service principal · managed identity, and managed identity splits into user-assigned and system-assigned
 
-When does Azure RBAC use a custom role instead of a built-in role?
-?
-When the built-in roles do not meet the requirements of the organization — the customer then creates custom roles for the Azure resources
 
-The Add role assignment click path, in order
-?
-Search the scope → open the resource → Access control (IAM) → Role assignments tab → Add > Add role assignment → pick the role on the Roles tab → Members tab: user, group or service principal, or managed identity → Select members → optional Description → Next → optional Add condition → Review + assign

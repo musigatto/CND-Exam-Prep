@@ -1,8 +1,8 @@
----
+﻿---
 
 type: moc
 module: "07"
-tags: [concept, mod/07, flashcard/07]
+tags: [concept, mod/07]
 topic: "Module 07 — Endpoint Security - Mobile Devices"
 exam_weight: unknown
 status: done
@@ -64,7 +64,7 @@ views:
 - Per-module exam blueprint weights (not stated in courseware).
 - COBO implementation paragraph: OCR garbled wording on "device that runs a single application... otherwise smartphones with prohibited personal use" — kept the verified list; no invented specifics.
 
-## Cards
+## Quick review
 Module 07 subject scope?
 ?
 Mobile endpoint security: mobile usage policies (BYOD/COPE/COBO/CYOD), risks + guidelines, management solutions (MDM/MAM/MCM/MTD/MEM/EMM/UEM), general best practices, Android + iOS specific security.

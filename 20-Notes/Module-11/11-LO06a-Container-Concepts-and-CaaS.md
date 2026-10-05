@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "06"
-tags: [concept, mod/11, flashcard/11]
+tags: [concept, mod/11]
 topic: "Container concepts, CaaS and orchestration"
 exam_weight: unknown
 status: done
@@ -74,28 +74,9 @@ _(Mod 11 p91)_
 | Content | — | the **application, its dependencies, and hardware requirements file** |
 | Examples | **LXC, OpenVZ, Linux Vserver, BSD Jails, Solaris Zones** | **Docker, Rocket** |
 
-## Cards
 
-OS virtualization (Module 11 LO06) — what is replicated, and what are the instances called?
-?
-The **host operating system's kernel is virtually replicated in multiple instances of isolated user space**, called **containers**, **software containers**, or **virtualization engines** — each instance gets (virtualized) OS functionality.
 
-CaaS — what is it, and what can a subscriber build with it?
-?
-Services that enable the **deployment of containers and container management through orchestrators**. Subscribers can develop **rich, scalable containerized applications through the cloud or on-site data centers**.
 
-Container engine vs container orchestration — define each.
-?
-**Container engine** = managed environment for deploying containerized applications; creates, adds, and removes containers. **Container orchestration** = **automated process of managing the lifecycles of software containers and their dynamic environment**.
 
-Orchestrators named by the courseware — which are open source, which is commercial?
-?
-**Open source:** Kubernetes, Docker Swarm. **Commercial:** **OpenShift by Red Hat**.
 
-OS containers vs application containers — definition and examples.
-?
-**OS containers** = virtual environments **sharing the kernel of the host**; run multiple services/processes; install libraries, databases. Examples: LXC, OpenVZ, Linux Vserver, BSD Jails, Solaris Zones. **Application containers** = run a **single application/service**, layered file system, built on OS container tech. Examples: Docker, Rocket.
 
-Container technology architecture — the five tiers in order.
-?
-**Developer** creates images → **testing/accreditation systems** validate, verify, sign → **registry** stores and distributes images on request from an orchestrator → **orchestrator** converts images to containers and deploys to hosts → **host** runs and stops containers on the orchestrator's direction.

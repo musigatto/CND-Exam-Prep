@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "03"
-tags: [concept, mod/11, flashcard/11]
+tags: [concept, mod/11]
 topic: "Virtual Network Types and Placements"
 exam_weight: unknown
 status: done
@@ -84,40 +84,8 @@ A hypervisor is **software that runs and manages virtual machines** _(Mod 11 p22
 | HP | Enterprise-edge resiliency/security; IRF stacking, static RIP, **OSPF, BGP, IS-IS**, PoE+, **ACLs**, IPv6; optional HP IMC management |
 | D-Link | Large IP routed networks / network core; dynamic routing, advanced QoS, stackable, 10 Gb uplinks |
 
-## Cards
 
-```
-What determines whether virtual network software goes inside or outside the virtual server?
-?
-The size and type of the virtualization platform. Software placed inside = Internal Virtual Network; outside = External Virtual Network. _(Mod 11 p19, p20)_
-```
 
-```
-Which component acts as the virtual network software for an internal virtual network?
-?
-The hypervisor — it provides the abstraction layer that lets internal virtual network types mimic physical networks, and implements virtualization at the server or cluster level. _(Mod 11 p21)_
-```
 
-```
-What hardware/software relationship makes external network virtualization possible?
-?
-Managed/intelligent (layer 3) switches run virtualization software modules that abstract the physical switch ports and the surrounding network. _(Mod 11 p25)_
-```
 
-```
-Which virtualization type combines multiple physical LANs into one, or subdivides one physical LAN into isolated virtual networks?
-?
-External network virtualization (e.g. VLAN + switch technology). _(Mod 11 p25)_
-```
 
-```
-Which hypervisor products does the courseware list, and what licence is VirtualBox under?
-?
-VMware ESXi, Citrix Hypervisor 8.2 (formerly XenServer), Virtual Iron, Microsoft Hyper-V Server, VirtualBox — VirtualBox is free open source under GPL version 2. _(Mod 11 p22–p23)_
-```
-
-```
-How does VMware ESX Server 3 start up, and which component runs as the first VM?
-?
-The vmkernel starts first and loads the virtualization components; the service console invokes the Linux kernel as the primary VM and runs as the first virtual machine. Type-I, bare metal. _(Mod 11 p24)_
-```

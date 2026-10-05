@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "09"
-tags: [policy, bestpractice, mod/11, flashcard/11]
+tags: [policy, bestpractice, mod/11]
 topic: "Kubernetes Network Policies, PodSecurityPolicy and Secrets"
 exam_weight: unknown
 status: done
@@ -378,28 +378,9 @@ kubectl get secrets --all-namespaces -o json | kubectl replace -f -
 
 Data-at-rest encryption mechanisms in general: [[10-LO03b-OS-Encryption-Linux-Mac-Android-iOS]], [[10-LO03a-Windows-Disk-Encryption-BitLocker-Device-Encryption-TPM]].
 
-## Cards
 
-Kubernetes NetworkPolicy: what is the default state, and what changes when a policy selects a pod?
-?
-By default all pods can talk to all other pods - pods are non-isolated. If a NetworkPolicy in the namespace selects a pod, that pod rejects any communication not allowed by the policy. _(Mod 11 p141, p142)_
 
-Are Kubernetes NetworkPolicy resources additive or overriding?
-?
-Additive - if multiple policies select a pod, the pod is isolated based on the union of the policies' rules. _(Mod 11 p141)_
 
-restrict-root.yaml: what does it block, and how is it activated?
-?
-privileged: false plus runAsUser rule mustRunAsNonRoot, so containers cannot run privileged or as root. Saved as restrict-root.yaml and activated with kubectl create -f restrict-root.yaml. _(Mod 11 p146)_
 
-How do you restrict the volume/storage types a container may use?
-?
-Specify the allowed volume types in the volumes key of a pod security policy (for example only nfs) and install the policy - this reduces costs or avoids accessing information. _(Mod 11 p146)_
 
-Which Kubernetes secret encryption provider is recommended for enhanced security, and why?
-?
-kms - envelope encryption with DEKs (AES-CBC/PKCS#7) wrapped by KEKs per the KMS configuration, simplifying key rotation; EncryptionConfig alone only gives moderate security for stored keys, and the KMS provider must be configured. _(Mod 11 p150)_
 
-How do you verify that secrets are encrypted at rest in etcd, and what proves it?
-?
-ETCDCTL_API=3 etcdctl get /registry/secrets/default/secret1 --hexdump -C, then check the stored secret is prefixed with k8s:enc:aescbc:v1:, and that kubectl describe secret secret1 -n default decrypts it correctly. Configuration is enabled with the kube-apiserver --encryption-provider-config argument. _(Mod 11 p149, p151)_

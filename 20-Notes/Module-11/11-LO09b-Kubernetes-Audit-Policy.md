@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "09"
-tags: [policy, bestpractice, mod/11, flashcard/11]
+tags: [policy, bestpractice, mod/11]
 topic: "Kubernetes Audit Policy"
 exam_weight: unknown
 status: done
@@ -44,28 +44,9 @@ rules:
 - `audit.k8s.io/v1` API group, `kind: Policy`, a single `rules` entry with `level: Metadata` — the **minimal** policy that still records every request. _(Mod 11 p140)_
 - The slice gives **no** further levels, rotation/retention flags or output backends for the audit subsystem — see `unresolved`.
 
-## Cards
 
-Kubernetes audit logs: what do they record?
-?
-A record of the activities of users, administrators, or system components that have affected the system. Audit logging customizes API logging at the metadata level and at the payload (request and response), set per organizational policy. _(Mod 11 p139)_
 
-What is stored in the audit logs for read requests (get, list, watch) versus for Secret and ConfigMap requests?
-?
-Read requests: the request object is exported. Secret and ConfigMap: only the metadata is saved. All remaining requests are exported. _(Mod 11 p139)_
 
-List the seven questions Kubernetes audit logs must let cluster administrators answer.
-?
-What happened · When did it happen · Who initiated it · What did it happen on · Where was it observed · Where was it initiated · Where was it going. _(Mod 11 p139)_
 
-Minimal audit policy file: what are the apiVersion, kind and rule level?
-?
-apiVersion audit.k8s.io/v1, kind Policy, rules with a single entry - level: Metadata (Figure 11.36) - logs all requests at the Metadata level. _(Mod 11 p140)_
 
-Which of these is NOT stated in the Kubernetes audit-policy guidance of Module 11?
-?
-Audit-log rotation, retention and backends - the slice only gives the minimal Metadata-level policy file. See unresolved. _(Mod 11 p139)_
 
-Audit logging in Kubernetes customizes API logging at which two levels?
-?
-At the metadata level and at the payload (for example, request and response); the levels can be set as per the policy of the organization. _(Mod 11 p139)_

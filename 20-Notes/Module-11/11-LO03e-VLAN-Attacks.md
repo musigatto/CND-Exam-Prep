@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "03"
-tags: [threat, mod/11, flashcard/11]
+tags: [threat, mod/11]
 topic: "VLAN Attacks"
 exam_weight: unknown
 status: done
@@ -56,28 +56,9 @@ attacker -> exploits port mode "dynamic auto" / "dynamic desirable"
 
 Countermeasures for each of these: [[11-LO03h-VLAN-Security]].
 
-## Cards
 
-MAC flooding: mechanism and effect.
-?
-The attacker sends a large number of fake MAC addresses to overflow the CAM table; once it is full, traffic without MAC entries floods out to all ports of the VLAN, making it easy to view and retrieve the traffic. _(Mod 11 p34–p35)_
 
-ARP attack: mechanism and the two stated effects.
-?
-Fake ARP messages over the LAN bind the attacker's MAC to the IP of a legitimate host and poison the ARP table; it tricks the switch into forwarding packets with forged identities to a device in a different VLAN, and in the same VLAN it tricks end nodes such as routers and workstations. _(Mod 11 p34–p35)_
 
-Give the mechanism and effect of the DHCP starvation and multicast brute-force attacks.
-?
-DHCP starvation: multiple DHCP requests with spoofed MAC addresses cause DoS at the DHCP server. Multicast brute-force: several multicast frames injected into a VLAN in quick succession leak frames from the original VLAN to other VLANs. _(Mod 11 p35–p36)_
 
-Double tagging: how are the two 802.1Q tags arranged and what follows?
-?
-The inner tag is the VLAN the user wants to reach, the outer tag is the native VLAN; the switch removes the native VLAN and forwards the second frame to the trunk interface(s), so the attacker jumps from native VLAN to user VLAN and can conduct a DoS attack. _(Mod 11 p35)_
 
-Switch spoofing: what does the attacker exploit and what does it emulate?
-?
-The default 'dynamic auto' or 'dynamic desirable' port mode plus an incorrectly configured trunk port to spoof itself as a switch; it then emulates 802.1Q and DTP messages. _(Mod 11 p35–p36)_
 
-Spanning-tree attack: the two variants and their outcomes.
-?
-After obtaining the port ID information, send STP configuration/topology change acknowledgement BPDUs claiming to be the new root bridge with lower priority to gain access to network traffic; or install a new STP device and transmit junk data to flood packets and shut services down for a short period. _(Mod 11 p36)_

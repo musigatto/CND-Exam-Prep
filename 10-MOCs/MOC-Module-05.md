@@ -1,8 +1,8 @@
----
+﻿---
 
 type: moc
 module: "05"
-tags: [concept, mod/05, flashcard/05]
+tags: [concept, mod/05]
 topic: "Module 05 — Endpoint Security - Windows Systems"
 exam_weight: unknown
 status: done
@@ -69,7 +69,7 @@ views:
 - LO06 registry auto-update method (`NoAutoUpdate` semantics) — OCR ambiguity.
 - LO09 SMM defense methods — second method (Supervisor SMI handler) only fully captured.
 
-## Cards
+## Quick review
 Module 05 subject scope?
 ?
 Windows endpoint security: OS components/features, baseline, accounts/passwords, patches, access, hardening, AD security, network services/protocol security.

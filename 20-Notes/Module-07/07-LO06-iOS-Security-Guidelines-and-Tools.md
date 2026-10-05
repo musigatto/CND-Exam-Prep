@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "07"
 lo: "06"
-tags: [bestpractice, tool, policy, mod/07, flashcard/07]
+tags: [bestpractice, tool, policy, mod/07]
 topic: "iOS Security Guidelines and Tools"
 exam_weight: unknown
 status: done
@@ -52,23 +52,7 @@ iOS devices have built-in security features that should be enabled/configured ap
 - **Avira Mobile Security** (avira.com): web protection + identity safeguarding · identifies phishing websites targeting you · secures emails · tracks device · identifies suspicious activities · organizes device memory · **backs up contacts**
 - Others: **Norton Mobile Security** · **LastPass Password Manager** · **McAfee Total Protection** · **SplashID Safe Password Manager** · **Webroot SecureWeb Browser** · **Wickr Me — Private Messenger** · **1Password** · **GadgetTrak** · **iLocalis** · **GPS Tracker by FollowMee**
 
-## Cards
-iOS passcode/erase configuration paths?
-?
-Settings → Touch ID and Passcode (Turn Passcode On, Erase Data, Voice Dial OFF); Auto-Lock: Settings → General → Auto-Lock.
 
-Default iPhone root password and the fix?
-?
-Default root password is "Alpine" — must be changed. Never jailbreak/root in enterprise environments.
 
-Find My iPhone Lost Mode?
-?
-iOS 6+ feature: locks the device with a passcode + custom message (e.g., contact number); tracks whereabouts and recent location history.
 
-Find My iPhone setup path?
-?
-Settings → [your name] → iCloud → Find My iPhone → turn on Find My iPhone + Send Last Location (iOS 10.2-: Settings → iCloud).
 
-Key iOS hardening items?
-?
-App Store only · no sensitive data on client-side DB or iCloud · no jailbreak · trusted third-party apps · ask-to-join Wi-Fi · Safari privacy settings + Do Not Track · disable BT/Wi-Fi when idle · regular Apple patches.

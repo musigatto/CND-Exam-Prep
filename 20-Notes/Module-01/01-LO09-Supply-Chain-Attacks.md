@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "01"
 lo: "09"
-tags: [threat, mod/01, flashcard/01]
+tags: [threat, mod/01]
 topic: "Supply Chain Attack Techniques"
 exam_weight: unknown
 status: done
@@ -69,17 +69,7 @@ unresolved: []
 ## Prevention (best practices)
 Vendor & supplier assessment · secure communication (encrypted channels) · code & software review (open-source + static, verify dependencies) · **signed & verified updates** (code signing) · **PAM** + MFA for privileged/admin accounts · access control & privilege management · monitor supply chain (IDS, **honeytokens**, SIEM) · secure development practices · trustworthy sources (no pirated/unverified) · **Zero Trust Architecture (ZTA)** — PE (policy engine) decides, PA (policy administrator) communicates, PEP (policy enforcement point) blocks/permits · strict **shadow IT** rules · risk assessment (questionnaires, on-site visits) · network segmentation by business function
 
-## Cards
-ZTA operating components?
-?
-Policy Engine (PE) decides permitted traffic, Policy Administrator (PA) communicates the decision, Policy Enforcement Point (PEP) blocks or permits requests.
 
 
-Two methods for finding supply-chain vulnerabilities?
-?
-Continuous (automated) vulnerability scanning and penetration testing with honeypots.
 
 
-What is a honeytoken?
-?
-A fake resource posing as private information that activates a signal when attackers interact with it, alerting the organization and detailing the breach technique.

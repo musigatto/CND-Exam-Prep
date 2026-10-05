@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "01"
 lo: "03"
-tags: [threat, mod/01, flashcard/01]
+tags: [threat, mod/01]
 topic: "Application-level Attack Techniques"
 exam_weight: unknown
 status: done
@@ -68,20 +68,7 @@ unresolved: []
 9. Security Logging and Monitoring Failures
 10. Server-Side Request Forgery (SSRF) — fetch of user-supplied URL to unintended destination
 
-## Cards
-XSS definition?
-?
-Injection of client-side script into dynamic web pages viewed by other users, that executes in the victim's browser.
-<!--SR:!2026-10-03,4,270-->
 
 
-Requirement for a CSRF attack?
-?
-Three things: a user, a trusted website, and a malicious website.
-<!--SR:!2026-09-30,1,230-->
 
 
-Which cookie attribute prevents XSS-based session hijacking?
-?
-HttpOnly — if the server does not set HttpOnly on session cookies, client-side script injection can enable session hijacking.
-<!--SR:!2026-09-30,1,230-->

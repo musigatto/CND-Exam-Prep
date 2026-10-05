@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "10"
 lo: "09"
-tags: [concept, process, protocol, crypto, mod/10, flashcard/10]
+tags: [concept, process, protocol, crypto, mod/10]
 topic: "Data Integrity — Meaning, Types, Checking, Checklist"
 exam_weight: unknown
 status: done
@@ -57,39 +57,11 @@ Complete · Accurate · **Safe** (accessible only by authorized) · Compliance (
 | Data security | Protects against **unauthorized access, disclosure, modification, destruction**; keeps data private |
 | Data accuracy | Correctness and reliability — data accurately reflects real-world facts/attributes |
 
-## Cards
-What is data integrity?
-?
-Accuracy, consistency, and reliability of data throughout its lifecycle — unaltered/trustworthy from creation to deletion.
 
-Name the characteristics of data integrity.
-?
-Complete, Accurate, Safe, Compliance, Consistent, Reliable, Timeliness.
 
-Two main categories of data integrity and the 4 logical sub-types.
-?
-Physical and Logical; logical = entity, referential, domain, user-defined.
 
-Three hash methods named for integrity checking?
-?
-MD5, SHA-256, SHA-3 (checksums/hash functions).
 
-What additive redundancy detects/corrects errors in memory and storage?
-?
-Error-correcting codes (ECC); parity checks + CRC for transmission/storage error detection.
 
-How does a digital signature verify integrity?
-?
-Sender signs data with private key; recipient verifies with sender's public key; any alteration invalidates the signature.
 
-Integrity-preservation checklist items?
-?
-Validate input · validate data · remove duplicate data · perform regular backups · control access (least privilege) · prepare audit trail.
 
-Give one countermeasure per physical-integrity threat.
-?
-Error-correcting memory, battery-protected write cache, redundant storage (RAID) for hardware/power/storage threats.
 
-Difference between data security and data integrity?
-?
-Security = protect against unauthorized access/disclosure/modification/destruction (privacy); integrity = data stays unaltered and correct (reliability).

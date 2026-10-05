@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "08"
 lo: "05"
-tags: [process, tool, command, bestpractice, mod/08, flashcard/08]
+tags: [process, tool, command, bestpractice, mod/08]
 topic: "IoT Security Measures — Access, Vuln Mgmt, Firmware (M06–M10)"
 exam_weight: unknown
 status: done
@@ -38,27 +38,8 @@ unresolved: []
   `sudo nmap -sS -sU -O 10.10.10.10` · `netstat -tulpn` · `nmap --top-ports 1000 10.10.10.10`
 - Result: reduce attack surface
 
-## Cards
-Security measures M06–M10?
-?
-Limit access (ACL/PACL/VACL) → monitor malware/ransomware → vulnerability scan → firmware updates → close insecure network services.
 
-PACL vs VACL?
-?
-PACL = Policy-based access control list; VACL = VLAN access control lists.
 
-IoT malware to monitor (M07)?
-?
-Mirai, Echobot, Torii, Dark Nexus, WannaCry (EternalBlue).
 
-IoT vuln scanners (M08)?
-?
-RloT Scanner, beSTORM; also Nexpose, Qualys, Tenable, Cloudpassage Halo, AlienVault USM.
 
-Firmware update best practice (M09)?
-?
-Vet in sandbox, OTA where supported, sign updates, rollback plan.
 
-Port/service closure command (M10)?
-?
-sudo nmap -sS -sU -O <target> · netstat -tulpn · nmap --top-ports 1000 <target>.

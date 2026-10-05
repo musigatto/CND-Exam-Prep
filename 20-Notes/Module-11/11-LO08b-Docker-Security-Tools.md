@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "08"
-tags: [tool, mod/11, flashcard/11]
+tags: [tool, mod/11]
 topic: "Docker Security Tools"
 exam_weight: unknown
 status: done
@@ -49,28 +49,9 @@ Legible check texts from the screenshot (numbering unreliable): do not set mount
 
 "Additional Container Security Tools": **CoreOS Clair · Aqua Security · Anchore · NeuVector · CloudPassage · Halo · Aporeto · Tenable · Flawcheck (garbled) · Black Duck · capsule8 · StackRox · Sysdig · Falco · Hashicorp Vault**. The slice gives no function for these beyond the entries above. Snyk is used separately for image scanning: [[11-LO08c-Docker-Security-Best-Practices]] _(p127)_
 
-## Cards
 
-Docker Bench Security: what is it and what does it check?
-?
-A script that enables checking of host configuration, Docker daemon configuration, Docker daemon configuration files, container images and build files, and container runtime. Referred to on p.118 as the Docker bench audit tool for facilitating configuration best practices. _(Mod 11 p124, p118)_
 
-Name the two tools whose Kubernetes integrations are structural rather than just monitoring.
-?
-Anchore integrates with Kubernetes using admission controllers, ensuring only images that meet the organization's policies are deployed. StackRox collects system-level events - process execution, network connections and flows, privilege escalation, files launched within each container in Kubernetes environments. _(Mod 11 p125, p126)_
 
-StackRox: what does it protect, and which threats do its pre-defined policies detect?
-?
-Cloud-native apps across the full life cycle including build, deploy and runtime. Pre-defined policies detect cryptocurrency mining, privilege escalation and various exploits. _(Mod 11 p126)_
 
-Which tool's stated function is a true layer 7 container firewall, and what does it block?
-?
-NeuVector - end-to-end Kubernetes platform with a true layer 7 container firewall; detects and blocks suspicious processes and file system activity to prevent exploits and breakouts, plus automated segmentation, DPI, and detection for DDoS, DNS, SQL injection and DLP breaches. _(Mod 11 p125)_
 
-Three tools and their one-line identity, from distinct layers of the pipeline.
-?
-Anchore - image analysis in the build pipeline, creates software container bills of materials, Kubernetes admission controllers. CloudPassage Halo - cloud/container/serverless security posture and continuous CIS-benchmark compliance. Capsule8 - attack detection and response for Linux environments, containerized, virtualized or bare-metal, on-premises or cloud. _(Mod 11 p125)_
 
-Which tools work by blocking, whitelisting or real-time intervention, and what is each mechanism?
-?
-Aqua - least-privilege whitelisting to detect and prevent anomalous behavior, privilege escalation or code injection. Twistlock - real-time intervention, blocking and prevention for in-process runtime attacks, plus granular access control. Tenable.io - vulnerability assessment, malware detection and policy enforcement across development to operation. _(Mod 11 p124–p125)_

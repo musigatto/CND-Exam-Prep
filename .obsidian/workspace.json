@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20-Notes/Module-11/11-LO03h-VLAN-Security.md",
+                "file": "20-Notes/Module-01/01-LO13-Defense-in-Depth-Strategy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "11-LO03h-VLAN-Security"
+              "title": "01-LO13-Defense-in-Depth-Strategy"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 430.5
   },
   "right": {
     "id": "5dad8208df7d24fc",
@@ -171,16 +171,6 @@
             }
           },
           {
-            "id": "976a6555c14bf078",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "SpacedRepIcon",
-              "title": "Notes Review Queue"
-            }
-          },
-          {
             "id": "af740e2914eb5166",
             "type": "leaf",
             "state": {
@@ -191,7 +181,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -210,34 +200,46 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "af740e2914eb5166",
+  "active": "8233dd42d781086a",
   "lastOpenFiles": [
+    "tmp-stray.ps1",
+    "tmp-verified.json",
+    "tmp-items.json",
+    "tmp-cards-run.ps1",
+    "tmp-cards-dry.ps1",
+    "tmp-check.ps1",
+    "scan-tightemdash.ps1",
+    "fix-q001.ps1",
+    "fix-all.ps1",
+    "dbg-batch.ps1",
+    "dbg-one.ps1",
+    "20-Notes/Module-01/01-LO12a-Continual-Adaptive-Security-Strategy.md",
+    "20-Notes/Module-01/01-LO08-Wireless-Network-Attacks.md",
+    "20-Notes/Module-01/01-LO06-Mobile-Device-Attacks.md",
+    "20-Notes/Module-01/01-LO04-Social-Engineering-Attacks.md",
+    "20-Notes/Module-01/01-LO03-Application-Level-Attacks.md",
+    "20-Notes/Module-01/01-LO02-Network-Level-Attacks.md",
+    "20-Notes/Module-01/01-LO01-Essential-Terminologies.md",
+    "30-Exam/Answer-Key.md",
+    "30-Exam/Exam-Facts.md",
+    "30-Exam/External-Practice-Questions.md",
+    "20-Notes/Module-13/13-LO01b-Types-of-Wireless-Technologies.md",
+    "20-Notes/Module-13/13-LO01a-Wireless-Fundamentals-and-Terminologies.md",
+    "30-Exam/External-Flashcards-Verification.md",
+    "30-Exam/External-Flashcards-Quizlet.md",
+    "20-Notes/Module-15/15-LO01a-Log-Types-Sources-and-the-Need-for-Logs.md",
+    "20-Notes/Module-15/15-LO03c-Commands-to-Monitor-and-Analyze-Linux-Logs.md",
+    "20-Notes/Module-15/15-LO03b-Linux-Log-Format-and-Severity-Levels.md",
+    "20-Notes/Module-15/15-LO03a-Linux-Logs-and-Log-Files.md",
+    "20-Notes/Module-11/11-LO03h-VLAN-Security.md",
     "20-Notes/Module-12/12-LO07b-Cloud-Security-Tools.md",
     "20-Notes/Module-12/12-LO07a-Cloud-Security-Best-Practices-and-Compliance.md",
     "20-Notes/Module-12/12-LO06k-GCP-Monitoring-Logging-and-Compliance.md",
     "20-Notes/Module-12/12-LO06j-GCP-DDoS-Mitigation-and-Network-Best-Practices.md",
     "20-Notes/Module-12/12-LO06i-GCP-Defense-in-Depth-and-VPC.md",
     "20-Notes/Module-12/12-LO06h-GCP-Encryption-and-Cloud-KMS.md",
-    "20-Notes/Module-12/12-LO06g-GCP-Predefined-Roles-and-Logging-Roles.md",
-    "20-Notes/Module-12/12-LO06f-GCP-Organization-Policies.md",
-    "20-Notes/Module-12/12-LO06e-GCP-Service-Account-Key-Rotation.md",
-    "20-Notes/Module-12/12-LO06d-GCP-Primitive-Roles-and-Separate-Service-Accounts.md",
-    "20-Notes/Module-12/12-LO06c-GCP-IAM-Security-Best-Practices.md",
-    "20-Notes/Module-12/12-LO06b-GCP-Service-Accounts.md",
-    "20-Notes/Module-12/12-LO06a-GCP-Shared-Responsibility-and-IAM.md",
-    "20-Notes/Module-12/12-LO05o-Azure-Security-Checklist.md",
-    "20-Notes/Module-12/12-LO05n-Azure-Monitoring-Logging-and-Compliance.md",
-    "20-Notes/Module-12/12-LO05m-Azure-Network-Best-Practices-and-Geo-Replication.md",
-    "20-Notes/Module-12/12-LO05l-Azure-Antimalware-and-Network-Architecture.md",
-    "20-Notes/Module-12/12-LO05k-Azure-Firewall-and-Network-Security-Groups.md",
-    "20-Notes/Module-12/12-LO05j-Azure-Load-Balancing.md",
-    "20-Notes/Module-12/12-LO05i-Azure-Inbound-Access-Control.md",
     "40-Canvas/08-iot-endpoint-map.canvas",
-    "20-Notes/Module-12/12-LO05h-Azure-Encryption-in-Transit.md",
     "40-Canvas/11-enterprise-virtual-network-security-map.canvas",
-    "40-Canvas/10-data-security-map.canvas",
-    "30-Exam/Exam-Facts.md",
-    "30-Exam/External-Flashcards-Quizlet.md",
-    "00-Home.md"
+    "40-Canvas/10-data-security-map.canvas"
   ]
 }

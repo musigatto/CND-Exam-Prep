@@ -1,4 +1,4 @@
----
+﻿---
 type: exam
 module: "ext"
 tags: [exam]
@@ -20,6 +20,8 @@ unresolved:
   - "D04 tree topology failure behaviour: 'Tree Topology' does not appear in the corpus. Unanswerable."
   - "D07 DR as 'business-centric strategy': 'business-centric' does not appear. mod17 defines BC/DR but never uses the term. Unanswerable."
   - "D10 Apache log subdirectory: PDF mod15:327 gives /var/log/apache2/access.log (Debian/Ubuntu). NO option matches — /var/log/httpd is the RHEL convention and is not in the PDF. Option/term mismatch. Unanswerable."
+  - "H01 risk-factor parameters: published key (A only) contradicts its own Threat—Vuln—Impact explanation, and the courseware formula (Risk = Asset + Threat + Vulnerability, Mod 01) matches none of the options. Unanswerable as printed."
+  - "F08 risk probability/impact/exposure: published key (C Assessment) contradicts Mod 18 p24 tracking text ('monitors probability, impact, status, exposure'). PDF-derived answer is A Risk Tracking — recorded as a verdict, not a guess."
 ---
 # External Practice Questions — third-party
 
@@ -30,7 +32,7 @@ unresolved:
 > Verbatim as published — typos preserved (`Hateful inspection`, `muIti-layer`).
 
 > [!info] Answer provenance
-> 14 answers are **published by the source site**. 23 are **derived here from the 20 module PDFs**
+> 32 answers are **published by the source site**. 24 are **derived here from the 20 module PDFs**
 > and carry a `> Derived from courseware` citation. 9 have **no defensible answer from the PDFs**
 > and are listed in [[#Not answerable from the PDFs]] instead of being guessed.
 
@@ -42,6 +44,8 @@ unresolved:
 | CertificationPractice | 20 | No | 312-38 | https://certificationpractice.com/practice-exams/ec-council-certified-network-defender-cnd |
 | Daypo "CND 2" | 12 | No | CND v2 (2022) | https://www.daypo.com/cnd-2.html |
 | PracticeTestGeeks PDF | 4 | Yes (all B) | generic | https://practicetestgeeks.com/pdf/Certified_Network_Defender_Practice_Test_Questions_and_Answers.pdf |
+| CertsHero | 7 | Yes (bare key) | 312-38 | https://www.certshero.com/eccouncil/312-38/practice-test |
+| Fast2test (KR sample) | 13 | Yes (bare key) | 312-38 | https://kr.fast2test.com/312-38-practice-test.html |
 | A Guide to Cloud | 0 | — | CND v3 | paywalled — exam facts only, see [[#A Guide to Cloud — exam facts (third-party, partly wrong)]] |
 | Quizlet | 0 | — | — | HTTP 403 anti-bot, not retrieved |
 | OpenExamPrep | **200** | Yes (index + explanation) | CND v3 | `open-exam-prep.com/data/question-bank/cnd.json` — **rejected, see below** |
@@ -87,8 +91,8 @@ Other notes: all 200 are stamped `lastUpdated: 2026-03-10`; difficulty split 60 
 40 hard; 19 topics. Data path was found in the site's JS bundle
 (`/data/question-bank/{exam}.json`), not linked from the page HTML.
 
-**Total harvested: 46 questions.**
-**Answers: 14 published · 23 PDF-derived · 9 not answerable from the PDFs.**
+**Total harvested: 66 questions.**
+**Answers: 32 published · 24 PDF-derived · 10 not answerable from the PDFs.**
 
 ---
 
@@ -473,6 +477,204 @@ Other notes: all 200 are stamped `lastUpdated: 2026-03-10`; difficulty split 60 
 
 ---
 
+## CertsHero — 7 items (312-38, published key)
+
+> [!info] Review
+> Page 1 of 14 (363 claimed). `?page=N` returns page 1 — deeper pages are JS-gated, not retrieved.
+> 5 of 7 keys check out against the PDFs. **H01 is wrong on two levels** (see verdict).
+> H04's command never appears in the 20 modules — published answer kept, not verifiable here.
+
+**H01.** Management wants to calculate the risk factor for their organization. Kevin, a network administrator in the organization knows how to calculate the risk factor. Certain parameters are required before calculating risk factor. What are they? (Select all that apply) Risk factor =.............X...............X...........
+- A) Vulnerability
+- B) Impact
+- C) Attack
+- D) Threat
+> [!failure] Verdict: no correct answer exists among the options
+> The published key is A alone, yet its own explanation states "Risk = Threat X Vulnerability X Impact" (which needs A+B+D). And the courseware formula differs from both: Mod 01 gives `Risk = Asset + Threat + Vulnerability`. No option expresses the PDF formula — see [[#Not answerable from the PDFs]].
+
+**H02.** Harry has sued the company claiming they made his personal information public on a social networking site in the United States. The company denies the allegations and consulted a/an ______ for legal advice to defend them against this allegation.
+- A) PR Specialist
+- B) Attorney
+- C) Incident Handler
+- D) Evidence Manager
+**Answer: B**
+
+> Review: checks out — Mod 16 IRT roles list Attorney as legal advisor (evidence admissibility, financial-loss recovery).
+
+**H03.** Which policies exist only on AWS IAM identity (user, group, or role)?
+- A) Inline Policies
+- B) Customer-Managed Policies
+- C) Power-user AWS managed policies
+- D) Full access AWS managed policie
+**Answer: A**
+
+> Review: checks out — Mod 12 pp72-74: inline policies "exist only on an IAM identity (user, group, or role)", embedded one-to-one; customer-managed are standalone and attachable to many.
+
+**H04.** Which of the following commands can be used to disable unwanted services on Debian, Ubuntu and other Debian-based Linux distributions?
+- A) `# chkconfig [service name] off`
+- B) `# chkconfig [service name] --del`
+- C) `# service [service name] stop`
+- D) `# update-rc.d -f [service name] remove`
+**Answer: D**
+
+> Review: `update-rc.d` appears in **none** of the 20 modules — published answer kept, not verifiable from the PDFs. (Mod 06 covers service management without naming this command.)
+
+**H05.** Which mobile-use approach allows an organization's employees to use devices that they are comfortable with and best fits their preferences and work purposes?
+- A) BYOD
+- B) COPE
+- C) COBO
+- D) CYOD
+**Answer: A**
+
+> Review: checks out — Mod 07: BYOD = employee's personal device used for work (the comfort/preference gloss is the site's wording; the model match is exact).
+
+**H06.** Ryan is a network security administrator, who wants to implement local security policies for privileges granted to users and groups, system security audit settings, user authentication, and want to send security audit messages to the Event Log. Which Windows security component fulfills Ryan's requirement?
+- A) Security Reference Monitor (SRM)
+- B) The Security Account Manager (SAM)
+- C) The Local Security Authority Subsystem (LSASS)
+- D) WinLogon and NetLogon
+**Answer: C**
+
+> Review: checks out verbatim — Mod 05 p19: LSASS "implements local security policies privileges granted to users and groups, system security auditing settings, user authentication, and sends security audit messages to the event log".
+
+**H07.** Which phase of vulnerability management deals with the actions taken for correcting the discovered vulnerability?
+- A) Mitigation
+- B) Assessment
+- C) Remediation
+- D) Verification
+**Answer: C**
+
+> Review: checks out — Mod 18 remediation phase corrects discovered vulnerabilities (cf. C15 pattern).
+
+---
+
+## Fast2test KR sample — 13 items (312-38, published key)
+
+> [!info] Review
+> Free sample page (13 of 830 claimed; full set needs registration). 9 of 13 keys check out
+> against the PDFs. **F08 is keyed wrong** (PDF supports Tracking, not Assessment).
+> F02/F03/F06/F13 test terms absent from all 20 modules — published answers kept, not verifiable here.
+
+**F01.** Which of the following tools is an open source network intrusion prevention and detection system that operates as a network sniffer and logs activities of the network that is matched with the predefined signatures?
+- A) Snort
+- B) KisMAC
+- C) Kismet
+- D) Dsniff
+**Answer: A**
+
+> Review: checks out — Mod 04 NIDS: Snort (signature/protocol/anomaly rules).
+
+**F02.** Which of the following topologies is a type of physical network design where each computer in the network is connected to a central device through an unshielded twisted-pair (UTP) wire?
+- A) Mesh topology
+- B) Bus topology
+- C) Star topology
+- D) Ring topology
+**Answer: C**
+
+> Review: "star topology" appears in **none** of the 20 modules — published answer kept, not verifiable from the PDFs.
+
+**F03.** Which of the following is a term to describe the use of inert gases and chemical agents to extinguish a fire?
+- A) Fire alarm system
+- B) Gaseous fire suppression
+- C) Fire suppression system
+- D) Fire sprinkler
+**Answer: B**
+
+> Review: "gaseous" appears in **none** of the 20 modules — published answer kept, not verifiable from the PDFs.
+
+**F04.** A network defender at a financial firm is reviewing endpoint security to prevent less-trusted applications from tampering with sensitive internal systems. During testing, they observe that an Internet-facing application is trying to interact with internal document-handling software but fails to modify any files or processes associated with it, even though both applications reside on the same workstation. The document-handling software is running with standard user privileges. Which Windows security mechanism is enforcing this behavior?
+- A) Windows integrity Control (WIC)
+- B) NTFS file permissions
+- C) Windows Defender Credential Guard
+- D) User Account Control (UAC)
+**Answer: A**
+
+> Review: checks out — Mod 05: Windows Integrity Control (WIC) / Mandatory Integrity Control with six levels (Untrusted → Installer).
+
+**F05.** Sam wants to implement a network-based IDS and finalizes an IDS solution that works based on pattern matching. Which type of network-based IDS is Sam implementing?
+- A) Stateful protocol analysis
+- B) Signature-based IDS
+- C) Anomaly-based IDS
+- D) Behavior-based IDS
+**Answer: B**
+
+> Review: checks out — Mod 04: signature-based (misuse detection) monitors packet patterns vs pre-configured attack signatures.
+
+**F06.** Which of the following modems offers wireless communication under water?
+- A) Short haul modem
+- B) Optical modem
+- C) Acoustic modem
+- D) Controllerless modem
+**Answer: C**
+
+> Review: "acoustic modem" appears in **none** of the 20 modules — published answer kept, not verifiable from the PDFs.
+
+**F07.** Which of the following IEEE standards adds QoS features and multimedia support?
+- A) 802.11b
+- B) 802.11e
+- C) 802.5
+- D) 802.11a
+**Answer: B**
+
+> Review: checks out — Mod 13: 802.11e defines QoS for wireless applications (MAC-layer, video quality).
+
+**F08.** Which of the following includes examining the probability, impact status, and exposure of risk?
+- A) Risk Tracking
+- B) Risk Identification
+- C) Risk Assessment
+- D) Risk Review
+**Answer: A) Risk Tracking**
+> Derived from courseware — Mod 18 p24 — Risk Tracking "monitors **probability, impact, status, exposure**" (the question's four nouns almost verbatim); Mod 18 p15 Risk Assessment only estimates "likelihood and impact" (no status, no exposure)
+
+> [!failure] Verdict: published key (C) contradicts the courseware wording above — recorded here as published-wrong.
+
+**F09.** A mobile systems administrator at a logistics company, deploys a mobile-first solution enabling team leads to view operational files. She enforces restrictions that prevent unauthorized downloads, applies user-specific content permissions, and ensures files automatically expire after certain policy triggers. Which Mobile Content Management (MCM) capability is most aligned with Anita's strategy for safeguarding sensitive mobile content?
+- A) Location-based content delivery
+- B) Content access control
+- C) Multi-client template support
+- D) Authentication workflow enforcement
+**Answer: B**
+
+> Review: checks out — Mod 07 MCM: **Content access control** covers authorization, download control, per-user wipe-out, and time-specific access.
+
+**F10.** Which RAID level system provides very good data performance but does not offer fault tolerance and data redundancy?
+- A) RAID level 1
+- B) RAID level 3
+- C) RAID level 5
+- D) RAID level 0
+**Answer: D**
+
+> Review: checks out — Mod 10: RAID 0 = striping, 2 disks minimum, no redundancy (any disk loss = data loss).
+
+**F11.** Which of the following protocols is used to report an error in datagram processing?
+- A) DHCP
+- B) ICMP
+- C) BGP
+- D) ARP
+**Answer: B**
+
+> Review: checks out — Mod 03 covers ICMP as the diagnostic protocol (resolving network communication problems); DHCP/BGP/ARP have no error-reporting role in the courseware, so ICMP is the only defensible option.
+
+**F12.** Ross manages 30 employees and only 25 computers in the organization. The network the company uses is a peer-to-peer. Ross configures access control measures allowing the employees to set their own control measures for their files and folders. Which access control did Ross implement?
+- A) Role-based access control
+- B) Discretionary access control
+- C) Non-discretionary access control
+- D) Mandatory access control
+**Answer: B**
+
+> Review: checks out — Mod 03 DAC table: owner (possessor) of the object decides subject access (need-to-know, ownership-based).
+
+**F13.** Which of the following protocols is used for exchanging routing information between two gateways in a network of autonomous systems?
+- A) IGMP
+- B) ICMP
+- C) OSPF
+- D) EGP
+**Answer: D**
+
+> Review: "EGP" appears in **none** of the 20 modules — published answer kept, not verifiable from the PDFs.
+
+---
+
 ## Not answerable from the PDFs
 
 > [!failure] No answer recorded — by design
@@ -490,6 +692,7 @@ Other notes: all 200 are stamped `lastUpdated: 2026-03-10`; difficulty split 60 
 | D04 | Effect of a main-node failure in a tree topology | `Tree Topology` does not appear in the corpus | Mod 06:24 "Hierarchical File System — arranges directories and files in a tree like structure" (filesystem, not network) |
 | D07 | Disaster Recovery as a "business-centric" strategy | `business-centric` does not appear | Mod 17: "BC ... ensure the continuity of an organization's critical business functions"; "DR refers to an organization's ability to restore the data and applications critical to an organization's operations" |
 | D10 | Which `/var/log` subdirectory holds Apache logs | **No option matches the PDF.** The courseware says `/var/log/apache2/access.log`; `/var/log/httpd` is the RHEL/CentOS path and is not in the courseware | Mod 15: `sudo tail -100 /var/log/apache2/access.log` (Debian/Ubuntu) |
+| H01 | Risk-factor parameters (select-all: Vulnerability / Impact / Attack / Threat) | **No option set matches the PDF.** Published key (A only) contradicts its own explanation (Threat—Vuln—Impact = A+B+D); the courseware formula is `Risk = Asset + Threat + Vulnerability` (Mod 01), expressible by none of the options | Mod 01 Essential Terminologies: `Risk = Asset + Threat + Vulnerability` |
 
 ---
 

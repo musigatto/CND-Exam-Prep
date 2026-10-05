@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "05"
-tags: [bestpractice, policy, concept, mod/12, flashcard/12]
+tags: [bestpractice, policy, concept, mod/12]
 topic: "Azure network security best practices and active geo-replication"
 exam_weight: unknown
 status: done
@@ -35,7 +35,7 @@ unresolved:
 8. **Secure critical service resources** to only virtual networks
 9. **Use virtual network appliances**
 
-Body-only heading, not on the slide: **Optimize Uptime and Performance** _(p230)_.
+Body-only heading, not on the slide: **Optimize Uptime and Performance** _(Mod 12 p230)_.
 
 ## Best practices in detail
 
@@ -70,7 +70,7 @@ Body-only heading, not on the slide: **Optimize Uptime and Performance** _(p230)
 - "**Even if the virtual machines are on different subnets, they can connect to other VMs on a
   similar virtual network.** To avoid this, **configure user-defined routes** when deploying a
   **security appliance for a virtual network**."
-- → Different subnets alone are **not** an isolation boundary; UDRs + an appliance are.
+- → Different subnets alone are **not** an isolation boundary; user-defined routes + an appliance are.
 
 ### Use virtual network appliances _(Mod 12 p230)_
 
@@ -126,8 +126,8 @@ Body-only heading, not on the slide: **Optimize Uptime and Performance** _(p230)
 
 | Source | Printed statement |
 |---|---|
-| Slide blurb _(p231)_ | "Use active geo-replication to create **readable secondary copies of Windows Azure Storage** in the same or different data center" |
-| Body text _(p231)_ | "It is a **feature of the Azure SQL Database** that allows the creation of a **readable secondary database on an SQL database server** in the same or different region" |
+| Slide blurb _(Mod 12 p231)_ | "Use active geo-replication to create **readable secondary copies of Windows Azure Storage** in the same or different data center" |
+| Body text _(Mod 12 p231)_ | "It is a **feature of the Azure SQL Database** that allows the creation of a **readable secondary database on an SQL database server** in the same or different region" |
 | Walkthrough _(pp232–234)_ | creates an **SQL Database**, then `Settings > Geo-Replication` → **Create secondary** |
 
 Recorded in `unresolved:` — the slide says Storage, the body and the walkthrough say SQL Database.
@@ -152,41 +152,22 @@ Nothing is rewritten.
 
 ### Enabling active geo-replication — click path as printed _(Mod 12 pp232–234)_
 
-1. "On the Azure homepage, click on **SQL databases**." _(p232)_
-2. "In **Create SQL Database**, fill in the details and click on **Review + create**." _(p232)_
-3. "After deployment, click on **Go to Resource**." _(p232)_
+1. "On the Azure homepage, click on **SQL databases**." _(Mod 12 p232)_
+2. "In **Create SQL Database**, fill in the details and click on **Review + create**." _(Mod 12 p232)_
+3. "After deployment, click on **Go to Resource**." _(Mod 12 p232)_
 4. "In the **Settings** section, click on **Geo-Replication** to create a **readable secondary
-   database**." _(p233)_
-5. "Select **Target region** and fill in the details. Then, click on **Ok**." _(p233)_
-6. "Thus, a **secondary database is created**." _(p234)_
+   database**." _(Mod 12 p233)_
+5. "Select **Target region** and fill in the details. Then, click on **Ok**." _(Mod 12 p233)_
+6. "Thus, a **secondary database is created**." _(Mod 12 p234)_
 
 Figures: 12.156 Navigate to "SQL databases" (p232) · 12.157 Create SQL Database (p232) · 12.158
 Deployment Finished (p232) · 12.159 Create a Readable Secondary Database (p233) · 12.160 Fill the
 Details for "Create secondary" (p233) · 12.161 Secondary Database Created (p234). The "Create
 secondary" blade in Fig 12.160 is a real port of the text — see `unresolved:` for its values.
 
-## Cards
 
-How does the courseware characterise a network security group?
-?
-A simple, stateful packet inspection device that creates allow/deny rules for network traffic — used to protect Azure subnets against uninvited traffic
 
-Name the nine Azure network security best practices printed on the slide
-?
-Strong network controls · logically segment subnets · adopt a Zero-Trust approach · control routing behaviour · deploy perimeter networks for security zones · avoid internet exposure with dedicated WAN links · disable RDP/SSH access to VMs · secure critical service resources to only virtual networks · use virtual network appliances
 
-Why does the courseware tell you to configure user-defined routes?
-?
-Because VMs on different subnets can still connect to other VMs on a similar virtual network — user-defined routes plus a security appliance stop that
 
-What does the Zero-Trust best practice combine?
-?
-Azure AD Conditional Access based on devices, identity and network location, plus just-in-time VM access in Microsoft Defender for Cloud to lock down inbound traffic to Azure VMs
 
-What is Azure ExpressRoute, per the courseware?
-?
-A dedicated WAN link between the Microsoft Exchange hosting provider and the on-premises location, letting connectivity providers build a private connection of on-premises networks into the Microsoft cloud — reaching Azure, Microsoft 365 and Dynamics 365
 
-What happens on an active geo-replication failover?
-?
-The application starts failover to a secondary database; after the failover the secondary becomes the primary, with different connection endpoints

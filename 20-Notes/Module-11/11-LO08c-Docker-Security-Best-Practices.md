@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "08"
-tags: [bestpractice, mod/11, flashcard/11]
+tags: [bestpractice, mod/11]
 topic: "Docker Image Security Best Practices"
 exam_weight: unknown
 status: done
@@ -49,28 +49,9 @@ $ snyk monitor --docker node:10
 
 `node:8-alpine` = verbose version+OS tag. Hash form: `FROM node:<hash>` — the hash itself is missing in the source. _(Mod 11 p128)_
 
-## Cards
 
-Why favor minimal and alpine base images?
-?
-Choose images with fewer OS libraries and tools - this decreases risk and reduces the attack surface area of the container. Favor alpine-based images over full-blown system OS images. _(Mod 11 p127–p128)_
 
-COPY versus ADD: what does the courseware say, and how is it worded twice?
-?
-ADD is vulnerable to MITM attacks because arbitrary URLs specified could be malicious data sources, and it implicitly unpacks local archives, which could result in path traversal or Zip Slip vulnerabilities. Use COPY instead of ADD - use COPY unless ADD is specifically required. _(Mod 11 p127–p128)_
 
-The three measures to stop secrets leaking into images during build, and the version constraint.
-?
-Use multi-stage builds; use the Docker secrets feature to mount sensitive files without caching them - supported only from Docker 18.04; use a .dockerignore file to avoid a hazardous COPY instruction that may pull sensitive files from the build context. _(Mod 11 p128)_
 
-Fixed tags for immutability: what goes wrong, and what are the two fixes?
-?
-Image owners can push new versions to the same tags, giving inconsistent images during builds and making it hard to track whether a vulnerability is fixed. Fix with a verbose tag carrying version and OS, for example node:8-alpine, plus an image hash to pin the exact content. _(Mod 11 p128)_
 
-Least privileged policy on an image, and the multi-stage build payoff.
-?
-Create the dedicated user and group on the image with minimal permissions to run the application, and use the same user to run the process - the Node.js image has a built-in generic node user. Multi-stage builds create small, clean images with minimized attack surface and vulnerabilities. _(Mod 11 p127, p129)_
 
-Which two tools does the courseware name for image scanning and Dockerfile linting, and what is each for?
-?
-Snyk - scan Docker images and open-source application libraries for vulnerabilities as part of CI, and monitor for newly disclosed ones. hadolint - a static code analyzer linter that detects and alerts on issues in a Dockerfile and enforces Dockerfile best practices. _(Mod 11 p127, p129)_

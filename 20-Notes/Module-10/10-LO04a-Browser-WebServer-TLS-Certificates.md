@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "10"
 lo: "04"
-tags: [protocol, process, crypto, mod/10, flashcard/10]
+tags: [protocol, process, crypto, mod/10]
 topic: "Secure Communication − Browser to Web Server (SSL/TLS certificates)"
 exam_weight: unknown
 status: done
@@ -42,15 +42,5 @@ unresolved: []
 ## Mnemonic
 - HTTPS = HTTP + TLS/SSL wrapper in browser examples (this is the exact use case)
 
-## Cards
-What does the browser verify during the SSL handshake before showing the green padlock?
-?
-Server certificate authenticity — Issued To/By, validity, CA signature — preventing MITM.
 
-In Chrome Details tab, which fingerprint types appear on a cert?
-?
-SHA-256 (and MD5/SHA-1 for legacy) fingerprints; public key size (e.g., 2048-bit RSA).
 
-EV vs standard SSL difference in what the user sees?
-?
-EV → green-bar address bar + organization verified; standard → HTTPS padlock only.

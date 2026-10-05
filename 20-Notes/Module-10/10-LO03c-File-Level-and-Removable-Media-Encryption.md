@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "10"
 lo: "03"
-tags: [process, command, tool, crypto, mod/10, flashcard/10]
+tags: [process, command, tool, crypto, mod/10]
 topic: "File-level Encryption (EFS, third-party) & Removable Media Encryption"
 exam_weight: unknown
 status: done
@@ -41,19 +41,6 @@ unresolved: []
 - Linux: dm-crypt/LUKS partitions / Cryptmount
 - 3rd-party: **VeraCrypt**, **ShareCrypt**, **AlertSec**, **Symantec Drive Encryption** (multiplatform), **Windows Enterprise**
 
-## Cards
-Command to encrypt a file / wipe free space with EFS?
-?
-`cipher /e <file>`; `cipher /w:dir` wipes deleted-data area (free-space cleaning).
 
-Which Windows editions lack EFS?
-?
-Windows Home (and similar low-tier editions).
 
-Two ways Windows guards USB removable media?
-?
-BitLocker To Go (TPM-less password/PIN) + third-party USB encryption.
 
-macOS encrypted disk image: default cipher?
-?
-AES-128 (Disk Utility New Image from Folder).

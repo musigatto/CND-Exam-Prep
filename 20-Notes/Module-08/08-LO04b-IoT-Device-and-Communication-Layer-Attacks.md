@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "08"
 lo: "04"
-tags: [threat, process, protocol, mod/08, flashcard/08]
+tags: [threat, process, protocol, mod/08]
 topic: "IoT Device and Communication Layer Attacks & Countermeasures"
 exam_weight: unknown
 status: done
@@ -79,35 +79,10 @@ unresolved: []
 - **TCP/UDP attacks:** TCP SYN flood, UDP flooding, XMAS packets, Smurf attack, IP spoofing; counter: SYN cookies, firewalls, etc.
 - **Application-protocol attacks** (CoAP/MQTT): DDoS high-bandwidth amplification; counter: authentication token, TLS/DTLS
 
-## Cards
-Top IoT device-layer attacks?
-?
-Node tampering, jamming/RF interference, malicious node/tag injection, spoofing, tag cloning, replay, timing/Side-Channel, eavesdropping, hardware trojan, outage.
 
-RFID relay attack countermeasures?
-?
-Timers, challenge-response, distance-bounding protocols.
 
-Bluesnarfing vs BlueBugging?
-?
-Bluesnarfing = gains access to data via OBEX Push; BlueBugging = remote control of device via OBEX Push/FTP (place calls, AT commands).
 
-Bluetooth KNOB attack?
-?
-Weakens Bluetooth encryption entropy from 8 to 1 byte.
 
-WEP attack tools?
-?
-Korek, Chopchop, Fragmentation, FMS, PTW; Google Replay attack.
 
-Michael attack target?
-?
-TKIP countermeasure flaw → forge fragmented packets (fix: CCMP/AES).
 
-KillerBee?
-?
-ZigBee exploitation tool suite: zbdump, zbconvert, zbreplay, zbstumbler, zbfind, zbinject.
 
-RPL attacks?
-?
-DOG (denial-of-game), global repair attack, version-number modification, DAO inconsistencies.

@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "05"
 lo: "10"
-tags: [concept, process, tool, command, protocol, mod/05, flashcard/05]
+tags: [concept, process, tool, command, protocol, mod/05]
 topic: "Secure PowerShell Remoting"
 exam_weight: unknown
 status: done
@@ -87,35 +87,10 @@ PS Remoting gives access to **almost everything** → prime attack target. Harde
 - Firewall: open **only the two PS Remoting ports** (one only if SSL)
 - **Remove local administrators** on PCs/servers aggressively
 
-## Cards
-PS Remoting protocol + ports?
-?
-WSMAN/WinRM; 5985 HTTP, 5986 HTTPS; traffic encrypted even over 5985.
 
-Default permission to PS Remoting endpoints?
-?
-System administrators + Remote Management Users.
 
-How are workgroups protected in PS Remoting?
-?
-Enable SSL/HTTPS with certificates and add them to trusted hosts — avoids MITM. (AD uses Kerberos.)
 
-Three PS logging types?
-?
-Module (pipeline), Transcript (every session), Script block (executed code, de-obfuscation).
 
-Execution policies, strictest to loosest?
-?
-Restricted → AllSigned → RemoteSigned → Unrestricted. Enforce via GPO (bypassable otherwise); Computer Configuration > User Configuration.
 
-Why disable PowerShell 2.0?
-?
-Security risk used by attackers to execute malicious code (`Disable-WindowsOptionalFeature -FeatureName MicrosoftWindowsPowerShellv2Root`).
 
-What does Constrained Language Mode block?
-?
-COM objects, unapproved .NET types, XAML-based workflows, PowerShell classes.
 
-Best enforcement of Constrained Language Mode?
-?
-Device Guard UMCI (can't be easily disabled by admins); AppLocker script rules in Allow Mode best under least privilege.

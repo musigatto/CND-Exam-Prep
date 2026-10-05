@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "03"
 lo: "02"
-tags: [concept, mod/03, flashcard/03]
+tags: [concept, mod/03]
 topic: "Access Control in Distributed/Mobile World — Zero Trust"
 exam_weight: unknown
 status: done
@@ -113,32 +113,13 @@ unresolved: []
 5. **Verify the user with MFA** — multiple forms of identification before access
 6. **Monitor and maintain continuously** — SOP adherence, dedicated security teams, embed zero trust in culture, train new employees
 
-## Cards
-Castle-and-moat flaw?
-?
-Inside = automatically trusted; with cloud/mobile the perimeter is indefinable and lateral movement is unchecked.
 
 
-Zero-trust focus areas?
-?
-Data · networks · people · devices · workloads.
 
 
-ZTA deployment steps?
-?
-Identify protect surface → map transaction flows → build ZTA → create policy → monitor & maintain.
 
 
-NIST ZTA document?
-?
-NIST SP 800-207, produced 2018 with NCCoE — abstract ZTA definition + roadmap.
 
 
-ZTA logical components roles?
-?
-PE decides · PA issues session tokens/credentials · PEP turns policy on/off between subject & resource.
 
 
-ZTA vs DiD?
-?
-ZTA = continuous verification, internal + external threats; DiD = layered defenses, primarily external threats.

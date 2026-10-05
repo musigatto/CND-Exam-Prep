@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "04"
 lo: "01"
-tags: [threat, tool, bestpractice, mod/04, flashcard/04]
+tags: [threat, tool, bestpractice, mod/04]
 topic: "Firewall Concerns, Capabilities, and Limitations"
 exam_weight: unknown
 status: done
@@ -38,15 +38,5 @@ unresolved: []
 - Concentrates security at one point (other systems exposed); **bottleneck** risk; can restrict valuable services (FTP, Telnet, NIS)
 - Infected external devices (laptop, phone, drive) plugged in bypass it; sometimes CPU slower than network interface
 
-## Cards
-Firewall core function?
-?
-Gateway/filtering device enforcing the network security policy between private network and Internet (first line of defense).
 
-Typical firewall capabilities?
-?
-Prevent scanning, control traffic, user auth, filter packets/services/protocols, traffic logging, NAT, malware prevention.
 
-Key firewall limitations vs malware?
-?
-Not an antivirus substitute; can't stop zero-day/new viruses, backdoor/insider, social engineering, password misuse, tunneled traffic.

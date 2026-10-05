@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "06"
-tags: [policy, concept, mod/12, flashcard/12]
+tags: [policy, concept, mod/12]
 topic: "GCP predefined roles, custom roles, and logging roles"
 exam_weight: unknown
 status: done
@@ -134,28 +134,9 @@ logs and Data Access audit logs. Both are excluded by `roles/logging.viewer` and
 Upstream: [[12-LO06d-GCP-Primitive-Roles-and-Separate-Service-Accounts]] ·
 [[12-LO06f-GCP-Organization-Policies]] · [[12-LO06k-GCP-Monitoring-Logging-and-Compliance]]
 
-## Cards
 
-Why grant pre-defined roles instead of primitive roles
-?
-To implement granular access to specific GCP resources and prevent unwanted access to other resources — predefined roles provide fine-grained access control, and a specific role is given to a resource type (multiple roles may be given to the same user); e.g. roles/pubsub.publisher only allows publishing messages for a Pub/Sub topic
 
-At which levels can a GCP custom role be created, and what is the drawback
-?
-Organization and project level only — never at the folder level. Drawback: because Google does not maintain custom roles, they are not updated automatically by the GCP. Needed when predefined roles do not satisfy the organization's requirements
 
-`roles/logging.viewer` vs `roles/logging.privateLogViewer`
-?
-viewer = read-only access to logging features, and does NOT give access to Access Transparency logs or Data Access audit logs · privateLogViewer = the log viewer role PLUS read access to Access Transparency logs and Data Access audit logs
 
-Which logging role is granted to service accounts for writing logs, and which for log metrics and export sinks
-?
-`roles/logging.logWriter` — to service accounts, giving applications permission to write logs · `roles/logging.configWriter` — log metrics, log exclusion, and exporting log entries to a sink · `roles/logging.admin` — all logging permissions
 
-Which roles can read Data Access audit logs
-?
-Only `roles/logging.privateLogViewer` and `roles/owner` (full access to logging, Access Transparency logs and Data Access audit logs) — `roles/viewer`, `roles/logging.viewer` and `roles/editor` are all excluded, and `roles/editor` also cannot create export sinks
 
-Where do you pick permissions from when building a custom role with logging permissions
-?
-Select an API permission for the logging API role; select from console permissions for the role that grants Log Viewer; browse the `gcloud` tool for the role that grants `gcloud` logging

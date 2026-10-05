@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "02"
-tags: [threat, bestpractice, mod/12, flashcard/12]
+tags: [threat, bestpractice, mod/12]
 topic: "Cloud data storage security and network security"
 exam_weight: unknown
 status: done
@@ -25,20 +25,20 @@ unresolved:
 
 - In the cloud, data are stored on **internet-connected servers in data centers**, and it is the
   responsibility of the **data centers** to secure the data — **but customers should protect their
-  data** to ensure comprehensive data security. _(p26)_
+  data** to ensure comprehensive data security. _(Mod 12 p26)_
 - **Data loss ⇒ financial loss as well as legal actions.** Hence essential for an organization to
-  **locally back up** the data. _(p26)_
+  **locally back up** the data. _(Mod 12 p26)_
 - **Avoid saving sensitive information (patents, copyrights) on the cloud** — compromising with
-  its storage there may create problems for the organization. _(p26)_
+  its storage there may create problems for the organization. _(Mod 12 p26)_
 - **Local encryption before uploading** to the cloud protects data from threats. Better: pick a
   provider that can supply **prerequisite data encryption**, or a primary encryption service,
-  for consumers who already have an encrypted cloud service. _(p26)_
+  for consumers who already have an encrypted cloud service. _(Mod 12 p26)_
 - Cloud key management must **generate, use, protect, store, back up and delete** the encryption
   keys; cloud key management gives strict key security because of the **increased possibility
-  of key exposure**. _(p26)_
+  of key exposure**. _(Mod 12 p26)_
 - Harden on top of encryption: **strong passwords changed at regular intervals**, a
   **two-step verification process**, **updated patches**, and cloud-offered **antivirus programs,
-  admin privileges and local encryption**. _(p26)_
+  admin privileges and local encryption**. _(Mod 12 p26)_
 
 ### Data storage security techniques (p26 figure, as printed)
 
@@ -54,9 +54,9 @@ _(Mod 12 p26)_
 
 ## Testing cloud data security _(Mod 12 p27)_
 
-- It is **essential to test the cloud data security** to determine its **performance**. _(p27)_
-- Testing can help in **finding security loopholes**. _(p27)_
-- Ensuring data security on the cloud **required constant action**. _(p27)_
+- It is **essential to test the cloud data security** to determine its **performance**. _(Mod 12 p27)_
+- Testing can help in **finding security loopholes**. _(Mod 12 p27)_
+- Ensuring data security on the cloud **required constant action**. _(Mod 12 p27)_
 
 ## Network security — main challenges _(Mod 12 p28)_
 
@@ -84,39 +84,20 @@ _(Mod 12 p28)_
 
 - **Provider side:** CSPs ensure network-level protection by implementing network security
   controls — e.g. **Network Access Control List (NACL)** in the **AWS** cloud, while
-  **Endpoint** and **NSG** are implemented in the **Azure** cloud. _(p28)_
+  **Endpoint** and **NSG** are implemented in the **Azure** cloud. _(Mod 12 p28)_
 - **Consumer side:** use **additional** network-security levels for network-layer protection via
   **firewall** and **web application firewall (WAF)**; the use of firewalls **guarantees
-  isolation between multiple zones**. _(p28)_
+  isolation between multiple zones**. _(Mod 12 p28)_
 - Principles to satisfy the technology and security principles established by the providers
-  _(p28)_:
+  _(Mod 12 p28)_:
   - Network control for **traffic flow**
   - **End-to-end transport level encryption**
   - "Using standard secure encapsulation protocols such as **IPSEC**, deployment **SSH**, and
     **SSL** during" — sentence truncated in the source; nothing further asserted.
 
-## Cards
 
-Main challenge in cloud network security, per the courseware
-?
-Lack of network visibility in monitoring and managing suspicious activities by the consumer
 
-Five data storage security techniques
-?
-Local data encryption · Key management · Strong password management · Periodic security assessment of data security controls · Cloud data backup
 
-Why must organizations keep local backups of cloud data?
-?
-Loss of data may imply financial loss as well as legal actions, so a local backup is essential to prevent possible data loss
 
-Two-step verification and updated patches — what do they defend against?
-?
-They prevent hackers from attacking the systems easily
 
-Which network security control does each cloud use — AWS vs Azure?
-?
-AWS: Network Access Control List (NACL) · Azure: Endpoint and NSG
 
-Cloud network security — what does the firewall usage guarantee?
-?
-Isolation between multiple zones

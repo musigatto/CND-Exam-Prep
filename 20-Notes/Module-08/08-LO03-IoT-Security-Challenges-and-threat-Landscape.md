@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "08"
 lo: "03"
-tags: [threat, concept, bestpractice, mod/08, flashcard/08]
+tags: [threat, concept, bestpractice, mod/08]
 topic: "IoT Security Challenges, Risks, Threat Landscape, and OWASP Top 10"
 exam_weight: unknown
 status: done
@@ -90,32 +90,12 @@ unresolved: []
 9. **Insufficient Security Configurability** (stronger auth/logging/encryption strength mgmt)
 10. **Lack of Device Management** (asset mgmt, update mgmt, secure decommissioning, monitoring)
 
-## Cards
-Key inherent IoT issues (top 6)?
-?
-No security/privacy · vulnerable web interfaces · legal/regulatory gaps · default/weak/hardcoded credentials · cleartext protocols + open ports · coding errors (buffer overflow).
-
-Why are IoT DDoS/cryptojacking effective?
-?
-IoT devices are usually never turned off, and many use default/hardcoded credentials.
-
-OWASP #1 IoT vulnerability?
-?
-Weak, guessable, or hardcoded passwords.
-
-DDoS-from-hacked-IoT four phases?
-?
-Identify + take over → reprogram device → activate → launch DDoS.
-
-Process-layer IoT threat impacts?
-?
-Intellectual property theft, theft, repudiation → lawsuits, reputational damage.
 
 
-## Cards (verified set 617277655)
+
+
+
+
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-JTAG
-?
-It is a standard interface to test and debug chips with debugging software to know how a chip respond to multiple commands.  _(Mod 08 p31)_

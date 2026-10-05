@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "04"
 lo: "02"
-tags: [concept, port, mod/04, flashcard/04]
+tags: [concept, port, mod/04]
 topic: "Firewall Technologies and OSI Layers"
 exam_weight: unknown
 status: done
@@ -29,7 +29,7 @@ Emphasis: per-layer filtering depth, per-technique pros/cons.
 - Traditional decisions based on: source IP, dest IP, source TCP/UDP port, dest port, **TCP code bits (SYN/ACK)**, protocol, direction, interface
 - 3 config rules: (1) accept only safe, drop rest · (2) drop only confirmed-unsafe · (3) no rule → user decides
 - Checks packets against **bypass table** for established connections
-- ☑ **Low cost, low impact on performance**; routers support it ☒ Low-level security; bypassable via **packet spoofing** (crafted/replaced headers)
+- ~ **Low cost, low impact on performance**; routers support it ~ Low-level security; bypassable via **packet spoofing** (crafted/replaced headers)
 
 ## Circuit-Level Gateway
 - Works at **session layer** (TCP layer of TCP/IP); monitors **TCP handshake** to judge session legitimacy; not standalone — coordinates with packet filter + application proxy
@@ -45,7 +45,7 @@ Emphasis: per-layer filtering depth, per-technique pros/cons.
 ## Stateful Multilayer Inspection
 - **Combines** packet filter + circuit-level + application-level aspects: filters at network layer, judges session legitimacy, evaluates packet content at application layer
 - Uses algorithms (not proxies); remembers prior packets → informs future decisions; **tracks/logs slots & translations**; drops non-compliant packets at each layer (network → TCP session → application)
-- ☑ high security, better performance, transparent ☒ **expensive, needs competent personnel**
+- ~ high security, better performance, transparent ~ **expensive, needs competent personnel**
 - Example: **Cisco Adaptive Security Appliance (ASA)** contains stateful firewalls
 
 ## Application Proxy
@@ -75,50 +75,18 @@ Emphasis: per-layer filtering depth, per-technique pros/cons.
 - Types: **SaaS firewalls** (like on-prem/software firewall but deployed from cloud, protects org network + users) · **NGFWs in virtual datacenters** (PaaS/IaaS protection; firewall app on the virtual server safeguards cloud app data flow)
 - Benefits: scalability (no on-prem install/maintenance) · availability (provider infrastructure support) · extensibility (deploy anywhere with secure channel) · migration security (filters internet, virtual networks, tenants, virtual DCs) · secure-access parity with on-prem · identity (granular visibility into filtering tools) · performance management (insight, utilization, settings, logging)
 
-## Cards
-Packet-filtering firewall layer + bypass vector?
-?
-Network layer; evaluates headers (IP/ports/protocol/TCP bits); bypassable via packet spoofing.
-
-Circuit-level gateway layer + limitation?
-?
-Session layer; validates TCP handshake; hides private network; can only handle TCP, no content scanning.
-
-Application-level gateway filtering?
-?
-Application layer: per app/protocol (e.g., web proxy blocks FTP/Telnet), filters HTTP GET/POST commands.
-
-Stateful multilayer inspection?
-?
-Combines packet + session + application checks; tracks slots/translations; expensive, needs skilled staff.
-
-NAT translation most efficient mode?
-?
-Dynamic address+port pair allocated per inbound connection (best external-address use).
-
-NGFW = generation + extra layer?
-?
-Third-generation; traditional L3–L4 + application layer 7 (DPI, encrypted-traffic inspection, integrated IPS, threat intel).
-
-Cloud firewall alias + types?
-?
-FaaS (firewall as a service); types: SaaS firewalls, NGFWs in virtual datacenters (PaaS/IaaS).
 
 
-## Cards (verified set 617277655)
+
+
+
+
+
+
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-Network Address Translation (NAT)
-?
-firewall technology helps hide the internal network's configuration and thereby reduces the success of attacks on the network or system. It can act as a firewall filtering technique where it allows only those connections that originate inside a network and can block the connections that originate outside the network.  _(Mod 04 p23)_
 
 
-Application proxy
-?
-An application-level proxy works as a proxy server. It correlates with the gateway server and separates the enterprise network from the Internet.  _(Mod 04 p20)_
 
 
-Stateful multi-layer inspection
-?
-These firewalls filter packets at the network layer, determine whether session packets are legitimate, and evaluate the contents of packets at the application layer.  _(Mod 04 p19)_

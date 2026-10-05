@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "06"
-tags: [bestpractice, policy, mod/12, flashcard/12]
+tags: [bestpractice, policy, mod/12]
 topic: "GCP primitive roles and separate service accounts"
 exam_weight: unknown
 status: done
@@ -11,7 +11,7 @@ unresolved:
   - "p255: the three primitive roles are printed as 'Roles/Owner', 'Roles/Editor', 'Roles/Viewer' in the body and as 'roles/owner, roles/editor, and roles/viewer' in the figure. Both capitalisations are kept as printed; the body spelling is also confirmed by the p251 text 'the owner (roles/owner) role'."
   - "pp256-257: the console screenshots do not yield a single legible role name, role id or permission string. The only readable member value is a '@gmail.com' address. The walkthrough below is the numbered body text only; nothing about the IAM grid is asserted."
   - "p259 Figure 12.173: five sample service-account addresses of the form <name>@<project-id>.iam.gserviceaccount.com are visible in the screenshot. They are lab sample data with an OCR-garbled project id, are not reproducible, and are not asserted."
-  - "p260 Figure 12.176: the 'Create key (optional)' sub-panel shows buttons OCR-ing as 'Download', 'Why you need a key' and 'Skip now' plus a warning that the key cannot be recovered if lost. Only the three button labels and the recovery warning are transcribed; the rest of the panel is garbled."
+  - "p260 Figure 12.176: the 'Create key (optional)' sub-panel yields two button labels - 'Download' and 'Why you need a key' - plus a warning that the key cannot be recovered if lost. A third button label was previously drafted here as 'Skip now'; that string does NOT occur anywhere in the module OCR (verified against all 316 pages) and has been REMOVED as a fabrication. Only the two surviving labels and the recovery warning are transcribed; the rest of the panel is garbled."
   - "p258: 'It is possible to create up to 100 service accounts per project' is printed verbatim. The courseware gives no mechanism, reference or error behaviour for this limit."
   - "p258 vs p252: the role is written 'Service account user role' on p258 and 'Service Account User role' on p252, and p258 also spells the IAM concept 'cloud IAM permission' where p250 writes 'IAM service account API'. Kept as printed per page; not treated as different objects."
 ---
@@ -42,9 +42,9 @@ _(Mod 12 p255)_
 
 - "**Owing to security concerns, it is better to avoid the use of primitive roles.**"
 - Figure rule: "**Avoid using primitive roles such as (`roles/owner`, `roles/editor`, and
-  `roles/viewer`) for security-critical resources.**" _(p255)_
+  `roles/viewer`) for security-critical resources.**" _(Mod 12 p255)_
 
-**The only three cases in which a primitive role is granted** — figure and body agree _(p255)_:
+**The only three cases in which a primitive role is granted** — figure and body agree _(Mod 12 p255)_:
 
 | # | Figure wording | Body wording |
 |---|---|---|
@@ -63,14 +63,14 @@ _(Mod 12 p255)_
 
 ## Separate service account per service — the stated rules _(Mod 12 p258)_
 
-**Figure, three bullets, verbatim** _(p258)_:
+**Figure, three bullets, verbatim** _(Mod 12 p258)_:
 
 - "When working with **multiple services that require different permissions**, **create a
   separate service account for each service**."
 - "**Treat each application component as a separate trust boundary.**"
 - "**Grant only the required permissions to each service account.**"
 
-**Body rules** _(p258)_:
+**Body rules** _(Mod 12 p258)_:
 
 - "Service accounts are **accounts created to access the cloud platform APIs using
   applications**. They **perform tasks according to the role assigned** to specific service
@@ -107,8 +107,9 @@ _(Mod 12 p255)_
 **Optional panels legible in the figures** (screenshot text only, pp259–261):
 `Grant this service account access to the project (optional)` ·
 `Grant users access to this service account (optional)` · key panel: `Download` ·
-`Why you need a key` · `Skip now` · confirmation banner: "**Private key saved to your
-computer**".
+`Why you need a key` · confirmation banner: "**Private key saved to your
+computer**". _(a third button label beside `Download` / `Why you need a key` does not
+survive the OCR and is not asserted — see `unresolved:`)_
 
 **Definition banner, p259 Fig 12.173:** "A service account represents a **Google Cloud service
 identity such as code running on Compute Engine VMs, App Engine apps, or systems running
@@ -118,24 +119,8 @@ Downstream: [[12-LO06e-GCP-Service-Account-Key-Rotation]] ·
 [[12-LO06f-GCP-Organization-Policies]] · least privilege:
 [[12-LO06c-GCP-IAM-Security-Best-Practices]]
 
-## Cards
 
-The three GCP primitive roles and what each grants
-?
-Owner — all editor permissions plus project billing setup and management of all project resources · Editor — viewer permissions plus, for most GCP services, permission to modify resources · Viewer — read-only and viewing
 
-When may a primitive role be granted
-?
-Only when the GCP service does not provide a predefined role · to grant broader permissions for a project (e.g. development or test environments) · for small teams that do not require granular permissions
 
-Separate-service-account rules
-?
-One service account per service that needs a different permission set · treat every application component as a separate trust boundary · grant only the required permissions to each service account · minimum permission based on requirement · up to 100 service accounts per project
 
-Service account creation click path, in order
-?
-IAM & admin → service accounts → CREATE SERVICE ACCOUNT → enter details → Create → select the role → CONTINUE → CREATE KEY and choose the JSON file with the private key → DONE (viewable in the IAM PERMISSIONS tab)
 
-Why caution is needed when granting a service account user role
-?
-At project level it reaches all service accounts in the project, including future ones; at service account level it reaches that account — and the service account users indirectly have access to all resources of the service account

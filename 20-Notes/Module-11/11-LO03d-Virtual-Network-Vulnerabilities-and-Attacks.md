@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "03"
-tags: [threat, mod/11, flashcard/11]
+tags: [threat, mod/11]
 topic: "Virtual Network Vulnerabilities and Attacks"
 exam_weight: unknown
 status: done
@@ -23,7 +23,7 @@ unresolved:
 - p32 framing: "The following are some of the threats, weaknesses, and vulnerabilities found in virtual networks."
 - **Four threat classes:** `Disclosure` · `Deception` · `Disruption` · `Usurpation` _(p32 header)_
 - Columns: **Threat | Weakness | Consequence**.
-- Same shape as the hypervisor/VMM weakness analysis earlier in the LO: classified by **potential threat × weakness**. _(p32)_
+- Same shape as the hypervisor/VMM weakness analysis earlier in the LO: classified by **potential threat — weakness**. _(p32)_
 
 ## Disclosure _(Mod 11 p32–p33)_
 
@@ -69,28 +69,9 @@ unresolved:
 
 Countermeasures for this material: [[11-LO03g-Virtual-Network-Security]].
 
-## Cards
 
-List the four threat classes the courseware uses to classify virtual network vulnerabilities.
-?
-Disclosure, Deception, Disruption, Usurpation. _(Mod 11 p32)_
 
-Insufficient verification of data authenticity in a virtual network: what does it produce?
-?
-Misbehaving virtual routers repeatedly resend old control messages (reply attacks), corrupting the data plane and causing DoS. _(Mod 11 p32–p33)_
 
-Why does rollback of networking activity logs stored in a VM matter (Deception)?
-?
-It causes the loss of network entity activities and subsequently impacts the non-repudiation of actions. _(Mod 11 p32–p33)_
 
-Improper validation in a virtual network: how is the DoS produced?
-?
-Incorrect throwing of exceptions when handling malformed, truncated, or maliciously crafted packets. _(Mod 11 p33)_
 
-Usurpation: give the three weakness and effect pairs.
-?
-Injection -> privilege escalation; privileges and permissions -> controlling virtual network nodes like virtual routers; credentials management -> brute-force password guessing against the network management console. _(Mod 11 p33)_
 
-Which weakness sits under both Deception and Usurpation, and how do the effects differ?
-?
-Injection. Deception: messages made to look as if from a legitimate entity -> identity fraud. Usurpation: messages from a fake source with high privileges -> privilege escalation. _(Mod 11 p32–p33)_

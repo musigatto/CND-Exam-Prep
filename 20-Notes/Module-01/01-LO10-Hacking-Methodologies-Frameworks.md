@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "01"
 lo: "10"
-tags: [process, mod/01, flashcard/01]
+tags: [process, mod/01]
 topic: "Attacker Hacking Methodologies and Frameworks"
 exam_weight: unknown
 status: done
@@ -42,17 +42,7 @@ unresolved: []
 > [!tip] Mnemonic
 > CEH: **R-S-G-M-C** (Recon → Scan → Gain → Maintain → Clear). Kill Chain: Recon → Weaponize → Deliver → Exploit → Install → C2 → Actions.
 
-## Cards
-CEH five hacking phases?
-?
-Reconnaissance, Scanning, Gaining Access, Maintaining Access, Clearing Tracks.
 
 
-Lockheed Martin Cyber Kill Chain phases?
-?
-Reconnaissance, Weaponization, Delivery, Exploitation, Installation, Command and Control, Actions on Objectives.
 
 
-MITRE ATT&CK Enterprise matrices and source of its 11 tactics?
-?
-Enterprise, Mobile, and PRE-ATT&CK matrices; the 11 Enterprise tactics derive from the later Cyber Kill Chain stages (exploit, control, maintain, execute).

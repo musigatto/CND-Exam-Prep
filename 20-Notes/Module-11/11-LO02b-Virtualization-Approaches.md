@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "02"
-tags: [concept, mod/11, flashcard/11]
+tags: [concept, mod/11]
 topic: "Virtualization approaches"
 exam_weight: unknown
 status: done
@@ -40,24 +40,11 @@ _(Mod 11 pp11–12)_
 - **Hybrid** — the guest OS **adopts the functionality of para virtualization** *and* **uses the VMM for binary translation** to different types of hardware resources. _(Mod 11 p12)_
 
 ## Exam traps
-- "Para" ≠ "the VMM translates". Para moves translation **into the guest**; full keeps it **in the VMM**. _(Mod 11 p11)_
+- "Para" ≠  "the VMM translates". Para moves translation **into the guest**; full keeps it **in the VMM**. _(Mod 11 p11)_
 - Hardware-assisted is about **CPU instructions**, not about who issues the request. _(Mod 11 pp11–12)_
 
-## Cards
 
-Full virtualization — guest awareness, request path, translator
-?
-Guest is **unaware**; guest → **VMM** → host OS; the **VMM** translates to binary and forwards, and allocates resources to the guest.
 
-OS-assisted / para virtualization — who translates, and is the VMM involved?
-?
-The **guest OS** translates its own commands to binary for the hardware; the **VMM is not involved** in the request and response operations.
 
-Hardware-assisted virtualization — what enables it?
-?
-**Special instructions in modern microprocessor architectures** let the guest OS execute privileged instructions directly on the processor; the OS treats system calls as user programs.
 
-Hybrid virtualization — what does the guest use, and what does the VMM still do?
-?
-The guest **adopts para-virtualization functionality**; the **VMM is still used for binary translation** to different types of hardware resources.
 

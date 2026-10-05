@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "10"
 lo: "06"
-tags: [concept, mod/10, flashcard/10]
+tags: [concept, mod/10]
 topic: "SAN vs NAS Storage"
 exam_weight: unknown
 status: done
@@ -33,15 +33,5 @@ unresolved: []
 | Best for | File sharing, small scale | DBs, virtualization, high performance |
 | Cost | Lower entry | Higher |
 
-## Cards
-NAS = which protocol layer and example file protocols?
-?
-File-level; CIFS/SMB and NFS.
 
-SAN serves data at what level?
-?
-Block-level (Fibre Channel / iSCSI); presented as raw disk to servers.
 
-Typical NAS capacity split high-end/mid-market/low-end?
-?
-Enterprise (TB-scale, clustered) · mid-market (~100 TB) · desktop/low-end (~8 TB).

@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "07"
-tags: [bestpractice, mod/11, flashcard/11]
+tags: [bestpractice, mod/11]
 topic: "Container Secrets Management"
 exam_weight: unknown
 status: done
@@ -35,20 +35,7 @@ Prose-only item with no slide counterpart: **each application must assume respon
 Runtime angle: the container must know *which* authn/authz secrets are required and *where* they are needed, and how they are configured, stored and managed. → [[11-LO07a-Container-Security-Measures]] _(Mod 11 p116)_
 Image angle: keep secrets out of the image build, and out of the container/Dockerfile. → [[11-LO08c-Docker-Security-Best-Practices]] _(Mod 11 p113, p128)_
 
-## Cards
 
-Which three container secrets does the courseware name as needing protection?
-?
-Passwords, access tokens, and API keys - they must be secured to prevent them from being accessed by unauthorized users with malicious intent. _(Mod 11 p114)_
 
-Container secrets: give the full handling chain from transfer to revocation.
-?
-Transfer through a secure channel, encrypt and decrypt with the container's private key, store in a secret store created and managed with third-party credential-management tools, rotate on a regular basis, revoke immediately if exposed - and log all secret operations. _(Mod 11 p114)_
 
-Two placement rules for secrets: where must they never live?
-?
-Not in environment variables, and not inside the container image (nor in the container file / Dockerfile). _(Mod 11 p114)_
 
-One secrets-management responsibility the courseware assigns to the application itself.
-?
-Each application must assume responsibility for authentication and authorization. _(Mod 11 p114)_

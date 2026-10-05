@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "08"
 lo: "04"
-tags: [process, threat, concept, mod/08, flashcard/08]
+tags: [process, threat, concept, mod/08]
 topic: "IoT Attack Scenario, Security Principles, and System Management"
 exam_weight: unknown
 status: done
@@ -42,23 +42,7 @@ unresolved: []
 ### 3. Security Monitoring
 - **GE Predix** + **Bayshore Networks Remote Configuration** monitor device data/commands, threat intelligence
 
-## Cards
-IoT stack-wise security principle for device layer?
-?
-Tamper detection, encryption at rest, TLS v1.2/1.3, IoT-specific authentication protocols; Zero Trust per-device keys.
 
-Communication edge layer countermeasures?
-?
-Edge firewalls, IPsec ESP, traffic shaping (DNS/ICMP/ARP), out-of-band appliances.
 
-Cloud platform IoT countermeasures?
-?
-SIEM, IDPS, security analytics, federated access / bring-your-own-key.
 
-Example IoT attack scenario target?
-?
-Smart-building CCTV/security system — attacker spoofs cameras and AC/humidity sensors, maps the plant, causes damage.
 
-IoT system management components?
-?
-Device management · user management · security monitoring.

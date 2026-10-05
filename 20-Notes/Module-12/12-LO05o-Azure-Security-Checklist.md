@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "05"
-tags: [policy, bestpractice, exam, mod/12, flashcard/12]
+tags: [policy, bestpractice, exam, mod/12]
 topic: "Azure security checklist"
 exam_weight: unknown
 status: done
@@ -60,7 +60,7 @@ settings only**.
 | Value type | Items |
 |---|---|
 | **Enabled / on** | 1 (MFA for all users) |
-| **Disabled / not set** | 4 (remember MFA on trusted devices = disabled) · 6 (re-confirm days ≠ zero) |
+| **Disabled / not set** | 4 (remember MFA on trusted devices = disabled) · 6 (re-confirm days ≠  zero) |
 | **A number** | 5 (reset = **two**) |
 | **Yes** | 7 (caution on password reset) · 8 (notify all admins on reset) · 12 (guest agreements limited) |
 | **None** | 9 (apps obtaining company data on account) · 16 (security associations) · 18 (handle security groups) |
@@ -69,7 +69,7 @@ settings only**.
 | **Rule, not a setting** | 2 (no guest users) · 3 (use RBAC) |
 
 Mnemonic chain, in printed order: **MFA on → guests out → RBAC → no remembered MFA → reset = 2 →
-re-confirm ≠ 0 → caution on reset → notify admins → no data-grabbing apps → no gallery apps → no
+re-confirm ≠  0 → caution on reset → notify admins → no data-grabbing apps → no gallery apps → no
 disclosing apps → guest agreements limited → no member requests → no guest invites → lock the admin
 portal → no security associations → no self-service group admin → nobody handles security groups →
 no Office 365 groups.**
@@ -87,24 +87,8 @@ only, offered purely as a revision aid.
 | Guest handling | 12, 13, 14 |
 | Administrative surface | 15, 16, 17, 18, 19 |
 
-## Cards
 
-How many Azure security checklist items does the courseware print in the body, and what do they cover?
-?
-19 items, all Azure AD identity, access, consent and guest-user settings — no network, data, encryption, antimalware or monitoring item is printed on pp243-244
 
-The first three checklist items
-?
-Ensure MFA is enabled for all users · ensure there are no guest users · use RBAC to manage the access to resources
 
-Which checklist settings control password-reset behaviour, and to what values
-?
-Memorize multi-factor authentication on devices they trust = disabled · number of processes required to reset = two · number of days before users are asked to re-confirm their authentication report = not zero · caution users on password resets = yes · notify all admins when other admins reset their password = yes
 
-The guest-user checklist items
-?
-No guest users · guest user agreements are limited = yes · members can request = no · guests can invite = no
 
-The group and administration checklist items
-?
-Entrance to the Azure AD administration portal is limited · users can create security associations = none · self-service group administration enabled = no · users who can handle security groups = none · users can create Office 365 groups = no

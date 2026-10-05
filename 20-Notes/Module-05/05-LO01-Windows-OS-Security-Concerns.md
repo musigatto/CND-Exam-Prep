@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "05"
 lo: "01"
-tags: [concept, mod/05, flashcard/05]
+tags: [concept, mod/05]
 topic: "Windows OS and Security Concerns"
 exam_weight: unknown
 status: done
@@ -37,31 +37,9 @@ Windows = most widely used OS (PCs, private + government); support for servers +
 - Built-in features exist, but attackers exploit Windows vulnerabilities **daily** (e.g., CVE-2023-21757 — Windows L2TP DoS, CVSS 7.5)
 - Root causes: **unpatched OS · improper configurations · unused services/processes enabled · weak passwords · lack of anti-malware**
 
-## Cards
-Windows ring model?
-?
-Ring 0 = kernel (most privileged) → rings 1/2 = drivers → ring 3 = user mode/apps (least privileged).
 
-User mode vs kernel mode?
-?
-User = private virtual address space, no direct HW access, isolates apps; kernel = unrestricted access, crashes can take the OS down.
 
-Environment subsystems?
-?
-Win32 · OS/2 · POSIX (replaced by WSL on Win10/Server 2019).
 
-Integral subsystems?
-?
-Security subsystem · Workstation service (redirector/client) · Server service (serves shares).
 
-Security Reference Monitor?
-?
-Primary authority implementing Windows security rules; decides object/resource access via ACLs.
 
-Windows security concern root causes?
-?
-Unpatched OS, improper configurations, unnecessary services/processes enabled, weak passwords, missing anti-malware.
 
-WSL?
-?
-Windows Subsystem for Linux — compatibility layer running Linux binaries on Windows 10 / Server 2019; replaced POSIX subsystem.

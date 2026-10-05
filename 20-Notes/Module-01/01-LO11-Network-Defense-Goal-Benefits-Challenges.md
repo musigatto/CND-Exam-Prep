@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "01"
 lo: "11"
-tags: [concept, mod/01, flashcard/01]
+tags: [concept, mod/01]
 topic: "Fundamental Goal, Benefits, and Challenges in Network Defense"
 exam_weight: unknown
 status: done
@@ -35,12 +35,5 @@ unresolved: []
 - Broad: **distributed computing environments** (vast, complex networks) · **emerging threats** (more sophisticated, better organized each day) · **lack of network security skills**
 - Network defender challenges: protect from Internet attacks · protect public servers (web, e-mail, DNS) · contain damage on compromise · prevent internal attacks · protect sensitive info (customer DBs, financial records, trade secrets) · develop secure-handling guidelines · enable intrusion detection & logging
 
-## Cards
-Five IA principles?
-?
-Confidentiality, Integrity, Availability, Non-repudiation, Authentication.
 
 
-Four network defense benefits?
-?
-Increased profits, improved productivity, enhanced compliance, client confidence.

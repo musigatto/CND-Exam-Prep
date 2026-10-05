@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "06"
-tags: [bestpractice, process, mod/12, flashcard/12]
+tags: [bestpractice, process, mod/12]
 topic: "GCP monitoring, logging, Cloud Audit Logs, compliance, security checklist"
 exam_weight: unknown
 status: done
@@ -174,28 +174,9 @@ order)_
 
 _(Mod 12 pp297–301)_
 
-## Cards
 
-Which three tools does the courseware name for monitoring logs
-?
-GCP Logging from Console · Cloud Audit Logs · Google Cloud's operations suite — and Google Cloud services generate structured logs that can be easily queried
 
-The four GCP Logging console features
-?
-Predefined or custom queries · create metrics from logs · a live stream of logs from multiple resources across the deployed cloud · export logs to other destinations (Google Cloud Storage, Google BigQuery, or Google Cloud Pub/Sub)
 
-The three Cloud Audit Logs types and the roles that read them
-?
-Admin Activity Audit logs — Logging/Logs Viewer or Project/Viewer · Data Access Audit logs — Logging/Private Logs Viewer or Project/Owner · System Event Audit logs — Logging/Logs Viewer or Project/Viewer. Audit the access to service account keys regularly, and view them from the console by clicking Activity
 
-What is Google Cloud's Operation Suite and what does the log router do
-?
-A collection of management tools that integrate monitoring, logging and trace managed services for applications and systems on Google Cloud and beyond, used to collect metrics, traces and logs and build dashboards, charts and alerts. All logs — audit, platform and user — are sent to the Cloud Logging API and pass through the log router, which checks each entry against existing rules to decide which to discard, which to ingest, and which to include in exports
 
-Which compliance standards are printed for GCP
-?
-SSAE16/ISAE 3402 Type II (including SOC2 and 3) · ISO 27001, 27017, 27018 · FedRamp · PCI-DSS · HIPAA — with the note that GCP supports HIPAA compliance but it must be calculated by the customer
 
-The four administrative-hygiene items on the Google security checklist
-?
-Enforce two-step verification for users · do not use a super admin account for daily activities · do not remain signed into an idle super admin account · do not automatically share the contact information

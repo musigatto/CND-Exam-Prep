@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "08"
 lo: "05"
-tags: [process, tool, bestpractice, mod/08, flashcard/08]
+tags: [process, tool, bestpractice, mod/08]
 topic: "IoT Security Measures — Gateways, Control, Remote Admin (M16–M19)"
 exam_weight: unknown
 status: done
@@ -32,23 +32,7 @@ unresolved: []
 - Admin: change defaults; **Zenmap** & **ShieldsUP (GRC)** to scan exposed ports; PAT/NAT; menu: secure settings
 - Sample harden steps: update firmware, disable remote mgmt, standard DHCP
 
-## Cards
-Security measures M16–M19?
-?
-Secure gateways → secure control server → secure remote administration → router security.
 
-"Unplug n' Pray" (M18)?
-?
-Physically disconnect an IoT device when it is physically compromised.
 
-SSH default port?
-?
-Port 22 (use instead of Telnet port 23).
 
-Router hardening basics for IoT (M19)?
-?
-WPA2/WPA3, disable WPS/UPnP/SNMP, change defaults, disable remote mgmt, zenmap/ShieldsUP scan.
 
-Control server (M17)?
-?
-Sends commands to IoT devices; protect with MFA, RBAC, audited commands, SIEM, HSM signing.

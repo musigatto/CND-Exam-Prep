@@ -1,8 +1,8 @@
----
+﻿---
 
 type: moc
 module: "04"
-tags: [concept, mod/04, flashcard/04]
+tags: [concept, mod/04]
 topic: "Module 04 — Network Perimeter Security"
 exam_weight: unknown
 status: done
@@ -73,7 +73,7 @@ views:
 - Per-module exam blueprint weights (not stated in courseware).
 - Table 4.1 (LO02) OCR-unreadable; firewalls/tech details kept from readable prose only.
 
-## Cards
+## Quick review
 Module 04 covers which perimeter devices?
 ?
 Firewalls, IDS/IPS, routers, switches, and SDP for zero-trust.

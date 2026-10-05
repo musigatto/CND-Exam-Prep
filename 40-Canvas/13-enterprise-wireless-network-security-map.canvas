@@ -1,0 +1,207 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "text": "Module 13 — Enterprise Wireless Network Security\nFundamentals → Encryption ladder (WEP→WPA→WPA2→WPA3) → Authentication → Security measures",
+      "x": -1200,
+      "y": -3200,
+      "width": 2400,
+      "height": 70,
+      "color": "5"
+    },
+    {
+      "id": "b1",
+      "type": "text",
+      "text": "LO01 · FUNDAMENTALS  (pp4-27)\n\nTERMINOLOGIES\nOFDM · SSID = 32 alphanumeric characters · WLAN · RF\n\nSTANDARDS (pp10-13)\n802.11 family a · b · g · n · ac · ad\n+ 802.12 · 802.15 (1 and 4) · 802.16 (WiMax)\n\nTOPOLOGIES\nAD-HOC (no AP) · STANDALONE / INFRASTRUCTURE · typical uses · WMAN\n\nCOMPONENTS\nAP · wireless NIC cards (PC / PCI / mini-PCI) · wireless router · antenna · WIRELESS CONTROLLER\n\nANTENNAS — p25 says FIVE types, then describes EIGHT\ngain p25 defines as power INPUT ÷ power OUTPUT (reversed)",
+      "x": -2400,
+      "y": -3020,
+      "width": 560,
+      "height": 420
+    },
+    {
+      "id": "b2",
+      "type": "text",
+      "text": "THE ENCRYPTION LADDER\neach rung SUPERSEDES the previous one\n\nWEP — 802.11b · RC4 · CRC-32 · 24-bit IV\n  seed = key + IV → input to RC4 → keystream XORed with data + ICV\n  versions 64/1280/256-bit use 40/104/232-bit keys\n\nWPA — TKIP · 4-way handshake · fixes most WEP problems\n\nWPA2 — AES + CCMP (counter-mode CBC-MAC) · replaced WPA in 2006\n  PERSONAL = PSK, home networks, no auth server\n  ENTERPRISE = EAP / RADIUS → token cards, Kerberos, certificates\n\nWPA3 — AES-GCMP-256 · natural password choice · secured IoT connections\n\ncloses with: Wi-Fi Easy Connect / Device Provisioning Protocol (DPP)",
+      "x": -2400,
+      "y": -2510,
+      "width": 560,
+      "height": 380,
+      "color": "3"
+    },
+    {
+      "id": "b3",
+      "type": "text",
+      "text": "TABLE 13.2  (p37 — printed TWICE, alignment recovered)\n\n                 WEP       WPA          WPA2         WPA3\nAlgorithm        RC4       RC4+TKIP     AES-CCMP     AES-GCMP\nIV size          24-bits   48-bits      48-bits      arbitrary\nKey length       40/104    128          128          192 bits\nKey management   None      4-way HS     4-way HS     ECDH + ECDSA\nIntegrity        CRC-32    Michael+CRC  CBC-MAC      BIP-GMAC-256\n\nCONFLICTS LEFT STANDING\n• WPA3 key length: table says 192-bit, p35 says 256-bit GCMP-256\n• p35 names TKIP under WPA3 although p31 makes it the WPA cipher\n• WPA3 IV size cell OCRs as 'I- 264' — exponent base lost, NOT completed",
+      "x": -2400,
+      "y": -2040,
+      "width": 560,
+      "height": 330
+    },
+    {
+      "id": "b4",
+      "type": "text",
+      "text": "WHY THE EARLIER RUNGS FAIL  (pp38-41) — highest exam density\n\nWEP\n• CRC-32 insufficient — flip a bit, fix the checksum, packet accepted\n• 24-bit IV, sent IN CLEARTEXT — 1500-byte pkts @ 11 Mb/s exhaust it in FIVE HOURS\n• known-plaintext attacks on IV collision\n• dictionary attacks\n• DoS — associate/disassociate messages are UNAUTHENTICATED\n• ~24 GB of key stream → decrypt in REAL TIME\n• no centralized key management\n\nWPA\n• weak password · LACK OF FORWARD SECRECY\n• packet injection / decryption → hijack TCP connections\n• PREDICTABLE GTK — insecure RNG exposes the group temporal key\n• TKIP lets attackers GUESS AN IP ADDRESS and inject packets\n\nWPA2\n• weak password (eavesdropping, dictionary, cracking) · lack of forward secrecy\n• man-in-the-middle\n• WIRELESS DoS — exploit replay detection, forged GROUP-ADDRESSED frames with a large PN\n• WPS PIN RECOVERY — disclose the WPA2 key from the PIN",
+      "x": -1740,
+      "y": -3020,
+      "width": 580,
+      "height": 540,
+      "color": "1"
+    },
+    {
+      "id": "b5",
+      "type": "text",
+      "text": "LO03 · AUTHENTICATION  (pp44-47)\n\nOPEN SYSTEM\nany wireless device can be authenticated with the AP\ntransmit only when its WEP key matches the AP's\nbut it transmits in CLEARTEXT → anyone who knows the SSID can easily access\n\nSHARED KEY\nstation and AP hold a shared key — only a DISADVANTAGE is printed\n\nCENTRALIZED AUTH SERVER\nusers are assigned login credentials by a centralized server\nwhich they must present when connecting\n\nNOT RECOVERABLE FROM THIS MODULE\n✗ the 802.1X uncontrolled port NUMBER\n✗ any expansion or definition of EAP\n• p46 gives '64-bit or 128-bit' — a THIRD key-size set in the module",
+      "x": -1740,
+      "y": -2390,
+      "width": 580,
+      "height": 300
+    },
+    {
+      "id": "b6",
+      "type": "text",
+      "text": "LO04 · SECURITY MEASURES  (pp48-76)\n\nTHE LIST — p49 slide has FIFTEEN items, p50 body has THIRTEEN\nlost on p50: 'Implement WEP 128 ... 104-bit & 24-bit key' and\n           'Update to the latest available firmware'\n\nWIRELESS SECURITY POLICY must state\nidentity of users · who may install APs · what may be transmitted\nAP limits (location, cell size, frequency) · standard settings\nwhen devices may use the network\n\nORDER OF PREFERENCE (p56)\n1 WPA3\n2 WPA2 Enterprise + RADIUS\n3 WPA2 Enterprise\n4 WPA2 PSK\n5 WPA Enterprise\n6 WPA\n7 WEP",
+      "x": -1080,
+      "y": -3020,
+      "width": 580,
+      "height": 340
+    },
+    {
+      "id": "b7",
+      "type": "text",
+      "text": "LO04 · CONFIGURATION HARDENING  (pp51-57)\n\nINVENTORY of wireless devices\n  → an AP NOT in the inventory is a ROGUE AP\n\nPLACEMENT — mount away from metal; keep APs in the MIDDLE of the building to avoid WARDRIVING\n  antenna orientation: slide says tilt/point DOWNWARDS, body says VERTICALLY (p54) — kept both\n\nDISABLE SSID BROADING — if broadcast, the AP announces its presence\n\nMAC FILTERING — p57 definitions are INVERTED vs everyday usage:\n  'closed' = only listed addresses permitted\n  'open'   = listed addresses PREVENTED\n\np49 vs p56: p49 lists 'Implement WEP 128' as a hardening activity;\n             p56 ranks WEP LAST of seven",
+      "x": -1080,
+      "y": -2590,
+      "width": 580,
+      "height": 340
+    },
+    {
+      "id": "b8",
+      "type": "text",
+      "text": "LO04 · DEFEND & DETECT  (pp58-65)\n\nDEFEND AGAINST WPA CRACKING (p59)\n  the only way to crack WPA is to sniff the PMK of the HANDSHAKE\n  passphrase rules: uppercase · lowercase · special char · number · RANDOM\n  LENGTH CONTRADICTS ITSELF: body says 12 characters, callout says 20\n  extra controls: VPN (remote access / Extranet / Intranet) · NAC or NAP\n\nROGUE AP TECHNIQUES\n  WIDS · wireless site surveys · SIGNAL STRENGTH ANALYSIS · MAC ADDRESS MONITORING\n\n  tools: inSSIDer · NetSurveyor · NetStumbler · Vistumbler · Kismet\n\nON THE WIRED SIDE — Nmap (the -A option), then\n  SNMP POLLING: SolarWinds SNMP Scanner · Lansweeper SNMP Scanner\n  prerequisite: SNMP must be ENABLED on all IP devices\n\nonce found: disable or remove the device, secure the network",
+      "x": -420,
+      "y": -3020,
+      "width": 580,
+      "height": 490,
+      "color": "4"
+    },
+    {
+      "id": "b9",
+      "type": "text",
+      "text": "LO04 · RF, ASSESSMENT, WIDS/WIPS  (pp66-72)\n\nPROTECT FROM RF INTERFERENCE\n  Ekahau Spectrum Analyzer · AirCheck G2 Wi-Fi Tester (handheld)\n\nASSESS THE WIRELESS NETWORK\n  NetSpot · Ekahau · AirMagnet Wi-Fi analyzer · CommView for WiFi · Wi-Fish\n  cracking: Aircrack-ng · WEPCrack · WepDecrypt\n\nWIDS / WIPS  (p72)\n  abnormalities: unauthorized network activity · policy violations · known\n  attack patterns · ROGUE WIRELESS AP · UNENCRYPTED TRAFFIC\n  products: CISCO ADAPTIVE WIRELESS IPS · EXTREME AIRDEFENSE\n\nCONFLICTS LEFT STANDING\n• p60 calls a WIDS 'dedicated systems or software'; p63 calls it 'wireless ACCESS POINTS'\n• WIDS/WIPS spelled FOUR ways: prevention system / protection systems /\n  'WIDS = wireless access points' / wireless INTRUDER detection-prevention (WIDPS)",
+      "x": -420,
+      "y": -2440,
+      "width": 580,
+      "height": 440
+    },
+    {
+      "id": "b10",
+      "type": "text",
+      "text": "LO04 · ROUTERS, GUIDELINES, SUMMARY  (pp73-77)\n\nADMIN SECURITY ON WIRELESS ROUTERS\n  p73 slide has 5 settings, p74 body has 11\n  'Enable logging' is on p73 and ABSENT from the eleven\n\nADDITIONAL GUIDELINES (p75)\n  do not use SSID / company / network name in passphrases\n  FIREWALL OR PACKET FILTER between the AP and the corporate intranet\n  change the default SSID · regularly change passphrases\n  log out of the router's WEB INTERFACE when not in use\n  keep APs in the middle of the building to avoid WARDRIVING\n  IPSec over the wireless network · disable the network when not required\n  use a CENTRALIZED SERVER for authentication\n  scan locations within CLOSE PROXIMITY of the organization\n\nMODULE SUMMARY (p77) contradicts the body:\n  • bullets place BLUETOOTH alongside Wi-Fi as a wireless standard\n  • names only WPA; p56 ranks WPA3 first\n  • WPA2 / WPA3 / WEP absent from the summary entirely",
+      "x": 240,
+      "y": -3020,
+      "width": 580,
+      "height": 500
+    },
+    {
+      "id": "pat",
+      "type": "text",
+      "text": "HOW TO HOLD THIS MODULE\n\nIT IS A RETIREMENT NARRATIVE.\nEvery encryption note exists to be superseded by the next rung.\nLearn WEP not as a working protocol but as the answer to\n'why is it broken' — that framing is what earns the points.\n\nTHE THREE NUMBERS TO MEMORISE\n  FIVE HOURS — an AP exhausts the whole WEP IV space\n  24 GB — reconstructed key stream for REAL-TIME decryption\n  32 CHARACTERS — SSID length\n\nEXAM TRAPS\n• 'WPA3 uses a 192-bit key' — table says 192, p35 says 256-bit GCMP-256\n• 'WEP is a hardening measure' — p49 says yes, p56 ranks it LAST of seven\n• 'Open System checks the WEP key, so it is secure' — anyone with the SSID gets in\n• 'EAP is defined in this module' — LO03 never expands it\n• 'The WEP IV space is large, so exhaustion is slow' — five hours\n• Confusing WIDS with WIPS — the module never separates them\n\nNOT RECOVERABLE FROM THE PDF\n✗ 802.1X uncontrolled port number\n✗ any definition of EAP\n✗ the real identity behind 'Hole 96 vulnerability'\n✗ the pp10-11 standards-table row alignment\n\nSCREENSHOTS ARE NON-EVIDENCE\nWalkthroughs on pp55, 56, 57, 59, 73-74 were not read.\nThe p20 component figure's 9 labels were NOT paired to its 5 descriptions.",
+      "x": 900,
+      "y": -3020,
+      "width": 620,
+      "height": 760,
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "b1",
+      "toNode": "b2",
+      "label": "standards → encryption",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "fromNode": "b2",
+      "toNode": "b3",
+      "label": "Table 13.2",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "fromNode": "b3",
+      "toNode": "b4",
+      "label": "why the old rungs fail",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e4",
+      "fromNode": "b4",
+      "toNode": "b5",
+      "label": "authentication",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e5",
+      "fromNode": "b5",
+      "toNode": "b6",
+      "label": "security measures",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e6",
+      "fromNode": "b6",
+      "toNode": "b7",
+      "label": "configure",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e7",
+      "fromNode": "b7",
+      "toNode": "b8",
+      "label": "defend & detect",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e8",
+      "fromNode": "b8",
+      "toNode": "b9",
+      "label": "RF / WIDS",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e9",
+      "fromNode": "b9",
+      "toNode": "b10",
+      "label": "routers & summary",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e10",
+      "fromNode": "b10",
+      "toNode": "pat",
+      "label": "traps",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e11",
+      "fromNode": "b10",
+      "toNode": "pat",
+      "label": "traps",
+      "fromSide": "bottom",
+      "toSide": "top"
+    }
+  ]
+}

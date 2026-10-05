@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "04"
-tags: [concept, mod/11, flashcard/11]
+tags: [concept, mod/11]
 topic: "SDN Concepts and Benefits"
 exam_weight: unknown
 status: done
@@ -82,28 +82,9 @@ _(Mod 11 p66)_
 
 **Openness** — a **common software environment** to run network services and applications. Open APIs support **OSS/BSS, SaaS, cloud orchestration, and business-related applications**. _(Mod 11 p66)_
 
-## Cards
 
-SDN definition — control plane vs forwarding
-?
-Network virtualization approach that centralizes the network controller by separating the network's control functions from its packet forwarding functions
 
-Three SDN architecture layers
-?
-SDN Application layer · SDN Controller · SDN Networking Devices
 
-SDN conceptual components (6)
-?
-Data Plane · Control Plane · Application Plane · Northbound API · Southbound API · OpenFlow
 
-Which SDN benefit delivers voice-over-IP / multimedia QoS?
-?
-Implements quality of service (QoS) for voice over IP and multimedia transmissions, by controlling data traffic
 
-SDN vs traditional control architecture
-?
-Traditional = distributed control architecture with only low-level awareness of network state. SDN = logically centralized network topologies enabling intelligent control and management of network resources
 
-SDN "Openness" benefit — which application classes do the open APIs support?
-?
-OSS/BSS, SaaS, cloud orchestration, and business-related applications

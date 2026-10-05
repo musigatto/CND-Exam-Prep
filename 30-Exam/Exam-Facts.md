@@ -1,4 +1,4 @@
----
+﻿---
 type: exam
 module: "meta"
 tags: [exam]
@@ -84,7 +84,7 @@ directly off the PDF rather than guessed:
 | Incident Response | 16 Incident Response and Forensic Investigation |
 | Incident Prediction | 17 BC/DR · 18 Risk Management · 19 Attack Surface · 20 Threat Intelligence |
 
-3+1+4+2+3+2+1+4 = 20 modules. ✔
+3+1+4+2+3+2+1+4 = 20 modules. •
 
 Weights are **not** divisible per module (10% over 3 modules is 3.33% each), so a strict
 per-module split is impossible. The vault therefore uses **5 questions per module** as a flat

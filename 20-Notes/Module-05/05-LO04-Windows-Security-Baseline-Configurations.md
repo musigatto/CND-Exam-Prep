@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "05"
 lo: "04"
-tags: [concept, tool, command, mod/05, flashcard/05]
+tags: [concept, tool, command, mod/05]
 topic: "Windows Security Baseline Configurations"
 exam_weight: unknown
 status: done
@@ -35,27 +35,8 @@ unresolved: []
   - Privilege Rights: `SeBackupPrivilege`, `SeDenyNetworkLogonRight`, `SeEnableDelegationPrivilege`, `SeInteractiveLogonRight`, `SeLoadDriverPrivilege`, `SeNetworkLogonRight`, `SeRemoteShutdownPrivilege`, `SeRestorePrivilege`
   - System Access: `EnableAdminAccount`, `LockoutBadCount`, `MaximumPasswordAge` (baseline 42 vs local 60 …), `MinimumPasswordLength`
 
-## Cards
-What is a Windows security baseline?
-?
-Group of Microsoft-recommended configuration settings; ensures user+device config compliance, updated for new vulnerabilities/misconfigurations.
 
-What replaced Security Compliance Manager (SCM)?
-?
-Security Compliance Toolkit (SCT).
 
-SCT core tools?
-?
-Policy Analyzer · LGPO.exe · SetObjectSecurity.exe · GPO2PolicyRules.
 
-Policy Analyzer function?
-?
-Treats GPOs as one unit, finds duplicate/conflicting settings, compares system vs recommended baseline, takes config snapshots.
 
-LGPO.exe use?
-?
-Command-line local group policy automation; import/export Registry.pol, security templates, GPO backups; manages nondomain-joined systems.
 
-SetObjectSecurity.exe use?
-?
-Set security descriptors on securable objects (files, dirs, registry keys, event logs, services, SMB shares).

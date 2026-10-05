@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "05"
 lo: "06"
-tags: [concept, command, tool, mod/05, flashcard/05]
+tags: [concept, command, tool, mod/05]
 topic: "Windows Patch Management"
 exam_weight: unknown
 status: done
@@ -56,27 +56,8 @@ Remote patch management = **planning, deciding, prioritizing updates** to OS, so
 
 Also listed: Itarian Patch Management · Automox · Atera · Kaseya VSA · HEAT PatchLink · Ivanti Windows Patch · Comodo ONE · Quest KACE · Symantec Patch Management Solution.
 
-## Cards
-Patch vs service pack vs version upgrade?
-?
-Patch = fix for one vulnerability; SP = fixes + functionality; upgrade = fixes + improved security features.
 
-Enable automatic updates (command)?
-?
-`sc config wuauserv start= auto`; or Services.msc → Windows Update → Automatic.
 
-Auto-update registry key?
-?
-`HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU` → DWORD NoAutoUpdate.
 
-Prevent force restarts after updates (registry)?
-?
-`HKLM\SOFTWARE\Microsoft\Windows\Windows Update\AU` → NoAutoRebootWithLoggedOnUser = 1; GPO: 'No auto-restart with logged on users…'.
 
-Which tool extends WSUS/SCCM?
-?
-SolarWinds Patch Manager.
 
-Tool that detects vulnerabilities before an attacker does?
-?
-GFI LanGuard.

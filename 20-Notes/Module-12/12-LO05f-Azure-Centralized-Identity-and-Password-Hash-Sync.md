@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "05"
-tags: [concept, bestpractice, mod/12, flashcard/12]
+tags: [concept, bestpractice, mod/12]
 topic: "Centralized identity management, AD FS and password hash synchronization"
 exam_weight: unknown
 status: done
@@ -34,10 +34,10 @@ advantages, verbatim: _(pp188, 189)_
 3. "Enhance security by **preventing configuration errors**."
 
 Prerequisite printed on the slide: "**Users must synchronize the on-premise and cloud identity
-directories** for centralized identity management." _(p188)_
+directories** for centralized identity management." _(Mod 12 p188)_
 
 Implementation rule: "**Use Azure AD Connect to synchronize the on-premise directory with the
-cloud directory**." _(p188)_
+cloud directory**." _(Mod 12 p188)_
 
 ### Benefits of Azure AD Connect _(Mod 12 pp188–189)_
 
@@ -52,18 +52,18 @@ cloud directory**." _(p188)_
 ## Active Directory Federation Services (AD FS) _(Mod 12 pp189–190)_
 
 **Why AD FS** — "Use Active Directory Federation Services (AD FS) to integrate the on-premise
-identity with the cloud directory because" _(p189)_
+identity with the cloud directory because" _(Mod 12 p189)_
 
 - "AD FS overcome the **authentication challenges created by the AD**"
 - "and **resolve the third-party authentication challenges**."
 
-**What AD FS allows** _(p190)_
+**What AD FS allows** _(Mod 12 p190)_
 
 - "AD FS allow users to **work remotely** and provide **access to the AD-integrated applications**."
 - "User can perform authentication using the **organizational AD credentials via a web interface**."
 - "AD FS allow the users of an organization to access the **applications of different organizations outside the AD domain**."
 
-**Federation model** _(p190)_
+**Federation model** _(Mod 12 p190)_
 
 - AD FS "provides **Web single sign-on (SSO) capabilities** to authenticate a user to **multiple
   Web applications using a single user account**."
@@ -71,7 +71,7 @@ identity with the cloud directory because" _(p189)_
   **protect a user's digital identity and access rights to trusted partners**."
 - "In this **federated environment, each organization continues to manage its own identities**."
 
-**Things to note** _(p190)_
+**Things to note** _(Mod 12 p190)_
 
 | # | Printed |
 |---|---|
@@ -81,7 +81,7 @@ identity with the cloud directory because" _(p189)_
 ## Password Hash Synchronization _(Mod 12 p191)_
 
 Slide title: **"Azure IAM App Security Configuration: Implement Password Hash Synchronization
-with Azure AD Connect Sync"** _(p191)_
+with Azure AD Connect Sync"** _(Mod 12 p191)_
 
 - Purpose: "To protect against **leaked credentials** from previous attacks, **sync user password
   hashes from an on-premise Active Directory instance to a cloud-based Azure AD instance**."
@@ -95,28 +95,8 @@ with Azure AD Connect Sync"** _(p191)_
 No numbered steps are printed for PHS on p191 — the page is concept text plus a figure whose
 readable labels are listed in `unresolved:`.
 
-## Cards
 
-The three advantages the courseware gives for Azure centralized identity management
-?
-Provide a common identity for accessing both cloud and on-premise resources · enable administrators to manage accounts from one location · enhance security by preventing configuration errors
 
-Which tool does the courseware name to implement centralized identity management, and what must happen first?
-?
-Azure AD Connect — it synchronizes the on-premise directory with the cloud directory. Prerequisite: users must synchronize the on-premise and cloud identity directories
 
-What the courseware prints as the benefits of using Azure AD Connect
-?
-A common accessing identity to both cloud and on-premise resources (productivity) · a common hybrid identity leveraging Windows Server AD connected to Azure AD · conditional access by application resource, network location, device and user identity, and MFA · common identity reused for Office 365, SaaS and third-party apps
 
-Two reasons the courseware gives for using AD FS with the cloud directory
-?
-AD FS overcome the authentication challenges created by the AD, and resolve the third-party authentication challenges — it also provides Web SSO to multiple web apps with a single account
 
-Password hash synchronization — what moves, in which direction, and why
-?
-User password hashes move from an on-premise AD instance to a cloud-based Azure AD instance, to protect against leaked credentials; users keep one password for multiple Azure accounts, raising productivity and cutting helpdesk cost, and PHS can act as backup if on-premise servers fail
-
-Site-to-Site VPN in Azure — the three security benefits the courseware states
-?
-Secure Connectivity (all traffic encrypted, protected against modification and eavesdropping) · Simplified Network Architecture (no internal-to-external IP conversion) · Access Control (admin defines rules simply because S2S VPN users are internal users)

@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "07"
 lo: "01"
-tags: [concept, policy, process, mod/07, flashcard/07]
+tags: [concept, policy, process, mod/07]
 topic: "BYOD Policy and Implementation"
 exam_weight: unknown
 status: done
@@ -25,7 +25,7 @@ unresolved: []
 - **Availability of resources:** faster processors + advanced security (face recognition, fingerprint, iris scanner); more up-to-date tech than org-provided
 
 ## BYOD Disadvantages
-- **Security access in org networks:** security can be near non-existent if frameworks differ (personal ✓ / corporate ✗) or unsecured Wi-Fi → lost/stolen/unauthorized access to enterprise data · malware attacks
+- **Security access in org networks:** security can be near non-existent if frameworks differ (personal • / corporate •) or unsecured Wi-Fi → lost/stolen/unauthorized access to enterprise data · malware attacks
 - **Compatibility issues:** various devices/platform versions (Windows, Apple, Android) → more IT staff; slow software/patch rollout
 - **Scalability:** orgs may lack network infrastructure for incoming traffic from multiple devices
 
@@ -64,23 +64,7 @@ Solution must provide: asset + identity management · local storage controls · 
 - BYOD users → more frequent support calls; establish processes/capabilities early
 - Mobile committees should frequently re-assess support levels to protect mobile-employee productivity
 
-## Cards
-BYOD stands for?
-?
-Bring Your Own Device (variants: BYOT — own technology, BYOP — own phone, BYOPC — own PC). Employees bring personal devices to access org resources per access privileges.
 
-Four BYOD advantages?
-?
-Increased productivity + employee satisfaction · work flexibility (mobile + cloud-centric) · lower IT costs · availability of up-to-date resources.
 
-BYOD disadvantages?
-?
-Security access issues (lost/stolen data, malware via unsecured Wi-Fi) · compatibility issues across platforms · scalability (network infrastructure limits).
 
-The 5-step BYOD implementation flow?
-?
-1 Define requirements → 2 decide device/data management → 3 develop policies → 4 security → 5 support.
 
-PIA in BYOD projects?
-?
-Privacy impact assessment — performed at project start by the mobile governance committee (end users + IT management); documented procedure for facts, objectives, privacy risks, mitigation.

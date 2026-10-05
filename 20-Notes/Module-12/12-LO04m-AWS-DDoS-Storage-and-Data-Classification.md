@@ -1,13 +1,13 @@
----
+﻿---
 type: note
 module: "12"
 lo: "04"
-tags: [bestpractice, tool, concept, mod/12, flashcard/12]
+tags: [bestpractice, tool, concept, mod/12]
 topic: "AWS DDoS mitigation, Amazon S3 and EBS storage security, data classification and Amazon Macie"
 exam_weight: unknown
 status: done
 unresolved:
-  - "p147: the 'Data Classification based on Sensitivity' slide shows only two legible entries, 'Public Data' and 'Critical Data'; a third entry OCRs only as 'Encrypted Ã¼Ã¥cie C) usus' and is NOT resolved to a classification name. If the courseware intends three levels, the third is missing here."
+  - "p147: the 'Data Classification based on Sensitivity' slide shows only two legible entries, 'Public Data' and 'Critical Data'; a third entry OCRs only as 'Encrypted Ãƒ¼Ãƒ¥cie C) usus' and is NOT resolved to a classification name. If the courseware intends three levels, the third is missing here."
   - "p144: the sentence 'The AWS config rule consists of ten built-in rules to monitor the S3 security configurations' is grammatically broken (singular 'rule' vs plural 'rules') and it is not stated whether the count 'ten' is correct or an OCR artefact. Quoted verbatim, not relied on."
   - "p149: the Macie search string OCRs as 'filesystem metadata . bucket: / amazon-macie-activity-generator-defaults3bucket. * / s'. The exact Lucene field syntax (dots vs spaces, leading/trailing wildcards) is garbled and is NOT reconstructed."
   - "pp. 142-143 Figure 12.71 vs Table 12.3: the figure and the 'Summary of the Best Practices' table assign INCONSISTENT BP numbers to the same items (figure: BP1 CloudFront, BP2 AWS WAF, BP3 Route 53, BP4 API Gateway, BP5 public subnet/AZ, BP6 load balancing, BP7 auto scaling; table: CloudFront BP1, AWS WAF (unnumbered), Global Accelerator BP1, Route 53 BP5, Elastic Load Balancing BP6, security groups and network ACLs BP5, EC2 Auto Scaling BP7). The BP numbers are NOT reconciled here."
@@ -26,7 +26,7 @@ unresolved:
 ## AWS DDoS mitigation techniques _(Mod 12 pp142–143)_
 
 "Although AWS services provide some forms of DDoS mitigation automatically, organizations can
-enhance further DDoS resiliency using the following services in AWS architecture." _(p142)_
+enhance further DDoS resiliency using the following services in AWS architecture." _(Mod 12 p142)_
 
 ### AWS Shield Standard _(Mod 12 pp142–143)_
 
@@ -36,9 +36,9 @@ enhance further DDoS resiliency using the following services in AWS architecture
   offered on **all AWS services and in all AWS regions**."
 - "It is **always on, pre-configured, static**, and provides **no reporting or analytics**."
 - "To **detect malicious traffic in real time** it applies a combination of **traffic
-  signatures, anomaly algorithms, and analysis techniques**." _(p143)_
+  signatures, anomaly algorithms, and analysis techniques**." _(Mod 12 p143)_
 - "Shield Standard **automatically mitigates basic network layer attacks** by using
-  **deterministic packet filtering** and **priority-based traffic techniques**." _(p143)_
+  **deterministic packet filtering** and **priority-based traffic techniques**." _(Mod 12 p143)_
 
 ### AWS Global Edge Network _(Mod 12 p143)_
 
@@ -116,14 +116,14 @@ Figure 12.71 (DDoS Resilient Reference Architecture) also shows **API Gateway (B
 - "Amazon S3 supports **SSE with three key management options and client-side encryption** for
   data uploads." → [[12-LO04j-AWS-Encryption-Data-at-Rest]]
 - "While adding a file to Amazon S3, you can use **options metadata** with the file and
-  **set permissions** to control access to the file." _(p144)_
+  **set permissions** to control access to the file." _(Mod 12 p144)_
 
 ### S3 object metadata — key-value pairs _(Mod 12 p144)_
 
 - "**Add metadata (Key—Value pair) to the S3 objects**; these metadata help in
   **identifying, organizing, and assigning objects to specific resources**."
 - "Metadata starting with the prefix **`x-amz-meta-`** represent **user-defined metadata**."
-  _(p145)_
+  _(Mod 12 p145)_
 
 **Walkthrough — add system metadata** _(p144–145)_
 
@@ -137,7 +137,7 @@ Figure 12.71 (DDoS Resilient Reference Architecture) also shows **API Gateway (B
    type a value**."
 7. "Select **Save**."
 
-**Walkthrough — add user-defined metadata** _(p145)_
+**Walkthrough — add user-defined metadata** _(Mod 12 p145)_
 
 1. "Select **Add Metadata**, and then select the **`x-amz-meta-`** key from the **Select a
    key** menu."
@@ -165,7 +165,7 @@ Figure 12.71 (DDoS Resilient Reference Architecture) also shows **API Gateway (B
 
 "The identification and classification of data based on the **sensitivity levels** helps in
 determining the **required security controls**. It also helps in **designing data retention
-policies**." _(p147)_
+policies**." _(Mod 12 p147)_
 
 | Level | Courseware attributes |
 |---|---|
@@ -223,7 +223,7 @@ _(pp148–149)_
   **One-click CloudFormation launch stack** or launch CloudFormation using the aforementioned
   template." → "**Read our terms, select the Acknowledgement box, and then select Create.**"
 
-**Walkthrough — add sample data / classify objects** _(p149)_
+**Walkthrough — add sample data / classify objects** _(Mod 12 p149)_
 1. "**Log in to Amazon Macie.**"
 2. "Select **Integrations**, followed by **Services**."
 3. "Select **your account**, and then select **Details** from the **Amazon S3** card."
@@ -240,28 +240,9 @@ _(pp148–149)_
 VPC endpoints and private S3 access: [[12-LO04l-AWS-VPC-and-Network-Security]] ·
 logging side: [[12-LO04n-AWS-Monitoring-Inspector-and-Checklist]]
 
-## Cards
 
-The two AWS DDoS detection inputs Shield Standard combines
-?
-Traffic signatures and anomaly algorithms (plus analysis techniques) — it detects malicious traffic in real time, and automatically mitigates basic network layer attacks using deterministic packet filtering and priority-based traffic techniques
 
-AWS Shield Standard vs AWS Shield Advanced
-?
-Shield Standard — threat protection for the first point of entry from outside the AWS network, automatic protection for all AWS customers at no additional charge, always on, pre-configured, static, no reporting or analytics, and the services CloudFront, Global Accelerator and Route 53 are part of it · Shield Advanced (optional) — available for CloudFront, Route 53 and Global Accelerator, and can be used with Elastic IP addresses to secure Network Load Balancers or Amazon EC2 instances
 
-What Amazon S3 Block Public Access does
-?
-It ensures that the objects do not have public permissions — if a user writes an object in a bucket with S3 Block Public Access enabled and that object has public permissions through an ACL or any other policy, then that permission will be blocked
 
-How to restrict access to Amazon S3 resources
-?
-Combine bucket policies, ACLs and IAM policies · enforce the VPC endpoint policy for private VPC-endpoint connections to S3 · use IAM policies to implement TLS encryption for S3 requests or S3 SSE with KMS keys · S3 Object Lock sets a specific retention date to prevent object deletion
 
-The two S3 metadata classes and the user-defined prefix
-?
-System-defined metadata (add via Properties > Metadata > Add Metadata, picking a key and a value from the menus) and user-defined metadata, whose keys start with the `x-amz-meta-` prefix — e.g. custom name `alt-name` becomes `x-amz-meta-alt-name`
 
-Data classification by sensitivity, and Amazon Macie
-?
-Public Data — not sensitive, available to everyone, unencrypted · Critical Data — not accessible directly on the internet, requires authentication and authorization, encrypted · Amazon Macie automatically discovers, classifies and protects sensitive data in AWS using machine learning, identifying PII and providing dashboards and alerts

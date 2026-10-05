@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "01"
 lo: "12"
-tags: [process, mod/01, flashcard/01]
+tags: [process, mod/01]
 topic: "Continual/Adaptive Security Strategy"
 exam_weight: unknown
 status: done
@@ -35,17 +35,7 @@ unresolved: []
 - Prescribes continuous **prediction, prevention, detection, response** for comprehensive CND
 - Pairs: Predict→Protect · Detect→Respond; mapped onto People, Technology, Assets, Operations, Physical contexts
 
-## Cards
-Four network security approaches?
-?
-Preventive, Reactive, Retrospective, Proactive.
 
 
-Four activities of adaptive security?
-?
-Protect, Detect, Respond, Predict.
 
 
-Which approach includes IDs/SIMS/TRS/IPS?
-?
-Reactive approach (complements preventive for attacks it failed to avert).

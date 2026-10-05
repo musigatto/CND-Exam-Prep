@@ -1,8 +1,8 @@
----
+﻿---
 
 type: moc
 module: "08"
-tags: [concept, mod/08, flashcard/08]
+tags: [concept, mod/08]
 topic: "Module 08 — Endpoint Security - IoT Devices"
 exam_weight: unknown
 status: done
@@ -68,7 +68,7 @@ views:
 - SeaCat.io ports: OCR shows "48101 = SeaCat® <mutual TLS> gateway tunnel" beside Nginx 443 — kept as printed; vendor pages not used.
 - The IoT stack-wise principle table compresses several figure pages (cleartext figure content); only layer-row countermeasures stated in text are recorded.
 
-## Cards
+## Quick review
 Module 08 subject scope?
 ?
 IoT endpoint security: IoT/IoE basics + app areas, ecosystem/architecture/communication models, security challenges + OWASP Top 10, stack-wise security + device/communication/cloud/process layer attacks, 27 security measures, tools + best practices, and standards (AIOTI/NIST/DHS/GSMA).

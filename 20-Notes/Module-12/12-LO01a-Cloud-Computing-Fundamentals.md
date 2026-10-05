@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "01"
-tags: [concept, mod/12, flashcard/12]
+tags: [concept, mod/12]
 topic: "Cloud computing fundamentals"
 exam_weight: unknown
 status: done
@@ -62,7 +62,7 @@ Order as printed in the p5 figure, gloss from the p5–6 body text.
 
 ## Benefits — 4 groups, 30 items _(Mod 12 p7–8)_
 
-**Economic** _(p7)_
+**Economic** _(Mod 12 p7)_
 Business agility · Less maintenance costs · Acquire economies of scale · Less capital
 expenditure · Huge storage facilities for organizations · Environment friendly · Less total cost
 of ownership · Less power consumption
@@ -71,12 +71,12 @@ of ownership · Less power consumption
 Flexibility and efficiency · Resilience and redundancy · Scale as required · Less operational
 problems · Deploy applications quickly · Backup and disaster recovery · Automatic updates
 
-**Staffing** _(p8)_
+**Staffing** _(Mod 12 p8)_
 Streamline processes · Efficient usage of resources · Less personnel training · Less IT staff ·
 Multiple users can utilize cloud resources · Evolution of new business models · Simultaneous
 sharing of resources
 
-**Security** _(p8)_
+**Security** _(Mod 12 p8)_
 Less investment in security controls · Efficient, effective, and swift response to security
 breaches · Standardized open interface for managed security services (MSS) · Effective patch
 management and implementation of security updates · Better disaster recovery preparedness ·
@@ -85,28 +85,9 @@ management of security systems · Rigorous internal audits and risk assessment p
 
 Exam cross-refs: [[Question-Bank]] · [[Exam-Facts]]
 
-## Cards
 
-Courseware definition of cloud computing — the three qualifiers
-?
-On-demand delivery of IT capabilities where the IT infrastructure and applications are provided to subscribers as a metered service over a network
 
-The 12 characteristics of cloud computing, in courseware order
-?
-On-demand self service · Distributed storage · Broad network access · Rapid elasticity · Automated management · Resource pooling · Measured service · Virtualization technology · Multi-tenancy · Resilient computing · Flexible pricing models · Sustainability
 
-Measured service — what exactly is metered?
-?
-Pay-per-use — monthly subscription or per usage (storage levels, processing power, bandwidth); the CSP monitors, controls, reports and charges with complete transparency
 
-Limitations of cloud computing (courseware list)
-?
-Limited control and flexibility · Prone to outage and other technical issues · Security, privacy and compliance issues · Contracts and lock-ins · Dependence on network connections
 
-Cloud computing benefits — the four groups and their item counts
-?
-Economic 8 · Operational 7 · Staffing 7 · Security 8 = 30 items
 
-Which benefits group carries "Standardized open interface for managed security services (MSS)"?
-?
-Security

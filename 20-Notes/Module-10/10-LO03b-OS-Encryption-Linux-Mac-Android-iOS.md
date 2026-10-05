@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "10"
 lo: "03"
-tags: [concept, process, command, crypto, mod/10, flashcard/10]
+tags: [concept, process, command, crypto, mod/10]
 topic: "OS Disk Encryption — FileVault, dm-crypt/LUKS, Android, iOS"
 exam_weight: unknown
 status: done
@@ -39,15 +39,5 @@ unresolved: []
 - Every iOS device encrypted by default; passcode/passphrase links encryption to keys
 - Face ID & Passcode → **Turn Passcode On**; Passcode Options: custom numeric/alphanumeric
 
-## Cards
-FileVault: how to enable and what unlocks it?
-?
-System Preferences → Security & Privacy → FileVault → Turn On; unlock via login password or recovery key.
 
-What algorithm/state set does Android dm-crypt use?
-?
-AES-128-CBC; states Default, PIN, Password, Pattern.
 
-LUKS over plain dm-crypt: key benefits?
-?
-Change password without re-encrypting data; multiple keys; brute-force protection (header + encrypted master key).

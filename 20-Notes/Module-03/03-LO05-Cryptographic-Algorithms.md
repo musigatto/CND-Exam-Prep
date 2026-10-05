@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "03"
 lo: "05"
-tags: [crypto, mod/03, flashcard/03]
+tags: [crypto, mod/03]
 topic: "Cryptographic Algorithms"
 exam_weight: unknown
 status: done
@@ -64,51 +64,22 @@ unresolved: []
 - Two stages: input key → **inner key + outer key**; stage 1 hashes inner key+message (internal hash); stage 2 hashes stage-1 output + outer key (final HMAC)
 - Runs underlying hash **twice** → protects from **length-extension attacks**; key/output size e.g., 128-bit (MD5) or 160-bit (SHA-1); verifies data integrity + message authentication
 
-## Cards
-DES vs 3DES keys?
-?
-DES 64-bit block / 56-bit key; 3DES = DES thrice (encrypt K1, decrypt K2, encrypt K3) — independent keys most secure, identical keys least.
 
 
-AES parameters?
-?
-128-bit block; key sizes 128/192/256; iterated block cipher (NIST).
 
 
-RC6 vs RC5?
-?
-RC6 adds integer multiplication + four 4-bit working registers.
 
 
-DSA basis + hash size?
-?
-FIPS 186 digital signature standard; 320-bit signature, 512–1024-bit security.
 
 
-RSA digital envelope?
-?
-DES-encrypted message + RSA-encrypted DES key.
 
 
-SHA generations?
-?
-SHA-1 (160-bit, deprecated), SHA-2 (SHA-256/512 + truncations), SHA-3 (sponge construction).
 
 
-HMAC key property?
-?
-Uses inner+outer keys; executes hash twice → resists length-extension attacks.
 
 
-## Cards (verified set 617277655)
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-Secure Hashing Algorithm (SHA)
-?
-generate a cryptographically one-way hash and is published by NIST as a Federal Information Standard  _(Mod 03 p94)_
 
 
-Digital Signature Algorithm
-?
-It is a Federal Information Processing Standard (FIPS) for digital signatures.  _(Mod 03 p90)_

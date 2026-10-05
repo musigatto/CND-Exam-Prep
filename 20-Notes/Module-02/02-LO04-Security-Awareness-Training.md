@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "02"
 lo: "04"
-tags: [process, mod/02, flashcard/02]
+tags: [process, mod/02]
 topic: "Security Awareness Training"
 exam_weight: unknown
 status: done
@@ -59,22 +59,9 @@ unresolved: []
 6. **Educate employees who fail phishing simulations** — frequent exercises, extra resources, rewards for reporting, gamification, consequence stories
 7. **Implement policy processes** — clear policy documentation using existing templates (email, password policies); edit to fit org needs
 
-## Cards
-Training cadence for employees?
-?
-On joining and periodically thereafter.
 
 
-Two data classification top-level rules?
-?
-Secret users access secret→unclassified (NOT Top Secret); Top Secret users access all levels; unclassified = anyone, no permissions.
 
 
-Social engineering techniques to train against?
-?
-Tailgating/piggy-backing · password-change ruse · name-dropping · relaxing conversation · new-hire ruse.
 
 
-Steps to implement awareness training?
-?
-Buy-in from top → gap analysis → regular schedule → performance review → phishing simulations → educate failures → implement policy processes.

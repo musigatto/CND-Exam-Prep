@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "07"
 lo: "05"
-tags: [tool, command, mod/07, flashcard/07]
+tags: [tool, command, mod/07]
 topic: "Android Security Tools (Find, AV, Scanner, Tracker)"
 exam_weight: unknown
 status: done
@@ -43,23 +43,7 @@ Be turned on · signed in to a **Google account** · connected to **mobile data 
 - **Where's My Droid** (wheresmydroid.com): track via text-message **attention word** or online control center **Commander** — ring/vibrate find · GPS location · **GPS Flare** (location alert on low battery) · passcode protection · SIM/phone-number change notification · **stealth mode** (hides incoming texts with attention word)
 - Others: **Prey** (preyproject.com) · **iHound** (ihoundgps.com) · **Hoverwatch** · **Life360** · **GadgetTrak** · **Find My Device + Location Tracker — TrackView** (trackview.net) · **Lost Android** (androidlost.com)
 
-## Cards
-Find My Device prerequisites?
-?
-On · signed into Google account · mobile-data/Wi-Fi connected · visible on Google Play · location enabled · Find My Device on.
 
-Find My Device actions?
-?
-Play sound (full volume 5 min) · Lock (PIN/pattern/password + message/phone number) · Erase (permanent; SD card may survive; service stops working).
 
-X-Ray function?
-?
-Scans Android device for unpatched (carrier-level) vulnerabilities; lists CVEs with per-vulnerability check; auto-updates for new disclosures.
 
-Where's My Droid tracking methods?
-?
-Text-message attention word or the online control center "Commander"; features GPS, GPS Flare, SIM-change notification, stealth mode.
 
-Kaspersky VPN & Antivirus feature set?
-?
-Anti-virus cleaner · background check · app lock · find my phone · anti-theft · anti-phishing · call blocker · web filter · data leak checker · smart home monitor.

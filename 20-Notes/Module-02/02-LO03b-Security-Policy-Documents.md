@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "02"
 lo: "03"
-tags: [policy, mod/02, flashcard/02]
+tags: [policy, mod/02]
 topic: "Security Policy Documents — Specific Policy Types"
 exam_weight: unknown
 status: done
@@ -150,32 +150,13 @@ unresolved: []
 - Equipped with mgmt technology & tools
 - **Visitors given the AUP** if allowed to use the network
 
-## Cards
-Password example length & expiration (courseware)?
-?
-8–14 chars; max age 60 days; official guidance: change every 90 or 180 days.
 
 
-Full vs incremental vs differential backup?
-?
-Full=all data, slowest · Incremental=changes since last full, faster · Differential=selected files new/changed since last full.
 
 
-Firewall policy — Telnet & FTP stance?
-?
-No Telnet (insecure); FTP only for vendor error-log uploads; use proxy servers to avoid direct connections.
 
 
-User access control practices?
-?
-Prohibit unknown logins · monitor admin accounts · lock after failed attempts · remove unused accounts · strict access criteria · need-to-know + least privilege · disable unrequired features/ports.
 
 
-Switch security — SSH vs Telnet, port security?
-?
-SSH preferred over Telnet; port security limits MAC-based access.
 
 
-Encryption key types + certs?
-?
-Symmetric or asymmetric per org needs; verify certificate authenticity/provider; servers use trusted SSL/TLS certificates.

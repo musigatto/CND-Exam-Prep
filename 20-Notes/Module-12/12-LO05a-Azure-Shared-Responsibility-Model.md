@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "05"
-tags: [concept, policy, mod/12, flashcard/12]
+tags: [concept, policy, mod/12]
 topic: "Azure shared responsibility model"
 exam_weight: unknown
 status: done
@@ -38,9 +38,9 @@ unresolved:
   (IaaS, PaaS, SaaS, or on-premise data center)**."
 - Shared-responsibility items listed on the slide: data classification and accountability · client
   and endpoint protection · identity and access management · application-level controls · network
-  controls · host infrastructure · physical security. _(p157)_
+  controls · host infrastructure · physical security. _(Mod 12 p157)_
 
-## Layer × service model
+## Layer — service model
 
 Figure row labels and the prose agree on the layer stack. Matrix below is built **only** from the
 p157–p158 prose (see `unresolved:` on the figure cells). _(Mod 12 pp157–158)_
@@ -59,11 +59,11 @@ p157–p158 prose (see `unresolved:` on the figure cells). _(Mod 12 pp157–158)
 | Physical Data *(figure prints "Physical Data Center")* | Provider | Provider | Provider | Customer |
 
 Legend bands as printed: **Responsibility Always Retained by Customer** · **Responsibility Varies
-by Service Type** · **Responsibility Transfers to Cloud Provider**. _(p157)_
+by Service Type** · **Responsibility Transfers to Cloud Provider**. _(Mod 12 p157)_
 
 ## Per-model statements, as printed _(Mod 12 pp157–158)_
 
-**SaaS** _(p157)_ — customer retains information and data, devices (mobile and PCs), accounts and
+**SaaS** _(Mod 12 p157)_ — customer retains information and data, devices (mobile and PCs), accounts and
 identities. Provider owns completely: applications, network controls, operating systems (OSes),
 physical hosts, physical network, physical data. Identity and directory infrastructure is
 **shared**. "Because the customer owns the data and identities, it is the responsibility of the
@@ -73,11 +73,11 @@ customer to secure the data and identities."
 identities. Provider retains completely: OS, physical hosts, physical network, physical data.
 **Shared**: identity and directory infrastructure, applications, network controls.
 
-**IaaS** _(p158)_ — customer **completely retains** information and data, devices (mobile and PCs),
+**IaaS** _(Mod 12 p158)_ — customer **completely retains** information and data, devices (mobile and PCs),
 accounts and identities, identity and directory infrastructure, applications, network controls, OS.
 Provider owns physical hosts, physical network, physical data center.
 
-**On-premises** _(p158)_ — "All responsibilities are retained by the customer."
+**On-premises** _(Mod 12 p158)_ — "All responsibilities are retained by the customer."
 
 ## Exam angles
 
@@ -89,28 +89,9 @@ Provider owns physical hosts, physical network, physical data center.
 Generic model: [[12-LO02a-Cloud-Security-Shared-Responsibility]] ·
 AWS variant: [[12-LO04a-AWS-Shared-Responsibility-Models]]
 
-## Cards
 
-Which layers does the Azure service provider own completely under SaaS?
-?
-Applications · network controls · operating system · physical hosts · physical network · physical data
 
-Which Azure service model has the customer completely retaining identity and directory infrastructure, applications and network controls?
-?
-IaaS — plus information and data, devices, accounts and identities and the OS; the provider keeps only physical hosts, physical network and physical data center
 
-What is shared between the customer and Azure under SaaS?
-?
-Identity and directory infrastructure — only; data, devices and identities stay with the customer, applications/network/OS/physical layers go to the provider
 
-Under PaaS, which layers are shared between customer and Azure?
-?
-Identity and directory infrastructure · applications · network controls
 
-What is the responsibility split under the Azure on-premises data center model?
-?
-All responsibilities are retained by the customer
 
-Shared responsibility items enumerated by the Azure courseware
-?
-Data classification and accountability · client and endpoint protection · identity and access management · application-level controls · network controls · host infrastructure · physical security

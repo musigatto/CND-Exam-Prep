@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "04"
 lo: "12"
-tags: [bestpractice, process, mod/04, flashcard/04]
+tags: [bestpractice, process, mod/04]
 topic: "Effective IDS Deployment (Network & Host)"
 exam_weight: unknown
 status: done
@@ -35,23 +35,11 @@ unresolved: []
 - Initial deployment on **critical servers only**; deploy management console before adding hosts; scale to all hosts **only if** you comfortably manage critical ones (reduces alert-complexity)
 - Large-scale HIDS = many false alarms, expensive, requires additional software + maintenance per host
 
-## Cards
-IDS staged deployment benefit?
-?
-Discovers where security/sensors are needed, lets admins adapt; initial stage requires highest maintenance.
 
-NIDS sensor order of deployment?
-?
-IDS management console first, then sensors incrementally at choke points/gateways/DMZ.
 
-Outside-firewall sensor tuning (L1)?
-?
-Least-sensitive attacks, logs attempts only (no alerts) to avoid false alarms.
 
-DMZ sensor (L2) coverage?
-?
-Perimeter + firewall-bypass detection; web/FTP servers; low-moderate impact attacks; also outbound.
 
-HIDS deployment approach?
-?
-Critical servers first → management console → then every host, only if manageable (costly, many false alarms).
+
+
+![IMG-NEEDED: assets/04-ids-sensor-placement.png — IDS sensor outside the perimeter firewall]
+

@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "05"
-tags: [policy, bestpractice, mod/12, flashcard/12]
+tags: [policy, bestpractice, mod/12]
 topic: "Azure AD PIM, emergency access accounts, passwordless admin sign-in and PAW"
 exam_weight: unknown
 status: done
@@ -93,9 +93,9 @@ browser**; you do not have to sign out and sign in again."
 ## Emergency access accounts _(Mod 12 pp182–183)_
 
 - "Emergency access accounts are **highly privileged** and are used **under emergency scenarios
-  where normal administrative accounts cannot be used**." _(p182)_
+  where normal administrative accounts cannot be used**." _(Mod 12 p182)_
 - "Define **at least two** … and these accounts should be **cloud-only accounts** that use the
-  **`*.onmicrosoft.com`** domain." _(p182)_
+  **`*.onmicrosoft.com`** domain." _(Mod 12 p182)_
 
 **When they are used** _(pp182–183)_:
 
@@ -127,7 +127,7 @@ browser**; you do not have to sign out and sign in again."
 - "Users with **multiple accounts in Azure AD** can add every account to Microsoft Authenticator and
   use passwordless phone sign-in **for all of them from the same iOS device**."
 
-**Steps to enable passwordless phone sign-in** _(p184)_:
+**Steps to enable passwordless phone sign-in** _(Mod 12 p184)_:
 1. Sign in to the **Azure portal with an Authentication Policy Administrator account**.
 2. "Search for and select **Azure Active Directory** and navigate to **Security > Authentication
    methods > Policies**."
@@ -177,51 +177,32 @@ attacks". _(p185, see `unresolved:`)_
    (`secure-ws-user@contoso.com`); "Select **Show password** and **remember the automatically
    generated password** so that you can sign in to a test device"; **Directory role** — Limited
    administrator and Administrator role; **Usage Location** — desired location; **Create**.
-3. **Create a device administrator user** _(p186)_: **Name** — `Secure Workstation Administrator`;
+3. **Create a device administrator user** _(Mod 12 p186)_: **Name** — `Secure Workstation Administrator`;
    **Username** — `secure-ws-admin@contoso.com`; **Directory role** — Limited administrator and
    Administrator role; **Usage Location** — desired location; **Create**.
 4. "**Create four groups**: Secure Workstation users, Secure Workstation Admins,
    **Emergency BreakGlass**, and Secure Workstation Devices" — `Azure Active Directory → Groups →
    New group`. *(four announced, three created — see `unresolved:`)*
-5. **Workstation users group** _(p187)_: Group type **Security** · Name `Secure Workstation Users`
+5. **Workstation users group** _(Mod 12 p187)_: Group type **Security** · Name `Secure Workstation Users`
    · Membership type **Assigned** · add `secure-ws-user@contoso.com` · **Create**. "For the
    workstation users group configure **group-based licensing** to automate the provisioning of
    licenses to users." _(p186)
-6. **Privileged workstation Admins group** _(p187)_: Group type **Security** · Name
+6. **Privileged workstation Admins group** _(Mod 12 p187)_: Group type **Security** · Name
    **`Emergency BreakGlass`** · Membership type **Assigned** · **Create** · "**Add Emergency Access
    accounts to this group**."
-7. **Workstation devices group** _(p187)_: Group type **Security** · Name `Secure Workstations` ·
+7. **Workstation devices group** _(Mod 12 p187)_: Group type **Security** · Name `Secure Workstations` ·
    Membership type **Dynamic Device** · dynamic membership rule as printed →
    `'[device.devicePhisicallds -any contains "[OrderlD]:PAW"]'` (attribute unresolvable) · **Create**.
-8. **Device join setting** _(p187)_: `Azure Active Directory → Devices → Device settings` → "Choose
+8. **Device join setting** _(Mod 12 p187)_: `Azure Active Directory → Devices → Device settings` → "Choose
    **Selected** under **Users may join devices to Azure AD**" and select the `Secure Workstation
    Users` group.
 
 Upstream: `[[12-LO05b-Azure-AD-SSO-and-Conditional-Access]]` · access control:
 `[[03-LO01-Access-Control-Models]]`
 
-## Cards
 
-The six best practices the courseware gives for securing privileged Azure accounts
-?
-Turn on Azure AD PIM (limits excessive, unnecessary or misused access) · define at least two emergency access accounts on the *.onmicrosoft.com domain · make all critical administrator accounts passwordless or require MFA · use Microsoft Authenticator for passwordless sign-in · give admins a separate workstation where production tasks are not allowed · use privileged access workstations
 
-What makes an Azure AD emergency access account, and when is it needed?
-?
-Highly privileged, not assigned to an individual, cloud-only on the *.onmicrosoft.com domain, at least two of them — used when admins' devices or the MFA service are unavailable, when MFA cannot be completed to activate a role, when the Global Administrator has left, and in a natural disaster
 
-The four emergency access account settings configured at creation
-?
-Username · Name · a long and complex password · Global Administrator role (under Roles) · usage location — then Create
 
-Azure AD PIM role settings touched in the Global Administrator walkthrough
-?
-Activation: on activation require Azure MFA, duration 2 hours, plus require justification / ticket information / approval to activate — Assignment: expire eligible after 1 year, expire active after 6 months, require Azure MFA and justification on active assignment
 
-The Microsoft Authenticator authentication-mode options and the consequence of one of them
-?
-Any or Passwordless — each added group or user defaults to "Any" (passwordless and push notification); choosing Push prevents the use of the passwordless phone sign-in credential
 
-What is a PAW and what protects it
-?
-The highest security configuration for extremely sensitive roles — a hardened workstation on a dedicated OS where local administrators are restricted from access and only sensitive job tasks run, featuring application control, application guard, credential guard, app guard, device guard and exploit guard

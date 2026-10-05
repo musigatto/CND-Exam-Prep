@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "08"
 lo: "07"
-tags: [policy, process, bestpractice, mod/08, flashcard/08]
+tags: [policy, process, bestpractice, mod/08]
 topic: "IoT Security Standards, Initiatives, and Efforts"
 exam_weight: unknown
 status: done
@@ -52,42 +52,16 @@ unresolved: []
 ## Other Standards / Initiatives
 - R2M (Reliable, Security, Safe); ISO/IEC JTC 1 IoT; IEEE P2413 (IoT Architecture); ITU-T Y.4000 (IoT Overview); IoT Alliance Australia; Open Connectivity Foundation (OCF · OCF IoTivity); IPSO Alliance; AllSeen Alliance; oneM2M; EnOcean Alliance; Thread Group; ZigBee Alliance; Z-Wave Alliance; GSMA IoT; Opere Alliance; M2M Alliance; Internet of Things Council / IoT Security Foundation; IEEE P2413 (IoT Architecture). Also OWASP IoT Top 10 (see [[08-LO03-IoT-Security-Challenges-and-threat-Landscape]]).
 
-## Cards
-AIOTI?
-?
-Alliance for Internet of Things Innovation — EU multi-stakeholder platform; 17+2 WGs (WG09 = IoT Privacy/Security).
-
-NIST IAIP for IoT — 8 feature areas?
-?
-Asset identification · device config · data protection · logical access · firmware updates · event monitoring · interface access · hardening.
-
-DHS IoT strategic principles (6)?
-?
-Security-by-design · updates/vuln mgmt · recognized security practices · prioritize by impact · transparency · connect carefully.
-
-GSMA IoT security — 8 assessment areas?
-?
-Secure boot · storage · key mgmt · OTA updates · app isolation · DDoS protection · user-data privacy · attack mitigation.
-
-Common Criteria standard for IoT eval?
-?
-ISO/IEC 15408 — EAL 1–7 evaluation (FIPS 140-3 = crypto modules).
 
 
-## Cards (verified set 617277655)
+
+
+
+
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-AT&T
-?
-AT&T developed The CEO's Guide to Securing the Internet of Things  _(Mod 08 p135)_
 
 
-U.S Department of Homeland Security
-?
-U.S DHS developed Strategic Principles for Securing the Internet of Things.  _(Mod 08 p128)_
 
 
-ENISA
-?
-ENISA developed 'Baseline Security Recommendations for Internet of Things  _(Mod 08 p135)_

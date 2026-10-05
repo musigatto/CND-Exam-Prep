@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "09"
-tags: [tool, bestpractice, mod/11, flashcard/11]
+tags: [tool, bestpractice, mod/11]
 topic: "Kubernetes Security Tools, CIS Benchmark and Patching"
 exam_weight: unknown
 status: done
@@ -61,24 +61,8 @@ To maintain **security, stability, and performance** of the container orchestrat
 - Container hardening and security practices must secure **container images, container runtime, container secrets, and registry**; these protect containers from being compromised. _(Mod 11 p156)_
 - The module covered network virtualization (NV), SDN, NFV, OS virtualization, and provided **security guidelines, recommendations, and best practices to secure containers, Dockers, and Kubernetes**. _(Mod 11 p156)_
 
-## Cards
 
-Istio: source and what it does for Kubernetes security.
-?
-Source www.istio.io. It helps connect, secure, control and observe services, creating a service mesh for service-to-service communication including routing, authentication and encryption, and encrypting pod-to-pod communication with mutual TLS. _(Mod 11 p152)_
 
-Grafeas: source and scope.
-?
-Source www.github.com. An open source initiative defining a best practice for auditing and governing the modern software supply chain, with an API spec for metadata about software resources - container images, virtual machine images, JAR files, scripts. _(Mod 11 p152)_
 
-What does the CIS Kubernetes benchmark give you, and what is the module's example check?
-?
-Instructions to audit a configuration against the recommendation and to remediate setups that fail the audit test. Example: basic authentication uses plaintext credentials, so ensure --basic-auth-file is not set, checked with ps -ef | grep kube-apiserver on the master node. _(Mod 11 p153)_
 
-Which tools are named for updating a manually managed Kubernetes cluster, and what must also be updated?
-?
-kubeadm and kops. Update both the control plane components (API server, scheduler) and the worker nodes, and check that plugins, add-ons and extensions are compatible with the new version. _(Mod 11 p154)_
 
-Before and after updating a Kubernetes cluster, what do the best practices require?
-?
-Before: reliable backup of the entire cluster - configurations, applications, data. After: run container tests, thoroughly test all applications and services, and update the documentation with the changes. _(Mod 11 p154, p155)_

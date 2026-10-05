@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "08"
 lo: "06"
-tags: [tool, bestpractice, port, process, mod/08, flashcard/08]
+tags: [tool, bestpractice, port, process, mod/08]
 topic: "IoT Security Tools & Best Practices"
 exam_weight: unknown
 status: done
@@ -48,32 +48,12 @@ unresolved: []
 | **Subex IoT Security** | consumer smart device security on Edge |
 | **libsecurity-go** | open-source API Security (protects runtime network, storage, trusted sensors) |
 
-## Cards
-IoT device-check best practices?
-?
-Secure boot, change defaults, disable unused services, firmware updates, disable Telnet port 23, monitor port 48101.
-
-SeaCat.io?
-?
-Open-source mutual-TLS (mTLS) tunnel from Teskalabs; gateway + client for constrained devices.
-
-SeaCat port?
-?
-48101 (SeaCat mTLS gateway tunnel), Nginx 443.
-
-DigiCert IoT?
-?
-Mutually-authenticated TLS for constrained IoT devices + cloud.
-
-Additional IoT security tools (top 4)?
-?
-PwnPulse · Allot · Cisco IoT Threat Defense · AWS IoT Device Defender (also SecEdge, net-Shield, Noddos, Trustwave, Subex, libsecurity-go).
 
 
-## Cards (verified set 617277655)
+
+
+
+
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-DigiCert IoT Security Solutions
-?
-It protect private data and home networks while preventing unauthorized access using PKI-based security solutions for consumer IoT devices.  _(Mod 08 p116)_

@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "07"
 lo: "03"
-tags: [concept, tool, process, mod/07, flashcard/07]
+tags: [concept, tool, process, mod/07]
 topic: "MEM, EMM, and UEM Solutions"
 exam_weight: unknown
 status: done
@@ -82,27 +82,8 @@ EMM = MDM + MAM + MTM + MCM + MEM  (comprehensive)
 UEM → single-interface mgmt (extends MDM + EMM; covers desktops too)
 ```
 
-## Cards
-MEM purpose + key features?
-?
-Secure corporate email infrastructure/data: preconfigure email remotely · only approved apps/devices access mail (S/MIME, SCEP) · prevent unauthorized attachment access · pre-install the managed email client.
 
-EMM comprehensive scope formula?
-?
-EMM = MDM + MAM + MTM + MCM + MEM — comprehensive solution for safeguarding enterprise data on mobile devices.
 
-EMM deployment process phases?
-?
-Plan (requirements + stakeholder feedback) → Design (roles, visibility, actors, distribution) → Deploy (cloud vs on-premise, pricing model) → Implement (helpdesk preparation).
 
-UEM in one line?
-?
-Remote provisioning, management, control, and security of all internet-enabled devices (mobile + desktop) from a single interface; extends MDM and EMM.
 
-UEM notable capabilities?
-?
-App containerization · certificate-based identity · per-app VPN · DLP (open-in/copy-paste) · secure multi-user profiles · remote erase · API framework.
 
-UEM examples?
-?
-Scalefusion UEM, Ivanti Unified Endpoint Manager, VMware Workspace ONE UEM (AirWatch-powered).

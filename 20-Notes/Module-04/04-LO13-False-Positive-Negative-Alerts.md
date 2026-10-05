@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "04"
 lo: "13"
-tags: [concept, bestpractice, mod/04, flashcard/04]
+tags: [concept, bestpractice, mod/04]
 topic: "False Positive & False Negative IDS Alerts"
 exam_weight: unknown
 status: done
@@ -54,27 +54,8 @@ unresolved: []
 - **Active network analysis + monitoring** (analysis tools/utilities); nullify FN-triggering rules
 - **Include additional data** in security events (org assets, users, networks, device sources) via automated/manual processes
 
-## Cards
-Four IDS alert types?
-?
-True positive, false positive (no attack-alert), false negative (attack-no alert — most dangerous), true negative.
 
-False positive rate formula?
-?
-FP / (FP + true negative).
 
-False negative rate formula?
-?
-FN / (FN + true positive).
 
-Sensitivity vs specificity?
-?
-Sensitivity = legitimacy of alerts detected; specificity = filters/accuracy of detected alerts (set IDS threshold).
 
-Encrypted-traffic false-negative fix?
-?
-Place IDS behind a VPN termination with SSL so it can inspect decrypted traffic.
 
-False-positive sources?
-?
-Reactionary traffic (device failure), network equipment (load balancer odd packets), non-malicious software bugs, IDS software bugs.

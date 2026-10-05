@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "09"
-tags: [policy, bestpractice, mod/11, flashcard/11]
+tags: [policy, bestpractice, mod/11]
 topic: "Kubernetes RBAC and API Server Hardening"
 exam_weight: unknown
 status: done
@@ -152,28 +152,9 @@ ABAC example printed as the way to let Bob read pods in namespace `Demo` — the
 | `RequiredDropCapabilities` | Capabilities **dropped** from containers — removed from the default set and **must not be added**; must not contain anything in `AllowedCapabilities` or `DefaultAddCapabilities` |
 | `DefaultAddCapabilities` | Capabilities **added by default**, in addition to the runtime defaults |
 
-## Cards
 
-Kubernetes RBAC: why is privilege escalation blocked even when the RBAC authorizer is not in use?
-?
-Because the RBAC API enforces it at the API level - editing roles or role bindings is blocked regardless of the active authorizer. _(Mod 11 p134)_
 
-Condition for creating or updating a role in Kubernetes RBAC.
-?
-The user must already hold all the permissions contained in the role AND at the same scope - cluster-wide for a ClusterRole, within the same namespace for a Role. _(Mod 11 p134)_
 
-The three parts of Kubernetes RBAC permissions.
-?
-Role or ClusterRole (rules = resources + verbs; Role = namespace, ClusterRole = cluster) · Subject (User, Group, ServiceAccount) · RoleBinding or ClusterRoleBinding joining them (namespace-scoped vs cluster-wide). _(Mod 11 p135)_
 
-How to disable ABAC on the API server.
-?
-Kubernetes' ABAC is swapped with RBAC since release 1.6. Use --authorization-mode=RBAC, or in GKE --no-enable-legacy-authorization. _(Mod 11 p135)_
 
-PodSecurityPolicy fields that take a list of Linux capabilities, and the naming rule.
-?
-AllowedCapabilities, RequiredDropCapabilities, DefaultAddCapabilities - capability name in ALL CAPS without the CAP_ prefix. _(Mod 11 p133)_
 
-Kubernetes container image guidelines for a small image, and the :latest tag.
-?
-Minimal base image, few components restrict attack vectors, check for vulnerabilities regularly (BusyBox, Alpine given as examples); do not depend on :latest - use the specific version number as the tag and update it. _(Mod 11 p131)_

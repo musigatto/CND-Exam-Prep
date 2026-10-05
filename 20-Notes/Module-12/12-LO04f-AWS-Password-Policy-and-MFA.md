@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "04"
-tags: [policy, bestpractice, mod/12, flashcard/12]
+tags: [policy, bestpractice, mod/12]
 topic: "AWS IAM password policy and MFA for privileged users"
 exam_weight: unknown
 status: done
@@ -33,7 +33,7 @@ unresolved:
   passwords periodically. Users can create a password policy for their AWS accounts on the
   **Account Settings** page of the IAM console."
 - Motivation printed on the slide: configure it "to ensure that the user and data are protected
-  against **brute-force attacks**". _(p77)_
+  against **brute-force attacks**". _(Mod 12 p77)_
 
 | # | Required element | Printed value |
 |---|---|---|
@@ -52,8 +52,8 @@ _(Mod 12 p77)_
 ## Console path and the policy panel _(Mod 12 p78)_
 
 - Breadcrumb printed above the figure: `IAM > Account Settings > Edit password policy`.
-- Two starting options: **IAM default** · **Custom** ("use a password policy"). _(p78)_
-- Panel fields (Figure 12.27) _(p78)_:
+- Two starting options: **IAM default** · **Custom** ("use a password policy"). _(Mod 12 p78)_
+- Panel fields (Figure 12.27) _(Mod 12 p78)_:
   - *Password minimum length* — "Enforce a minimum length of **8** characters / needs to be
     between 6 and 128" (8 is the value shown in the figure, not the range minimum).
   - *Password strength* — require at least one uppercase letter from the Latin alphabet (A-Z);
@@ -72,20 +72,20 @@ _(Mod 12 p77)_
 | 3 | Click on **Apply Password Policy** |
 
 - To delete: "click on **Delete Password Policy** in the Password Policy section of
-  Account Settings." _(p78)_
+  Account Settings." _(Mod 12 p78)_
 
 ## Enable MFA for privileged users — the rule _(Mod 12 p79)_
 
 - "It is recommended to enable **multi-factor authentication (MFA) for privileged users** for
-  extra security." _(p79)_
-- Slide rationale: "MFA enhances the security for **console and programmatic access**." _(p79)_
+  extra security." _(Mod 12 p79)_
+- Slide rationale: "MFA enhances the security for **console and programmatic access**." _(Mod 12 p79)_
 - "MFA enables users to use a **device-generated response** for authentication. In such cases,
   **user credentials and the device-generated response** are required to complete the sign-in
-  process." _(p79)_
+  process." _(Mod 12 p79)_
 - Why it matters: "With the implementation of MFA, user accounts can be secured **even if the
-  credentials or access keys are compromised**." _(p79)_
+  credentials or access keys are compromised**." _(Mod 12 p79)_
 - Scope: "any method can be used for the privileged IAM users who are **allowed to access
-  sensitive resources or API operations**." _(p79)_
+  sensitive resources or API operations**." _(Mod 12 p79)_
 
 **Two response styles** _(Mod 12 p79)_:
 
@@ -176,28 +176,9 @@ Upstream: [[12-LO04b-AWS-IAM-Features]] · access levels & least privilege:
 [[12-LO04e-AWS-Least-Privilege-and-Policy-Types]] · MFA background:
 [[03-LO03-IAM-Authentication-Authorization]]
 
-## Cards
 
-The elements a strong AWS password policy must contain
-?
-Minimum length in the range 6 to 128 · at least one uppercase (A–Z) · at least one lowercase (a–z) · at least one numeric (0–9) · at least one non-alphanumeric · allow users to change their own password · enable password expiration · prevent password reuse · password expiration requires administrator reset
 
-The four IAM MFA methods as listed in the courseware
-?
-FIDO security keys · Virtual authenticator apps · TOTP hardware tokens · TOTP hardware tokens for the AWS GovCloud (US) Regions
 
-The named TOTP hardware-token providers, by scope
-?
-Thales — TOTP hardware tokens used exclusively with AWS accounts · Hypersecu — TOTP hardware tokens compatible with AWS GovCloud (US) Regions, used exclusively by IAM users with AWS GovCloud (US) accounts
 
-The two MFA response styles and how each finishes the sign-in
-?
-Virtual/hardware MFA devices — generate a code that the user types on the sign-in screen · U2F security keys — generate a response when the device is tapped and the sign-in completes automatically
 
-How FIDO security keys are characterised
-?
-FIDO-certified hardware keys from third-party providers such as Yubico; based on public key cryptography; strong, phishing-resistant authentication; a single key supports multiple root accounts and IAM users
 
-Assigning a virtual MFA device — the whole wizard in order
-?
-Seed the app with Show QR code (scan it) or Show secret key (type it in) · type the OTP currently shown in MFA code 1 · wait 30 seconds for a new OTP · type the second OTP in MFA code 2 · select Assign MFA

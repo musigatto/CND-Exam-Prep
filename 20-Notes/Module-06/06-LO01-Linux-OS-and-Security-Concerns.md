@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "06"
 lo: "01"
-tags: [concept, threat, mod/06, flashcard/06]
+tags: [concept, threat, mod/06]
 topic: "Linux OS and Security Concerns"
 exam_weight: unknown
 status: done
@@ -61,19 +61,6 @@ Open-source OS widely used across enterprises and governments; a popular UNIX ve
 - Some vulnerabilities arise from **defender oversight and poor configuration settings**
 - Recent attacks show Linux is being **targeted for various malware attacks**
 
-## Cards
-Core parts of the Linux system architecture?
-?
-Hardware → kernel (core, full resource control) → shell (interface to kernel) → applications/utilities, system libraries, daemons (background services), graphical server (X server/X).
 
-Key Linux features (security relevant)?
-?
-Portability, open-source, multiuser, multiprogramming, hierarchical FS, shell, security (authentication/password protection, controlled file access, data encryption).
 
-Why is Linux considered risky despite open code?
-?
-Open-source → anyone can modify/distribute → unexpected vulnerabilities; poor configuration and defender oversight; increasingly targeted by malware.
 
-CVE-2023-42755 example?
-?
-IPv4 RSVP classifier flaw — out-of-bounds read in rsvp_classify; local user can crash system → DoS (CVSS 6.5).

@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "06"
-tags: [policy, bestpractice, mod/12, flashcard/12]
+tags: [policy, bestpractice, mod/12]
 topic: "GCP organization policies and policy inheritance"
 exam_weight: unknown
 status: done
@@ -35,7 +35,7 @@ unresolved:
   **`iam.disableServiceAccountKeyCreation`** for the service account of a project will not
   allow the creation of **user-managed credentials**." (see `unresolved:`)
 
-**Snippet as printed in the figure** _(p264)_ — closing braces OCR garbled:
+**Snippet as printed in the figure** _(Mod 12 p264)_ — closing braces OCR garbled:
 
 ```
 resource: "organizations/842463781240"
@@ -45,7 +45,7 @@ policy {
         enforced: true
 ```
 
-**Snippet as printed in the body** _(p264)_ — no `resource:` line, adds `etag:`:
+**Snippet as printed in the body** _(Mod 12 p264)_ — no `resource:` line, adds `etag:`:
 
 ```
 organizations/ 8424 63781240
@@ -96,7 +96,7 @@ _(Mod 12 p265)_
 ## Walkthrough — enable organization policy inheritance _(Mod 12 pp266–267)_
 
 1. "**Open the Google Cloud Console, navigate to `IAM & Admin`, click on `Organization
-   policies`.**" _(p266)_
+   policies`.**" _(Mod 12 p266)_
 2. "**Click on `Select`**, and then **select the project/folder/organization as per
    requirement to change the policy**." _(p266, Fig 12.181)_
 3. "A **policy details page containing the constraints** will open; **select a constraint from
@@ -114,24 +114,8 @@ Upstream: [[12-LO06c-GCP-IAM-Security-Best-Practices]] ·
 [[12-LO06d-GCP-Primitive-Roles-and-Separate-Service-Accounts]] · cross-module hierarchy and
 trust boundary: `[[03-LO01-Access-Control-Models]]`
 
-## Cards
 
-The four levels at which a GCP IAM policy can be set, and what each is inherited by
-?
-Organization — policies are inherited by all resources · Folder — the highest folder level's roles are inherited by the projects and other folders in the parent folder · Project — the trust boundary; its roles are inherited by all resources · Resource — lowest-level roles, e.g. Genomics data, Compute Engine instances and Pub/Sub topics, apart from Cloud Storage
 
-The two constraint names printed for disabling service account creation
-?
-Figure and both snippets: constraints/iam.disableServiceAccountCreation · body sentence: iam.disableServiceAccountKeyCreation (which "will not allow the creation of user-managed credentials") — the courseware prints both
 
-How to centralize the management of service accounts
-?
-Disable the creation of new service accounts by enforcing the boolean constraint in an organization policy — console: IAM & Admin → Organization policies → select the organization → Disable Service Account Creation → Edit → Applies to Customize → Enforcement On → Save
 
-What does `Inherit parent's policy` do
-?
-It lets the resource inherit the rules of the parent's policy, so a child no longer carries its own overridden policy — the policy summary then shows the Inherited policy / Google-managed default alongside the Current policy
 
-How is an effective IAM policy formed for a resource
-?
-By combining the policy inherited from the parent with the policy set at the resource itself — so the hierarchy is organization (root) → projects (children) → other resources (descendants)

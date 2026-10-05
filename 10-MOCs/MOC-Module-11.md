@@ -1,7 +1,7 @@
----
+﻿---
 type: moc
 module: "11"
-tags: [concept, mod/11, flashcard/11]
+tags: [concept, mod/11]
 topic: "Module 11 — Enterprise Virtual Network Security"
 exam_weight: unknown
 status: done
@@ -95,7 +95,7 @@ views:
 - p41 Fig 11.9 shows a **Windows Server 2019** build while the LO03f prose refers to 2016/2012-R2; not reconciled.
 - The courseware does not state whether its 4 virtualization levels and 4 types are exhaustive.
 
-## Cards
+## Quick review
 
 Which four virtualization approaches are given, and what is the single discriminator between them?
 ?

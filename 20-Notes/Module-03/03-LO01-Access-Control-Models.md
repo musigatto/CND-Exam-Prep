@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "03"
 lo: "01"
-tags: [concept, mod/03, flashcard/03]
+tags: [concept, mod/03]
 topic: "Access Control — Principles, Models, and Implementation"
 exam_weight: unknown
 status: done
@@ -62,7 +62,7 @@ Access control models specify **how a subject can access an object**.
 - Limitations: only addresses confidentiality + write control + \*-property + DAC · covert channels not comprehensively addressed · tranquility principle limitation
 
 ### Biba Integrity Model (Kenneth J. Biba, 1975) — **integrity**
-- Exact **opposite of BLP**: **read-up, write-down**; users create content ≤ own integrity level, view content ≥ own level
+- Exact **opposite of BLP**: **read-up, write-down**; users create content ≤  own integrity level, view content ≥ own level
 - Three integrity axioms:
   1. **Simple integrity — no read-down**
   2. **\*-integrity — no write-up**
@@ -89,32 +89,13 @@ Access control models specify **how a subject can access an object**.
 | **PAP** — Policy Administration Point | UI for creating/managing/testing/debugging policies; stores in repository |
 | **PIP** — Policy Information Point | Retrieves data needed for policy evaluation / PDP decisions |
 
-## Cards
-Access control terminologies?
-?
-Subject = user/process accessing; Object = resource (file/device); Reference Monitor checks rules; Operation = action on object.
 
 
-Bell-LaPadula two properties?
-?
-Simple security = no read-up; *-property = no write-down (confidentiality).
 
 
-Biba three axioms?
-?
-Simple integrity = no read-down; *-integrity = no write-up; invocation = no invoking higher-level subject (integrity).
 
 
-RBAC rules?
-?
-Role assignment · role authorization · transaction authorization.
 
 
-XACML roles?
-?
-PDP (decision) · PEP (enforcement/inspect) · PAP (admin) · PIP (information).
 
 
-ABAC attribute types?
-?
-Subject/user · object/resource · environmental/context · action.

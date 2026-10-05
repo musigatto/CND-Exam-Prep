@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "01"
 lo: "05"
-tags: [threat, mod/01, flashcard/01]
+tags: [threat, mod/01]
 topic: "Email Attack Techniques"
 exam_weight: unknown
 status: done
@@ -42,14 +42,5 @@ unresolved: []
 - Achieved by: activating a botnet · streaming emails with huge zip attachments (server unzips to check → strain)
 - Types: **list linking** (subscribe victim to many mailing lists) · **attachment** (many large attachments) · **mass mailing** (all-addresses send) · **reply all** (reply-all to long list) · **zip bomb** (compressed archive that consumes resources on decompression)
 
-## Cards
-Types of malicious email redirects?
-?
-Referrer-based, user-agent-based, cookie-based, and OS-based.
-<!--SR:!2026-09-30,1,230-->
 
 
-Email bomb types?
-?
-List linking, attachment, mass mailing, reply all, zip bomb.
-<!--SR:!2026-09-30,1,230-->

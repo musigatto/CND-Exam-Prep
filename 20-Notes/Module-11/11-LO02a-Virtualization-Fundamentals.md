@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "02"
-tags: [concept, mod/11, flashcard/11]
+tags: [concept, mod/11]
 topic: "Virtualization fundamentals"
 exam_weight: unknown
 status: done
@@ -24,8 +24,8 @@ Explain **virtualization concepts** · the **types** of virtualization · the **
 | Framework effect | **divides** physical resources (traditionally bound to hardware) into **multiple individual simulated environments** _(Mod 11 p10)_ |
 
 **Cardinality works both ways** _(Mod 11 p10)_:
-- N virtual resources ← **one** physical resource
-- **one** virtual resource ← one or more physical resources
+- N virtual resources â† **one** physical resource
+- **one** virtual resource â† one or more physical resources
 
 **Payoff** — operate **multiple operating systems** and execute **numerous applications on a single server** → enhances efficiency and the scale of the economy of the organization. _(Mod 11 p10)_
 
@@ -47,21 +47,8 @@ _(Mod 11 pp10–11)_
 1. **Only the host OS touches hardware directly.** Guest OSes reach hardware only via the virtualization layer. _(Mod 11 p11)_
 2. The virtualization layer's job is **logical partitioning on request** — it is driven by resource requests from *both* host and guest OSes. _(Mod 11 p11)_
 
-## Cards
 
-Courseware definition of virtualization
-?
-Software-based **virtual representation** of an IT infrastructure (network, devices, applications, storage, etc.); the framework divides physical resources into multiple individual simulated environments.
 
-Who converts commands to binary instructions in full virtualization?
-?
-The **VMM** — it translates the guest's commands to binary instructions and forwards them to the host OS; resources reach the guest through the VMM.
 
-In the virtualization architecture, who interacts with the hardware directly?
-?
-The **host OS**. The **guest OSes interact through the virtualization layer**, which acts as middleware and logically partitions hardware resources.
 
-Cardinality rule for virtual vs physical resources
-?
-N virtual resources may be created from **one** physical resource, **or** one virtual resource from **one or more** physical resources.
 

@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "06"
-tags: [threat, bestpractice, mod/12, flashcard/12]
+tags: [threat, bestpractice, mod/12]
 topic: "GCP DDoS mitigation and network security best practices"
 exam_weight: unknown
 status: done
@@ -82,7 +82,7 @@ _(Mod 12 pp291–293 — items 1–5 expanded on p292, items 6–10 on p293)_
 ## GCP network security best practices _(Mod 12 pp294–296)_
 
 - "To **secure an organization's data and workloads on Google Cloud**, follow the below security
-  best practices." _(p294)_
+  best practices." _(Mod 12 p294)_
 
 ### 1 · Deploy zero-trust networks _(Mod 12 p294)_
 
@@ -158,7 +158,7 @@ _(Mod 12 p295)_
   Cloud Build**, etc" _(p294 figure)_.
 - "To help build an environment that uses **automation**, Google Cloud provides **security
   blueprints**, which in turn provide a **secure application environment** and describe
-  **step-by-step** on how to **configure and deploy the Google Cloud estate**." _(p296)_
+  **step-by-step** on how to **configure and deploy the Google Cloud estate**." _(Mod 12 p296)_
 
 ## The eight best-practice headlines, as printed on p294
 
@@ -178,28 +178,9 @@ _(Mod 12 p294)_
 Upstream: [[12-LO06i-GCP-Defense-in-Depth-and-VPC]] · [[12-LO06c-GCP-IAM-Security-Best-Practices]]
 (IAM inside the attack-surface control) · [[Question-Bank]]
 
-## Cards
 
-How does GCP mitigate a DoS attack by default
-?
-The data centers' fiber-optic Internet connection passes through several layers of software and hardware load balancers; the load balancers report incoming traffic to a central DoS service, which on detecting an attack configures the load balancers to drop or throttle the attack traffic. The central DoS service also gets application-layer information from the GFE instances (which the load balancers cannot see) and configures them to drop or throttle attack traffic
 
-What does the Google Front End (GFE) provide and do
-?
-GFEs provide public IP address hosting of a public DNS name, DoS protection, and TLS termination; GFE applies DoS protections that terminate user traffic and automatically scale to absorb attacks before they reach the user's compute instances
 
-The ten GCP DDoS mitigation best practices
-?
-Reduce the attack surface (Google Cloud Virtual Network, subnets/networks, firewall rules, tags, IAM, anti-spoofing, inter-VPC isolation) · isolate internal traffic (no public IPs, NAT gateway or SSH bastion, internal load balancing) · enable proxy-based load balancing (HTTP(S) or SSL proxy, multi-region) · scale to absorb (GFE, Anycast load balancing, autoscaling) · protect with CDN offloading (Google Cloud CDN, CDN Interconnect) · deploy third-party DDoS protection or Google Cloud Launcher solutions · deploy App Engine with a dos.yaml IP/IP-network blocklist · restrict Google Cloud Storage with signed URLs · API rate limits on the Compute Engine API · enforce Compute Engine resource quotas
 
-Which GCP best practice is stated as avoiding IP address conflicts
-?
-Disable default networks — disable creation of default networks in new projects, delete them in existing projects, avoid IP address conflicts by first planning network and IP address allocation across connected deployments and projects, and limit multiple VPCs to one per project to enforce access control effectively
 
-The four network monitoring tools named as telemetry
-?
-VPC Flow Logs and Firewall Rules Logging (real-time visibility into traffic) · Firewall Insights (reviewing firewall rules) · Network Intelligence Center (how network topology and architecture are performing) · Connectivity Tests (insight into the firewall rules and policies applied to the network path)
 
-Why use service accounts in firewall rules
-?
-To enforce isolation without depending on an IP address as the sole identifier of a workload — combine with hierarchical firewall policies (rules applying to all networks regardless of network-level rules) and define folder-level rules to cover only portions of an organization

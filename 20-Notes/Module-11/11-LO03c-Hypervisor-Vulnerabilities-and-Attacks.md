@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "03"
-tags: [threat, mod/11, flashcard/11]
+tags: [threat, mod/11]
 topic: "Hypervisor Vulnerabilities and Attacks"
 exam_weight: unknown
 status: done
@@ -21,7 +21,7 @@ unresolved:
 - **Fundamental component of virtualized systems** → *frequently targeted in attacks*.
 - Vulnerabilities attach to its **security features**: **VM isolation** and **internal software-based channels** for communication with VMs.
 - Common weaknesses/vulnerabilities affect **hypervisors, VMMs, and their management tools**.
-- Classification axis: **potential threat** × **weakness** involved.
+- Classification axis: **potential threat** — **weakness** involved.
 - Threat classes used in this table: **Disclosure · Deception · Disruption** _(p30 header; no Usurpation column, unlike the virtual-network table on p32)_
 
 ## Disclosure _(Mod 11 p30)_
@@ -66,40 +66,8 @@ Injection variant: `local guest` → `hypervisor software library` → **DoS / h
 - **Fig 11.4** (p28) — VLAN topology illustration; labels OCR'd: `LAN`, `Physical LAN`, `VLAN`, `Switch`, `802.1Q Trunk`, `VLAN 100`.
 - **Fig 11.5** (p39) — "Search for Hyper-V Manager" screenshot (Hyper-V Manager start-menu path). Image-only.
 
-## Cards
 
-```
-Name the three threat classes the courseware uses to classify hypervisor/VMM vulnerabilities.
-?
-Disclosure, Deception, Disruption. _(Mod 11 p30)_
-```
 
-```
-Which hypervisor security features do its vulnerabilities attach to, and what else is affected besides the hypervisor itself?
-?
-VM isolation and the internal software-based channels used to communicate with VMs; the weaknesses also affect VMMs and their management tools. _(Mod 11 p30)_
-```
 
-```
-Give the Xen example of improper input validation in the hypervisor and its impact.
-?
-The intercept function in a software library uses an improper range → local HVM guests read data from the hypervisor or other guest machines; can also cause DoS or crash the host. _(Mod 11 p30)_
-```
 
-```
-What is an off-by-one error in the hypervisor's data handling, and what does it expose?
-?
-An iterative loop iterates too many or too few times → local users obtain sensitive information from hypervisor memory; can also cause DoS or crash of the host. _(Mod 11 p30)_
-```
 
-```
-Define VM escape per the courseware and list its consequences.
-?
-Attackers run code on a VM to directly communicate with the hypervisor, exploiting hypervisor coding or management errors → DoS, out-of-bounds writes, guest crash, and execution of arbitrary code. _(Mod 11 p31)_
-```
-
-```
-How does injection in hypervisor software libraries hurt, and what address type is named?
-?
-Local guest users cause DoS and crash the host via a non-canonical guest address. _(Mod 11 p31)_
-```

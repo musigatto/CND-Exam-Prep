@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "03"
-tags: [bestpractice, mod/11, flashcard/11]
+tags: [bestpractice, mod/11]
 topic: "VLAN Security"
 exam_weight: unknown
 status: done
@@ -69,28 +69,9 @@ Implement **BPDU guard, BPDU Filter, root guard, loop guard and UDLD**. _(Mod 11
 
 VLAN as an NV construct: [[11-LO03a-Network-Virtualization-Concepts]].
 
-## Cards
 
-Front: Port security: two limitations/conditions the courseware states.
-?
-It also protects against DHCP starvation attacks, and it works only for access ports - not for trunk ports. _(Mod 11 p60)_
 
-Front: How does 802.1X port-based authentication work once configured?
-?
-The AAA server explicitly installs packet filtering rules based on dynamically learned information about users and MAC addresses. _(Mod 11 p60)_
 
-Front: What makes VLAN hopping possible, per the courseware?
-?
-The ports of some switches automatically turn into trunks when they receive DTP frames. _(Mod 11 p61)_
 
-Front: Match the STP countermeasure to the problem: BPDU Filter vs Loop Guard and UDLD.
-?
-BPDU Filter disables STP on selected ports by stopping BPDU send/receive; Loop Guard and UDLD prevent bridging loops caused by unidirectional links. _(Mod 11 p61)_
 
-Front: Two countermeasures against double tagging / native-VLAN abuse.
-?
-Disable trunking on non-trunk ports and disable DTP on ports that may become trunks; never send user traffic on the native VLAN. _(Mod 11 p60–p61)_
 
-Front: ARPWatch: what does it do and what is the caveat on static ARP tables?
-?
-It tracks IP/MAC pairing and checks forwarded ARP packets for identity correctness. Static entries only stop an adversary ARP response if the table holds correct MAC/IP pairs. _(Mod 11 p60–p61)_

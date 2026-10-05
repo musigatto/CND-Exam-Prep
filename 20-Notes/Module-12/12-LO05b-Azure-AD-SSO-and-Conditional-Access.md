@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "05"
-tags: [concept, policy, mod/12, flashcard/12]
+tags: [concept, policy, mod/12]
 topic: "Azure AD single sign-on and Conditional Access"
 exam_weight: unknown
 status: done
@@ -64,15 +64,15 @@ _(Mod 12 p159)_
   - let users "utilize the same credentials to sign-in and access the resources located
     **on-premise or in the Azure cloud**";
   - let users access **SaaS applications based on the organization account in Azure AD**.
-- Slide rule _(p160)_: "Azure AD does **not** issue a token to sign-in unless they have been
+- Slide rule _(Mod 12 p160)_: "Azure AD does **not** issue a token to sign-in unless they have been
   granted access through Azure AD."
 
 **Walkthrough** _(pp160–161)_:
 1. Go to **Azure AD Active Directory settings**.
-2. Click on **Azure AD connect**. _(p160)_
-3. Under **USER SIGN-IN**, enable **Seamless single sign-on**. _(p161)_
+2. Click on **Azure AD connect**. _(Mod 12 p160)_
+3. Under **USER SIGN-IN**, enable **Seamless single sign-on**. _(Mod 12 p161)_
 
-Two Azure AD Connect tooltips read cleanly in the p161 figure _(p161)_:
+Two Azure AD Connect tooltips read cleanly in the p161 figure _(Mod 12 p161)_:
 
 | Pane | Printed tooltip |
 |---|---|
@@ -80,19 +80,19 @@ Two Azure AD Connect tooltips read cleanly in the p161 figure _(p161)_:
 | STAGED ROLLOUT OF CLOUD AUTHENTICATION | "This feature allows you to **test cloud authentication and migrate gradually from federated authentication**." |
 
 Other USER SIGN-IN options visible in the same figure, by name only: **Federation** ·
-**Password Hash Sync** · **Pass-through authentication**. _(p161)_
+**Password Hash Sync** · **Pass-through authentication**. _(Mod 12 p161)_
 
 ## Turn on Conditional Access — the rules _(Mod 12 p162)_
 
 - "Azure AD uses a tool called **Conditional Access** for enforcing organizational policies to
   manage and control the access to corporate resources."
 - "The organizations use conditional access policies for **security and right access control**.
-  These policies are implemented **after first-factor authentication**." ← exam hook
+  These policies are implemented **after first-factor authentication**." â† exam hook
 - Configuration inputs: "the **group**, **location**, and **application sensitivity** for **SaaS
   apps**, and **Azure AD connected apps**."
 - Scope: policies "are prepared and implemented for **on-premise and Azure cloud applications**."
 
-Azure AD security features listed on the p162 Security blade _(p162)_: Azure AD Conditional Access
+Azure AD security features listed on the p162 Security blade _(Mod 12 p162)_: Azure AD Conditional Access
 · Azure AD Identity Protection · Azure Security Center · Identity Secure Score · Authentication
 methods · Security guidance · Azure AD Password Guidance · Azure AD Data Security Whitepaper ·
 How Password Hash (PHS) works.
@@ -113,24 +113,8 @@ Cross-module: IAM basics `[[03-LO03-IAM-Authentication-Authorization]]` · ident
 `[[03-LO02-Zero-Trust-and-Distributed-Access]]` · AWS SSO comparison
 `[[12-LO04i-AWS-Monitoring-and-Identity-Center-SSO]]`
 
-## Cards
 
-The two rules that govern Azure AD Conditional Access policies
-?
-Implemented after first-factor authentication · configured on group, location and application sensitivity for SaaS apps and Azure AD-connected apps, and applied to on-premise and Azure cloud applications
 
-What does Azure AD Conditional Access do, as printed?
-?
-It is the tool Azure AD uses for enforcing organizational policies to manage and control access to corporate resources, giving security and right access control
 
-The Azure single sign-on click path
-?
-Azure AD Active Directory settings → Azure AD connect → under USER SIGN-IN enable Seamless single sign-on
 
-The 12 Azure IAM best practices listed on p159
-?
-Enable SSO · turn on conditional access · enable password management · enforce MFA · enforce cloud-based MFA · enforce Azure AD identity protection · implement RBAC · restrict exposure of privileged accounts · centralize identity management · use Azure AD for storage authentication · treat identity as the primary security perimeter · plan for routine security improvements
 
-Why is the Azure AD Connect "staged rollout of cloud authentication" feature used?
-?
-It allows you to test cloud authentication and migrate gradually from federated authentication

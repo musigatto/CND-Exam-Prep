@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "06"
-tags: [bestpractice, process, mod/12, flashcard/12]
+tags: [bestpractice, process, mod/12]
 topic: "GCP defense-in-depth network security, VPC, Shared VPC, firewall rules, routes"
 exam_weight: unknown
 status: done
@@ -14,8 +14,8 @@ unresolved:
   - "p287: the figure bullet 'Firewall rules incornirq or taffr to an' is unreadable - the object of 'include or restrict' is garbled. The claim that firewall rules 'allow or deny connections' is taken from the legible p287 body sentence instead; the garbled figure bullet is not transcribed."
   - "p287: the figure bullet 'By default tramc from Outsde network iS mae' does not state the object. The p288 body sentence 'By default, incoming traffic from outside your network is blocked.' is used instead; the figure bullet is not treated as an independent source."
   - "p288 Fig 12.201: legible field values are Name 'learn-custom-firewall-rule1', Network 'learn-custom', Priority range '0 - 65535' (default 1000), Direction of traffic Ingress/Egress, Action on match 'Allow', and the Logs warning 'Turning on firewall logs can generate a large number of logs which can increase costs'. The 'Source' and 'Destination' field values are NOT legible and are not asserted. The project is 'My First Project'."
-  - "p289/p290: the console menu OCR's as 'R0Jtes' in one place and 'FireÆl X R0Jtes' in another - both are 'Firewall rules' and 'Routes' menu entries. The route entry itself is unambiguous; the garbled token is the menu label, not the concept."
-  - "p290 Fig 12.203 'Route details': the route name OCR's as 'default-route-Qßiiju•ueeeeeedf' and is NOT reconstructed. The legible rows are 'Default route to the Internet', 'Route type', 'IP version', 'Destination IP address range', 'Instance route applies to all instances within the specified network', and 'Next hop'. The Next hop value OCR's as 'Oef.uit tn.ernet gateway' - read here as 'Default internet gateway' with the caveat that the first letters are garbled; no IP or gateway id is printed legibly."
+  - "p289/p290: the console menu OCR's as 'R0Jtes' in one place and 'FireÃ†l X R0Jtes' in another - both are 'Firewall rules' and 'Routes' menu entries. The route entry itself is unambiguous; the garbled token is the menu label, not the concept."
+  - "p290 Fig 12.203 'Route details': the route name OCR's as 'default-route-QÃŸiiju•ueeeeeedf' and is NOT reconstructed. The legible rows are 'Default route to the Internet', 'Route type', 'IP version', 'Destination IP address range', 'Instance route applies to all instances within the specified network', and 'Next hop'. The Next hop value OCR's as 'Oef.uit tn.ernet gateway' - read here as 'Default internet gateway' with the caveat that the first letters are garbled; no IP or gateway id is printed legibly."
 ---
 
 [[MOC-Module-12]]
@@ -112,7 +112,7 @@ micro-segmentation within a GKE cluster.
 - "To connect VPC networks **from different projects**, use **VPC network peering**."
 - "**Use IAM roles to secure network administration** in VPC networks."
 
-**Security benefits offered by VPC networks** _(p284)_
+**Security benefits offered by VPC networks** _(Mod 12 p284)_
 
 | # | Printed benefit |
 |---|---|
@@ -145,7 +145,7 @@ _(Mod 12 p284)_
 3. "Select **Set up Shared VPC**." _(p286, Fig 12.198)_
 4. "Click on **Save & continue**." _(p286, Fig 12.199)_
 
-> "**While establishing the shared VPC, run the process from the host project.**" _(p286)_
+> "**While establishing the shared VPC, run the process from the host project.**" _(Mod 12 p286)_
 
 ## Manage traffic with firewall rules _(Mod 12 p287)_
 
@@ -155,8 +155,8 @@ _(Mod 12 p284)_
   instances**."
 - "Configure Virtual Private Cloud (VPC) firewall rules **for project and network**."
 - "**Firewall rules control incoming or outgoing traffic to an instance. By default, incoming
-  traffic from outside your network is blocked.**" _(p288)_
-- "**Logs can generate a large number of logs which can increase costs.**" _(p287)_
+  traffic from outside your network is blocked.**" _(Mod 12 p288)_
+- "**Logs can generate a large number of logs which can increase costs.**" _(Mod 12 p287)_
 
 **Legible fields of the Create Firewall Rule form** _(p288, Fig 12.201 — see `unresolved:`)_
 `Name` = `learn-custom-firewall-rule1` · `Network` = `learn-custom` · `Priority` range
@@ -166,7 +166,7 @@ _(Mod 12 p284)_
 ### Walkthrough — create a firewall rule _(Mod 12 pp287–288)_
 
 1. From the Google console dropdown menu, navigate to **VPC network** and select **VPC
-   networks** on the Menu tab. _(p287)_
+   networks** on the Menu tab. _(Mod 12 p287)_
 2. Navigate to **Firewall rules**. _(p287, Fig 12.200)_
 3. "Click on **Create firewall rule**, **set the required rules**, then click on **Create**."
    _(p288, Fig 12.201)_
@@ -206,28 +206,9 @@ Upstream: [[12-LO06h-GCP-Encryption-and-Cloud-KMS]] (KMS) ·
 [[12-LO06g-GCP-Predefined-Roles-and-Logging-Roles]] (roles for network administration) ·
 [[Question-Bank]]
 
-## Cards
 
-The three defense-in-depth network security principles
-?
-Secure internet-facing services · Secure VPC for private deployments · Micro-segment access to applications and services
 
-Which two GCP services together protect against Layer 3 and Layer 4 volumetric DDoS on publicly exposed data
-?
-Place the services behind the Google Cloud HTTP(S) Load Balancer and deploy Google Cloud Armor — together they provide protection from Layer 3 and Layer 4 volumetric DDoS attacks
 
-What do WAF policies at the edge prevent, and what range of attributes do WAF custom rules filter
-?
-Preconfigured WAF rules prevent cyberattacks such as SQL injection and cross-site scripting; WAF custom rules filter internet traffic across Layer 3 through Layer 7 attributes
 
-Host project vs service project in a shared VPC
-?
-A shared-VPC organization consists of host projects connected to service projects; the host project network IS the shared VPC network, which is centrally managed across multiple projects over internal IPs. Run the setup from the host project — Shared VPC plus IAM separates network administration from project administration
 
-Firewall rules vs routes in GCP
-?
-Firewall rules allow or deny traffic to and from VPC-attached resources (Compute Engine VMs, GKE clusters) and are targeted at specific VMs with network tags; incoming traffic from outside the network is blocked by default. Routes define the paths network traffic takes from a VM instance to another destination, inside or outside the VPC, resolved by the VM instance controller to a next hop in routing order
 
-How do you micro-segment in GCP
-?
-VM-based applications — Google VPC firewall rules regulate communication between them; GKE-based applications — network policies set on the Google GKE clusters control container-to-container communication. Note VPC networks are global resources, not tied to a zone or region, and a project can hold several of them depending on the set organizational policy

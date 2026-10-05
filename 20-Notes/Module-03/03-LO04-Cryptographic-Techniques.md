@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "03"
 lo: "04"
-tags: [crypto, mod/03, flashcard/03]
+tags: [crypto, mod/03]
 topic: "Cryptographic Security Techniques"
 exam_weight: unknown
 status: done
@@ -22,13 +22,13 @@ unresolved: []
 - **Single secret key** for encrypt + decrypt (secret-key cryptography); oldest technique; encrypts **large** amounts of data
 - Sender+receiver must share key beforehand → limited over the internet between strangers → solved by public-key crypto
 - **Stream cipher** (bits one at a time) vs **block cipher** (blocks of bits)
-- ✔ easy, faster than asymmetric · ✖ key sharing required; compromised key = data compromise at both ends
+- • easy, faster than asymmetric · • key sharing required; compromised key = data compromise at both ends
 
 ### Asymmetric encryption (public-key)
 - **Public key** (encrypt) + **private key** (decrypt); for **small** amounts of data; solves key-management
 - Sequence: find recipient's public key in directory → encrypt with it → recipient decrypts with private key
 - Only private-key holder can decrypt; public keys must be bound to usernames securely (→ digital signatures for authentication)
-- ✔ more secure, no key distribution · ✖ longer processing time, complex algorithms
+- • more secure, no key distribution · • longer processing time, complex algorithms
 
 ## Hashing
 - Fixed-length string/key representing original info; checks **integrity** on both sides (sender hash + receiver hash compare)
@@ -62,36 +62,16 @@ unresolved: []
 - **Properties**: Completeness (true statement + honest parties → accepted) · Soundness (dishonest prover can't fool honest verifier) · Zero-knowledge (verifier learns only true/false, not content)
 - **Elements**: **Witness** (secret info) · **Challenge** (verifier randomly picks multiple questions) · **Response** (prover computes answer; repeats → guessing unlikely)
 
-## Cards
-Symmetric vs asymmetric for data volumes?
-?
-Symmetric single key → large data; asymmetric (public/private) keys → small data.
 
 
-Hashing applications + limitation?
-?
-Password storage, file/message integrity; limitation = collisions (worse with shorter hashes).
 
 
-Digital certificate purpose?
-?
-Bind public key to owner via trusted CA; ensure non-repudiation.
 
 
-PKI components?
-?
-CA (issue/verify) · RA (verifier) · certificate management system · directories.
 
 
-ZKP properties + elements?
-?
-Completeness, soundness, zero-knowledge; Witness, Challenge, Response.
 
 
-## Cards (verified set 617277655)
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-Public key infrastructure
-?
-is treated as the most effective method for providing verification during electronic transactions  _(Mod 03 p82)_

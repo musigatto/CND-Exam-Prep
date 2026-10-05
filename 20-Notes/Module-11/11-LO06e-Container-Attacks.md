@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "06"
-tags: [threat, mod/11, flashcard/11]
+tags: [threat, mod/11]
 topic: "Container and Kubernetes attacks"
 exam_weight: unknown
 status: done
@@ -67,11 +67,11 @@ Attacker **gains unauthorized access to a single container**. Causes as listed:
 | **Explosion of east-west traffic** | containers are **dynamically deployed in multiple hosts or clouds**; **east-west traffic** (traffic flow **within a data center**) and internal traffic **should be monitored for attacks** | |
 | **Increased attack surface** | **every container has an attack surface and vulnerabilities**; additionally, **container orchestration tools like Docker and Kubernetes also increase the attack surface** of the container | |
 | **Automating security to keep pace** | the **dynamic nature and constantly changing environment** mean **old models and security tools cannot provide complete protection** → security **must be automated** | |
-| Too many containers | — | ✔ |
-| Communication between containers | — | ✔ |
-| Default configuration settings | — | ✔ |
-| Runtime security challenges | — | ✔ |
-| Compliance issues | — | ✔ |
+| Too many containers | — | • |
+| Communication between containers | — | • |
+| Default configuration settings | — | • |
+| Runtime security challenges | — | • |
+| Compliance issues | — | • |
 
 "Kubernetes containers are **vulnerable to attacks externally through the network or internally by an insider**." _(Mod 11 p109)_
 
@@ -101,24 +101,8 @@ Attacker **gains unauthorized access to a single container**. Causes as listed:
 | On a pod | exfiltrate via C2 reverse shell or tunneling | **Data exfiltration from a pod** _(p110)_ |
 | On a worker node | dirty cow → root → node | **Compromised worker node** _(p110)_ |
 
-## Cards
 
-Docker — name the four security threats and what each is.
-?
-**Escaping** = escape the container and gain **root on the host server**, then reach other machines on the local network. **Cross-container attacks** = use a compromised container to attack other containers on the same host or local network. **Inner-container attacks** = unauthorized access to a **single** container. **Docker registry attacks** = **image forgery** (tamper with the image) and **replay attack** (provide outdated content).
 
-List the five factors that may facilitate container breakouts (escaping).
-?
-**Insecure defaults and weak configuration** · **information disclosure** · **weak network defaults** · **working with the root user (UID 0)** · **mounting host directories inside containers**.
 
-Kubernetes data exfiltration from a pod — which two techniques does the courseware name?
-?
-**A reverse shell in a pod connecting to a command/control server**, and **network tunneling for hiding sensitive information**.
 
-Compromised container — which malicious processes may it run, and what enables it?
-?
-**Cryptomining, network scanning, and port scanning** — a container normally runs a well-defined set of processes, so extra processes are the tell. Reached via **application misconfiguration** → access the container → hunt for weaknesses in the **network, process controls, or file system**.
 
-How is a Kubernetes worker node compromised, and what does it give the attacker (p110)?
-?
-Through vulnerabilities such as the **dirty cow Linux kernel vulnerability**, which enables **user privilege escalation to root** — taking the whole host running the containers. Vulnerable components listed: management server, UI/API services, etcd, kubelets, compromised nodes/pods/accounts, exposed dashboard.

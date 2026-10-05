@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "06"
 lo: "04"
-tags: [process, tool, command, policy, concept, mod/06, flashcard/06]
+tags: [process, tool, command, policy, concept, mod/06]
 topic: "Linux X11 Removal, Disk Partitions, Quota, USB Block"
 exam_weight: unknown
 status: done
@@ -49,23 +49,7 @@ unresolved: []
   - BIOS option: disable USB from BIOS config; protect BIOS with password so nobody boots from USB
   - GRUB option: open grub.conf / menu.lst, add `nousb` to the kernel line (e.g. `kernel /vmlinuz-2.6.18-128.1.1.el5 ro root=LABEL=/ console=tty0 console=ttyS1,19200n8 nousb`)
 
-## Cards
-Disable X Windows at boot?
-?
-Edit /etc/inittab: `id:5:initdefault:` → `id:3:initdefault:`; remove via `yum groupremove "X Window System"`.
 
-Separate which partition mounts + fstab options?
-?
-/usr, /home, /var, /var/tmp, /tmp (+Apache/FTP roots). Options: noexec (no binaries), nodev (no device files), nosuid (no SUID/SGID).
 
-Disk quota enable step sequence?
-?
-`sudo apt install quota` → verify quota_v1/v2 module → edit /etc/fstab (usrquota,grpquota) + `mount -o remount /` → `quotacheck -ugm /` → `quotaon -v /` → `edquota -u <user>` → check `quota -vs <user>`.
 
-Methods to block usb-storage?
-?
-Fake install `install usb-storage /bin/true` in /etc/modprobe.d/block_usb.conf; blacklist in /etc/modprobe.d/blacklist.conf; rename usb-storage.ko → .blacklist; BIOS disable; GRUB `nousb` kernel arg.
 
-Why remove X11?
-?
-Not needed for dedicated mail/web servers; vulnerabilities can escalate non-root users to higher privilege.

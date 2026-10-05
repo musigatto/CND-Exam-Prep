@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "02"
-tags: [concept, tool, mod/11, flashcard/11]
+tags: [concept, tool, mod/11]
 topic: "Virtualization components and enablers"
 exam_weight: unknown
 status: done
@@ -47,25 +47,9 @@ _(Mod 11 p16)_
 ## Trap
 Only **SDN and NFV** are credited with decoupling the control and forwarding planes — **NV is not** named for that. All three are enablers of creating virtual environments. _(Mod 11 p16)_
 
-## Cards
 
-Virtualization components — list the seven
-?
-Hypervisor / VMM · Guest machine · Host / physical machine · Management Server · Management Console · Network Components · Virtual Storage.
 
-Which two components decouple the control and forwarding planes?
-?
-**Software Defined Network (SDN)** and **Network Function Virtualization (NFV)** — not NV.
 
-What do SDN and NFV combine, and what does that produce?
-?
-They **combine hardware and software** to create a **completely software-defined network** → simpler provisioning and management of network resources.
 
-Enablers — how do the virtual networks relate to the physical network and to virtual environments?
-?
-They are **decoupled from the underlying network hardware**, **integrate with virtual environments**, and can **run independently over a physical network in a hypervisor**.
 
-What does virtual storage do, and what is an example network component?
-?
-Virtual storage **abstracts physical storage into a single storage device** so the systems on the host can share it. Network components include **firewalls, load balancers, storage, switches, network interface cards**.
 

@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "04"
-tags: [tool, concept, mod/12, flashcard/12]
+tags: [tool, concept, mod/12]
 topic: "AWS IAM core, features, Identity Center, Access Analyzer"
 exam_weight: unknown
 status: done
@@ -29,15 +29,15 @@ unresolved:
 
 - "AWS Identity and Access Management (IAM) is a **web service** that secures access to AWS
   services and resources, as well as the **creation and management of AWS users and groups**,
-  in addition to the use of **permissions to allow or prohibit access** to AWS services." _(p44)_
+  in addition to the use of **permissions to allow or prohibit access** to AWS services." _(Mod 12 p44)_
 - IAM helps set and manage **guardrails** and **fine-grained access controls** for the
-  **workforce and workloads**. _(p44)_
+  **workforce and workloads**. _(Mod 12 p44)_
 - Manage identities **across different AWS accounts**, or **centrally connect** identities to
-  various AWS accounts. _(p44)_
+  various AWS accounts. _(Mod 12 p44)_
 - **Temporary security credentials** can be granted to workloads that access your AWS
-  resources using IAM. _(p44)_
+  resources using IAM. _(Mod 12 p44)_
 - "You can **examine access to right-size permissions** on a regular basis, which will lead to
-  **least privilege**." _(p44)_
+  **least privilege**." _(Mod 12 p44)_
 
 **Figure 12.3 — IAM as the who/what bridge** _(Mod 12 p44)_
 
@@ -56,7 +56,7 @@ operations = viewing · creating · editing · deleting
 ```
 
 - "The operations that are to be performed on the resource by the principal **must be defined
-  in a policy**." _(p44)_
+  in a policy**." _(Mod 12 p44)_
 - Features panel printed on p44: **AWS Access Analyzer · AWS IAM Identity Center · Manage IAM
   permissions · Manage IAM roles · Multi-Factor Authentication (MFA)**.
 
@@ -80,13 +80,13 @@ _(Mod 12 p45)_
 
 Formerly **AWS Single Sign-On** _(p45–46)_. "Provides the administrator **a central place** to
 work together on the administration of users and their access to **AWS accounts and cloud
-applications**." _(p46)_
+applications**." _(Mod 12 p46)_
 
 - Manage **sign-in security for the workforce** by establishing or connecting users and groups
-  to AWS **in a single place**. _(p46)_
+  to AWS **in a single place**. _(Mod 12 p46)_
 - Assign workforce identities to AWS accounts with **multi-account permissions**; use
-  **application assignments** to give users access to **SaaS applications**. _(p46)_
-- "IAM Identity Center can work with **organizations of any size and type**." _(p46)_
+  **application assignments** to give users access to **SaaS applications**. _(Mod 12 p46)_
+- "IAM Identity Center can work with **organizations of any size and type**." _(Mod 12 p46)_
 
 | Key feature | Printed statement |
 |---|---|
@@ -104,7 +104,7 @@ access* · *Application assignments — one place to manage access to AWS and cl
 ## IAM Access Analyzer _(Mod 12 pp48–49)_
 
 "Helps in identifying resources, generating, and validating policies" — a service that "helps
-process management of cycle toward the **least privilege** in **three steps**." _(p48)_
+process management of cycle toward the **least privilege** in **three steps**." _(Mod 12 p48)_
 
 | Step | What Access Analyzer does |
 |---|---|
@@ -118,9 +118,9 @@ _(Mod 12 p48)_
 
 - Identifies resources and accounts — "such as **IAM roles** or **Amazon S3 buckets**" — that
   are shared with an external entity; helps recognise **accidental access to data and
-  resources**, "which is a security risk". _(p48)_
+  resources**, "which is a security risk". _(Mod 12 p48)_
 - Uses **logic-based reasoning** to recognise resources shared with **external principals** and
-  analyse the **resource-based policies** in the AWS environment. _(p48)_
+  analyse the **resource-based policies** in the AWS environment. _(Mod 12 p48)_
 
 **Resource types analysed** _(Mod 12 pp48–49)_:
 
@@ -143,29 +143,29 @@ _(Mod 12 p48)_
 
 - Policies can be created or edited with the **AWS API, AWS CLI, or the JSON policy editor in
   the IAM console**; Access Analyzer validates the policy against **IAM policy grammar and
-  best practices**. _(p49)_
+  best practices**. _(Mod 12 p49)_
 - Findings show **security errors, warnings, suggestions, and general warnings**, each with
-  **actionable recommendations**. _(p49)_
+  **actionable recommendations**. _(Mod 12 p49)_
 - "Policy validation is a security feature provided by IAM Access Analyzer, which
   **continuously monitors and reviews resources** to identify any permissions that might result
-  in security risks." _(p49)_
+  in security risks." _(Mod 12 p49)_
 
 ### 3 · Generating policies _(Mod 12 p49)_
 
 - Analyses **AWS CloudTrail logs** to identify the actions and services used by an **IAM entity
   (user or role)** within a **specified date range**, then generates an IAM policy from that
-  access activity. _(p49)_
+  access activity. _(Mod 12 p49)_
 - Use the generated policy to **refine an entity's permissions** by attaching it to an **IAM
-  user or role**. _(p49)_
+  user or role**. _(Mod 12 p49)_
 - Refinement also uses the **last-used role** and **last-used access key** to update the policy
-  and remove unused access. _(p49)_
+  and remove unused access. _(Mod 12 p49)_
 
 ## IAM access rules and permissions _(Mod 12 p50)_
 
 - IAM "enables you to **control access** to AWS services and resources **securely**… It allows
-  establishment of **access rules and permissions** to specific **users and applications**." _(p50)_
+  establishment of **access rules and permissions** to specific **users and applications**." _(Mod 12 p50)_
 - It controls **who is authenticated (signed in)** and **who is authorized (has permissions)**
-  for resource access. _(p50)_
+  for resource access. _(Mod 12 p50)_
 - Figure 12 objects (legible) _(Mod 12 p50)_: `Account` · `Admins` (Harry, Mike) ·
   `Group: Developers` (Oliver, Jack) · `DevApp1` · `Group: Test` (George, Jacob) · `TestApp1` ·
   `Actions (Console) or Operations (API/CLI)` · `Resource-based Policies` · one truncated policy
@@ -191,28 +191,9 @@ _(Mod 12 pp50–51)_
 Upstream: [[12-LO04a-AWS-Shared-Responsibility-Models]] · generic IAM concepts:
 [[03-LO03-IAM-Authentication-Authorization]] · PCI DSS: [[02-LO02a-Regulatory-Frameworks-Laws]]
 
-## Cards
 
-AWS IAM — the four attributes it ties together
-?
-Who = workforce users and workloads with IAM · Can access = permissions with IAM policies · What = AWS services · Resources = within organization
 
-What AWS IAM Identity Center was formerly called
-?
-AWS Single Sign-On
 
-IAM Identity Center — the five key features
-?
-Workforce identities · application assignments for SAML applications (SAML 2.0) · Identity Center enabled applications · multi-account permissions · AWS access portal
 
-IAM Access Analyzer — the twelve resource types it generates findings for
-?
-IAM roles · KMS keys · S3 buckets · Secrets Manager secrets · Lambda functions and layers · EBS volume snapshots · SQS queues · SNS topics · RDS DB snapshots · RDS DB cluster snapshots · ECR repositories · EFS file systems
 
-IAM Access Analyzer — what does policy validation produce
-?
-Findings containing security errors, warnings, suggestions and general warnings, each with actionable recommendations; checked with more than 100 policy checks
 
-What Access Analyzer analyses to generate a policy
-?
-AWS CloudTrail logs — the actions and services used by an IAM entity (user or role) within a specified date range; the generated policy can then be attached to a user or role

@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "08"
 lo: "05"
-tags: [process, tool, bestpractice, mod/08, flashcard/08]
+tags: [process, tool, bestpractice, mod/08]
 topic: "IoT Security Measures — Isolation, Monitoring, Shadow IoT (M20–M27)"
 exam_weight: unknown
 status: done
@@ -44,27 +44,8 @@ unresolved: []
 - Internet-connected devices not under IT control
 - Discover via **Shodan** / network scanning; bring under M01 visibility; segment/disable or secure
 
-## Cards
-Security measures M20–M27?
-?
-Wi-Fi isolation → Ethernet isolation → internet-access control → network monitoring → bandwidth monitoring → log centralization → public Wi-Fi security → shadow IoT management.
 
-VLAN port mapping example (M21)?
-?
-X1 = trunk/gateway, X2 = main LAN, X3 = IoT subnet.
 
-Guest-network client isolation tool?
-?
-pcWRT guest network (isolate IoT traffic from LAN).
 
-Bandwidth monitoring tools (M24)?
-?
-SolarWinds (NPM / NetFlow Traffic Analyzer), Paessler PRTG.
 
-Logarithm centralization (M25)?
-?
-Cloud IoT Core + Stackdriver Logging (GCP); SIEM.
 
-Shadow IoT discovery tool (M27)?
-?
-Shodan — Internet-facing IoT devices outside IT control.

@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "03"
-tags: [tool, bestpractice, mod/12, flashcard/12]
+tags: [tool, bestpractice, mod/12]
 topic: "CSP security feature comparison (AWS/Azure/GCP)"
 exam_weight: unknown
 status: done
@@ -85,7 +85,7 @@ Columns: **ON-PREMISE · AWS · AZURE · GOOGLE · ORACLE · IBM**
 > Read the names, not the alignment. A name on line *n* of a column is **not** the value for
 > feature row *n*.
 
-| CSP | Panel 1 — readable entries _(p38)_ | Panel 2 — readable entries _(p38)_ |
+| CSP | Panel 1 — readable entries _(Mod 12 p38)_ | Panel 2 — readable entries _(Mod 12 p38)_ |
 |---|---|---|
 | **AWS** | AWS Security Groups · AWS Network · **Third Party Only** · AWS WAF · AWS Firewall Manager · AWS Security Hub · Amazon Guard Duty · **Third Party Only** · **Third Party Only** · Amazon Macie · Amazon Inspector · AWS Trusted Advisor · **Third Party Only** · Elastic Load Balancer · VPC Customer Gateway · AWS Transit Gateway · Key Management Service (KMS) | Elastic Block Storage · AWS Shield · IAM · AWS MFA · CloudWatch/S3 Bucket · Elastic Load Balancer/CloudFront · Virtual Private Cloud · Direct Connect · **Third Party Only** · AWS Certificate Manager · Amazon EC2 Container Service (ECS) · AWS CloudTrail · AWS Compliance Center · AWS Backup · Amazon S3 Glacier |
 | **AZURE** | Network Security Groups (NSGs) · **Third Party Only** · Application Gateway · Advanced Log Analytics · Azure Monitor · Microsoft Antimalware / Microsoft Defender for Cloud · Azure AD · Privileged Identity Management · Information Protection (AIP) · Microsoft Defender for Cloud · Office Advanced Threat Protection · Application Gateway · Virtual Network · `SSTP` *(garbled, unresolved)* · Key Vault | Storage Encryption for Data at Rest · Built-in DDOS defense · Azure Active Directory · Azure Active Directory · Azure Audit Logs · Azure Load Balancer · Virtual Network · ExpressRoute/MPLS · Microsoft Defender ATP · **Third Party Only** · Azure Container Service (ACS) · Azure Policy · Azure Backup · Azure Site Recovery |
@@ -114,24 +114,8 @@ Decision rules that close the LO _(Mod 12 p39)_:
 
 Upstream: [[12-LO03a-CSP-Landscape-and-Evaluation]]
 
-## Cards
 
-The three closing questions for evaluating a CSP
-?
-How many security tools are currently required in the organization? · What risks can the security tools reduce/address? · Rationalize the existing security vendors and tools
 
-When are third-party security tools required in cloud?
-?
-For the security controls that are not provided by the CSP
 
-What must be checked about third-party products before choosing a provider?
-?
-That they can be integrated with the cloud platform; then combine third-party controls with the CSP's own controls
 
-Approach used to review CSP tools before a technology decision
-?
-A self-check or requirement-driven approach — review requirements and each CSP's existing tools
 
-Control categories the on-premise column is measured against
-?
-Firewall and ACLS · IPS/IDS · WAF · SIEM · Log Analytics · Antimalware · PAM · DLP · Vulnerability Assessment · Email Protection · SSL Decryption · Reverse Proxy · Key Management · Encryption at rest · DDOS · MFA · Centralized logging/auditing · Load balancer · LAN/WAN · Endpoint protection · Certificate management · Container security · GRC · Monitoring · Backup and recovery

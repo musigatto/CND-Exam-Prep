@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "06"
-tags: [tool, concept, mod/11, flashcard/11]
+tags: [tool, concept, mod/11]
 topic: "Docker networking and drivers"
 exam_weight: unknown
 status: done
@@ -86,28 +86,9 @@ Docker allows **connecting multiple containers and services, or other non-Docker
 
 → [[11-LO03h-VLAN-Security]] (a CNM network can implement a Linux bridge or VLAN)
 
-## Cards
 
-Docker client ↔ daemon — how do they talk, and where can each run?
-?
-The client interacts with the daemon using the **REST API through Unix sockets or a network interface**. Client and daemon can run on the same system, or the client can connect to a **remote** Docker daemon.
 
-CNM — what are the three objects the courseware itemizes, and what is each for?
-?
-**Sandbox** = the container's network stack (routing table, interfaces, DNS; multiple endpoints). **Endpoint** = joins a sandbox to a network and abstracts the actual connection from the application. **Network** = a collection of endpoints with connectivity between them.
 
-Docker native network drivers — list them and the host-bridge one.
-?
-**Host, Bridge, Overlay, MACVLAN, None**. The **bridge** driver creates a **Linux bridge on the host, managed by the Docker**.
 
-What do the Host, Overlay, MACVLAN and None drivers do (p97)?
-?
-**Host** = container uses the host networking stack · **Overlay** = container-to-container communication over the physical network infrastructure · **MACVLAN** = connection between container interfaces and the parent host interface (or sub-interfaces) · **None** = container implements its own networking stack, isolated from the host networking stack.
 
-CNM drivers — the two types, and who writes each.
-?
-**Native network drivers** are **provided by Docker** and used through **Docker network commands**; **remote network drivers** are **created by the community and vendors**. Multiple drivers can coexist on an engine/cluster, but each Docker network is represented by **a single driver**.
 
-What do IPAM drivers do, and how can an IP be set manually (p97)?
-?
-IPAM drivers provide **default subnets or IP addressing to the network and the endpoints**. A user can assign an IP address manually through the **network, container, and service create commands**.

@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "08"
 lo: "05"
-tags: [crypto, process, bestpractice, mod/08, flashcard/08]
+tags: [crypto, process, bestpractice, mod/08]
 topic: "IoT Security Measures — Crypto, Identity, Hardware (M11–M15)"
 exam_weight: unknown
 status: done
@@ -36,27 +36,8 @@ unresolved: []
 - **Secure enclaves / TEE (Intel SGX, ARM TrustZone)** — isolate sensitive workloads
 - Tamper-evidence, secure element per device
 
-## Cards
-Security measures M11–M15?
-?
-E2E encryption → E2E security & identity mgmt → strong authentication → chip-level security → hardware security.
 
-E2EE protocols for IoT (M11)?
-?
-TLS v1.2/1.3, IPsec ESP, DTLS, AES-256; no plaintext HTTP/Telnet/MQTT.
 
-IoT identity mgmt (M12)?
-?
-X.509 / mTLS device identity, PKI/private CA, certificate rotation.
 
-Strong authentication for IoT (M13)?
-?
-Unique credentials, MFA/2FA, smartcards/FIDO2, biometrics; per-device secrets.
 
-Chip-level security (M14)?
-?
-Secure SoC, cryptoprocessors, TPM 2.0, protected secure boot, Root of Trust.
 
-Hardware security modules (M15)?
-?
-HSM (key mgmt), Intel SGX / ARM TrustZone secure enclaves, secure elements, tamper-evidence.

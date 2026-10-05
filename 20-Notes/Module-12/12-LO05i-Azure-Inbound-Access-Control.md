@@ -1,13 +1,13 @@
----
+﻿---
 type: note
 module: "12"
 lo: "05"
-tags: [bestpractice, policy, mod/12, flashcard/12]
+tags: [bestpractice, policy, mod/12]
 topic: "Azure inbound access control — SSL, endpoint ACLs, disabling RDP/SSH, VPN, ExpressRoute"
 exam_weight: unknown
 status: done
 unresolved:
-  - "p204 the PowerShell block OCRs EVERY hyphen as an em-dash and confuses lowercase l with the digit 1: 'New—AzureAc1Config', '—AddRu1e—ACL', 'user%l'. The commands are reproduced with hyphens but the ambiguous characters are kept as printed (New-AzureAc1Config, -AddRu1e); they are NOT normalised to the real cmdlet spellings. Likewise $ac11/$acll appear as $ac1l / $ac11 across the two renderings of the same page."
+  - "p204 the PowerShell block OCRs EVERY hyphen as an em-dash and confuses lowercase l with the digit 1: 'New—AzureAc1Config', '—AddRu1e—ACL', 'user%l'. The commands are reproduced with hyphens but the ambiguous characters are kept as printed (New-AzureAc1Config, -AddRu1e); they are NOT normalised to the real cmdlet spellings. The ACL variable name is the one deliberate exception: the source prints it in THREE different ways across the two renderings of p204 - `$acll` (lowercase L) three times and `$ac11` (digit 1) once - so this note renders ONE consistent `$ac1l` throughout rather than implying any of those is the real name. Nothing here identifies the true variable name."
   - "p204 the p204 figure version of the endpoint-creation line prints as 'Get—AzureVM —ServiceName $serviceName —Name $vmName —Name \"web\" —Protocol tcp —- Publicport 80 -ACL $acll' while the body prints 'Get—AzureVM —ServiceName $serviceName —Name $vmName I Add—AzureEndpoint —Name \"web\" —Protocol tcp —Localport 80 80 -ACL $acll'. The body reading is used; the figure version is not asserted."
   - "pp204-205 Figures 12.133/12.134 are partially garbled. Readable column headers: Name, Protocol, Public port, Private port, Floating IP address, Access control list; a rule row 'myHTTP TCP 82 82 Disabled UDP *' on VM 'myServer'; ACL order values that OCR as '1001' and '200'; remote subnets 10.0.0.0/8, 0.0.0.0/0 and 10.1.0.0/8; action 'permit'. Which remote subnet belongs to which order value is NOT asserted."
   - "p206 the surrounding screenshot of TestVNet4 shows navigation labels only ('Connections', 'Point-to-site configuration', 'Site-to-site connection', 'Virtual Network Gateway', 'Point-to-site is not configured', 'ExpressRoute'). No configuration step is printed for any of them in this range."
@@ -28,7 +28,7 @@ unresolved:
 ## Secure inbound internet communications to VMs using SSL _(Mod 12 p203)_
 
 - Rule: "Implement **Secure Socket Layer (SSL) encryption** to secure data transfer." "SSL
-  encryption is implemented for secured data transfer." _(p203)_
+  encryption is implemented for secured data transfer." _(Mod 12 p203)_
 
 **Steps to configure SSL for applications** _(p203, four as printed)_
 
@@ -37,7 +37,7 @@ unresolved:
 3. **Upload a certificate**
 4. **Connect to the role instance via HTTPS**
 
-**Steps to configure SSL in Microsoft Azure** _(p203)_
+**Steps to configure SSL in Microsoft Azure** _(Mod 12 p203)_
 
 1. "On the Azure portal, click on **All resources** and select the cloud service."
 2. "Click on **Certificates**."
@@ -47,9 +47,9 @@ unresolved:
 ## Configure endpoint Access Control Lists _(Mod 12 pp204–205)_
 
 "In Microsoft Azure, the customers can **create and manage network ACLs for endpoints** with
-**PowerShell or through the Management Portal**." _(p204)_
+**PowerShell or through the Management Portal**." _(Mod 12 p204)_
 
-**Configure the endpoint ACL to** _(p204)_
+**Configure the endpoint ACL to** _(Mod 12 p204)_
 
 - "**Restrict access on public endpoint IP addresses**"
 - "**Restrict the traffic to specific IP address sources**"
@@ -70,7 +70,7 @@ Update-AzureVM
 
 ### Azure Management Portal — walkthrough _(Mod 12 pp204–205)_
 
-"The portal can be used to **add, modify, or remove an ACL from an endpoint**." _(p204)_
+"The portal can be used to **add, modify, or remove an ACL from an endpoint**." _(Mod 12 p204)_
 
 1. "**Sign into the Azure portal**."
 2. "Select **Virtual machines** and click on the **VM** that required to be configured."
@@ -85,7 +85,7 @@ Private port · Floating IP address · Access control list**; ACL rules carry an
 ## Disable RDP/SSH direct access to VMs — why the courseware says it is a risk _(Mod 12 p206)_
 
 "The remote desktop protocol (RDP) and secure shell (SSH) protocol help to **connect with Azure VMS
-remotely**." _(p206)_
+remotely**." _(Mod 12 p206)_
 
 Risk chain, as printed:
 
@@ -96,16 +96,16 @@ Risk chain, as printed:
 3. "Therefore, **disable RDP/SSH direct access to VMS over the internet**."
 
 Replacement paths printed: "Cloud consumers can use other options such as **Point-to-Site VPN,
-Site-to-Site VPN, and Express Route** to access VMS for remote management." _(p206)_
+Site-to-Site VPN, and Express Route** to access VMS for remote management." _(Mod 12 p206)_
 
-**Point-to-Site VPN** _(p206)_ — "a **remote access VPN client/server connection**" that lets
+**Point-to-Site VPN** _(Mod 12 p206)_ — "a **remote access VPN client/server connection**" that lets
 "**a single user/organization** connect to an Azure virtual network over the internet"; "**Initially,
 establish the point-to-site connection. Later, the user who has connected to Azure virtual network
 via Point-to-Site VPN can access Azure VMs**." Protocols printed: **SSTP (Secure Socket Tunneling
 Protocol)**, **Open VPN Protocol**, **IKEv2 VPN**. Use cases: people connecting from remote
 locations "like a conference and home"; "a **few clients** need to connect to a VNet".
 
-**Site-to-Site VPN** _(p206)_ — "enables an **entire on-premises network** to access VMS on Azure
+**Site-to-Site VPN** _(Mod 12 p206)_ — "enables an **entire on-premises network** to access VMS on Azure
 virtual network over the Internet. It allows the users/organizations to access Azure VMS **using the
 RDP/SSH protocol instead of direct RDP/SSH access over the Internet**."
 
@@ -129,28 +129,8 @@ RDP/SSH protocol instead of direct RDP/SSH access over the Internet**."
 - "Organization can get **cost benefits** by using Express Route connections for transferring data
   between Azure and on-premises infrastructure."
 
-## Cards
 
-What the courseware says you must do to secure inbound internet communications to an Azure VM, and the four application-level steps
-?
-Implement SSL encryption to secure data transfer — get an SSL certificate, modify the service definition and configuration files, upload the certificate, then connect to the role instance via HTTPS
 
-What an endpoint ACL in Azure is used for, and what the two tool options are
-?
-To restrict access on public endpoint IP addresses and restrict traffic to specific IP address sources — created and managed with PowerShell or through the Azure Management Portal (which can add, modify or remove an ACL on an endpoint)
 
-The two-step risk the courseware gives for exposing RDP/SSH to the internet
-?
-An attacker using brute-force techniques over RDP/SSH over the internet can gain access to an Azure VM; once in, that VM becomes a launch point to compromise other VMs on the virtual network or attack network devices outside the Azure cloud
 
-The three alternatives the courseware offers instead of direct RDP/SSH over the internet
-?
-Point-to-Site VPN, Site-to-Site VPN, and ExpressRoute — the protocols printed for Point-to-Site are SSTP, Open VPN and IKEv2
 
-The three security benefits the courseware states for Site-to-Site VPN
-?
-Secure Connectivity — all traffic encrypted, protected against data modification and eavesdropping · Simplified Network Architecture — no internal-to-external IP address conversion · Access Control — rules defined simply because S2S VPN users are internal users
-
-ExpressRoute versus Site-to-Site VPN as the courseware describes it
-?
-It works like Site-to-Site VPN but over a dedicated WAN link that does not go through the internet, so it is stable, faster, lower latency and more reliable, and it creates private connections between on-premises/co-located infrastructure and Azure data centers

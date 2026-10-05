@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "05"
-tags: [bestpractice, mod/11, flashcard/11]
+tags: [bestpractice, mod/11]
 topic: "NFV security measures"
 exam_weight: unknown
 status: done
@@ -57,7 +57,7 @@ Attack side of the last two rows: [[11-LO05b-NFV-Vulnerabilities-and-Attacks]].
 | **Secure management, orchestration, automation** | security mechanisms for **all NFV MANO functions** should be **automated and agile** for **quick deployment at different security policy enforcement points (PEPs)** |
 | **Ensuring controller availability** | the controller is the **centralized decision point**; if compromised → **wide network impact** → its access must be **stringently monitored and controlled** |
 | **Attack on the orchestrator** | adversary **instantiates a modified VNF**, which might **break access privileges and VNF isolation** |
-| ↳ mitigations | **predefine user authentication, user privilege control, and network configuration** · implement a **security monitoring system to detect and separate the defective VNF** |
+| → mitigations | **predefine user authentication, user privilege control, and network configuration** · implement a **security monitoring system to detect and separate the defective VNF** |
 | *Implement storage protection* | figure callout only — no detail in the slice |
 | *Protect the scaling and elasticity of VNF* | figure callout only — no detail in the slice |
 
@@ -104,28 +104,9 @@ VLAN-level detail: [[11-LO03h-VLAN-Security]] · host hardening: [[11-LO03f-Hype
 3. **RFA / NaaS defence sits in the hypervisor**, not in the VNF: detect excessive consumption + malicious virtual networks. _(p83)_
 4. **Live migration is protected by `vTPM` over `TLS`.** _(p84)_
 
-## Cards
 
-NFV infrastructure security by domain
-?
-**Hypervisor** — authentication controlled/managed by the VMs (prevents unauthorized access, data leaks) · **Compute** — encrypt data, accessible only by the VNFs sharing the resources · **Network** — TLS, IPSec, SSH.
 
-MANO: how should the security mechanisms be delivered, and where are they deployed?
-?
-**Automated and agile** for all NFV MANO functions, enabling **quick deployment at different security policy enforcement points (PEPs)**.
 
-Why is controller availability a MANO priority?
-?
-The controller is the **centralized decision point**; if compromised it causes a **wide network impact**, so its access must be **stringently monitored and controlled**.
 
-Orchestrator attack: what does the adversary do and what mitigates it?
-?
-It **instantiates a modified VNF**, breaking **access privileges and VNF isolation**. Mitigations: **predefine user authentication, user privilege control, network configuration**; **security monitoring system to detect and separate the defective VNF**.
 
-What is sVirt, and which two tools harden the Linux kernel?
-?
-**sVirt** = a **new form of SELinux** that **separates VM processes and data files** and safeguards **Linux-based hypervisors**. Tools: **`hidepid`** and **`GRSecurity`**.
 
-NFV best practice: TPM, launch control policy, security zoning
-?
-Use a **TPM as a hardware basis of trust**; its **launch control policy (LCP)** requires **validation of platform measurements**. Zoning: **separate VM from management traffic**, group same-function VMs into **isolated zones**, protect each zone with **access control policies and firewalls such as a DMZ**.

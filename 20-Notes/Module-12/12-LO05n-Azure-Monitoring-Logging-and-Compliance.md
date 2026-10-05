@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "05"
-tags: [tool, concept, bestpractice, mod/12, flashcard/12]
+tags: [tool, concept, bestpractice, mod/12]
 topic: "Azure monitoring, logging, compliance — Defender for Cloud, Activity Log, Network Watcher"
 exam_weight: unknown
 status: done
@@ -54,7 +54,7 @@ then network flow, then app, then alerts.
 - "It protects workloads across **multi-cloud (AWS and GCP), Azure, and on-premises** environments
   from evolving threats."
 
-**Three main functions** _(p236)_
+**Three main functions** _(Mod 12 p236)_
 
 | Function | Printed text |
 |---|---|
@@ -93,16 +93,16 @@ then network flow, then app, then alerts.
 | 4 | **Network in** |
 | 5 | **Network out** |
 
-**Walkthrough** _(p238)_: "Login to the Azure Management Portal" → "Click on **Virtual machine**" →
+**Walkthrough** _(Mod 12 p238)_: "Login to the Azure Management Portal" → "Click on **Virtual machine**" →
 "**Select the virtual machine**" → "**Select Monitor** from the top menu".
 
 ## Azure Monitoring: Activity Log _(Mod 12 pp239–240)_
 
 - "Azure Activity Log provides **insights regarding the subscription-level events** that occur in
   Microsoft Azure. It is used to **collect, view, and analyze the activity log**."
-- Slide _(p239)_: "Use the Activity Log to **collect, view, and analyze activity logs**".
+- Slide _(Mod 12 p239)_: "Use the Activity Log to **collect, view, and analyze activity logs**".
 
-**Filter fields for activity log events — all ten as printed** _(p239)_
+**Filter fields for activity log events — all ten as printed** _(Mod 12 p239)_
 
 | # | Field | # | Field |
 |---|---|---|---|
@@ -112,7 +112,7 @@ then network flow, then app, then alerts.
 | 4 | **Resource group** | 9 | **Event initiated by** |
 | 5 | **Resource (name)** | 10 | **Open search** |
 
-**Walkthrough** _(p240)_
+**Walkthrough** _(Mod 12 p240)_
 
 1. "From the Azure homepage, navigate to **Monitor**." _(Fig 12.164)_
 2. "Navigate to **Activity Log**, type the name of the field in the search box (**operation
@@ -133,7 +133,7 @@ setings` (label garbled), `Download CSV`, `Pin filters`, and the log-type tabs `
 - "This service helps cloud admins to **detect network vulnerabilities** and **secure cloud
   operations**."
 
-**Operational security features — all seven, as printed** _(p242)_
+**Operational security features — all seven, as printed** _(Mod 12 p242)_
 
 | # | Feature | Printed description |
 |---|---|---|
@@ -154,28 +154,9 @@ setings` (label garbled), `Download CSV`, `Pin filters`, and the log-type tabs `
 - Defender for Cloud = **CSPM + CWP**, **assess → secure → defend**, spanning **multi-cloud
   (AWS/GCP) + Azure + on-premises**.
 
-## Cards
 
-What does the Azure Activity Log give you, and what is it scoped to?
-?
-Insights into subscription-level events — it is used to collect, view and analyze the activity log
 
-Name the Activity Log filter fields printed on p239
-?
-Timespan · Category · Subscription · Resource group · Resource (name) · Resource type · Operation name · Severity · Event initiated by · Open search
 
-The five VM statistics the Azure portal is said to track
-?
-CPU percentage · Disk Read Bytes/s · Disk Write Bytes/s · Network in · Network out
 
-What is Microsoft Defender for Cloud, in the courseware's own framing?
-?
-A cloud security posture management (CSPM) and cloud workload protection (CWP) solution that continuously assesses, secures and defends workloads across multi-cloud (AWS and GCP), Azure and on-premises
 
-Name the seven Network Watcher operational security features
-?
-Audit Logs · IP Flow Verifies · Next Hop · Security Group View · NSG Flow Logging · Remote Network Monitoring · VPN Connectivity Issues
 
-What 5-tuple does IP Flow Verifies check, and what is it for?
-?
-Source IP, Destination IP, Protocol, Source Port and Destination Port — to check if a packet is denied or allowed according to flow information

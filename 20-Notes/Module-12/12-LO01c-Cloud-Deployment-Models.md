@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "01"
-tags: [concept, mod/12, flashcard/12]
+tags: [concept, mod/12]
 topic: "Cloud deployment models"
 exam_weight: unknown
 status: done
@@ -93,7 +93,7 @@ non-critical activities on a **public** cloud.
 
 ## Multi-cloud _(Mod 12 p14–15)_
 
-**Trap:** multi-cloud ≠ hybrid. A combination of **only two or more public cloud services**; it
+**Trap:** multi-cloud ≠  hybrid. A combination of **only two or more public cloud services**; it
 does **not** mix public and private. Strategy = an organization merging services from various
 public cloud providers.
 
@@ -105,33 +105,14 @@ public cloud providers.
 | Freely choose public cloud and connectivity providers | |
 | Scalable and flexible environments | |
 
-The **service × deployment combination matrix** (the table that categorizes cloud service
+The **service — deployment combination matrix** (the table that categorizes cloud service
 delivery) sits on p16, which leads the NIST reference-architecture note.
 
 Exam cross-refs: [[Question-Bank]]
 
-## Cards
 
-Deployment-model selection is driven by which five factors?
-?
-Where cloud computing services are hosted · Security requirements · Sharing cloud services · Ability to manage some or all cloud services · Customization capabilities
 
-Public cloud — disadvantages
-?
-Security is not guaranteed · Lack of control (third-party providers are in charge) · Slow speed (relies on internet connections, data transfer rate is limited)
 
-Private cloud — advantages
-?
-Enhance security (dedicated to a single organization) · More control over resources · Greater performance (inside the firewall) · Customizable hardware, network and storage · Sarbanes-Oxley, PCI DSS and HIPAA compliance data significantly easier to acquire
 
-Community cloud — what makes it different from a private cloud?
-?
-Multi-tenant infrastructure shared among organizations from a specific community with common computing concerns; on-premise or off-premise; governed by the participating organizations or a third-party managed service provider
 
-Hybrid cloud — courseware definition and example
-?
-Two or more clouds (private, public, community) that remain unique entities but are bound together; example — critical activities such as operational customer data on a private cloud, non-critical activities on a public cloud
 
-Does multi-cloud mix private and public clouds?
-?
-No — multi-cloud is a combination of only two or more public cloud services; it does not mix public and private cloud services

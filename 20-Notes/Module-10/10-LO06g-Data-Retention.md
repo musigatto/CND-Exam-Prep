@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "10"
 lo: "06"
-tags: [policy, bestpractice, process, mod/10, flashcard/10]
+tags: [policy, bestpractice, process, mod/10]
 topic: "Data Retention and Data Retention Policy"
 exam_weight: unknown
 status: done
@@ -30,19 +30,6 @@ unresolved: []
 - **Different policies for different data types** (per legal/business impact) · retain customer/user info **only as long as necessary**
 - **Implement software** to manage retention tasks · **classify data**: archive or delete · move **infrequently accessed files to lower-level archive** · organize archives for easy access
 
-## Cards
-What is a data retention policy?
-?
-Rules for preserving/maintaining data for operational or regulatory compliance — defines retention periods per data type + minimum destruction standards.
 
-Name regulatory/legal drivers of data retention named in courseware.
-?
-HIPAA, SOX, IRS, COPPA, EU GDPR.
 
-5 steps to create a data retention policy.
-?
-Build team → identify applicable regulatory compliances → specify included data types → develop policy → inform all employees.
 
-3 best practices for a data retention policy.
-?
-Simple and easy to implement · different policies per data type · retain customer/user info only as long as necessary · move infrequently accessed files to lower-level archive.

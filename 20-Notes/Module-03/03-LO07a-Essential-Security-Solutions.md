@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "03"
 lo: "07"
-tags: [tool, mod/03, flashcard/03]
+tags: [tool, mod/03]
 topic: "Essential Network Security Solutions — Appliances & Analyzers"
 exam_weight: unknown
 status: done
@@ -60,37 +60,15 @@ unresolved: []
 - Advantages: control productivity (block non-work/social sites) · high-level protection (malware) · restrict liability (external file sharing) · flexibility (change blocked sites anytime) · faster internet (bandwidth control)
 - Tools: **OpenDNS** (3 predefined filtering levels + custom categories/allow-list) · **Netsentron** (schools/businesses; blocks porn/offensive/unapproved sites; remote file work) · **Net Nanny** (parental: Windows/Mac/Android/iPhone/iPod/iPad; blocks porn, masks profanity, time limits, alerts/reports, per-user profiles)
 
-## Cards
-IDS vs IPS placement?
-?
-IPS is in-line (blocks/drops/corrects); IDS sits off-side via a network tap (monitors, cannot act directly).
 
 
-Three detection methods in an IDS?
-?
-Signature-based → anomaly-based (statistical) → stateful protocol analysis.
 
 
-Honeypot deployment types?
-?
-Production (in production network, looks real) vs Research (analyze attacker steps for countermeasures).
 
 
-Honeypot design types?
-?
-Pure · low-interaction (fake common services) · high-interaction (real systems via VM, costly).
 
 
-Proxy server main function?
-?
-Intercepts/filters client requests and serves them on behalf of real servers, hiding internal IPs; extra defense layer.
 
 
-Protocol analyzer NIC mode?
-?
-Promiscuous mode to capture all packets on the network.
 
 
-Web content filter protections?
-?
-Malware, phishing, pharming; filters by keywords, URLs, contextual analysis.

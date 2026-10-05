@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "04"
-tags: [tool, bestpractice, mod/12, flashcard/12]
+tags: [tool, bestpractice, mod/12]
 topic: "AWS account monitoring services and IAM Identity Center single sign-on"
 exam_weight: unknown
 status: done
@@ -30,17 +30,17 @@ unresolved:
 ## Monitor activity of the AWS account — the logging services _(Mod 12 pp103–104)_
 
 - "The logging features are used to determine the **user actions** in the AWS account and the
-  **resources used by the users**." _(p103)_
+  **resources used by the users**." _(Mod 12 p103)_
 - "These log files display: **time and date of actions**; **source IP** for an action; **actions
-  that failed owing to inadequate permissions**, among others." _(p103)_
+  that failed owing to inadequate permissions**, among others." _(Mod 12 p103)_
 
 | Service | Role | Printed detail |
 |---|---|---|
-| **Amazon CloudFront** | Monitor the user requests received by CloudFront | "These access logs are available for **web and RTMP distributions**. Logging can be enabled while **creating or updating a distribution**. To enable logging, select an **Amazon S3 bucket** for the access logs. … The log files for **multiple distributions can be stored in the same bucket**. After enabling logging, specify an **optional prefix** for the file names… It is recommended to **not use the same bucket** for log files if **Amazon S3 is used as the origin**; a **separate bucket** should be used for simplified maintenance." _(p103)_ |
-| **AWS CloudTrail** | View account activities and events for supported services | "**CloudTrail is enabled on the AWS account.** It records the activities of the AWS account in a **CloudTrail event**. The recent events in the CloudTrail console can be obtained by viewing the **event history**. Next, **create a trail** for the **ongoing record** of activities and events." _(p103)_ |
-| **AWS Config** | Detailed historical configuration information | "including **IAM users, groups, roles, and policies**." _(p104)_ |
-| **Amazon S3** | Details of access requests to buckets | "Amazon S3 also supports **Audit Logs** that list the requests made against S3 resources for complete visibility regarding **who is accessing which data**." _(p104)_ |
-| **Amazon CloudWatch logs** | Monitor, store and access log files | "from **Amazon EC2** instances, **AWS CloudTrail**, or **Route 53**; this helps in **centralizing logs** from all systems, applications, and AWS services." _(p104)_ |
+| **Amazon CloudFront** | Monitor the user requests received by CloudFront | "These access logs are available for **web and RTMP distributions**. Logging can be enabled while **creating or updating a distribution**. To enable logging, select an **Amazon S3 bucket** for the access logs. … The log files for **multiple distributions can be stored in the same bucket**. After enabling logging, specify an **optional prefix** for the file names… It is recommended to **not use the same bucket** for log files if **Amazon S3 is used as the origin**; a **separate bucket** should be used for simplified maintenance." _(Mod 12 p103)_ |
+| **AWS CloudTrail** | View account activities and events for supported services | "**CloudTrail is enabled on the AWS account.** It records the activities of the AWS account in a **CloudTrail event**. The recent events in the CloudTrail console can be obtained by viewing the **event history**. Next, **create a trail** for the **ongoing record** of activities and events." _(Mod 12 p103)_ |
+| **AWS Config** | Detailed historical configuration information | "including **IAM users, groups, roles, and policies**." _(Mod 12 p104)_ |
+| **Amazon S3** | Details of access requests to buckets | "Amazon S3 also supports **Audit Logs** that list the requests made against S3 resources for complete visibility regarding **who is accessing which data**." _(Mod 12 p104)_ |
+| **Amazon CloudWatch logs** | Monitor, store and access log files | "from **Amazon EC2** instances, **AWS CloudTrail**, or **Route 53**; this helps in **centralizing logs** from all systems, applications, and AWS services." _(Mod 12 p104)_ |
 
 ### CloudTrail features _(Mod 12 p104)_
 
@@ -78,14 +78,14 @@ Upstream: [[12-LO02c-Cloud-Monitoring-Logging-and-Compliance]]
 
 - "Organizations integrate Identity Center with applications (**Amazon SageMaker Studio, AWS
   Systems Manager Change Manager, and AWS IoT SiteWise**) for **zero-configuration
-  authentication and authorization**." _(p105)_
+  authentication and authorization**." _(Mod 12 p105)_
 - "To enable SSO access to AWS applications using Identity Center, use the **IAM Identity
   Center's identity store** which comprises **user and group attributes, excluding sign-in
-  credentials**." _(p105)_
+  credentials**." _(Mod 12 p105)_
 - "To use Identity Center enabled AWS applications, **enable IAM Identity Center firstly** to
-  allow them access." _(p105)_
+  allow them access." _(Mod 12 p105)_
 - Slide objective: "Organizations can use the IAM Identity Center's **preconfigured settings** to
-  configure **SSO access to SAML 2.0**." _(p105)_
+  configure **SSO access to SAML 2.0**." _(Mod 12 p105)_
 
 **Step 1 — Enable AWS IAM Identity Center** _(Mod 12 p105)_
 
@@ -183,9 +183,9 @@ portal URL** · **Customize** (URL host unreadable, see `unresolved:`).
 - "Users can securely access their **EC2 Windows instances with the existing credentials
   provided by their organizations and MFA devices**. They do not have to **share administrator
   credentials, repeatedly access credentials, or configure remote access client software**."
-  _(p111)_
+  _(Mod 12 p111)_
 - "Organizations can grant access **centrally across multiple AWS accounts** to EC2 Windows
-  instances." _(p111)_
+  instances." _(Mod 12 p111)_
 
 | # | Action |
 |---|---|
@@ -204,25 +204,25 @@ _(Mod 12 pp111–113)_
 
 - "Organizations can use the IAM Identity Center's **preconfigured settings** to configure SSO
   access to **SAML 2.0 supported cloud applications** such as **Datadog, SumoLogic, Salesforce,
-  Box, Microsoft 365**, etc." _(p113)_
+  Box, Microsoft 365**, etc." _(Mod 12 p113)_
 - "Most of the cloud applications provide **instructions to set up the trust** between IAM
   Identity Center and the cloud app's service provider." "Once the application is configured,
-  **assign access to the groups/users that require application**." _(p113)_
+  **assign access to the groups/users that require application**." _(Mod 12 p113)_
 - Prerequisite printed: "To efficiently set up the trust, ensure that the **service provider's
   metadata exchange file is available** before beginning the below steps. Otherwise, you will
   have to **configure it manually**." _(p113, grammar as printed)_
 - The steps repeat Step 6 (p110) with one addition: "**Note:** These files would be **required
   later** while setting up the cloud application **from the service provider's website**."
-  _(p114)_
+  _(Mod 12 p114)_
 
 ## Multi-account access to AWS accounts _(Mod 12 p114)_
 
 - "The **assigned roles in AWS accounts are displayed on the organization clients' personalized
   web user portal at one place**. Allow clients to use their **directory credentials** for
-  single sign-on (SSO) access to multiple AWS accounts." _(p114)_
+  single sign-on (SSO) access to multiple AWS accounts." _(Mod 12 p114)_
 - "To assign permissions **centrally for each AWS account**, use **permission sets**. A
-  **permission set tells what users can do in the AWS Management Console**." _(p114)_
-- **Sign-in process** _(p114)_: use directory credentials to sign into the **AWS access
+  **permission set tells what users can do in the AWS Management Console**." _(Mod 12 p114)_
+- **Sign-in process** _(Mod 12 p114)_: use directory credentials to sign into the **AWS access
   portal** → choose the **AWS account name** for federated access to the Management Console for
   that account → users assigned **multiple permission sets choose which IAM role to use**.
 
@@ -248,28 +248,9 @@ Upstream: [[12-LO04b-AWS-IAM-Features]] · federated access background:
 [[03-LO03-IAM-Authentication-Authorization]] · logging context:
 [[12-LO02c-Cloud-Monitoring-Logging-and-Compliance]]
 
-## Cards
 
-What the AWS log files display
-?
-Time and date of actions · source IP for an action · actions that failed owing to inadequate permissions, among others
 
-The five logging services and what each is for
-?
-Amazon CloudFront — user requests received, web and RTMP distributions · AWS CloudTrail — account activities and events, event history plus a trail for the ongoing record · AWS Config — detailed historical configuration of AWS resources · Amazon S3 — details of access requests to buckets, plus Audit Logs · Amazon CloudWatch logs — centralize logs from EC2, CloudTrail, and Route 53
 
-CloudTrail — data events, management events, Insights and log encryption
-?
-Data events — resource ('data plane') operations on or within the resource itself · management events — management ('control plane') operations on resources in the account · CloudTrail Insights — identifies unusual activities · log file encryption — Amazon S3 server-side encryption (SSE) on log files delivered to S3 buckets
 
-The three IAM Identity Center identity sources
-?
-Identity Center directory — the default when Identity Center is first enabled · Active Directory — AWS Managed Microsoft AD via AWS Directory Service, or a self-managed AD · External identity provider — e.g. Okta or Azure Active Directory
 
-The six steps to implement SSO with IAM Identity Center
-?
-Step 1 enable IAM Identity Center (root user) · Step 2 select the identity source · Step 3 create an administrative permission set · Step 4 set up AWS account access for an administrative user · Step 5 sign in to the AWS access portal · Step 6 set up access to AWS applications
 
-How SSO to an EC2 Windows instance works
-?
-AWS IAM Identity Center user portal → Management console → Fleet Manager → Instance actions → Connect with Remote Desktop → select IAM Identity Center and Connect; on first connect a new local user is created and AWS Fleet Manager uses the credentials it created to sign in — the All sessions tab then shows up to four concurrent sessions in a single view

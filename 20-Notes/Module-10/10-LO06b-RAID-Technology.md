@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "10"
 lo: "06"
-tags: [concept, process, mod/10, flashcard/10]
+tags: [concept, process, mod/10]
 topic: "RAID Technology — Levels 0/1/3/5/10/50"
 exam_weight: unknown
 status: done
@@ -14,7 +14,7 @@ unresolved: []
 # RAID Technology (§10.6.2)
 
 ## What RAID does
-- **Redundant Array of Independent Disks**: combine disks for performance + fault tolerance; backup-relevant (redundancy ≠ backup, but small-scale data protection)
+- **Redundant Array of Independent Disks**: combine disks for performance + fault tolerance; backup-relevant (redundancy ≠  backup, but small-scale data protection)
 
 ## RAID levels
 | Level | Technique | Min disks | Fault tolerance |
@@ -32,19 +32,6 @@ unresolved: []
 ## Mnemonics
 - 0 = Zero tolerance · 1 = Mirror pair · 3 = dedicated parity · 5 = spread parity · 10 = stripe-mirror · 50 = stripe-of-mirrors
 
-## Cards
-Which RAID level offers striping with NO fault tolerance?
-?
-RAID 0 (minimum 2 disks).
 
-RAID 50 = what combination, minimum disks?
-?
-Striping across mirrored pairs (RAID 0 over RAID 1); minimum 6 disks.
 
-RAID 3 vs RAID 5 parity placement?
-?
-RAID 3 = dedicated parity disk; RAID 5 = parity distributed across all disks.
 
-Minimum disks for RAID 10?
-?
-4 (2 mirrored pairs, striped).

@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "06"
-tags: [threat, mod/11, flashcard/11]
+tags: [threat, mod/11]
 topic: "Container security challenges and risks"
 exam_weight: unknown
 status: done
@@ -86,28 +86,9 @@ unresolved: ["'Compromise of secrets' is listed in the p101 'Container Security 
 | **Improper user access rights** | risk when **users sign in directly on the host to manage containers**; improper rights affect **the host system and all other containers present in it** |
 | **Host OS file system tampering** | an insecure container configuration **exposes the host volumes to significant risk of file tampering** → affects **the stability and security of the host and the containers running on it** |
 
-## Cards
 
-Container security challenges — how much shorter is a container's lifespan than a VM's, and why does that matter?
-?
-On average a container's lifespan is **four times less** than a virtual machine's — it is created instantly, runs briefly, is stopped and removed. This **ephemerality lets an attacker execute an attack and disappear quickly**.
 
-Name the three container challenges that create network exposure.
-?
-**Network-based attacks** (a jeopardized container, especially on **outbound networks with unrestricted raw sockets**), **bypassing / lack of isolation** (compromising one container gives access to another on the same host), and **unbounded network access from containers** (in the default state containers reach other containers and the host OS over the network).
 
-Image threats — list the five.
-?
-**Image vulnerabilities** (static archive, missing updates) · **configuration defects** (runs with more privilege than required → privilege escalation) · **embedded malware** (same privileges as the rest of the image) · **embedded clear text secrets** (image can be parsed to extract them) · **use of untrusted images** (malware, data leak, vulnerable components).
 
-Container risks — the two that involve the runtime itself.
-?
-**Vulnerabilities within the runtime software** → attacker compromises the runtime and can then attack other containers and monitor container-to-container communication. **Insecure container runtime configurations** → too many configurable options; improper settings lower the security of the system.
 
-Orchestrator risks — why is mixing workload sensitivity levels dangerous?
-?
-The orchestrator optimizes **workload density** and by default places **different-sensitivity workloads on the same host** — e.g. a public web server next to a container processing financial data. The sensitive container **can then be easily compromised**.
 
-Host OS risks — why is the shared kernel a risk if the container OS has a smaller attack surface?
-?
-Because a container has **only software-level isolation of resources**, and **usage of a shared kernel increases the inter-object attack surface** — so a host OS component vulnerability or a shared-kernel flaw hits **every container on that host**.

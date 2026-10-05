@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "09"
 lo: "03"
-tags: [tool, process, bestpractice, mod/09, flashcard/09]
+tags: [tool, process, bestpractice, mod/09]
 topic: "Application Patch Management"
 exam_weight: unknown
 status: done
@@ -46,36 +46,13 @@ unresolved: []
 | **Syxsense** | visibility + control; patches + vulnerability detection; compliance reporting |
 | **Itarian** | identify vulnerable endpoints; scheduled group updates; remote OS updates |
 
-## Cards
-Patch management definition?
-?
-Process of monitoring + deploying new or missing patches to keep applications on hosts secure.
-
-Patch management flow?
-?
-Scan for new/missing → download centrally → select relevant client patch → test → deploy if pass.
-
-Why apply patches urgently?
-?
-Hackers build exploits from each patch's disclosed vulnerabilities; unpatched apps get compromised.
-
-Dashboard (patch status detection) shows?
-?
-Patched + malicious software · unrecognized-app flags · unknown patch status · compliance reports.
-
-Why test before org-wide deploy?
-?
-Ensure patches don't break apps; tests on a few systems → deploy if successful.
-
-SolarWinds Patch Manager features?
-?
-WSUS + SCCM integration, vulnerability mgmt, pre-tested packages, compliance reports, dashboard; patched 3rd-party apps (Adobe, Java, etc.).
 
 
-## Cards (verified set 617277655)
+
+
+
+
+
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-Application Patch Management
-?
-Application patch management is the process of ensuring the security of applications on hosts by regularly deploying new or missing patches.  _(Mod 09 p68)_

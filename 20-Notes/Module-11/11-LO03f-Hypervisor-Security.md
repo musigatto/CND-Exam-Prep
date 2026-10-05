@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "03"
-tags: [bestpractice, concept, mod/11, flashcard/11]
+tags: [bestpractice, concept, mod/11]
 topic: "Hypervisor Security"
 exam_weight: unknown
 status: done
@@ -153,44 +153,13 @@ Nested paging background: it implements memory management in hardware, removing 
 
 Concept background for hypervisor-driven exposure lives in [[11-LO03a-Network-Virtualization-Concepts]].
 
-## Cards
 
-Front: Inconsistent time between Hyper-V guests and the host causes what failures?
-?
-Authentication failures, and it affects security protocols such as Kerberos, certificate-dependent technologies that rely on time synchronization, and billing processes. Time sync also provides security and event correlation. _(Mod 11 p37, p39)_
 
-Front: How is time synchronization enabled in Hyper-V?
-?
-Windows start menu → Hyper-V Manager → select the VM → right-click → Settings → Management section → Integration Services → check Time synchronization → Apply → OK. _(Mod 11 p39–p41)_
 
-Front: Besides controlling user access, what does setting Hyper-V access privileges achieve?
-?
-It reduces the attack surface area, preventing damage from external and internal attacks. By default Hyper-V provides a group of admins with all administrative rights for the VMs. _(Mod 11 p41)_
 
-Front: Set-SmbServerConfiguration: which -MaxChannelPerSession value is paired with -Force?
-?
-32 with -Force; 16 is the variant that prompts for confirmation. _(Mod 11 p39)_
 
-Front: Name the three VMware hypervisor security measures.
-?
-Time synchronization · Restrict user access · Encrypting guest virtual machines. _(Mod 11 p51–p52)_
 
-Front: Which two Windows services must be disabled on Windows Server 2016, and what else alongside them?
-?
-Xbox Live Auth Manager and Xbox Live Game Save — plus their respective scheduled tasks. _(Mod 11 p46)_
 
-Front: Isolated User Mode: what is it and which two Windows virtualization-security siblings share its role?
-?
-A virtualization-based security feature using secure kernels, separating business data/processes from the OS. Siblings: Credential Guard and Device Guard. Stops pass-the-hash attacks. _(Mod 11 p48)_
 
-Front: How is the VMware decryption password related to the VM password?
-?
-They need not be the same. _(Mod 11 p52–p53)_
 
-Front: Which CVE IDs make disabling hyperthreading mandatory on affected hosts?
-?
-CVE-2018-12126 and CVE-2018-12127. _(Mod 11 p56)_
 
-Front: What is the stated trade-off of disabling nested paging in VirtualBox?
-?
-It makes AVX, XSVAE and POPCNT unavailable to guests, causing stability issues (especially during SMP configuration). _(Mod 11 p56)_

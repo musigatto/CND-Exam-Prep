@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "05"
 lo: "09"
-tags: [concept, process, tool, command, protocol, crypto, mod/05, flashcard/05]
+tags: [concept, process, tool, command, protocol, crypto, mod/05]
 topic: "Windows System Integrity and Integrity Checking"
 exam_weight: unknown
 status: done
@@ -96,51 +96,14 @@ Integrity = security + trustworthiness of the Windows OS. Harden by restricting 
   ```
 - History: `# /var/ossec/bin/syscheck_control -i <agent id>` (list modified files); `-f <file>` for detailed values (size, perms, UID, GID, MD5, SHA1)
 
-## Cards
-UAC behavior on approved vs denied changes?
-?
-Approved → action runs with highest available privilege; denied → not performed and requesting app is prevented from running.
 
-Effect of a missing/invalid code signature?
-?
-Windows prevents the file from running (legitimate cert also removes SmartScreen "Unknown Publisher" warning).
 
-What guarantees a driver can load into the Windows kernel?
-?
-Valid digital signature (vendor certifies with Microsoft, then WHQL signs it); unsigned driver packages do not install.
 
-TPM functions?
-?
-Secure key storage, secure boot + chain of trust (PCR measurements), platform measurements, remote attestation (cryptographic "quote" of PCR values).
 
-Which Windows features use TPM?
-?
-BitLocker (system drive), Secure Boot, Device Guard, Credential Guard.
 
-WRP failure modes when an app modifies a protected resource?
-?
-Access-denied error + install may fail; protected reg-key changes denied; apps writing into protected keys/folders/files may fail.
 
-Integrity-checking tools in order for a corrupted image?
-?
-SFC (/scannow) for system files; DISM /ScanHealth → /CheckHealth → /RestoreHealth for image repair; chkdsk for disk errors/bad sectors.
 
-SFC /FILESONLY scope?
-?
-Verifies/repairs only files, not registry keys.
 
-chkdsk default mode?
-?
-Read-only scan (/f not specified); add /f to fix, /r to find bad sectors and recover data.
 
-Get-FileHash default algorithm + full options?
-?
-Default SHA256; options SHA1, SHA256, SHA384, SHA512, MD5.
 
-OSSEC integrity checker + hashes used?
-?
-Syscheck — periodic MD5/SHA1 checksum comparison on configured files/registry entries.
 
-Tripwire Enterprise core capabilities?
-?
-File Integrity Monitoring (FIM) + Security Configuration Management (SCM), with policy compliance and remediation management.

@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "04"
-tags: [concept, policy, mod/12, flashcard/12]
+tags: [concept, policy, mod/12]
 topic: "AWS shared responsibility models"
 exam_weight: unknown
 status: done
@@ -31,15 +31,15 @@ unresolved:
 ## How many models does p40–43 actually present? _(Mod 12 pp40–43)_
 
 - **One** model: the **AWS shared responsibility model** — "a model that distinguishes the
-  security controls between the AWS and customers". _(p41)_
-- Decomposed into **two** control types: **Inherited Controls** · **Shared Controls**. _(p42)_
-- Plus a **six-item** customer responsibility list. _(p42)_
+  security controls between the AWS and customers". _(Mod 12 p41)_
+- Decomposed into **two** control types: **Inherited Controls** · **Shared Controls**. _(Mod 12 p42)_
+- Plus a **six-item** customer responsibility list. _(Mod 12 p42)_
 - **No** "infrastructure services / container services / abstract services" taxonomy appears
   anywhere in pp. 40–43 — see `unresolved:`. Do not answer "three models" from this page range.
 
 > Core split: **"The customers decide the access levels he chooses to give from and to his
 > resources, while AWS secures the cloud."** A good understanding of the model "enables the
-> building and maintenance of a highly secure and reliable environment." _(p41)_
+> building and maintenance of a highly secure and reliable environment." _(Mod 12 p41)_
 
 ## The two bands _(Mod 12 p41)_
 
@@ -72,7 +72,7 @@ _(Mod 12 p41)_
 
 "Customers are responsible for the security of their specific instances and their
 responsibilities are determined according to the **selected AWS cloud service**."
-_(p41)_
+_(Mod 12 p41)_
 
 | Customer responsibility | What it covers (as printed) |
 |---|---|
@@ -91,7 +91,7 @@ _(Mod 12 p42)_
 ## Two control types _(Mod 12 p42)_
 
 > "AWS provides customers with an infrastructure and the customers provide their own control
-> implementation techniques under the AWS services." _(p42)_
+> implementation techniques under the AWS services." _(Mod 12 p42)_
 
 | Type | Definition | Example |
 |---|---|---|
@@ -115,33 +115,14 @@ _(Mod 12 pp42–43)_
 "Customers are responsible for the controls based on the applications they deploy within the
 AWS services." Only one control is worked: **Service and Communication Protection / Zone
 Security** — customers are responsible for routing or zoning data within specific security
-environments. _(p43)_
+environments. _(Mod 12 p43)_
 
 Upstream: [[12-LO02a-Cloud-Security-Shared-Responsibility]] (generic cloud model) ·
 related: [[12-LO01b-Cloud-Service-Delivery-Models]]
 
-## Cards
 
-AWS shared responsibility — who secures what
-?
-Customers decide the access levels they give from and to their resources; AWS secures the cloud. "In the cloud" = customer band · "of the cloud" = AWS band
 
-The two control types the AWS shared responsibility model uses
-?
-Inherited Controls — inherited completely from AWS to customers (e.g. physical and environmental) · Shared Controls — applied to both the infrastructure and the customer layer with separate perspectives
 
-Shared Control: Patch Management split
-?
-AWS patches and fixes flaws within the infrastructure; customers patch their guest OS and applications
 
-Shared Control: Configuration Management split
-?
-AWS configures the infrastructure devices; the customer configures their guest OSes, databases, and applications
 
-Shared Control: Awareness and Training split
-?
-AWS trains the AWS employees; customers train their employees
 
-Client-Side Data Encryption — which keys may the customer use
-?
-Either an AWS-managed encryption key or a personal key not provided by AWS

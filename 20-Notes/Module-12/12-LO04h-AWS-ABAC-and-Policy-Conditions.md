@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "04"
-tags: [policy, concept, mod/12, flashcard/12]
+tags: [policy, concept, mod/12]
 topic: "AWS ABAC with SAML session tags, IAM policy conditions, removing unnecessary credentials"
 exam_weight: unknown
 status: done
@@ -16,7 +16,7 @@ unresolved:
   - "p98 Figure 12.48 'ABAC Secret Updating and Deleting Behavior for Each Role': same problem - the role column lists access-peg-quality-assurance twice (access-peg-engineering, access-peg-quality-assurance, access-uni-engineering, access-peg-quality-assurance) and 12 behaviour values do not divide evenly over the printed cells. No matrix is reconstructed."
   - "p95 Figure 12.45: the third Secret name prints as 'access -qas', truncated and inconsistent with the naming used elsewhere (test-access-<project>-<team>). Reproduced as printed; not completed."
   - "p95: the sentence 'In another browser window, test that the user Nikhil can create only Centaur engineering secrets, and that iew all engineering secrets' is broken in the OCR - the second clause's verb is lost. Only the first clause is quoted."
-  - "p97 Figure 12.47: the 'Version' value OCRs as '2e12-1ø-17' and is not readable; the 'Statement' is flattened without array brackets; 'Sid' OCRs as 'TutorialAssumeSpecificR01es••'. Marked with ? in the table."
+  - "p97 Figure 12.47: the 'Version' value OCRs as '2e12-1Ã¸-17' and is not readable; the 'Statement' is flattened without array brackets; 'Sid' OCRs as 'TutorialAssumeSpecificR01es••'. Marked with ? in the table."
   - "p97/p98: the role named in Step 7 for the fourth user prints as 'access-peg-quality-assurance' in the p98 list where p95/p96 give access-uni-quality-assurance for that position. The p98 list is reproduced as printed and the discrepancy is not repaired."
   - "p99: the Condition syntax schematic is printed across two lines with '{condition-key}' on the second line, so its exact inline layout cannot be recovered. Rendered here as the three placeholders it contains; no ordering beyond the print is claimed."
   - "p100 Figure 12.49 'Managing Unused Passwords' is a screenshot of the IAM console navigation; its column labels (Access management, User groups, Policies, Identity providers, Account, Access Analyzer, Archive, Credential report, Manage console access, Manage access keys) are legible but the user-table values are not. No user data is asserted."
@@ -34,23 +34,23 @@ unresolved:
 ## ABAC — the rule _(Mod 12 p92)_
 
 - "The **attribute-based access control (ABAC)** authorization strategy **defines permissions
-  based on attributes/tags**." _(p92)_
+  based on attributes/tags**." _(Mod 12 p92)_
 - "Organizations can attach these attributes to **IAM resources (including entities) as well
-  as AWS resources**." _(p92)_
+  as AWS resources**." _(Mod 12 p92)_
 - "When an organization uses the entities to make requests to AWS, the entities become
-  **principals** and those principals **include tags**." _(p92)_
+  **principals** and those principals **include tags**." _(Mod 12 p92)_
 - "Organizations can also **pass session tags** when they **assume a role/federate a user**."
-  _(p92)_
+  _(Mod 12 p92)_
 - **The ABAC rule**: "Next, they can define policies that use **tag condition keys** to grant
-  permissions to principals **based on their tags**." _(p92)_
+  permissions to principals **based on their tags**." _(Mod 12 p92)_
 - Payoff: "When organizations use tags to control access to AWS resources, they can **allow
-  teams and resources to grow with fewer changes to AWS policies**." _(p92)_
+  teams and resources to grow with fewer changes to AWS policies**." _(Mod 12 p92)_
 - SAML route: "If organization uses a **SAML-based identity provider (IdP)** to manage corporate
   user identities, they can use **SAML attributes for fine-grained access control** in AWS. For
   example, these attributes can be **cost-center identifiers, user's email, classifications in
   each department, assignments of project**, etc." "When organizations **pass these SAML
   attributes as session tags**, they can then control access to AWS based on these session
-  tags." _(p92)_
+  tags." _(Mod 12 p92)_
 
 ```
 entity → makes a request → becomes a principal (carries tags)
@@ -66,7 +66,7 @@ access follows the tags, not the identity → policy edits stop scaling with the
 
 - "Create a customer managed policy named **`access-assume-role`**."
   Printed title: *"ABAC Policy: Assume any ABAC role only when the user and role tags match
-  together."* _(p92)_
+  together."* _(Mod 12 p92)_
 - "Attach the permissions policy `access-assume-role` and add the following tags."
 
 **Figure 12.41 — IAM users** _(Mod 12 p93)_
@@ -112,13 +112,13 @@ to the same tags carried by the principal**.
 **Step 4 — test creating secrets** _(Mod 12 pp94–95)_
 
 - "**Remain signed in as the administrator user** to review users, roles, and policies in IAM.
-  Use a **browser incognito window/separate browser for testing**." _(p94)_
+  Use a **browser incognito window/separate browser for testing**." _(Mod 12 p94)_
 - "Sign in as IAM user and open the **Secrets Manager** console at
-  `https://console.aws.amazon.com/secretsmanager/`." _(p94)_
+  `https://console.aws.amazon.com/secretsmanager/`." _(Mod 12 p94)_
 - "Try to switch to the `access-uni-engineering` role. This operation **fails** since the
   `access-project` and `cost-center` tag values **do not match** for the
-  `access-Arnav-peg-eng` user and `access-uni-engineering` role." _(p95)_
-- "Switch to the `access-peg-engineering` role. **Store a new secret**": _(p95)_
+  `access-Arnav-peg-eng` user and `access-uni-engineering` role." _(Mod 12 p95)_
+- "Switch to the `access-peg-engineering` role. **Store a new secret**": _(Mod 12 p95)_
   1. Select **Other type of secrets** in the Select secret type section.
   2. In the two text boxes, enter `test-access-key` and `test-access-secret`.
   3. Enter `test-access-peg-eng` for the **Secret name** field.
@@ -129,7 +129,7 @@ to the same tags carried by the principal**.
      allowed** and will successfully create the secret."
 - "Sign out and repeat the first three steps for each of the below roles and tag values. In the
   fourth step in this procedure, test any set of **missing tags, optional tags, disallowed tags,
-  and invalid tag values** that are chosen." _(p95)_
+  and invalid tag values** that are chosen." _(Mod 12 p95)_
 
 **Figure 12.45 — ABAC roles and tags** _(Mod 12 p95)_
 
@@ -144,32 +144,32 @@ to the same tags carried by the principal**.
 - Sign in as one of `access-Arnav-peg-eng` · `access-Mary-peg-qas` · `access-Saanvi-uni-eng` ·
   `access-Carlos-uni-qas`, then switch to the **matching** role (`access-peg-engineering` ·
   `access-peg-quality-assurance` · `access-uni-engineering` · `access-uni-quality-assurance`).
-- "In the navigation pane, expand the menu and then choose **Secrets**." _(p96)_
+- "In the navigation pane, expand the menu and then choose **Secrets**." _(Mod 12 p96)_
 - "**Regardless of current role** see all four secrets in the table since it is assumed the
   policy named `access-same-project-team` allows the **`secretsmanager:ListSecrets`** action
-  for **all** resources." _(p96)_
+  for **all** resources." _(Mod 12 p96)_
 - "Select the name of one of the secrets. On the details page, **role's tags determine** where
-  to view the page content." _(p96)_
+  to view the page content." _(Mod 12 p96)_
 - **The viewing rule**: "**Compare the name of role to the name of secret.** If they share the
   same **team name**, the `access-team` tags will match. **If they don't match, then access will
-  be denied.**" _(p96)_
+  be denied.**" _(Mod 12 p96)_
 - Figure 12.46's expected-behaviour cells OCR in row-major order as
-  `Allowed · Denied · Allowed · Denied` ‖ `Denied · Allowed · Denied · Allowed` ‖
-  `Denied · Allowed · Denied · Allowed` ‖ `Allowed · Denied · Allowed · Denied` — the
-  role↔secret alignment is **not** recovered, so the matrix is not reproduced. _(p96)_
+  `Allowed · Denied · Allowed · Denied` → `Denied · Allowed · Denied · Allowed` →
+  `Denied · Allowed · Denied · Allowed` → `Allowed · Denied · Allowed · Denied` — the
+  role↔secret alignment is **not** recovered, so the matrix is not reproduced. _(Mod 12 p96)_
 
 **Step 6 — test scalability** _(Mod 12 pp96–97)_
 
 - "Sign in as the **IAM administrator** user and open the IAM console at
-  `https://console.aws.amazon.com/iam/`." _(p96)_
+  `https://console.aws.amazon.com/iam/`." _(Mod 12 p96)_
 - "In the navigation pane, select **Roles** and add an IAM role named
   **`access-cen-engineering`**. Attach the `access-same-project-team` permissions policy to the
   role and add the following tags: `access-project = cen` · `access-team = eng` ·
-  `cost-center = 101010`." _(p97)_
+  `cost-center = 101010`." _(Mod 12 p97)_
 - "In the navigation pane, select **Users**. Add a new user named (say
   **`access-Nikhil-cen-eng`**), and attach the policy named (say **`access-assume-role`**).
   Follow the above Step 4 and Step 5. In another browser window, test that the user **Nikhil can
-  create only Centaur engineering secrets**…" _(p97)_
+  create only Centaur engineering secrets**…" _(Mod 12 p97)_
 - "In the main browser window in which you signed in as the administrator, select the user
   **`access-Saanvi-uni-eng`**. **Remove the `access-assume-role` permissions policy** on the
   Permissions tab. Add the below **inline policy** named `access-assume-specific-roles`."
@@ -178,7 +178,7 @@ to the same tags carried by the principal**.
 
 | Element | Value | Confidence |
 |---|---|---|
-| `Version` | `2012-10-17` ? | OCR `2e12-1ø-17` — **not readable** |
+| `Version` | `2012-10-17` ? | OCR `2e12-1Ã¸-17` — **not readable** |
 | `Sid` | `TutorialAssumeSpecificRoles` | OCR `TutorialAssumeSpecificR01es••` |
 | `Effect` | `Allow` | legible |
 | `Action` | `sts:AssumeRole` | OCR `sts: AssumeR01e` |
@@ -190,30 +190,30 @@ No `Condition` block — this variant replaces tag matching with an **explicit r
 - "Follow the above Step 4 and Step 5. In another browser window, confirm whether **Saanvi can
   assume both roles**. Check whether she can **create secrets depending on the role's tags**.
   Also, confirm whether she can **view details about any secrets owned by the engineering team**
-  and the secrets she just created." _(p97)_
+  and the secrets she just created." _(Mod 12 p97)_
 
 **Step 7 — test updating and deleting secrets** _(Mod 12 pp97–98)_
 
 - Sign in as one of `access-Arnav-peg-eng` · `access-Mary-peg-qas` · `access-Saanvi-uni-eng` ·
   `access-Carlos-uni-qas` · `access-Nikhil-cen-eng`; switch to the matching role.
 - "Try to **update the secret description** and try to **delete** the below secrets for each
-  role." Figure 12.48's matrix did not survive OCR — see `unresolved:`. _(p98)_
+  role." Figure 12.48's matrix did not survive OCR — see `unresolved:`. _(Mod 12 p98)_
 
 ## Conditions in IAM policies to limit access _(Mod 12 p99–100)_
 
 - "The **conditions under which a policy statement is in force** can be specified. This will
   enable users to allow access to resources and actions, **but only if the access request
-  satisfies certain criteria**." _(p99)_
+  satisfies certain criteria**." _(Mod 12 p99)_
 - Use case 1 printed: "To **mandate that all requests be sent using SSL**, for instance, users
-  can establish a policy condition." _(p99)_
+  can establish a policy condition." _(Mod 12 p99)_
 - Use case 2 printed: "If a particular AWS service, such as **AWS CloudFormation**, is used to
   access the service action, users can also use conditions to **enable access to that
-  action**." _(p99)_
+  action**." _(Mod 12 p99)_
 - Mechanism: "Users can provide conditions for **when a policy is in effect** using the
-  **`Condition` element** (or **Condition block**)." _(p99)_
+  **`Condition` element** (or **Condition block**)." _(Mod 12 p99)_
 - "Users can create **expressions** in the `Condition` element using **condition operators**
   (**equal, less than**, etc.) to **compare condition keys and values in the policy** to keys
-  and values in the **request context**." _(p99)_
+  and values in the **request context**." _(Mod 12 p99)_
 
 Syntax as printed on p99 — three placeholders, wrapped across two lines in the figure:
 
@@ -226,12 +226,12 @@ _(Mod 12 p99; layout per the figure, see `unresolved:`)_
 
 ## Remove unnecessary credentials _(Mod 12 pp100–102)_
 
-- "Remove the IAM user credentials (**passwords and access keys**) that are not required." _(p100)_
+- "Remove the IAM user credentials (**passwords and access keys**) that are not required." _(Mod 12 p100)_
 - "Remove unused passwords and access keys using the **console, CLI, API**, or by
-  **downloading the credentials report**." _(p100)_
-- "Remove **passwords for users who use the application but not the console**." _(p100)_
-- "Remove **access keys for users who only use the console**." _(p100)_
-- "The AWS IAM Console **displays when the access keys were last used**." _(p100)_
+  **downloading the credentials report**." _(Mod 12 p100)_
+- "Remove **passwords for users who use the application but not the console**." _(Mod 12 p100)_
+- "Remove **access keys for users who only use the console**." _(Mod 12 p100)_
+- "The AWS IAM Console **displays when the access keys were last used**." _(Mod 12 p100)_
 
 ### Find unused passwords — the `Console last sign-in` column _(Mod 12 p101)_
 
@@ -282,28 +282,9 @@ Upstream: [[12-LO04e-AWS-Least-Privilege-and-Policy-Types]] · least-privilege r
 access: [[12-LO04c-AWS-IAM-Roles-and-Best-Practices]] · SAML background:
 [[03-LO03-IAM-Authentication-Authorization]]
 
-## Cards
 
-The ABAC rule and the condition keys it uses
-?
-Define policies that use tag condition keys to grant permissions to principals based on their tags — session tags are passed when a principal assumes a role or federates a user · the access-assume-role policy string-equals iam:ResourceTag/access-project, iam:ResourceTag/access-team and iam:ResourceTag/cost-center against the same-named aws:PrincipalTag values
 
-The two policy variants in the ABAC walkthrough
-?
-access-assume-role — wildcard on the role name (`access-*`) plus a tag-match Condition, so a user can assume only roles whose tags match their own · access-assume-specific-roles — no Condition; an explicit list of role ARNs the user may assume
 
-The ABAC secret-viewing decision rule
-?
-Compare the role name to the secret name — if they share the same team name the access-team tags match and access is allowed; if they do not match, access is denied
 
-What the Condition element does in an IAM policy
-?
-Specifies the conditions under which a policy statement is in force — allow access to resources and actions only if the request satisfies the criteria, expressed with condition operators (equal, less than, etc.) comparing condition keys and values in the policy against the request context
 
-The two console columns for finding stale credentials
-?
-Console last sign-in — days since the user last signed into the console; Never = password never used, None = no password · password_last_used in the credentials report — N/A = no password, no_information = never used since tracking began
 
-The credential-to-purpose pruning rule
-?
-Remove the console password for users who use the application but not the console · remove the access keys for users who only use the console

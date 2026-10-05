@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "04"
-tags: [concept, bestpractice, mod/12, flashcard/12]
+tags: [concept, bestpractice, mod/12]
 topic: "AWS EC2 instance roles, credential rotation, delegation and service-linked roles"
 exam_weight: unknown
 status: done
@@ -31,19 +31,19 @@ unresolved:
 
 - "To access other AWS services, applications that run on an Amazon EC2 instance **require
   credentials**. The IAM roles securely provide credentials (username and password or access
-  keys) for these applications." _(p83)_
+  keys) for these applications." _(Mod 12 p83)_
 - "An IAM role is **not a user or group** and it **does not have its own permanent set of
   credentials** like IAM users. However, it is an entity that **has its own set of
-  permissions**." _(p83)_
+  permissions**." _(Mod 12 p83)_
 - "IAM **dynamically provides temporary credentials** to EC2 instances and these credentials
-  are **automatically rotated**." _(p83)_
+  are **automatically rotated**." _(Mod 12 p83)_
 - "A role can be specified as a **launch parameter** for an instance when launching it, and the
-  specified role permission determines the tasks that an application is allowed to do." _(p83)_
+  specified role permission determines the tasks that an application is allowed to do." _(Mod 12 p83)_
 - Slide payoff: "Using IAM roles **prevents credentials from being passed via a user
-  application**." _(p83)_
+  application**." _(Mod 12 p83)_
 
 ```
-IAM Role  ──Action A / Action B──▶  AWS Service (Permissions: Action A, Action B)
+IAM Role  ••Action A / Action B••–  AWS Service (Permissions: Action A, Action B)
 ```
 
 ### Worked example — the `Get-pics` service role _(Mod 12 p84)_
@@ -51,15 +51,15 @@ IAM Role  ──Action A / Action B──▶  AWS Service (Permissions: Action A
 - Scenario printed: a developer runs an app on an EC2 instance that needs access to the S3
   bucket (**photos**).
 - "A **Get-pics service role** is created and **attached to the EC2 instance by the
-  administrator**." _(p84)_
+  administrator**." _(Mod 12 p84)_
 - "This service role comprises a **permission policy** that allows **read-only access** to the
   S3 bucket and a **trust policy** that allows the instance to **assume the role** and retrieve
-  temporary credentials." _(p84)_
+  temporary credentials." _(Mod 12 p84)_
 - "The application uses the **temporary credentials of the role** to access the photo bucket
-  when it runs on the instance." _(p84)_
+  when it runs on the instance." _(Mod 12 p84)_
 - Payoff: "the developer does **not** need to share or manage his credentials and the
   administrator is **not** required to grant permission to the developer** to access the photo
-  bucket." _(p84)_
+  bucket." _(Mod 12 p84)_
 
 **Figure 12.32 — the 4-step flow** _(Mod 12 p84)_ (objects: `AWS Account` · `EC2 Instance` ·
 `Application` · `Role: Get-pics` · `Amazon S3 Bucket 'Photos'`):
@@ -75,11 +75,11 @@ IAM Role  ──Action A / Action B──▶  AWS Service (Permissions: Action A
 
 - "If applications running on a particular EC2 Instance's stack want to access other AWS
   resources, they should have appropriate permissions to do so. An **EC2 instance profile** can
-  be used to grant those permissions." _(p84)_
+  be used to grant those permissions." _(Mod 12 p84)_
 - "While creating an **AWS OpsWorks Stacks** stack, an instance profile for **every instance**
   can be specified. The profile specifies an **IAM role that can be assumed by the apps running
   on the instance** to access AWS resources **as per the permissions the role's policy
-  grants**." _(p84)_
+  grants**." _(Mod 12 p84)_
 
 **Figure 12.33 console fields** _(Mod 12 p84)_: `Default Availability Zone` · `Default SSH key` ·
 `Stack color` · `IAM Role` · `Default IAM Instance Profile` · `Do not use a default SSH key` ·
@@ -94,14 +94,14 @@ attribute to identify and deactivate the keys/credentials that have been used fo
 credential rotation".
 
 - "Change passwords and IAM user access keys **regularly** and ensure that all IAM users in
-  your account follow this practice." _(p85)_
+  your account follow this practice." _(Mod 12 p85)_
 - "Identify and **deactivate** the keys/credentials used **more than 90 days ago** using
-  **Access Key Last Used**." _(p85)_ ← the operative threshold
+  **Access Key Last Used**." _(Mod 12 p85)_ â† the operative threshold
 - "If a password or access key is **compromised unknowingly**, limit how long the credentials
-  can be used to access the resources." _(p85)_
+  can be used to access the resources." _(Mod 12 p85)_
 - "Apply a **password policy** to your account that requires all IAM users associated with your
-  account to rotate their passwords regularly and **decide how often they must do so**." _(p85)_
-- "Use **Credential Report** to audit credential rotation." _(p85)_
+  account to rotate their passwords regularly and **decide how often they must do so**." _(Mod 12 p85)_
+- "Use **Credential Report** to audit credential rotation." _(Mod 12 p85)_
 
 ### Rotate access keys without interrupting applications _(Mod 12 pp85–86)_
 
@@ -143,12 +143,12 @@ Created** · **Last Used** · **Last Used Region**.
 ## Delegate permissions — the rules _(Mod 12 p87)_
 
 - "**Instead of sharing the security credentials between accounts** to prevent the users of one
-  AWS account to access the resources of another AWS account, IAM roles can be used." _(p87)_
+  AWS account to access the resources of another AWS account, IAM roles can be used." _(Mod 12 p87)_
 - "An IAM role specifies the **permissions (delegation) allowed to IAM users to access another
   account** or **designates which AWS accounts have the IAM users that are allowed to assume the
-  role**." _(p87)_
+  role**." _(Mod 12 p87)_
 - "**Delegation sets up a trust between two accounts.**" The **Trusting Account** owns the
-  resource; the **Trusted Account** comprises the users that need to access the resource. _(p87)_
+  resource; the **Trusted Account** comprises the users that need to access the resource. _(Mod 12 p87)_
 
 | Trusted / trusting accounts can be | _(Mod 12 p87)_ |
 |---|---|
@@ -165,15 +165,15 @@ Created** · **Last Used** · **Last Used Region**.
 
 - **Permissions swap, they do not add**: "The users who assume the role **temporarily give up
   their own permissions** and take the permissions of the role. **Once a user stops using the
-  role, their original permissions are restored.**" _(p87)_
+  role, their original permissions are restored.**" _(Mod 12 p87)_
 - Delegating *management*: "In some circumstances, you might want to give someone else control
   over a user account's permissions. For example, **developers can be allowed to create and
-  manage roles for their workloads**." _(p87)_
+  manage roles for their workloads**." _(Mod 12 p87)_
 
 ### Permissions boundary _(Mod 12 pp87–88)_
 
 - "When delegating permissions to others, use **permissions boundaries** to **limit the maximum
-  number of permissions that can be delegated**." _(p87)_
+  number of permissions that can be delegated**." _(Mod 12 p87)_
 - Definition printed (verbatim, on the slide and repeated on p88): "A permissions boundary is a
   more advanced feature that allows you to use a **managed policy** to limit the **maximum
   permissions that an identity-based policy can provide to an IAM role**." _(pp87–88)_
@@ -247,7 +247,7 @@ personal access keys to allow individual programmatic access to IAM users."
    or **both**. "Select **Programmatic access** when the users need access to the **API, AWS
    CLI, or Tools for Windows PowerShell**, which will create an **access key for each new
    user**."
-4. **Next: Permissions** — three ways to assign permissions _(p91)_:
+4. **Next: Permissions** — three ways to assign permissions _(Mod 12 p91)_:
    - **Add user to group** — "assign the users to one or more groups that already have
      permission policies."
    - **Copy permissions from existing user** — "copy **all group memberships, attached managed
@@ -263,28 +263,9 @@ Upstream: [[12-LO04c-AWS-IAM-Roles-and-Best-Practices]] · policy mechanics:
 [[12-LO04e-AWS-Least-Privilege-and-Policy-Types]] · users and groups:
 [[12-LO04d-AWS-IAM-Users-and-Groups]]
 
-## Cards
 
-Why an IAM role is preferred over credentials on an EC2 instance
-?
-A role is not a user or group and has no permanent credentials — IAM dynamically provides temporary credentials to the instance and they are automatically rotated; the role is set as a launch parameter and its permissions decide what the app may do
 
-The two policies attached to a delegation role, and the permission swap
-?
-Permission policy — what the role's user may do on the resources (half the permissions) · Trust policy — which trusted-account members may assume the role (the other half) · assuming the role temporarily replaces the user's own permissions; they return when the user stops
 
-The permissions boundary, as the courseware defines it
-?
-A more advanced feature that lets you use a managed policy to limit the maximum permissions that an identity-based policy can provide to an IAM role
 
-Zero-downtime key rotation — order of operations and the stale-key threshold
-?
-Deactivate keys used more than 90 days ago, identified with Access Key Last Used · create the second access key (active by default) → update all applications and tools to use it → wait several days and check Last Used on the old key → Make inactive on the old key → confirm applications work → delete the old key
 
-Two trust-policy hardening options when creating a cross-account role
-?
-Require external ID — adds a trust-policy condition that the request include the correct sts:ExternalId, any word or number agreed with the third-party administrator · Require MFA — adds a trust-policy condition that checks for an MFA sign-in
 
-How a service-linked role is named, and how it is marked
-?
-The role name prefix is auto-populated and you type only the suffix; leave the suffix blank for services such as Amazon Lex that do not support custom suffixes; service-linked roles are marked with a cube-shaped icon in the IAM console

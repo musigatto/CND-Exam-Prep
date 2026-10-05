@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "04"
 lo: "09"
-tags: [concept, tool, threat, mod/04, flashcard/04]
+tags: [concept, tool, threat, mod/04]
 topic: "IDs role, Capabilities, Limitations, Concerns"
 exam_weight: unknown
 status: done
@@ -42,23 +42,7 @@ Not every security device is an IDS:
 - Place **IDS sensors near choke points** (if cost effective) to also monitor **outbound + internal host traffic**
 - Don't deploy sensors on a single NIC or multiple data links (sensing + reporting on same interface → attacker can disable IDS/alter data) → connect to a **dedicated monitoring network**
 
-## Cards
-IDS vs IPS core difference?
-?
-IDS detects + alerts; IPS detects + actively blocks (inline); IPS also fixes CRC, defragmentation, TCP sequencing, layer options.
 
-Why implement an IDS behind the firewall?
-?
-Firewalls allow/deny by rules but never inspect legitimate traffic content; IDS inspects it for malicious payloads/signatures.
 
-What is NOT an IDS?
-?
-Network logging systems, vulnerability assessment tools, antivirus products, cryptographic systems (VPN/SSL/S-MIME/Kerberos/RADIUS).
 
-Common IDS deployment mistakes?
-?
-Wrong placement (not seeing all traffic), ignoring alerts, no response plan, not tuning false pos/neg, stale signatures, inbound-only monitoring.
 
-NIDS + encrypted traffic problem?
-?
-Without IPsec visibility, NIDS only does packet-level analysis of encrypted tunnels (app contents inaccessible) → more vulnerable.

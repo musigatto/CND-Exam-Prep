@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "01"
-tags: [concept, process, mod/12, flashcard/12]
+tags: [concept, process, mod/12]
 topic: "Cloud service delivery models (IaaS/PaaS/SaaS)"
 exam_weight: unknown
 status: done
@@ -83,28 +83,9 @@ carried here by the IaaS/PaaS/SaaS authority column above. NIST's version of the
 
 Exam cross-refs: [[Question-Bank]]
 
-## Cards
 
-IaaS — what does the subscriber get, and who runs the underlying infrastructure?
-?
-VMs and other abstracted hardware and OSes controlled through a service API; the CSP manages the underlying cloud-computing infrastructure, so the subscriber avoids human capital and hardware costs
 
-IaaS — the two disadvantages the courseware lists
-?
-Software security is at high risk (third-party providers are more prone to attacks) · Performance issues and slow connection speeds
 
-PaaS — three disadvantages
-?
-Vendor lock-in · Data privacy · Integration with other system applications
 
-SaaS — three disadvantages
-?
-Security and latency issues · Total dependency on the internet · Switching between SaaS vendors is difficult
 
-SaaS — how do providers charge for the service?
-?
-Pay-per-use basis via subscription, advertising, or sharing among multiple users
 
-Why must subscriber and service-provider responsibilities be separated in cloud computing?
-?
-Separation of duties prevents conflicts of interest, illegal acts, fraud, abuse and errors; helps identify security control failures (information theft, security breaches, invasion of security controls); restricts the influence held by an individual

@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "04"
-tags: [concept, crypto, policy, mod/12, flashcard/12]
+tags: [concept, crypto, policy, mod/12]
 topic: "AWS data-at-rest encryption models and Amazon S3 server-side encryption options"
 exam_weight: unknown
 status: done
@@ -32,33 +32,33 @@ unresolved:
 | **Encryption** | Customer manages | Customer manages | AWS provides |
 | **Key storage** | Customer manages | **AWS provides the key storage layer** | **AWS provides** |
 | **Key management** | Customer manages | Customer manages | **AWS provides** |
-| **One-liner as printed** _(p116)_ | "The customer manages the encryption, key storage, and key management" | "AWS provides the key storage layer and customer manages the encryption algorithm and key management" | "AWS provides the key storage layer, encryption algorithm, and key management" |
+| **One-liner as printed** _(Mod 12 p116)_ | "The customer manages the encryption, key storage, and key management" | "AWS provides the key storage layer and customer manages the encryption algorithm and key management" | "AWS provides the key storage layer, encryption algorithm, and key management" |
 
 Mnemonic: **A**ll customer → **B** AWS stores the keys (algorithm still yours) → **C** Cloud/AWS
 does everything (server-side, transparent).
 
-**Model A — customer manages encryption** _(p118)_
+**Model A — customer manages encryption** _(Mod 12 p118)_
 - "Customers use **their own KMI** to generate, store, and manage access to keys. They also
   control **all encryption methods** present in their applications."
 - "This encryption method is a combination of **open-source tools, AWS SDKs, third-party
   software, and/or hardware**."
 
-**Model A — customer manages key storage and key management** _(p118)_
+**Model A — customer manages key storage and key management** _(Mod 12 p118)_
 - "**Only the customer** has full control over the encryption keys **and the execution
   environment** that utilizes those keys in the encryption code."
 - "Customer is responsible for **key storage and key management, as well as key usage** to
   ensure the **confidentiality, integrity, and availability** of data."
 
-**Model B — AWS provides the key storage layer / storage component of the KMI** _(p118)_
+**Model B — AWS provides the key storage layer / storage component of the KMI** _(Mod 12 p118)_
 - "The keys are stored in the **AWS environment (AWS CloudHSM)** and are **inaccessible to any
   employee at AWS**."
 
-**Model B — customer manages the encryption algorithm and key management** _(p119)_
+**Model B — customer manages the encryption algorithm and key management** _(Mod 12 p119)_
 - "The customer provides KMI that can be deployed either **on-premise or within Amazon EC2**."
 - "The customer KMIs can **securely communicate with AWS CloudHSM instances over SSL** to
   protect the data and encryption keys."
 
-**Model C — AWS controls everything** _(p119)_
+**Model C — AWS controls everything** _(Mod 12 p119)_
 - "AWS enables the control of the **key storage layer, encryption algorithm, and key
   management**."
 - "AWS provides **server-side encryption** of customer data, **transparently managing** the
@@ -71,7 +71,7 @@ does everything (server-side, transparent).
 "It is recommended to create an **encrypted file system** using an industry-standard (for
 example, **AES-256**) encryption algorithm if your organization is subject to
 corporate/regulatory policies that require the encryption of **data and metadata at rest**."
-_(p116)_
+_(Mod 12 p116)_
 
 **Steps to Protect Data at Rest in AWS** _(pp116–117)_
 
@@ -86,7 +86,7 @@ _(p116)_
    isolation, and versioning**.
 5. Consider **which types of data are publicly accessible**.
 6. Provide mechanisms to **keep users away from accessing sensitive data**, which involves
-   providing a **dashboard and tools**. _(p117)_
+   providing a **dashboard and tools**. _(Mod 12 p117)_
 
 **Define Data at Rest Protection Requirements** _(Mod 12 p117)_
 
@@ -117,19 +117,19 @@ _(p116)_
    or writeable buckets**." → "Consider using **AWS Config** to detect buckets that are open
    and **Amazon CloudFront** to serve content from S3."
 9. "Enable **Amazon S3 versioning**."
-10. "Configure **encrypted AMIs** to automatically encrypt **root volumes and snapshots**." _(p118)_
+10. "Configure **encrypted AMIs** to automatically encrypt **root volumes and snapshots**." _(Mod 12 p118)_
 11. "Review **Amazon EBS** and **AMI sharing permissions** to allow images and volumes to be
-    shared to AWS accounts external to your workload." _(p118)_
-12. "Configure **Amazon RDS** encryption by enabling the encryption option." _(p118)_
+    shared to AWS accounts external to your workload." _(Mod 12 p118)_
+12. "Configure **Amazon RDS** encryption by enabling the encryption option." _(Mod 12 p118)_
 13. "Configure **Amazon DynamoDB** encryption to encrypt data at rest using an **AWS
-    KMS-managed encryption key**." _(p118)_
+    KMS-managed encryption key**." _(Mod 12 p118)_
 14. "Consider **AWS encryption SDK with AWS KMS integration** when your application needs to
-    encrypt **client-side** data." _(p118)_
+    encrypt **client-side** data." _(Mod 12 p118)_
 
 ## Encrypting data at rest in Amazon S3 _(Mod 12 pp120–121)_
 
 "Amazon S3 is a data storage service that **stores and retrieves data on the cloud**. It
-provides the following methods to encrypt the data:" _(p120)_
+provides the following methods to encrypt the data:" _(Mod 12 p120)_
 
 | Method | Courseware statement |
 |---|---|
@@ -151,7 +151,7 @@ with Amazon S3 encryption client**.
 - "A **bucket policy** can be used here if **SSE is required for all objects** stored in the
   bucket."
 
-**API support for server-side encryption** _(p121)_
+**API support for server-side encryption** _(Mod 12 p121)_
 
 - "Provide the **`x-amz-server-side-encryption`** request header to request SSE using the
   object creation REST APIs."
@@ -169,7 +169,7 @@ with Amazon S3 encryption client**.
 - "**Define the policies** that control how CMKs can be used and **audit the CMK usage**; these
   CMKs can be used to **secure data in Amazon S3 buckets**."
 
-**SSE-KMS highlights** _(p121)_
+**SSE-KMS highlights** _(Mod 12 p121)_
 
 1. "Allows the selection of a **customer-managed CMK that you create and manage** or an
    **AWS-managed CMK that Amazon S3 creates in the AWS account and manages for you**."
@@ -196,28 +196,9 @@ with Amazon S3 encryption client**.
 Client-side libraries: [[12-LO04k-AWS-Encryption-Client-Side-CloudHSM-and-Transit]] ·
 storage services: [[12-LO04m-AWS-DDoS-Storage-and-Data-Classification]]
 
-## Cards
 
-The three AWS data-at-rest encryption models — who does what
-?
-Model A — customer manages the encryption, key storage and key management · Model B — AWS provides the key storage layer, customer manages the encryption algorithm and key management · Model C — AWS provides the key storage layer, encryption algorithm and key management (transparent server-side encryption)
 
-In AWS data-at-rest Model B, where are the keys stored and who controls the algorithm?
-?
-Keys are stored in the AWS environment (AWS CloudHSM) and are inaccessible to any AWS employee; the customer provides the KMI (on-premise or in Amazon EC2) and manages the encryption algorithm and key management, communicating with CloudHSM over SSL
 
-The three Amazon S3 server-side encryption key-management options
-?
-SSE-S3 — Amazon S3-managed keys · SSE-KMS — AWS KMS-managed keys (CMKs in AWS Key Management Service) · SSE-C — customer-provided keys, never stored by S3
 
-Amazon S3 SSE-S3 as described by the courseware
-?
-Each object is encrypted with a unique key, and that key is additionally encrypted with a master key; Amazon S3 SSE uses 256-bit AES (AES-256); a bucket policy can enforce SSE for all objects in the bucket
 
-Which Amazon S3 APIs support the `x-amz-server-side-encryption` request header
-?
-PUT operations (uploading with the PUT API) · Initiate Multipart Upload (header in the initiate request for large objects) · COPY operations (source and target object)
 
-Amazon S3 SSE-KMS — the printed highlights
-?
-Select a customer-managed CMK you create/manage or an AWS-managed CMK that Amazon S3 creates and manages for you · create, rotate and disable auditable customer-managed CMKs from the AWS KMS console · provides encryption of the data keys that encrypt customer data · provides encryption-related compliance requirements · the ETag in the response is not the MD5 of the object data

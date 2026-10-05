@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "07"
-tags: [bestpractice, mod/11, flashcard/11]
+tags: [bestpractice, mod/11]
 topic: "Container Security Measures"
 exam_weight: unknown
 status: done
@@ -68,28 +68,9 @@ Slide also lists, without prose: automate security; integrate security testing a
 
 OS-level lockdown: [[05-LO08-Windows-OS-Security-Hardening]]. Least privilege / fine-grained access control: [[03-LO02-Zero-Trust-and-Distributed-Access]].
 
-## Cards
 
-Container hardening: which two measures use segmentation and firewall technology, and what do they prevent?
-?
-Limit container communications to defined segments - prevents unauthorized connections; prevent unauthorized network connections with network firewall technology - protects running containers. _(Mod 11 p112)_
 
-Container hardening: what does "alerts based on security baseline" mean per the courseware?
-?
-Create a runtime security policy for the prompting of alerts and remedies when suspicious activity is observed. Audit container activity separately, from operational logs, configuration data and process documents. _(Mod 11 p112)_
 
-Two hardening items that reduce the attack surface directly.
-?
-Disable unused OS capabilities - reduces vectors of attack to a significant extent; enforce fine-grained access control for granting and managing permissions. _(Mod 11 p112)_
 
-Container image security: what does Docker content trust (DCT) do?
-?
-It lets image publishers (individuals or organizations) sign the image and assure consumers the image is authentic; sign the tagged version with default Docker options so Docker image integrity is implemented. _(Mod 11 p113)_
 
-Runtime security: why keep only a few running processes and mount read-only?
-?
-Many processes complicate manage/troubleshoot. Read-only mount ensures writing prevention when only reading is required, makes the container filesystem immutable and reduces unauthorized change or tampering with critical files at runtime. _(Mod 11 p115–p116)_
 
-Runtime security: list the boot trust chain examples and the privilege-grant rule.
-?
-Create a trust chain based on hardware: Intel TXT, Bootloader, Initrd, etc. Limit privileges to those required - provide fine-grained privileges by granting specific capabilities instead. _(Mod 11 p116)_

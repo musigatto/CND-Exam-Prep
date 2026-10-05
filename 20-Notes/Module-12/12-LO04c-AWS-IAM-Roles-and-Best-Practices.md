@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "04"
-tags: [bestpractice, policy, mod/12, flashcard/12]
+tags: [bestpractice, policy, mod/12]
 topic: "AWS IAM permissions, roles, best practices, root keys"
 exam_weight: unknown
 status: done
@@ -26,12 +26,12 @@ unresolved:
 
 - IAM "allows implementing **fine-grained access control** by establishing permissions that
   specify access control to specific AWS resources… help safeguard your AWS resources to
-  achieve **least-privilege**." _(p52)_
+  achieve **least-privilege**." _(Mod 12 p52)_
 - "Using policies, you can define **who** has access to your AWS resources." Policies are
   attached to **IAM roles** in your accounts **and to your AWS resources** — they work
-  together. _(p52)_
+  together. _(Mod 12 p52)_
 - "**IAM approves each AWS request by matching it to your policies and allowing or denying the
-  request.**" The IAM expresses access requirements with granularity using **JSON**. _(p52)_
+  request.**" The IAM expresses access requirements with granularity using **JSON**. _(Mod 12 p52)_
 
 | Mechanism | Printed statement |
 |---|---|
@@ -41,18 +41,18 @@ unresolved:
 
 _(Mod 12 p52)_
 
-Figure 12.6: ABAC spans **Identities · Permissions · Resources**. _(p52)_
+Figure 12.6: ABAC spans **Identities · Permissions · Resources**. _(Mod 12 p52)_
 
 ## Manage IAM roles _(Mod 12 p53)_
 
 > "AWS IAM roles are **entities that you define and provide specific permissions to**, allowing
 > **trusted identities such as workforce identities and applications** to conduct actions in
-> AWS." _(p53)_
+> AWS." _(Mod 12 p53)_
 
 - "Using IAM roles is a **security best practice since they provide temporary credentials that
-  need not be rotated**." _(p53)_
+  need not be rotated**." _(Mod 12 p53)_
 - Use IAM roles "to provide users **temporary credentials that are not required to be
-  rotated**". _(p53)_
+  rotated**". _(Mod 12 p53)_
 
 ### The five role scenarios _(Mod 12 pp53–54)_
 
@@ -90,9 +90,9 @@ _(Mod 12 p55)_
 ## Lock your AWS account root user access keys _(Mod 12 pp56–57)_
 
 **What an access key is.** "The access key (an **access key ID** and **secret access key**)
-allows making **programmatic requests** to AWS." _(p56)_
+allows making **programmatic requests** to AWS." _(Mod 12 p56)_
 
-**Why root keys are dangerous — stated rules, not console steps** _(p56)_:
+**Why root keys are dangerous — stated rules, not console steps** _(Mod 12 p56)_:
 
 - The root user access key "can provide **full access to all your resources for all AWS
   services**" and "**You cannot reduce the permissions** associated with your AWS account root
@@ -109,15 +109,15 @@ allows making **programmatic requests** to AWS." _(p56)_
 ### To protect the root user access key _(Mod 12 p56)_
 
 - Do not create AWS root user account access keys **unless required** or if you do not have
-  it already. _(p56)_
-- Change the root access key **regularly** or **delete it** if you already have one. _(p56)_
+  it already. _(Mod 12 p56)_
+- Change the root access key **regularly** or **delete it** if you already have one. _(Mod 12 p56)_
 - **Never share** the AWS root user account password or access keys — "to avoid having to
-  **embed them in an application**". _(p57)_
-- Use **strong passwords** for logging into the AWS Management Console. _(p57)_
+  **embed them in an application**". _(Mod 12 p57)_
+- Use **strong passwords** for logging into the AWS Management Console. _(Mod 12 p57)_
 - **Enable AWS MFA** on the root user account. _(p56–57)_
 - Root credentials: "keep them secure, **just like any credit card information or any other
   private information**"; "protect the root user credentials in the same way as you protect
-  other sensitive personal data" — set up **MFA**. _(p56)_
+  other sensitive personal data" — set up **MFA**. _(Mod 12 p56)_
 
 ### AWS password requirements (stated rules) _(Mod 12 p57)_
 
@@ -128,9 +128,9 @@ allows making **programmatic requests** to AWS." _(p56)_
 
 ## MFA — stated rules _(Mod 12 p57)_
 
-- "You can enable **only one MFA device per AWS account root user or IAM user**." _(p57)_
+- "You can enable **only one MFA device per AWS account root user or IAM user**." _(Mod 12 p57)_
 - Device types listed: **Virtual MFA device** · **Hardware-based MFA device** · **Mobile
-  phone** — plus one further type whose name did not OCR (see `unresolved:`). _(p57)_
+  phone** — plus one further type whose name did not OCR (see `unresolved:`). _(Mod 12 p57)_
 
 | Principal / device | Where MFA may be enabled |
 |---|---|
@@ -143,28 +143,9 @@ _(Mod 12 p57)_
 Upstream: [[12-LO04b-AWS-IAM-Features]] · practice application:
 [[12-LO04e-AWS-Least-Privilege-and-Policy-Types]]
 
-## Cards
 
-Preventive guardrails — the three ways to cap what an IAM role can be granted
-?
-Service control policies · permission boundaries · session policies
 
-Definition of an AWS IAM role
-?
-An entity that you define and provide specific permissions to, allowing trusted identities such as workforce identities and applications to conduct actions in AWS — a security best practice because it gives temporary credentials that need not be rotated
 
-Which product gives temporary AWS access to applications running outside AWS
-?
-IAM Roles Anywhere
 
-Name the five IAM role scenarios
-?
-Federate workforce identities into AWS · access workloads within AWS · access workloads that run outside of AWS · enable cross-account access · grant access to AWS services
 
-Why root user access keys are not recommended
-?
-They grant complete access to all resources for all AWS services including billing information, and the permissions associated with them cannot be reduced
 
-AWS password requirements
-?
-Minimum 8 and maximum 128 characters · at least three of the four character types (uppercase, lowercase, numbers, symbols) · not identical to the AWS account name or email address

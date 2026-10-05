@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "04"
 lo: "06"
-tags: [process, tool, policy, mod/04, flashcard/04]
+tags: [process, tool, policy, mod/04]
 topic: "Firewall Implementation and Deployment Process"
 exam_weight: unknown
 status: done
@@ -63,40 +63,14 @@ Five phases: **Planning → Configuring → Testing → Deploying → Managing &
 - Apply latest patches/updates; maintain architecture/policies/software; **update policy on new threats**; review policy periodically (remove unneeded rules, add new); monitor + log all alerts; back up rulesets + policies regularly; update rulesets per security requirements; perform log analysis
 - Scope includes: extending life, keeping it operating, confirming protective coverage, improving performance, checking updates, verifying components
 
-## Cards
-Firewall deployment phases?
-?
-Planning → Configuring → Testing → Deploying → Managing & Maintaining.
-
-Firewall policy creation steps?
-?
-1 key apps → 2 vulnerabilities → 3 cost-benefit → 4 app traffic matrix → 5 ruleset from matrix.
-
-Ruleset review cadence + implicit rule?
-?
-Review/update every 6 months; implicit deny blocks all traffic not explicitly allowed.
-
-Blacklist vs whitelist ruleset?
-?
-Blacklist: allow all, deny listed. Whitelist: deny all, allow only listed (stricter).
-
-Firewall log placement?
-?
-Centralized secure server/syslog; huge volumes (≥10k events/s) need specialized software.
-
-Test-network evaluation attributes?
-?
-Connectivity, ruleset, app compatibility, management, logging, performance, security, component interoperability, policy sync.
-
-Maintenance activities?
-?
-Patches, policy updates on new threats, 6-month review, log analysis, regular ruleset/policy backups.
 
 
-## Cards (verified set 617277655)
+
+
+
+
+
+
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-Firewalk
-?
-is used for reconnaissance purpose where it discovers firewall rules using an IP TTL expiration technique.  _(Mod 04 p62)_

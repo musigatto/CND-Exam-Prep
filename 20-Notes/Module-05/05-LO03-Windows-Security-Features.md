@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "05"
 lo: "03"
-tags: [concept, tool, command, mod/05, flashcard/05]
+tags: [concept, tool, command, mod/05]
 topic: "Windows Security Features"
 exam_weight: unknown
 status: done
@@ -132,60 +132,19 @@ Windows security features: object protection · access checks · integrity contr
 - Intune: Devices → Configuration Profiles → Create Profile → Settings catalog (Device Guard category) or Account protection profile → Turn on Credential Guard
 - Registry: `...\Control\DeviceGuard` → `EnableVirtualizationBasedSecurity`=1, `RequirePlatformSecurityFeatures`=1 (Secure Boot) or **3** (Secure Boot+DMA); `...\Control\Lsa` → `LsaCfgFlags`=1 (with UEFI lock) / **2** (without) / **0** (off)
 
-## Cards
-Windows object access control: DACL vs SACL?
-?
-DACL = who is allowed/denied access; SACL = how the system audits access attempts. Part of the object's security descriptor.
-
-NULL DACL vs empty DACL?
-?
-NULL DACL grants full access to everyone, skips normal checks; empty DACL (0 ACEs) grants no access.
-
-Access-check ACE accumulation?
-?
-Access rights per ACE accumulate (read from one group + write for user = both); order matters — user deny-ACE must precede group allow-ACE.
-
-View a user's SID?
-?
-PsGetSid: `psgetsid <Domain>\<User>`; Process Explorer Security tab; `wmic useraccount get name,sid`; registry ProfileList.
-
-Windows integrity levels (low→high)?
-?
-Untrusted → Low → Medium → High → System → Installer.
-
-Integrity level of a Run As Administrator process?
-?
-High; standard-user processes run Medium; IE protected mode (PMIE) runs Low.
-
-Virtual service account name + benefit?
-?
-`NT SERVICE\<service name>`, own SID, password auto-managed by Windows; created via `sc create ... obj="NT SERVICE\..."`.
-
-Audit category for password reset?
-?
-Audit account management.
-
-Event ID 4625?
-?
-An account failed to log on; Logon Types: 2 = interactive, 3 = network.
-
-Smart App Control enforcement rule?
-?
-Apps run only when recognized by Microsoft app intelligence or signed with a trusted cert; verify mode via `citool.exe -lp`.
-
-Credential Guard protections + attack types?
-?
-Virtualization-isolated secrets (NTLM pwds, Kerberos TGTs, app credentials); blocks pass-the-hash (PtH) and pass-the-ticket (PtT).
-
-Vulnerable Driver Blocklist registry key?
-?
-`HKLM\SYSTEM\CurrentControlSet\Control\CI\Config` → `VulnerableDriverBlocklistEnable` = 1.
 
 
-## Cards (verified set 617277655)
+
+
+
+
+
+
+
+
+
+
+
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-Windows Integrity Control (WIC)
-?
-is an access control mechanism for controlling the interactions between objects based on their integrity or level of trustworthiness.  _(Mod 05 p41)_

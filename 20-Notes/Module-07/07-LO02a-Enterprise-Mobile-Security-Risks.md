@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "07"
 lo: "02"
-tags: [concept, threat, mod/07, flashcard/07]
+tags: [concept, threat, mod/07]
 topic: "Enterprise Mobile Security Risks and Challenges"
 exam_weight: unknown
 status: done
@@ -46,15 +46,5 @@ Mobile use in work environments changed organizational security; on top of devic
 9. **Infrastructure issues** — many platforms/technologies; IT struggles to support data, security, backup, compatibility across devices
 10. **Disgruntled employees** — misuse corporate data, leak sensitive info to competitors
 
-## Cards
-Four enterprise mobile security risk categories?
-?
-Physical (loss/theft, malicious flashing) · network-based (wireless eavesdropping) · system-based (vendor vulnerabilities like SwiftKey) · application-based (unpatched apps → malware/remote control).
 
-MITM-risk mitigations for mobile networks?
-?
-WPA2 + secured protocols (IPSec, SSL, SSH, HTTPS, Kerberos) + gateways with content filtering and DLP.
 
-Name the 10 policy-related mobile risks?
-?
-Unsecured-network sharing · data leakage/endpoint · improper disposal · supporting many devices · mixing personal/private data · lost/stolen devices · lack of awareness · bypassing network policy · infrastructure issues · disgruntled employees.

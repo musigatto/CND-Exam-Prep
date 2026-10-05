@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "05"
 lo: "05"
-tags: [concept, policy, command, mod/05, flashcard/05]
+tags: [concept, policy, command, mod/05]
 topic: "Windows User Account and Password Management"
 exam_weight: unknown
 status: done
@@ -33,7 +33,7 @@ unresolved: []
 
 ## Disable Unnecessary Accounts
 - Disable **inactive** accounts (unused long period) and accounts of **resigned employees** — attackers pivot through compromised unused/inactive accounts
-- **Disabling ≠ deleting**: disabled accounts are **restorable**; deleted are **not**
+- **Disabling ≠  deleting**: disabled accounts are **restorable**; deleted are **not**
 - GUI: **Computer Management → System Tools → Local Users and Groups → Users** → double-click → check **Account is disabled**
 
 ## Disable Unnecessary Local Administrator Accounts
@@ -62,40 +62,14 @@ unresolved: []
 - Protects **LANMAN password hashes** + **Kerberos TGT**; blocks **pass-the-hash**
 - GPO: Computer Configuration → Admin Templates → **System → Device Guard → Turn On Virtualization Based Security** → Enabled; Platform Security Level: **Secure Boot** or **Secure Boot + DMA Protection** (requires Win10 / Server 2016+)
 
-## Cards
-Three Windows account types?
-?
-Administrator (full access), Standard (own files only), Guest (read/write only).
-
-Disable guest account (command)?
-?
-`net user guest /active:No`; policy: Local Policies → Security Options → 'Accounts: Guest account status'.
-
-Disable vs delete an account?
-?
-Disabled = restorable; deleted = cannot be restored.
-
-Password complexity requirements?
-?
-Not contain account name/2+ consecutive name chars; ≥6 chars; 3 of 4 categories (upper, lower, digits, non-alphabetic).
-
-Default maximum password age?
-?
-42 days.
-
-Credential Guard protects what?
-?
-LANMAN password hashes + Kerberos TGT; thwarts pass-the-hash; hashes can't be decrypted even if extracted.
-
-Why worry about local administrator SID?
-?
-If attackers know the admin account's SID they can compromise the system even when the account name is changed.
 
 
-## Cards (verified set 617277655)
+
+
+
+
+
+
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-Microsoft Windows Defender Credential Guard (WDCG)
-?
-protects login credentials by restricting their interaction with the components of the system. When Credential Guard is enabled, only privileged software can access the credentials.  _(Mod 05 p81)_

@@ -1,4 +1,4 @@
----
+﻿---
 type: moc
 module: "02"
 tags: [concept, mod/02]
@@ -29,7 +29,7 @@ unresolved:
 
 ## Compliance focus
 - Hierarchy driving Compliance Program: **Frameworks → Policies → Standards → Procedures/Guidelines**.
-- Frameworks covered: PCI-DSS (6 high-level requirements) · HIPAA (Administrative Simplification) · GDPR (Controllers/Processors, DPO) · SOX (11 titles, §§302/404) · GLBA (penalties ≤ $100K org / ≤ $10K officers / ≤ 5 yrs imprisonment) · ISO/IEC 27k · DMCA (5 titles) · FISMA · CISA · CFAA (18 USC §1030) etc.
+- Frameworks covered: PCI-DSS (6 high-level requirements) · HIPAA (Administrative Simplification) · GDPR (Controllers/Processors, DPO) · SOX (11 titles, §§302/404) · GLBA (penalties ≤  $100K org / ≤  $10K officers / ≤  5 yrs imprisonment) · ISO/IEC 27k · DMCA (5 titles) · FISMA · CISA · CFAA (18 USC §1030) etc.
 
 ## Exam facts
 - Exam **312-38** · **4 hours** · **100 questions** · availability via ECCouncil & VUE (passing score: see EC-Council FAQ).

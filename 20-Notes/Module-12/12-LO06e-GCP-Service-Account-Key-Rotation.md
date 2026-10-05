@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "06"
-tags: [bestpractice, command, mod/12, flashcard/12]
+tags: [bestpractice, command, mod/12]
 topic: "GCP service account key rotation"
 exam_weight: unknown
 status: done
@@ -49,13 +49,13 @@ _(Mod 12 p262)_
 
 ## Automatic vs manual key rotation _(Mod 12 pp262–263)_
 
-| | **Automatic key rotation** _(p262)_ | **Manual key rotation** _(p263)_ |
+| | **Automatic key rotation** _(Mod 12 p262)_ | **Manual key rotation** _(Mod 12 p263)_ |
 |---|---|---|
 | **Definition** | "set a **rotation schedule** that determines when the key should be automatically rotated" | "**generate a new key version, disable automatic rotation, and set the new key version as the primary key version**" |
 | **How** | "set the rotation schedule through the **`gcloud` tool**" | "This can be accomplished by the **`gcloud` tool**" |
 | **Command** | `gcloud kms keys update` | `gcloud kms keys versions create` |
 
-**Automatic — command as printed** _(p262)_, flags unreadable:
+**Automatic — command as printed** _(Mod 12 p262)_, flags unreadable:
 
 ```
 gcloud kms keys update key<name> \ <flag>location location \ <flag> <flag>keyring keyring<name> \
@@ -65,7 +65,7 @@ gcloud kms keys update key<name> \ <flag>location location \ <flag> <flag>keyrin
 Readable tokens: `gcloud kms keys update` · a **key** name · a **location** · a **keyring**
 name · a **rotation period** · a **next rotation time**.
 
-**Manual — command as printed** _(p263)_, flags unreadable:
+**Manual — command as printed** _(Mod 12 p263)_, flags unreadable:
 
 ```
 gcloud kms keys versions create \ <flag> location location \ <flag>keyring keyring<name> \
@@ -88,24 +88,8 @@ Readable tokens: `gcloud kms keys versions create` · a **location** · a **keyr
 
 _(Mod 12 p263)_
 
-## Cards
 
-The two categories of GCP service account key
-?
-GCP-managed — cannot be downloaded or automatically rotated, used within two weeks, utilized by GCP services such as App Engine and Compute Engine; User-managed — the user creates, downloads and manages them, and they expire after ten years
 
-The courseware's definition of key rotation
-?
-Generate a new key version of the key and mark that version as the primary version — done periodically; the user needs roles/cloudkms.admin, roles/owner or roles/editor
 
-Automatic vs manual key rotation
-?
-Automatic — set a rotation schedule that determines when the key is rotated (gcloud kms keys update) · Manual — generate a new key version, disable automatic rotation, and set the new version as primary (gcloud kms keys versions create … primary)
 
-What happens to previous key versions after rotation
-?
-They are neither disabled nor destroyed — this prevents data loss, so data encrypted under the old version is NOT automatically re-encrypted; the user must decrypt and re-encrypt with the new version, and may schedule the old version for destruction only once it protects no data
 
-Which service account API methods automate rotation
-?
-serviceAccount.keys.create() and serviceAccount.keys.delete()

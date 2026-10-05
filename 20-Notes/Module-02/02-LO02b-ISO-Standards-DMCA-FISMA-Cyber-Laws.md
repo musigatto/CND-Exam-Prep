@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "02"
 lo: "02"
-tags: [policy, mod/02, flashcard/02]
+tags: [policy, mod/02]
 topic: "ISO Information Security Standards, DMCA, FISMA, and Cyber Laws"
 exam_weight: unknown
 status: done
@@ -74,7 +74,7 @@ unresolved:
 | II | Online Copyright Infringement Liability Limitation — §512, **4 safe-harbor categories** (transitory communications · system caching · storage at direction of users · information location tools) + special rules for nonprofit educational institutions |
 | III | Computer maintenance or repair — owner/lessee may copy program while repairing |
 | IV | Miscellaneous (Copyright Office clarification, ephemeral recordings, sound recording performance right, residual payments) |
-| V | Vessel Hull Design Protection Act (VHDPA) — protections for vessel hulls ≤ 200 ft |
+| V | Vessel Hull Design Protection Act (VHDPA) — protections for vessel hulls ≤  200 ft |
 
 ## FISMA (Federal Information Security Management Act, 2002)
 - Comprehensive framework for **effectiveness of information security controls** over federal operations & assets
@@ -108,27 +108,11 @@ unresolved:
 | India | Patents (Amendment) Act 1999 · Trade Marks Act 1999 · Copyright Act 1957 · Information Technology Act |
 | Germany | §202a Data Espionage · §303a Alteration of Data · §303b Computer Sabotage |
 
-## Cards
-ISO/IEC 27001 vs 27002?
-?
-27001 = formal ISMS specification; 27002 = information security controls catalogue.
 
 
-ISO/IEC 27018 and ISO/IEC 27400?
-?
-27018 = cloud privacy (PII by CSPs); 27400 = IoT security and privacy.
 
 
-DMCA Title II?
-?
-Online Copyright Infringement Liability Limitation — 4 safe-harbor categories for service providers (transitory · caching · storage · location tools).
 
 
-FISMA core requirement?
-?
-Each federal agency develops, documents, and implements an agency-wide information security program for its information/information systems.
 
 
-CFAA basis?
-?
-18 U.S.C. § 1030 — intentionally accessing a protected computer without authorization / exceeding authorized access.

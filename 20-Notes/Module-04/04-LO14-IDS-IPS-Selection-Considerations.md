@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "04"
 lo: "14"
-tags: [process, bestpractice, mod/04, flashcard/04]
+tags: [process, bestpractice, mod/04]
 topic: "Considerations for Selection of Appropriate IDS/IPS Solutions"
 exam_weight: unknown
 status: done
@@ -61,23 +61,7 @@ Product used in conjunction with other security controls — must offer:
 - **Maintenance costs**: staff wages, customization costs, maintenance contracts, technical support fees
   - **Labor** · **technical support** (third party) · professional services (vendors that don't provide IDS service)
 
-## Cards
-Good IDS characteristics?
-?
-Continuous run, fault tolerant, subversion-resistant, minimal overhead, deviation detection, not easily deceived, tailored to system, copes with dynamic behavior.
 
-Five IDS product selection categories?
-?
-General requirements, security capabilities, performance, management, lifecycle cost.
 
-IDS security capability requirements?
-?
-Information gathering, logging, detection, prevention.
 
-NIDS vs HIDS performance measure?
-?
-NIDS = monitor/handle network traffic; HIDS = events processed per second.
 
-Lifecycle cost categories?
-?
-Initial (appliances, software/licensing, installation, customization, training) and maintenance (staff wages, customization, maintenance contracts, support).

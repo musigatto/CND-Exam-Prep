@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "04"
-tags: [crypto, tool, bestpractice, mod/12, flashcard/12]
+tags: [crypto, tool, bestpractice, mod/12]
 topic: "AWS client-side encryption libraries, CloudHSM key management, TLS in transit and AWS Certificate Manager"
 exam_weight: unknown
 status: done
@@ -10,8 +10,10 @@ unresolved:
   - "p122: the body sentence reads 'The Bounty Castle architecture comprises two key components…' — 'Bounty Castle' is an OCR corruption of Bouncy Castle in the same sentence, and is normalized silently. The 17-item API list is attributed to Bouncy Castle."
   - "p124: the industry-standard API is printed as 'PKCS#II' (roman numeral). It is most likely PKCS#11 but the printed form is not legible enough to assert, so the printed 'PKCS#II' is kept and not corrected."
   - "p124-p125: the 'AWS CloudHSM Secured Design' slide prints 'he AWS CloudHSM is secure and highly available by design comprises the following' but only ONE sub-item ('Secure Virtual Private Cloud Access') survives the OCR. Whether the slide carried further sub-items cannot be determined; only the one legible item is used."
-  - "p127 Figure 12.65 'AWS Certificate Manager': the diagram OCRs as 'a certitute from c«tifiOte certificate auth«ity (CAY that of AWS a certificate Crote *Wate certificate Ã„'ttvity (CA,) Create a CA e pricing (US) SSL'TL S' — the 'How it works' flow did not OCR. No fact is taken from it."
+  - "p127 Figure 12.65 'AWS Certificate Manager': the diagram OCRs as 'a certitute from c«tifiOte certificate auth«ity (CAY that of AWS a certificate Crote *Wate certificate Ãƒâ€ž'ttvity (CA,) Create a CA e pricing (US) SSL'TL S' — the 'How it works' flow did not OCR. No fact is taken from it."
   - "p129 Figure 12.67: the screenshot OCRs the CloudFront certificate store as 'IAN certificate store'. This is not a readable name; the courseware's term is NOT resolved to 'IAM' here, though that reading is the likely one."
+  - "p129 Figure 12.67: the Default CloudFront Certificate name OCRs as 'C.Cloudfront net)'. An earlier draft of this note supplied the well-known AWS placeholder 'd111111abcdef8.cloudfront.net' instead; that string does NOT occur anywhere in the module OCR (verified against all 316 pages) and has been REMOVED as a fabrication. The OCR form is now given and the domain is not resolved."
+  - "p129 Figure 12.67: the Important note OCRs as 'If you choose tlis option. Clou$ront requires tlat browsers or deuces support TLSvI or later to access your content'. Read as: If you choose this option, CloudFront requires that browsers or devices support TLSv1 or later. 'TLSvI' is the OCR of TLSv1 (capital I for the digit 1); 'deuces' is the OCR of 'devices'. No TLS version other than 'or later' is stated."
   - "p123: the Figure 12.63 diagram is repeated on p123; on p123 it additionally carries the garbled caption fragments 'key rn•n.nwnt in your center' and 'AWS SOK with Amazon S3 encryption client / AWS with Amazon SS enayption dient'. Nothing is taken from those fragments."
 ---
 
@@ -26,7 +28,7 @@ unresolved:
 ## Client-side encryption _(Mod 12 pp120, 122–123)_
 
 - "**Amazon S3 APIs allow uploading the data encrypted by any encryption method and decrypting
-  the data when taking it back.**" _(p122)_
+  the data when taking it back.**" _(Mod 12 p122)_
 - "The most common **open source tools** are: **Bouncy Castle** · **open SSL**." _(pp120, 122)_
 - Placement: client-side encryption = "**Encrypt data before sending to Amazon S3 and decrypt
   data after receiving it**"; the client's own key management infrastructure sits outside S3.
@@ -74,13 +76,13 @@ unresolved:
 ## Encryption key management in AWS CloudHSM _(Mod 12 pp124–125)_
 
 - "The AWS CloudHSM service **helps you to control the encryption keys and cryptographic
-  operations performed by the HSM**." _(p124)_
+  operations performed by the HSM**." _(Mod 12 p124)_
 - "**AWS has administrative credentials** to manage and maintain the appliance."
-- "**Administrative credentials cannot access the HSM partitions** on the appliance." ← *the
-  whole separation-of-duties argument in one line* _(p124)_
+- "**Administrative credentials cannot access the HSM partitions** on the appliance." â† *the
+  whole separation-of-duties argument in one line* _(Mod 12 p124)_
 - "AWS CloudHSM is a **managed hardware security module (HSM) on the AWS Cloud**. It allows
   users to easily add **secure key storage and high-performance crypto operations** to AWS
-  applications." _(p124)_
+  applications." _(Mod 12 p124)_
 
 **Advantages and features** _(Mod 12 p124)_
 
@@ -125,7 +127,7 @@ unresolved:
 
 ## Encrypting data in transit — TLS + s2n _(Mod 12 p126)_
 
-**To set up the encryption of data in transit** _(p126)_
+**To set up the encryption of data in transit** _(Mod 12 p126)_
 
 1. "**Use TLS with every AWS API** to protect data **upload/download and configuration
    files**."
@@ -133,7 +135,7 @@ unresolved:
 3. "**Use AWS Certificate Manager**, a service that lets you easily provision, manage, and
    deploy **SSL/TLS certificates** for use with AWS services."
 
-**Signal to Noise (S2N)** _(p126)_
+**Signal to Noise (S2N)** _(Mod 12 p126)_
 
 - "The **open-source implementation of the TLS protocol**; `s2n` is a **C99 implementation** of
   the TLS/SSL protocols that are designed to be **simple, small, fast, and with security as a
@@ -149,12 +151,12 @@ unresolved:
 ## AWS Certificate Manager _(Mod 12 pp126–129)_
 
 - "ACM is a service that lets you easily **provision, manage, and deploy SSL/TLS
-  certificates** for use with the AWS services." _(p126)_
+  certificates** for use with the AWS services." _(Mod 12 p126)_
 - "ACM can be used to create **wildcard SSL certificates** to secure **subdomains**."
-  _(p126)_
+  _(Mod 12 p126)_
 - "ACM certificates can be used to secure **multiple domain names and multiple names within
-  a domain**." _(p126)_
-- Easily **provision, manage, deploy, and renew** SSL/TLS certificates. _(p127)_
+  a domain**." _(Mod 12 p126)_
+- Easily **provision, manage, deploy, and renew** SSL/TLS certificates. _(Mod 12 p127)_
 
 ### ACM best practices — the six the courseware names _(Mod 12 pp126–128)_
 
@@ -199,35 +201,16 @@ unresolved:
 
 | Option | Printed meaning |
 |---|---|
-| **Default CloudFront Certificate** (e.g. `d111111abcdef8.cloudfront.net`) | "Choose this option if you want your users to **use HTTPS or HTTP** to access your content." "**Important:** If you choose this option, CloudFront requires that **browsers or devices support TLSv1 or later** to access your content." |
+| **Default CloudFront Certificate** (the certificate name OCRs as `C.Cloudfront net)` — garbled, see `unresolved:`) | "Choose this option if you want your users to **use HTTPS or HTTP** to access your content." "**Important:** If you choose this option, CloudFront requires that **browsers or devices support TLSv1 or later** to access your content." _(OCR as printed: "If you choose tlis option. Clou$ront requires tlat browsers or deuces support TLSvI or later to access your content")_ |
 | **Custom SSL Certificate (example.com)** | "Choose this option if you want your users to access your content by using an **alternate domain name**, such as `https://www.example.com/logo.jpg`." "You can use either certificates that you created in **AWS Certificate Manager (ACM)** or certificates stored in the **certificate store printed as 'IAN certificate store'** (see `unresolved:`)." |
 
 Related: encryption at rest models — [[12-LO04j-AWS-Encryption-Data-at-Rest]] · ACM architecture
 uses ELB — [[12-LO04l-AWS-VPC-and-Network-Security]] · TLS fundamentals —
 [[03-LO08-Network-Security-Protocols]]
 
-## Cards
 
-The two key components of the Bouncy Castle architecture, and what the rest build on
-?
-Light-weight API and the Java Cryptography Extension (JCE) provider support cryptography; the remaining components built on the JCE provider add extra functionality (PGP support, S/MIME). Bouncy Castle supplies APIs for both Java and C#, from J2ME to JDK 1.11
 
-The two CloudHSM claims that give separation of duties
-?
-AWS has administrative credentials to manage and maintain the appliance, but administrative credentials cannot access the HSM partitions; AWS monitors HSM health and network availability while users control the HSMs and the generation and use of their encryption keys
 
-The six AWS Certificate Manager best practices
-?
-AWS CloudFormation · Certificate Pinning · Domain Validation · Adding or Deleting Domain Names · Opting Out of Certificate Transparency Logging · Turn on AWS CloudTrail
 
-Certificate pinning, as the courseware defines it
-?
-Also called SSL pinning — validate a remote host by associating it directly with its X.509 certificate or public key, then use pinning to bypass the SSL/TLS certificate chain validation
 
-s2n — what it is and what it supports
-?
-An open-source C99 implementation of the TLS/SSL protocols, designed to be simple, small, fast and security-first. Implements SSLv3, TLS1.0, TLS1.1, TLS1.2 · 128-bit and 256-bit AES, ChaCha20, 3DES and RC4 in CBC and GCM · DHE and ECDHE for forward secrecy · SNI, ALPN and OCSP TLS extensions
 
-What CloudFront does with the SSL/TLS connection in the ACM architecture
-?
-Users communicate with CloudFront over HTTPS and CloudFront terminates the SSL/TLS connection at the edge location; CloudFront then communicates to the origin over HTTP or HTTPS as configured

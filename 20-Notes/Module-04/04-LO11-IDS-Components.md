@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "04"
 lo: "11"
-tags: [concept, tool, mod/04, flashcard/04]
+tags: [concept, tool, mod/04]
 topic: "IDS Components"
 exam_weight: unknown
 status: done
@@ -52,27 +52,8 @@ Components: **Network sensors · Analyzer · Alert systems · Command console ·
 6. **Escalation procedures if necessary** (policy-written actions on true positive; vary by severity)
 7. **Events logged and reviewed** (log intrusion events; review to decide future countermeasures + update signatures)
 
-## Cards
-Six IDS components?
-?
-Network sensors, analyzer, alert systems, command console, response system, attack-signature database.
 
-Alert delivery methods?
-?
-Pop-up windows, email, sounds, mobile messages.
 
-True vs false positive alert?
-?
-True positive = correctly identified successful attack; false positive = event misidentified as attack.
 
-Response system countermeasures?
-?
-Log out user, disable account, block attacker source, restart server/service, close connections/ports, reset TCP sessions.
 
-IDS detection process steps?
-?
-Install signatures → gather data → alert sent → IDS responds → admin assesses damage → escalation → events logged/reviewed.
 
-Where to place sensors?
-?
-Internet gateways, between LAN connections, remote-access/dial-up servers, either side of firewall, VPN devices.

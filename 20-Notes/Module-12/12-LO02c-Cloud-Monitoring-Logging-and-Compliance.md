@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "02"
-tags: [process, policy, mod/12, flashcard/12]
+tags: [process, policy, mod/12]
 topic: "Cloud monitoring, logging, and compliance"
 exam_weight: unknown
 status: done
@@ -26,7 +26,7 @@ unresolved:
 
 Cloud monitoring is **required to manage cloud-based services, applications, and infrastructure**.
 Effective cloud monitoring helps an organization **protect** the environment from potential
-threats, **store and transfer** data easily, and **safeguard** customers' personal data. _(p29)_
+threats, **store and transfer** data easily, and **safeguard** customers' personal data. _(Mod 12 p29)_
 
 ### Data monitoring — unauthorized access signals _(Mod 12 p29)_
 
@@ -41,9 +41,9 @@ _(Mod 12 p29)_
 
 ### Data monitoring rules
 
-- **Define thresholds and rules for normal activities** → helps detect **unusual activities**. _(p29)_
+- **Define thresholds and rules for normal activities** → helps detect **unusual activities**. _(Mod 12 p29)_
 - **Alert the data owner** if data activity **exceeds the defined thresholds** (i.e. if any breach
-  is observed in the defined threshold). _(p29)_
+  is observed in the defined threshold). _(Mod 12 p29)_
 
 ### Cloud monitoring plan — essential aspects _(Mod 12 p29–30)_
 
@@ -88,11 +88,11 @@ _(Mod 12 p31–32)_
 complexity; these features let organizations determine the **root cause of potential anomalies from
 logs that were never captured**. _(Mod 12 p31)_
 
-**Keep applications safe** _(p32)_ — log collection and management must not ruin the monitoring
+**Keep applications safe** _(Mod 12 p32)_ — log collection and management must not ruin the monitoring
 application (legacy-based or virtual); continuous-monitoring needs can bury application
 resources, so the frequency parameters must be appropriately configured.
 
-**System scalability** _(p32)_ — a problematic system generates **more data than usual**, producing
+**System scalability** _(Mod 12 p32)_ — a problematic system generates **more data than usual**, producing
 **bursts in the log data**; log data volume grows with the organization or with application
 demand, so analytics/management must scale accordingly.
 
@@ -107,9 +107,9 @@ demand, so analytics/management must scale accordingly.
 ## Compliance _(Mod 12 p33)_
 
 - A clear understanding of the requirements of an organization and **how compliance is achieved**
-  enables **business agility and growth**. _(p33)_
+  enables **business agility and growth**. _(Mod 12 p33)_
 - **Compliance failure can lead to:** regulatory fines · lawsuits · cyber security incidents ·
-  reputational damage. _(p33)_
+  reputational damage. _(Mod 12 p33)_
 
 ### Compliance considerations when integrating with CSPs
 
@@ -123,28 +123,9 @@ _(Mod 12 p33)_
 
 Exam cross-refs: [[Question-Bank]] · [[Exam-Facts]]
 
-## Cards
 
-Security logs — the three uses stated in the courseware
-?
-Threat detection · Data analysis · Compliance audits
 
-Five questions that determine whether the right log data was captured
-?
-Who is accessing the network? · What assets are they accessing? · From where are they accessing the asset? · When are they doing this? · Are there established permissions to allow their activity?
 
-Data monitoring — the two rule requirements
-?
-Define thresholds and rules for normal activity, and alert the data owner if data activity exceeds the defined thresholds
 
-Where should aggregated logs be sent?
-?
-To log analytics or a security information and event management (SIEM) system, giving a database of valuable information to access and analyze on demand
 
-Cloud monitoring plan — the seven essential aspects
-?
-Identify metrics and events · Use one platform to report all data · Monitor cloud service usage and fees · Monitor user experience · Trigger rules with data · Separate and centralize data · Try failure
 
-Consequences of compliance failure
-?
-Regulatory fines · Lawsuits · Cyber security incidents · Reputational damage

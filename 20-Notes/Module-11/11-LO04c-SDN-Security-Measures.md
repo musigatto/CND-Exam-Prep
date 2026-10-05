@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "04"
-tags: [bestpractice, mod/11, flashcard/11]
+tags: [bestpractice, mod/11]
 topic: "SDN Security Measures"
 exam_weight: unknown
 status: done
@@ -94,28 +94,9 @@ _(Mod 11 p72)_
 
 _(Mod 11 p76)_
 
-## Cards
 
-Data plane — which protocol versions replace the insecure ones?
-?
-SNMPv3 instead of SNMPv2c; secured shell (SSH) instead of telnet; TLS 1.2 (or UDP/DTLS) between network device agent and controller
 
-Data plane — anti-replay and tunnel options
-?
-Use protocols within TLS sessions · use shared secret passwords or use nonce to avoid replay attacks · use passwords and shared-secrets to authenticate tunnel endpoints and secure tunneled traffic with the DCI protocol in use
 
-Controller layer — the five measures
-?
-Secure + authenticated administrator access · RBAC policies · logging and audit trails · HA controller architecture if DoS risk exists · avoid SDN systems with redundant controllers
 
-Which two techniques protect the tunnel / control path?
-?
-Authorize tunnel endpoints and protect tunneled traffic using data center interconnect (DCI) protocols; separate control protocol traffic from primary data flows through an out-of-band (OOB) network
 
-FlowChecker — what does it do?
-?
-Validates flows in network device tables against controller policy, identifying malicious traffic and discrepancies caused by an attack
 
-Why avoid SDN systems with redundant controllers?
-?
-It may enable an attacker to cause DoS in all the controllers in the SDN system, while leaving the attacker undetected

@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "03"
 lo: "03"
-tags: [process, mod/03, flashcard/03]
+tags: [process, mod/03]
 topic: "Identity and Access Management (IAM)"
 exam_weight: unknown
 status: done
@@ -84,37 +84,15 @@ Common methods: Passwords · Biometrics · Token management. Wired + wireless ne
 | **SailPoint IdentityIQ** | Enterprise-scale IAM: provisioning, access requests, certifications, separation of duties |
 | **Ping Identity** | Cloud-hosted IAM for on-prem + cloud apps; admin access-control toolkit |
 
-## Cards
-Four IAM areas?
-?
-Authentication · Authorization · User management · Central user (identity) repository.
 
 
-Authentication factors?
-?
-Something you know (password) · Something you have (token/card) · Something you are (biometrics).
 
 
-2FA combos?
-?
-Password+smart card · password+biometrics · password+OTP · smart card+biometrics.
 
 
-Token-based auth advantages?
-?
-Security, scalability, cross-origin sharing, revocation, statelessness.
 
 
-Centralized vs decentralized authorization?
-?
-Centralized = single DB/unit for all resources (easy, cheap); decentralized = per-resource DB, flexible but cascading/cyclic auth issues.
 
 
-Accounting purpose?
-?
-Track user actions → trend analysis, breach detection, forensics (AAA: Authentication/Authorization/Accounting).
 
 
-Provierre/deprovisioning benefit?
-?
-Eradicates idle "zombie" accounts; auto-removes access on departure.

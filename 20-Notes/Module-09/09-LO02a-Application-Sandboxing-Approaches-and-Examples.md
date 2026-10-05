@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "09"
 lo: "02"
-tags: [concept, process, bestpractice, mod/09, flashcard/09]
+tags: [concept, process, bestpractice, mod/09]
 topic: "Application Sandboxing — Approaches, Examples, Browser Isolation"
 exam_weight: unknown
 status: done
@@ -44,31 +44,9 @@ unresolved: []
 ## Acrobat Reader Sandbox Configuration
 - Edit → Preferences → **Security (Enhanced) → Sandbox protections**: Enable Protected Mode at startup · Create Protected Mode log file · **Run in AppContainer** · Protected View (Off / Files from potentially unsafe locations / All files)
 
-## Cards
-Sandboxing definition / goal?
-?
-Run untrusted or untested third-party programs in a sealed container that blocks access to critical system resources; extra layer over host/OS.
 
-Sandbox limitation (important)?
-?
-Not robust against advanced malware targeting the OS kernel.
 
-Two sandbox approaches?
-?
-Isolation-based (program isolated from system). Rule-based (shares resources per policies).
 
-Windows UAC integrity levels vs sandbox?
-?
-Edge Protected Mode runs low integrity; standard user = medium; elevated admin = high.
 
-Chrome site-isolation flag methods?
-?
-chrome://flags Strict-Origin-Isolation Enabled, or Chrome shortcut Target --site-per-process.
 
-Firefox sandbox preference?
-?
-about:support (Sandbox listing) or about:config security.sandbox.content.level.
 
-Acrobat Protected Mode?
-?
-Security (Enhanced) → Sandbox protections: Protected Mode at startup, AppContainer, Protected View modes.

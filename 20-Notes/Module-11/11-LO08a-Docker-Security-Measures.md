@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "08"
-tags: [bestpractice, tool, mod/11, flashcard/11]
+tags: [bestpractice, tool, mod/11]
 topic: "Docker Security Measures"
 exam_weight: unknown
 status: done
@@ -78,28 +78,9 @@ The results list a WordPress entry plus relevant third-party entries such as `bi
 
 Bench-script layer of the same idea: [[11-LO07c-Container-Security-Best-Practices]] (p.118), [[11-LO08b-Docker-Security-Tools]].
 
-## Cards
 
-Docker ships five security features - name them and say what capabilities gives you.
-?
-Cgroups, LSMs (AppArmor/SELinux via runc), capabilities, seccomp, userns. Capabilities split root privileges on a thread basis; Docker allows only 14 of the 37 Linux capability groups by default, and more can be added or removed. _(Mod 11 p120)_
 
-Seccomp and userns: what does each control?
-?
-Seccomp gives fine-grained per-syscall control - the default profile limits many syscalls and specific syscalls can be blocked from being used by container binaries. Userns remaps root to unprivileged IDs on the host, isolating the process and limiting access to system resources; Docker supports global uid/gid mapping. _(Mod 11 p120)_
 
-Docker content trust: what does it verify, what is its default state, and how is it enabled?
-?
-It verifies the authenticity, integrity and publication date of images in the Docker Hub registry; it is disabled by default. Enable with sudo export DOCKER_CONTENT_TRUST=1, then only signed images are retrieved by docker pull. _(Mod 11 p121)_
 
-Resource limits: why does an uncapped container endanger the host, and what two limit types does Docker impose?
-?
-A container can consume as much as the host scheduler provides; the kernel may throw an OOME and kill other processes, potentially collapsing the system. Docker imposes hard memory limits (only a set amount of system memory) or soft memory limits (unconstrained use under conditions such as overall low memory usage). _(Mod 11 p122)_
 
-Which container resource is limited with which stated option?
-?
-CPU - add the --cpus=2 option to the run command to limit a container to 2 CPUs. The 1 GB memory limit is the other example, but its option string is not legible in the courseware figure. _(Mod 11 p122)_
 
-Third-party tool selection: what is the risk and how is an official image recognized?
-?
-Containers pulled from public repositories may have been created insecurely and may contain malicious or corrupt files, so pull only from reliable sources such as the Docker Hub. In the search results the first entry is the official image - that flag distinguishes official from third-party sources and tools. _(Mod 11 p123)_

@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "06"
 lo: "05"
-tags: [concept, tool, command, bestpractice, process, mod/06, flashcard/06]
+tags: [concept, tool, command, bestpractice, process, mod/06]
 topic: "SSH Hardening and Chroot SFTP"
 exam_weight: unknown
 status: done
@@ -66,23 +66,7 @@ unresolved: []
   9. Restart: `$ sudo systemctl restart sshd`
 - Verify: `$ sftp alex@192.168.55.1` → `sftp>` prompt; `sftp> pwd` returns `/` (jail working). SSH attempt → "This service allows sftp connections only."
 
-## Cards
-Set PermitRootLogin safely?
-?
-Edit /etc/ssh/sshd_config → `PermitRootLogin no` → restart sshd (systemctl/service/init.d). Create sudo-capable user first.
 
-Hardening keys in sshd_config?
-?
-PermitRootLogin no, IgnoreRhosts yes, HostbasedAuthentication no, PermitEmptyPasswords no, X11Forwarding no, MaxAuthTries 5, Ciphers aes128/192/256-ctr, ClientAliveInterval 900.
 
-What is chrooted SFTP and why?
-?
-Locks SFTP users inside their home dir (can't browse others'); steps: mkdir /sftp (root owned), dirs per user, group sftponly, useradd -s /sbin/nologin, chmod 700, sshd_config internal-sftp + Match block.
 
-sshd_config settings for chroot SFTP?
-?
-Comment out Subsystem sftp (path per distro), then add: `Subsystem sftp internal-sftp`, `Match group sftponly`, `ChrootDirectory /sftp/`, `X11Forwarding no`, `AllowTcpForwarding no`, `ForceCommand internal-sftp`.
 
-Verify SFTP jail?
-?
-`sftp alex@<server>` → `sftp>` and `pwd` = `/`. SSH attempt shows "This service allows sftp connections only." Restart `systemctl restart sshd`.

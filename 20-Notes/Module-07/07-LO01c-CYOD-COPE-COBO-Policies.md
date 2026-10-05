@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "07"
 lo: "01"
-tags: [concept, policy, process, mod/07, flashcard/07]
+tags: [concept, policy, process, mod/07]
 topic: "CYOD, COPE, and COBO Policies"
 exam_weight: unknown
 status: done
@@ -64,19 +64,6 @@ unresolved: []
 4. Security: fully locked-down devices, granular policy control, prevent app downloads
 5. Support: dedicated helpdesk (troubleshooting, activation/deactivation, service management)
 
-## Cards
-CYOD vs COPE ownership?
-?
-CYOD: employee picks from company-approved list, company purchases. COPE: company purchases + owns; personal use enabled. COBO: company-owned, business-only (often single app).
 
-Fastest vs slowest deployment models?
-?
-CYOD: slower than BYOD but quicker than COPE; COPE has the slowest deployment timeframe of the models.
 
-COBO classic example?
-?
-Blackberry devices; also inventory systems with embedded barcode scanners (single-application devices).
 
-COPE containerization purpose?
-?
-Separate professional and personal use of a company-owned device; manage/prohibit data sharing between the two containers.

@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "03"
-tags: [concept, mod/11, flashcard/11]
+tags: [concept, mod/11]
 topic: "Network Virtualization Concepts"
 exam_weight: unknown
 status: done
@@ -54,9 +54,9 @@ Body text — *key advantages*:
 
 ```
 Virtual Network          <- software-based, end product
-─────────────────
+•••••••••••••••••
 Virtualization Layer
-─────────────────
+•••••••••••••••••
 Physical Layer
 ```
 
@@ -64,34 +64,7 @@ Physical Layer
 
 `VLAN` · `VSN` (virtual service network) · `VPN` (virtual private network) · `Active and programmable networks` · `Overlay networks`
 
-## Cards
 
-```
-What single administrative unit is at the heart of the courseware NV definition?
-?
-NV = combining all available network resources and sharing them among network users under a single administrative unit; hardware-allocated resources are abstracted into software. _(Mod 11 p17–p18)_
-```
 
-```
-How does NV handle the available bandwidth?
-?
-It splits it into independent channels, assigned or reassigned to a particular server or device in real time. _(Mod 11 p18)_
-```
 
-```
-What does the "Benefits of Network Virtualization" side panel list?
-?
-Efficient, flexible, scalable usage · logically segregates underlay administrative from overlay domain · automates network and security protocols · security by resource isolation · enhanced application delivery and reduced overall cost. _(Mod 11 p18)_
-```
 
-```
-What are the building blocks of a virtual network in an NVE?
-?
-A collection of virtual nodes and virtual links — a subset of the underlying physical network resources. _(Mod 11 p19)_
-```
-
-```
-Name the five virtual-network examples listed by the courseware.
-?
-VLAN · virtual service network (VSN) · virtual private network (VPN) · active and programmable networks · overlay networks. _(Mod 11 p19)_
-```

@@ -1,8 +1,8 @@
----
+﻿---
 
 type: moc
 module: "09"
-tags: [concept, mod/09, flashcard/09]
+tags: [concept, mod/09]
 topic: "Module 09 — Administrative Application Security"
 exam_weight: unknown
 status: done
@@ -62,7 +62,7 @@ views:
 - Per-module exam blueprint weights (not stated in courseware).
 - A few in-slide vendor screens had OCR noise (license/SolarWinds tables); content kept to legible terms, no invented numbers.
 
-## Cards
+## Quick review
 Courseware's 5 application-security admin practices?
 ?
 Application whitelisting · blacklisting · sandboxing · patch management · application-level firewall (WAF).

@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "07"
 lo: "04"
-tags: [bestpractice, policy, mod/07, flashcard/07]
+tags: [bestpractice, policy, mod/07]
 topic: "Mobile Application, Data, and Network Security"
 exam_weight: unknown
 status: done
@@ -60,15 +60,5 @@ Enterprise-level mobile security management solutions only deliver their benefit
 - **Isolate user groups with different SSIDs**; segment traffic for groups to different **VLANs**
 - Apply different **firewall rules/filters** to different user-group/device combinations
 
-## Cards
-Mobile app security best practices (short list)?
-?
-No stored passwords · avoid query string · code obfuscation/encryption · 2FA · SSL/TLS · no app-data caching · input validation · secure sessions · server-side auth · enterprise app store installs · containerization · jailbreak protection.
 
-Mobile data security practices?
-?
-Encrypt device storage + OTA (SSL/TLS/VPN/WPA2) · periodic backup · no sensitive data/PINs as contacts · private data centers + device auth · avoid public Wi-Fi · auto-lock · timely patches · updated AV.
 
-Network guidelines for mobile?
-?
-Disable BT/IR/Wi-Fi when idle · Bluetooth non-discoverable · encrypted Wi-Fi only · no public hotspots · secure web accounts · segment users via SSIDs/VLANs · per-group firewall rules.

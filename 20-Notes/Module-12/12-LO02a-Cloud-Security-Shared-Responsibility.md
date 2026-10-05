@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "02"
-tags: [concept, policy, mod/12, flashcard/12]
+tags: [concept, policy, mod/12]
 topic: "Cloud security shared responsibility model"
 exam_weight: unknown
 status: done
@@ -35,13 +35,13 @@ unresolved:
 ## Shared responsibility principle _(Mod 12 p22–23)_
 
 - Cloud security **and compliance** are the shared responsibility of the cloud **provider and
-  consumer**. _(p22)_
-- **If the consumers do not secure their functions, the entire cloud security model will fail.** _(p22)_
+  consumer**. _(Mod 12 p22)_
+- **If the consumers do not secure their functions, the entire cloud security model will fail.** _(Mod 12 p22)_
 - Traditional IT: a **single organization** holds authority over the *complete stack* of computing
   resources and the whole system life cycle. Cloud: provider and consumer **work together** to
   design, build, deploy and operate cloud-based systems, and **both share** the duty of adequate
   security. _(p22–23)_
-- CSPs and consumers have **varying levels of control** over the available computing resources. _(p22)_
+- CSPs and consumers have **varying levels of control** over the available computing resources. _(Mod 12 p22)_
 
 ### How the boundary shifts by service model _(Mod 12 p22–23)_
 
@@ -87,13 +87,13 @@ _(Mod 12 p24)_
 
 **Definition.** The management of the **digital identities of users and their rights to access
 cloud resources** — creating, managing and removing digital identities, plus authorization of
-users. _(p25)_
+users. _(Mod 12 p25)_
 
 - IAM offers **role-based access control** to an organization's customers or employees for
   accessing critical enterprise information; it comprises the **business processes, policies and
-  technologies** that enable surveillance of electronic/digital identities. _(p25)_
+  technologies** that enable surveillance of electronic/digital identities. _(Mod 12 p25)_
 - IAM products give system administrators tools to **regulate user access** (create, manage,
-  remove) to systems or networks **based on the roles** of individual users. _(p25)_
+  remove) to systems or networks **based on the roles** of individual users. _(Mod 12 p25)_
 
 | Item | Detail |
 |---|---|
@@ -107,28 +107,9 @@ _(Mod 12 p25)_
 
 Related: [[12-LO02b-Cloud-Data-and-Network-Security]] · [[12-LO02c-Cloud-Monitoring-Logging-and-Compliance]]
 
-## Cards
 
-Traditional security measures in the cloud — what changes and what does not
-?
-The security protocols do not change; the security focus of the cloud consumers does
 
-Shared responsibility — the failure condition stated by the courseware
-?
-If the consumers do not secure their functions, the entire cloud security model will fail
 
-Shared responsibility matrix — the four columns, left to right
-?
-On-premises (for reference) · Infrastructure-as-a-service (IaaS) · Platform-as-a-service (PaaS) · Software-as-a-service (SaaS)
 
-Cloud service consumers are responsible for
-?
-User security and monitoring (IAM) · information security—data (encryption and key management) · application-level security · data storage security · monitoring, logging and compliance
 
-Cloud service providers are responsible for
-?
-Securing the shared infrastructure: routers · switches · load balancers · firewalls · hypervisors · storage networks · management consoles · DNS · directory services · cloud API
 
-IAM — why MFA is enabled and the preferred device types
-?
-To control access to cloud service APIs; best option is a virtual MFA or a hardware device

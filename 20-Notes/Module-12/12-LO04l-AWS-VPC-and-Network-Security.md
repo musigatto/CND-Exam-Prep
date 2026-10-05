@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "04"
-tags: [concept, policy, bestpractice, mod/12, flashcard/12]
+tags: [concept, policy, bestpractice, mod/12]
 topic: "Amazon VPC security — security groups, NACLs, gateways, subnets, Direct Connect and GovCloud"
 exam_weight: unknown
 status: done
@@ -33,7 +33,7 @@ unresolved:
   organizational entity**."
 - "It also provides **layer 3 (Network Layer IP routing) isolation from the internet**."
 
-**Implementation objectives** _(p130)_
+**Implementation objectives** _(Mod 12 p130)_
 
 1. "Implement the VPC **dedicated to your AWS account** to define an **isolated network for
    each workload or organizational entity**."
@@ -42,7 +42,7 @@ unresolved:
 3. "Use **Virtual Gateway (VGW)** where the Amazon VPC-based resources require **remote
    network connectivity**."
 
-**VPC features** _(p130)_
+**VPC features** _(Mod 12 p130)_
 
 1. "Create an Amazon VPC on the AWS scalable infrastructure and **specify its private IP
    address range from any selected range**."
@@ -63,7 +63,7 @@ unresolved:
 - "AWS VPC security groups (SGs) enable **inbound and outbound filtering at the instance and
   subnet levels**."
 - "**Unlike NACLs, there is no "Deny" rule** in security groups. **A data packet will be
-  dropped if there is no rule that explicitly permits it.**" ← *implicit-deny, no explicit deny*
+  dropped if there is no rule that explicitly permits it.**" â† *implicit-deny, no explicit deny*
 - "Security groups can be used to **restrict access at the protocol and port level**, and
   implement the **rule of least privilege** when designing and implementing user rules … to
   avoid security breaches."
@@ -72,7 +72,7 @@ unresolved:
 - "**Each rule is comprised of five fields: Type, Protocol, Port Range, Source, and
   Description.** This applies to both Inbound and Outbound rules."
 
-**Walkthrough — create a security group** _(p131)_
+**Walkthrough — create a security group** _(Mod 12 p131)_
 1. Open the **Amazon VPC console**.
 2. "In the navigation pane, select **Security Groups**, followed by **Create Security
    Group**."
@@ -99,21 +99,21 @@ unresolved:
 - "Rules can be added or removed from the **default NACL** or additional network ACLs … The
   changes are **automatically applied to the associated subnets**."
 - "ACL are considered as **stateless traffic filters** that are implemented on **inbound and
-  outbound traffic subnets** in Amazon VPC." _(p136)_
+  outbound traffic subnets** in Amazon VPC." _(Mod 12 p136)_
 - "They can command orders to **allow and restrict traffic based on the IP protocol, by
   service port, and source/destination IP address**."
 - "Network ACLs are **controlled or managed through Amazon VPC APIs** like security groups …
-  enable additional security via the **separation of duties**." _(p136)_
+  enable additional security via the **separation of duties**." _(Mod 12 p136)_
 - "Application of **per-instance filters with host-based firewalls** like the **Windows
-  Firewall** or **iptables** is encouraged by AWS." _(p136)_
+  Firewall** or **iptables** is encouraged by AWS." _(Mod 12 p136)_
 
-**Walkthrough — create a network ACL** _(p132)_
+**Walkthrough — create a network ACL** _(Mod 12 p132)_
 1. Open the Amazon VPC console.
 2. "Select **Network ACLs** in the navigation pane" → **Create Network ACL**.
 3. "In the **Create Network ACL** dialog box, **name network ACL**, and select the **ID of your
    VPC** from the VPC list." → **Yes, Create**.
 
-**Walkthrough — add rules to a network ACL** _(p132)_
+**Walkthrough — add rules to a network ACL** _(Mod 12 p132)_
 1. Open the console → **Network ACLs** in the navigation pane.
 2. "In the details pane, select either the **Inbound Rules** or **Outbound Rules** tab … and
    then choose **Edit**."
@@ -140,25 +140,25 @@ unresolved:
 
 - "Amazon VPC … create[s] an **isolated portion of the AWS cloud**. It enables customers to
   launch Amazon EC2 instances that have **private addresses in the range of their choice**."
-  _(p133)_
+  _(Mod 12 p133)_
 - "**Network traffic within every Amazon VPC is completely isolated from all other Amazon
   VPCs**." _(p133, p135)_
 - "A **public IP address is randomly assigned** in the Amazon EC2 instance while it is
-  launched." _(p133)_
+  launched." _(Mod 12 p133)_
 - "Customers can **define subnets** within their VPC by **grouping similar types of instances
   based on the range of IP addresses** and set **routing and security controls** for in and
-  out traffic flow of subnet and instance." _(p133)_
+  out traffic flow of subnet and instance." _(Mod 12 p133)_
 - "Customers can select an **IP address range** for their Amazon VPCs **at the time of
-  creating it**." _(p135)_
+  creating it**." _(Mod 12 p135)_
 - "The security features in an Amazon VPC are **security groups, routing tables, external
-  gateways, and network ACLs**." _(p133)_
+  gateways, and network ACLs**." _(Mod 12 p133)_
 - "Customers **should create VPC security groups** for their Amazon VPCs because **Amazon EC2
   security groups would not work inside Amazon VPC**. In addition, Amazon VPC security groups
   contain **additional capabilities** that Amazon EC2 security [groups] do not possess: the
   ability to **change the security groups after the launch of the instance** and the ability
-  to **specify any protocol with a standard protocol number**." _(p135)_
+  to **specify any protocol with a standard protocol number**." _(Mod 12 p135)_
 - "Amazon EC2 instance in an Amazon VPC **inherits the benefits of the guest's OS and
-  prevents packet sniffing**." _(p135)_
+  prevents packet sniffing**." _(Mod 12 p135)_
 
 ### VPC architecture templates — levels of public access _(Mod 12 pp133–134)_
 
@@ -170,7 +170,7 @@ unresolved:
 | **VPC with private subnet only + hardware VPN access** | "Instances run in a **private, isolated portion** … **not addressable from the internet**. Customers can connect their corporate data center with the private subnet through an **IPsec tunnel**." |
 
 External connectivity: "Enables customers to establish external connectivity by **creating and
-attaching a virtual private gateway, an internet gateway, or both**." _(p133)_
+attaching a virtual private gateway, an internet gateway, or both**." _(Mod 12 p133)_
 
 ### VPC peering _(Mod 12 p135)_
 
@@ -181,7 +181,7 @@ attaching a virtual private gateway, an internet gateway, or both**." _(p133)_
 
 ### The AWS VPC security controls _(Mod 12 pp133, 135–137)_
 
-**API access** _(p135)_
+**API access** _(Mod 12 p135)_
 
 - "Calls to **change routing**, to **create and delete Amazon VPCs, security groups, network
   ACL parameters** … are **signed by the Amazon Secret Key**, which **either user or AWS can
@@ -193,7 +193,7 @@ attaching a virtual private gateway, an internet gateway, or both**." _(p133)_
 - "Customers can further control **what APIs can be called by a newly created user** through
   **AWS IAM**."
 
-**Subnets and route tables** _(p135)_
+**Subnets and route tables** _(Mod 12 p135)_
 
 - "Customers create **one or more subnets** … every instance gets connected to a subnet when
   it is launched."
@@ -202,7 +202,7 @@ attaching a virtual private gateway, an internet gateway, or both**." _(p133)_
 - "Every subnet is connected with a **routing table** that processes network traffic, leaving
   subnets to detect their destination."
 
-**Firewall (security groups)** _(p135)_
+**Firewall (security groups)** _(Mod 12 p135)_
 
 - "Amazon VPC offers a **complete firewall solution, like Amazon EC2**, through **egress and
   ingress traffic filtration** from an instance."
@@ -238,7 +238,7 @@ attaching a virtual private gateway, an internet gateway, or both**." _(p133)_
   but **restrict the internet from initiating a connection** with them, customers can use a
   **NAT gateway**."
 
-**Dedicated Instances** _(p137)_
+**Dedicated Instances** _(Mod 12 p137)_
 
 - "Customers are allowed to launch an Amazon EC2 instance with a **high level of physical
   isolation (which works on single-tenant hardware)** within an Amazon VPC."
@@ -247,7 +247,7 @@ attaching a virtual private gateway, an internet gateway, or both**." _(p133)_
 - "Similarly, customers can create an Amazon VPC with **default tenancy** but specify
   **dedicated instances** for specific instances launched in it."
 
-**Elastic Network Interfaces (ENI)** _(p137)_
+**Elastic Network Interfaces (ENI)** _(Mod 12 p137)_
 
 - "A **default network interface** is present in each Amazon EC2 instance assigned with a
   private IP address on the Amazon VPC network."
@@ -264,12 +264,12 @@ attaching a virtual private gateway, an internet gateway, or both**." _(p133)_
 - "When the customer creates their AWS account, a **default VPC will be created for the
   customer in every region** … configured already for customers to use. Customers can create
   their own **nondefault VPC** … or launch their instances immediately into their default
-  VPC." _(p138)_
+  VPC." _(Mod 12 p138)_
 - "All instances will be provisioned automatically in a **ready-to-use default VPC** when a
   customer launch instances in a region where there are **no instances** before the launch of
-  the new AWS EC2-VPC feature." _(p138)_
+  the new AWS EC2-VPC feature." _(Mod 12 p138)_
 - "**Security groups for instances in EC2-VPC are different from the security groups for
-  instances in EC2-Classic.**" _(p138)_
+  instances in EC2-Classic.**" _(Mod 12 p138)_
 
 **Table 12.2 — difference among EC2 Classic, EC2 VPC and Regular VPC** _(Mod 12 p139; the
 EC2-Classic column did not OCR — see `unresolved:`)_
@@ -287,7 +287,7 @@ EC2-Classic column did not OCR — see `unresolved:`)_
 
 ## Other AWS network security measures _(Mod 12 pp140–141)_
 
-**Slide headings** _(p140)_: AWS Region · AWS Local zones · AWS GovCloud · **Use AWS Direct
+**Slide headings** _(Mod 12 p140)_: AWS Region · AWS Local zones · AWS GovCloud · **Use AWS Direct
 Connect to establish a dedicated network connection from your premises to AWS** · **Use DMZs** ·
 Isolate resources with subnets, firewalls, and routing tables · Secure DNS configurations ·
 Limit in/outbound traffic · Secure accidental exposures.
@@ -330,28 +330,9 @@ connection from your premises to AWS**."
 Segmentation theory: [[03-LO06-Network-Segmentation]] · storage side of S3:
 [[12-LO04m-AWS-DDoS-Storage-and-Data-Classification]]
 
-## Cards
 
-Security groups vs network ACLs — the two distinctions the courseware makes
-?
-Security groups have no "Deny" rule, so a packet is dropped unless a rule explicitly permits it, and they apply at instance and subnet level · network ACLs do have an Allow/Deny list, are stateless traffic filters on subnets, are evaluated by rule number, and their changes apply automatically to the associated subnets
 
-The five fields of a security group rule
-?
-Type · Protocol · Port Range · Source · Description — the same five apply to both the Inbound and the Outbound table
 
-Why customers must create their own VPC security groups
-?
-Because Amazon EC2 security groups would not work inside Amazon VPC; VPC security groups add capabilities EC2 security groups lack — changing the security group after the instance is launched, and specifying any protocol with a standard protocol number
 
-The four AWS VPC architecture templates, by level of public access
-?
-VPC with only a single public subnet · VPC with public and private subnets · VPC with public and private subnets including hardware VPN access · VPC with only a private subnet along with hardware VPN access
 
-Virtual Private Gateway (VPG) vs Internet Gateway
-?
-VPG establishes private connections between an Amazon VPC and another network, with traffic isolation per VPG and each VPN connection secured by a pre-shared key plus the customer gateway device's IP address · an internet gateway is attached to a VPC to enable direct connectivity with the internet, Amazon S3 and other AWS services, and each instance needs an Elastic IP or to route traffic through a NAT instance
 
-The five DMZ / isolation measures the courseware lists for AWS network security
-?
-Use a demilitarized zone exposing external services to an untrusted network · isolate resources with subnets, firewalls and routing tables · secure DNS configurations · limit inbound/outbound traffic · secure accidental exposures

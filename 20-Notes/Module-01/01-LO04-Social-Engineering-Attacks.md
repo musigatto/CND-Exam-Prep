@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "01"
 lo: "04"
-tags: [threat, mod/01, flashcard/01]
+tags: [threat, mod/01]
 topic: "Social Engineering Attack Techniques"
 exam_weight: unknown
 status: done
@@ -41,14 +41,5 @@ unresolved:
 - Who goes on vacation, where employees work, and security measures in place are the kind of info SE harvests
 - Employees must be trained to recognize and counter these tricks
 
-## Cards
-Piggybacking vs tailgating?
-?
-Piggybacking: an authorized person lets an unauthorized person pass a secure door. Tailgating: unauthorized person with fake badge follows an authorized person through a key-access door.
-<!--SR:!2026-09-30,1,230-->
 
 
-Two classes of social engineering attacks?
-?
-Human-based (physical presence needed) and computer-based (remote credential extraction).
-<!--SR:!2026-09-30,1,230-->

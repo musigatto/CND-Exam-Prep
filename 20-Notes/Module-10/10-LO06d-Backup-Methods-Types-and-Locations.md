@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "10"
 lo: "06"
-tags: [concept, process, mod/10, flashcard/10]
+tags: [concept, process, mod/10]
 topic: "Backup Methods, Types, and Locations"
 exam_weight: unknown
 status: done
@@ -36,15 +36,5 @@ unresolved: []
 ## Mnemonics
 - **FID**: Full → Incremental → Differential (per backup run type)
 
-## Cards
-Difference between incremental and differential backup?
-?
-Incremental backs up changes since last full OR incremental; differential backs up all changes since the last full backup.
 
-Which type makes the restore longest (needs most media)?
-?
-Incremental restores (must replay full + every incremental since).
 
-What is a snapshot?
-?
-A near-instant point-in-time copy of data used for quick rollback/recovery.

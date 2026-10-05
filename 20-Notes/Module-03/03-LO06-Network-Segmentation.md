@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "03"
 lo: "06"
-tags: [process, mod/03, flashcard/03]
+tags: [process, mod/03]
 topic: "Network Segmentation"
 exam_weight: unknown
 status: done
@@ -52,22 +52,9 @@ unresolved: []
 
 > [!info] Segmentation = one layer of defense-in-depth; complement with strong authentication, encryption, IDS, vulnerability assessments.
 
-## Cards
-Segmentation benefits?
-?
-Improved security, better access control, improved monitoring, improved performance, better containment.
 
 
-DMZ hosting rules?
-?
-Web/email/DNS/FTP servers; internal + external can connect to DMZ; DMZ hosts cannot connect into internal network.
 
 
-DMZ firewall designs?
-?
-Single (three-legged, single point of failure) vs dual firewall (most secure, most complex).
 
 
-Segmentation best practices?
-?
-Least privilege · limit third-party access · audit & monitor · easy legitimate paths · combine similar resources · don't over-segment · visualize.

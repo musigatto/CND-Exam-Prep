@@ -1,15 +1,15 @@
----
+﻿---
 
 type: note
 module: "01"
 lo: "01"
-tags: [concept, mod/01, flashcard/01]
+tags: [concept, mod/01]
 topic: "Essential Terminologies Related to Network Security Attacks"
 exam_weight: unknown
 status: done
 unresolved: []
 ---
-	[[MOC-Module-01]]
+[[MOC-Module-01]]
 
 # Essential Terminologies (§1.1)
 
@@ -66,26 +66,9 @@ unresolved: []
   - Procedure = systematic approach to launch → reveals what attacker seeks
 - Motives: disrupt continuity · fear/chaos via critical infrastructure · state military objectives · info theft · revenge · financial loss to target · data manipulation · ransom · propagating beliefs · reputation damage
 
-## Cards
-Risk formula?
-?
-Risk = Asset + Threat + Vulnerability
-<!--SR:!2026-10-03,4,270-->
 
 
-Attack formula?
-?
-Attack = Motive (Goal) + Method (TTPs) + Vulnerability
-<!--SR:!2026-09-30,1,230-->
 
 
-Why are insider attacks more dangerous than external?
-?
-Insiders know network architecture, security policies, and regulations; defenses typically focus on external attacks.
-<!--SR:!2026-10-03,4,270-->
 
 
-Three classes of security vulnerabilities?
-?
-Technological (protocol/OS/device), Configuration (accounts, misconfig, defaults), Security policy (unwritten, gaps, awareness).
-<!--SR:!2026-09-30,1,230-->

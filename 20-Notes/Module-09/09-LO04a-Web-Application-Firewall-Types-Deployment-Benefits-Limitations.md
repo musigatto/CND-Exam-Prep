@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "09"
 lo: "04"
-tags: [concept, tool, threat, mod/09, flashcard/09]
+tags: [concept, tool, threat, mod/09]
 topic: "Web Application Firewalls — Types, Deployment, Benefits, Limitations"
 exam_weight: unknown
 status: done
@@ -51,31 +51,9 @@ unresolved: []
 - Session fixation / anti-automation protection only partial — **if it manages the session itself**
 - No protection from **false positives**
 
-## Cards
-WAF working + layer?
-?
-Rule-based filter before the web app; protects at layer 7 where standard firewalls/IDS-IPS fall short.
 
-Three WAF types?
-?
-Network/hardware-based · Host/software-based · Cloud-hosted.
 
-Host vs network WAF granularity?
-?
-Host gives more control (single server, any server, no hardware); network covers all apps/network via IP/port but less granular + pricey hardware.
 
-WAF deployment options (5)?
-?
-Reverse proxy · Layer-2 bridge · Out of band · Server resident · Internet hosted/cloud.
 
-Out-of-band WAF advantage?
-?
-Least impact (not in-line); copies traffic via monitoring port; avoids false-positive outages.
 
-WAF benefits list?
-?
-Cookie encryption/signature · CSRF protection + URL encryption (parameter tampering) · data-validation depth-testing · compliance (PCI, HIPAA, GDPR).
 
-WAF limits?
-?
-Not replacement for auth/input filtering · can't read DB commands · partial session-fixation/anti-automation · no false-positive protection · needs ongoing management.

@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "05"
-tags: [crypto, process, mod/12, flashcard/12]
+tags: [crypto, process, mod/12]
 topic: "Azure encryption in transit — HTTPS, SAS, SMB 3.x, client-side, Site-to-Site VPN"
 exam_weight: unknown
 status: done
@@ -64,16 +64,16 @@ _(printed as one run-on chain; see `unresolved:`)_
 | Scope | "connects the **entire network** (e.g., on-premise network) to the Azure virtual network" | "connects a **single device** to the Azure virtual network" |
 | Crypto | "trustworthy and uses a **highly secure IPsec tunnel mode** VPN protocol" | — |
 
-Both "site-to-site and point-to-site VPNs enable **cross connectivity**." _(p201)_
+Both "site-to-site and point-to-site VPNs enable **cross connectivity**." _(Mod 12 p201)_
 
 ## Create a Site-to-Site VPN — walkthrough _(Mod 12 pp201–202)_
 
 1. "Open the **virtual network gateway page** (Name of VNet → Overview → Connected devices → Name
-   of gateway)." _(p201)_
-2. "Click on **Connections**, followed by **+Add**." _(p201)_
+   of gateway)." _(Mod 12 p201)_
+2. "Click on **Connections**, followed by **+Add**." _(Mod 12 p201)_
 3. "Fill the details in the **Add connection** page → **Connection type** and select
-   **Site-to-Site (IPsec)**." _(p201)_
-4. "Click on **OK** to create connection." _(p202)_
+   **Site-to-Site (IPsec)**." _(Mod 12 p201)_
+4. "Click on **OK** to create connection." _(Mod 12 p202)_
 
 **Values printed in the connection figure** _(p200, p202 Fig 12.132)_
 
@@ -85,24 +85,7 @@ Both "site-to-site and point-to-site VPNs enable **cross connectivity**." _(p201
 | Local network gateway | `Site2` |
 | Shared key (PSK) | `abci23` _(screenshot placeholder — not a default)_ |
 
-## Cards
 
-The five practices the courseware gives for encrypting data in transit in Azure
-?
-Use HTTPS for Azure Storage objects and REST APIs · use Shared Access Signatures and enable Secure Transfer Required on storage accounts · use SMB 3.x for Azure File Storage · use client-side encryption before transfer into Azure Storage and decrypt on receipt · use Azure Site-to-Site (or point-to-site) VPN to encrypt between the corporate network and the Azure VNet
 
-What does "secure transfer required" actually do on an Azure storage account
-?
-It enforces the HTTPS protocol — including when Shared Access Signatures and the REST APIs are used — so storage traffic cannot fall back to unencrypted HTTP
 
-What the courseware states about SMB 3.x in Azure File Storage
-?
-SMB 3.0 uses encryption during transit, is available in Windows Server 2012 R2, Windows 8, Windows 8.1 and Windows 10, and allows cross-region access
 
-Site-to-Site VPN versus Point-to-Site VPN in Azure — the scope difference
-?
-Site-to-Site connects the entire network (e.g., on-premise) to the Azure virtual network over a highly secure IPsec tunnel mode; Point-to-Site connects a single device to the Azure virtual network; both enable cross connectivity
-
-The values printed in the Azure Add-connection form for a Site-to-Site VPN
-?
-Name VNet1toSite2 · connection type Site-to-site (IPsec) · virtual network gateway VNet1GW · local network gateway Site2 · shared key (PSK) — then click OK to create the connection

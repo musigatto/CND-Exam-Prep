@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "04"
-tags: [threat, mod/11, flashcard/11]
+tags: [threat, mod/11]
 topic: "SDN Vulnerabilities and Attacks"
 exam_weight: unknown
 status: done
@@ -141,28 +141,9 @@ _(Mod 11 p71)_
 
 **Controller** — policy attacks to compromise the controller are executed through **malicious actions and configuration conflicts**. _(Mod 11 p71)_
 
-## Cards
 
-SDN data plane — the three major attacks
-?
-Device Attack (SDN switch software/hardware vulns: firmware, TCAM) · Protocol Attack (network protocol vulns of the forwarding device) · Side Channel Attack (deduce forwarding policy from performance metrics)
 
-SDN control plane — the three major attacks
-?
-Manipulation Attack (controller's understanding of the data plane) · Availability Attack (e.g. numerous unauthenticated packet-in messages) · Software Hack (commodity server; e.g. altering a system variable like time)
 
-SDN southbound API — the three major attack types
-?
-Interception Attacks (modify exchanged messages) · Eavesdropping Attacks (info between control and data plane) · Availability Attacks (numerous requests fail network policy implementation)
 
-Why is a compromised northbound API worse than a compromised southbound API?
-?
-The data exchanged between application plane and control plane affects network policies, so impact is potentially higher; also OpenFlow standardises the southbound API whereas the northbound API has no standard
 
-SDN application plane — policy attacks
-?
-Storage Attack · Control Message Attack · Resource Attack · Access Control Attacks
 
-SDN security limitation per layer (p67 figure)
-?
-Data Plane: insecure implementation of the management application. Control Plane: potential for compromise of the control of network flow. Application Plane: no proper authentication mechanism for the application to access the control plane

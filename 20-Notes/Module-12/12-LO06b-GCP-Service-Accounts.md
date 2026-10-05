@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "06"
-tags: [concept, policy, mod/12, flashcard/12]
+tags: [concept, policy, mod/12]
 topic: "GCP service accounts, roles and permissions"
 exam_weight: unknown
 status: done
@@ -92,24 +92,8 @@ _(Mod 12 pp248–249)_
 
 _(Mod 12 p249)_
 
-## Cards
 
-Definition of a GCP service account
-?
-A special account that belongs to an application or VM instance, but not to end-user, to run the specified account code hosted in Google cloud — multiple service accounts can be created for different logical components of an application
 
-GCP permission format and the printed examples
-?
-`<service>.<resource>.<verb>` — e.g. `pubsub.subscriptions.consume`; calling `topics.publish()` needs `pubsub.topics.publish`; permissions correlate one-to-one with REST API methods
 
-The 8 GCP IAM security best practices
-?
-Grant least privileges to avoid primitive roles · Create separate service account · Check granted policy on each resource · Restrict who acts as service accounts · Rotate service account keys · Restrict access to create and manage service accounts · Grant predefined roles · Use logging roles for log auditing
 
-Project-level vs fine-grained grant
-?
-Fine-grained — grant at the resource instead of the project (e.g. a single bucket → Storage Admin `roles/storage.admin`); Project level — the grant is inherited by all resources of that project, e.g. all buckets or all Compute Engine instances instead of individual ones
 
-Google group vs Cloud Identity domain
-?
-Google group = collection of Google accounts and service accounts with one email address but no login credentials, so policies apply to the whole group without editing the IAM policy; Cloud Identity domain = virtual group of all Google accounts whose users cannot access the G Suite domain applications

@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "04"
-tags: [policy, bestpractice, mod/12, flashcard/12]
+tags: [policy, bestpractice, mod/12]
 topic: "AWS least privilege, managed vs inline policies, access levels"
 exam_weight: unknown
 status: done
@@ -35,8 +35,8 @@ unresolved:
 ## Implement least privilege using IAM Access Analyzer _(Mod 12 pp64–69)_
 
 - "IAM Access Analyzer is used to achieve the least privilege by **setting fine-grained
-  permissions, verifying intended permissions, and refining permissions**." _(p64)_
-- "IAM Access Analyzer offers **over 100 policy checks** and actionable recommendations." _(p64)_
+  permissions, verifying intended permissions, and refining permissions**." _(Mod 12 p64)_
+- "IAM Access Analyzer offers **over 100 policy checks** and actionable recommendations." _(Mod 12 p64)_
 
 ### Step 1 — Set / grant fine-grained permissions (generate from CloudTrail) _(Mod 12 pp64–65)_
 
@@ -55,21 +55,21 @@ _(Mod 12 pp64–65)_
 ### Step 2 — Review, create and attach the generated policy _(Mod 12 p66)_
 
 - "A **successful notification** will appear on the role page if policy generation is ready."
-  In the **Permissions** tab, choose **View generated policy**. _(p66)_
+  In the **Permissions** tab, choose **View generated policy**. _(Mod 12 p66)_
 - Status fields shown: **Policy last requested** · **Requested on** · **Time period of
   activity** · **Status** (example values: requested on `2021/4/6 21 (PDT)`; activity
-  `2021/3/20 0:00 (PDT) – 2021/4/5 0:00 (PDT)`; status **Success**). _(p66)_
+  `2021/3/20 0:00 (PDT) – 2021/4/5 0:00 (PDT)`; status **Success**). _(Mod 12 p66)_
 - On the *Review and create managed policy* page, enter a **Name** and **Description**, choose
-  **Attach policy to application role**, then **Create and attach policy**. _(p66)_
+  **Attach policy to application role**, then **Create and attach policy**. _(Mod 12 p66)_
 - "Policies can be attached to an entity in your account, or you can remove any other policies
-  attached to the entity." _(p66)_
+  attached to the entity." _(Mod 12 p66)_
 
 ### Step 3 — Verify intended permissions _(Mod 12 pp66–68)_
 
 - "IAM Access Analyzer's **public and cross-account** can be used to confirm whether the access
-  already in place corresponds to your intentions." _(p66)_
+  already in place corresponds to your intentions." _(Mod 12 p66)_
 - "When you **enable** IAM Access Analyzer, it starts **watching for new or updated resource
-  permissions** so that you can see which ones allow cross-account and public access." _(p66)_
+  permissions** so that you can see which ones allow cross-account and public access." _(Mod 12 p66)_
 
 **Preview access to an S3 bucket** _(Mod 12 p67)_:
 
@@ -101,15 +101,15 @@ access using the badge".
 ### Step 4 — Refine by removing unused access _(Mod 12 pp68–69)_
 
 - "As the application gets to final review, the team and applications **may not rely on all
-  roles that were created**." Roles not used in the account "can then be **deleted**." _(p68)_
+  roles that were created**." Roles not used in the account "can then be **deleted**." _(Mod 12 p68)_
 - "The security team removes these **unused roles** to enhance the **security posture** of AWS
   environments. By removing the unused roles, it becomes **easier to monitor and audit** the
-  roles that are in use." _(p69)_
+  roles that are in use." _(Mod 12 p69)_
 - "**IAM reports the last-used timestamp** to identify the unused roles." The **last-accessed
-  data** tells you when AWS services were last used → opportunities to secure permissions. _(p69)_
+  data** tells you when AWS services were last used → opportunities to secure permissions. _(Mod 12 p69)_
 - "Navigate to the **Access Advisor** tab, which displays the list of **timestamps and services**
   that specify when the selected IAM principal last accessed each of the services that it has
-  permission to." _(p69)_
+  permission to." _(Mod 12 p69)_
 
 Steps _(Mod 12 p69)_: select **Roles** in the IAM navigation pane → look for **Last activity**,
 which displays the **number of days that have passed since each role made an AWS service
@@ -142,9 +142,9 @@ _(Mod 12 p70)_
 
 - Rationale printed: admins need time to understand policies before giving them to employees;
   "**AWS managed policies … helpful until designing and creating access policies**"; they let
-  users "familiarize them with the tasks that they must perform with the granted permissions". _(p70)_
+  users "familiarize them with the tasks that they must perform with the granted permissions". _(Mod 12 p70)_
 - Figure 12.24 names three policies: **`AdministratorAccess` · `PowerUserAccess` ·
-  `AWSCloudTrailReadOnlyAccess`**. _(p71)_
+  `AWSCloudTrailReadOnlyAccess`**. _(Mod 12 p71)_
 
 ### Features of managed policies _(Mod 12 p73)_
 
@@ -159,10 +159,10 @@ _(Mod 12 p70)_
 _(Mod 12 p73)_
 
 - "A customer managed policy can be better utilized by **copying the existing AWS managed policy
-  and customizing it**, if needed." _(p72)_
+  and customizing it**, if needed." _(Mod 12 p72)_
 - Inline-policy anti-pattern printed: "Here, **two roles have the same policy** (Policy
   `EmpDB-app`) even though they do not share any policies. **Each role comprises its own copy of
-  the policy.**" _(p74)_
+  the policy.**" _(Mod 12 p74)_
 
 ### Convert inline → managed _(Mod 12 p74)_
 
@@ -183,9 +183,9 @@ _(Mod 12 p74)_
 ## Use access levels to review IAM _(Mod 12 pp75–76)_
 
 - "IAM policies must be **constantly reviewed and monitored** to maintain AWS account security
-  and ensure that the **least privileges** are granted to individual accounts." _(p75)_
+  and ensure that the **least privileges** are granted to individual accounts." _(Mod 12 p75)_
 - Policy summary is on the **Policies** page for **managed policies** and on the **Users** page
-  for policies **attached to users**. _(p75)_
+  for policies **attached to users**. _(Mod 12 p75)_
 
 > **AWS classifies service actions into five access levels:**
 > **List · Read · Write · Permissions management · Tagging** _(Mod 12 p75)_
@@ -211,28 +211,8 @@ _(Mod 12 pp75–76)_
 Upstream: [[12-LO04c-AWS-IAM-Roles-and-Best-Practices]] ·
 [[12-LO04b-AWS-IAM-Features]] · concept background: [[03-LO03-IAM-Authentication-Authorization]]
 
-## Cards
 
-The three phases IAM Access Analyzer drives toward least privilege
-?
-Set fine-grained permissions · verify intended permissions · refine permissions by removing unused access
 
-Generating a policy from CloudTrail — what does Access Analyzer read
-?
-AWS CloudTrail events for the chosen role, over a specified time period — choose the shortest, up to 90 days, to reduce generation time · status is reported on the role page; then View generated policy in the Permissions tab
 
-The five IAM access levels
-?
-List · Read · Write · Permissions management · Tagging
 
-The five features of a managed policy
-?
-Reusability · central change management · versioning and rolling back · delegating permission management · automatic updates (AWS-managed)
 
-Three AWS-managed policy classes with their named examples
-?
-Full access — AmazonDynamoDBFullAccess, IAMFullAccess · Power user — AWSCodeCommitPowerUser, AWSKeyManagementServicePowerUser · Partial access — AmazonEC2ReadOnlyAccess, AmazonMobileAnalyticsWriteOnlyAccess
-
-The three policy summary tables
-?
-Policy summary — services and permission summaries for the policy · Service summary — actions and permission summaries for one service · Action summary — resources and the conditions for one action

@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "03"
 lo: "07"
-tags: [tool, protocol, concept, mod/03, flashcard/03]
+tags: [tool, protocol, concept, mod/03]
 topic: "Security Platforms: Load Balancers, UTM, SIEM, NAC, VPN, SOAR"
 exam_weight: unknown
 status: done
@@ -58,27 +58,8 @@ unresolved: []
 - Example: **Splunk SOAR** — orchestrates workflows, automates tasks in seconds (SOC), repeatable playbooks so analysts go proactive; dashboard (events resolved, playbooks, actions, FTE/time/dollars saved); codifies SOPs into reusable templates
 - Distinguished from SIEM: SIEM correlates/analyzes events; SOAR connects automation to the tools to execute responses/playbooks
 
-## Cards
-Load balancer purpose + example algorithms?
-?
-Routes client traffic to least-loaded/most-available server. Algorithms: round-robin, least-connections, least-loaded.
 
-UTM biggest risks?
-?
-Single point-of-failure + single point-of-compromise; one console = overall need, but less specialized.
 
-How does SIEM act on detected threats?
-?
-Correlates/analyzes events, then communicates with + reconfigures firewall and IPS rules to respond.
 
-NAC main purpose?
-?
-Restrict/allow end-user network access based on a security policy; blocks systems lacking AV/IPS.
 
-VPN tunneling protocol layers?
-?
-Layer 2 (data link) or layer 3 (network, OSI). Common: IPsec, PPTP, L2TP, SSL.
 
-SOAR three elements?
-?
-Orchestration (connect tools), Automation (replace manual tasks), Response (single dashboard IR actions).

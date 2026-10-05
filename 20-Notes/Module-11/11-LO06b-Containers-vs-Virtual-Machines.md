@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "06"
-tags: [concept, mod/11, flashcard/11]
+tags: [concept, mod/11]
 topic: "Containers vs virtual machines"
 exam_weight: unknown
 status: done
@@ -57,24 +57,8 @@ The only OS in the container stack is the **host operating system**; in the VM s
 - **"Lightweight / requires less memory / milliseconds / host OS shared" → container.** **"Heavyweight / more memory / minutes / own OS" → VM.** These four pairs are never contradicted.
 - The **isolation** claim is the one the courseware prints inconsistently — do not "fix" it, quote the source you are given.
 
-## Cards
 
-Container vs virtual machine — the four differentiators that are stated consistently.
-?
-**Weight** lightweight vs heavyweight · **Virtualization** OS-level vs hardware-level · **Memory** less vs more · **Start-up** milliseconds vs minutes. Plus: container **shares the host OS**, VM **has its own OS**.
 
-Table 11.2 (p93) — what security/isolation does the *table* assign to a container and to a VM?
-?
-Container = **process-level isolation (less secure)**. VM = **fully isolated (more secure)**. (Note: the figure on the same page states the reverse — the courseware is self-contradictory here.)
 
-Container vs virtual machine — start-up time and memory footprint.
-?
-Container: start-up in **milliseconds**, **requires less memory space**. Virtual machine: start-up in **minutes**, **requires more memory space**.
 
-Which products does the courseware give as container and VM examples (p93)?
-?
-Containers: **LXC, LXD, CGManager, Docker**. Virtual machines: **VMware, Hyper-V, vSphere, Virtual Box** (Table 11.2 lists the same four).
 
-Container stack, bottom to top (Fig. p93).
-?
-**Infrastructure > Host Operating System > Container Engine (Docker) > Containers > Bins/Libs** — note there is no Guest OS layer; the VM stack inserts **Virtual Machines > Guest OS**.

@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "06"
 lo: "06"
-tags: [concept, tool, command, crypto, mod/06, flashcard/06]
+tags: [concept, tool, command, crypto, mod/06]
 topic: "Linux Security Tools and Frameworks"
 exam_weight: unknown
 status: done
@@ -72,27 +72,8 @@ unresolved: []
 | **Comodo Antivirus** | comodo.com | Antivirus |
 | **Grsecurity** | grsecurity.net | Hardened kernel: intelligent access control, memory-corruption exploit prevention, host of hardening (no config needed) |
 
-## Cards
-Lynis purpose?
-?
-Open-source security auditing + hardening + compliance testing (PCI/HIPAA/SOX); modular, uses only discovered system components → keeps system clean.
 
-AppArmor vs SELinux?
-?
-Both MAC on LSM. AppArmor: per-program profiles (text in /etc/apparmor.d/), aa-enforce, apparmor_status. SELinux: kernel-level, TE + RBAC + MLS, 3 modes enforcing/permissive/disabled.
 
-SELinux modes?
-?
-enforcing (policy enforced/blocks), permissive (warnings + logs), disabled (no policy). Config /etc/selinux/config SELINUX=; status via sestatus.
 
-SCAP components?
-?
-CVE, CCE, CPE, CVSS, XCCDF, OVAL, OCIL 2.0, Asset Identification, ARF, CCSS, TMSAD — XML namespaced standards (NIST).
 
-OpenSCAP install + basic run?
-?
-Ubuntu `apt-get install libopenscap8`; Fedora `dnf install openscap-scanner`; RHEL/CentOS `yum install openscap-scanner`; OVAL: `oscap oval eval --results ... --report report.html <oval.xml>`.
 
-Name additional hardening tools?
-?
-Bastille Linux, JShielder, nixarmor, bane, Grsecurity (kernel exploit prevention), Comodo Antivirus.

@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "01"
 lo: "13"
-tags: [process, mod/01, flashcard/01]
+tags: [process, mod/01]
 topic: "Defense-in-Depth Security Strategy"
 exam_weight: unknown
 status: done
@@ -33,12 +33,5 @@ unresolved: []
 - Enforced through the security controls & elements in [[01-LO12b-Security-Controls-Defense-Elements]] (administrative/physical/technical; technology-operations-people)
 - Continual/adaptive cycle ([[01-LO12a-Continual-Adaptive-Security-Strategy]]) + defense-in-depth = the two strategies required for effective protection
 
-## Cards
-Seven defense-in-depth layers?
-?
-Policies/procedures/awareness, Physical, Perimeter, Internal network, Host, Application, Data.
 
 
-Why does defense-in-depth help after a breach?
-?
-A break in one layer only exposes the next layer, giving defenders time to deploy new/updated countermeasures and limiting impact.

@@ -1,8 +1,8 @@
----
+﻿---
 
 type: moc
 module: "06"
-tags: [concept, mod/06, flashcard/06]
+tags: [concept, mod/06]
 topic: "Module 06 — Endpoint Security - Linux Systems"
 exam_weight: unknown
 status: done
@@ -65,7 +65,7 @@ views:
 - Per-module exam blueprint weights (not stated in courseware).
 - LO04c `security=apparmor` enablement — boot parameter placement not fully captured (OCR line).
 
-## Cards
+## Quick review
 Module 06 subject scope?
 ?
 Linux endpoint security: OS + concerns, install/patching, hardening, user/password management, network + remote access, security tools/frameworks.

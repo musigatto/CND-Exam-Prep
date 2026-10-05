@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "08"
 lo: "02"
-tags: [concept, process, protocol, mod/08, flashcard/08]
+tags: [concept, process, protocol, mod/08]
 topic: "IoT Ecosystem, Architecture, and Communication Models"
 exam_weight: unknown
 status: done
@@ -55,81 +55,31 @@ unresolved: []
 - **Data collection** (lightweight, low-bandwidth protocols)
 - **Communication among multiple devices** (remote access anytime/anywhere)
 
-## Cards
-Four layers of the IoT architecture (top-down)?
-?
-Device → Communication → Cloud Platform → Process.
-
-IoT device-layer components?
-?
-Sensors (temp, gyroscope, pressure, light, GPS, electrochemical, RFID) · mobile devices · microcontroller units · networking gear · single-board computers.
-
-Four IoT communication models?
-?
-Device-to-Device · Device-to-Cloud · Device-to-Gateway · Back-end Data-Sharing (cloud-to-cloud).
-
-Protocols characteristic of device-to-gateway communication?
-?
-ZigBee, Z-Wave (local), IEEE 802.11 (Wi-Fi), IEEE 802.15.4 (LR-WPAN).
-
-Back-end data-sharing model?
-?
-Extends device-to-cloud: device data is accessed/analyzed later by authorized third parties (HTTPS, OAuth 2.0, JSON).
-
-Cloud gateway functions?
-?
-Authenticate/authorize devices · data compression · secure device↔cloud transfer · protocol compatibility gateway.
 
 
-## Cards (verified set 617277655)
+
+
+
+
+
 
 > Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
 
-IoT User applications
-?
-These applications help change the behavior of the application controls.  _(Mod 08 p13)_
 
 
-IoT Control applications
-?
-Control applications send automatic commands and alerts to actuators and helps in investigating problematic cases and enhancing security by identifying security breaches.  _(Mod 08 p12)_
 
 
-IoT Gateways
-?
-Gateways are devices through which data are transmitted from things to the cloud and vice versa.  _(Mod 08 p11)_
 
 
-IoT Streaming data processors
-?
-These processors ensure that no data can be lost or corrupted  _(Mod 08 p11)_
 
 
-IoT Cloud layer
-?
-his layer consists of servers hosted in the cloud that accept, store, and process the sensor data received from IoT gateways.  _(Mod 08 p15)_
 
 
-IoT Communication layer
-?
-The communication layer includes the components of communication protocols and networks used for connectivity and edge computing.  _(Mod 08 p14)_
 
 
-IoT Process Layer
-?
-The process layer gathers information and processes the received information. It includes decision making based on the information derived from policies and procedures of IoT computing.  _(Mod 08 p15)_
 
 
-Device-to-Device model
-?
-In this type of communication, connected devices interact with each other through the Internet but primarily use protocols such as ZigBee, Z-Wave, or Bluetooth.  _(Mod 08 p16)_
 
 
-Device-to-Cloud model
-?
-In this type of communication, devices communicate with the cloud, rather than directly communicating with the client, to send or receive data or commands.  _(Mod 08 p17)_
 
 
-Device-to-Gateway model
-?
-In the device-to-gateway communication model, the IoT device communicates with an intermediate device called a gateway, which in turn communicates with a cloud service.  _(Mod 08 p17)_

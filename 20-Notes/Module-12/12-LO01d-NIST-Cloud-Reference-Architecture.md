@@ -1,13 +1,13 @@
----
+﻿---
 type: note
 module: "12"
 lo: "01"
-tags: [concept, policy, mod/12, flashcard/12]
+tags: [concept, policy, mod/12]
 topic: "NIST cloud reference architecture and actors"
 exam_weight: unknown
 status: done
 unresolved:
-  - "p16: the service × deployment combination matrix is image-only. The slice carries just the sentence 'The combination of service and deployment models categorize the delivery of cloud services.' — no cell data recoverable."
+  - "p16: the service — deployment combination matrix is image-only. The slice carries just the sentence 'The combination of service and deployment models categorize the delivery of cloud services.' — no cell data recoverable."
   - "p17: Figure 12.1's diagram text is partial OCR — the first pass renders the service layer as 'paas IaaS' while the body pass renders it 'SaaS PaaS IaaS'. Layer and actor names here are taken from the readable body pass; the connector/edge topology is not recoverable from text."
 ---
 
@@ -17,7 +17,7 @@ unresolved:
 
 > The five actors, the layers, and the broker service categories _(Mod 12 p16–19)_
 
-## Service × deployment combination _(Mod 12 p16)_
+## Service — deployment combination _(Mod 12 p16)_
 
 > "The combination of service and deployment models categorize the delivery of cloud services."
 > _(Mod 12 p16)_
@@ -39,7 +39,7 @@ computing.
 | Physical Resource Layer | Hardware Facility |
 | Cross-cutting | Cloud Service Management (Provisioning / Configuration) · Business Support · Portability / Interoperability |
 
-**Actors and their activities in the figure** _(p17)_
+**Actors and their activities in the figure** _(Mod 12 p17)_
 
 | Actor | Activities shown |
 |---|---|
@@ -104,28 +104,9 @@ consumer may request services **from a cloud broker instead of directly contacti
 
 Exam cross-refs: [[Question-Bank]] · [[Exam-Facts]]
 
-## Cards
 
-The five significant actors in the NIST cloud reference architecture
-?
-Cloud consumer · Cloud provider · Cloud carrier · Cloud auditor · Cloud broker
 
-What does a cloud carrier do?
-?
-Acts as an intermediary providing connectivity and transport services between the cloud service providers and cloud consumers; provides access to consumers via networks, telecommunication and other access devices
 
-What does a cloud auditor examine, and what does an audit verify?
-?
-It independently examines the cloud service controls to express a corresponding opinion; audits verify adherence to standards by reviewing objective evidence
 
-The three service categories a cloud broker provides
-?
-Service intermediation (improves a given function, value-added) · Service aggregation (combines multiple services into new services) · Service arbitrage (like aggregation but the services are not fixed)
 
-SLA in cloud computing — who specifies what?
-?
-The consumer specifies the technical performance requirements — quality of service, security and remedies for performance failure; the CSP may also define limitations and obligations the consumer must accept
 
-Which actor steps out when the consumer buys directly from the CSP, and what stack does Figure 12.1 show?
-?
-Cloud broker; Service Layer (SaaS/PaaS/IaaS) → Resource Abstraction and Control Layer → Physical Resource Layer → Hardware Facility, with Cloud Service Management, Business Support and Portability/Interoperability across it

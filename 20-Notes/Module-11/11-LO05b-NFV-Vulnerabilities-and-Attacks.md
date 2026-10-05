@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "11"
 lo: "05"
-tags: [threat, mod/11, flashcard/11]
+tags: [threat, mod/11]
 topic: "NFV vulnerabilities and attacks"
 exam_weight: unknown
 status: done
@@ -68,28 +68,9 @@ The figure also prints **Inside / Outside** groupings next to the attack lists f
 - **VNF network attacks in the figure** add **control plane attacks**, **noisy neighbor**, **multi-tenancy**. _(p81)_
 - Mitigation-side measures are collected in [[11-LO05c-NFV-Security-Measures]]; component definitions in [[11-LO05a-NFV-Concepts-and-Components]].
 
-## Cards
 
-NFVI: list its vulnerabilities and its attack types
-?
-Vulnerabilities: **shared resources · insecure interfaces · improper control and monitoring · design flaws · improper security enforcements**. Attacks: **conventional (DoS/DDoS) · manipulation of VM OS · data destruction · hypervisor-level attacks · hardware attacks**.
 
-MANO: what does the adversary do, and what are the MANO vulnerabilities and attacks?
-?
-Eavesdrops or modifies communications **inside MANO** and **between NFVI and MANO**. Vulnerabilities: inconsistent orchestration and management, insecure interfaces, data theft, compromised policies, isolation. Attacks: conventional, orchestration and control plane — targeting the **orchestrator or VNF manager**.
 
-Why can a VNF be a source of attack, and what are its vulnerabilities?
-?
-It is a **vendor-provided software component** — it can carry software vulnerabilities or **may even be malware designed to execute an attack**. Vulnerabilities: software crashes, software design flaws, software bugs. At-risk: shared resources, third party networks, other tenants on the server.
 
-What can malicious NaaS providers do, and how is it mitigated?
-?
-**DoS attacks and extraction of secret information** (RFA / resource consumption attacks). The **hypervisor** must detect **excessive resource consumption** and **malicious virtual networks**.
 
-Side-channel example and mitigation
-?
-An attacker VM **extracts a private ElGamal decryption key** from a **co-resident victim VM running GnuPG**. Mitigation: **hide access management from the VNFs**.
 
-Mitigation for a compromised live migration
-?
-Use a **virtual trusted platform module (vTPM)** that **uses the TLS protocol** to provide confidentiality and authentication.

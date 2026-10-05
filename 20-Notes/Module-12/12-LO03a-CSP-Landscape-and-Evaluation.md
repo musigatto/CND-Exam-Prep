@@ -1,8 +1,8 @@
----
+﻿---
 type: note
 module: "12"
 lo: "03"
-tags: [concept, bestpractice, mod/12, flashcard/12]
+tags: [concept, bestpractice, mod/12]
 topic: "CSP landscape and CSP security evaluation"
 exam_weight: unknown
 status: done
@@ -22,7 +22,7 @@ unresolved:
 
 ## Major cloud service providers _(Mod 12 p35)_
 
-**Figure 12.2 — "Worldwide Cloud Infrastructure Services Spend, Q2 2023"** _(p35)_
+**Figure 12.2 — "Worldwide Cloud Infrastructure Services Spend, Q2 2023"** _(Mod 12 p35)_
 
 | Slice label as printed | Share |
 |---|---|
@@ -38,7 +38,7 @@ _(Mod 12 p35)_
 ## Evaluating the CSPs — gap analysis _(Mod 12 p36)_
 
 **The move:** *before consuming a cloud service*, perform a **gap analysis on the security
-capabilities and services provided by the CSPs**. _(p36)_
+capabilities and services provided by the CSPs**. _(Mod 12 p36)_
 
 Benchmark the platform's **maturity, transparency, and compliance** against:
 
@@ -50,7 +50,7 @@ Benchmark the platform's **maturity, transparency, and compliance** against:
 _(Mod 12 p36)_
 
 - **Cloud security maturity models can help accelerate the implementation of the migration
-  strategy of applications to the cloud.** _(p36)_
+  strategy of applications to the cloud.** _(Mod 12 p36)_
 
 ### Security maturity of the CSP — evaluated on _(Mod 12 p36)_
 
@@ -71,24 +71,8 @@ The courseware then compares the features each CSP publishes — see
 
 Exam cross-refs: [[Question-Bank]] · [[Exam-Facts]]
 
-## Cards
 
-Which three CSP market shares are printed on the Q2 2023 spend figure?
-?
-AWS 30% · Microsoft Azure 26% · Others 35% (the Google Cloud slice label carries no legible percentage)
 
-What must be done before consuming a cloud service?
-?
-Perform a gap analysis on the security capabilities and services provided by the cloud service providers
 
-Gap analysis — the three benchmark axes
-?
-Maturity · Transparency · Compliance
 
-Enterprise security standard and regulatory standards named for the gap analysis
-?
-ISO 27001 · PCI DSS · HIPAA · SOX
 
-CSP security maturity — the five evaluation points
-?
-Disclosure of security policies, compliance and practices · Disclosure when mandated · Security architecture · Security automation · Governance and security responsibility

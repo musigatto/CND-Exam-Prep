@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "06"
 lo: "04"
-tags: [concept, process, tool, command, policy, crypto, mod/06, flashcard/06]
+tags: [concept, process, tool, command, policy, crypto, mod/06]
 topic: "Linux Password Management and PAM Policies"
 exam_weight: unknown
 status: done
@@ -63,31 +63,9 @@ Default = simple password rules. Strong policies restrict unauthorized access; s
 - List users not logged in past 90 days (no header, exclude nerver-logged-in): `lastlog -b 90 | tail -n+2 | grep -v 'Never logged in'`
 - Disable a user: `usermod -L <username>`
 
-## Cards
-/etc/login.defs aging params?
-?
-PASS_MAX_DAYS (max lifespan), PASS_MIN_DAYS (min interval between changes), PASS_WARN_AGE (days warned before expiry). New accounts only.
 
-PAM password policy files by distro?
-?
-Red Hat: /etc/pam.d/system-auth. Debian/Ubuntu: /etc/pam.d/common-password. Modules: pam_pwquality.so / pam_cracklib.so / pam_unix.so.
 
-pam_pwquality parameters?
-?
-`retry=3` (3 prompts), `minlength=8` (min chars), `maxrepeat=3` (max repeats). Complexity: ucredit/lcredit/dcredit/ocredit = -1 → at least 1 of each class.
 
-Prevent password reuse in PAM?
-?
-pam_unix.so `remember=N` — history stored in /etc/security/opasswd; e.g., remember=13 blocks last 13 passwords.
 
-Find empty-password accounts?
-?
-`awk -F: '($2==""){print}' /etc/shadow`; lock with `passwd -l <account>`; remove `nullok` from PAM configs.
 
-Audit + disable inactive accounts?
-?
-`lastlog -b 90 | tail -n+2 | grep -v 'Never logged in'`; disable: `usermod -L <username>`.
 
-Account lockout via PAM?
-?
-pam_tally2.so: `auth required pam_tally2.so onerr=fail audit silent deny=5` (+ `unlock_time=900`); account line pairs the auth line.

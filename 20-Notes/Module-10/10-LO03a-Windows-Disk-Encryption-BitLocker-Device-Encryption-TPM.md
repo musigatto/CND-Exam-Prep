@@ -1,9 +1,9 @@
----
+﻿---
 
 type: note
 module: "10"
 lo: "03"
-tags: [concept, process, command, crypto, mod/10, flashcard/10]
+tags: [concept, process, command, crypto, mod/10]
 topic: "Data at Rest Encryption — Windows Device Encryption, BitLocker, TPM"
 exam_weight: unknown
 status: done
@@ -49,19 +49,6 @@ unresolved: []
 - Enable: Control Panel → System and Security → **Manage BitLocker** → Turn on BitLocker
 - (TPM required; recovery key fallback)
 
-## Cards
-Name the 4 categories of data-at-rest encryption.
-?
-Disk · file-level · removable media · database.
 
-Which two prereqs does Windows device encryption require?
-?
-TPM + UEFI.
 
-How to check TPM status?
-?
-`tpm.msc` → "The TPM is ready for use"; spec version shown.
 
-BitLocker cipher support?
-?
-AES-CBC and AES-XTS, 128-bit or 256-bit.
