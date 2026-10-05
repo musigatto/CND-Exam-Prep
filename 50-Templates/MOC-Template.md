@@ -10,7 +10,7 @@ unresolved: []
 ## Sections
 | LO | § | Section | Course pp. |
 |----|---|---------|-----------|
-| LO01 | 1.1 | <section> | <p> |
+| LO01 | 1.1 | `<section>` | `<p>` |
 
 ## Notes (LO order)
 ```base

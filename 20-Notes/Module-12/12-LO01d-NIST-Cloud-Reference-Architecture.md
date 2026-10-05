@@ -102,7 +102,7 @@ consumer may request services **from a cloud broker instead of directly contacti
 
 > Aggregation vs. arbitrage = **fixed set** vs. **broker's choice**. _(Mod 12 p19)_
 
-Exam cross-refs: [[Question-Bank]] · [[Exam-Facts]]
+Exam cross-refs: [[quiz.html]] · [[Answer-Key]]
 
 
 

@@ -60,12 +60,12 @@ views:
 
 ## Cross-links
 - [[00-Home]]
-- [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]]
+- [[quiz.html]] (unified bank, offline: 100 module + 56 external items) · [[Answer-Key]]
 - Related modules: [[MOC-Module-07]] (mobile endpoint counterpart) · [[MOC-Module-06]] (Linux endpoint counterpart) · [[MOC-Module-05]] (Windows endpoint hardening: patches, services) · [[MOC-Module-03]] (network security: VPN, IPSec, IDS/IPS, firewall segmentation overlap) · [[MOC-Module-02]] (policies, data classification, privacy) · [[MOC-Module-01]] (threat landscape: DDoS/botnets, Mirai).
 
 ## Unresolved
 - Per-module exam blueprint weights (not stated in courseware).
-- SeaCat.io ports: OCR shows "48101 = SeaCat® <mutual TLS> gateway tunnel" beside Nginx 443 — kept as printed; vendor pages not used.
+- SeaCat.io ports: OCR shows "48101 = SeaCat® `<mutual TLS>` gateway tunnel" beside Nginx 443 — kept as printed; vendor pages not used.
 - The IoT stack-wise principle table compresses several figure pages (cleartext figure content); only layer-row countermeasures stated in text are recorded.
 
 ## Quick review

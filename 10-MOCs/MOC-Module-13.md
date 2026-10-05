@@ -23,7 +23,7 @@ unresolved:
   - "p15 the block headed 'key characteristics of an AD-HOC wireless network' lists three items that all describe an ACCESS POINT, contradicting p14's definition of ad-hoc mode as having no AP. Reproduced verbatim under an explicit caveat."
   - "p39 'A busy AP can use all 224 available IV values within hours' — printed as 224, left as printed and NOT corrected to 2^24. p40's 'Hole 96 vulnerability in WPA2' is a garbled vendor identifier with no expansion, CVE or year anywhere in the module; quoted, not mapped to any real CVE."
   - "p46 gives the shared-key challenge-text key size as '64-bit or 128-bit' — a THIRD distinct key-size set in the module, alongside WEP's 40/104/128/232-bit (p29) and the '140-bit WEP key' on p31. Never reconciled by the courseware."
-  - "Per-module exam blueprint weights are not stated in the courseware. Module 13 sits in domain 5 'Enterprise Virtual, Cloud, and Wireless Network Protection' (15%, 15 of 100) shared with modules 11 and 12 — see [[Exam-Facts]]. The bank uses a flat 5 items per module."
+  - "Per-module exam blueprint weights are not stated in the courseware. Module 13 sits in domain 5 'Enterprise Virtual, Cloud, and Wireless Network Protection' (15%, 15 of 100) shared with modules 11 and 12 — see [[quiz.html]]. The bank uses a flat 5 items per module."
   - "OCR/screenshot gaps: pp55, 56, 57, 59, 73-74 are walkthrough screenshots treated as NON-EVIDENCE — no UI text was read from any of them. p20's component figure has 9 labels but only 5 description cells with no binding, so labels were NOT paired. p16's figure caption OCRs as 'use 46 Hot»ot G Connection Cen 4G Hotspot' and was not used."
 ---
 
@@ -128,7 +128,7 @@ pages, p1 the module divider, p3 the objective list.
 ## Exam facts
 - Exam **312-38** · 4 h · 100 questions. Module-level weight not stated in the courseware →
   `exam_weight: unknown`. Module 13 sits in blueprint domain 5 **Enterprise Virtual, Cloud, and
-  Wireless Network Protection = 15%** (15 of 100) shared with modules 11 and 12 — see [[Exam-Facts]].
+  Wireless Network Protection = 15%** (15 of 100) shared with modules 11 and 12 — see [[quiz.html]].
   The bank uses a **flat 5 per module**.
 - Strong question sources, in rough order of yield:
   - **Table 13.2**, row by row. The four algorithms, the four IV sizes, the four key lengths, the
@@ -181,7 +181,7 @@ views:
 
 ## Cross-links
 - [[00-Home]]
-- [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]] · [[Exam-Facts]]
+- [[quiz.html]] (unified bank, offline: 100 module + 56 external items) · [[Answer-Key]]
 - Related modules: [[MOC-Module-11]] and [[MOC-Module-12]] (same blueprint domain 5 — enterprise
   virtual, then enterprise cloud) · [[MOC-Module-03]] (technical network security — the encryption,
   tunneling and monitoring fundamentals wireless inherits) · [[MOC-Module-04]] (network perimeter

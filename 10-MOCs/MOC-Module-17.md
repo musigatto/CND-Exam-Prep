@@ -140,7 +140,7 @@ page, p1 the module divider, p3 the objective list.
 ## Exam facts
 - Exam **312-38** · 4 h · 100 questions. Module-level weight not stated in the courseware →
   `exam_weight: unknown`. Module 17 sits in blueprint domain 8 **Incident Prediction =
-  15%** shared with modules 18, 19, 20 — see [[Exam-Facts]]. The bank uses a **flat 5
+  15%** shared with modules 18, 19, 20 — see [[quiz.html]]. The bank uses a **flat 5
   per module**.
 - Strong question sources, in rough order of yield:
   - **BC business-centric vs DR/recovery data-centric** — the module's master contrast.
@@ -193,7 +193,7 @@ views:
 
 ## Cross-links
 - [[00-Home]]
-- [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]] · [[Exam-Facts]]
+- [[quiz.html]] (unified bank, offline: 100 module + 56 external items) · [[Answer-Key]]
 - Related modules: [[MOC-Module-18]] (Risk Management — the risk assessment this
   module's BIA and mitigation rest on) · [[MOC-Module-16]] (Incident Response — the
   disruptive events this module plans against) · [[MOC-Module-02]] (Administrative

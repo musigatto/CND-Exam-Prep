@@ -66,7 +66,7 @@ views:
 
 ## Cross-links
 - [[00-Home]]
-- [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]]
+- [[quiz.html]] (unified bank, offline: 100 module + 56 external items) · [[Answer-Key]]
 - Related modules: [[MOC-Module-01]] (attacks these perimeter controls stop) · [[MOC-Module-02]] (policies → router/switch baselines, change management) · [[MOC-Module-03]] (firewall/IDS/SIEM/VPN foundations, NAC) · [[MOC-Module-19]] (architecture resilience) · [[MOC-Module-05]] (endpoint hardening — Windows systems).
 
 ## Unresolved

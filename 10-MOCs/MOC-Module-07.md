@@ -57,7 +57,7 @@ views:
 
 ## Cross-links
 - [[00-Home]]
-- [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]]
+- [[quiz.html]] (unified bank, offline: 100 module + 56 external items) · [[Answer-Key]]
 - Related modules: [[MOC-Module-05]] (Windows endpoint counterpart) · [[MOC-Module-06]] (Linux endpoint counterpart) · [[MOC-Module-02]] (admin security: policies, data classification, privacy) · [[MOC-Module-03]] (network security: VPN, NAC overlap) · [[MOC-Module-01]] (threat landscape: phishing/smishing, malware).
 
 ## Unresolved

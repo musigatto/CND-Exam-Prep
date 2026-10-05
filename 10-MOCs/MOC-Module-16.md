@@ -253,7 +253,7 @@ OCR-damaged but whose prose list at the foot prints all nine subjects cleanly.
 ## Exam facts
 - Exam **312-38** · 4 h · 100 questions. Module-level weight not stated in the courseware →
   `exam_weight: unknown`. Module 16 **owns blueprint domain 7 Incident Response = 10%**
-  alone — see [[Exam-Facts]]. The bank uses a **flat 5 per module**.
+  alone — see [[quiz.html]]. The bank uses a **flat 5 per module**.
 - Strong question sources, in rough order of yield:
   - **The nine forensics methodology steps in order**, especially warrant-first and
     analysis-as-most-important.
@@ -326,7 +326,7 @@ views:
 
 ## Cross-links
 - [[00-Home]]
-- [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]] · [[Exam-Facts]]
+- [[quiz.html]] (unified bank, offline: 100 module + 56 external items) · [[Answer-Key]]
 - Related modules: [[MOC-Module-15]] (Network Logs Monitoring — the log evidence this
   module's forensics phase consumes) · [[MOC-Module-14]] (Network Traffic Monitoring — the
   traffic evidence of the same phase) · [[MOC-Module-11]] (Auditing — the audit-trail

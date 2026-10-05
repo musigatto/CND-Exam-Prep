@@ -28,7 +28,7 @@ unresolved:
   - "p25 the printed command is '$ wireshark -i eth0 —k' with an EM DASH before -k. Kept as printed rather than silently normalised to '-k'."
   - "p10 vs p11 vendor URLs: the p10 figure list OCRs to 'https://www.\"npcap.org', 'https://www.sohrwinds.com', 'https://www.netresec.com'; the p11 captions print the same three hosts cleanly. Clean p11 forms used, p10 garbles recorded."
   - "p14 the figure labels 'Ingress Traffic' and 'Egress Traffic source' do not establish a replication scope in the text layer, and the callout's 'all the packets passing through the switch are replicated' is ambiguous. No scope rule asserted."
-  - "Per-module exam blueprint weights are not stated in the courseware. Module 14 sits in domain 6 'Incident Detection' (10%, 10 of 100) shared with module 15 — see [[Exam-Facts]]. The bank uses a flat 5 items per module."
+  - "Per-module exam blueprint weights are not stated in the courseware. Module 14 sits in domain 6 'Incident Detection' (10%, 10 of 100) shared with module 15 — see [[quiz.html]]. The bank uses a flat 5 items per module."
   - "SCREENSHOT NON-EVIDENCE, deliberately excluded. Wireshark GUI captures and packet dumps: pp. 26–35, 43–50, 52–60, 62–66, 68–70. Product dashboards with 'Source: https://...' captions: pp. 72, 73, 75, 76, 82–85, 87, 88, 90, 92, 93, 95–98, 101, 102, 108, 110. p26 was excluded INCLUDING the 'Wireshark 2.6.6 ... ubuntu16.04' version string, because it lives inside the image. p85, p88, p108 and p110 are whole-page figures with no usable body text; p88's OCR is console garbage ('WTC NCM rcp IOS TCPRst inva4d'). No dashboard value, panel label, confidence score or console string was transcribed from any of them."
 ---
 
@@ -160,7 +160,7 @@ foot of the same page gives all six verbatim. The prose list is authoritative; n
 ## Exam facts
 - Exam **312-38** · 4 h · 100 questions. Module-level weight not stated in the courseware →
   `exam_weight: unknown`. Module 14 sits in blueprint domain 6 **Incident Detection = 10%** (10 of
-  100) shared with module 15 — see [[Exam-Facts]]. The bank uses a **flat 5 per module**.
+  100) shared with module 15 — see [[quiz.html]]. The bank uses a **flat 5 per module**.
 - Strong question sources, in rough order of yield:
   - **The illegal-packet / flag tests on p18** — SYN+FIN, only FIN, NULL flags, port zero, ACK with
     a zero acknowledgement number, only SYN with data, broadcast destination, reserved bits. Eight
@@ -225,7 +225,7 @@ views:
 
 ## Cross-links
 - [[00-Home]]
-- [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]] · [[Exam-Facts]]
+- [[quiz.html]] (unified bank, offline: 100 module + 56 external items) · [[Answer-Key]]
 - Related modules: [[MOC-Module-15]] (Network Logs Monitoring — the other half of blueprint domain
   6) · [[MOC-Module-03]] (Technical Network Security — the protocol fundamentals every tell rests
   on) · [[MOC-Module-04]] (Network Perimeter Security — the firewall and IDS/IPS placement this

@@ -27,9 +27,9 @@ views:
 > [!note] Pending modules show `draft`; a module counts as done when MOC + notes + canvas exist.
 
 ## Exam bank
-- [[Question-Bank]] — 100 single-best-answer (source of truth)
-- [[Mock-Exam-100]] — shuffled, no answers
-- [[Answer-Key]] — one-line justifications, module + topic cited
+- [[quiz.html]] – unified bank (100 module + 56 external items), offline, shuffled every attempt
+- [[Answer-Key]] – one-line justifications, module + topic cited (bank Q001–Q100 + external E/C/D/P/H/F)
+- [[Quick-Review]] – numbered review callouts, all modules
 
 ## Needs review
 ```base

@@ -271,8 +271,8 @@ spec:
     rule: RunAsAny
   volumes:
   hostPorts:
-  - min: <not legible in the source figure>
-    max: <not legible in the source figure>
+  - min: `<not legible in the source figure>`
+    max: `<not legible in the source figure>`
 ```
 
 ## Use Kubernetes Secrets _(Mod 11 p148–p151)_
@@ -312,19 +312,19 @@ resources:
   - aesgcm:
       keys:
       - name: key1
-        secret: <not legible in the source figure>
+        secret: `<not legible in the source figure>`
       - name: key2
         secret: dGhpcyBpcyBwYXNzd29yZA==
   - aescbc:
       keys:
       - name: key1
-        secret: <not legible in the source figure>
+        secret: `<not legible in the source figure>`
       - name: key2
         secret: dGhpcyBpcyBwYXNzd29yZA==
   - secretbox:
       keys:
       - name: key1
-        secret: <not legible in the source figure>
+        secret: `<not legible in the source figure>`
 ```
 
 - **Every `resources` array item constitutes a complete configuration.** `resources.resources` is an **array of Kubernetes resource names**; `providers` is an **ordered list** of the possible encryption providers (`identity` or `aescbc`). _(Mod 11 p149)_
@@ -344,7 +344,7 @@ resources:
   - aescbc:
       keys:
       - name: key1
-        secret: <BASE 64 ENCODED SECRET>
+        secret: `<BASE 64 ENCODED SECRET>`
   - identity: {}
 ```
 
@@ -360,7 +360,7 @@ resources:
 ### Verify that the data is encrypted _(Mod 11 p151)_
 
 ```bash
-kubectl create secret generic secret1 -n default --from-literal=<not legible in the source figure>
+kubectl create secret generic secret1 -n default --from-literal=`<not legible in the source figure>`
 ETCDCTL_API=3 etcdctl get /registry/secrets/default/secret1 --hexdump -C
 ```
 

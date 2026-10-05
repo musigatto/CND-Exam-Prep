@@ -58,8 +58,8 @@ _(Mod 12 p262)_
 **Automatic — command as printed** _(Mod 12 p262)_, flags unreadable:
 
 ```
-gcloud kms keys update key<name> \ <flag>location location \ <flag> <flag>keyring keyring<name> \
-    <flag><flag>rotation<period> rotation<period> \ next<flag>rotation<flag>time
+gcloud kms keys update key`<name>` \ `<flag>`location location \ `<flag>` `<flag>`keyring keyring`<name>` \
+    `<flag>``<flag>`rotation`<period>` rotation`<period>` \ next`<flag>`rotation`<flag>`time
 ```
 
 Readable tokens: `gcloud kms keys update` · a **key** name · a **location** · a **keyring**
@@ -68,8 +68,8 @@ name · a **rotation period** · a **next rotation time**.
 **Manual — command as printed** _(Mod 12 p263)_, flags unreadable:
 
 ```
-gcloud kms keys versions create \ <flag> location location \ <flag>keyring keyring<name> \
-    <flag> key key<name> \ <flag>primary
+gcloud kms keys versions create \ `<flag>` location location \ `<flag>`keyring keyring`<name>` \
+    `<flag>` key key`<name>` \ `<flag>`primary
 ```
 
 Readable tokens: `gcloud kms keys versions create` · a **location** · a **keyring** name · a

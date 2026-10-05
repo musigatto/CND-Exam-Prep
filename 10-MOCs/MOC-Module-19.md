@@ -168,7 +168,7 @@ cleanly against a damaged numbered column.
 ## Exam facts
 - Exam **312-38** · 4 h · 100 questions. Module-level weight not stated in the courseware →
   `exam_weight: unknown`. Module 19 sits in blueprint domain 8 **Incident Prediction =
-  15%** shared with modules 17, 18, 20 — see [[Exam-Facts]]. The bank uses a **flat 5
+  15%** shared with modules 17, 18, 20 — see [[quiz.html]]. The bank uses a **flat 5
   per module**.
 - Strong question sources, in rough order of yield:
   - **The four-step pipeline in order** — Visualize → IoEs → Simulate → Reduce.
@@ -226,7 +226,7 @@ views:
 
 ## Cross-links
 - [[00-Home]]
-- [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]] · [[Exam-Facts]]
+- [[quiz.html]] (unified bank, offline: 100 module + 56 external items) · [[Answer-Key]]
 - Related modules: [[MOC-Module-18]] (Risk Management — the vulnerabilities this
   module exposes) · [[MOC-Module-20]] (Threat Intel — the IoCs/IOAs behind the
   exposures) · [[MOC-Module-16]] (Incident Response — where exposures materialize)

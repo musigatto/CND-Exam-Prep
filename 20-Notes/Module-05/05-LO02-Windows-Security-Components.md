@@ -68,7 +68,7 @@ Windows security model = collection of **user-mode + kernel-mode processes** tha
 
 
 
-> Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
+> Matched word-for-word to the module PDF. See [[Quick-Review]].
 
 
 

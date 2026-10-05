@@ -81,7 +81,7 @@ The p11 figure that draws this split is image-only in the source — the control
 carried here by the IaaS/PaaS/SaaS authority column above. NIST's version of the same idea
 (SaaS/PaaS/IaaS service layers and the five actors) is in the architecture note.
 
-Exam cross-refs: [[Question-Bank]]
+Exam cross-refs: [[quiz.html]] · [[Answer-Key]]
 
 
 

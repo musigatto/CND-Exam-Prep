@@ -150,11 +150,11 @@ fw log [ —f [ e endtime] [ —b starttime endtime] unification mode (initial I
 - p86: "Each line of `fw log` command's output represents a **single record**; each field of log appears
   in the following format:"
   ```text
-  <interface dir and name> [alert] [field name: field value;]
+  `<interface dir and name>` [alert] [field name: field value;]
   ```
 - p87: the same sentence with time added —
   ```text
-  < time> <interface dir and name> [alert] [field name: field value; ]
+  < time> `<interface dir and name>` [alert] [field name: field value; ]
   ```
 
 p86 figure labels the five parts: **Time** · **Action** · **Origin** · **Interface directory and name** ·

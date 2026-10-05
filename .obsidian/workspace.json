@@ -11,14 +11,10 @@
             "id": "8233dd42d781086a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "30-Exam/External-Flashcards-Verification.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "External-Flashcards-Verification"
+              "title": "New tab"
             }
           }
         ]
@@ -161,7 +157,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "30-Exam/External-Flashcards-Verification.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -201,9 +196,9 @@
   },
   "active": "8233dd42d781086a",
   "lastOpenFiles": [
+    "30-Exam/External-Flashcards-Verification.md",
     "30-Exam/External-Flashcards-Quizlet.md",
     "30-Exam/Exam-Facts.md",
-    "30-Exam/External-Flashcards-Verification.md",
     "30-Exam/External-Practice-Questions.md",
     "30-Exam/Mock-Exam-100.md",
     "30-Exam/Question-Bank.md",

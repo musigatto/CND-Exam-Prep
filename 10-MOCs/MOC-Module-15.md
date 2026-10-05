@@ -237,7 +237,7 @@ analysis of network logs is critical."
 ## Exam facts
 - Exam **312-38** · 4 h · 100 questions. Module-level weight not stated in the courseware →
   `exam_weight: unknown`. Module 15 sits in blueprint domain 6 **Incident Detection = 10%** (10 of
-  100) **shared with module 14** — see [[Exam-Facts]]. The bank uses a **flat 5 per module**.
+  100) **shared with module 14** — see [[quiz.html]]. The bank uses a **flat 5 per module**.
 - Strong question sources, in rough order of yield:
   - **The nine Requirements for Logging** (p9) and the five-item "You should be able to" subset —
     two overlapping printed lists on one page, and the trap is that "prevent unauthorized access and
@@ -315,7 +315,7 @@ views:
 
 ## Cross-links
 - [[00-Home]]
-- [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]] · [[Exam-Facts]]
+- [[quiz.html]] (unified bank, offline: 100 module + 56 external items) · [[Answer-Key]]
 - Related modules: [[MOC-Module-14]] (Network Traffic Monitoring — the other half of blueprint domain
   6; this module is the log-record side of the same detection problem) · [[MOC-Module-18]]
   (Preventing and Securing Against Attacks — the endpoint and firewall logging the courseware

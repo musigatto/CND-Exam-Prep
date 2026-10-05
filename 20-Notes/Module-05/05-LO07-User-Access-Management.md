@@ -81,7 +81,7 @@ Controls how Windows restricts users/groups → resources: file/folder access ·
 
 
 
-> Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
+> Matched word-for-word to the module PDF. See [[Quick-Review]].
 
 
 

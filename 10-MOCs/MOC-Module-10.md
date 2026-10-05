@@ -63,7 +63,7 @@ views:
 
 ## Cross-links
 - [[00-Home]]
-- [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]]
+- [[quiz.html]] (unified bank, offline: 100 module + 56 external items) · [[Answer-Key]]
 - Related modules: [[MOC-Module-05]] (Windows: BitLocker/EFS, Group Policy, AppLocker) · [[MOC-Module-02]] (compliance: GDPR, PCI, HIPAA, retention) · [[MOC-Module-03]] (network perimeter + DLP integration) · [[MOC-Module-09]] (application security/WAF; secure app comm) · [[MOC-Module-04]] (crypto foundations: AES/TLS/hashing) · [[MOC-Module-06]] (Linux ACL/user mgmt; pam).
 
 ## Unresolved

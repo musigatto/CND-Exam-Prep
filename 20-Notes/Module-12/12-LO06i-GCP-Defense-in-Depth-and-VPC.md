@@ -204,7 +204,7 @@ _(Mod 12 pp287–290)_
 
 Upstream: [[12-LO06h-GCP-Encryption-and-Cloud-KMS]] (KMS) ·
 [[12-LO06g-GCP-Predefined-Roles-and-Logging-Roles]] (roles for network administration) ·
-[[Question-Bank]]
+[[quiz.html]]
 
 
 

@@ -83,7 +83,7 @@ management and implementation of security updates · Better disaster recovery pr
 Ability to dynamically scale defensive resources on demand · Resource aggregation offers better
 management of security systems · Rigorous internal audits and risk assessment procedures
 
-Exam cross-refs: [[Question-Bank]] · [[Exam-Facts]]
+Exam cross-refs: [[quiz.html]] · [[Answer-Key]]
 
 
 

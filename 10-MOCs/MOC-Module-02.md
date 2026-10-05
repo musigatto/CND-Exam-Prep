@@ -54,7 +54,7 @@ views:
 
 ## Cross-links
 - [[00-Home]]
-- [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]]
+- [[quiz.html]] (unified bank, offline: 100 module + 56 external items) · [[Answer-Key]]
 - Related modules: [[MOC-Module-01]] (defense-in-depth) · [[MOC-Module-19]] (policy/architecture/business continuity — admin security) · [[MOC-Module-04]] (log management/audit under compliance)
 
 ## Unresolved

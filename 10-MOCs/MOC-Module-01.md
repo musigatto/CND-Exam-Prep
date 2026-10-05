@@ -55,7 +55,7 @@ views:
 
 ## Cross-links
 - [[00-Home]]
-- [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]]
+- [[quiz.html]] (unified bank, offline: 100 module + 56 external items) · [[Answer-Key]]
 - Related modules: [[MOC-Module-04]] (perimeter/firewall/IDS), [[MOC-Module-20]] (threat intelligence), [[MOC-Module-18]] (risk anticipation)
 
 ## Unresolved

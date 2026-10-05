@@ -26,7 +26,7 @@ unresolved: []
 ## IoT Security Tools — SeaCat.io (Teskalabs)
 - Open-source **mutual TLS (mTLS)** tunnel with **SeaCat Gateway** (OS-level)
 - Clients (Raspberry Pi, Linux, Android, iPhone) + server components
-- **Ports:** 48101 = SeaCat® <mutual TLS> gateway tunnel, Nginx (443)
+- **Ports:** 48101 = SeaCat® `<mutual TLS>` gateway tunnel, Nginx (443)
 - Features: deviceLock, secure UDP (TLS), netAuth (OS-level SSO), Auto-Updater, jail/database encapsulation, admin server
 - Best-fits: Raspberry Pi, Linux, Docker, embedded devices
 
@@ -55,5 +55,5 @@ unresolved: []
 
 
 
-> Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
+> Matched word-for-word to the module PDF. See [[Quick-Review]].
 

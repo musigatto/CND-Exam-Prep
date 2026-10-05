@@ -69,7 +69,7 @@ _(Mod 12 p36)_
 The courseware then compares the features each CSP publishes — see
 [[12-LO03b-CSP-Security-Feature-Comparison]].
 
-Exam cross-refs: [[Question-Bank]] · [[Exam-Facts]]
+Exam cross-refs: [[quiz.html]] · [[Answer-Key]]
 
 
 

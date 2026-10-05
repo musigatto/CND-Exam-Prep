@@ -185,7 +185,7 @@ against a clean seven-subject prose list.
 ## Exam facts
 - Exam **312-38** · 4 h · 100 questions. Module-level weight not stated in the courseware →
   `exam_weight: unknown`. Module 20 sits in blueprint domain 8 **Incident Prediction =
-  15%** shared with modules 17, 18, 19 — see [[Exam-Facts]]. The bank uses a **flat 5
+  15%** shared with modules 17, 18, 19 — see [[quiz.html]]. The bank uses a **flat 5
   per module**.
 - Strong question sources, in rough order of yield:
   - **Three-vs-four TI types** — Technical is printed but unannounced.
@@ -237,7 +237,7 @@ views:
 
 ## Cross-links
 - [[00-Home]]
-- [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]] · [[Exam-Facts]]
+- [[quiz.html]] (unified bank, offline: 100 module + 56 external items) · [[Answer-Key]]
 - Related modules: [[MOC-Module-19]] (Attack Surface — the exposures TI watches) ·
   [[MOC-Module-16]] (Incident Response — where TI lands and hunting runs) ·
   [[MOC-Module-18]] (Risk Management — the framework TI feeds) · [[MOC-Module-11]]

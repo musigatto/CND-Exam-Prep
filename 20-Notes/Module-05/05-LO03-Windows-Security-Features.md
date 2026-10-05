@@ -146,5 +146,5 @@ Windows security features: object protection · access checks · integrity contr
 
 
 
-> Matched word-for-word to the module PDF. See [[External-Flashcards-Verification]].
+> Matched word-for-word to the module PDF. See [[Quick-Review]].
 

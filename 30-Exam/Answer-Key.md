@@ -151,3 +151,64 @@ unresolved: []
 - Q098 — **B** — Bottom→top: **Trivial Hash Values** (SHAI/MD5 as printed, metamorphic, least significant) → **Easy IP Addresses** (VPN/proxy rotation) → **Simple Domain Names** (dynamic DNS + domain-generated algorithms) → **Annoying Network/Host Artifacts** (rejection causes pain) → **Challenging Tools** (rebuild research) → **Tough! TTPs** (counter behaviors, apex). Rule: **move up → greater resilience at greater attacker cost**, TTP-focus beats tool-focus. A inverts the order and the rule; C equalizes pain and scrambles levels; D scrambles levels and restricts focus to the bottom (Module 20 – 20.5 Pyramid; 20-LO05b).
 - Q099 — **C** — **0 Initial/HMMO: no data collection**, relies on **open-source TI indicators and lower-Pyramid data**. **1 Minimal**: alert-driven IR, TIP-enriched IOCs. **2 Procedural**: **uses processes created by others — most organizations sit here**. **3 Innovative**: creates new procedures, stats-to-ML fluency. **4 Leading**: **automates the majority of successful procedures**, continuous refinement. A empties Leading into nothing and fills Level 0; B inverts Level 4 into Level 0; D swaps Procedural with Innovative (Module 20 – 20.6 maturity model; 20-LO06a).
 - Q100 — **C** — Printed uses: **summarization (LLMs condense)**, **IOC extraction from unstructured social/dark-web sources**, **TTP extraction from long research documents**, **predictive intelligence**, **alert generation**, **LLM-streamlined exchange** (auto warnings/reports), decision support, real-time TI — plus IoC enrichment, phishing detection, and five named solutions (Trellix GTI, Watson, TCPWave, WILDFIRE, ThreatConnect). Guidelines (six): **proactive AI, embed in tooling (TI-alone is weak), alert quality via false-positive rejection, transparency/accountability of provenance, CIA-prioritized resilience, bias supervision via diversity**. A claims TI-best-alone and never-biased (both contradicted); B denies extraction (a printed use); D denies any AI content exists (Module 20 – 20.7 uses, solutions, guidelines; 20-LO07a, 20-LO07b).
+
+## External items (third-party, unified in quiz.html)
+
+One line per item: quiz id, key letter, answer provenance. `published key` = as the source site keyed it; `PDF-derived` = answered here from the module PDFs (module cited); `NOT verifiable` = kept as published, term absent from all 20 modules; `CORRECTED` = published key contradicts the PDFs, PDF reading used.
+
+- E01 — **A** — Edusum E01 · published key.
+- E02 — **C** — Edusum E02 · published key.
+- E03 — **D** — Edusum E03 · published key.
+- E04 — **B** — Edusum E04 · published key.
+- E05 — **A** — Edusum E05 · published key.
+- E06 — **C** — Edusum E06 · published key.
+- E07 — **D** — Edusum E07 · published key.
+- E08 — **A** — Edusum E08 · published key.
+- E09 — **C** — Edusum E09 · published key.
+- E10 — **D** — Edusum E10 · published key.
+- C01 — **C** — CertPractice C01 · PDF-derived: Mod 04 pp17-20.
+- C03 — **D** — CertPractice C03 · PDF-derived: Mod 17 p14.
+- C04 — **A** — CertPractice C04 · PDF-derived: Mod 04 pp26-27.
+- C05 — **D** — CertPractice C05 · PDF-derived: Mod 20 p10.
+- C06 — **D** — CertPractice C06 · PDF-derived: Mod 06 p107.
+- C07 — **A** — CertPractice C07 · PDF-derived: Mod 18 p21.
+- C08 — **C** — CertPractice C08 · PDF-derived: Mod 16 p26.
+- C09 — **A** — CertPractice C09 · PDF-derived: Mod 16 pp15-26.
+- C10 — **C** — CertPractice C10 · PDF-derived: Mod 05 p153.
+- C11 — **D** — CertPractice C11 · PDF-derived: Mod 17 p14.
+- C13 — **C** — CertPractice C13 · PDF-derived: Mod 19 p5.
+- C15 — **D** — CertPractice C15 · PDF-derived: Mod 18 p21 + Mod 12 p45.
+- C16 — **B** — CertPractice C16 · PDF-derived: Mod 12 pp92-94 + Mod 03 p55.
+- C18 — **D** — CertPractice C18 · PDF-derived: Mod 04 p32.
+- C20 — **B** — CertPractice C20 · PDF-derived: Mod 08 pp15-16.
+- D01 — **A** — Daypo D01 · PDF-derived: Mod 18 pp13-24, CND v2 legacy wording.
+- D02 — **D** — Daypo D02 · PDF-derived: Mod 04 p8.
+- D05 — **C** — Daypo D05 · PDF-derived: Mod 03 p77.
+- D06 — **D** — Daypo D06 · PDF-derived: Mod 19 p50.
+- D08 — **D** — Daypo D08 · PDF-derived: Mod 03 pp75-78.
+- D09 — **C** — Daypo D09 · PDF-derived: Mod 17 p15.
+- D11 — **C** — Daypo D11 · PDF-derived: Mod 11 p120.
+- D12 — **D** — Daypo D12 · PDF-derived: Mod 19 p11.
+- P01 — **B** — PracticeTestGeeks P01 · published key, low signal.
+- P02 — **B** — PracticeTestGeeks P02 · published key, low signal.
+- P03 — **B** — PracticeTestGeeks P03 · published key, low signal.
+- P04 — **B** — PracticeTestGeeks P04 · published key, low signal.
+- H02 — **B** — CertsHero H02 · published key, checks out: Mod 16 IRT Attorney role.
+- H03 — **A** — CertsHero H03 · published key, checks out: Mod 12 pp72-74.
+- H04 — **D** — CertsHero H04 · published key, NOT verifiable: update-rc.d appears in none of the 20 modules.
+- H05 — **A** — CertsHero H05 · published key, checks out: Mod 07.
+- H06 — **C** — CertsHero H06 · published key, checks out: Mod 05 p19.
+- H07 — **C** — CertsHero H07 · published key, checks out: Mod 18.
+- F01 — **A** — Fast2test F01 · published key, checks out: Mod 04 NIDS.
+- F02 — **C** — Fast2test F02 · published key, NOT verifiable: star topology appears in none of the 20 modules.
+- F03 — **B** — Fast2test F03 · published key, NOT verifiable: gaseous appears in none of the 20 modules.
+- F04 — **A** — Fast2test F04 · published key, checks out: Mod 05.
+- F05 — **B** — Fast2test F05 · published key, checks out: Mod 04.
+- F06 — **C** — Fast2test F06 · published key, NOT verifiable: acoustic modem appears in none of the 20 modules.
+- F07 — **B** — Fast2test F07 · published key, checks out: Mod 13.
+- F08 — **A** — Fast2test F08 · CORRECTED: published key C contradicts Mod 18 p24.
+- F09 — **B** — Fast2test F09 · published key, checks out: Mod 07 MCM.
+- F10 — **D** — Fast2test F10 · published key, checks out: Mod 10.
+- F11 — **B** — Fast2test F11 · published key, checks out: Mod 03.
+- F12 — **B** — Fast2test F12 · published key, checks out: Mod 03 DAC.
+- F13 — **D** — Fast2test F13 · published key, NOT verifiable: EGP appears in none of the 20 modules.

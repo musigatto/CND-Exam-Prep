@@ -57,7 +57,7 @@ views:
 
 ## Cross-links
 - [[00-Home]]
-- [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]]
+- [[quiz.html]] (unified bank, offline: 100 module + 56 external items) · [[Answer-Key]]
 - Related modules: [[MOC-Module-01]] (attacks these controls defend against) · [[MOC-Module-02]] (policies governing access) · [[MOC-Module-19]] (architecture resilience) · [[MOC-Module-04]] (logging/audit of the events SIEM collects)
 
 ## Unresolved

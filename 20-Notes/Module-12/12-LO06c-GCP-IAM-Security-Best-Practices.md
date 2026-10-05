@@ -168,7 +168,7 @@ _(p252 for steps 1–7 and the step-7 lead-in, p253 for step 8)_
 1. Select the **Condition Editor** tab, then type the following expression (replace the
    timestamp with your own) — legible shape only:
    ```
-   request.time < timestamp("...<date did not OCR>...00:00.000Z")
+   request.time < timestamp("...`<date did not OCR>`...00:00.000Z")
    ```
 2. "You have the option to **validate the CEL syntax** after inputting your expression by
    selecting **Run Linter** at the top-right of the text box."

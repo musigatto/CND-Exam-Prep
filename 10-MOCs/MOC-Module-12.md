@@ -10,7 +10,7 @@ unresolved:
   - "PDF p303 (book p2035) LO#07 objective statement announces 'the use of Cloud Access Security Broker (CASB) solutions to secure the cloud environment', but NO CASB content exists anywhere in pp.303-316 — not a definition, a vendor, or a capability. Announced-but-never-covered; recorded, not supplied from outside knowledge."
   - "PDF p3 (book p1735) LO#03 objective line drops its subject: it reads 'Evaluate for security before consuming a doud service' with no object, whereas the p34 (book p1766) section header reads 'Evaluate CSPs for Security Before Consuming a Cloud Service'. The section header supplies the missing object; the p3 line is reproduced as printed."
   - "PDF p316 (book p2048) summary paragraph carries a column-wrap defect — 'It discussed the security features provided by cloud, and Google Cloud Platform in detail' — the word 'Amazon' is displaced by the OCR column order. The same paragraph prints 'cloud service provides' for 'providers'. Both are the PDF's own defects, reproduced not corrected."
-  - "Per-module exam blueprint weights are not stated in the courseware. Module 12 sits in domain 5 'Enterprise Virtual, Cloud, and Wireless Network Protection' (15%, 15 of 100 questions) shared with modules 11 and 13 — see [[Exam-Facts]]. The bank uses a flat 5 items per module."
+  - "Per-module exam blueprint weights are not stated in the courseware. Module 12 sits in domain 5 'Enterprise Virtual, Cloud, and Wireless Network Protection' (15%, 15 of 100 questions) shared with modules 11 and 13 — see [[quiz.html]]. The bank uses a flat 5 items per module."
 ---
 
 [[MOC-Module-11]]
@@ -59,7 +59,7 @@ unresolved:
 - **LO07 general best practices and tools:** **34 best practices** printed as four unnumbered blocks (the courseware never numbers or totals them) — data/key/lifecycle, identity/authentication/credentials, vendor/SLA/supply chain, transparency/logging/disclosure, perimeter/infrastructure, API and interface surface, breach handling. High-yield singles: **AICPA SAS 70 Type II audits** · **SLAs for patching and vulnerability remediation** · **prohibit user credential sharing** · **disclose infrastructure information, security patching, and firewall details** · **physical security 24 — 7 — 365** · **IDS, IPS and firewall** · **delete data from the primary servers along with replicas on disposal** · **SSL for sensitive transmission** · **SLA minimum uptime and penalties**. **7 NIST recommendations**, including **renew SLAs if security gaps are found** and **determine who is responsible for data privacy**. **Compliance checklists** — Tables **12.6** (Operations 17 items + Technology 8 items), **12.7/12.8** (Management 9 items) plus an unnumbered security-team checklist; all two-column **Organization | Provider** tables whose column assignment did not survive OCR. **Tools:** **Scout Suite** (open source, multi-cloud, uses provider APIs to gather configuration data) · **Qualys Cloud Platform** (end-to-end, always-on posture; providers listed as *supported/planned* with **Azure = beta**, **Alibaba Cloud and OCI = early alpha**) · **CloudPassage Halo** (SDSec; 8 features incl. workload firewall management, multifactor network authentication via **SMS or YubiKey**, file integrity monitoring, **Halo REST API**) · **Core CloudInspect** (AWS-only; validates real attack techniques, no false positives, SQL injection / XSS susceptibility, and can **certify systems before they go live**); plus **9 further tools named with URLs and no description**. → [[12-LO07a-Cloud-Security-Best-Practices-and-Compliance]] [[12-LO07b-Cloud-Security-Tools]]
 
 ## Exam facts
-- Exam **312-38** · 4 h · 100 questions. Module-level weight not stated in the courseware → `exam_weight: unknown`. Module 12 sits in blueprint domain 5 **Enterprise Virtual, Cloud, and Wireless Network Protection = 15%** (15 of 100) shared with modules 11 and 13 — see [[Exam-Facts]]. The bank uses a **flat 5 per module**.
+- Exam **312-38** · 4 h · 100 questions. Module-level weight not stated in the courseware → `exam_weight: unknown`. Module 12 sits in blueprint domain 5 **Enterprise Virtual, Cloud, and Wireless Network Protection = 15%** (15 of 100) shared with modules 11 and 13 — see [[quiz.html]]. The bank uses a **flat 5 per module**.
 - Strong question sources, in rough order of yield:
   - **The five NIST actors** — consumer, provider, **carrier**, **auditor**, **broker** — and the broker's **intermediation / aggregation / arbitrage**.
   - **12 characteristics** and **30 benefits in 4 groups (Economic 8 · Operational 7 · Staffing 7 · Security 8)**.
@@ -101,7 +101,7 @@ views:
 
 ## Cross-links
 - [[00-Home]]
-- [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]] · [[Exam-Facts]]
+- [[quiz.html]] (unified bank, offline: 100 module + 56 external items) · [[Answer-Key]]
 - Related modules: [[MOC-Module-11]] (enterprise virtual — same blueprint domain 5) · [[MOC-Module-13]] (enterprise wireless — same domain 5) · [[MOC-Module-05]] (Windows — AD FS / AD / BitLocker / PowerShell lineage used by LO05) · [[MOC-Module-06]] (Linux — OpenSSL, the crypto stack used by LO04k) · [[MOC-Module-03]] (technical network security — VPC/ACL/TLS fundamentals reused in LO04l) · [[MOC-Module-10]] (data security — encryption at rest and key management that LO04j/LO05g/LO06h instantiate per cloud) · [[MOC-Module-09]] (application security — WAF and API security referenced by LO06i and LO04h) · [[MOC-Module-08]] (incident detection — logging/monitoring threads picked up in LO02c, LO05n, LO06k).
 
 ## Unresolved
@@ -109,7 +109,7 @@ views:
 - **CASB announced on p303, never covered** (see frontmatter).
 - **p3 LO#03 objective line drops its subject**; the p34 section header supplies it (see frontmatter).
 - **p316 summary column-wrap defect and "cloud service provides" typo** (see frontmatter).
-- Per-module blueprint weights are not in the courseware; domain weights come from [[Exam-Facts]].
+- Per-module blueprint weights are not in the courseware; domain weights come from [[quiz.html]].
 - **Azure geo-replication:** p230 slide says "Windows Azure Storage", body and walkthrough say **Azure SQL Database**. Both preserved, not reconciled.
 - **Azure load balancing:** pp. 208–212 print **no Layer 4/Layer 7 distinction** and never the word "public" for a load balancer. Neither is asserted.
 - **Azure Antimalware:** pp. 221–222 name **no PowerShell cmdlet**; the label "Using Antimalware PowerShell cmdlets" is all that is printed.
@@ -154,7 +154,7 @@ GCP-managed keys — cannot be downloaded or automatically rotated, used within 
 
 GCP permission format, with an example
 ?
-<service>.<resource>.<verb> — e.g. pubsub.subscriptions.consume; calling topics.publish() needs pubsub.topics.publish, and permissions correlate one-to-one with REST API methods
+`<service>`.`<resource>`.`<verb>` — e.g. pubsub.subscriptions.consume; calling topics.publish() needs pubsub.topics.publish, and permissions correlate one-to-one with REST API methods
 
 The GCP Cloud KMS key hierarchy
 ?

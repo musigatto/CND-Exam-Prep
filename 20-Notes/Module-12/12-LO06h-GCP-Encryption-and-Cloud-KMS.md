@@ -165,7 +165,7 @@ gcloud kms keyrings create $KEYRING_NAME --location global
 p280 body, same command, different rendering (key name garbled — **not** reconstructed):
 
 ```
-gcloud kms keyrings create demo <flag garbled> <flag garbled>10cation global
+gcloud kms keyrings create demo `<flag garbled>` `<flag garbled>`10cation global
 ```
 
 **Create the encryption key** — p280 figure:

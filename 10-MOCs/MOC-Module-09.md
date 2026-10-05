@@ -55,7 +55,7 @@ views:
 
 ## Cross-links
 - [[00-Home]]
-- [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]]
+- [[quiz.html]] (unified bank, offline: 100 module + 56 external items) · [[Answer-Key]]
 - Related modules: [[MOC-Module-05]] (Windows: patch mgmt wuauserv, UAC) · [[MOC-Module-02]] (policies + compliance: PCI/HIPAA/GDPR) · [[MOC-Module-03]] (IPS/IDS + UTM; WAF vs NGFW contrast) · [[MOC-Module-06]] (Linux file/SELinux — Firejail namespace overlay) · [[MOC-Module-01]] (malware/zero-day/trojans).
 
 ## Unresolved

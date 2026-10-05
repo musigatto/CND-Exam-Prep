@@ -58,7 +58,7 @@ views:
 
 ## Cross-links
 - [[00-Home]]
-- [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]]
+- [[quiz.html]] (unified bank, offline: 100 module + 56 external items) · [[Answer-Key]]
 - Related modules: [[MOC-Module-01]] (attack types mitigated by hardening) · [[MOC-Module-02]] (patch/change policy baselines) · [[MOC-Module-03]] (host security, IDS) · [[MOC-Module-05]] (Windows endpoint counterpart) · [[MOC-Module-19]] (security architecture) · [[MOC-Module-20]] (emerging-technology overlap).
 
 ## Unresolved

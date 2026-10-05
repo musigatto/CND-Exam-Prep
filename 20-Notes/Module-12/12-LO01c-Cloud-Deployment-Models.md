@@ -108,7 +108,7 @@ public cloud providers.
 The **service — deployment combination matrix** (the table that categorizes cloud service
 delivery) sits on p16, which leads the NIST reference-architecture note.
 
-Exam cross-refs: [[Question-Bank]]
+Exam cross-refs: [[quiz.html]] · [[Answer-Key]]
 
 
 

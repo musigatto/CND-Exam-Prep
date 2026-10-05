@@ -176,7 +176,7 @@ _(Mod 12 p295)_
 _(Mod 12 p294)_
 
 Upstream: [[12-LO06i-GCP-Defense-in-Depth-and-VPC]] · [[12-LO06c-GCP-IAM-Security-Best-Practices]]
-(IAM inside the attack-surface control) · [[Question-Bank]]
+(IAM inside the attack-surface control) · [[quiz.html]]
 
 
 

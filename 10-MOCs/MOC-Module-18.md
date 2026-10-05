@@ -185,7 +185,7 @@ prints all six subjects including PIA.
 ## Exam facts
 - Exam **312-38** · 4 h · 100 questions. Module-level weight not stated in the courseware →
   `exam_weight: unknown`. Module 18 sits in blueprint domain 8 **Incident Prediction =
-  15%** shared with modules 17, 19, 20 — see [[Exam-Facts]]. The bank uses a **flat 5
+  15%** shared with modules 17, 19, 20 — see [[quiz.html]]. The bank uses a **flat 5
   per module**.
 - Strong question sources, in rough order of yield:
   - **The six treatment options vs the four p19 wordings** — and the fact they are
@@ -249,7 +249,7 @@ views:
 
 ## Cross-links
 - [[00-Home]]
-- [[Question-Bank]] · [[Answer-Key]] · [[Mock-Exam-100]] · [[Exam-Facts]]
+- [[quiz.html]] (unified bank, offline: 100 module + 56 external items) · [[Answer-Key]]
 - Related modules: [[MOC-Module-17]] (BC/DR — the continuity plans risk management
   protects) · [[MOC-Module-16]] (Incident Response — where assessed risks
   materialize) · [[MOC-Module-11]] (Auditing — the control-assessment framing) ·
