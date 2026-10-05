@@ -212,3 +212,70 @@ One line per item: quiz id, key letter, answer provenance. `published key` = as 
 - F11 — **B** — Fast2test F11 · published key, checks out: Mod 03.
 - F12 — **B** — Fast2test F12 · published key, checks out: Mod 03 DAC.
 - F13 — **D** — Fast2test F13 · published key, NOT verifiable: EGP appears in none of the 20 modules.
+- O041 — **A** — OEP cnd-041 · key confirmed, options rewritten: Mod 05 Windows System Integrity and Integrity Checking.
+- O042 — **A** — OEP cnd-042 · key confirmed, options rewritten: Mod 05 Windows System Integrity and Integrity Checking.
+- O043 — **A** — OEP cnd-043 · key confirmed, options rewritten: Mod 05 Windows Security Features.
+- O044 — **B** — OEP cnd-044 · key confirmed, options rewritten: Mod 05 Windows Active Directory Security Best Practices.
+- O045 — **A** — OEP cnd-045 · key confirmed, options rewritten: Mod 05 Windows Patch Management.
+- O046 — **A** — OEP cnd-046 · key confirmed, options rewritten: Mod 05 Network Services and Protocol Security (RDP, DNS, SMB).
+- O047 — **A** — OEP cnd-047 · key confirmed, options rewritten: Mod 05 Network Services and Protocol Security (RDP, DNS, SMB).
+- O048 — **A** — OEP cnd-048 · key confirmed, options rewritten: Mod 05 Windows Active Directory Security Best Practices.
+- O049 — **A** — OEP cnd-049 · key confirmed, options rewritten: Mod 05 Secure PowerShell Remoting.
+- O050 — **A** — OEP cnd-050 · key confirmed, options rewritten: Mod 05 Windows Active Directory Security Best Practices.
+- O052 — **A** — OEP cnd-052 · key confirmed, options rewritten: Mod 06 Linux File Permissions, Ownership, SUID/SGID.
+- O053 — **B** — OEP cnd-053 · key confirmed, options rewritten: Mod 06 Linux integrity, Secure Boot, packages.
+- O054 — **B** — OEP cnd-054 · key confirmed, options rewritten: Mod 06 Linux File Integrity Checking Tools (FIM).
+- O055 — **B** — OEP cnd-055 · key confirmed, options rewritten: Mod 06 Linux Installation and Patching.
+- O056 — **B** — OEP cnd-056 · key confirmed, options rewritten: Mod 06 Linux OS hardening.
+- O057 — **B** — OEP cnd-057 · key confirmed, options rewritten: Mod 06 SSH Hardening and Chroot SFTP.
+- O058 — **B** — OEP cnd-058 · key confirmed, options rewritten: Mod 06 Linux Security Tools and Frameworks.
+- O059 — **B** — OEP cnd-059 · key confirmed, options rewritten: Mod 06 Linux File Integrity Checking Tools (FIM).
+- O060 — **A** — OEP cnd-060 · key confirmed, options rewritten: Mod 06 Linux File Integrity Checking Tools (FIM).
+- O061 — **B** — OEP cnd-061 · key confirmed, options rewritten: Mod 07 General Mobile Platform Security Guidelines.
+- O062 — **A** — OEP cnd-062 · as published, key confirmed: Mod 07 Mobile Application, Data, and Network Security.
+- O063 — **B** — OEP cnd-063 · key confirmed, options rewritten: Mod 07 Mobile Device Management (MDM) Solutions.
+- O064 — **B** — OEP cnd-064 · key confirmed, options rewritten: Mod 07 CYOD, COPE, and COBO Policies.
+- O065 — **B** — OEP cnd-065 · key confirmed, options rewritten: Mod 07 Security Guidelines for Mobile Usage Policies.
+- O066 — **B** — OEP cnd-066 · key confirmed, options rewritten: Mod 07 Android Device Administration API and Security.
+- O067 — **B** — OEP cnd-067 · key confirmed, options rewritten: Mod 07 Security Guidelines for Mobile Usage Policies.
+- O068 — **B** — OEP cnd-068 · key confirmed, options rewritten: Mod 07 Mobile Device Management (MDM) Solutions.
+- O069 — **C** — OEP cnd-069 · key confirmed, options rewritten: Mod 07 MEM, EMM, and UEM Solutions.
+- O070 — **C** — OEP cnd-070 · key confirmed, options rewritten: Mod 07 Mobile Application, Data, and Network Security.
+- O071 — **B** — OEP cnd-071 · key confirmed, options rewritten: Mod 08 IoT Security Tools & Best Practices.
+- O072 — **A** — OEP cnd-072 · key confirmed, options rewritten: Mod 08 IoT visibility and segmentation.
+- O073 — **D** — OEP cnd-073 · key confirmed, options rewritten: Mod 08 IoT access, vuln mgmt, firmware.
+- O074 — **A** — OEP cnd-074 · key confirmed, options rewritten: Mod 08 IoT isolation, monitoring, shadow IoT.
+- O075 — **C** — OEP cnd-075 · key confirmed, options rewritten: Mod 08 IoT isolation, monitoring, shadow IoT.
+- O076 — **B** — OEP cnd-076 · key confirmed, options rewritten: Mod 08 IoT crypto, identity, hardware.
+- O077 — **B** — OEP cnd-077 · as published, key confirmed: Mod 08 IoT gateways and remote admin.
+- O078 — **D** — OEP cnd-078 · key confirmed, options rewritten: Mod 08 IoT access, vuln mgmt, firmware.
+- O079 — **C** — OEP cnd-079 · key confirmed, options rewritten: Mod 08 IoT isolation, monitoring, shadow IoT.
+- O080 — **B** — OEP cnd-080 · key confirmed, options rewritten: Mod 08 IoT Security Tools & Best Practices.
+- O171 — **B** — OEP cnd-171 · as published, key confirmed: Mod 18 risk treatment and tracking.
+- O173 — **A** — OEP cnd-173 · key confirmed, options rewritten: Mod 18 risk context and identification.
+- O174 — **B** — OEP cnd-174 · key confirmed, options rewritten: Mod 18 risk treatment options.
+- O175 — **B** — OEP cnd-175 · key confirmed, options rewritten: Mod 18 vuln mgmt program and prioritization.
+- O176 — **A** — OEP cnd-176 · key confirmed, options rewritten: Mod 18 PIA/DPIA process.
+- O177 — **A** — OEP cnd-177 · key confirmed, options rewritten: Mod 18 risk context and identification.
+- O178 — **A** — OEP cnd-178 · key confirmed, options rewritten: Mod 18 assessment, remediation, verification.
+- O179 — **A** — OEP cnd-179 · key confirmed, options rewritten: Mod 18 vuln mgmt program and prioritization.
+- O180 — **A** — OEP cnd-180 · key confirmed, options rewritten: Mod 18 assessment, remediation, verification.
+- O181 — **A** — OEP cnd-181 · key confirmed, options rewritten: Mod 19 attack surface analysis concept.
+- O182 — **B** — OEP cnd-182 · key confirmed, options rewritten: Mod 19 IoE network and human surfaces.
+- O183 — **A** — OEP cnd-183 · key confirmed, options rewritten: Mod 19 IoE system and application surfaces.
+- O184 — **A** — OEP cnd-184 · key confirmed, options rewritten: Mod 19 reduce the attack surface.
+- O185 — **B** — OEP cnd-185 · key confirmed, options rewritten: Mod 19 IoT attack surface and module summary.
+- O186 — **B** — OEP cnd-186 · key confirmed, options rewritten: Mod 19 attack simulation and tools.
+- O187 — **A** — OEP cnd-187 · key confirmed, options rewritten: Mod 19 visualize attack surface and tools.
+- O189 — **B** — OEP cnd-189 · key confirmed, options rewritten: Mod 19 IoT attack surface and module summary.
+- O190 — **A** — OEP cnd-190 · key confirmed, options rewritten: Mod 19 IoT attack surface and module summary.
+- O191 — **B** — OEP cnd-191 · key confirmed, options rewritten: Mod 20 IoCs, STIX and MAEC.
+- O192 — **A** — OEP cnd-192 · key confirmed, options rewritten: Mod 20 IOAs and IOC-vs-IOA.
+- O193 — **C** — OEP cnd-193 · key confirmed, options rewritten: Mod 20 Types of threat intelligence.
+- O194 — **D** — OEP cnd-194 · key confirmed, options rewritten: Mod 20 Threat Intel Platforms.
+- O195 — **B** — OEP cnd-195 · key confirmed, options rewritten: Mod 20 Types of threat intelligence.
+- O196 — **A** — OEP cnd-196 · key confirmed, options rewritten: Mod 20 Threat Intel Platforms.
+- O197 — **D** — OEP cnd-197 · key confirmed, options rewritten: Mod 20 Threat hunting concept and maturity.
+- O198 — **C** — OEP cnd-198 · key confirmed, options rewritten: Mod 20 Types of threat intelligence.
+- O199 — **A** — OEP cnd-199 · key confirmed, options rewritten: Mod 20 Types of threat intelligence.
+- O200 — **B** — OEP cnd-200 · key confirmed, options rewritten: Mod 20 Consume TI and SIEM Integration.
