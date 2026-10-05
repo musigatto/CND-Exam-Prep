@@ -1,4 +1,4 @@
-﻿---
+---
 type: exam
 module: "bank"
 tags: [exam]
@@ -2025,7 +2025,8 @@ unresolved:
 > Source: [[08-LO05b-IoT-Security-Measures-Access-Vulnerabilities-Firmware]]
 
 > [!question]- 0499 — Port/service closure command (M10)?
-> sudo nmap -sS -sU -O <target> · netstat -tulpn · nmap --top-ports 1000 <target>.
+> ```
+> sudo nmap -sS -sU -O <target> · netstat -tulpn · nmap --top-ports 1000 <target>.```
 > Source: [[08-LO05b-IoT-Security-Measures-Access-Vulnerabilities-Firmware]]
 
 > [!question]- 0500 — Security measures M11–M15?

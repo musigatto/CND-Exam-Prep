@@ -1,4 +1,4 @@
-﻿---
+---
 type: exam
 module: "meta"
 tags: [exam]

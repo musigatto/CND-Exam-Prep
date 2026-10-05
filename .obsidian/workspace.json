@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20-Notes/Module-01/01-LO13-Defense-in-Depth-Strategy.md",
+                "file": "30-Exam/External-Flashcards-Verification.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-LO13-Defense-in-Depth-Strategy"
+              "title": "External-Flashcards-Verification"
             }
           }
         ]
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "30-Exam/External-Flashcards-Quizlet.md",
+                "file": "30-Exam/External-Flashcards-Verification.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -181,11 +181,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 299.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,16 +196,36 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-spaced-repetition:Review flashcards": false
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "8233dd42d781086a",
   "lastOpenFiles": [
+    "30-Exam/External-Flashcards-Quizlet.md",
+    "30-Exam/Exam-Facts.md",
+    "30-Exam/External-Flashcards-Verification.md",
+    "30-Exam/External-Practice-Questions.md",
+    "30-Exam/Mock-Exam-100.md",
+    "30-Exam/Question-Bank.md",
+    "30-Exam/Quick-Review.md",
+    "30-Exam/Answer-Key.md",
+    "40-Canvas/01-attack-and-defense-strategies.canvas",
+    "40-Canvas/12-enterprise-cloud-network-security-map.canvas",
+    "40-Canvas/11-enterprise-virtual-network-security-map.canvas",
+    "40-Canvas/10-data-security-map.canvas",
+    "40-Canvas/07-mobile-endpoint-map.canvas",
+    "40-Canvas/08-iot-endpoint-map.canvas",
+    "40-Canvas/14-network-traffic-monitoring-and-analysis-map.canvas",
+    "40-Canvas/15-network-logs-monitoring-and-analysis-map.canvas",
+    "40-Canvas/20-threat-prediction-with-cyber-threat-intelligence-map.canvas",
+    "10-MOCs/MOC-Module-20.md",
+    "20-Notes/Module-01/01-LO01-Essential-Terminologies.md",
+    "20-Notes/Module-01/01-LO03-Application-Level-Attacks.md",
+    "20-Notes/Module-01/01-LO12a-Continual-Adaptive-Security-Strategy.md",
+    "20-Notes/Module-01/01-LO13-Defense-in-Depth-Strategy.md",
     "tmp-diag2.ps1",
     "tmp-fixqr.ps1",
     "tmp-diag.ps1",
-    "30-Exam/Quick-Review.md",
     "tmp-buildqr.ps1",
     "tmp-recover.ps1",
     "tmp-stray.ps1",
@@ -213,33 +233,17 @@
     "tmp-items.json",
     "tmp-cards-run.ps1",
     "tmp-cards-dry.ps1",
-    "tmp-check.ps1",
-    "20-Notes/Module-01/01-LO12a-Continual-Adaptive-Security-Strategy.md",
     "20-Notes/Module-01/01-LO08-Wireless-Network-Attacks.md",
     "20-Notes/Module-01/01-LO06-Mobile-Device-Attacks.md",
     "20-Notes/Module-01/01-LO04-Social-Engineering-Attacks.md",
-    "20-Notes/Module-01/01-LO03-Application-Level-Attacks.md",
     "20-Notes/Module-01/01-LO02-Network-Level-Attacks.md",
-    "20-Notes/Module-01/01-LO01-Essential-Terminologies.md",
-    "30-Exam/Answer-Key.md",
-    "30-Exam/Exam-Facts.md",
-    "30-Exam/External-Practice-Questions.md",
     "20-Notes/Module-13/13-LO01b-Types-of-Wireless-Technologies.md",
     "20-Notes/Module-13/13-LO01a-Wireless-Fundamentals-and-Terminologies.md",
-    "30-Exam/External-Flashcards-Verification.md",
-    "30-Exam/External-Flashcards-Quizlet.md",
     "20-Notes/Module-15/15-LO01a-Log-Types-Sources-and-the-Need-for-Logs.md",
     "20-Notes/Module-15/15-LO03c-Commands-to-Monitor-and-Analyze-Linux-Logs.md",
     "20-Notes/Module-15/15-LO03b-Linux-Log-Format-and-Severity-Levels.md",
     "20-Notes/Module-15/15-LO03a-Linux-Logs-and-Log-Files.md",
     "20-Notes/Module-11/11-LO03h-VLAN-Security.md",
-    "20-Notes/Module-12/12-LO07b-Cloud-Security-Tools.md",
-    "20-Notes/Module-12/12-LO07a-Cloud-Security-Best-Practices-and-Compliance.md",
-    "20-Notes/Module-12/12-LO06k-GCP-Monitoring-Logging-and-Compliance.md",
-    "20-Notes/Module-12/12-LO06j-GCP-DDoS-Mitigation-and-Network-Best-Practices.md",
-    "20-Notes/Module-12/12-LO06i-GCP-Defense-in-Depth-and-VPC.md",
-    "40-Canvas/08-iot-endpoint-map.canvas",
-    "40-Canvas/11-enterprise-virtual-network-security-map.canvas",
-    "40-Canvas/10-data-security-map.canvas"
+    "20-Notes/Module-12/12-LO07b-Cloud-Security-Tools.md"
   ]
 }

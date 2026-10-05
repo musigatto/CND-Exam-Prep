@@ -1,264 +1,36 @@
 {
-  "nodes": [
-    {
-      "id": "title",
-      "type": "text",
-      "text": "Module 12 — Enterprise Cloud Network Security\nFundamentals → Shared Responsibility → Evaluate CSP → AWS / Azure / GCP → Best Practices + Tools",
-      "x": -1200,
-      "y": -3200,
-      "width": 2400,
-      "height": 70,
-      "color": "5"
-    },
-    {
-      "id": "b1",
-      "type": "text",
-      "text": "LO01 · Cloud Computing Fundamentals\n\nDEF on-demand delivery of IT capabilities; IT infrastructure + applications to subscribers as a METERED SERVICE OVER A NETWORK\n\n12 CHARACTERISTICS\non-demand self service · distributed storage · broad network access · rapid elasticity · automated management · resource pooling · measured service · virtualization technology · multi-tenancy · resilient computing · flexible pricing models · sustainability\n\nBENEFITS = 30 items in 4 groups\nEconomic 8 · Operational 7 · Staffing 7 · Security 8\n\nLIMITATIONS\nlimited control/flexibility · prone to outage · security/privacy/compliance · contracts + lock-in · dependence on network connections\n\nSERVICE DELIVERY IaaS / PaaS / SaaS\nDEPLOYMENT public / private / community / hybrid + multi-cloud\n\n5 SIGNIFICANT ACTORS (NIST)\nconsumer · provider · CARRIER · auditor · broker\nbroker = intermediation / aggregation / arbitrage\nSLA: CONSUMER specifies QoS, security, remedies",
-      "x": -2400,
-      "y": -3020,
-      "width": 560,
-      "height": 480
-    },
-    {
-      "id": "b2",
-      "type": "text",
-      "text": "LO02 · Cloud Security Insights\n\nMEASURES do not change — the FOCUS does\n\nSHARED RESPONSIBILITY boundary shifts per model\nIaaS customer-heavy → SaaS provider-heavy\n\nCONSUMER elements include IAM + identity lifecycle\n\nDATA storage security · testing cloud data security\nNETWORK challenges — chiefly LACK OF NETWORK VISIBILITY in monitoring/management\n\nMONITORING thresholds/rules · alert the data owner · one platform reports all data\nLOGGING threat detection · data analysis · compliance audits\nCOMPLIANCE",
-      "x": -2400,
-      "y": -2450,
-      "width": 560,
-      "height": 420
-    },
-    {
-      "id": "b3",
-      "type": "text",
-      "text": "LO03 · Evaluate CSPs Before Consuming a Cloud Service\n\n1 · Market share + provider names (p35)\n2 · GAP ANALYSIS — assess your own security capabilities against the provider's FIRST\n3 · TABLE 12.1 AWS / Azure / GCP security-feature comparison\n4 · TABLE 12.2 on-premise vs third-party security controls\n\nREAD COLUMN-WISE, NOT ROW-WISE — they are provider columns",
-      "x": -2400,
-      "y": -1940,
-      "width": 560,
-      "height": 280
-    },
-    {
-      "id": "b4",
-      "type": "text",
-      "text": "LO04 · AWS  (116 pp)\n\nSHARED RESPONSIBILITY — ONE model, TWO control types\nInherited Controls (from AWS: physical/environmental)\nShared Controls (both layers: patch mgmt · config mgmt · awareness+training)\n6 customer responsibility items\n\nIAM (the bulk of the LO)\nIdentity Center (was AWS SSO) · Access Analyzer (gen from CloudTrail, up to 90 DAYS) · 3 policy types (AWS-managed / customer-managed / inline) · 5 access levels (List · Read · Write · Perms mgmt · Tagging) · 3 AWS-managed policy classes (Full · Power user · Partial)\n4 MFA METHODS: FIDO keys · virtual authenticator apps · TOTP hardware tokens · TOTP for AWS GovCloud (US)\nEC2 roles + instance profile · credential rotation via ACCESS KEY LAST USED · SAML session tags for ABAC · policy conditions · service-linked roles · permissions boundary",
-      "x": -1700,
-      "y": -3020,
-      "width": 580,
-      "height": 470
-    },
-    {
-      "id": "b5",
-      "type": "text",
-      "text": "LO04 · AWS — ENCRYPTION\n\nDATA AT REST — 3 MODELS\nA customer manages encryption + key storage + key mgmt\nB AWS gives key storage (CloudHSM, keys inaccessible to AWS employees); customer gives the KMI and manages algorithm + key mgmt over SSL\nC AWS gives everything (transparent server-side encryption)\n\nS3 SSE: SSE-S3 (S3-managed, AES-256 + master key) · SSE-KMS (CMKs in KMS; response ETag is NOT the MD5) · SSE-C (customer keys, never stored)\n\nCLIENT-SIDE (S3 encryption client, Java/C# crypto API, OpenSSL, Bouncy Castle)\nCloudHSM · in transit · ACM (Default vs Custom SSL cert; Default needs TLSv1 or later)",
-      "x": -1700,
-      "y": -2460,
-      "width": 580,
-      "height": 350
-    },
-    {
-      "id": "b6",
-      "type": "text",
-      "text": "LO04 · AWS — NETWORK, STORAGE, MONITORING\n\nNETWORK\nVPC · security groups = STATEFUL, instance/subnet level\nnetwork ACLs = STATELESS, subnet level\nVPC peering · VPG · Internet Gateway · EC2-Classic vs EC2-VPC\nRegions · AZs · Local Zones · GovCloud · Direct Connect · DMZ\n\nDDoS mitigation · S3 + EBS storage security\nDATA CLASSIFICATION → Amazon Macie\n\nAmazon Inspector · AWS security checklist",
-      "x": -1700,
-      "y": -2020,
-      "width": 580,
-      "height": 330
-    },
-    {
-      "id": "b7",
-      "type": "text",
-      "text": "LO05 · AZURE  (89 pp)\n\nSHARED RESPONSIBILITY — physical hosts / network / data retained by the provider\n\nIDENTITY\nSSO + Seamless SSO · Conditional Access · SSPR · AD password protection · Security Defaults\nRBAC scopes = SUBSCRIPTION / RESOURCE GROUP / RESOURCE\nprincipals = user · group · SERVICE PRINCIPAL · MANAGED IDENTITY\nPIM (eligibility · activation · MFA · justification · notifications) · EMERGENCY ACCESS accounts (at least two) · Microsoft Authenticator passwordless · PAW · AD FS · password hash sync",
-      "x": -1000,
-      "y": -3020,
-      "width": 580,
-      "height": 400
-    },
-    {
-      "id": "b8",
-      "type": "text",
-      "text": "LO05 · AZURE — ENCRYPTION + NETWORK\n\nENCRYPTION\ndata encryption models · AZURE KEY VAULT (RSA key sizes) · SSE · TDE\nin transit: HTTPS/SSL · SITE-TO-SITE vs POINT-TO-SITE VPN (IPsec)\n\nNETWORK\nSSL inbound to VMs · endpoint ACLs · DISABLE direct RDP/SSH\nLoad balancing printed as EXTERNAL/INTERNAL — never 'public', and NO L4/L7 split is stated\nApplication Gateway · AZURE FIREWALL · AZURE WAF · NSGs (default rules 'cannot be deleted, but can be overruled')\n\nAntimalware (NO cmdlet named) · Azure network architecture · production network\nACTIVE GEO-REPLICATION · MONITORING (8 log types, Activity Log, Defender for Cloud, NETWORK WATCHER = regional) · checklist = 19 items, IDENTITY/GUEST-ONLY",
-      "x": -1000,
-      "y": -2520,
-      "width": 580,
-      "height": 470
-    },
-    {
-      "id": "b9",
-      "type": "text",
-      "text": "LO06 · GCP  (58 pp)\n\nSHARED RESPONSIBILITY · GCP IAM = GRANULAR access to specific Google Cloud resources\n\nSERVICE ACCOUNT = a special account belonging to an application or VM instance, BUT NOT TO END-USER\nPERMISSION FORMAT  <service>.<resource>.<verb>   e.g. pubsub.subscriptions.consume\ncorrelates one-to-one with REST API methods\nFINE-GRAINED (per resource) vs PROJECT-LEVEL (inherited by all project resources)\n\nTHE 8 IAM BEST PRACTICES\nleast privileges, avoid primitive roles · separate service account · check granted policy per resource · restrict who acts as service accounts · ROTATE SERVICE ACCOUNT KEYS · restrict creating/managing service accounts · predefined roles · LOGGING ROLES for log auditing",
-      "x": -300,
-      "y": -3020,
-      "width": 580,
-      "height": 400
-    },
-    {
-      "id": "b10",
-      "type": "text",
-      "text": "LO06 · GCP — KEYS + NETWORK + COMPLIANCE\n\nKEY ROTATION — 2 KEY TYPES\nGCP-managed: cannot be downloaded or automatically rotated, WITHIN TWO WEEKS, used by App Engine / Compute Engine\nUser-managed: create / download / manage, EXPIRE AFTER TEN YEARS\nAutomatic (gcloud kms keys update) vs Manual (gcloud kms keys versions create … primary)\n\nCLOUD KMS — KEY HIERARCHY\nProject → Location → Key Ring → Key → Key version\nENVELOPE ENCRYPTION — KEK stored in KMS\n\nNETWORK defense-in-depth: enforce WAF POLICIES AT THE EDGE · UTILIZE VPC · micro-segmentation\nShared VPC · firewall rules · routes · DoS mitigated BY DEFAULT\n\nCloud Audit Logs (3 types) · Operation Suite · compliance · checklist = 18 items",
-      "x": -300,
-      "y": -2520,
-      "width": 580,
-      "height": 450
-    },
-    {
-      "id": "b11",
-      "type": "text",
-      "text": "LO07 · General Best Practices, NIST Recommendations, Compliance, Tools\n\n34 BEST PRACTICES printed as 4 unnumbered blocks (never numbered or totalled by the courseware)\nHigh-yield singles:\nAICPA SAS 70 Type II audits · SLAs for patching + vulnerability remediation · PROHIBIT USER CREDENTIAL SHARING · disclose infrastructure info, security patching, firewall details · physical security 24 x 7 x 365 · IDS, IPS AND FIREWALL · delete data from primary servers AND REPLICAS on disposal · SSL for sensitive transmission · SLA minimum uptime + penalties\n\n7 NIST RECOMMENDATIONS — incl. RENEW SLAs if security gaps are found · determine who is responsible for data privacy\n\nCOMPLIANCE CHECKLISTS\nTable 12.6 Operations 17 + Technology 8 · Tables 12.7/12.8 Management 9 · an unnumbered security-team list (TRUNCATED at 7 items)\nAll are two-column Organization | Provider tables — column assignment did NOT survive OCR",
-      "x": 400,
-      "y": -3020,
-      "width": 580,
-      "height": 470
-    },
-    {
-      "id": "b12",
-      "type": "text",
-      "text": "CLOUD SECURITY TOOLS (LO07)\n\nSCOUT SUITE — open source multi-cloud security-auditing tool; uses provider APIs to gather configuration data for manual inspection; highlights risk areas. NO feature list given.\n\nQUALYS CLOUD PLATFORM — end-to-end, continuous always-on global security + compliance posture. Providers 'currently SUPPORTED/PLANNED': AWS · AZURE (BETA) · GCP · ALIBABA CLOUD (EARLY ALPHA) · ORACLE CLOUD INFRASTRUCTURE (EARLY ALPHA)\n\nCLOUDPASSAGE HALO — SDSec platform; 8 features incl. workload firewall management · MULTIFACTOR NETWORK AUTHENTICATION via SMS OR YUBIKEY with no additional software · file integrity monitoring · HALO REST API\n\nCORE CLOUDINSPECT — AWS ONLY; real attack techniques · no false positives · SQL injection / XSS susceptibility · CERTIFY SYSTEMS BEFORE THEY GO LIVE\n\n+ 9 further tools named with URLs and NO description",
-      "x": 400,
-      "y": -2460,
-      "width": 580,
-      "height": 480
-    },
-    {
-      "id": "pat",
-      "type": "text",
-      "text": "THE REPEATING SPINE\n\nLO01-LO03: concepts → shared responsibility → evaluate the provider\n\nLO04 / LO05 / LO06 run the SAME four-stage trunk, but the PRIMITIVES ARE NOT INTERCHANGEABLE:\n  1 IDENTITY  — AWS IAM (users/groups/policies/roles/MFA)\n                 Azure AD (SSO/Conditional Access/RBAC/PIM)\n                 GCP IAM (service accounts/roles/org policies)\n  2 ENCRYPTION — AWS 3 models A/B/C + SSE-S3/KMS/C\n                 Azure models + Key Vault + SSE + TDE\n                 GCP default encryption + Cloud KMS hierarchy\n  3 NETWORK   — AWS VPC/SG/NACL · Azure NSG/Firewall/WAF/VPN · GCP VPC/Shared VPC/firewall rules/routes\n  4 MONITORING — AWS CloudWatch/CloudTrail/Inspector · Azure Monitor/Activity Log/Network Watcher · GCP Logging/Cloud Audit Logs/Operation Suite\n\nCONVERGENCE at LO07: best practices → NIST recommendations → compliance checklists → tools\n\nTRAPS\n• 'AWS has THREE shared responsibility models' — p316 says three; pp.41-43 say ONE model with TWO control types. Never reconciled.\n• CASB is announced on p303 and NEVER covered.\n• Azure says EXTERNAL/INTERNAL, never 'public'; prints no L4/L7 split.\n• Core CloudInspect is AWS-ONLY.\n• The Azure checklist is IDENTITY/GUEST-ONLY — not whole-cloud.",
-      "x": 1100,
-      "y": -3020,
-      "width": 620,
-      "height": 760,
-      "color": "4"
-    },
-    {
-      "id": "end",
-      "type": "text",
-      "text": "MODULE SUMMARY (p316)\n\nCloud computing = on-demand delivery of IT capabilities as a metered service over a network\n3 categories: IaaS · PaaS · SaaS\nCloud security and compliance = SHARED RESPONSIBILITY of provider and consumer\n\nAWS — THREE shared responsibility models (infrastructure services · container services · abstract services)  ← CONTRADICTS pp.41-43\nAWS IAM — establishes ACCESS RULES AND PERMISSIONS for specific users and applications\nAzure IAM — SINGLE-SIGN-ON · TURNING ON CONDITIONAL ACCESS · ENFORCING MULTI-FACTOR AUTHENTICATION\nGCP IAM — GRANULAR access to specific Google Cloud resources; prevents unauthorized access\n\n(p316 prints 'cloud service provides' for 'providers', and a column-wrap defect displaces the word 'Amazon' — both the PDF's own defects, reproduced not corrected)",
-      "x": 1100,
-      "y": -2170,
-      "width": 620,
-      "height": 400,
-      "color": "3"
-    }
-  ],
-  "edges": [
-    {
-      "id": "e1",
-      "fromNode": "b1",
-      "toNode": "b2",
-      "label": "what changes",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e2",
-      "fromNode": "b2",
-      "toNode": "b3",
-      "label": "trust the CSP?",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e3",
-      "fromNode": "b3",
-      "toNode": "b4",
-      "label": "AWS",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e4",
-      "fromNode": "b4",
-      "toNode": "b5",
-      "label": "encryption",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e5",
-      "fromNode": "b5",
-      "toNode": "b6",
-      "label": "network + monitor",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e6",
-      "fromNode": "b4",
-      "toNode": "b7",
-      "label": "Azure",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e7",
-      "fromNode": "b7",
-      "toNode": "b8",
-      "label": "encryption + network",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e8",
-      "fromNode": "b4",
-      "toNode": "b9",
-      "label": "GCP",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e9",
-      "fromNode": "b9",
-      "toNode": "b10",
-      "label": "keys + network",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e10",
-      "fromNode": "b6",
-      "toNode": "b11",
-      "label": "converge",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e11",
-      "fromNode": "b8",
-      "toNode": "b11",
-      "label": "converge",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e12",
-      "fromNode": "b10",
-      "toNode": "b11",
-      "label": "converge",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e13",
-      "fromNode": "b11",
-      "toNode": "b12",
-      "label": "tools",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e14",
-      "fromNode": "b12",
-      "toNode": "end",
-      "label": "summary",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e15",
-      "fromNode": "pat",
-      "toNode": "end",
-      "label": "contradiction",
-      "fromSide": "bottom",
-      "toSide": "top"
-    }
-  ]
+	"nodes":[
+		{"id":"title","type":"text","text":"Module 12 — Enterprise Cloud Network Security\nFundamentals → Shared Responsibility → Evaluate CSP → AWS / Azure / GCP → Best Practices + Tools","x":-1200,"y":-3200,"width":2400,"height":70,"color":"5"},
+		{"id":"b1","type":"text","text":"LO01 · Cloud Computing Fundamentals\n\nDEF on-demand delivery of IT capabilities; IT infrastructure + applications to subscribers as a METERED SERVICE OVER A NETWORK\n\n12 CHARACTERISTICS\non-demand self service · distributed storage · broad network access · rapid elasticity · automated management · resource pooling · measured service · virtualization technology · multi-tenancy · resilient computing · flexible pricing models · sustainability\n\nBENEFITS = 30 items in 4 groups\nEconomic 8 · Operational 7 · Staffing 7 · Security 8\n\nLIMITATIONS\nlimited control/flexibility · prone to outage · security/privacy/compliance · contracts + lock-in · dependence on network connections\n\nSERVICE DELIVERY IaaS / PaaS / SaaS\nDEPLOYMENT public / private / community / hybrid + multi-cloud\n\n5 SIGNIFICANT ACTORS (NIST)\nconsumer · provider · CARRIER · auditor · broker\nbroker = intermediation / aggregation / arbitrage\nSLA: CONSUMER specifies QoS, security, remedies","x":-2400,"y":-3020,"width":560,"height":480},
+		{"id":"b2","type":"text","text":"LO02 · Cloud Security Insights\n\nMEASURES do not change — the FOCUS does\n\nSHARED RESPONSIBILITY boundary shifts per model\nIaaS customer-heavy → SaaS provider-heavy\n\nCONSUMER elements include IAM + identity lifecycle\n\nDATA storage security · testing cloud data security\nNETWORK challenges — chiefly LACK OF NETWORK VISIBILITY in monitoring/management\n\nMONITORING thresholds/rules · alert the data owner · one platform reports all data\nLOGGING threat detection · data analysis · compliance audits\nCOMPLIANCE","x":-2400,"y":-2450,"width":560,"height":420},
+		{"id":"b3","type":"text","text":"LO03 · Evaluate CSPs Before Consuming a Cloud Service\n\n1 · Market share + provider names (p35)\n2 · GAP ANALYSIS — assess your own security capabilities against the provider's FIRST\n3 · TABLE 12.1 AWS / Azure / GCP security-feature comparison\n4 · TABLE 12.2 on-premise vs third-party security controls\n\nREAD COLUMN-WISE, NOT ROW-WISE — they are provider columns","x":-2400,"y":-1940,"width":560,"height":280},
+		{"id":"b4","type":"text","text":"LO04 · AWS  (116 pp)\n\nSHARED RESPONSIBILITY — ONE model, TWO control types\nInherited Controls (from AWS: physical/environmental)\nShared Controls (both layers: patch mgmt · config mgmt · awareness+training)\n6 customer responsibility items\n\nIAM (the bulk of the LO)\nIdentity Center (was AWS SSO) · Access Analyzer (gen from CloudTrail, up to 90 DAYS) · 3 policy types (AWS-managed / customer-managed / inline) · 5 access levels (List · Read · Write · Perms mgmt · Tagging) · 3 AWS-managed policy classes (Full · Power user · Partial)\n4 MFA METHODS: FIDO keys · virtual authenticator apps · TOTP hardware tokens · TOTP for AWS GovCloud (US)\nEC2 roles + instance profile · credential rotation via ACCESS KEY LAST USED · SAML session tags for ABAC · policy conditions · service-linked roles · permissions boundary","x":-1700,"y":-3020,"width":580,"height":470},
+		{"id":"b5","type":"text","text":"LO04 · AWS — ENCRYPTION\n\nDATA AT REST — 3 MODELS\nA customer manages encryption + key storage + key mgmt\nB AWS gives key storage (CloudHSM, keys inaccessible to AWS employees); customer gives the KMI and manages algorithm + key mgmt over SSL\nC AWS gives everything (transparent server-side encryption)\n\nS3 SSE: SSE-S3 (S3-managed, AES-256 + master key) · SSE-KMS (CMKs in KMS; response ETag is NOT the MD5) · SSE-C (customer keys, never stored)\n\nCLIENT-SIDE (S3 encryption client, Java/C# crypto API, OpenSSL, Bouncy Castle)\nCloudHSM · in transit · ACM (Default vs Custom SSL cert; Default needs TLSv1 or later)","x":-1700,"y":-2460,"width":580,"height":350},
+		{"id":"b6","type":"text","text":"LO04 · AWS — NETWORK, STORAGE, MONITORING\n\nNETWORK\nVPC · security groups = STATEFUL, instance/subnet level\nnetwork ACLs = STATELESS, subnet level\nVPC peering · VPG · Internet Gateway · EC2-Classic vs EC2-VPC\nRegions · AZs · Local Zones · GovCloud · Direct Connect · DMZ\n\nDDoS mitigation · S3 + EBS storage security\nDATA CLASSIFICATION → Amazon Macie\n\nAmazon Inspector · AWS security checklist","x":-1700,"y":-2020,"width":580,"height":330},
+		{"id":"b7","type":"text","text":"LO05 · AZURE  (89 pp)\n\nSHARED RESPONSIBILITY — physical hosts / network / data retained by the provider\n\nIDENTITY\nSSO + Seamless SSO · Conditional Access · SSPR · AD password protection · Security Defaults\nRBAC scopes = SUBSCRIPTION / RESOURCE GROUP / RESOURCE\nprincipals = user · group · SERVICE PRINCIPAL · MANAGED IDENTITY\nPIM (eligibility · activation · MFA · justification · notifications) · EMERGENCY ACCESS accounts (at least two) · Microsoft Authenticator passwordless · PAW · AD FS · password hash sync","x":-1000,"y":-3020,"width":580,"height":400},
+		{"id":"b8","type":"text","text":"LO05 · AZURE — ENCRYPTION + NETWORK\n\nENCRYPTION\ndata encryption models · AZURE KEY VAULT (RSA key sizes) · SSE · TDE\nin transit: HTTPS/SSL · SITE-TO-SITE vs POINT-TO-SITE VPN (IPsec)\n\nNETWORK\nSSL inbound to VMs · endpoint ACLs · DISABLE direct RDP/SSH\nLoad balancing printed as EXTERNAL/INTERNAL — never 'public', and NO L4/L7 split is stated\nApplication Gateway · AZURE FIREWALL · AZURE WAF · NSGs (default rules 'cannot be deleted, but can be overruled')\n\nAntimalware (NO cmdlet named) · Azure network architecture · production network\nACTIVE GEO-REPLICATION · MONITORING (8 log types, Activity Log, Defender for Cloud, NETWORK WATCHER = regional) · checklist = 19 items, IDENTITY/GUEST-ONLY","x":-1000,"y":-2520,"width":580,"height":470},
+		{"id":"b9","type":"text","text":"LO06 · GCP  (58 pp)\n\nSHARED RESPONSIBILITY · GCP IAM = GRANULAR access to specific Google Cloud resources\n\nSERVICE ACCOUNT = a special account belonging to an application or VM instance, BUT NOT TO END-USER\nPERMISSION FORMAT  <service>.<resource>.<verb>   e.g. pubsub.subscriptions.consume\ncorrelates one-to-one with REST API methods\nFINE-GRAINED (per resource) vs PROJECT-LEVEL (inherited by all project resources)\n\nTHE 8 IAM BEST PRACTICES\nleast privileges, avoid primitive roles · separate service account · check granted policy per resource · restrict who acts as service accounts · ROTATE SERVICE ACCOUNT KEYS · restrict creating/managing service accounts · predefined roles · LOGGING ROLES for log auditing","x":-300,"y":-3020,"width":580,"height":400},
+		{"id":"b10","type":"text","text":"LO06 · GCP — KEYS + NETWORK + COMPLIANCE\n\nKEY ROTATION — 2 KEY TYPES\nGCP-managed: cannot be downloaded or automatically rotated, WITHIN TWO WEEKS, used by App Engine / Compute Engine\nUser-managed: create / download / manage, EXPIRE AFTER TEN YEARS\nAutomatic (gcloud kms keys update) vs Manual (gcloud kms keys versions create … primary)\n\nCLOUD KMS — KEY HIERARCHY\nProject → Location → Key Ring → Key → Key version\nENVELOPE ENCRYPTION — KEK stored in KMS\n\nNETWORK defense-in-depth: enforce WAF POLICIES AT THE EDGE · UTILIZE VPC · micro-segmentation\nShared VPC · firewall rules · routes · DoS mitigated BY DEFAULT\n\nCloud Audit Logs (3 types) · Operation Suite · compliance · checklist = 18 items","x":-300,"y":-2520,"width":580,"height":450},
+		{"id":"b11","type":"text","text":"LO07 · General Best Practices, NIST Recommendations, Compliance, Tools\n\n34 BEST PRACTICES printed as 4 unnumbered blocks (never numbered or totalled by the courseware)\nHigh-yield singles:\nAICPA SAS 70 Type II audits · SLAs for patching + vulnerability remediation · PROHIBIT USER CREDENTIAL SHARING · disclose infrastructure info, security patching, firewall details · physical security 24 x 7 x 365 · IDS, IPS AND FIREWALL · delete data from primary servers AND REPLICAS on disposal · SSL for sensitive transmission · SLA minimum uptime + penalties\n\n7 NIST RECOMMENDATIONS — incl. RENEW SLAs if security gaps are found · determine who is responsible for data privacy\n\nCOMPLIANCE CHECKLISTS\nTable 12.6 Operations 17 + Technology 8 · Tables 12.7/12.8 Management 9 · an unnumbered security-team list (TRUNCATED at 7 items)\nAll are two-column Organization | Provider tables — column assignment did NOT survive OCR","x":400,"y":-3020,"width":580,"height":470},
+		{"id":"b12","type":"text","text":"CLOUD SECURITY TOOLS (LO07)\n\nSCOUT SUITE — open source multi-cloud security-auditing tool; uses provider APIs to gather configuration data for manual inspection; highlights risk areas. NO feature list given.\n\nQUALYS CLOUD PLATFORM — end-to-end, continuous always-on global security + compliance posture. Providers 'currently SUPPORTED/PLANNED': AWS · AZURE (BETA) · GCP · ALIBABA CLOUD (EARLY ALPHA) · ORACLE CLOUD INFRASTRUCTURE (EARLY ALPHA)\n\nCLOUDPASSAGE HALO — SDSec platform; 8 features incl. workload firewall management · MULTIFACTOR NETWORK AUTHENTICATION via SMS OR YUBIKEY with no additional software · file integrity monitoring · HALO REST API\n\nCORE CLOUDINSPECT — AWS ONLY; real attack techniques · no false positives · SQL injection / XSS susceptibility · CERTIFY SYSTEMS BEFORE THEY GO LIVE\n\n+ 9 further tools named with URLs and NO description","x":400,"y":-2460,"width":580,"height":480},
+		{"id":"pat","type":"text","text":"THE REPEATING SPINE\n\nLO01-LO03: concepts → shared responsibility → evaluate the provider\n\nLO04 / LO05 / LO06 run the SAME four-stage trunk, but the PRIMITIVES ARE NOT INTERCHANGEABLE:\n  1 IDENTITY  — AWS IAM (users/groups/policies/roles/MFA)\n                 Azure AD (SSO/Conditional Access/RBAC/PIM)\n                 GCP IAM (service accounts/roles/org policies)\n  2 ENCRYPTION — AWS 3 models A/B/C + SSE-S3/KMS/C\n                 Azure models + Key Vault + SSE + TDE\n                 GCP default encryption + Cloud KMS hierarchy\n  3 NETWORK   — AWS VPC/SG/NACL · Azure NSG/Firewall/WAF/VPN · GCP VPC/Shared VPC/firewall rules/routes\n  4 MONITORING — AWS CloudWatch/CloudTrail/Inspector · Azure Monitor/Activity Log/Network Watcher · GCP Logging/Cloud Audit Logs/Operation Suite\n\nCONVERGENCE at LO07: best practices → NIST recommendations → compliance checklists → tools\n\nTRAPS\n• 'AWS has THREE shared responsibility models' — p316 says three; pp.41-43 say ONE model with TWO control types. Never reconciled.\n• CASB is announced on p303 and NEVER covered.\n• Azure says EXTERNAL/INTERNAL, never 'public'; prints no L4/L7 split.\n• Core CloudInspect is AWS-ONLY.\n• The Azure checklist is IDENTITY/GUEST-ONLY — not whole-cloud.","x":1100,"y":-3020,"width":620,"height":760,"color":"4"},
+		{"id":"end","type":"text","text":"MODULE SUMMARY (p316)\n\nCloud computing = on-demand delivery of IT capabilities as a metered service over a network\n3 categories: IaaS · PaaS · SaaS\nCloud security and compliance = SHARED RESPONSIBILITY of provider and consumer\n\nAWS — THREE shared responsibility models (infrastructure services · container services · abstract services)  ← CONTRADICTS pp.41-43\nAWS IAM — establishes ACCESS RULES AND PERMISSIONS for specific users and applications\nAzure IAM — SINGLE-SIGN-ON · TURNING ON CONDITIONAL ACCESS · ENFORCING MULTI-FACTOR AUTHENTICATION\nGCP IAM — GRANULAR access to specific Google Cloud resources; prevents unauthorized access\n\n(p316 prints 'cloud service provides' for 'providers', and a column-wrap defect displaces the word 'Amazon' — both the PDF's own defects, reproduced not corrected)","x":1100,"y":-2170,"width":620,"height":400,"color":"3"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"b1","toNode":"b2","label":"what changes","fromSide":"right","toSide":"left"},
+		{"id":"e2","fromNode":"b2","toNode":"b3","label":"trust the CSP?","fromSide":"right","toSide":"left"},
+		{"id":"e3","fromNode":"b3","toNode":"b4","label":"AWS","fromSide":"right","toSide":"left"},
+		{"id":"e4","fromNode":"b4","toNode":"b5","label":"encryption","fromSide":"right","toSide":"left"},
+		{"id":"e5","fromNode":"b5","toNode":"b6","label":"network + monitor","fromSide":"right","toSide":"left"},
+		{"id":"e6","fromNode":"b4","toNode":"b7","label":"Azure","fromSide":"right","toSide":"left"},
+		{"id":"e7","fromNode":"b7","toNode":"b8","label":"encryption + network","fromSide":"right","toSide":"left"},
+		{"id":"e8","fromNode":"b4","toNode":"b9","label":"GCP","fromSide":"right","toSide":"left"},
+		{"id":"e9","fromNode":"b9","toNode":"b10","label":"keys + network","fromSide":"right","toSide":"left"},
+		{"id":"e10","fromNode":"b6","toNode":"b11","label":"converge","fromSide":"right","toSide":"left"},
+		{"id":"e11","fromNode":"b8","toNode":"b11","label":"converge","fromSide":"right","toSide":"left"},
+		{"id":"e12","fromNode":"b10","toNode":"b11","label":"converge","fromSide":"right","toSide":"left"},
+		{"id":"e13","fromNode":"b11","toNode":"b12","label":"tools","fromSide":"right","toSide":"left"},
+		{"id":"e14","fromNode":"b12","toNode":"end","label":"summary","fromSide":"right","toSide":"left"},
+		{"id":"e15","fromNode":"pat","toNode":"end","label":"contradiction","fromSide":"bottom","toSide":"top"}
+	]
 }

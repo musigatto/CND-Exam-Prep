@@ -1,232 +1,32 @@
 {
-  "nodes": [
-    {
-      "id": "title",
-      "type": "text",
-      "text": "Module 14 — Network Traffic Monitoring and Analysis\nRetrospective → capture rig → baseline → Wireshark attack-tells → performance → NAD/NBAD → NBA → UBA → UEBA",
-      "x": -1200,
-      "y": -3200,
-      "width": 2400,
-      "height": 70,
-      "color": "5"
-    },
-    {
-      "id": "b1",
-      "type": "text",
-      "text": "LO01 · WHY MONITOR  (pp4-8)\n\nRETROSPECTIVE, not proactive\n  watches for abnormal activity, performance issues,\n  bandwidth issues\n\nDEFINITION\n  capture traffic, inspect it closely to see what is\n  happening on the network\n\nPRINTED PROCESS\n  sniff → capture packets → SIGNATURE ANALYSIS\n\n3 GAPS SECURITY TOOLS LEAVE\n  • attackers bypass mechanisms\n  • signature tools cannot track CHANGING signatures\n  • not designed for behavioural anomalies, or for\n    activity that began BEFORE the attack\n\n4 ADVANTAGES\n  Proactive · Utilization · Optimization\n  · Minimizing risk  ← the SLAs-and-compliance one\n\n4 ATTRIBUTES WATCHED\n  download + upload speed · throughput · content\n  · traffic behaviours",
-      "x": -2400,
-      "y": -3020,
-      "width": 560,
-      "height": 620
-    },
-    {
-      "id": "b2",
-      "type": "text",
-      "text": "LO02 · THE CAPTURE ENVIRONMENT  (pp9-14)\n\nSNIFFER\n  NIC must be in PROMISCOUOUS MODE to listen to\n  all data transmitted in the network\n  copying packets to a file = PACKET CAPTURE\n\nPLACEMENT\n  connect to 'a switch IN FRONT OF A FIREWALL'\n  so all inbound + outbound traffic is visible\n\nSWITCH FEATURE that replicates traffic to a monitor port\n  generic: PORT MONITORING / PORT MIRRORING\n  Cisco: SPAN  (Switched Port Analyzer)\n  3Com: RAP   (Roving Analysis Port)  — no expansion anywhere\n  selected via the SWITCH MANAGEMENT INTERFACE\n  → this is what makes a switch MANAGED\n\nTOOLS: tcpdump · WinDump · ManageEngine NetFlow Analyzer\n       · SolarWinds Deep Packet Inspection · NetworkMiner",
-      "x": -2400,
-      "y": -2310,
-      "width": 560,
-      "height": 530
-    },
-    {
-      "id": "b3",
-      "type": "text",
-      "text": "LO03 · SIGNATURES AND BASELINE  (pp15-22)\n\nSIGNATURE = 'a set of traffic characteristics'\n  source/dest IP · ports · TCP flags · packet length\n  · TTL · protocols\n\nBASELINE = accepted behaviour for normal traffic\n\nNORMAL TCP\n  ACK set in every packet EXCEPT the initial one,\n  where SYN is set; mid-conversation only ACK by\n  default, occasionally + PSH or URG\n\n4 CATEGORIES OF SUSPICIOUS SIGNATURE\n  Informational · Reconnaissance · Unauthorized access\n  · Denial of service\n\n4 ANALYSIS TECHNIQUES\n  Content-based · Context-based · Atomic · Composite\n  ATOMIC = one packet, no history\n  COMPOSITE = a series over a long period (ICMP flood)",
-      "x": -1740,
-      "y": -3020,
-      "width": 580,
-      "height": 510
-    },
-    {
-      "id": "b4",
-      "type": "text",
-      "text": "LO04 · WIRESHARK  (pp23-30)\n\nthe instrument. Must pick the CORRECT NETWORK\nINTERFACE to capture.\n\nprinted command (EM DASH as printed):\n  $ wireshark -i eth0 —k\n\nFILTER LANGUAGE\n  libpcap  (for capture filters)\n\nPRINTED ROUTE\n  Statistics ▸ Conversations ▸ TCP\n  → less than 4 packets between two hosts\n    = sign of a TCP PORT SCAN\n\nMENU BAR enumerated on p26-27 (body text, EXAMINABLE):\n  File · Edit · View · go · Capture · Analyze\n  · Statistics · Telephony · Wireless\n  · Tools · Help\n\npp26-30 are GUI captures → NOT read.\nThe only Wireshark VERSION in the PDF lives inside\nthe p26 image and was deliberately excluded.",
-      "x": -1740,
-      "y": -2420,
-      "width": 580,
-      "height": 500,
-      "color": "3"
-    },
-    {
-      "id": "b5",
-      "type": "text",
-      "text": "LO04 · PLAINTEXT + OS FINGERPRINTING  (pp31-42)\n\nPLAINTEXT PROTOCOLS (readable in the clear)\n  FTP · TFTP · UFTP · Telnet · HTTP\n  ✗ p31 'FTP does not need authentication' vs\n    p52 'FTP requires the user to login'\n  ✗ p33 UFTP heading 'Unicast' vs body 'multicast'\n\nOS FINGERPRINTING\n  PASSIVE — attacker sends NOTHING\n    5 fields: TTL · do-not-fragment · max segment\n    size · window size · SACK OK\n    → firewalls CANNOT detect it; defender must look\n      manually with sniffing tools\n\n  ACTIVE — sends ICMP or TCP probes, reads the reply\n    FIN probe: FIN with neither ACK nor SYN\n      → RESET from Windows, BSDI, Cisco, HP/UX,\n        MVS, IRIX\n    ICMP probes: unique probes · unusual echo code\n      · timestamp (13) / info (15) / mask (17)\n\nNMAP: nmap-os-db · nmap-os-fingerprints",
-      "x": -1080,
-      "y": -3020,
-      "width": 580,
-      "height": 560
-    },
-    {
-      "id": "b6",
-      "type": "text",
-      "text": "LO04 · SCAN TELLS  (pp43-52)\n\nTCP HALF-OPEN / STEALTH\n  open → SYN+ACK · closed → RST|RST+ACK\n  firewalled → ICMP type-3 code 1,2,3,9,10,13\n\nTCP FULL CONNECT — completes the 3-way handshake\n\nTCP NULL  tcp.flags==0x000\n  sequence 0, all headers NULL, closed → RST,\n  open → no response; slips past flag filters\n  detectable on Unix · NO WINDOWS SUPPORT\n\nARP SWEEP beats ping sweep\n  firewall blocks ICMP; ARP finds hidden hosts\n  tell = unexpected burst of broadcast ARP requests\n\nPING SWEEP → TCP/UDP port 7\n\nSYN/FIN DDoS  tcp.flags==0x003\nSYN FLOOD — never send the 3rd ACK; server waits\nUDP SCAN — OPEN = SILENCE, closed = ICMP type-3 code-3\nPASSWORD CRACKING — brute force vs dictionary;\n  tell = login attempts from one IP/username",
-      "x": -1080,
-      "y": -2370,
-      "width": 580,
-      "height": 500
-    },
-    {
-      "id": "b7",
-      "type": "text",
-      "text": "LO04 · MORE TELLS  (pp53-70)\n\nMiTM SNIFFING\nMALFORMED PACKETS → Expert Information panel\n  ✗ p55: 'legitimate source' then same-source +\n    same TTL = possible MAC FLOODING ATTACK\nARP POISONING\n  filter printed 3 ways; none reconstructed\nSQL INJECTION\n  ✗ p57's indicator list is PRINTED WITH ITS\n    TOKENS MISSING: 'such as OR, , , and z.'\nDHCP SPOOFING · VLAN HOPPING\nUNEXPLAINED PACKET LOSS\n  Statistics ▸ Capture File Properties ▸ Interfaces\n  ✗ p61 'lost packets' vs p63 'not captured'\nNBNS  port 137, filter nbns\nSSL/TLS · KERBEROS  port 88, kerberos.CNameString\nWIRELESS: client deauthentication, fake AP beacon flood\n  ✗ p69 says read beacons as DISASSOCIATION\nHTTPS",
-      "x": -420,
-      "y": -3020,
-      "width": 580,
-      "height": 640,
-      "color": "4"
-    },
-    {
-      "id": "b8",
-      "type": "text",
-      "text": "LO05 · PERFORMANCE AND BANDWIDTH  (pp71-77)\n\nNPM  'helps measure, maintain, and optimize\n      network health'\n  PRTG 'can collect data for almost anything\n        of interest'\n\nBANDWIDTH — printed TWICE on p74, differently:\n  side bar: the amount of information that can be\n            transmitted over a network in a given\n            amount of time\n  body:     the amount data that can be transferred\n            from one point to another  (no word printed\n            between 'amount' and 'data')\n\nTWO LEVELS\n  INTERFACE level · DEVICE level\n\nA test identifies the MAXIMUM THROUGHPUT of a system\n\nUPLOAD = data sent · DOWNLOAD = data received\n\nQoS IS A BANDWIDTH RESERVATION MECHANISM",
-      "x": -420,
-      "y": -2290,
-      "width": 580,
-      "height": 470
-    },
-    {
-      "id": "b9",
-      "type": "text",
-      "text": "LO06 · ANOMALY DETECTION AND NBAD  (pp78-81)\n\nNETWORK ANOMALY\n  'a sudden and brief deviation from the normal\n   operation of a network, often caused by\n   intruders with malicious intent'\n\nNBAD = monitors for abnormal behaviour, relying on\n       NETWORK BEHAVIOUR ANALYSIS\n  ✗ expanded 2 ways on p79 + a 3rd in the title band\n\n5 METRICS (to work at scale)\n  packets · bandwidth · bytes · traffic volume\n  · protocol usage\n\n3 ASPECTS\n  traffic flow patterns · passive traffic analysis\n  · network performance data\n\n3 TECHNIQUES\n  machine learning · statistical analysis · heuristics\n\nFLOW DATA IN\n  NetFlow · jFlow · IPFIX · NetStream\n  exported by routers, switches, or network probes",
-      "x": 240,
-      "y": -3020,
-      "width": 580,
-      "height": 500
-    },
-    {
-      "id": "b10",
-      "type": "text",
-      "text": "LO06 · THE SEVEN STEPS + NBA TOOLS  (pp82-90)\n\nTHE SEVEN STEPS\n  1 data collection\n  2 baseline establishment\n  3 anomaly detection\n  4 alert generation\n  5 alert correlation\n  6 incident investigation\n  7 response and mitigation\n\nNBA TOOLS / USE CASES\n  AWAKE Security Platform\n  CISCO Secure Network Analytics  (band: 'Security')\n  RANSOMWARE — watch traffic patterns + endpoint\n    behaviour for unusual patterns\n  COMPROMISED DEVICES\n  DDoS DETECTION\n  NetFlow Analyzer LocalDemo\n  additional: InsightIQ · NETWITNESS\n\nFigure 14.26: network traffic + user behaviour\n→ DATA MINING for FREQUENT PATTERNS → anomalies.\nUser behaviour recorded in an AUDIT LOGGER.\nBoth deviate → alarms to the business hierarchy.",
-      "x": 240,
-      "y": -2430,
-      "width": 580,
-      "height": 540
-    },
-    {
-      "id": "b11",
-      "type": "text",
-      "text": "LO06 · NBA, UBA, UEBA TOOLS  (pp91-112)\n\nNETWORK BEHAVIOUR ANALYSIS (NBA)\n  McAfee Network Threat Behaviour Analyzer\n  FLOWMON ADS (Flowmon, not 'fbwmm')\n  AppNeta Performance Manager · Splunk\n    (Splunk source printed two ways; 'CIS 20')\n\nUSER BEHAVIOUR ANALYTICS (UBA)\n  monitors USER behaviour\n  CLEVERTAP (p101: 'ClearTap')\n  FULLSTORY · MOUSEFLOW · USERLYTICS\n    (p103: 'Crazyegg'/'Crazy Egg', 'Crea bl')\n\nUSER + ENTITY BEHAVIOUR ANALYTICS (UEBA)\n  integrates data from MULTIPLE SOURCES\n  DNIF · SECURONIX\n  IBM QRADAR  (p111: 'Qradar'; also p90's\n    QRadar NETWORK INSIGHTS = a different product)\n\nALL dashboard figures are NON-EVIDENCE:\npp85, 88, 108, 110 are whole-page images; pp82-98\nand 101-102 are panels. No value was read from any.",
-      "x": 900,
-      "y": -3020,
-      "width": 600,
-      "height": 650
-    },
-    {
-      "id": "b12",
-      "type": "text",
-      "text": "LO06 · UBA vs UEBA  (p113)\n\n                 UBA            UEBA\nFocus            user behavior  user AND entity\n                                 behavior\nSources          event logs     multiple sources\nActors           human, malware malware, human,\n                                 MACHINE\nNetwork          LIMITED        MORE visibility +\nvisibility       visibility     context\nIntegration      STAND-ALONE,   integrates with\n                 cannot         existing products\n\n✗ p113 says UBA 'relies on event logs' and\n  'cannot integrate'. p99 says UBA analyses\n  network logs in SIEM. UNRECONCILED.\n\n✗ THE p114 MODULE SUMMARY OMITS LO#06\n  ENTIRELY — NBAD/NBA/UBA/UEBA, a third of the\n  module, appear nowhere in it.",
-      "x": 900,
-      "y": -2280,
-      "width": 600,
-      "height": 480
-    },
-    {
-      "id": "pat",
-      "type": "text",
-      "text": "HOW TO HOLD THIS MODULE\n\nTHE MODULE TEACHES TWO\nPHILOSOPHIES AND NEVER\nRECONCILES THEM.\nLO01-LO05 = SIGNATURE-BASED\n  'match a known pattern'\nLO06 = BEHAVIOUR / ANOMALY\n  'deviate from a learned norm'\nSeveral exam items turn on WHICH\none is meant.\n\nTHE NUMBERS\n  4 advantages · 4 categories · 4 techniques\n  8 illegal-packet tests\n  0x000 null scan · 0x003 SYN/FIN\n  port 7 echo · 137 NBNS · 88 Kerberos\n  5 NBAD metrics · 3 techniques · 7 steps\n  4 flow standards\n\nEXAM TRAPS\n• 'Monitoring is proactive' — it is RETROSPECTIVE\n• 'A firewall blocks passive fingerprinting' —\n  firewalls CANNOT detect it\n• 'An open UDP port answers the scan' — silence\n• 'TCP null scan works on Windows' — no support\n• 'UEBA is stand-alone' — that is UBA's column\n• The string APT occurs ZERO times in 114 pages\n• Any Wireshark version number\n\nNOT RECOVERABLE\n✗ the Wireshark version (inside the p26 image)\n✗ the SQL-indicator characters (missing from p57)\n✗ the p70 filter-bar expression (in the image)\n\nSCREENSHOTS ARE NON-EVIDENCE\nGUI captures pp26-35, 43-50, 52-60, 62-66, 68-70.\nDashboards pp72, 73, 75, 76, 82-85, 87, 88, 90,\n92, 93, 95-98, 101, 102, 108, 110.\np88's OCR is console garbage.",
-      "x": 1600,
-      "y": -3020,
-      "width": 620,
-      "height": 760,
-      "color": "6"
-    }
-  ],
-  "edges": [
-    {
-      "id": "e1",
-      "fromNode": "b1",
-      "toNode": "b2",
-      "label": "capture rig",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e2",
-      "fromNode": "b2",
-      "toNode": "b3",
-      "label": "baseline",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e3",
-      "fromNode": "b3",
-      "toNode": "b4",
-      "label": "the instrument",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e4",
-      "fromNode": "b4",
-      "toNode": "b5",
-      "label": "plaintext + fingerprinting",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e5",
-      "fromNode": "b5",
-      "toNode": "b6",
-      "label": "scan tells",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e6",
-      "fromNode": "b6",
-      "toNode": "b7",
-      "label": "more tells",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e7",
-      "fromNode": "b7",
-      "toNode": "b8",
-      "label": "performance",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e8",
-      "fromNode": "b8",
-      "toNode": "b9",
-      "label": "the pivot to NBAD",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e9",
-      "fromNode": "b9",
-      "toNode": "b10",
-      "label": "the seven steps",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e10",
-      "fromNode": "b10",
-      "toNode": "b11",
-      "label": "NBA / UBA / UEBA tools",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e11",
-      "fromNode": "b11",
-      "toNode": "b12",
-      "label": "UBA vs UEBA",
-      "fromSide": "right",
-      "toSide": "left"
-    },
-    {
-      "id": "e12",
-      "fromNode": "b12",
-      "toNode": "pat",
-      "label": "traps",
-      "fromSide": "right",
-      "toSide": "left"
-    }
-  ]
+	"nodes":[
+		{"id":"title","type":"text","text":"Module 14 — Network Traffic Monitoring and Analysis\nRetrospective → capture rig → baseline → Wireshark attack-tells → performance → NAD/NBAD → NBA → UBA → UEBA","x":-1200,"y":-3200,"width":2400,"height":70,"color":"5"},
+		{"id":"b1","type":"text","text":"LO01 · WHY MONITOR  (pp4-8)\n\nRETROSPECTIVE, not proactive\n  watches for abnormal activity, performance issues,\n  bandwidth issues\n\nDEFINITION\n  capture traffic, inspect it closely to see what is\n  happening on the network\n\nPRINTED PROCESS\n  sniff → capture packets → SIGNATURE ANALYSIS\n\n3 GAPS SECURITY TOOLS LEAVE\n  • attackers bypass mechanisms\n  • signature tools cannot track CHANGING signatures\n  • not designed for behavioural anomalies, or for\n    activity that began BEFORE the attack\n\n4 ADVANTAGES\n  Proactive · Utilization · Optimization\n  · Minimizing risk  ← the SLAs-and-compliance one\n\n4 ATTRIBUTES WATCHED\n  download + upload speed · throughput · content\n  · traffic behaviours","x":-2400,"y":-3020,"width":560,"height":620},
+		{"id":"b2","type":"text","text":"LO02 · THE CAPTURE ENVIRONMENT  (pp9-14)\n\nSNIFFER\n  NIC must be in PROMISCOUOUS MODE to listen to\n  all data transmitted in the network\n  copying packets to a file = PACKET CAPTURE\n\nPLACEMENT\n  connect to 'a switch IN FRONT OF A FIREWALL'\n  so all inbound + outbound traffic is visible\n\nSWITCH FEATURE that replicates traffic to a monitor port\n  generic: PORT MONITORING / PORT MIRRORING\n  Cisco: SPAN  (Switched Port Analyzer)\n  3Com: RAP   (Roving Analysis Port)  — no expansion anywhere\n  selected via the SWITCH MANAGEMENT INTERFACE\n  → this is what makes a switch MANAGED\n\nTOOLS: tcpdump · WinDump · ManageEngine NetFlow Analyzer\n       · SolarWinds Deep Packet Inspection · NetworkMiner","x":-2400,"y":-2310,"width":560,"height":530},
+		{"id":"b3","type":"text","text":"LO03 · SIGNATURES AND BASELINE  (pp15-22)\n\nSIGNATURE = 'a set of traffic characteristics'\n  source/dest IP · ports · TCP flags · packet length\n  · TTL · protocols\n\nBASELINE = accepted behaviour for normal traffic\n\nNORMAL TCP\n  ACK set in every packet EXCEPT the initial one,\n  where SYN is set; mid-conversation only ACK by\n  default, occasionally + PSH or URG\n\n4 CATEGORIES OF SUSPICIOUS SIGNATURE\n  Informational · Reconnaissance · Unauthorized access\n  · Denial of service\n\n4 ANALYSIS TECHNIQUES\n  Content-based · Context-based · Atomic · Composite\n  ATOMIC = one packet, no history\n  COMPOSITE = a series over a long period (ICMP flood)","x":-1740,"y":-3020,"width":580,"height":510},
+		{"id":"b4","type":"text","text":"LO04 · WIRESHARK  (pp23-30)\n\nthe instrument. Must pick the CORRECT NETWORK\nINTERFACE to capture.\n\nprinted command (EM DASH as printed):\n  $ wireshark -i eth0 —k\n\nFILTER LANGUAGE\n  libpcap  (for capture filters)\n\nPRINTED ROUTE\n  Statistics ▸ Conversations ▸ TCP\n  → less than 4 packets between two hosts\n    = sign of a TCP PORT SCAN\n\nMENU BAR enumerated on p26-27 (body text, EXAMINABLE):\n  File · Edit · View · go · Capture · Analyze\n  · Statistics · Telephony · Wireless\n  · Tools · Help\n\npp26-30 are GUI captures → NOT read.\nThe only Wireshark VERSION in the PDF lives inside\nthe p26 image and was deliberately excluded.","x":-1740,"y":-2420,"width":580,"height":500,"color":"3"},
+		{"id":"b5","type":"text","text":"LO04 · PLAINTEXT + OS FINGERPRINTING  (pp31-42)\n\nPLAINTEXT PROTOCOLS (readable in the clear)\n  FTP · TFTP · UFTP · Telnet · HTTP\n  ✗ p31 'FTP does not need authentication' vs\n    p52 'FTP requires the user to login'\n  ✗ p33 UFTP heading 'Unicast' vs body 'multicast'\n\nOS FINGERPRINTING\n  PASSIVE — attacker sends NOTHING\n    5 fields: TTL · do-not-fragment · max segment\n    size · window size · SACK OK\n    → firewalls CANNOT detect it; defender must look\n      manually with sniffing tools\n\n  ACTIVE — sends ICMP or TCP probes, reads the reply\n    FIN probe: FIN with neither ACK nor SYN\n      → RESET from Windows, BSDI, Cisco, HP/UX,\n        MVS, IRIX\n    ICMP probes: unique probes · unusual echo code\n      · timestamp (13) / info (15) / mask (17)\n\nNMAP: nmap-os-db · nmap-os-fingerprints","x":-1080,"y":-3020,"width":580,"height":560},
+		{"id":"b6","type":"text","text":"LO04 · SCAN TELLS  (pp43-52)\n\nTCP HALF-OPEN / STEALTH\n  open → SYN+ACK · closed → RST|RST+ACK\n  firewalled → ICMP type-3 code 1,2,3,9,10,13\n\nTCP FULL CONNECT — completes the 3-way handshake\n\nTCP NULL  tcp.flags==0x000\n  sequence 0, all headers NULL, closed → RST,\n  open → no response; slips past flag filters\n  detectable on Unix · NO WINDOWS SUPPORT\n\nARP SWEEP beats ping sweep\n  firewall blocks ICMP; ARP finds hidden hosts\n  tell = unexpected burst of broadcast ARP requests\n\nPING SWEEP → TCP/UDP port 7\n\nSYN/FIN DDoS  tcp.flags==0x003\nSYN FLOOD — never send the 3rd ACK; server waits\nUDP SCAN — OPEN = SILENCE, closed = ICMP type-3 code-3\nPASSWORD CRACKING — brute force vs dictionary;\n  tell = login attempts from one IP/username","x":-1080,"y":-2370,"width":580,"height":500},
+		{"id":"b7","type":"text","text":"LO04 · MORE TELLS  (pp53-70)\n\nMiTM SNIFFING\nMALFORMED PACKETS → Expert Information panel\n  ✗ p55: 'legitimate source' then same-source +\n    same TTL = possible MAC FLOODING ATTACK\nARP POISONING\n  filter printed 3 ways; none reconstructed\nSQL INJECTION\n  ✗ p57's indicator list is PRINTED WITH ITS\n    TOKENS MISSING: 'such as OR, , , and z.'\nDHCP SPOOFING · VLAN HOPPING\nUNEXPLAINED PACKET LOSS\n  Statistics ▸ Capture File Properties ▸ Interfaces\n  ✗ p61 'lost packets' vs p63 'not captured'\nNBNS  port 137, filter nbns\nSSL/TLS · KERBEROS  port 88, kerberos.CNameString\nWIRELESS: client deauthentication, fake AP beacon flood\n  ✗ p69 says read beacons as DISASSOCIATION\nHTTPS","x":-420,"y":-3020,"width":580,"height":640,"color":"4"},
+		{"id":"b8","type":"text","text":"LO05 · PERFORMANCE AND BANDWIDTH  (pp71-77)\n\nNPM  'helps measure, maintain, and optimize\n      network health'\n  PRTG 'can collect data for almost anything\n        of interest'\n\nBANDWIDTH — printed TWICE on p74, differently:\n  side bar: the amount of information that can be\n            transmitted over a network in a given\n            amount of time\n  body:     the amount data that can be transferred\n            from one point to another  (no word printed\n            between 'amount' and 'data')\n\nTWO LEVELS\n  INTERFACE level · DEVICE level\n\nA test identifies the MAXIMUM THROUGHPUT of a system\n\nUPLOAD = data sent · DOWNLOAD = data received\n\nQoS IS A BANDWIDTH RESERVATION MECHANISM","x":-420,"y":-2290,"width":580,"height":470},
+		{"id":"b9","type":"text","text":"LO06 · ANOMALY DETECTION AND NBAD  (pp78-81)\n\nNETWORK ANOMALY\n  'a sudden and brief deviation from the normal\n   operation of a network, often caused by\n   intruders with malicious intent'\n\nNBAD = monitors for abnormal behaviour, relying on\n       NETWORK BEHAVIOUR ANALYSIS\n  ✗ expanded 2 ways on p79 + a 3rd in the title band\n\n5 METRICS (to work at scale)\n  packets · bandwidth · bytes · traffic volume\n  · protocol usage\n\n3 ASPECTS\n  traffic flow patterns · passive traffic analysis\n  · network performance data\n\n3 TECHNIQUES\n  machine learning · statistical analysis · heuristics\n\nFLOW DATA IN\n  NetFlow · jFlow · IPFIX · NetStream\n  exported by routers, switches, or network probes","x":240,"y":-3020,"width":580,"height":500},
+		{"id":"b10","type":"text","text":"LO06 · THE SEVEN STEPS + NBA TOOLS  (pp82-90)\n\nTHE SEVEN STEPS\n  1 data collection\n  2 baseline establishment\n  3 anomaly detection\n  4 alert generation\n  5 alert correlation\n  6 incident investigation\n  7 response and mitigation\n\nNBA TOOLS / USE CASES\n  AWAKE Security Platform\n  CISCO Secure Network Analytics  (band: 'Security')\n  RANSOMWARE — watch traffic patterns + endpoint\n    behaviour for unusual patterns\n  COMPROMISED DEVICES\n  DDoS DETECTION\n  NetFlow Analyzer LocalDemo\n  additional: InsightIQ · NETWITNESS\n\nFigure 14.26: network traffic + user behaviour\n→ DATA MINING for FREQUENT PATTERNS → anomalies.\nUser behaviour recorded in an AUDIT LOGGER.\nBoth deviate → alarms to the business hierarchy.","x":240,"y":-2430,"width":580,"height":540},
+		{"id":"b11","type":"text","text":"LO06 · NBA, UBA, UEBA TOOLS  (pp91-112)\n\nNETWORK BEHAVIOUR ANALYSIS (NBA)\n  McAfee Network Threat Behaviour Analyzer\n  FLOWMON ADS (Flowmon, not 'fbwmm')\n  AppNeta Performance Manager · Splunk\n    (Splunk source printed two ways; 'CIS 20')\n\nUSER BEHAVIOUR ANALYTICS (UBA)\n  monitors USER behaviour\n  CLEVERTAP (p101: 'ClearTap')\n  FULLSTORY · MOUSEFLOW · USERLYTICS\n    (p103: 'Crazyegg'/'Crazy Egg', 'Crea bl')\n\nUSER + ENTITY BEHAVIOUR ANALYTICS (UEBA)\n  integrates data from MULTIPLE SOURCES\n  DNIF · SECURONIX\n  IBM QRADAR  (p111: 'Qradar'; also p90's\n    QRadar NETWORK INSIGHTS = a different product)\n\nALL dashboard figures are NON-EVIDENCE:\npp85, 88, 108, 110 are whole-page images; pp82-98\nand 101-102 are panels. No value was read from any.","x":900,"y":-3020,"width":600,"height":650},
+		{"id":"b12","type":"text","text":"LO06 · UBA vs UEBA  (p113)\n\n                 UBA            UEBA\nFocus            user behavior  user AND entity\n                                 behavior\nSources          event logs     multiple sources\nActors           human, malware malware, human,\n                                 MACHINE\nNetwork          LIMITED        MORE visibility +\nvisibility       visibility     context\nIntegration      STAND-ALONE,   integrates with\n                 cannot         existing products\n\n✗ p113 says UBA 'relies on event logs' and\n  'cannot integrate'. p99 says UBA analyses\n  network logs in SIEM. UNRECONCILED.\n\n✗ THE p114 MODULE SUMMARY OMITS LO#06\n  ENTIRELY — NBAD/NBA/UBA/UEBA, a third of the\n  module, appear nowhere in it.","x":900,"y":-2280,"width":600,"height":480},
+		{"id":"pat","type":"text","text":"HOW TO HOLD THIS MODULE\n\nTHE MODULE TEACHES TWO\nPHILOSOPHIES AND NEVER\nRECONCILES THEM.\nLO01-LO05 = SIGNATURE-BASED\n  'match a known pattern'\nLO06 = BEHAVIOUR / ANOMALY\n  'deviate from a learned norm'\nSeveral exam items turn on WHICH\none is meant.\n\nTHE NUMBERS\n  4 advantages · 4 categories · 4 techniques\n  8 illegal-packet tests\n  0x000 null scan · 0x003 SYN/FIN\n  port 7 echo · 137 NBNS · 88 Kerberos\n  5 NBAD metrics · 3 techniques · 7 steps\n  4 flow standards\n\nEXAM TRAPS\n• 'Monitoring is proactive' — it is RETROSPECTIVE\n• 'A firewall blocks passive fingerprinting' —\n  firewalls CANNOT detect it\n• 'An open UDP port answers the scan' — silence\n• 'TCP null scan works on Windows' — no support\n• 'UEBA is stand-alone' — that is UBA's column\n• The string APT occurs ZERO times in 114 pages\n• Any Wireshark version number\n\nNOT RECOVERABLE\n✗ the Wireshark version (inside the p26 image)\n✗ the SQL-indicator characters (missing from p57)\n✗ the p70 filter-bar expression (in the image)\n\nSCREENSHOTS ARE NON-EVIDENCE\nGUI captures pp26-35, 43-50, 52-60, 62-66, 68-70.\nDashboards pp72, 73, 75, 76, 82-85, 87, 88, 90,\n92, 93, 95-98, 101, 102, 108, 110.\np88's OCR is console garbage.","x":1600,"y":-3020,"width":620,"height":760,"color":"6"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"b1","toNode":"b2","label":"capture rig","fromSide":"right","toSide":"left"},
+		{"id":"e2","fromNode":"b2","toNode":"b3","label":"baseline","fromSide":"right","toSide":"left"},
+		{"id":"e3","fromNode":"b3","toNode":"b4","label":"the instrument","fromSide":"right","toSide":"left"},
+		{"id":"e4","fromNode":"b4","toNode":"b5","label":"plaintext + fingerprinting","fromSide":"right","toSide":"left"},
+		{"id":"e5","fromNode":"b5","toNode":"b6","label":"scan tells","fromSide":"right","toSide":"left"},
+		{"id":"e6","fromNode":"b6","toNode":"b7","label":"more tells","fromSide":"right","toSide":"left"},
+		{"id":"e7","fromNode":"b7","toNode":"b8","label":"performance","fromSide":"right","toSide":"left"},
+		{"id":"e8","fromNode":"b8","toNode":"b9","label":"the pivot to NBAD","fromSide":"right","toSide":"left"},
+		{"id":"e9","fromNode":"b9","toNode":"b10","label":"the seven steps","fromSide":"right","toSide":"left"},
+		{"id":"e10","fromNode":"b10","toNode":"b11","label":"NBA / UBA / UEBA tools","fromSide":"right","toSide":"left"},
+		{"id":"e11","fromNode":"b11","toNode":"b12","label":"UBA vs UEBA","fromSide":"right","toSide":"left"},
+		{"id":"e12","fromNode":"b12","toNode":"pat","label":"traps","fromSide":"right","toSide":"left"}
+	]
 }
