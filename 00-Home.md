@@ -12,39 +12,10 @@ unresolved: []
 > [!info] Mission
 > EC-Council CND study vault — generated strictly from the 20 module PDFs. Content: schematic, nothing invented.
 
-## Module progress
-```base
-filters:
-  and:
-    - 'type == "moc"'
-    - file.inFolder("10-MOCs")
-views:
-  - type: table
-    name: Modules
-    order:
-      - module
-```
-> [!note] Pending modules show `draft`; a module counts as done when MOC + notes + canvas exist.
-
 ## Exam bank
 - [[quiz.html]] – unified bank (100 module + 56 external items), offline, shuffled every attempt
 - [[Answer-Key]] – one-line justifications, module + topic cited (bank Q001–Q100 + external E/C/D/P/H/F)
 - [[Quick-Review]] – numbered review callouts, all modules
-
-## Needs review
-```base
-filters:
-  and:
-    - file.inFolder("20-Notes")
-    - 'file.ext == "md"'
-    - 'status == "needs-review"'
-views:
-  - type: list
-    name: Needs review
-    order:
-      - module
-      - file.name
-```
 
 ## Unresolved collection
 ```base
