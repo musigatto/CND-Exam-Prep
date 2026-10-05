@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-Home.md",
+                "file": "20-Notes/Module-01/01-LO04-Social-Engineering-Attacks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00-Home"
+              "title": "01-LO04-Social-Engineering-Attacks"
             }
           }
         ]
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-Home.md",
+                "file": "20-Notes/Module-01/01-LO04-Social-Engineering-Attacks.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -199,10 +199,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8233dd42d781086a",
+  "active": "af740e2914eb5166",
   "lastOpenFiles": [
-    "README.md",
+    "00-Home.md",
     "30-Exam/Quick-Review.md",
+    "README.md",
     "30-Exam/Answer-Key.md",
     "20-Notes/Module-12/12-LO04n-AWS-Monitoring-Inspector-and-Checklist.md",
     "30-Exam/External-Flashcards-Verification.md",
@@ -244,7 +245,6 @@
     "20-Notes/Module-15/15-LO01a-Log-Types-Sources-and-the-Need-for-Logs.md",
     "20-Notes/Module-15/15-LO03c-Commands-to-Monitor-and-Analyze-Linux-Logs.md",
     "20-Notes/Module-15/15-LO03b-Linux-Log-Format-and-Severity-Levels.md",
-    "20-Notes/Module-15/15-LO03a-Linux-Logs-and-Log-Files.md",
-    "20-Notes/Module-11/11-LO03h-VLAN-Security.md"
+    "20-Notes/Module-15/15-LO03a-Linux-Logs-and-Log-Files.md"
   ]
 }

@@ -6,7 +6,6 @@ topic: "Quick Review - all modules, numbered callouts"
 exam_weight: unknown
 status: draft
 unresolved:
-  - "Modules 13-20 review items are NOT included yet (decision pending). Numbering below covers modules 01-12; new items will continue the sequence."
 ---
 
 # Quick Review
@@ -14,7 +13,7 @@ unresolved:
 > [!info] What this is
 > Numbered review callouts collected from every atomic note (`## Quick review` sections, ex-SR cards). Front in the title, answer inside the folded callout. Source note linked at the bottom of each card.
 
-## Modules 01-12
+## Modules 01-20
 
 ### Module 01 (38 items)
 
@@ -4753,6 +4752,2654 @@ unresolved:
 > [!question]- 1171 — What the p316 module summary claims about AWS shared responsibility
 > Three models — shared responsibility model for infrastructure services, for container services, and for abstract services. Note this conflicts with pp. 40-43, which teach one AWS model split into Inherited Controls and Shared Controls plus a six-item customer responsibility list
 > Source: [[12-LO07b-Cloud-Security-Tools]]
+
+### Module 13 (112 items)
+> [!question]- 1172 — What is OFDM and which 802.11 standards use it?
+> A modulation format encoding digital data on multiple carrier frequencies that minimizes attenuation for high throughput; used by 802.11a, 802.11g, 802.11n and 802.11ac. _(Mod 13 p5)_
+> Source: [[13-LO01a-Wireless-Fundamentals-and-Terminologies]]
+>
+> [!question]- 1173 — What is an SSID and what rule governs it?
+> A 32 alphanumeric character identifier of a WLAN; devices connecting to the same WLAN must use the same SSID. _(Mod 13 p5)_ _(Mod 13 p6)_
+> Source: [[13-LO01a-Wireless-Fundamentals-and-Terminologies]]
+>
+> [!question]- 1174 — What is TKIP and how does it relate to WEP?
+> An encryption protocol that is part of a WLAN and encrypts each data packet with a unique encryption key; a set of algorithms more secure than WEP, introduced as a WPA replacement for WEP. _(Mod 13 p5)_ _(Mod 13 p6)_
+> Source: [[13-LO01a-Wireless-Fundamentals-and-Terminologies]]
+>
+> [!question]- 1175 — Which EAP methods does the module name?
+> EAP supports token cards, Kerberos, certificates, smart cards and public key encryption; named methods are EAP-TLS, EAP-SIM, EAP-AKA and EAP-TTLS. _(Mod 13 p6)_
+> Source: [[13-LO01a-Wireless-Fundamentals-and-Terminologies]]
+>
+> [!question]- 1176 — What are the Wi-Fi frequency band and signal path?
+> Wi-Fi operates between 2.4 GHz and 5 GHz; a wireless adapter translates data into radio signals passed through an antenna and router. _(Mod 13 p8)_
+> Source: [[13-LO01b-Types-of-Wireless-Technologies]]
+>
+> [!question]- 1177 — What are Bluetooth's standard, range, speed and technique?
+> IEEE 802.15, up to 10 m, less than 1 Mbps at 2.4 GHz, and uses FHSS for data transfer. _(Mod 13 p8)_
+> Source: [[13-LO01b-Types-of-Wireless-Technologies]]
+>
+> [!question]- 1178 — What are RFID's function and range?
+> Uses RF electromagnetic waves for automatic identification and tracking tags attached to objects, within up to 20 ft. _(Mod 13 p8)_
+> Source: [[13-LO01b-Types-of-Wireless-Technologies]]
+>
+> [!question]- 1179 — What are WiMax's standard, range and rate?
+> IEEE 802.16 family, signals function over several miles with data rates up to 75 Mbps, using fixed wireless plus mobile stations. _(Mod 13 p8)_
+> Source: [[13-LO01b-Types-of-Wireless-Technologies]]
+>
+> [!question]- 1180 — Which 802.11 standard uses DSSS at 11 Mbps in the 2.4 GHz ISM band?
+> 802.11b, created in 1999, operates in the 2.4 GHz ISM band and supports up to 11 Mbps using DSSS modulation. _(Mod 13 p11)_
+> Source: [[13-LO01c-Wireless-Network-Standards]]
+>
+> [!question]- 1181 — How do 802.11a and 802.11g compare?
+> 802.11a operates in 5 GHz supporting up to 54 Mbps with OFDM but is more sensitive to walls; 802.11g supports 54 Mbps with OFDM in the same 2.4 GHz band as 802.11b, so 802.11b devices work directly with a 802.11g AP. _(Mod 13 p11)_
+> Source: [[13-LO01c-Wireless-Network-Standards]]
+>
+> [!question]- 1182 — What are the 802.11n, 802.11ac and 802.11ax highlights?
+> 802.11n (2009) operates on 2.4 and 5 GHz up to 300 Mbps with MIMO; 802.11ac is 5 GHz high-throughput gigabit networking, faster than 802.11n; 802.11ax is Wi-Fi 6, sixth generation, for all ISM bands between 1 and 6 GHz. _(Mod 13 p12)_
+> Source: [[13-LO01c-Wireless-Network-Standards]]
+>
+> [!question]- 1183 — What are the 802.15.4/Zigbee and 802.16 definitions?
+> 802.15.4 has low data rate and complexity with Zigbee transmitting long-distance data through a mesh network at 250 kbits/s with longer battery life; 802.16 (WiMax) is for fixed broadband wireless MANs using point-to-multipoint architecture. _(Mod 13 p12)_ _(Mod 13 p13)_
+> Source: [[13-LO01c-Wireless-Network-Standards]]
+>
+> [!question]- 1184 — How do ad-hoc and infrastructure topologies differ?
+> Ad-hoc/standalone (IBSS) has devices communicating directly peer-to-peer with no AP, effective for a small group in a small area; infrastructure (BSS) connects all devices through an AP, effective in large organizations. _(Mod 13 p14)_
+> Source: [[13-LO01d-Wireless-Network-Topologies]]
+>
+> [!question]- 1185 — What are ad-hoc mode's limits?
+> Performance degrades as devices increase, cumbersome to manage, cannot bridge to a wired network, and allows no internet access until a special gateway is present. _(Mod 13 p14)_
+> Source: [[13-LO01d-Wireless-Network-Topologies]]
+>
+> [!question]- 1186 — What is roaming with multiple APs?
+> If one AP cannot cover a large area, each AP must cover its neighbors so users move seamlessly via roaming; extension points act as wireless relays and multiple extension points can be strung together. _(Mod 13 p16)_
+> Source: [[13-LO01d-Wireless-Network-Topologies]]
+>
+> [!question]- 1187 — How do WLAN, WPAN and WMAN compare by coverage?
+> WLAN covers a local area from a single room to a campus; WPAN interconnects devices around an individual within 10 m with Bluetooth as the best example; WMAN covers a metropolitan area such as a city or suburb via subscriber stations to a base station. _(Mod 13 p17)_ _(Mod 13 p18)_
+> Source: [[13-LO01d-Wireless-Network-Topologies]]
+>
+> [!question]- 1188 — What is an access point's composition and role?
+> A hardware device using infrastructure mode connecting wireless components to a wired network; serves as a switch or hub between wired LAN and wireless network with built-in transmitter, receiver and antenna. _(Mod 13 p21)_
+> Source: [[13-LO01e-Components-of-a-Wireless-Network]]
+>
+> [!question]- 1189 — How do wireless bridges and repeaters differ?
+> A bridge connects multiple LANs at the MAC layer, separating networks logically or physically and covering longer distances than APs; a repeater retransmits a router/AP signal to create a new network, working as AP and station simultaneously with an omnidirectional antenna. _(Mod 13 p23)_
+> Source: [[13-LO01e-Components-of-a-Wireless-Network]]
+>
+> [!question]- 1190 — What does a wireless gateway provide?
+> Combines wireless AP and router functions, with NAT translating public IP into private IP plus DHCP. _(Mod 13 p23)_
+> Source: [[13-LO01e-Components-of-a-Wireless-Network]]
+>
+> [!question]- 1191 — What are the PCMCIA and PCI wireless NIC types?
+> PCMCIA (personal computer memory card international association) inserts into laptop slots; PCI (peripheral component interconnect) goes in desktop internal slots; a wireless card has a built-in antenna instead of a wired card's port. _(Mod 13 pp21–22)_
+> Source: [[13-LO01e-Components-of-a-Wireless-Network]]
+>
+> [!question]- 1192 — How is antenna gain defined in the courseware?
+> Gain is the ratio of the power input to the antenna to the power output from the antenna, measured in dBi, generally 3.0 dBi. _(Mod 13 p25)_
+> Source: [[13-LO01f-Wireless-Antennas]]
+>
+> [!question]- 1193 — What are the directional, omnidirectional and Yagi antenna traits?
+> Directional broadcasts/receives from a single direction reducing interference; omnidirectional radiates in all directions, strong uniformly in two dimensions, good for non-stationary receivers such as radio stations; Yagi is unidirectional with reflector, dipole and directors in an endfire pattern for 10 MHz to VHF/UHF. _(Mod 13 p25)_ _(Mod 13 p26)_
+> Source: [[13-LO01f-Wireless-Antennas]]
+>
+> [!question]- 1194 — What are the parabolic grid antenna's build and trade-offs?
+> A semi-dish grid of aluminum wire on the satellite-dish principle without solid backing for very long-distance Wi-Fi via focused beam; wind resistant but expensive with feed system plus reflector making installation time consuming. _(Mod 13 pp25–26)_
+> Source: [[13-LO01f-Wireless-Antennas]]
+>
+> [!question]- 1195 — What is a dipole antenna?
+> A straight electrical conductor measuring half a wavelength end to end, also called a doublet, bilaterally symmetrical and inherently balanced; receives a variety of frequencies but outdoor versions are large and tuning needs multiple combinations. _(Mod 13 p26)_
+> Source: [[13-LO01f-Wireless-Antennas]]
+>
+> [!question]- 1196 — What is the WEP seed and how is it used?
+> A 24-bit IV is added to the WEP key; key plus IV is the WEP seed, input to RC4 generating a keystream that is bit-wise XORed with data plus ICV. _(Mod 13 p29)_
+> Source: [[13-LO02a-WEP-Encryption]]
+>
+> [!question]- 1197 — What are the four WEP versions and keys?
+> 64-bit WEP uses a 40-bit key (10 hex chars), 128-bit uses 104-bit (26 hex chars), 152-bit uses 128-bit, 256-bit uses 232-bit, each plus the 24-bit IV. _(Mod 13 p29)_
+> Source: [[13-LO02a-WEP-Encryption]]
+>
+> [!question]- 1198 — How does CRC-32 fail in WEP?
+> CRC-32 is insufficient: by capturing two packets an attacker can reliably flip a bit in the encrypted stream and modify the checksum so the packet is accepted. _(Mod 13 p30)_
+> Source: [[13-LO02a-WEP-Encryption]]
+>
+> [!question]- 1199 — What are the two printed WEP exhaustion quantities?
+> An AP broadcasting 1500-byte packets at 11 Mb/s exhausts the entire IV space in five hours; with about 24 GB of space an attacker can decrypt WEP packets in real time. _(Mod 13 p30)_
+> Source: [[13-LO02a-WEP-Encryption]]
+>
+> [!question]- 1200 — What does TKIP add over WEP in WPA?
+> TKIP for data encryption with per-packet mixing functions, message integrity checks, extended IVs and re-keying mechanisms; 128-bit per-packet keys with RC4, 64-bit MIC plus 32-bit ICV for the MPDU. _(Mod 13 p31)_
+> Source: [[13-LO02b-WPA-Encryption]]
+>
+> [!question]- 1201 — What are WPA-Personal and WPA-Enterprise?
+> WPA-Personal uses setup passwords and protects unauthorized access; WPA-Enterprise confirms the network user through a server. _(Mod 13 p32)_
+> Source: [[13-LO02b-WPA-Encryption]]
+>
+> [!question]- 1202 — How does WPA authentication differ with and without RADIUS?
+> WPA requires 802.1x authentication: PSK where there is no RADIUS infrastructure, and EAP plus RADIUS where there is one. _(Mod 13 p32)_
+> Source: [[13-LO02b-WPA-Encryption]]
+>
+> [!question]- 1203 — How does WPA key management handle unicast vs global keys?
+> TKIP keeps changing the key for every frame on unicast keys; for global keys the AP advertises/reports the changed key to connected clients. _(Mod 13 p31)_ _(Mod 13 p32)_
+> Source: [[13-LO02b-WPA-Encryption]]
+>
+> [!question]- 1204 — What encryption does WPA2 use and when did it replace WPA?
+> AES with mandatory CCMP (counter mode CBC-MAC protocol), an AES-based encryption mode, replacing WPA in 2006 under IEEE 802.11i. _(Mod 13 p33)_
+> Source: [[13-LO02c-WPA2-Encryption]]
+>
+> [!question]- 1205 — What are WPA2-Personal and WPA2-Enterprise for?
+> WPA2-Personal is mostly for home networks without authentication servers using a PSK/setup password; WPA2-Enterprise is for organizations with authentication servers using EAP or RADIUS with token cards, Kerberos and certificates. _(Mod 13 p33)_
+> Source: [[13-LO02c-WPA2-Encryption]]
+>
+> [!question]- 1206 — What is the WPA2-Personal passphrase figure?
+> Each device encrypts traffic with a 128-bit key derived from a passphrase of 8 to 63 ASCII characters. _(Mod 13 p33)_
+> Source: [[13-LO02c-WPA2-Encryption]]
+>
+> [!question]- 1207 — How does CCMP prevent replay attacks?
+> A sequenced packet number (PN) plus part of the MAC header generates the nonce, and a PN is included in the CCMP header to protect against replay attacks. _(Mod 13 pp33–34)_
+> Source: [[13-LO02c-WPA2-Encryption]]
+>
+> [!question]- 1208 — What key establishment does WPA3-Personal use?
+> SAE, simultaneous authentication of equals, also known as dragonfly key exchange, replacing the PSK concept of WPA2-Personal; resistant to offline dictionary and key recovery attacks. _(Mod 13 pp35–36)_
+> Source: [[13-LO02d-WPA3-Encryption]]
+>
+> [!question]- 1209 — What four protocols does WPA3-Enterprise use?
+> Authenticated encryption via 256-bit GCMP-256; key derivation via 384-bit HMAC-SHA-384; key establishment via ECDH exchange and ECDSA on a 384-bit elliptic curve; frame protection via 256-bit BIP-GMAC-256. _(Mod 13 p36)_
+> Source: [[13-LO02d-WPA3-Encryption]]
+>
+> [!question]- 1210 — What WPA3-Personal conveniences does the module name?
+> Natural password choice allowing weak or popular phrases, easy accessibility without changing previous connection methods, and forward secrecy so session keys survive password compromise. _(Mod 13 pp35–36)_
+> Source: [[13-LO02d-WPA3-Encryption]]
+>
+> [!question]- 1211 — What network resilience does WPA3 provide?
+> Protected management frames (PMF) giving high-level protection against eavesdropping and forging attacks, while disallowing outdated legacy protocols. _(Mod 13 p35)_
+> Source: [[13-LO02d-WPA3-Encryption]]
+>
+> [!question]- 1212 — What are the four encryption algorithms in Table 13.2?
+> WEP RC4, WPA RC4 plus TKIP, WPA2 AES-CCMP, WPA3 AES-GCMP 256. _(Mod 13 p37)_
+> Source: [[13-LO02e-WEP-vs-WPA-vs-WPA2-vs-WPA3]]
+>
+> [!question]- 1213 — What are the four IV sizes and key lengths in Table 13.2?
+> IV sizes 24-bits, 48-bits, 48-bits and arbitrary length (WPA3 cell garbled); key lengths 40/104-bits, 128-bits, 128-bits and 192-bits. _(Mod 13 p37)_
+> Source: [[13-LO02e-WEP-vs-WPA-vs-WPA2-vs-WPA3]]
+>
+> [!question]- 1214 — What are the four key-management and integrity values in Table 13.2?
+> Key management None, 4-way handshake, 4-way handshake, ECDH and ECDSA; integrity CRC-32, Michael plus CRC-32, CBC-MAC, BIP-GMAC-256. _(Mod 13 p37)_
+> Source: [[13-LO02e-WEP-vs-WPA-vs-WPA2-vs-WPA3]]
+>
+> [!question]- 1215 — Which schemes protect against forgery and replay per the p37 prose?
+> WPA and WPA2 incorporate protection against forgery and replay attacks, while WPA3 adds enhanced password protection, secured IoT connections and stronger encryption; WEP should be replaced with WPA or WPA2. _(Mod 13 p37)_
+> Source: [[13-LO02e-WEP-vs-WPA-vs-WPA2-vs-WPA3]]
+>
+> [!question]- 1216 — Why are WEP IVs weak?
+> The IV is a 24-bit field sent in cleartext; an AP broadcasting 1500-byte packets at 11 Mb/s exhausts the space in five hours, and a busy AP reuses all 224 printed IV values within hours. _(Mod 13 p38)_ _(Mod 13 p39)_
+> Source: [[13-LO02f-Issues-in-WEP-WPA-and-WPA2]]
+>
+> [!question]- 1217 — What are the two WPA-only issues?
+> Predictable group temporal key via an insecure RNG allowing injected traffic and full decryption; TKIP vulnerabilities letting attackers guess the subnet IP and inject small packets to downgrade performance. _(Mod 13 p40)_
+> Source: [[13-LO02f-Issues-in-WEP-WPA-and-WPA2]]
+>
+> [!question]- 1218 — What are the two WPA2-only attack mechanisms?
+> Wireless DoS by exploiting WPA2 replay-attack detection with forged group-addressed frames carrying a large PN; WPS PIN recovery disclosing the WPA2 key when WPA2 and WPS are enabled. _(Mod 13 p41)_
+> Source: [[13-LO02f-Issues-in-WEP-WPA-and-WPA2]]
+>
+> [!question]- 1219 — What tools crack weak-IV WEP and how?
+> WLAN sniffing tools capture packets encrypted with the same key, then Aircrack-ng and WEPCrack decrypt the weak IVs to expose the base WEP key; the FMS attack cracks the key by examining the link. _(Mod 13 p39)_
+> Source: [[13-LO02f-Issues-in-WEP-WPA-and-WPA2]]
+>
+> [!question]- 1220 — What is Device Provisioning Protocol (DPP)?
+> Wi-Fi Easy Connect (DPP) simplifies and enhances Wi-Fi provisioning security while minimizing risks, bringing consistency, flexibility and simplicity to network management. _(Mod 13 p42)_
+> Source: [[13-LO02g-Wi-Fi-Easy-Connect-DPP]]
+>
+> [!question]- 1221 — How does DPP use QR codes and passwords?
+> QR codes transfer SSID, credentials and cryptographic keys to prevent eavesdropping versus manual entry; passwordless configuration without PSKs reduces password-related attacks. _(Mod 13 pp42–43)_
+> Source: [[13-LO02g-Wi-Fi-Easy-Connect-DPP]]
+>
+> [!question]- 1222 — What are the DPP configurator and enrolee roles?
+> A UI-rich device such as a smartphone able to scan a QR code, NFC tag or download from cloud becomes the configurator; others are enrolees, provisioned after scanning the NFC/QR tag or cloud data. _(Mod 13 p43)_
+> Source: [[13-LO02g-Wi-Fi-Easy-Connect-DPP]]
+>
+> [!question]- 1223 — Which DPP features cover keys and segmentation?
+> Forward secrecy via unique keys per provisioning session; tamper-resistant HSM storage for keys; network segment creation isolating IoT devices from sensitive segments. _(Mod 13 pp42–43)_
+> Source: [[13-LO02g-Wi-Fi-Easy-Connect-DPP]]
+>
+> [!question]- 1224 — What is open system authentication?
+> A null authentication algorithm that does not verify user or machine, using cleartext transmission so any device knowing the SSID can associate without a RADIUS server. _(Mod 13 p45)_
+> Source: [[13-LO03a-Open-System-Authentication]]
+>
+> [!question]- 1225 — Why can an authenticated open-system client still not transmit?
+> The enabled WEP key on the AP acts as access control: a user with the wrong WEP key cannot transmit even if authentication succeeded; transmission needs a matching WEP key. _(Mod 13 p45)_
+> Source: [[13-LO03a-Open-System-Authentication]]
+>
+> [!question]- 1226 — What are the open-system authentication steps?
+> Client sends a request/authentication management frame with its identity; the AP returns an authentication frame confirming access; probe request/response and association steps surround the exchange. _(Mod 13 p45)_
+> Source: [[13-LO03a-Open-System-Authentication]]
+>
+> [!question]- 1227 — What are open system authentication's advantage and disadvantage?
+> Advantage: usable with devices not supporting complex authentication; disadvantage: no way to check genuine client versus attacker, so anyone knowing the SSID easily accesses the network. _(Mod 13 p45)_
+> Source: [[13-LO03a-Open-System-Authentication]]
+>
+> [!question]- 1228 — How is the shared key distributed?
+> Each station receives a shared secret key over a secure channel distinct from the 802.11 channels, configured manually on both AP and client. _(Mod 13 p46)_
+> Source: [[13-LO03b-Shared-Key-Authentication]]
+>
+> [!question]- 1229 — What is the shared-key challenge-response flow?
+> Station sends an authentication frame, AP sends challenge text, station encrypts it with its 64-bit or 128-bit key, AP decrypts and compares; match authenticates, mismatch rejects leaving the station unable to reach ethernet or 802.11. _(Mod 13 p46)_
+> Source: [[13-LO03b-Shared-Key-Authentication]]
+>
+> [!question]- 1230 — Why is shared-key authentication unsuitable for large networks?
+> It needs long key strings configured on each device, a highly cumbersome task. _(Mod 13 p46)_
+> Source: [[13-LO03b-Shared-Key-Authentication]]
+>
+> [!question]- 1231 — How do open system and shared key differ on verification?
+> Open system is a null algorithm verifying nobody; shared key has the AP authenticate the station on a successful challenge decrypt. _(Mod 13 pp45–46)_
+> Source: [[13-LO03b-Shared-Key-Authentication]]
+>
+> [!question]- 1232 — What does 802.1x centralized authentication provide?
+> The 802.1x standard provides centralized authentication where a RADIUS server sends authentication keys to both the AP and clients, letting the AP identify a specific client's traffic. _(Mod 13 p47)_
+> Source: [[13-LO03c-Centralized-Authentication-Server]]
+>
+> [!question]- 1233 — What is the uncontrolled port's role?
+> The AP forwards the client identity to the RADIUS server using the uncontrolled port. _(Mod 13 p47)_
+> Source: [[13-LO03c-Centralized-Authentication-Server]]
+>
+> [!question]- 1234 — What two facts are missing from LO03 on EAP and ports?
+> EAP is never expanded or defined anywhere in LO03 and no EAP method is named; the uncontrolled port is named but no port number is given anywhere on pp44–47. _(Mod 13 p47)_
+> Source: [[13-LO03c-Centralized-Authentication-Server]]
+>
+> [!question]- 1235 — How do the three LO03 methods compare on secrets?
+> Open system uses none; shared key uses the same WEP key on AP and client via a separate secure channel; centralized uses RADIUS-issued keys to both AP and clients. _(Mod 13 pp45–47)_
+> Source: [[13-LO03c-Centralized-Authentication-Server]]
+>
+> [!question]- 1236 — What must a wireless security policy state?
+> Identity of users, allowed access or not, who can install APs and devices, allowed information types, AP limitations (location, cell size, frequency), standard security settings, and conditions for device use. _(Mod 13 p49)_
+> Source: [[13-LO04a-Security-Measures-and-Wireless-Inventory]]
+>
+> [!question]- 1237 — What four items define an effective implementation?
+> Centralized implementation for all wireless technology; security awareness training for all employees; standardized configurations reflecting policy; configuration management keeping latest patches and features on devices. _(Mod 13 pp49–50)_
+> Source: [[13-LO04a-Security-Measures-and-Wireless-Inventory]]
+>
+> [!question]- 1238 — How does inventory help find rogue devices?
+> Document clients by make/models/applications, encryption, firmware and channel with tools like Acrylic Wi-Fi HeatMaps; keep even unconnected devices listed, since comparing detected APs against the inventory exposes rogue or non-functioning devices. _(Mod 13 p51)_
+> Source: [[13-LO04a-Security-Measures-and-Wireless-Inventory]]
+>
+> [!question]- 1239 — Which two LO04 measures appear only on p49?
+> Implement WEP 128 enhanced encryption (104-bit plus 24-bit key) and update to the latest available firmware; p50 reprints only 13 of the 15 activities. _(Mod 13 p49)_
+> Source: [[13-LO04a-Security-Measures-and-Wireless-Inventory]]
+>
+> [!question]- 1240 — What are the AP ceiling and desk traps?
+> Ceiling is ideal but infeasible with very high ceilings; an upward-facing AP gives poor coverage so place it upside down; desk placement suffers phone/Bluetooth/furniture interference and is easy to tamper with or remove. _(Mod 13 p52)_
+> Source: [[13-LO04b-AP-and-Antenna-Placement]]
+>
+> [!question]- 1241 — What metal rules govern AP placement?
+> APs near metal lose range; metal interference acts as a mirror, so avoid closets and metal cases, cages, wall mounting that restricts 360° coverage, corridors and suspended ceilings. _(Mod 13 p52)_ _(Mod 13 p53)_
+> Source: [[13-LO04b-AP-and-Antenna-Placement]]
+>
+> [!question]- 1242 — How should external AP antennas be oriented?
+> They must not point the same direction; always tilt them in opposite directions, since upward-facing antennas are not optimal. _(Mod 13 p53)_
+> Source: [[13-LO04b-AP-and-Antenna-Placement]]
+>
+> [!question]- 1243 — Which tools help antenna placement?
+> HeatMapper builds an interior map guiding best placement; a WiFi Analyzer picks band and channel, with reliable frequency starting at 2.4 GHz chosen to travel through walls. _(Mod 13 p54)_
+> Source: [[13-LO04b-AP-and-Antenna-Placement]]
+>
+> [!question]- 1244 — Should defenders disable SSID broadcasting?
+> Yes, always: a broadcast SSID lets anyone find and access the network, while a hidden SSID forces the user to know the exact SSID. _(Mod 13 p55)_
+> Source: [[13-LO04c-Disable-SSID-Broadcasting]]
+>
+> [!question]- 1245 — What does a scan show with SSID broadcast disabled?
+> The router broadcasts presence but not name, showing `unnamed network` in range; the user connects only after naming it with correct credentials. _(Mod 13 p55)_
+> Source: [[13-LO04c-Disable-SSID-Broadcasting]]
+>
+> [!question]- 1246 — What does disabling SSID broadcast actually achieve?
+> It only removes the name: it discourages unauthorized association requests and permits legitimate users with the correct SSID, but is not stated as a standalone control blocking authentication. _(Mod 13 p55)_
+> Source: [[13-LO04c-Disable-SSID-Broadcasting]]
+>
+> [!question]- 1247 — What is the enabled-state SSID risk?
+> The router broadcasts presence and name so the name is visible and everyone may attempt to authenticate and connect, even if password-locked. _(Mod 13 p55)_
+> Source: [[13-LO04c-Disable-SSID-Broadcasting]]
+>
+> [!question]- 1248 — What is the encryption-mode order of preference?
+> WPA3, WPA2 Enterprise with RADIUS, WPA2 Enterprise, WPA2 PSK, WPA Enterprise, WPA, WEP. _(Mod 13 p56)_
+> Source: [[13-LO04d-Strong-Wireless-Encryption-Mode]]
+>
+> [!question]- 1249 — What is the Wi-Fi security-method order of preference?
+> WPA3, WPA2 plus AES, WPA plus AES, WPA plus TKIP/AES, WPA plus TKIP, WEP, Open Network with no security at all. _(Mod 13 p56)_
+> Source: [[13-LO04d-Strong-Wireless-Encryption-Mode]]
+>
+> [!question]- 1250 — Where does WEP rank and why is that a trap?
+> WEP is 7th of 7 in the encryption-mode list but 6th of 7 in the security-method list where Open Network is 7th; p49 separately lists WEP 128 as a hardening activity. _(Mod 13 p56)_ _(Mod 13 p49)_
+> Source: [[13-LO04d-Strong-Wireless-Encryption-Mode]]
+>
+> [!question]- 1251 — Which list ranks Enterprise above PSK and which ranks ciphers?
+> The encryption-mode list ranks Enterprise modes above PSK; the security-method list ignores PSK versus Enterprise and ranks ciphers with AES above TKIP. _(Mod 13 p56)_
+> Source: [[13-LO04d-Strong-Wireless-Encryption-Mode]]
+>
+> [!question]- 1252 — How does MAC filtering work?
+> The AP or router stores a MAC list; on connection it compares the client's MAC and allows access only if found in the stored list, blocking all unauthorized devices. _(Mod 13 p57)_
+> Source: [[13-LO04e-MAC-Address-Filtering]]
+>
+> [!question]- 1253 — What are closed vs open MAC filters as printed?
+> In a closed MAC filter only listed addresses are permitted (more secure); in an open MAC filter the listed addresses are prevented (not always practical in a large network). _(Mod 13 p57)_
+> Source: [[13-LO04e-MAC-Address-Filtering]]
+>
+> [!question]- 1254 — How is MAC filtering bypassed?
+> An attacker can bypass it with a MAC spoofing attack; the section gives no technique, tool or countermeasure. _(Mod 13 p57)_
+> Source: [[13-LO04e-MAC-Address-Filtering]]
+>
+> [!question]- 1255 — How does the module rank MAC filtering versus open/shared authentication?
+> Client authentication by MAC is more secure compared to an open and shared authentication method, and minimizes unauthorized users. _(Mod 13 p57)_
+> Source: [[13-LO04e-MAC-Address-Filtering]]
+>
+> [!question]- 1256 — How is wireless traffic monitored with Wireshark?
+> Select the wireless interface and start sniffing, look for 802.11-standard traffic, and apply filters for traffic of interest; continuous analysis scans for abnormalities or attack signs. _(Mod 13 p58)_
+> Source: [[13-LO04f-Wireless-Monitoring-and-WPA-Cracking]]
+>
+> [!question]- 1257 — What is the only way to crack WPA per the module?
+> Sniff the password pairwise master key (PMK) associated with the `handshake` authentication process; if the password is extremely complicated it may be almost impossible to crack. _(Mod 13 p59)_
+> Source: [[13-LO04f-Wireless-Monitoring-and-WPA-Cracking]]
+>
+> [!question]- 1258 — What are the WPA passphrase length figures?
+> The body rules demand at least 12 characters while the Passphrase Complexity callout on the same page demands a minimum of 20 characters with regular changes; both printed unreconciled. _(Mod 13 p59)_
+> Source: [[13-LO04f-Wireless-Monitoring-and-WPA-Cracking]]
+>
+> [!question]- 1259 — What must a WPA password avoid?
+> Dictionary words, words with appended numbers, double words, simple substitutions like `p@55wOrd`, keyboard sequences like `qwerty`, common numerical sequences and personal information. _(Mod 13 p59)_
+> Source: [[13-LO04f-Wireless-Monitoring-and-WPA-Cracking]]
+>
+> [!question]- 1260 — What is a rogue AP?
+> A wireless AP installed on a trusted network without authorization, by an inside or outside attacker, pluggable into a firewall, switch or server via a wireless card and lethal to security. _(Mod 13 p60)_ _(Mod 13 p63)_
+> Source: [[13-LO04g-Rogue-Access-Point-Detection]]
+>
+> [!question]- 1261 — What is the core rogue-AP detection rule?
+> Compare detected APs against the wireless device inventory; an AP not listed in the inventory is generally a rogue AP. _(Mod 13 p61)_
+> Source: [[13-LO04g-Rogue-Access-Point-Detection]]
+>
+> [!question]- 1262 — How is Nmap used to find rogue APs on wired networks?
+> Scan the entire address space with the `-A` option via TCP fingerprinting, then search results for `WAP` characteristics to locate rogue devices attached to wired nets. _(Mod 13 p63)_
+> Source: [[13-LO04g-Rogue-Access-Point-Detection]]
+>
+> [!question]- 1263 — How is SNMP polling used for rogue APs?
+> SNMP identifies IP devices on the wired network with SolarWinds SNMP scanner and Lansweeper SNMP scanner, requiring the SNMP service enabled on all IP devices. _(Mod 13 p60)_ _(Mod 13 p63)_
+> Source: [[13-LO04g-Rogue-Access-Point-Detection]]
+>
+> [!question]- 1264 — Why are wireless networks susceptible to DoS?
+> They share a transmission medium; physical-layer DoS is carried out by signal jamming or intentional interference. _(Mod 13 p66)_
+> Source: [[13-LO04h-RF-Interference-Protection]]
+>
+> [!question]- 1265 — Which three DoS forms must excessive RF monitoring avoid?
+> RF jamming, signal bombing and war spamming; RF spectrum analyzing tools give notification of excessive RF interference. _(Mod 13 p66)_
+> Source: [[13-LO04h-RF-Interference-Protection]]
+>
+> [!question]- 1266 — What do the three RF spectrum analyzers do?
+> AirMagnet Spectrum identifies RF interference hurting performance; Wi-Fi Surveyor displays/monitors/troubleshoots the RF environment and detects sources; Ekahau Spectrum Analyzer determines the devices causing interference. _(Mod 13 pp66–67)_
+> Source: [[13-LO04h-RF-Interference-Protection]]
+>
+> [!question]- 1267 — What is the physical-layer DoS method?
+> Signal jamming or intentional interference at the physical layer, detected with RF spectrum analyzing tools. _(Mod 13 p66)_
+> Source: [[13-LO04h-RF-Interference-Protection]]
+>
+> [!question]- 1268 — What is a wireless security assessment for?
+> Detecting, locating and mitigating risks from the current configuration; performed regularly for security, performance and speed before attackers exploit flaws. _(Mod 13 p68)_
+> Source: [[13-LO04i-Wireless-Security-Assessment-Tools]]
+>
+> [!question]- 1269 — What does Aircrack-ng cover?
+> A complete suite for monitoring (packet capture and export), attacking (replays, de-authentication, fake APs via injection), testing (card/driver capture and injection) and cracking WEP and WPA PSK versions 1 and 2. _(Mod 13 p69)_
+> Source: [[13-LO04i-Wireless-Security-Assessment-Tools]]
+>
+> [!question]- 1270 — Which tools break WEP and how?
+> WepAttack tests millions of words in an active dictionary attack on 802.11 WEP keys; WEPCrack exploits the RC4 key-scheduling weakness; WepDecrypt guesses via dictionary, key generator and distributed attack. _(Mod 13 pp68–70)_
+> Source: [[13-LO04i-Wireless-Security-Assessment-Tools]]
+>
+> [!question]- 1271 — When is a Wi-Fi client a fishing target?
+> A client actively seeking an OPEN or a WEP network is a fishing target; WiFish Finder builds probed-network lists via passive sniffing plus active probing since clients remember past SSIDs. _(Mod 13 p71)_
+> Source: [[13-LO04i-Wireless-Security-Assessment-Tools]]
+>
+> [!question]- 1272 — What abnormalities does WIDS/WIPS find?
+> Unauthorized network activity, policy violations, known wireless attack patterns, rogue APs and unencrypted traffic. _(Mod 13 p72)_
+> Source: [[13-LO04j-WIDS-WIPS]]
+>
+> [!question]- 1273 — What are the two named WIDS/WIPS products?
+> Cisco Adaptive Wireless IPS for threat detection, analysis, proactive prevention and RF awareness, claimed impenetrable by most wireless attacks; Extreme AirDefense to manage, monitor and protect WLANs. _(Mod 13 p72)_
+> Source: [[13-LO04j-WIDS-WIPS]]
+>
+> [!question]- 1274 — What trap covers WIDS versus WIPS?
+> The source gives one shared description for both and never states what a WIPS does that a WIDS does not. _(Mod 13 p72)_
+> Source: [[13-LO04j-WIDS-WIPS]]
+>
+> [!question]- 1275 — What four WIDS/WIPS name forms appear?
+> Wireless intrusion prevention systems (p72 heading), protection systems (p72 body), WIDS as wireless access points (pp60/63), and wireless intruder detection-prevention system (WIDPS) on p75. _(Mod 13 p72)_
+> Source: [[13-LO04j-WIDS-WIPS]]
+>
+> [!question]- 1276 — What are the p73 router slide's five settings?
+> Change the default password, assign a strong complex password, choose HTTPS for secure communication, disable remote router access, enable logging. _(Mod 13 p73)_
+> Source: [[13-LO04k-Router-Administrative-Security]]
+>
+> [!question]- 1277 — Which p74 router items cover exposure and filtering?
+> Exposure: disable remote router access and disable the DMZ option; filtering: enable the firewall blocking certain WAN requests, configure an internet access policy, specify blocked services, URL and keywords. _(Mod 13 p74)_
+> Source: [[13-LO04k-Router-Administrative-Security]]
+>
+> [!question]- 1278 — Which p74 router items cover addressing and patching?
+> Avoid default IP ranges, keep router firmware up-to-date, and configure QoS settings with no stated security purpose. _(Mod 13 p74)_
+> Source: [[13-LO04k-Router-Administrative-Security]]
+>
+> [!question]- 1279 — What is the logging list mismatch?
+> Enable logging appears on the p73 slide but is absent from the eleven p74 recommendations; the source never reconciles the five-versus-eleven lists. _(Mod 13 p73)_ _(Mod 13 p74)_
+> Source: [[13-LO04k-Router-Administrative-Security]]
+>
+> [!question]- 1280 — Which extra guidelines cover passphrases and SSIDs?
+> Never use SSID, company, network name or guessable strings in passphrases; change the default SSID; change the SSID value so only the user understands it; regularly change passphrases. _(Mod 13 p75)_
+> Source: [[13-LO04l-Additional-Guidelines-and-Module-Summary]]
+>
+> [!question]- 1281 — Which extra guidelines cover segmentation and monitoring?
+> Place a firewall or packet filter between AP and corporate intranet; monitor with WIDPS sensors and WLAN scanners; gather source/destination IPs, ports, MAC, logins, durations and timestamps plus connection logs. _(Mod 13 p75)_
+> Source: [[13-LO04l-Additional-Guidelines-and-Module-Summary]]
+>
+> [!question]- 1282 — What does the p77 summary claim about APs and WPA?
+> An AP is a hardware device connecting clients via Bluetooth, Wi-Fi and similar, contradicting the same page's 802.11-only claim; WPA is named as the sole data encryption method, omitting WPA2/WPA3/WEP. _(Mod 13 p77)_
+> Source: [[13-LO04l-Additional-Guidelines-and-Module-Summary]]
+>
+> [!question]- 1283 — Which placement and hygiene guidelines close the module?
+> Keep APs mid-building against wardriving in a secured location; detect laptops illegitimately used as `APs`; log out of the router web interface; password-protect everything including the AP. _(Mod 13 p75)_ _(Mod 13 p76)_
+> Source: [[13-LO04l-Additional-Guidelines-and-Module-Summary]]
+
+### Module 14 (135 items)
+> [!question]- 1284 — Is network monitoring proactive or retrospective, and what does it watch?
+> **Retrospective** security approach monitoring for abnormal activities, performance issues and bandwidth issues; an integral yet demanding part of network security operations. _(Mod 14 p5)_
+> Source: [[14-LO01a-Network-Traffic-Monitoring-and-Its-Need]]
+>
+> [!question]- 1285 — What is the printed definition of network traffic monitoring?
+> The process of **capturing network traffic** and **inspecting it closely** to determine what is happening on the network; goal is to be **proactive rather than reactive** so no breach occurs. _(Mod 14 p5)_
+> Source: [[14-LO01a-Network-Traffic-Monitoring-and-Its-Need]]
+>
+> [!question]- 1286 — What is the printed monitoring chain?
+> `sniff traffic` → `capture packets` → `signature analysis` → identify malicious activity, using traffic analysis tools to find malicious/suspicious packets hiding in traffic. _(Mod 14 p5)_
+> Source: [[14-LO01a-Network-Traffic-Monitoring-and-Its-Need]]
+>
+> [!question]- 1287 — Why are existing security tools alone not enough?
+> Attackers **bypass** mechanisms even when tools are in place; **signature-based** tools cannot track **continuously changing** signatures; tools are **not designed** to spot behavioural anomalies or activity **initiated before and during** an attack. _(Mod 14 p6)_
+> Source: [[14-LO01a-Network-Traffic-Monitoring-and-Its-Need]]
+>
+> [!question]- 1288 — What four attributes do operators watch, and what is monitoring's security rank?
+> **Download/upload speeds · throughput · content · traffic behaviours**; monitoring tools provide the **first level of security**, identifying anomalous conditions indicating attacker activity, preventing outages and minimizing downtime. _(Mod 14 pp5–6)_
+> Source: [[14-LO01a-Network-Traffic-Monitoring-and-Its-Need]]
+>
+> [!question]- 1289 — What are the four advantages of network monitoring?
+> **Proactive · Utilization · Optimization · Minimizing risk** (mnemonic **P-U-O-M**); the last carries onto p8 and owns SLAs/compliance. _(Mod 14 pp7–8)_
+> Source: [[14-LO01b-Advantages-of-Network-Monitoring]]
+>
+> [!question]- 1290 — Which advantage owns SLAs and compliance?
+> **Minimizing risk** — establishing **service-level agreements (SLAs)** and compliance; complete infrastructure information is required when drafting SLAs, via real-time monitoring of topologies and channels. _(Mod 14 p8)_
+> Source: [[14-LO01b-Advantages-of-Network-Monitoring]]
+>
+> [!question]- 1291 — What does the Proactive advantage deliver?
+> Proactively detects applications consuming **maximum bandwidth** and reduces the bandwidth; manages **server bottleneck** situations; delivers efficient **quality of service**; creates a **record of all irregularities** for later handling. _(Mod 14 p7)_
+> Source: [[14-LO01b-Advantages-of-Network-Monitoring]]
+>
+> [!question]- 1292 — What do traffic statistics from analysis yield?
+> Understanding/evaluating **network utilization**; determining **download/upload speeds**; determining packet **type, size, origin, destination, and content/data** — typically via network or bandwidth monitoring utilities. _(Mod 14 p7)_
+> Source: [[14-LO01b-Advantages-of-Network-Monitoring]]
+>
+> [!question]- 1293 — What six things does monitoring traffic help with per the p7 callout?
+> Understanding **how data flows**; **optimizing performance**; **avoiding bandwidth bottlenecks**; **detecting malicious signs**; finding **unnecessary/vulnerable applications**; **investigating breaches** — a different list from the statistics list, neither a subset. _(Mod 14 p7)_
+> Source: [[14-LO01b-Advantages-of-Network-Monitoring]]
+>
+> [!question]- 1294 — What is a network sniffer as printed?
+> Callout: **software** analysing/tracking **inbound and outbound packets**, intercepting packets and **recording the path**; body: **tool** that can **intercept and log traffic** passing through a network. _(Mod 14 p10)_
+> Source: [[14-LO02a-Network-Sniffers-for-Network-Monitoring]]
+>
+> [!question]- 1295 — Which sniffer is GUI, CLI, and Windows-CLI respectively?
+> **Wireshark** = open-source cross-platform with **GUI** protocol-stack breakdown, save/export and statistics; **tcpdump** = **command-line** analyzer; **WinDump** = the **Windows version of tcpdump**, watching/diagnosing/saving per complex rules. _(Mod 14 pp10–11)_
+> Source: [[14-LO02a-Network-Sniffers-for-Network-Monitoring]]
+>
+> [!question]- 1296 — Which sniffer is passive and which uses flow technologies?
+> **NetworkMiner** = **passive** sniffer doing advanced NTA with extracted artifacts in an intuitive UI (`https://www.netresec.com`); **ManageEngine NetFlow Analyzer** = complete analytics leveraging **flow technologies** for real-time traffic-pattern visibility. _(Mod 14 p11)_
+> Source: [[14-LO02a-Network-Sniffers-for-Network-Monitoring]]
+>
+> [!question]- 1297 — What distinguishes the SolarWinds Deep Packet Inspection tool?
+> Tracks **network and application traffic on a packet level**; uses **response-time metrics** for client–server travel time to **manage flows** and **distinguish network vs application problems** (`https://www.solarwinds.com`). _(Mod 14 p11)_
+> Source: [[14-LO02a-Network-Sniffers-for-Network-Monitoring]]
+>
+> [!question]- 1298 — Why were packet sniffers developed?
+> Information flowing through a network is a **valuable source of evidence** against intrusions/anomalous connections; used to **detect intrusions · supervise contents · troubleshoot · control traffic** and analyze misbehaving apps/devices. _(Mod 14 p10)_
+> Source: [[14-LO02a-Network-Sniffers-for-Network-Monitoring]]
+>
+> [!question]- 1299 — What NIC setting enables sniffing, and what is packet capture?
+> NIC must be set to **promiscuous mode** to listen to **all data** transmitted in the network (wired or wireless); the sniffer then **intercepts packets and copies them to a file = packet capture**. _(Mod 14 p12)_
+> Source: [[14-LO02b-How-Network-Sniffers-Work-and-Placement]]
+>
+> [!question]- 1300 — What two addresses does a LAN host have, and which layer uses which?
+> **MAC and IP**; Ethernet uses **MAC** to build **data frames** (data-link layer header carries destination MAC **instead of IP**); network layer **maps IP to MAC** as the data-link protocol requires. _(Mod 14 p12)_
+> Source: [[14-LO02b-How-Network-Sniffers-Work-and-Placement]]
+>
+> [!question]- 1301 — What is the ARP cache and its miss procedure?
+> Local sub-network **IP → MAC** table; on miss the source sends an **ARP broadcast request to ALL machines** on the local sub-network, the holder replies with its MAC, and the source **adds it to the cache** for later use. _(Mod 14 p12)_
+> Source: [[14-LO02b-How-Network-Sniffers-Work-and-Placement]]
+>
+> [!question]- 1302 — Where must the capture machine be placed?
+> Where it can view **all traffic** — all **inbound and outbound** traffic; must **connect to a switch in front of a firewall**, be installed with sniffing/monitoring tools, with **each packet inspected against policy violations**. _(Mod 14 p13)_
+> Source: [[14-LO02b-How-Network-Sniffers-Work-and-Placement]]
+>
+> [!question]- 1303 — What two traffic flows does Figure 14.1 distinguish?
+> **Normal Traffic** (legitimate path) vs **Malicious Traffic** (hostile path from Attacker via Internet) — one vantage point must see both; nodes include Switch, Firewall, Wireshark, Network Defender. _(Mod 14 p13)_
+> Source: [[14-LO02b-How-Network-Sniffers-Work-and-Placement]]
+>
+> [!question]- 1304 — What are port monitoring and port mirroring?
+> Same feature: managed switch allows a **specific port in monitor mode**; **all packets passing through the switch are replicated** to it; port mirroring = **copying switch traffic and sending it to another port** so the monitoring tool can analyze it. _(Mod 14 p14)_
+> Source: [[14-LO02c-Connecting-the-Capture-Device-to-a-Managed-Switch]]
+>
+> [!question]- 1305 — What do Cisco and 3Com call port mirroring?
+> **Cisco: Switched Port Analyzer (SPAN)** · **3Com: Roving Analysis Port (RAP)** — different vendor names for the same port-monitoring/mirroring feature. _(Mod 14 p14)_
+> Source: [[14-LO02c-Connecting-the-Capture-Device-to-a-Managed-Switch]]
+>
+> [!question]- 1306 — How is the monitor port selected?
+> Via the **switch management interface** — used to **both select the port and assign a specific port to monitor**; this is what makes the switch **managed**. _(Mod 14 p14)_
+> Source: [[14-LO02c-Connecting-the-Capture-Device-to-a-Managed-Switch]]
+>
+> [!question]- 1307 — What does a managed switch add, and at what cost?
+> Can **configure, manage, and monitor a LAN** with **greater control over data flow**, decreasing intrusion chances; though it **may cost more** than unmanaged, it assures **better security and filtered transmissions**. _(Mod 14 p14)_
+> Source: [[14-LO02c-Connecting-the-Capture-Device-to-a-Managed-Switch]]
+>
+> [!question]- 1308 — What is the ordered chain feeding the sniffer?
+> **Monitor-mode port → replication of switch traffic → another port → monitoring tool analyzes**; a managed switch is created by **enabling port monitoring/mirroring on a specific port**. _(Mod 14 p14)_
+> Source: [[14-LO02c-Connecting-the-Capture-Device-to-a-Managed-Switch]]
+>
+> [!question]- 1309 — What is a traffic signature?
+> A set of traffic characteristics such as **source/destination IP, ports, TCP flags, packet length, TTL, and protocols**; also a set of characters/rules defining activity and **detecting malicious traffic** entering a network. _(Mod 14 p16)_
+> Source: [[14-LO03a-Network-Traffic-Signatures-and-Baselining]]
+>
+> [!question]- 1310 — What are the two signature types and their dispositions?
+> **Normal** = baseline-defined, **no malicious patterns**, **acceptable/allowed**; **Attack** = **deviates from normal**, suspicious, **not allowed** — if allowed often causes a breach. _(Mod 14 p16)_
+> Source: [[14-LO03a-Network-Traffic-Signatures-and-Baselining]]
+>
+> [!question]- 1311 — What is a network baseline?
+> The **accepted behaviour for normal traffic**, a **benchmark differentiating normal from suspicious**; differs per organization, changes over time; **any deviation** counts as a **suspicious signature**; most effective **in parallel with policy**. _(Mod 14 p17)_
+> Source: [[14-LO03a-Network-Traffic-Signatures-and-Baselining]]
+>
+> [!question]- 1312 — What five things are signatures used for?
+> **Raise alerts** on unusual traffic; **identify suspicious header characteristics**; **configure IDS** to find attacks/probes; **acquire knowledge** on an attack/vulnerability; **match patterns** in packet analysis. _(Mod 14 p16)_
+> Source: [[14-LO03a-Network-Traffic-Signatures-and-Baselining]]
+>
+> [!question]- 1313 — What are the normal TCP handshake/flag rules?
+> Three-way handshake uses **SYN, SYN ACK, ACK** per session; **ACK set in every packet except the initial** where **SYN** is set; **SYN at beginning, FIN at end**; after handshake packets carry **only ACK** by default, occasionally **PSH or URG**. _(Mod 14 pp17–18)_
+> Source: [[14-LO03a-Network-Traffic-Signatures-and-Baselining]]
+>
+> [!question]- 1314 — What are the eight illegal-packet characteristics?
+> **SYN+FIN** (variants `SYN FIN PSH`, `SYN FIN RST`, `SIN FIN PSH RST` as printed — extra bits evade detection) · **only FIN** · **NULL (all six unset)** · **port zero** · **ACK with zero ack number** · **only SYN with data** · **broadcast destination ending 0/255** · **reserved-for-future-use bit(s) set**. _(Mod 14 p18)_
+> Source: [[14-LO03b-Suspicious-Traffic-Signature-Categories]]
+>
+> [!question]- 1315 — How are FIN ACK / PSH FIN / RST pairs used normally?
+> **FIN ACK and ACK** terminate a connection; **PSH FIN and ACK** may also be used initially in termination; **RST and RST ACK** quickly end an ongoing connection. _(Mod 14 p18)_
+> Source: [[14-LO03b-Suspicious-Traffic-Signature-Categories]]
+>
+> [!question]- 1316 — What are the four suspicious-signature categories?
+> **Informational · Reconnaissance · Unauthorized access · Denial of service (DOS)** — any traffic deviating from normal behaviour falls into one of these four. _(Mod 14 pp19–20)_
+> Source: [[14-LO03b-Suspicious-Traffic-Signature-Categories]]
+>
+> [!question]- 1317 — What defines Reconnaissance traffic and its examples?
+> Signatures indicating **scan for weaknesses / information gathering**, which **precedes an attack in most cases**; examples **ping sweep · port scan · DNS query** attempts. _(Mod 14 p19)_
+> Source: [[14-LO03b-Suspicious-Traffic-Signature-Categories]]
+>
+> [!question]- 1318 — What defines the other three categories with examples?
+> **Informational** = may look suspicious but detects **normal activity** (ICMP echo, TCP connection, UDP connections) reusable for attacks; **Unauthorized access** = privilege/data capture intent (**password cracking · sniffing · brute-force**); **DoS** = flooding from single/multiple sources (**ping of death · SYN flood**). _(Mod 14 pp19–20)_
+> Source: [[14-LO03b-Suspicious-Traffic-Signature-Categories]]
+>
+> [!question]- 1319 — What are the four attack-signature analysis techniques?
+> **Content-based · Context-based · Atomic · Composite** — figure: content = **payloads** (check strings in suspicious payload), context = **headers** (inspect unusual header info), atomic = **single packet**, composite = **multiple packets**. _(Mod 14 p21)_
+> Source: [[14-LO03c-Attack-Signature-Analysis-Techniques]]
+>
+> [!question]- 1320 — How do atomic and composite signatures differ?
+> **Atomic** = analyze a **single packet**, **no past/future knowledge** needed; **Composite** = analyze a **series over a long period**, **exceedingly difficult** — printed example **ICMP flooding** (multiple ICMPs keeping a server busy replying). _(Mod 14 p21)_
+> Source: [[14-LO03c-Attack-Signature-Analysis-Techniques]]
+>
+> [!question]- 1321 — Which header fields can carry malicious data?
+> **Source/destination IPs** · **source/destination ports** · **IP options, protocol(s), checksums** · **IP fragmentation flags, offset, identification** — attacker **alters header info to bypass filters**. _(Mod 14 pp21–22)_
+> Source: [[14-LO03c-Attack-Signature-Analysis-Techniques]]
+>
+> [!question]- 1322 — Why combine a suspicious-but-legal port with other values?
+> **Valid headers can have suspicious values**; odd ports may hint trojans but **normal traffic also uses odd ports**, so a detailed signature needs **other characteristics** — suspicious-but-legal values are **best used in combination**. _(Mod 14 p22)_
+> Source: [[14-LO03c-Attack-Signature-Analysis-Techniques]]
+>
+> [!question]- 1323 — How is a DNS buffer-overflow in payload detected?
+> Attacker signatures may sit in **header or payload**; check **specific strings per packet**; decode **IP header** to find TCP/UDP, process **TCP header inside IP payload** before TCP payload; parse **DNS fields and check each length** — e.g. overflow in a **query payload**; also look for **shellcode sequences**. _(Mod 14 p22)_
+> Source: [[14-LO03c-Attack-Signature-Analysis-Techniques]]
+>
+> [!question]- 1324 — What is Wireshark and its capture-filter language?
+> A **widely used network sniffer** capturing and intelligently browsing traffic, exploiting **plaintext**; uses the **`libpcap`** filter language for **capture filters**. _(Mod 14 pp24, 30)_
+> Source: [[14-LO04a-Wireshark-the-Tool-and-Its-Interface]]
+>
+> [!question]- 1325 — What command starts a capture on a known interface?
+> `$ wireshark -i eth0 —k` as printed (em dash before k); first-capture path is double-click interface or **Capture Interface → Start**, or **Capture Start**/first toolbar button; needs **special privileges**, **correct interface**, **correct location**. _(Mod 14 pp24–25)_
+> Source: [[14-LO04a-Wireshark-the-Tool-and-Its-Interface]]
+>
+> [!question]- 1326 — How do capture and display filters differ?
+> **Capture** applies **before** capture, only what is already wanted, **cannot be applied to captured traffic**; **Display** applies **on captured packets** while displaying to hide uninteresting ones; both can be **labelled/saved** (`+` add, `−` remove, double-click edits, OK saves). _(Mod 14 pp29–30)_
+> Source: [[14-LO04a-Wireshark-the-Tool-and-Its-Interface]]
+>
+> [!question]- 1327 — What is the printed Telnet capture-filter example?
+> `tcp port 23 and host 10.0.0.5` — general form `[not] primitive [and lor [not] primitive ...l` as printed (garbled tail), primitives joined by **and/or** optionally preceded by **not**. _(Mod 14 p30)_
+> Source: [[14-LO04a-Wireshark-the-Tool-and-Its-Interface]]
+>
+> [!question]- 1328 — How are multiple TCP sessions and streams viewed?
+> **Statistics → Conversations → TCP** tab; **Analyze → Follow TCP/UDP/SSL stream** shows all segments on that connection; packet `No` **never changes even under a display filter**; Tools → **Firewall ACL rules** covers Cisco IOS, Netfilter, OpenBSD, Windows Firewall. _(Mod 14 pp27–28)_
+> Source: [[14-LO04a-Wireshark-the-Tool-and-Its-Interface]]
+>
+> [!question]- 1329 — What are the FTP facts: transport, port, encryption, filter?
+> **TCP, port 21**, **cleartext** with no encryption; as printed individuals **do not need authentication** (contradicted at p52 — both kept); attacks **FTP bounce, brute force, sniffing**; filter `ftp`; also monitor **file contents and sizes**. _(Mod 14 p31)_
+> Source: [[14-LO04b-Plaintext-Protocol-Traffic-FTP-TFTP-UFTP-Telnet-HTTP]]
+>
+> [!question]- 1330 — What are the TFTP facts: transport, port, filter caveat?
+> **Plaintext, no authentication**, for **firmware upgrades** on limited-capability clients; **cannot be captured directly** — filter on **UDP port 69** instead; goal is finding **rogue servers/clients** indicating breach or misconfiguration. _(Mod 14 p32)_
+> Source: [[14-LO04b-Plaintext-Protocol-Traffic-FTP-TFTP-UFTP-Telnet-HTTP]]
+>
+> [!question]- 1331 — What are the UFTP facts as printed?
+> Heading **Unicast Fast Transfer Protocol**, body **encrypted multicast** program for **large files / satellite links**; **UDP port 1044**; **cannot filter directly while capturing**; display-filter reference fields `uftp`, `uftp4`, `uftp5`; watch unauthorized access, volumes, file types. _(Mod 14 p33)_
+> Source: [[14-LO04b-Plaintext-Protocol-Traffic-FTP-TFTP-UFTP-Telnet-HTTP]]
+>
+> [!question]- 1332 — How are Telnet sessions found, and why disable Telnet?
+> **Not encrypted** (passwords in cleartext), **client–server**, **session-oriented** (open whole session), on **remote hosts/equipment**; **should be disabled**; find via **Statistics → Conversations → TCP tab → port 23 → Follow**, credentials then **viewable in cleartext**. _(Mod 14 p34)_
+> Source: [[14-LO04b-Plaintext-Protocol-Traffic-FTP-TFTP-UFTP-Telnet-HTTP]]
+>
+> [!question]- 1333 — Why monitor HTTP, and with what filter?
+> Apps send **cleartext** including **usernames/passwords** sniffable by attackers — must use **HTTPS** instead; filter `http` to check sensitive data over HTTP, **malicious traffic**, **policy violations**, and **unnecessary/restricted services**. _(Mod 14 p35)_
+> Source: [[14-LO04b-Plaintext-Protocol-Traffic-FTP-TFTP-UFTP-Telnet-HTTP]]
+>
+> [!question]- 1334 — How do passive and active OS fingerprinting differ?
+> **Passive** = attacker **sends nothing**, sniffs ports, **very difficult** to detect, **firewalls cannot detect** — defender must find **manually with sniffers**; **Active** = sends packets, waits for reply, **much easier to detect**, filterable in Wireshark. _(Mod 14 pp36, 38)_
+> Source: [[14-LO04c-OS-Fingerprinting-Passive-ICMP-and-TCP-Based]]
+>
+> [!question]- 1335 — Which fields feed passive fingerprinting?
+> **Initial TTL, do-not-fragment flag, maximum segment size, window size, SACK OK** (callout: watch **TTL and window size**); defaults **vary after two routers**; Table 14.1 maps values to OSes (e.g. MSS 1460, window/SACK variants). _(Mod 14 pp36–37)_
+> Source: [[14-LO04c-OS-Fingerprinting-Passive-ICMP-and-TCP-Based]]
+>
+> [!question]- 1336 — What ICMP probes reveal OS fingerprinting?
+> **Unique probes**, **echo with unusual code**, **timestamp (13), information (15), address mask (17)** as printed (callout garbles one as 917); defend by filtering **ICMP from outside**; Nmap indicators include **type-8 with no payload** or **120/150-byte `OxOOs`** payloads. _(Mod 14 pp39, 41)_
+> Source: [[14-LO04c-OS-Fingerprinting-Passive-ICMP-and-TCP-Based]]
+>
+> [!question]- 1337 — What is a FIN probe and which OSes answer with RESET?
+> Sends **FIN without ACK or SYN** to an open port; broken implementations reply **RESET**: **Windows, BSDI, Cisco, HP/UX, MVS, IRIX**; related probes: **BOGUS flag** (Linux pre-2.0.35 replies with flag set), ISN/IPID/timestamp/window checks. _(Mod 14 p40)_
+> Source: [[14-LO04c-OS-Fingerprinting-Passive-ICMP-and-TCP-Based]]
+>
+> [!question]- 1338 — How does Nmap fingerprint an OS?
+> Sends **TCP+UDP series**, examines **every response bit** vs database **`nmap-os-db`** (vendor, generation, type, device type); matches saved in **`nmap-os-fingerprints`**; printed **eight packets** then nine tests **Tseq, T1–T7, PU** (e.g. T3 = SYN+FIN+PSH+URG to open port). _(Mod 14 pp41–42)_
+> Source: [[14-LO04c-OS-Fingerprinting-Passive-ICMP-and-TCP-Based]]
+>
+> [!question]- 1339 — How is an ICMP ping sweep detected?
+> Attacker sends **ICMP type-8 echo** then **type-0** across an IP range to find **live hosts**; defender finds **type-8 and type-0** requests; filter `icmp.type==8 or icmp.type==O` as printed. _(Mod 14 p43)_
+> Source: [[14-LO04d-Nmap-Scan-Traffic-Ping-Sweep-ARP-Sweep-and-TCP-Scans]]
+>
+> [!question]- 1340 — How are TCP/UDP ping sweeps detected?
+> Echo request to **TCP/UDP port 7**; filters `tcp.dstport==7` and `udp.dstport==7`; fails **if the port does not support echo reply**. _(Mod 14 p43)_
+> Source: [[14-LO04d-Nmap-Scan-Traffic-Ping-Sweep-ARP-Sweep-and-TCP-Scans]]
+>
+> [!question]- 1341 — Why use ARP sweep, and what is its tell?
+> **ICMP ping fails behind a firewall**, so broadcast **ARP to all subnet hosts** to find hidden hosts — response = live; **ARP cannot be disabled** (all TCP/IP relies on it); tell is an **unexpected number of broadcast ARP requests**, filter `arp`. _(Mod 14 p44)_
+> Source: [[14-LO04d-Nmap-Scan-Traffic-Ping-Sweep-ARP-Sweep-and-TCP-Scans]]
+>
+> [!question]- 1342 — What replies define a half-open/stealth vs full-connect scan?
+> Half-open sends **SYN like normal**: **SYN+ACK = open · RST/RST+ACK = closed · ICMP type-3 code 1,2,3,9,10,13 = firewalled**; full-connect completes the **three-way handshake** (SYN → SYN/ACK → ACK, RST to end) with same codes; **excessive RST/ICMP-3** or **<4-packet** conversations flag a scan. _(Mod 14 pp45–46)_
+> Source: [[14-LO04d-Nmap-Scan-Traffic-Ping-Sweep-ARP-Sweep-and-TCP-Scans]]
+>
+> [!question]- 1343 — How does a TCP null scan work and where is it detected?
+> Sequence **0, all of ACK/FIN/RST/SYN/URG/PSH = NULL**, evading flag-filtering routers/firewalls; **RST = closed, silence = open (or open/filtered)**; detect on **Unix** with `tcp.flags==OxOOO` as printed; **does not support Windows**. _(Mod 14 p48)_
+> Source: [[14-LO04d-Nmap-Scan-Traffic-Ping-Sweep-ARP-Sweep-and-TCP-Scans]]
+>
+> [!question]- 1344 — How does a SYN flood work?
+> Attacker sends a **succession of SYN requests** then **withholds the final ACK**; server **waits indefinitely**, causing **congestion/unavailability**; handshake is **SYN → SYN/ACK → ACK**. _(Mod 14 p49)_
+> Source: [[14-LO04e-SYN-FIN-DDoS-UDP-Scan-and-Password-Cracking-Traffic]]
+>
+> [!question]- 1345 — What marks a SYN/FIN DDoS and its filter?
+> **SYN establishes, FIN terminates** — both **never set together normally**; attacker floods with **both set**, exhausting the server firewall; filter `tcp.flags==Ox003` as printed (body garbles as `tcp.fIags==OX003`). _(Mod 14 p49)_
+> Source: [[14-LO04e-SYN-FIN-DDoS-UDP-Scan-and-Password-Cracking-Traffic]]
+>
+> [!question]- 1346 — How do open and closed UDP ports answer a scan?
+> **Open = accepts, no response at all** · **Closed = ICMP Type-3 Code-3**; UDP scanning is **harder than TCP** (no ACKs — gathers ICMP errors); **bulk Type-3** replies flag a scan; filters `icmp.type==3` and `icmp.code==3`. _(Mod 14 p50)_
+> Source: [[14-LO04e-SYN-FIN-DDoS-UDP-Scan-and-Password-Cracking-Traffic]]
+>
+> [!question]- 1347 — How do brute-force and dictionary attacks differ?
+> **Brute-force = trial and error** (lengthy, tooled); **Dictionary = limited common-word set**, easier vs **weak passwords** and **SSH** (relies on logs/traffic), on **single host or network**; detect by **login-attempt counts per IP/username** across **FTP, SSH, POP3, HTTP, Telnet, RDP**. _(Mod 14 p51)_
+> Source: [[14-LO04e-SYN-FIN-DDoS-UDP-Scan-and-Password-Cracking-Traffic]]
+>
+> [!question]- 1348 — What Wireshark filters separate FTP password-crack success from failure?
+> `ftp.request.command` lists requests/attempt counts; `ftp.response.code==230` = **successful**, `ftp.response.code==530` = **unsuccessful**; FTP here **requires login** with two channels (conversation + content). _(Mod 14 p52)_
+> Source: [[14-LO04e-SYN-FIN-DDoS-UDP-Scan-and-Password-Cracking-Traffic]]
+>
+> [!question]- 1349 — How do active and passive sniffing differ?
+> **MiTM** = placing self **between client and server**; **Passive** = on a **hub** that **broadcasts all packets** (wait on collision domain); **Active** = on a **switched** net, **injecting packets**, targeting the switch **CAM**; methods **MAC flooding + ARP poisoning**. _(Mod 14 p53)_
+> Source: [[14-LO04f-MiTM-Sniffing-and-Malformed-Packets]]
+>
+> [!question]- 1350 — What is MAC/CAM flooding?
+> Attacker on a **switch port** sends a **flurry of frames with fake MACs** to fill the **CAM table**; also called **CAM flooding**. _(Mod 14 p54)_
+> Source: [[14-LO04f-MiTM-Sniffing-and-Malformed-Packets]]
+>
+> [!question]- 1351 — Where do MAC-flood packets appear in Wireshark?
+> **Analyze → Expert Information → malformed packets**; analyze **source/destination IP + TTL**; various sources to **same destination with same TTL** indicates a flood — but malformed packets are **not necessarily** MAC floods, so check **several packets to the same machine from different sources**. _(Mod 14 pp54–55)_
+> Source: [[14-LO04f-MiTM-Sniffing-and-Malformed-Packets]]
+>
+> [!question]- 1352 — What same-source contradiction does p55 print?
+> First calls same-source/same-destination traffic a **legitimate source**, then says **same TTL + same target** may be a **MAC flooding attempt** — reproduced unreconciled; verify **TTL per packet**. _(Mod 14 p55)_
+> Source: [[14-LO04f-MiTM-Sniffing-and-Malformed-Packets]]
+>
+> [!question]- 1353 — How is MAC flooding prevented?
+> **Port security** on Cisco switches (**limits MAC count**, small table); **AAA** (authentication, authorization, accounting) **minimizes risk**; printed **IEEE suites** let an AAA server install packet-filter rules (name garbled, quoted not guessed). _(Mod 14 p55)_
+> Source: [[14-LO04f-MiTM-Sniffing-and-Malformed-Packets]]
+>
+> [!question]- 1354 — What does an ARP poisoning attacker change?
+> **Changes the target's MAC to the attacker's MAC** (for one or many hosts), so **all packets to the target go to the attacker** — enabling flow monitoring, **forging multiple devices**, and directing traffic to the attacker; ARP itself **maps MAC to IP**. _(Mod 14 p56)_
+> Source: [[14-LO04g-ARP-Poisoning-and-SQL-Injection-Traffic]]
+>
+> [!question]- 1355 — How is ARP poisoning spotted in Wireshark?
+> Warning **`duplicate IP address configured`** under the **Warnings** tab; filter `arp.duplicate-address-detected` (printed with stray space/dashes, normalized here) = **indication of ARP poisoning**. _(Mod 14 p56)_
+> Source: [[14-LO04g-ARP-Poisoning-and-SQL-Injection-Traffic]]
+>
+> [!question]- 1356 — What is the printed SQL-injection indicator list?
+> Look for traffic with **characters specific to SQL injection such as OR, , , and z** — tokens between commas are **missing in the source** itself, quoted verbatim with nothing supplied. _(Mod 14 p57)_
+> Source: [[14-LO04g-ARP-Poisoning-and-SQL-Injection-Traffic]]
+>
+> [!question]- 1357 — What is the three-stage SQL-injection analysis?
+> Spot pattern in **packet list** (Fig 14.10) → detect via **following the stream** (Fig 14.11) → **analyze details** to judge **whether the attack succeeded** (Fig 14.12); Wireshark also detects **XSS** and similar app-level attacks. _(Mod 14 pp57–58)_
+> Source: [[14-LO04g-ARP-Poisoning-and-SQL-Injection-Traffic]]
+>
+> [!question]- 1358 — How is XSS recognized?
+> By finding **malicious data (XSS injection string patterns) in the web-page `POST`** — same pattern-hunting method as SQL injection inspection. _(Mod 14 p58)_
+> Source: [[14-LO04g-ARP-Poisoning-and-SQL-Injection-Traffic]]
+>
+> [!question]- 1359 — What does DHCP spoofing do?
+> Attacker **falsely claims to be a legitimate DHCP server**, distributing **rogue IPs** to clients; outcomes **eavesdropping · network disruption · man-in-the-middle**. _(Mod 14 p59)_
+> Source: [[14-LO04h-DHCP-Spoofing-and-VLAN-Hopping]]
+>
+> [!question]- 1360 — What transport and filter apply to DHCP spoofing?
+> DHCP employs **`BOOTP`** as transport (client/server protocol); filter with **`dhcp`** to find spoofing attacks. _(Mod 14 p59)_
+> Source: [[14-LO04h-DHCP-Spoofing-and-VLAN-Hopping]]
+>
+> [!question]- 1361 — What is VLAN hopping?
+> Attacker **sends traffic from one VLAN to another, bypassing NAC** to access different VLANs; exploits **switch misconfigurations** to **steal protected information** in a switched network. _(Mod 14 p60)_
+> Source: [[14-LO04h-DHCP-Spoofing-and-VLAN-Hopping]]
+>
+> [!question]- 1362 — What capture tell and filter mark VLAN hopping?
+> Presence of **DTP packets** or **packets with multiple VLAN tags**; filter **`vlan`**. _(Mod 14 p60)_
+> Source: [[14-LO04h-DHCP-Spoofing-and-VLAN-Hopping]]
+>
+> [!question]- 1363 — How do DHCP spoofing and VLAN hopping contrast?
+> DHCP targets the **server role over `BOOTP`** (rogue IPs); VLAN targets **switch/VLAN boundaries** (inter-VLAN via NAC bypass from misconfiguration); filters **`dhcp`** vs **`vlan`**; stakes **eavesdrop/disruption/MiTM** vs **stolen protected info**. _(Mod 14 pp59–60)_
+> Source: [[14-LO04h-DHCP-Spoofing-and-VLAN-Hopping]]
+>
+> [!question]- 1364 — Why does unexplained packet loss matter?
+> **Unexpected loss indicates an attack** — analyzing it identifies **DDoS or packet injection**; loss patterns act as an **early warning system** limiting damage; also reveals **nature + impacted segments/devices**. _(Mod 14 p61)_
+> Source: [[14-LO04i-Unexplained-Packet-Loss]]
+>
+> [!question]- 1365 — What performance effects does packet loss cause?
+> **Poor user experience, increased latency, reduced throughput**; monitoring loss determines **attack nature and impact** for actions that **enhance performance**. _(Mod 14 p61)_
+> Source: [[14-LO04i-Unexplained-Packet-Loss]]
+>
+> [!question]- 1366 — What is the Wireshark route to dropped packets?
+> **Statistics → Capture File Properties → Interfaces → Dropped packets**; via menu **statistics**, open Capture File Properties popup, read Interfaces. _(Mod 14 pp61–63)_
+> Source: [[14-LO04i-Unexplained-Packet-Loss]]
+>
+> [!question]- 1367 — What do the Interfaces dropped-packet numbers mean?
+> p61 says the number denotes **lost packets**; p63 says it tells how many were **not captured** — same figure, two labels, both quoted. _(Mod 14 pp61, 63)_
+> Source: [[14-LO04i-Unexplained-Packet-Loss]]
+>
+> [!question]- 1368 — What monitoring posture does packet-loss analysis enable?
+> Observing **loss patterns + scrutinizing associated traffic** detects incidents early, enabling **prompt response to limit organizational damage**. _(Mod 14 p61)_
+> Source: [[14-LO04i-Unexplained-Packet-Loss]]
+>
+> [!question]- 1369 — What does NBNS reveal, on what port and filter?
+> **NetBIOS name resolution** disclosing **host names, IP+MAC, services**; legacy protocol on **UDP/TCP 137**; filter **`nbns`**; uses: **host discovery, rogue devices, misconfigurations**, maintaining integrity. _(Mod 14 pp64–65)_
+> Source: [[14-LO04j-Name-Service-Encrypted-and-Handshake-Traffic]]
+>
+> [!question]- 1370 — What TLS capture caveat and filter are printed?
+> **TLS encrypts**, challenging interception; **SSL predecessor now insecure**; **cannot filter TLS while capturing — filter TCP port 443** instead; display list via **`tls`**. _(Mod 14 p66)_
+> Source: [[14-LO04j-Name-Service-Encrypted-and-Handshake-Traffic]]
+>
+> [!question]- 1371 — What does the Kerberos filter expose?
+> **Secure authentication** via **shared-secret encryption** with **mutual user-service auth**; default port **88**; filter `kerberos.CNameString` yields a **Windows/Linux user account and hostname**. _(Mod 14 p67)_
+> Source: [[14-LO04j-Name-Service-Encrypted-and-Handshake-Traffic]]
+>
+> [!question]- 1372 — What is a client deauthentication attack and its filter?
+> **Wireless** attack sending **forged deauth frames** to disconnect clients — forcing **reconnects exposing passwords**, **DoS**, or **MiTM**; 802.11 management frames reveal **attacker/victim MACs + reason code**; filter `wlan.fc.type_subtype == 12` (body prints `wlan.fc.type_subtype 12'`). _(Mod 14 p68)_
+> Source: [[14-LO04j-Name-Service-Encrypted-and-Handshake-Traffic]]
+>
+> [!question]- 1373 — What is a fake-AP beacon flood and how is HTTPS viewed?
+> Attacker transmits **masses of false beacons** overrunning real ones → **confusion, jamming, client crash/network crash**; filter `wlan.fc.type_subtype 8` as printed; **HTTPS on 443** is **content-opaque** — only **IPs, ports, sizes, timing** visible (decrypt only with **proxy SSL/TLS keys**), filter **`https`**. _(Mod 14 pp69–70)_
+> Source: [[14-LO04j-Name-Service-Encrypted-and-Handshake-Traffic]]
+>
+> [!question]- 1374 — What is network performance monitoring?
+> A **day-to-day operations** responsibility; continuous NPM helps **measure, maintain, optimize health; diagnose/detect outages; address problems**; tools track **performance, availability, QoS, and other metrics**. _(Mod 14 p72)_
+> Source: [[14-LO05a-Network-Performance-Monitoring]]
+>
+> [!question]- 1375 — Which four NPM tools are named?
+> **PRTG Network Monitor · SolarWinds Network Performance Monitor · ManageEngine OpManager · Capsa** (Capsa Free = packet capture/analysis diagnostics). _(Mod 14 pp72–73)_
+> Source: [[14-LO05a-Network-Performance-Monitoring]]
+>
+> [!question]- 1376 — What four things does PRTG help with?
+> **Avoid bottlenecks** · **identify bandwidth-hogging apps/servers** · **instantly spot spikes from malicious code** · **reduce hardware/bandwidth purchase costs**; supports **browser/smartphone remote management**, notifications, multi-location, website-to-database coverage. _(Mod 14 p72)_
+> Source: [[14-LO05a-Network-Performance-Monitoring]]
+>
+> [!question]- 1377 — Which data-collection protocols does PRTG support?
+> **SNMP**; Windows Management Instrumentation as printed **(`WM!`)**; **packet sniffing**; flow exports **NetFlow, IPFIX, jFlow, sFlow** — collects **almost anything of interest**. _(Mod 14 p73)_
+> Source: [[14-LO05a-Network-Performance-Monitoring]]
+>
+> [!question]- 1378 — What do SolarWinds NPM and OpManager do?
+> **SolarWinds NPM** = quickly **detect, diagnose, resolve** performance problems/outages; **OpManager** = **integrated** software with **real-time monitoring** and detailed insights into problematic areas. _(Mod 14 p73)_
+> Source: [[14-LO05a-Network-Performance-Monitoring]]
+>
+> [!question]- 1379 — What are the two printed bandwidth definitions?
+> Side bar: **amount of information transmittable over a network in a given time**; body: **amount data transferable point-to-point** (missing word as printed) and **a criterion defining network performance**. _(Mod 14 p74)_
+> Source: [[14-LO05b-Bandwidth-Monitoring-and-Best-Practices]]
+>
+> [!question]- 1380 — What are the four bandwidth terms?
+> **Effective bandwidth** = highest transmission rate; **monitoring test** = identifies **maximum throughput**; **monitoring** = **measuring/controlling** link traffic to **avoid overfilling**; **capacity** = **maximum transfer rate of a link**. _(Mod 14 pp74–75)_
+> Source: [[14-LO05b-Bandwidth-Monitoring-and-Best-Practices]]
+>
+> [!question]- 1381 — At which two levels is bandwidth reported?
+> **Interface level** = utilization of a **network interface** (SNMP-fetched) · **Device level** = comparison of **individual traffic and its interfaces** — tools report at both. _(Mod 14 pp75–76)_
+> Source: [[14-LO05b-Bandwidth-Monitoring-and-Best-Practices]]
+>
+> [!question]- 1382 — What are upload vs download speeds?
+> **Upload** = speed data are **sent to a destination**; **Download** = speed data are **received**; organizations now **maximize both** amid growing volumes. _(Mod 14 p75)_
+> Source: [[14-LO05b-Bandwidth-Monitoring-and-Best-Practices]]
+>
+> [!question]- 1383 — What are the QoS, proxy-cache, and single-tool rules?
+> **QoS = bandwidth reservation mechanism** — reserved use **does not affect others**; **proxy cache** saves first-visit content so revisits skip download; limit **media sites (gaming/movies/music)** to boost up/down speed; assess needs with **only a single monitoring tool**, counting nodes, per-node average, peaks, and ISP growth. _(Mod 14 p77)_
+> Source: [[14-LO05b-Bandwidth-Monitoring-and-Best-Practices]]
+>
+> [!question]- 1384 — What is a network anomaly?
+> A **sudden and brief deviation from normal operation, often caused by intruders with malicious intent**; NADBA detects/responds via deviations, aided by **firewalls, IDS, IPS**, protecting **integrity, availability, security**. _(Mod 14 pp78–79)_
+> Source: [[14-LO06a-Network-Anomaly-Detection-and-Baseline-Establishment]]
+>
+> [!question]- 1385 — What five metrics does NBAD track at scale?
+> **Packets, bandwidth, bytes, traffic volume, protocol usage** — each suspicious event logged with **timestamp, ports, protocols, src/dst IPs**. _(Mod 14 p79)_
+> Source: [[14-LO06a-Network-Anomaly-Detection-and-Baseline-Establishment]]
+>
+> [!question]- 1386 — What are NBAD's three aspects and three techniques?
+> Aspects: **traffic flow patterns · passive traffic analysis · network performance data**; techniques: **machine learning, statistical analysis, heuristics** to pinpoint deviations from norms. _(Mod 14 pp79, 81)_
+> Source: [[14-LO06a-Network-Anomaly-Detection-and-Baseline-Establishment]]
+>
+> [!question]- 1387 — What are the seven anomaly-detection steps?
+> **Data collection → baseline establishment → anomaly detection → alert generation → alert correlation → incident investigation → response and mitigation**; longer baselines improve accuracy. _(Mod 14 pp79–80)_
+> Source: [[14-LO06a-Network-Anomaly-Detection-and-Baseline-Establishment]]
+>
+> [!question]- 1388 — Which flow standards feed NBAD, and from what?
+> **`NetFlow`, `jFlow`, `IPFIX`, `NetStream`** exported by **routers, switches, or probes** (e.g. Flowmon NBAD detecting targeted attacks, botnets, unknown malware, insider threats, data leakage). _(Mod 14 p80)_
+> Source: [[14-LO06a-Network-Anomaly-Detection-and-Baseline-Establishment]]
+>
+> [!question]- 1389 — What does the Awake Security Platform do?
+> Built on **deep network analysis sensors**; analyzes **encrypted traffic** for **nature, apps communicating, remote access** to detect behavioural threats; **correlates incidents across entities, stages, protocols**; tracks IoT **on-premise/cloud/managed/unmanaged**. _(Mod 14 p82)_
+> Source: [[14-LO06b-Behaviour-Detection-Tools-Awake-Cisco-Ransomware-Compromised]]
+>
+> [!question]- 1390 — What does Cisco Secure Network Analytics do?
+> Uses **infrastructure telemetry** to show **who is on the network and what they do**; detects advanced threats, segments intelligently, reuses **existing infrastructure**; analyzes **encrypted traffic** for **malware without decryption**; techniques **multilayered ML, global threat intel, behavioural modelling**. _(Mod 14 p83)_
+> Source: [[14-LO06b-Behaviour-Detection-Tools-Awake-Cisco-Ransomware-Compromised]]
+>
+> [!question]- 1391 — What three patterns flag ransomware via NADBA?
+> **Sudden rise in encryption activity · multiple failed logins · unusual file access** (plus abnormal approaches); **real-time detection** enables rapid countermeasures before critical data falls. _(Mod 14 p84)_
+> Source: [[14-LO06b-Behaviour-Detection-Tools-Awake-Cisco-Ransomware-Compromised]]
+>
+> [!question]- 1392 — What automatic actions follow a strange ransomware pattern?
+> **Isolate endpoints · restrict suspect traffic · alert security team · inform business hierarchy**; example engine **Log360 UEBA (ManageEngine)** uses **ML** on subtle user-activity changes, consolidating sources with user/entity anomaly overview. _(Mod 14 p84)_
+> Source: [[14-LO06b-Behaviour-Detection-Tools-Awake-Cisco-Ransomware-Compromised]]
+>
+> [!question]- 1393 — What five tells mark a compromised device?
+> **Odd logins (hours/locations/failed masses)** · accessing **atypical files/resources** · **unauthorized privilege escalation (to root)** · contact with **malicious/unknown IPs** or **exfiltration** · **odd modifications (encryption/deletion/log alteration)** — after profiling users/devices/entities on history, privileges, interactions. _(Mod 14 p86)_
+> Source: [[14-LO06b-Behaviour-Detection-Tools-Awake-Cisco-Ransomware-Compromised]]
+>
+> [!question]- 1394 — What traffic tell marks a DDoS?
+> A **sudden spike in incoming-request flow exceeding normal expectations** — rapid influx **overwhelms the server, degrading response**; devices may **lose internet/critical resources**; also watch **logins, critical-resource access, performance metrics**; early detection may mitigate. _(Mod 14 p87)_
+> Source: [[14-LO06c-DDoS-Detection-NetFlow-Analyzer-and-Additional-NBA-Tools]]
+>
+> [!question]- 1395 — What countermeasures does p87 name for DDoS?
+> Frequently execute **traffic filtering and redirection**; **large-scale subnetting channels requests to different devices**. _(Mod 14 p87)_
+> Source: [[14-LO06c-DDoS-Detection-NetFlow-Analyzer-and-Additional-NBA-Tools]]
+>
+> [!question]- 1396 — What are NetFlow Analyzer's four problem classes?
+> **Suspect flows · bad source or destination · DDoS attacks · scans/probes** — via **Continuous Stream Mining Engine** pattern-matching/correlating **multiple events** to sense attacks pre-compromise, flagging **junk/anomalous traffic**. _(Mod 14 p87)_
+> Source: [[14-LO06c-DDoS-Detection-NetFlow-Analyzer-and-Additional-NBA-Tools]]
+>
+> [!question]- 1397 — What do InsightIDR, Flowmon, and NetFlow Analyzer add?
+> **InsightlDR** (`https://www.rapid7.com/`) = sensor visibility for **critical assets/data at rest** + IDS detail page; **Progress Flowmon** (`https://www.flowmon.com/`) = behavioural engine exposing **IoCs/vulnerabilities**; **ManageEngine NetFlow Analyzer** = traffic analysis of **bandwidth control/use**. _(Mod 14 pp89–90)_
+> Source: [[14-LO06c-DDoS-Detection-NetFlow-Analyzer-and-Additional-NBA-Tools]]
+>
+> [!question]- 1398 — What do NETWITNESS, OSSIM, GURUCUL, QRadar, and ZABBIX do?
+> **NETWITNESS** = monitor/collect/analyze **all access points**, prioritize/respond/reconstruct; **AlienVault OSSIM** = open-source **SIEM** gathering/normalizing/correlating; **GURUCUL ML XDR** = ML baselines per device from **IPs, protocol, bytes in/out**; **IBM QRadar Network Insights** = suspicious-in-regular-traffic + content extraction; **ZABBIX** = hardware/traffic-metric health monitoring. _(Mod 14 pp89–90)_
+> Source: [[14-LO06c-DDoS-Detection-NetFlow-Analyzer-and-Additional-NBA-Tools]]
+>
+> [!question]- 1399 — What is network behaviour analysis (NBA)?
+> Process **collecting/analysing enterprise network data** to find **unusual/malicious activity** via **advanced analytics, rule-based techniques, ML**; studies **packet size, signature, flow duration, response time**; alerts on **malware, DDoS, breaches**. _(Mod 14 p91)_
+> Source: [[14-LO06d-Network-Behaviour-Analysis-and-Its-Tools]]
+>
+> [!question]- 1400 — What four things does NBA allow?
+> Tracking **bandwidth/protocol patterns**; gathering multi-source data with **ML so sudden change = malicious**; detecting **new malware/zero-days** via size/signature/duration/response; enhancing **visibility, detection, troubleshooting, identification, mitigation**. _(Mod 14 p91)_
+> Source: [[14-LO06d-Network-Behaviour-Analysis-and-Its-Tools]]
+>
+> [!question]- 1401 — What is McAfee Network Threat Behavior Analysis?
+> **Integrated component of McAfee Network Security Platform** with **real-time visibility/protection**; analyzes **switch/router traffic** to pin risky behaviour and stop stealthy attacks across **virtual, data-center, private/public cloud**; stops malware via **real-time emulation**, covers **zero-day, spam, botnet, reconnaissance**. _(Mod 14 p92)_
+> Source: [[14-LO06d-Network-Behaviour-Analysis-and-Its-Tools]]
+>
+> [!question]- 1402 — What does Flowmon ADS detect and trigger?
+> Behaviour algorithms expose **mission-critical-app attacks, breaches, IoCs**, even **unknown/insider** threats missed at perimeter; understands **DNS/DHCP/ICMP/SMTP** for exfil/lateral/recon; auto-responds via scripts — e.g. via **Cisco ISE/pxGrid quarantine the malicious IP**; minimizes false positives. _(Mod 14 pp94–95)_
+> Source: [[14-LO06d-Network-Behaviour-Analysis-and-Its-Tools]]
+>
+> [!question]- 1403 — Which additional NBA tools cover DDoS, AI, and Splunk detections?
+> **NetScout Arbor Sightline** = DDoS/peering/capacity; **NetWitness Detect AI** = AI/ML over **logs, packets, NetFlow, endpoint, IoT** (physical/virtual/cloud) with risk scoring/peer grouping; **Splunk** = analytics over machine data with **1400+ detections (MITRE ATT&CK, NIST, CIS 20, Kill Chain)** and risk-based alerting. _(Mod 14 pp96–98)_
+> Source: [[14-LO06d-Network-Behaviour-Analysis-and-Its-Tools]]
+>
+> [!question]- 1404 — What is user behaviour analytics (UBA)?
+> Security process detecting **abnormal user activities** to catch **insider threats** and malicious/suspicious acts; uses **ML + data science in real time**, baselining activity and flagging deviations as breach indicators; tracks **files, emails, apps, network activity**. _(Mod 14 p99)_
+> Source: [[14-LO06e-User-Behaviour-Analytics-UBA-and-Its-Tools]]
+>
+> [!question]- 1405 — How does UBA work in five steps?
+> Collect multi-source data (**logs, traffic, app usage**) → **behavioural profiling** baseline incl. **geography** → ML/statistics vs **own baseline or peers** → **risk scores by severity** → **alert** on malicious activity; analyzes **SIEM/log-management** network logs. _(Mod 14 p99)_
+> Source: [[14-LO06e-User-Behaviour-Analytics-UBA-and-Its-Tools]]
+>
+> [!question]- 1406 — What are UBA's four use cases?
+> **Insider threats** (rogue employee deviation) · **data theft** (beyond-permission downloads — alert **after** download, so **disable account** to contain) · **compromised accounts** (atypical sensitive access → investigate) · **compromised hosts** (servers/personal devices, malware → thorough investigation). _(Mod 14 p100)_
+> Source: [[14-LO06e-User-Behaviour-Analytics-UBA-and-Its-Tools]]
+>
+> [!question]- 1407 — What do CleverTap and FullStory do?
+> **CleverTap** (`https://clevertap.com/`) ingests **CRM/apps/web**, uses **cohorts, funnels, pivots**, micro-segments by history/real-time/interest, flags **at-risk by recency/frequency**; **FullStory** = session **playbacks/journey view**, auto-indexed **clicks to page transitions**, funnels. _(Mod 14 pp101–102)_
+> Source: [[14-LO06e-User-Behaviour-Analytics-UBA-and-Its-Tools]]
+>
+> [!question]- 1408 — What do the additional UBA tools do?
+> **Mouseflow** = checkout-funnel/heatmap recording **100%**; **Creabl** = mouse-movement/session recording + event-triggered emails; **Hotjar** = funnels/recordings; **Userlytics** = usability reels/transcripts/AI analysis; **Crazy Egg** = visitor/campaign comparison; **DATADOG RUM** = frontend view correlated with backend/traces/logs. _(Mod 14 pp103–104)_
+> Source: [[14-LO06e-User-Behaviour-Analytics-UBA-and-Its-Tools]]
+>
+> [!question]- 1409 — What is UEBA?
+> Security process detecting anomalies in **users AND entities like routers, endpoints, servers**; records **normal conduct**, flags deviations; watches **unusual traffic, malicious acts, unauthorized access/movement** via **ML, statistics, automation**. _(Mod 14 p105)_
+> Source: [[14-LO06f-User-and-Entity-Behaviour-Analytics-UEBA-and-Its-Tools]]
+>
+> [!question]- 1410 — How does UEBA work?
+> ML builds a **baseline per user or aggregated by department/role/organization**; flags behaviour **above/below baseline**; **raises alerts** — some systems only **alert for investigation**, others **auto-cut network connectivity** on suspected attack. _(Mod 14 pp105–106)_
+> Source: [[14-LO06f-User-and-Entity-Behaviour-Analytics-UEBA-and-Its-Tools]]
+>
+> [!question]- 1411 — What are UEBA's three components?
+> **Data analytics** = profiles of usual actions via **statistical models**; **Data integration** = **logs, packet captures, other datasets** compared for robustness; **Data presentation** = conveying findings and **formulating response** (alert vs action). _(Mod 14 pp105–106)_
+> Source: [[14-LO06f-User-and-Entity-Behaviour-Analytics-UEBA-and-Its-Tools]]
+>
+> [!question]- 1412 — What are UEBA's six use cases?
+> **Lateral movement** (holistic multi-system view) · **stolen credentials** (behaviour invisible to traditional tools) · **data theft** (destination/role legitimacy) · **high-value targets (CEO/CFO devices)** · **long-dwell compromised hosts (months/years)** · **insiders** (bulk transfers, privilege grabs, odd apps). _(Mod 14 p106)_
+> Source: [[14-LO06f-User-and-Entity-Behaviour-Analytics-UEBA-and-Its-Tools]]
+>
+> [!question]- 1413 — What do DNIF and Securonix UEBA do?
+> **DNIF** (`https://www.dnif.it/`) = ML threat/behaviour detection flagging **privileged access/atypical movement**, learning valuable anomalies, screening noise, historical profiling; **Securonix** = low-noise complex-threat/entity context, **cloud APIs**, insider UEBA vs baseline, deployable **atop existing SIEM**. _(Mod 14 pp107–109)_
+> Source: [[14-LO06f-User-and-Entity-Behaviour-Analytics-UEBA-and-Its-Tools]]
+>
+> [!question]- 1414 — How does Table 14.2 contrast UBA vs UEBA focus and sources?
+> UBA **focuses on user behaviour** and **relies on event logs**; UEBA **focuses on user and entity behaviour** and **integrates multiple sources**. _(Mod 14 p113)_
+> Source: [[14-LO06g-UBA-vs-UEBA-and-Module-Summary]]
+>
+> [!question]- 1415 — How does Table 14.2 contrast actor coverage?
+> UBA detects threats with **human actors or malware**; UEBA adds **machine actors** — **malware, human, or machine** — the only threat-class UEBA adds. _(Mod 14 p113)_
+> Source: [[14-LO06g-UBA-vs-UEBA-and-Module-Summary]]
+>
+> [!question]- 1416 — How does Table 14.2 contrast visibility and integration?
+> UBA = **limited network visibility**, **stand-alone, cannot integrate**; UEBA = **more visibility + context** for investigation/response and **integrates with existing products** — though p99 contradicts UBA's limits (multi-source + SIEM), unreconciled. _(Mod 14 p113)_
+> Source: [[14-LO06g-UBA-vs-UEBA-and-Module-Summary]]
+>
+> [!question]- 1417 — What does the p114 module summary claim?
+> Covered **manual monitoring, signature types, baselining, tools, attack detection**; signatures are **rule-set patterns of intrusive activity** separating **legitimate from suspicious**; **Wireshark is widely used**; **baseline = accepted-behaviour description** — while **omitting all of LO#06 (NBA/UBA/UEBA)**. _(Mod 14 p114)_
+> Source: [[14-LO06g-UBA-vs-UEBA-and-Module-Summary]]
+>
+> [!question]- 1418 — What three-way progression closes LO#06?
+> **NBA/NBAD** = network traffic · **UBA** = users only · **UEBA** = users **and entities (routers, endpoints, servers)** — UEBA the widest family. _(Mod 14 p113)_
+> Source: [[14-LO06g-UBA-vs-UEBA-and-Module-Summary]]
+
+### Module 15 (140 items)
+> [!question]- 1419 — What are the four types of logging _(Mod 15 p5)_?
+> Security (identify/respond: threats, viruses, malware, data loss; login, unauthorized access) · Operational (system-processing; failures, actionable conditions; provisioning, financial) · Compliance (**a part of security logging**) · Application debug (developers, **not** admins; enable/disable per circumstance).
+> Source: [[15-LO01a-Log-Types-Sources-and-the-Need-for-Logs]]
+>
+> [!question]- 1420 — What are the two log transfer mechanisms _(Mod 15 p6)_?
+> Push-based (save to local disk **or** send over network; needs a **log collector**; the two main push protocols are **System Logging Protocol (syslog)** and **SNMP**) · Pull-based (pulls from source; **client-server model**; usually **proprietary format**, e.g. **Check Point OPSEC C library**).
+> Source: [[15-LO01a-Log-Types-Sources-and-the-Need-for-Logs]]
+>
+> [!question]- 1421 — What six tasks do logs help with _(Mod 15 p7)_?
+> Identify security incidents · monitor policy violations · identify fraudulent activity · identify operational and long-term problems · establish baselines · ensure compliance with laws, rules, and regulations; single logs correlate via **SIEM** into something meaningful (e.g. transaction log + firewall log verify a user).
+> Source: [[15-LO01a-Log-Types-Sources-and-the-Need-for-Logs]]
+>
+> [!question]- 1422 — How are log sources configured, and what happens with no granularity _(Mod 15 p6)_?
+> Identify participating hosts/components per rules/policies; specify event types and per-event data features; one file holds multiple sources; required sources store in required formats/locations long-term. With **no granularity, logging is either enabled or disabled** with no control over data kind.
+> Source: [[15-LO01a-Log-Types-Sources-and-the-Need-for-Logs]]
+>
+> [!question]- 1423 — Why are ordinary logs not enough for network troubleshooting _(Mod 15 p8)_?
+> They **can** troubleshoot problems, but ordinary files are **not enough for network problems** — "**Syslog need to be utilized** for this purpose"; syslog records events into log files, aiding OS monitoring and troubleshooting.
+> Source: [[15-LO01b-Troubleshooting-and-Logging-Requirements]]
+>
+> [!question]- 1424 — Why are logs permanent forensic evidence _(Mod 15 p8)_?
+> A **permanent source of record that cannot be altered through the normal course of actions**, in **chronological sequence** (what + when + how); sent to another host or **central log collector** they are a **backup source of evidence** if the original is suspected tampered, and can support or reject other evidence.
+> Source: [[15-LO01b-Troubleshooting-and-Logging-Requirements]]
+>
+> [!question]- 1425 — What does incident response require of logs _(Mod 15 p8)_?
+> **Proper correlation of log events across all devices and assets** to set extent, impact and remediation steps; devices **may not have the required correlation capabilities**, so the common solution is to **correlate the activities using log files**.
+> Source: [[15-LO01b-Troubleshooting-and-Logging-Requirements]]
+>
+> [!question]- 1426 — What are the nine Requirements for Logging _(Mod 15 p9)_?
+> Determine applications/systems (incl. outsourced/cloud) with logging enabled · configure system for correct security incidents · tune/review to minimize **false positives** · store events in event logs · normalize and aggregate · correlate data sources · synchronize timestamps of all sources · prevent unauthorized access/manipulation (**of** the logs; callout prints **to** the logs) · analyze security-based events for event logs. Know first: what/where/methods/tools/format.
+> Source: [[15-LO01b-Troubleshooting-and-Logging-Requirements]]
+>
+> [!question]- 1427 — What ten items does a typical log include _(Mod 15 p10)_?
+> User identification information · date and time (**timestamp**) · type of event · success or failure indication · event origination point · description (what + **why**) · severity · service name · protocol · user (p11 callout); plus prose-only IP address and authenticated-user info; all systems synchronize time from an authoritative source for filtering and cross-system correlation.
+> Source: [[15-LO01c-Typical-Log-Format-and-Logging-Approaches]]
+>
+> [!question]- 1428 — What must never reach a log file, and what alone should be sent _(Mod 15 p11)_?
+> Never: private/protected info — passwords · encryption keys · bank/credit-card info · personal identifiable information · personal health information · source code · etc. Send only: audit-log init/clearing · system-object create/delete · all log access · all administrative access/actions · all root/privileged-person actions.
+> Source: [[15-LO01c-Typical-Log-Format-and-Logging-Approaches]]
+>
+> [!question]- 1429 — What is local logging and when does it break _(Mod 15 p12)_?
+> Writing logs to the **local disk** host machine; for systems with a **limited number of hosts**; with many hosts it is hard to manage/analyze and spot cross-file events — common solution is **centralized logging**. Host triggers: crash/shutdown/restart/startup · credential create/update/delete · privilege change · disk/memory/CPU threshold breach · config/software-update change · software install/uninstall.
+> Source: [[15-LO01c-Typical-Log-Format-and-Logging-Approaches]]
+>
+> [!question]- 1430 — What is centralized logging and what are its benefits _(Mod 15 pp12–13)_?
+> Collecting/aggregating **network-device** logs on a central server; works in four parts: **log collection, transport, storage, and analysis**. Benefits: indispensable for security troubleshooting · proactive management · in-depth analysis · minimizes data-loss risk · enhances security. Device triggers: device add/delete · network-setting changes · user-access changes · user access to/from computer · crashes · app install/uninstall · firewall-policy change · admin-account add/delete/change.
+> Source: [[15-LO01c-Typical-Log-Format-and-Logging-Approaches]]
+>
+> [!question]- 1431 — What is the Windows event logging service _(Mod 15 p15)_?
+> Collects events from multiple sources into a **single location known as Windows event log**; **primary source of evidence** for actions/activities; holds system, security, application notifications for defenders; standard centralized **structured data format** for search/filter; viewed via **Event Viewer**, called "**the programming interface that facilitates analysis of these logs**".
+> Source: [[15-LO02a-Windows-Logs-and-Event-Viewer]]
+>
+> [!question]- 1432 — What does one Windows log entry carry _(Mod 15 p15)_?
+> Event time (when) · Event source (cause) · Event type (**Information · Warning · Error · Success Audit · Failure Audit**) · Event ID (ID for the event type).
+> Source: [[15-LO02a-Windows-Logs-and-Event-Viewer]]
+>
+> [!question]- 1433 — How is Windows audit configuration stored _(Mod 15 p15)_?
+> **Recorded based on the registry key** under `HKEY_LOCAL_MACHINE`; the key comprises subkeys **known as logs**; each log holds values such as `CustomSD`, `DisplayNameFile`, `DisplayNameID`, `File`, `MaxSize`, configurable per requirement (covers **log retention, log size**, etc.).
+> Source: [[15-LO02a-Windows-Logs-and-Event-Viewer]]
+>
+> [!question]- 1434 — What categories of events sit in Windows logs files _(Mod 15 p23)_?
+> Stored under **application, security, system, setup, and forwarded**; Event Viewer gives a quick overview of **when, where, and how** an event occurred, with errors, warnings and information messages, especially for troubleshooting.
+> Source: [[15-LO02a-Windows-Logs-and-Event-Viewer]]
+>
+> [!question]- 1435 — What three databases are Windows event log files _(Mod 15 p16)_?
+> `System.evtx` (system) · `Security.evtx` (security) · `Application.evtx` (application); stored in a `c:` folder (rest not legible); **`.evtx` files can be opened and read with Event Viewer**.
+> Source: [[15-LO02b-Windows-Event-Log-File-Format]]
+>
+> [!question]- 1436 — What is the anatomy of an event log file _(Mod 15 p17)_?
+> Fixed-size **ELF LOGFILE HEADER** + variable **EVENTLOGRECORD** structures + **ELF EOF RECORD**; header and EOF written at create/update; app calls **`ReportEvent`** → event-logging service writes an **EVENTLOGRECORD**. Nonwrapping: oldest after header, newest before EOF, until `MaxSize`/resources limit, then wrapping.
+> Source: [[15-LO02b-Windows-Event-Log-File-Format]]
+>
+> [!question]- 1437 — How does the wrapping method work _(Mod 15 p18)_?
+> **Circular buffer**: oldest replaced by newest; figure shows records **102, 103, 299, 300, 301, 400** with **102 oldest** (1–101 replaced); newest 100 bytes evicts two 65-byte oldest (30 bytes reused later); 200-byte record at 100-byte tail splits 100/100 around the header; tail smaller than fixed `EVENTLOGRECORD` → all new records go just after header and the tail gap takes the pattern.
+> Source: [[15-LO02b-Windows-Event-Log-File-Format]]
+>
+> [!question]- 1438 — What are the ELF header signature and Flags, and which EVENTLOGRECORD fields are 2 bytes _(Mod 15 pp19–22)_?
+> `HeaderSize` always `0 x 30`; `Signature` always `0x654c664c` / `Ox654c664c` (ASCII `eLfL`); `MajorVersion`/`MinorVersion` always 1; Flags: `DIRTY Ox0001` (written, not closed) · `WRAP Ox0002` · `LOGFULL WRITTEN Ox0004` (write failed, no space) · `ARCHIVE SET Ox0008`. All members 4 bytes except WORD-sized **`EventType`, `NumStrings` (1–256), `EventCategory`, `ReservedFlags`** (`O x 0000` no XML / `O x 8000` has XML) at 2 bytes.
+> Source: [[15-LO02b-Windows-Event-Log-File-Format]]
+>
+> [!question]- 1439 — What do the six Windows event log types record _(Mod 15 pp23–24)_?
+> Application (app informational/warnings/errors, e.g. Excel crash) · Security (log-on/log-off, resource access, audit policy; identifies attempted/successful unauthorized activity) · Setup (enterprise install actions, e.g. memory-dump location) · System (OS segments: hardware/system changes, drivers) · Forwarded (from other same-network systems) · Custom (resize log or add ACLs without affecting other apps).
+> Source: [[15-LO02c-Windows-Event-Log-Types-and-Entries]]
+>
+> [!question]- 1440 — What ten fields does a Windows log entry contain _(Mod 15 pp24–25)_?
+> **Level** (Error, Warning, Information, Success Audit, Failure Audit) · **Keywords** (AuditFailure, AuditSuccess, Classic, Correlation Hint, Response Time, SQM, WDI Context, WDI Diag) · Date and time · Source · **Event ID** (**unique per event type**) · Task category (**category of ask** as printed) · User · Operational code (activity at raise time) · Log (log name) · Computer. Abridged p23 callout: Level, Keywords, Date and Time, Source, Event ID, Task Category.
+> Source: [[15-LO02c-Windows-Event-Log-Types-and-Entries]]
+>
+> [!question]- 1441 — What are the five Windows event types with examples _(Mod 15 p26)_?
+> **Error** (significant: data/functionality loss; service fails at startup) · **Warning** (possible future problem; app recovers without loss; low disk) · **Information** (successful app/driver/service op; network driver loads; desktop apps should not log every start) · **Audit Failure**/Failure Audit (failed audited access; network-drive access fails) · **Audit Success**/Success audit (successful audited access; successful logon).
+> Source: [[15-LO02c-Windows-Event-Log-Types-and-Entries]]
+>
+> [!question]- 1442 — What extra event properties can be added via View _(Mod 15 p25)_?
+> **Add/Remove Columns** adds Process ID, Thread ID, Processor ID, Session ID (terminal-server session), Kernel time (kernel-mode, CPU time units), User time (user-mode, CPU time units), Processor time (kernel-mode, CPU ticks), Correlation ID and Relative correlation ID; XML view via **Details tab**.
+> Source: [[15-LO02c-Windows-Event-Log-Types-and-Entries]]
+>
+> [!question]- 1443 — Why monitor Windows event logs _(Mod 15 pp29–30)_?
+> They carry log-on failures, log tampering, failed file access; **warn of upcoming issues**, protect against unexpected disasters; reveal compromise attempts and unsanctioned config changes. Monitor/analyze to **identify network vulnerabilities, security breaches, and threat intruders** and protect against internal threats; most common way is **Windows Event Viewer**.
+> Source: [[15-LO02d-Monitoring-and-Analyzing-Windows-Logs]]
+>
+> [!question]- 1444 — What are the three steps to view events in Event Viewer _(Mod 15 p30)_?
+> Open via **Start** typing `Event Viewer` → click required log in **console tree** (list in **details pane**) → click an event for **description and header information** in the **Preview pane** (p28 prints the same three steps shorter).
+> Source: [[15-LO02d-Monitoring-and-Analyzing-Windows-Logs]]
+>
+> [!question]- 1445 — What does the Preview Pane show _(Mod 15 p30)_?
+> Log name (Windows log type) · Source (cause: individual, system, or program) · Event ID (event type) · Level (Error, Warning, Information, Success Audit, Failure Audit) · User (who logged on at the instance of the event) · Logged (timestamp); Task category and Computer continue on p31.
+> Source: [[15-LO02d-Monitoring-and-Analyzing-Windows-Logs]]
+>
+> [!question]- 1446 — Why is the security log the forensic core _(Mod 15 p29)_?
+> "**Mother of all logs in forensic terms**" — log-ons, log-offs, attempted connections, policy changes all reflected; but **security logging is turned off by default** and **needs group or local policy** to be useful; enable local/group audit policy at minimum per Table 15.4.
+> Source: [[15-LO02d-Monitoring-and-Analyzing-Windows-Logs]]
+>
+> [!question]- 1447 — How do you filter events in Event Viewer _(Mod 15 pp31–32)_?
+> **Filter** removes clutter, per-log properties, savable via **Create Custom View**; select log → **Filter Current Log** under **Action pane** → optional time period → levels **Critical, Warning, Verbose, Error, Information** (all if none) → IDs, sources, keywords, users, computers → **OK**; Find via **Find** + **Find Next** + **Close**.
+> Source: [[15-LO02e-Filtering-and-Examining-Event-Log-Entries]]
+>
+> [!question]- 1448 — What are the three Event Viewer entry types _(Mod 15 p34)_?
+> System (Windows components; driver installs etc.; view via **System** under **Windows logs**) · Application (apps/programs; view via **Application**) · Security (**mother of all logs**; view via **Security**). System examples: OS/hardware change, driver install, service pack, software/hardware install, start/stop services, shutdown/restart, log-on failures, machine-info change, print jobs.
+> Source: [[15-LO02e-Filtering-and-Examining-Event-Log-Entries]]
+>
+> [!question]- 1449 — What do application and security log records include _(Mod 15 pp34–35)_?
+> Application: software install/removal, virus confirmation/refutation, firewall startup/shutdown, hacking-attempt detection. Security: **log-ons, log-offs, attempted connections, policy changes**; security logging is **off by default**. Preview tail: Task category (security-log classification by event source) · Computer (computer name).
+> Source: [[15-LO02e-Filtering-and-Examining-Event-Log-Entries]]
+>
+> [!question]- 1450 — What five audit-policy actions are minimum _(Mod 15 p35)_?
+> Table 15.4: **Audit account log-on events · Audit account management · Audit log-on events · Audit policy change · Audit privilege use** — enable local (or group) policy for audit policy to support later investigations.
+> Source: [[15-LO02e-Filtering-and-Examining-Event-Log-Entries]]
+>
+> [!question]- 1451 — Where and how are Linux logs stored and accessed _(Mod 15 p37)_?
+> Record of any Linux activity (system, kernel, package managers, boot, Xorg, Apache, MySQL); troubleshooting/security-tracking aid; mostly **`/var/log`** and subdirectories in **plain ASCII**; many via **`syslogd`**, some apps write directly; change dir with **`cd`**; **only root** can view/access.
+> Source: [[15-LO03a-Linux-Logs-and-Log-Files]]
+>
+> [!question]- 1452 — What are the four Linux log categories _(Mod 15 p38)_?
+> **Application logs · Event logs · Service logs · System logs**; monitor them to **predict upcoming issues before they actually occur**; pp38–40 narrow to the critical files.
+> Source: [[15-LO03a-Linux-Logs-and-Log-Files]]
+>
+> [!question]- 1453 — What do messages, auth, kern, cron and mail logs record _(Mod 15 pp39–40)_?
+> `/var/log/messages` (or `/ vat/ log/ syslog` as printed): general/system info, first place when things go wrong · `/var/log/auth. log` or `/var/log/secure`: authentication, brute-force analysis · `/var/log/kern. log`: kernel, custom-kernel troubleshooting · `/var/log/cron. log`: Crond jobs · `/var/log/maillog` or `/var/log/mail . log`: postfix/smtpd/MailScanner, failed delivery, blocked spam.
+> Source: [[15-LO03a-Linux-Logs-and-Log-Files]]
+>
+> [!question]- 1454 — What do btmp, xferlog, faillog, lastlog and boot record _(Mod 15 pp39–40)_?
+> `/vat/ log/btmp`: **all unsuccessful logon attempts** · `/var/log/xferlog`: **FTP transfers** (filenames, user-initiated) · `/var/log/faillog`: failed logins (credential hacks, brute force) · `/var/log/lastlog`: each user's last logon (**binary**, read with **`lastlog`**) · `/var/log/boot. log` (via `/etc/ init. d/bootmisc. sh`): booting, downtime span; plus `/var/log/yum.log` (yum installs), `/var/log/httpd/` (`access _ log`, `error _ log` with client IP/ID and response status), `/var/log/utmp` or `/var/log/wtmp` (login state), `/var/log/dmesg` (kernel ring buffer), `/var/log/daemon.log/` (background services), `/var/log/mysqld. log` (`[mysqld]`/`[mysqld_safe]` start/run/stop).
+> Source: [[15-LO03a-Linux-Logs-and-Log-Files]]
+>
+> [!question]- 1455 — What is the Linux log format in Figure 15.11 _(Mod 15 p41)_?
+> Type of Log `crit` · Severity of Log (any severity) · Log File Location `/var/log/maillog`; "**All severity logs pertaining to mail are written to /var/log/maillog**" — a `syslog.conf` directive names type + severity and the file they go to.
+> Source: [[15-LO03b-Linux-Log-Format-and-Severity-Levels]]
+>
+> [!question]- 1456 — What are the syslog.conf selector and action fields _(Mod 15 p42)_?
+> Each line = **message selector + action field**; selector = log type + level combo: `*.info.none;news.none;authpriv.none;cron.none`, `kern. *`, `authpriv. *`, `mail. *` (`*` = all, e.g. `kern. *` = all kernel messages); action = log file location: `/dev/console`, `/var/log/messages`, `/var/log/secure`, `/var/log/maillog`. Examples: `kern. *`→`/dev/console`; `*.info...` (except mail, no private auth)→`/var/log/messages`; `authpriv. *` restricted; `mail. *`→`/var/log/secure` + `/var/log/maillog` as printed.
+> Source: [[15-LO03b-Linux-Log-Format-and-Severity-Levels]]
+>
+> [!question]- 1457 — What are the eight Linux severity levels and the table trap _(Mod 15 p43)_?
+> Levels **0–7**, highest severe at **0**, lowest at 7; printed Severity Value column carries only **1–7** with **no value for Emergency**, and the Level column only seven labels (eighth Debug prose-only): Emergency `.emer` (unusable) · Alert 1 `-alert` (immediate action) · Critical 2 `.crit` · Error 3 `.err` · **Waming** 4 `.warning` · Notice 5 `.notice` · Info 6 `.info` · Debug 7 `.debug`.
+> Source: [[15-LO03b-Linux-Log-Format-and-Severity-Levels]]
+>
+> [!question]- 1458 — What do prose Levels 0–7 mean _(Mod 15 p43)_?
+> 0 Emergency (unusable, imminent crash) · 1 Alert (immediate action, e.g. corrupted database) · 2 Critical (e.g. hardware error) · 3 Error · 4 Warning · 5 Notice (not error but needs attention) · 6 Information · 7 Debug (needed during debugging); logger keeps/discards per selector severity.
+> Source: [[15-LO03b-Linux-Log-Format-and-Severity-Levels]]
+>
+> [!question]- 1459 — What are the default line counts for tail and head _(Mod 15 pp44–45)_?
+> Both default to **10 lines**: `tail` shows the **last 10 lines** (`tail [n] [filename]` as printed; `tail [options] [filename (s) ]` in prose; `tail C -n] [filename]` for last n, `tail [ -c] [n] [filename]` for last n characters) · `head` shows the **first 10 lines** (`: head —n) [filename]` as printed; same n/c options); `cat` = **concatenate**, most important, reads/displays, combines two files, copies, `cat>newfilename` creates, `cat -n` line numbers, `cat -s` suppresses repeated blanks, `tac` reverses, `cat -E` highlights line ends.
+> Source: [[15-LO03c-Commands-to-Monitor-and-Analyze-Linux-Logs]]
+>
+> [!question]- 1460 — How do less and more differ _(Mod 15 pp45–46)_?
+> `less filename`: **one page (one screen) per time**, page-by-page not whole file (unlike editors loading fully to memory), thus faster · `more filename`: as much as the screen fits, scrollable, can **search text, strings, and regular expressions**.
+> Source: [[15-LO03c-Commands-to-Monitor-and-Analyze-Linux-Logs]]
+>
+> [!question]- 1461 — What is the grep syntax _(Mod 15 pp44–46)_?
+> **Searching a specific string in a file**: `grep "search_string" (filename)` (summary) / `grep "search string" [filename]` (prose); summary box: `cat [filename)`, `tail [n] [filename]`, `: head —n) [filename]`, `less [filename]`, `more`, `grep "search_string" (filename)` — all as printed.
+> Source: [[15-LO03c-Commands-to-Monitor-and-Analyze-Linux-Logs]]
+>
+> [!question]- 1462 — What do grep options do _(Mod 15 p46)_?
+> `-c` count of matching lines · `-h` matched lines but not filenames · `-i` ignore case · `-1` (as printed) file names' list · `-n` line numbers plus matched line · `-v` all lines without pattern · `-w` whole word; monitoring Linux logs **determines security issues before they significantly harm the system**.
+> Source: [[15-LO03c-Commands-to-Monitor-and-Analyze-Linux-Logs]]
+>
+> [!question]- 1463 — How are Mac logs collected, stored and viewed _(Mod 15 p48)_?
+> **Efficient APIs** collect from **all levels**; stored in a **centralized location** in **memory** or **on-disk data store**; **plain text**; viewed in **Mac Console app**; used to **diagnose/troubleshoot security issues** with apps and services.
+> Source: [[15-LO04a-Mac-Logs-and-Console]]
+>
+> [!question]- 1464 — What activities is Mac configured to log _(Mod 15 p48)_?
+> **Manually** configured: Application malfunctioning /failure, etc. · Installation, file creation/deletion · **user privileges escalation** · Troubleshooting events · Failed login attempts (prose order: malfunctioning/failure, privilege escalation, installation/file create-delete, troubleshooting, failed logins).
+> Source: [[15-LO04a-Mac-Logs-and-Console]]
+>
+> [!question]- 1465 — How do you launch the Console app _(Mod 15 p48)_?
+> `Finder` → `Applications` → `Utilities` → `Console`, or Spotlight **Command + Space**, type `Console`, **Enter**; the app is **similar to Windows Event Viewer**.
+> Source: [[15-LO04a-Mac-Logs-and-Console]]
+>
+> [!question]- 1466 — What does the Console show by default _(Mod 15 p49)_?
+> "**A list of all Console messages is showed by default**" (as printed); click **Errors and Faults** tab for errors; use the **search box** for a particular error message.
+> Source: [[15-LO04a-Mac-Logs-and-Console]]
+>
+> [!question]- 1467 — What are the five Mac log types _(Mod 15 pp50–51)_?
+> Security (`secure.log` in **`/private/var/log`**: login/logout, attempted/successful unauthorized) · Firewall (`appfirewall.log` at `/ private/var/log/appfirewall . log` via **`appfwloggerd`**: unacceptable-to-firewall traffic, in/out management, abnormal/repeated port attempts) · User-specific (**folder never named**; per-user only; privacy-safe but hard to troubleshoot) · Command line (`. bash history` in **root home**; per-shell; **150 commands**, old expire; `history` shows, `history -c` clears) · Shared application (`/Library`: CrashReporter, server/directory-service logs). Found via `/App1ications/Uti1ities` in Console (as printed).
+> Source: [[15-LO04b-Mac-Types-of-Logs-and-Log-Files]]
+>
+> [!question]- 1468 — What printer and system logs are in the Mac inventory _(Mod 15 p52)_?
+> `crashreporter.log` (`/var/log/crashreporter.log`: usage + crashes) · `access _ log` (`/var/log/cups/access_log`: printer access) · `error_log` (`/var/log/cups/error_log`: printer connection/errors) · `daily.out` (`/var/log/daily.out`: network-interface history) · `log.nmbd` (`/var/log/samba/log.nmbd`: Samba/Windows-machine connections) — CUPS pair are **printer** logs, not web logs.
+> Source: [[15-LO04b-Mac-Types-of-Logs-and-Log-Files]]
+>
+> [!question]- 1469 — What user and chat logs are in the Mac inventory _(Mod 15 pp52–53)_?
+> `-/Library/Logs` ("Logs": home users + app-specific, plain text) · `DiscRecording.log` (`w/Library/Logs/DiscRecording.log`: home-user CD/DVD burning) · `DiskUtiIity.Iog` (`N/Library/Logs/DiskUtility.Iog`: partitioning, CD/DVD, ISO/DMG mount/unmount, permission repair; **cannot be rotated or cleared regularly**, aiding abnormal-behavior detection) · `iChatConnectionErrors` (`/Library/Logs/iChatConnectionErrors`: username, IP, date/time) · `Sync` (`(Library/Logs/Sync`: synced Macs/mobiles incl. cell phones/iPods with date/time).
+> Source: [[15-LO04b-Mac-Types-of-Logs-and-Log-Files]]
+>
+> [!question]- 1470 — What do CUPS AccessLog and ErrorLog set _(Mod 15 pp52–53)_?
+> Set the access/error log filename; non-absolute names are **relative to `ServerRoot`**; access saved in **common log format** for CUPS reports; server name via `8s` as `AccessLog /var/log/cups/access log-8s`; `ErrorLog can /var/log/cups/error log-8s` (stray `can` as printed); `syslog` instead of a file sends to system log (`AccessLog syslog` / `ErrorLog syslog`); defaults `/var/log/cups/access log` and `/var/log/cups/error log`.
+> Source: [[15-LO04b-Mac-Types-of-Logs-and-Log-Files]]
+>
+> [!question]- 1471 — What is the Mac Unix log line format _(Mod 15 p54)_?
+> **Standard Unix log format**, mostly **plaintext**; only three parts named: date/time in **DD HH SS** form (e.g. `May 14 18:20:12`), **host service** (e.g. `cannondale mach kernel`), **message** (e.g. `00800000`, display/Ethernet driver events). Syntax printed twice, both damaged: callout `` `Syntax: MW DD Host Service: Message` `` and body `` `ION DD HH:bN: ss Host Service: Message` `` — neither repaired.
+> Source: [[15-LO04c-Mac-Log-Format-and-System-Logs]]
+>
+> [!question]- 1472 — What three Mac log files exist by scope _(Mod 15 pp55–56)_?
+> System (`system.log`: whole-system DNS/networking/Adium; `/private/var/log/system.log` / `/private/var/log/system. log`) · User (user login/logout; `/Users/Mac/Library/Logs`) · Application (installed apps e.g. web server, Windows sharing, firewall; `/Users/Mac/Library/App1ication` as printed). "**Important things to notice are timestamps and message.**"
+> Source: [[15-LO04c-Mac-Log-Format-and-System-Logs]]
+>
+> [!question]- 1473 — How do you open a log folder with Go to Folder _(Mod 15 pp55–57)_?
+> "**Most useful Mac OS keyboard shortcut**"; two ways: **Finder** → **Go** menu → **Go to Folder**, or desktop **`Cmd+Shift+G`**; example: type `` `/private/var` `` to find web server, Windows sharing, firewall (`apache, samba, ipfw`) application logs.
+> Source: [[15-LO04c-Mac-Log-Format-and-System-Logs]]
+>
+> [!question]- 1474 — What are the two Mac log search methods _(Mod 15 pp57–58)_?
+> **Edit menu → Find** (provide extra parameters to refine) and **File menu → New Database Search** (customized filter in dialog); granular search by **`sender-process name`, `facility-sending system destination`, `level-severity`** (callout: `` `Edit->Find` ``, `` `File->New Database Search` ``).
+> Source: [[15-LO04c-Mac-Log-Format-and-System-Logs]]
+>
+> [!question]- 1475 — What is firewall logging and why enable it _(Mod 15 p60)_?
+> "**Capability of a firewall to log users' activities in a network**"; "**most important source for determining post attack scenarios**" because **attackers leave footprints**; captures **allow** events for threats; stores source/destination IPs, ports, protocols (some proprietary, some polled via **SNMP**); confirms rules work, else **debugged**; multiple levels handle most critical first. Recorded only when enabled.
+> Source: [[15-LO05a-Firewall-Logging-and-Analysis-Steps]]
+>
+> [!question]- 1476 — What are firewall logging levels 0–7 _(Mod 15 p60)_?
+> Level **0 greatest**, 7 least; printed order: **emergency, alert, critical, error, warning, notification, informational, debugging** (0 emergency … 7 debugging; page prints letter O for 0; no per-name numbers printed, order only).
+> Source: [[15-LO05a-Firewall-Logging-and-Analysis-Steps]]
+>
+> [!question]- 1477 — What seven items do you look for in a firewall log _(Mod 15 p61)_?
+> Rejected/dropped IPs · unsuccessful firewall/critical-server logins · suspicious outbound from internal servers · **source-routed packets** · ports with no application running · firewall stop/start/restart · firewall config change. Work order: set levels + maintenance policy, then determine detection items; **IP addresses** (systems) and **port numbers** (apps/services) are the connection keys; normalize first (convert to standard format).
+> Source: [[15-LO05a-Firewall-Logging-and-Analysis-Steps]]
+>
+> [!question]- 1478 — What are the five firewall log analysis steps _(Mod 15 pp61–62)_?
+> Find log-file location on local computer/server · identify/analyze fields for evidence · interpret incoming/outgoing connections from sources · find **source IP, destination IP, and firewall action** on incoming connection · locate source IP via **IP tracking tools**; plus lone bullet "**Tear down in connection**" as printed with no placement.
+> Source: [[15-LO05a-Firewall-Logging-and-Analysis-Steps]]
+>
+> [!question]- 1479 — What are the limits and defaults of Windows Defender Firewall logging _(Mod 15 pp63–65)_?
+> **Disabled by default**; logs all network/system activity if enabled (every attacker breakthrough entry recorded); **plain-text**, viewable in **Notepad**; identifies suspicious/malicious activity but **not the source of activity** nor network security status; enable via `wf.msc` → **Windows Defender Firewall with Advanced Security** → **Properties** (right pane) → **Private Profile** → **Customize** under **Logging** (location, max size, dropped/successful/both) → repeat **Public Profile** → **Monitoring** (left) → **File Name** path; stores up to **4 MB** (size affects **performance**); enable only when actively troubleshooting.
+> Source: [[15-LO05b-Windows-Defender-Firewall-Logs]]
+>
+> [!question]- 1480 — What are the two printed default Windows firewall log locations _(Mod 15 pp63–65)_?
+> p63 callout: `` `C:\Firewall` `` with file **`pfirewall.log`** · p65 prose: `` `\LogFi1es\Firewa11\Pfirewa11. log` `` — pages contradict; neither corrected.
+> Source: [[15-LO05b-Windows-Defender-Firewall-Logs]]
+>
+> [!question]- 1481 — What is the header/body split and empty-field marker _(Mod 15 p66)_?
+> **Header** = static (log version, available fields); **body** = compiled traffic data, **dynamic**, appended at bottom; "**If there is no value for a field, it is represented by `(-)`.**" Analyze only part of the info for malicious activity/debugging; open in text editor on suspicion.
+> Source: [[15-LO05b-Windows-Defender-Firewall-Logs]]
+>
+> [!question]- 1482 — What are the Windows firewall log fields and actions _(Mod 15 pp67–68)_?
+> `#Version: 1.5`, `#Software: Microsoft Windows Firewall`, `#Time Format: Local`, `#Fields: date time action protocol src-ip dst-ip src-port dst-port size tcpflags tcpsyn tcpack tcpwin icmptype icmpcode info path` (**18 fields**); Date `YYYY-MM-DD` (e.g. `2015-06-19`), Time `HH:MM:SS` 24-h (e.g. `22:00:32`), Protocol TCP/UDP/ICMP, `192.168.2.48`/`134.170.108.224`, ports `56092`/`443`, Tcpflags/syn/ack/win, Icmptype/code (Type/Code fields), Info (e.g. `SEND`), Path (direction). Actions: `OPEN` · `CLOSE` · `DROP` · `OPEN-INBOUND` · `INFO-EVENTS-LOST`.
+> Source: [[15-LO05b-Windows-Defender-Firewall-Logs]]
+>
+> [!question]- 1483 — Where is the Mac firewall log and how is it enabled _(Mod 15 pp69–71)_?
+> Built-in firewall shows apps/services attempting Mac connections; records **only if enabled** (logging should be enabled). Location `` `/private/var/log/` `` (p69) vs searched `` `/var/log` `` (p71); file **`appfirewall.log`** (open recent/most recent). Enable: Apple menu → **System Preferences** → **Security & Privacy** (Personal) → **Firewall** tab → lock + admin credentials → **Turn On Firewall** (green light, **Firewall: On**) → **Advanced...** (right bottom) → check **Automatically allow signed software** + **Enable stealth mode** → OK. View: enable firewall → Console via `Applications -> Utilities` → sidebar `` `/var/log` `` disclosure → `appfirewall.log` → right panel.
+> Source: [[15-LO05c-Mac-OS-X-Firewall-Logs]]
+>
+> [!question]- 1484 — What is the Mac firewall log format _(Mod 15 p72)_?
+> `MONTH DAY TIME HOST IPFW CODE ACTION PROTOCOL SOURCE DEST IN OUT RESULT` + `HOSTNAME SERVER PORT METHOD DIRECTION`; sample value `02 08:43:31` (position not given); complete lines: `` `Apr 02 08:14:20 mainserver servermgrd[58]: config: Notice: Flushed IPv6 rules` `` and `` `Apr 02 08:14:19 mainserver servermgrd[58]: config: Notice: Enabled firewall` ``.
+> Source: [[15-LO05c-Mac-OS-X-Firewall-Logs]]
+>
+> [!question]- 1485 — What actions and tokens appear in Mac firewall samples _(Mod 15 p72)_?
+> Actions **`Deny`**/**`Accept`** (table: `accept`/`deny`); hosts `mainserver`, processes `servermgrd[58]`, `ipfw[1940]`, `servermgr ipfilter: ipfw`; `TCP`; `in`, `via en1` (p72)/`via enl` (p71); addresses `10.2.10.3:49232`, `10.0.1.201:1040`, `10.2.0.1:721`, `192.168.10.11:515`, `548 in`.
+> Source: [[15-LO05c-Mac-OS-X-Firewall-Logs]]
+>
+> [!question]- 1486 — What does Table 15.7 say about Mac firewall fields _(Mod 15 p72)_?
+> MONTH (month) · DAY · TIME · HOST (hostname) · IPFW CODE · ACTION (accept/deny) · PROTOCOL · SOURCE (source IP) · DEST (destination IP) · IN OUT (direction) · RESULT (**`0K`** granted as printed, **`ERR!`** denied) · HOSTNAME (described as client IP for a port) · SERVER + PORT (port attempted) · METHOD (**TCP**, UDP, ICMP) · DIRECTION (incoming/outgoing); IN OUT vs DIRECTION and PROTOCOL vs METHOD both duplicate direction/protocol with no rule given (16 names vs 15 descriptions).
+> Source: [[15-LO05c-Mac-OS-X-Firewall-Logs]]
+>
+> [!question]- 1487 — What is iptables and where do its logs go _(Mod 15 p73)_?
+> **Rule-based inbuilt Linux firewall**; allows/drops/modifies traffic via table→chain→rule matching to a **TARGET** (`Accept` pass · `Drop` block · `Return` to calling chain; else default); default entries in **`/var/log/messages`** via **`syslogd`** (slide: messages to `/var/log/messages` through syslogd daemon).
+> Source: [[15-LO05d-Linux-iptables-Logs]]
+>
+> [!question]- 1488 — What tokens appear in the iptables sample lines _(Mod 15 pp73–74)_?
+> `localhost kernel:` lines with `SRC=69.89.31.85`/`206.253.165.168`, `DST=206.253.165.112`/`206.253.165.255`, `PROTO=TCP` (`SPT`/`DPT` `57361→5432`, `57972→873`, `58049→873`, `57438→5432`) and `PROTO=UDP` (`137→137`, `17500→17500`), `TTL=57`/`128`, `sep 19`; format line e.g. `` `June 16 21:12:56 FW2 kernel : RULE 08a—ACCEEPT IN—ethi OUT ethO SRC= 192.42.93.30 DST= 192.168.1.102 LEN=96 TOS=OxOO PREC=OxOO TTL=64 ID=61495 DF PROTO=UDP SPT=53981 DPT=127 WINDOW=32767 RES=OxOO SYN URGP=O` `` (`OUT` never prints `=`; `IN=eth1` vs `IN—ethi` disagree).
+> Source: [[15-LO05d-Linux-iptables-Logs]]
+>
+> [!question]- 1489 — How do you enable iptables logging _(Mod 15 p74)_?
+> `` `$ iptables -A INPUT -j LOG` `` · source-scoped `` `$ iptables -A INPUT -s 192.168.10.0/24 -j LOG` `` · level flag printed as `` `$ iptables -A INPUT -s 192.168.10.0/24 -j LOG --10g-1eve1 4` `` · prefix `` `$ iptables -A INPUT -s 192.168.10.0/24 -j LOG --log-prefix SUSPECT` `` for searching large files. Table 15.8 Field column (Time, Machine Name, Action, IN, OUT, SRC-IP, DEST-IP, LEN; Field, PREC, FRAG, PROTO, SPT, WINDOW, RES, SYN, URGP) vs 10+11 descriptions — listed separately, not paired; `DPT` in line but not in field column.
+> Source: [[15-LO05d-Linux-iptables-Logs]]
+>
+> [!question]- 1490 — How do you view iptables logs _(Mod 15 p75)_?
+> Monitors in/out traffic and **hit counts per IP**; `tail` for recent (step 2 printed incomplete); Ubuntu/Debian `` `$ tailf /var/log/kern.log` `` · CentOS/RHEL/Fedora `` `# tailf /var/log/messages` `` (varies by distribution); recent five: `` `$ tail -5 /var/log/messages` `` (figure: Recent 5 entries; Timestamp, Location, Action, Source IP, Destination IP).
+> Source: [[15-LO05d-Linux-iptables-Logs]]
+>
+> [!question]- 1491 — What are the four Cisco ASA log fields _(Mod 15 pp76–78)_?
+> **Timestamp** (firewall clock; default **no time stamp**; always add timestamps for real-time debugging) · **Device ID** (hostname/interface IP/arbitrary string; matters with multiple firewalls; default none) · **Message ID** (starts **`%ASA`, `%PIX`, or `%FWSM`** + severity + six-digit number) · **Message Text** (event/condition); e.g. `` `May 06 2018 21:27:27 asa 1: * ASA -5 - 11008 : User 'enable 15' executed the 'configure tem' comand o` `` as printed.
+> Source: [[15-LO05e-Cisco-ASA-Firewall-Logs]]
+>
+> [!question]- 1492 — What are ASA logging levels and the exam instruction _(Mod 15 pp76–77)_?
+> **0—7**, cumulative (level 7 console gets 7 **plus** emergencies through informational); Emergencies (`O` as printed, unusable) · Alerts 1 (immediate: failover, power, RIP, address verification) · Critical 2 (denied packets/connections, URL-filter problems) · Errors 3 (auth/authz, CPU/memory, tunnel, routing/NTP) · Warnings 4 (fragmentation, invalid addresses, auto-update, CSPF) · Notifications 5 (user commands, config, session activity) · Informational 6 (log, ACL auth, startup, fixup) · Debugging 7 (debug, TCP/UDP handling). **Always configure critical** — level 7 volume **disturbs CPU and memory**.
+> Source: [[15-LO05e-Cisco-ASA-Firewall-Logs]]
+>
+> [!question]- 1493 — What are the two ASA log formats _(Mod 15 pp77–78)_?
+> **Default** (timestamp + device ID + message ID + text above) and **EMBLEM** (for **CiscoWorks Resource Manager Essentials syslog analyzer**; similar to IOS syslog; **UDP syslog servers only**).
+> Source: [[15-LO05e-Cisco-ASA-Firewall-Logs]]
+>
+> [!question]- 1494 — How do you read and filter ASA logs _(Mod 15 pp80–83)_?
+> `show logging` (state of syslog/console/event/monitor logging; with **Deny, Outside, Suspicious** keywords); **`grep` + regex yields optimum results** and fetches a severity (e.g. `` `Firewall# show logging I grep ASA—4` `` shows severity 4: `192.168.208.63` denied to `192.168.150.77`, source ports 46857/46863/46867, dest 256/389/443, `%ASA-4-106023`); filter keywords: `include`/`grep` match, `exclude`/`grep -v` exclude, `begin` from matching line. Sample `show logging`: enabled globally, timestamps off, console off, monitor on, Facility 20, buffer informational, trap on, Device ID off, mail on. Analyze first what matters: accepted/rejected connections, user activity, bandwidth, NAT audit trail, IDS, protocol use, cut-through proxy, denied-rule rates. Mnemonics e.g. `106001`/`106002`/`106006`/`106007` sev 2, `106010`/`106012`/`106013`/`106014` sev 3, `106015` sev 6 … `106100` sev 4, `710003` sev 3 with **no description printed**; CLI modes: user EXEC (`hostname>`), privileged EXEC (`enable` + password, `hostname#`), global config (`configure terminal`, `hostname (config) #`), command-specific (`hostname (config—if) #`).
+> Source: [[15-LO05e-Cisco-ASA-Firewall-Logs]]
+>
+> [!question]- 1495 — How does Check Point inspect packets _(Mod 15 p84)_?
+> Examines **all communication layers** (not just headers like traditional firewalls) via **stateful inspection** in a kernel **inspection module** operating **below the network layer** (saves OS time/resources); checks IPs/ports vs policy, then source validity against state/context in **dynamic static tables**; mismatch → **real-time alerts**; blocked if dangerous until policy-compliant.
+> Source: [[15-LO05f-Check-Point-Firewall-Logs]]
+>
+> [!question]- 1496 — How do you display Check Point logs in real time _(Mod 15 pp85–87)_?
+> "**`fw log` command is used to display the log file content**"; real time: **`fw log -ftn`** (securely sends logs over network); syntax printed twice, both scrambled (p85 `` `log ( —f [ —c action] ...` `` / p87 `` `fw log [ —f [ e endtime] ...` ``); default file **`SFWDIR/Iog/fw.Iog`** (as printed) under install dir **`$FwDIR`**; view via GUI or CLI over **SSH/console over TCP/IP**; output per line `` `<interface dir and name> [alert] [field name: field value;]` `` (p87 adds `` `< time>` ``); figure parts: Time, Action, Origin, Interface directory and name, Alert.
+> Source: [[15-LO05f-Check-Point-Firewall-Logs]]
+>
+> [!question]- 1497 — What is the difference between traffic and audit logs _(Mod 15 p86)_?
+> **Traffic** (most useful; allowed/dropped/denied; accept vs deny/drop alerts with troubleshooting **rule**; detects port scans, host sweeps, probing) vs **Audit** (**all GUI changes**: user, machine name, component, auth technique, change; general auditing, compromised-firewall analysis). Actions: **accept, drop, reject, authorize, deauthorize, encrypt, decrypt**; fields: `date` (`MMM DD, YYYY`, e.g. `Feb 16, 2018`), `time` (`HH:MM:SS`, e.g. `15:22:00`), `origin` (writing firewall), `interface dir`/`interface name`, `alert`, field name/value.
+> Source: [[15-LO05f-Check-Point-Firewall-Logs]]
+>
+> [!question]- 1498 — What are the three unification modes and five Check Point challenges _(Mod 15 pp86–88)_?
+> `initial` (default, **complete unification**; use `semi` for updates) · `semi` (**step-by-step**, unifies each record with prior same-id records) · `raw` (**no unification**). Challenges: not readable format · GUI viewer has **no real-time view** (check checkpoint devices) · not for batch analysis · limited to filtering/sorting. Parameter/description columns on pp85–86 mismatch (5 names vs 10 descs; 4 vs 7) so listed separately.
+> Source: [[15-LO05f-Check-Point-Firewall-Logs]]
+>
+> [!question]- 1499 — What are Cisco router log limits and conditions _(Mod 15 p90)_?
+> **No numerical identifiers**; **max 80 characters**; begin with **`%`** plus optional **sequence number** (only if **`service sequence-numbers`** set) or **timestamp** (only if **`service timestamps log [datetime I log]`** set, as printed). Format `` `seq no: timestamp: : description` `` (double colon as printed).
+> Source: [[15-LO06a-Cisco-Router-Log-Messages-and-Severity]]
+>
+> [!question]- 1500 — What do the router format fields mean _(Mod 15 p90)_?
+> `seq no` (stamps with sequence number) · `timestamp` (`mm/dd hh:mm:ss`, `hh:mm:ss` short uptime, `d h` long uptime) · `facility` (hardware device, protocol, or module; source and reason) · `severity` (**O to 7**) · `MNEMONIC` (unique text string) · `description` (event detail).
+> Source: [[15-LO06a-Cisco-Router-Log-Messages-and-Severity]]
+>
+> [!question]- 1501 — What does Table 15.11 print for router mnemonics _(Mod 15 pp90–91)_?
+> Ten rows incl. duplicates (`IPACCESLOGP`/`IPACCESLOGDP`/`IPACCESLOGNP` repeat as rows 8–10): `%SEC-6-IPACCESLOGDP`, `%SEC-6-IPACCESLOGNP`, `%SEC-6-IPACCESLOGP` (TCP OR UDP), `%SEC-6-IPACCESLOGRL` (some logs missed: rate-limited / no buffers), `%SEC-6-IPACCESLOGRP`, `%SEC-6-IPACCESLOGS`, `%SEC-4-TOOMANY` (carries severity **6** though mnemonic reads 4), all "**packet matching the log criteria for the given access list has been detected**" (`%SEC` facility, digit severity, trailing mnemonic).
+> Source: [[15-LO06a-Cisco-Router-Log-Messages-and-Severity]]
+>
+> [!question]- 1502 — What are Cisco router severity levels 0–7 _(Mod 15 pp91–92)_?
+> **Eight levels O to 7** with number, name, UNIX syslog definition; "**lower number = higher severity and vice-versa**": `o`/Emergencies/`LOG EMERG` (unusable) · 1 Alerts/`LOG ALERT` (immediate) · 2 Critical/`LOG CRIT` · 3 Errors/`LOG ERR` · 4 Warnings/`LOG WARNING` · 5 Notifications/`LOG NOTICE` (plural; interface up/down, restart) · 6 Informational/`LOG INFO` (reload requests, low stack) · 7 Debugging/`LOG DEBUG` (debug-command output); warning–emergency band = error messages (software/hardware malfunctions).
+> Source: [[15-LO06a-Cisco-Router-Log-Messages-and-Severity]]
+>
+> [!question]- 1503 — What does show logging investigate _(Mod 15 pp93–94)_?
+> State of **syslog error, console logging, event logging, host addresses**; levels set and where output sent; syslog on = saved to **UNIX host/syslog server**; console on states level else disabled; minimum severity to monitor; SNMP state/retransmission; minimum severity to syslog server; shows SNMP config/protocol activity and **standard system logging buffer** (if **`logging buffered`** set; sizes stored error/debug count). Use with **`include`** for keywords.
+> Source: [[15-LO06b-Monitoring-and-Analyzing-Router-Logs]]
+>
+> [!question]- 1504 — What does the sample show logging output prove _(Mod 15 p94)_?
+> `` `Router# show logging / Syslog logging: enabled / Console logging: disabled / Monitor logging: level debugging, 266 messages logged / Trap logging: level informational, 266 messages logged / Logging to 192.180.2.238 / SNMP logging: disabled, retransmission after 30 seconds / 0 messages logged` ``.
+> Source: [[15-LO06b-Monitoring-and-Analyzing-Router-Logs]]
+>
+> [!question]- 1505 — What is Monitor vs Trap logging _(Mod 15 pp94–95)_?
+> Table 15.13: Syslog (saved to UNIX/syslog server if enabled) · Console (level or disabled) · **Monitor = minimum severity to be monitored** · **Trap = minimum severity to be sent to the syslog server** · SNMP (enabled or not, logged or not, retransmission interval).
+> Source: [[15-LO06b-Monitoring-and-Analyzing-Router-Logs]]
+>
+> [!question]- 1506 — What does show logging history report _(Mod 15 p95)_?
+> `` `Router# show logging history / Syslog History Table: 1 maximum table entry, / saving level notifications or higher / O messages ignored, O dropped, 15 table entries flushed, / SNMP notifications not enabled / entry number 16: SYS-5—CONFIG I Configured from console by console / timestamp: 1110` `` (as printed); Maximum entry (count storable; via **`logging history size`**) · Saving level (level storable; same command as printed) · Ignored (not stored).
+> Source: [[15-LO06b-Monitoring-and-Analyzing-Router-Logs]]
+>
+> [!question]- 1507 — What do Dropped, Flushed and SNMP fields mean _(Mod 15 p96)_?
+> **Dropped** (not processed: insufficient resources) vs **Ignored** (not stored) vs **Table entries flushed** (deleted to store new) · **SNMP notifications** (syslog traps to SNMP server; enable with **`snmp-server`**) · **Entry number** (messages in history table) · **`SYS-5-CONFIG`** (Cisco IOS syslog message) · **Timestamp** (generation time).
+> Source: [[15-LO06c-Router-Logging-Configuration-and-Sample-Log]]
+>
+> [!question]- 1508 — What does show logging | include 185 do _(Mod 15 p96)_?
+> `` `Router# show logging | include 185` `` "**displays all the logs generated by the access control list 185**" (interleaved figure with `%SEC-6-1PACCESSLOGP` records, sequence numbers `002092`–`002097`, `denied tcp`, `1 packet`, `(FastEthernetO/1 0007 .8580 . 9edd)` as printed).
+> Source: [[15-LO06c-Router-Logging-Configuration-and-Sample-Log]]
+>
+> [!question]- 1509 — How do you filter by source IP and port with include _(Mod 15 p97)_?
+> `` `Router#show logging | include 172.16.1.92 . * \ (137\)` `` "**will display all the log entries with source IP `172.16.1.92` and destination port `137`**" (regular expressions identify intrusions).
+> Source: [[15-LO06c-Router-Logging-Configuration-and-Sample-Log]]
+>
+> [!question]- 1510 — How do you read a denied router log line _(Mod 15 pp96–97)_?
+> E.g. `` `002064: Mar 30 2018 11:41:20. 659 EDT: denied tcp 172.16.1.92 (17587) -> 192.168.` `` (destination **truncated** as printed): sequence `002064` · timestamp · `denied` · `tcp` · source `172.16.1.92` · source port `17587` (also `58564`, `17755` on sibling lines; sequences `002064`, `002065` (no time), `002067`; 002066 missing).
+> Source: [[15-LO06c-Router-Logging-Configuration-and-Sample-Log]]
+>
+> [!question]- 1511 — Why do IIS logs matter _(Mod 15 p99)_?
+> IIS hosts anything on the Web for Windows server; logs hold user IP, sites visited with date/time, who viewed what when, web-app activity; analysis yields **demographic information and usage**; providers **organize services by regions, time frames, or IP ranges** via data usage; **log filters** isolate required data.
+> Source: [[15-LO07a-IIS-Logs-and-Fields]]
+>
+> [!question]- 1512 — What are the IIS default log locations _(Mod 15 p99)_?
+> 6.0 `` `%system32%\LogFiles\W3SVCN` `` · 7.0 `` `%SystemDrive%\Inetpub\Logs\LogFiles\w3svcN` `` · 8.0 `` `%SystemDrive%\inetpub\logs\LogFiles` `` · 10.0 `` `%SystemDrive%\inetpub\logs\LogFiles` `` (6.0/7.0 append `W3SVC` instance; 8.0/10.0 share one path; three case variants). If elsewhere: open **IIS Manager** → double-click **`Logging`** (middle, `IIS`) → **`Directory`** field → folders like **`W3SVC1`, `W3SVC2`**.
+> Source: [[15-LO07a-IIS-Logs-and-Fields]]
+>
+> [!question]- 1513 — How do the three IIS formats differ _(Mod 15 pp100–101)_?
+> **W3C Extended** (customizable per-request properties) · **IIS** (fixed) · **NCSA Common** (fixed); all **ASCII**; NCSA/IIS data fixed per request, W3C selectable; time zones split mid-sentence p100–101: **W3C uses UTC, others use local time**. Discriminator: W3C = UTC + selectable; IIS/NCSA = local + fixed.
+> Source: [[15-LO07a-IIS-Logs-and-Fields]]
+>
+> [!question]- 1514 — What is the W3C Extended format and its first fields _(Mod 15 p101)_?
+> **Customizable ASCII, space-separated**, drop unwanted fields to limit size, **UTC**; sample `` `#Software: Internet Information Services 10.0 / #Version: 1.0 / #Date: 2019-05-02 / #Fields: time c-ip cs-method cs-uri-stem sc-status cs-version / 17:42:15 172.16.255.255 GET /default.htm 200 HTTP/1.0` ``; p101 rows: `date` (correlation), `time` UTC (correlation, time zone), `c-ip` (user/proxy), `cs-username` (compromised passwords), `s-sitename` W3SVC instance (verify site if moved), `s-computername` Windows hostname (verify server if moved), `s-ip` receiving IP (verify IP/server move).
+> Source: [[15-LO07a-IIS-Logs-and-Fields]]
+>
+> [!question]- 1515 — What are the p102 W3C field uses _(Mod 15 p102)_?
+> `s-port` (verify port cross-log) · `cs-method` (script/executable abuse) · `cs-uri-stem` (attack vectors) · `cs-uri-query` (malicious injection) · `sc-status` (CGI scans, SQL/other injection, intrusions) · `sc-win32-status` (script abuse) · `sc-bytes`/`cs-bytes`/`time-taken` ms (unusual single-script traffic) · `cs-version` (old scripts/browsers) · `cs-host` (IP vs hostname browsing) · `cs(User-Agent)` (users/attack scripts) · `cs(Cookie)` (users) · `cs(Referer)` (attack source, search-engine probing). Parenthesized trio `cs(User-Agent)`, `cs(Cookie)`, `cs(Referer)` vs hyphenated rest; `sc-bytes` = to client, `cs-bytes` = from client.
+> Source: [[15-LO07b-IIS-Field-Tables-and-Request-Types]]
+>
+> [!question]- 1516 — What is the IIS log file format _(Mod 15 p103)_?
+> **Fixed ASCII**, more info than NCSA (client IP, user, date/time, service/instance, status codes, server name/IP, request type, bytes both ways, target); **comma-separated**, **local time**; e.g. `` `192.168.100.150, 03/6/11, 8:45:30, W3SVC2, SERVER, 172.15.10.30, 4210, 125, 3524, 100, 0, GET, /dollerlogo.gif, -` ``; Table 15.16: `192.168.100.150` client IP · Username empty = anonymous · `03/06/2011` (June 03, 2011) · `8:45:30` (8:45 A.M.) · `W3SVC2` (website instance 2) · `SERVER` · `172.15.10.30` · `4210` (4,210 ms) · `125` client→server · `3524` server→client · `100` fulfilled · `GET` · `/dollerlogo.gif` (DeptLogo.gif) · Parameters empty = none.
+> Source: [[15-LO07b-IIS-Field-Tables-and-Request-Types]]
+>
+> [!question]- 1517 — What is the NCSA Common format _(Mod 15 p104)_?
+> Like IIS: **fixed ASCII**, but for **websites and not for FTP sites**; records remote hostname, username, date, time, request type, HTTP status, server bytes sent; **space-separated**, **local time**; e.g. `` `13.45 - Microsoft\fred [08/Apr/2001:17:39:04 -0800] "GET /scripts/iisadmin/ism.dll?http/serv HTTP/1.0" 200 3401` ``. Side-by-side: W3C yes/space/UTC; IIS no/comma/local; NCSA no/space/local (websites only).
+> Source: [[15-LO07b-IIS-Field-Tables-and-Request-Types]]
+>
+> [!question]- 1518 — What are the IIS direction and format traps _(Mod 15 pp103–104)_?
+> **Client bytes sent** 125 = **client→server**, **Server bytes sent** 3524 = **server→client** (name tells measuring endpoint); Table 15.16 Username and Windows-status `Appear as` cells are **empty** as printed; date `03/06/2011` vs line `03/6/11` both kept; NCSA URI token `a=10` as read.
+> Source: [[15-LO07b-IIS-Field-Tables-and-Request-Types]]
+>
+> [!question]- 1519 — What are the seven IIS analysis steps _(Mod 15 pp105–106)_?
+> Open in text editor (six digits = day/month/year, e.g. `ex011012.log`) · trace **`#Fields:`** for column values · date/time + **`sitename`/`computername`** for when/which server · **`c-ip`** for who · **`cs-method`** (post/get) + **`cs-uri-stem`/`cs-uri-query`** for resource · **`sc-status`** for **server capability in responding** · **`cs(User-Agent)`** for browser. Logs created per request appearance; file `u_ex180405.log` under `C:\inetpub\logs\LogFiles\W3SVC1\` in capture.
+> Source: [[15-LO07c-Monitoring-and-Analyzing-IIS-Log-Files]]
+>
+> [!question]- 1520 — What does the Figure 15.31 W3C header list _(Mod 15 p106)_?
+> `` `#Software: Microsoft Internet Information Services 10.0 / #Version: 1.0 / #Date: 2018-04-05 12:43:23 / #Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken` ``; first record `` `2018-04-05 12:43:58 195.129.104.112 GET /ECWebsite - 80 - 213.69.168.60 Mozilla/5.0 ... Edge/15.15063 - 301 0 0 1076` `` (`s-ip` 195.129.104.112, `c-ip` 213.69.168.60, query `-`, user-agent wraps one logical field). Callouts: Timestamp, Server IP, Client IP, `sc-status`, `cs-method` GET, server port.
+> Source: [[15-LO07c-Monitoring-and-Analyzing-IIS-Log-Files]]
+>
+> [!question]- 1521 — What 301/403 pattern does the IIS capture show _(Mod 15 p106)_?
+> Same `s-ip`/`cs-method`/`cs-uri-stem`/`c-ip`/agent answered twice: **301** then **403** (times 12:43:58 and 12:44:07, `cs(Referer)` `-`, `sc-substatus` **14** on 403s, `time-taken` 1076/30/159/0) — server redirecting then refusing, exactly what `sc-status` (server capability) catches.
+> Source: [[15-LO07c-Monitoring-and-Analyzing-IIS-Log-Files]]
+>
+> [!question]- 1522 — How is time-taken measured _(Mod 15 p107)_?
+> Initialized at **first byte received by HTTP server API before parsing**; stopped at **last transmission** complete; in **milliseconds** (p102); **first site request slowest** because API must **open the log file** — not an attack.
+> Source: [[15-LO07c-Monitoring-and-Analyzing-IIS-Log-Files]]
+>
+> [!question]- 1523 — What are the two Apache primary logs _(Mod 15 p108)_?
+> **Access** (all incoming/processed requests; **`CustomLog`** directive; highly configurable; web-traffic analysis) and **Error** (server problems; **`ErrorLog`** directive); Apache logs everything from first request to resolution incl. errors/alerts/warnings.
+> Source: [[15-LO07d-Apache-Error-and-Access-Logs]]
+>
+> [!question]- 1524 — Where are Apache access logs and how are they tailed _(Mod 15 p108)_?
+> RHEL/RedHat/CentOS/Fedora `` `/var/log/httpd/access_log` `` · Debian/Ubuntu `` `/var/log/apache2/access.log` `` · FreeBSD `` `/var/log/httpd-access.log` ``; `` `sudo tail -100 /etc/httpd/logs/access_log` `` (RHEL path contradicts default as printed) and `` `sudo tail -100 /var/log/apache2/access.log` ``; Red Hat **underscore** `access_log` vs Debian **dot** `access.log`; example `` `10.185.248.71 - - [09/JAN/2018:19:12:06 +0000] 808840 "GET /INVENTORYSERVICE/INVENTORY/PURCHASEITEM?USERID=20253471&ITEMID=23434300 HTTP/1.1" 500 17 "APACHE-HTTPCLIENT/4.2.6 (JAVA 1.5)"` `` (status 500, 17 bytes).
+> Source: [[15-LO07d-Apache-Error-and-Access-Logs]]
+>
+> [!question]- 1525 — Where are Apache error logs and what do they look like _(Mod 15 p109)_?
+> RHEL `` `/var/log/httpd/error_log` `` · Debian/Ubuntu `` `/var/log/apache2/error.log` `` · FreeBSD `` `/var/log/httpd-error.log` ``; `` `sudo tail -100 /etc/httpd/logs/error_log` `` and `` `sudo tail -100 /var/log/apache2/error.log` `` (same split); minor (startup/shutdown) + major (event/config warnings) with fixes; **first resource checked with `cat`, `grep` or UNIX/Linux utils**; shape **`[timestamp] [ERROR] [CLIENT <ip>] <message>`** (no request line/status), e.g. `` `[FRI JAN 12 18:04:18 2019] [ERROR] [CLIENT 50.0.134.125] FILE DOES NOT EXIST: /VAR/WWW/FAVICON.ICO` ``.
+> Source: [[15-LO07d-Apache-Error-and-Access-Logs]]
+>
+> [!question]- 1526 — How do Apache common and combined formats differ _(Mod 15 pp109–112)_?
+> Common = basic host+request only (excludes agent, cookie, domain, referrer, time-to-serve): `` `LogFormat "%h %l %u %t "%r" %>s %b" common` `` with `%a` client IP, `%h` client hostname, `%A` server IP, `%l` remote logname (almost always null `_`; `-` = unavailable), `%u` user, `%t` date/time, `%r` request line ending `` `<CR><LF>` ``, `%s` status (success/redirect/client/server error), `%b`/`%B` bytes (`-` vs `0`); e.g. `` `203.93.249.11 - oracleuser [17/Sep/2018:18:45:05 -0700] "GET /files/search/search.jsp?s=driver&a=10 HTTP/1.0" 200 2374` ``. Combined adds **referrer + user agent**: `` `LogFormat "%h %l %u %t "%r" %>s %b "%{Referer}i" "%{User-Agent}i" combined` `` (`"%{Referrer}"` table vs `%{Referer}` line, both kept); Table 15.19: `%f` filename, `%m` method, `%H` protocol, **`%P` for both Server Port and Server Process ID** as printed, `%U` stem, `%T` time-to-serve in **seconds** (vs IIS ms); five directives illegible; literal chars copied, `"` escaped with backslash, `\n`/`\t` allowed.
+> Source: [[15-LO07d-Apache-Error-and-Access-Logs]]
+>
+> [!question]- 1527 — What are the Apache access-log paths by OS _(Mod 15 p113)_?
+> FreeBSD `` `/var/log/httpd-access.log` `` (**hyphen**) · Debian/Ubuntu `` `/var/log/apache2/access.log` `` (**apache2** dir, **dot**) · RHEL/RedHat/CentOS/Fedora `` `/var/log/httpd/access_log` `` (**httpd** dir, **underscore**) — same three as p108.
+> Source: [[15-LO07e-Apache-Access-Log-Fields-and-Monitoring]]
+>
+> [!question]- 1528 — What fields do the Apache callout diagrams label _(Mod 15 p113)_?
+> Access: Remote Host · Username of Visitor · Timestamp of Request · Method (`GET/POST/HEAD`) · Status Code · Bytes Transferred · Protocol & Version · Identity of Visitor (e-mail…) · Time Zone (UTC). Error: Timestamp of Message · Producing Module · Severity/LogLevel · Process ID · Thread ID · Client's Address · Server · Detailed Error Message. Access = who/when/what/how-much; error = what broke, how badly, for which client.
+> Source: [[15-LO07e-Apache-Access-Log-Fields-and-Monitoring]]
+>
+> [!question]- 1529 — What is the goal and order of Apache log analysis _(Mod 15 p113)_?
+> Access+error logs give **actionable insights** on config/app problems, but important info hides in volume — goal is to **extract only the important information** to understand issues and **respond before users are affected**; order fixed: **monitor first, then analyse**.
+> Source: [[15-LO07e-Apache-Access-Log-Fields-and-Monitoring]]
+>
+> [!question]- 1530 — How do you monitor Apache access and error logs _(Mod 15 p114)_?
+> Access: `` `/var/log/httpd/access_log` `` or `` `/var/log/apache2/access.log` ``; if unreachable (custom config) open **`httpd.conf`** for the location. Error (heading prints "access log file" as printed): `` `/var/log/httpd/error_log` `` or `` `/var/log/apache2/error.log` ``; "**Apache does not allow use of a custom error log format**" (access `CustomLog` highly configurable, error fixed). Bridge _(Mod 15 p115)_: "**Monitoring and analyzing log files of different devices locally can be a difficult task. Centralized logging helps you to simplify the process.**"
+> Source: [[15-LO07e-Apache-Access-Log-Fields-and-Monitoring]]
+>
+> [!question]- 1531 — Why is centralized logging needed _(Mod 15 p117)_?
+> Every device/app generates logs; each yields **thousands to tens of thousands of events/day** (sessions, access attempts incl. failures, external-device connections); staff **overwhelmed**, **hundreds of files** to pick an incident from. Centralization keeps all in **one place** for access/monitor/alerting, reveals **what/when/why without hassle**, and alerts **even when staff is not watching** (review, pick suspects, notify via configured means) so management **responds faster**.
+> Source: [[15-LO08a-Why-Centralized-Logging]]
+>
+> [!question]- 1532 — What three reasons favor centralized over local logging _(Mod 15 p117)_?
+> Analysis **outside production** · easy search for **one transaction across multiple application servers** · **storage efficient**: saves costs, reduces **disk I/O** on app servers (printed `disk 1/0`).
+> Source: [[15-LO08a-Why-Centralized-Logging]]
+>
+> [!question]- 1533 — What is centralized log management (CLM) _(Mod 15 p118)_?
+> Solution that **collects all device/application logs to one central accessible location** and supports **aggregating, monitoring, analyzing, reviewing for anomalies**; pipeline: **collect → transport → store → analyze → alert decision (configured rules)**; delivery via **emails, help desk tickets, or any user-preferred way**.
+> Source: [[15-LO08a-Why-Centralized-Logging]]
+>
+> [!question]- 1534 — What nine capabilities does CLM print _(Mod 15 p118)_?
+> Scan entire network in one place (**360-degree view**) · alerts on defined metrics (**on** the log in prose, **in** the log in figure) · share dashboards/info · access important data · apply retention policies · large backup space · deep who/what/when/where understanding · improve security · access in **seconds not hours/weeks/days** (figure condenses to four: store centrally, access important data, metric alerts, share dashboards).
+> Source: [[15-LO08a-Why-Centralized-Logging]]
+>
+> [!question]- 1535 — What is a log management infrastructure _(Mod 15 p119)_?
+> **Combination of hardware, software, networks, and media** that **generate, transport, store, analyze, and report log data**; **more than one can exist** per organization; **generally three tiers** (hedge: norm, not rule).
+> Source: [[15-LO08b-Centralized-Logging-Infrastructure]]
+>
+> [!question]- 1536 — What is tier 1 log generation _(Mod 15 p120)_?
+> **Host producing messages** (via logging clients/services or other means); generators: **router, switch, firewall, application, database**, etc.; figure sources: Firewall · Database · Endpoint · File server · Email Management Server · Routers · Switches · IPS/IDS.
+> Source: [[15-LO08b-Centralized-Logging-Infrastructure]]
+>
+> [!question]- 1537 — What is tier 2 log analysis and storage _(Mod 15 p120)_?
+> **One or more log servers** (**collection servers / aggregators**) collecting via **syslog, SNMP**, etc., **real-time or batched**, stored on collectors or separate DBs (figure: `Cdkction Server`, Storage Server; stores Oracle, MS SQL, `MY SQL`, PostgreSQL as printed). Simplest: one server does all; complex: servers per operation · servers per generator subset · **two levels** (distributed first level → centralized second level, i.e. the syslog relay shape).
+> Source: [[15-LO08b-Centralized-Logging-Infrastructure]]
+>
+> [!question]- 1538 — What is tier 3 log monitoring _(Mod 15 p120)_?
+> **Consoles** monitoring/reviewing log data and analysis outputs; **produce reports**; may **manage servers/clients**; **limit console privileges to required functions and data sources**. Transports in figure: Syslog · SOAP over HTTP · SNMP · FTP or SCP; stages: `LOG COLLECTION` · `LOG NORMALIZATION` · `LOG CORRELATION` · `LOG TRANSPORT` · `LOG STORAGE` (order per p121, not figure layout).
+> Source: [[15-LO08b-Centralized-Logging-Infrastructure]]
+>
+> [!question]- 1539 — What are the seven centralized steps _(Mod 15 pp121–122)_?
+> 1 Log Collection (gather sources → central DB) · 2 Log Transmission (move via **syslog UDP, syslog TCP, encrypted syslog**, etc.) · 3 Log Storage (central repository/DBs, structured retrieval) · 4 **Normalization** (heterogeneous → common format) · 5 Log Correlation (match normalized series by rules) · 6 Log Analysis (patterns/anomalies = intrusion/policy violation) · 7 Alerting and Reporting (alerts/reports on suspicious events or **calculated matrices** as printed). Chain: normalize→correlate→analyse.
+> Source: [[15-LO08c-Log-Collection-and-Log-Transmission]]
+>
+> [!question]- 1540 — What are the four log-collection advantages _(Mod 15 p123)_?
+> Performed by a **log collector** (sources: antimalware, proxies, firewall, auth servers, routers, switches, OS, web apps; content: user IDs, activities, timestamps, access success/failure, config changes, addresses/protocols, file access); collector→server transmission **encrypted against eavesdropping**. Advantages: **Redundancy** (multiple locations) · **Store and forward** (holds on disconnect, forwards on reconnect, no loss) · **Authentication** (**both** sender and server verified) · **Privacy** (encrypted). Figure labels: Switch, Firewall, NIDS, Portal, HIDS, WAF, Anti-virus, Mobile, `sysk* (RFC 5424)`, `SNMP (RFC 5343, VI, v2c, v3)` as printed.
+> Source: [[15-LO08c-Log-Collection-and-Log-Transmission]]
+>
+> [!question]- 1541 — What mechanisms move logs centrally _(Mod 15 p124)_?
+> Syslog UDP · syslog TCP · Encrypted Syslog · `HIT p` (as printed) · HTTPS · SOAP over HTTP · SNMP · **FTP or SCP**; efficient transport preserves **integrity, availability, confidentiality**, **format and meaning**, and **correct events with perfect timings and sequence**.
+> Source: [[15-LO08c-Log-Collection-and-Log-Transmission]]
+>
+> [!question]- 1542 — How do syslog UDP, TCP, encrypted, HTTP and SOAP differ _(Mod 15 p124)_?
+> **Syslog UDP** (User Datagram): **faster, no server confirmation**, yet most popular · **Syslog TCP** (Transmission Control): **connects first, waits for acknowledgment**, has **flow control** · **Encrypted syslog**: syslog is **clear-text**, encrypted variant secures TCP/UDP transport · **HTTP/HTTPS**: TCP/IP transfer plus file send/receive · **SOAP over HTTP** (**Simple Object Access Protocol** for syslog over **HTTP payload**, HTTP is application protocol). SNMP and FTP/SCP listed with no detail.
+> Source: [[15-LO08c-Log-Collection-and-Log-Transmission]]
+>
+> [!question]- 1543 — What is syslog and the syslog server _(Mod 15 pp125–126)_?
+> **Data logging service** letting routers, switches, firewalls, printers, web-servers **send/store events on a logging server**; **System Logging Protocol (syslog)** forwards across IP; server = **dedicated central repository consolidating multi-device logs** (switches, firewall, routers, IDS/IPS via **TCP, UDP, HTTP, HTTPS, SNMP**); provides **centralized management** and **alerts on suspicious/prenotified events**.
+> Source: [[15-LO08d-Syslog-Mechanism-Collector-Relay-and-Tools]]
+>
+> [!question]- 1544 — What are the three syslog server components _(Mod 15 pp125–127)_?
+> **Syslog listener** (gathers over **UDP port**, the standard port — **no acknowledgment**, so **a TCP port** can be used; also listens on **HTTP/HTTPS**; layered architecture; **no port number printed** anywhere pp125–134) · **Database** (stores system activities, failed attempts, connected devices; indexed, retrievable) · **Management and filtering software** (extracts important info; notifies on errors, e.g. firewall criticals; **negative filter rules** silence noisy classes).
+> Source: [[15-LO08d-Syslog-Mechanism-Collector-Relay-and-Tools]]
+>
+> [!question]- 1545 — What are the syslog roles, layers and standards _(Mod 15 pp127–129)_?
+> **Originator** (generates: router/switch/firewall; OS activity, external devices, third-party installs) · **Relay** (receives from originator, forwards to relay/collector; may be many; covers branch-office two-step) · **Collector** (**= syslog server**; format specified by standard server). Path `` `Originator → Syslog Relay → Syslog Collector` ``. Layers: **content** (actual message: audit/events records) · **application** (interprets/routes/stores; holds originator/collector/relay) · **transport** (sender/receiver; **framing**: assemble at source, disassemble at receiver, each a frame). Standards: **RFC3164** (old, 2001, BSD) vs **RFC5424** (new, 2009, fixes 3164); RFC5424 = **Header** (priority, version, timestamp, hostname, application, process ID, message ID) + **Structured data** (`` `key=value` `` blocks) + **Message** (**UTF-8**, event description); format `` `TIMESTAMP HOSTNAME TAG MESSAGEID STRUCTURED-DATA MSG` `` (p129 prints `MESSAGED`).
+> Source: [[15-LO08d-Syslog-Mechanism-Collector-Relay-and-Tools]]
+>
+> [!question]- 1546 — How is PRI calculated and what are facilities, severities and TAG fields _(Mod 15 pp130–132)_?
+> **PRI** (facility + severity) at message start in `` `<` `` `` `>` ``; range **O–191** (as printed); `` `Priority value = (facility value x 8) + severity value` ``; **low PRI = high priority**. Facilities Table 15.20 (codes 1–12 then 13/14/15/16–23; code 0 never printed; 13 names before continuation; off-by-one kept): Kernel, User-level, Mail, System daemons, Security/authorization (twice), syslogd, Line printer, Network news, UUCP, Clock daemon (twice), TP daemon, NTP, Log audit, Log alert, Local `loca10`–`loca17` as printed. Severities Table 15.21 (no numbers printed): **Emerg** (unusable), **Alert** (immediate), **Crit**, **Error**, **Warn**, **Notice**, **Info**, **Debug**. Header: 7-bit ASCII in 8-bit field, metadata; timestamp local **`Mmm dd hh:mm:ss`**; no hostname → IP. TAG split: **APP-NAME** (originator; NIL if unknown), **PROCID** (process name/ID; NIL if none; change = discontinuity, unreliable after restart), **MSGID** (message type; **`UDPOUT`** out of UDP port, **`UDPIN`** in; same MSGID = same semantics; string for relay/collector filtering).
+> Source: [[15-LO08d-Syslog-Mechanism-Collector-Relay-and-Tools]]
+>
+> [!question]- 1547 — What are Step 3 storage decisions _(Mod 15 pp135–136)_?
+> After collection/transmission, store centrally for future analysis/auditing (sources: antimalware, proxies, firewall, auth servers, routers, switches); select by **size, importance, accessibility**; headings **Storage Duration · Ways of Accessing · Volume of Data** (prose order duration/volume/access). Duration: type-dependent; **Cloud** = long-term, no instant analysis, archived, **cheap at scale, encrypted, indexed** vs **Distributed** = short-term frequent analysis, physical, space-hungry, not cost-efficient. Volume: per-device memory varies, servers count drives volume; system must be **highly scalable** and handle growth ("should able to handle" as printed). Access: pick by **frequency/ease**; quick → distributed/local; viewer shows data incl. syslog, manual search; access-difficult systems unfit for real-time analysis.
+> Source: [[15-LO08e-Log-Storage-and-Log-Normalization]]
+>
+> [!question]- 1548 — What is log normalization and its six steps _(Mod 15 pp137–138)_?
+> "**Accepting heterogeneous-source/different-format logs and converting into a common format**" (web proxy: IP/URL/status/browser; antispam: sender/dest addresses, IP, domain, spam score; firewall: IPs/ports/protocol); hard to arrange/index otherwise; done **regardless of source/protocol (syslog, SNMP, database)**; **important step in correlation**. Via **Common Event Expression (CEE)** standard-scheme mapping (named once) and **regular expressions** (most systems); output **meaningful, predictable, consistent**. Steps: collector gathers → identify source type → load parser + set regex → normalize/categorize → aggregate/filter → **repeat per event** (2–5 per event).
+> Source: [[15-LO08e-Log-Storage-and-Log-Normalization]]
+>
+> [!question]- 1549 — What do the good and bad normalization events show _(Mod 15 pp138–139)_?
+> Good (green): raw `` `Feb 1 access-list 12 event-connection proto=udp srcip=lo.lo.o.l srcport=10240 dstip=10.16.1.I dstport=lll` `` via truncated regexes `` `IP="dstip\=(\d{1,3}\\d{1,3})\d{` `` and `` `Source Port="srcport\=(\d{I,5})"` `` (as printed) → **Connection Rejected**, `10.0.0.1`/`10240`/`10.16.1.1`/`111` (p137 third printing `srcipz10.10.O.1`, `dstip-10.16.1.1` kept). Bad (red): `` `Feb 1 01:00:00 access-list 12 event-Connection rejected proto=udp srcip=10.O.O.1 srcport=10240 dstip=IO.16.I.I dstport=l I I` `` recovers only `10.0.0.1`/`10.16.1.1`/`111` (Event Name/Source Port blank) — failure: "**parser missed some regex**".
+> Source: [[15-LO08e-Log-Storage-and-Log-Normalization]]
+>
+> [!question]- 1550 — What six fields are common to normalization _(Mod 15 p139)_?
+> **Source/destination IPs** (used for **correlation**) · **Source/destination ports** (services accessed) · **Taxonomy** (message meaning) · **Timestamps** (two: **generated** vs **reached the logging system**) · **User information** (username, command, directory) · **Priority** (message priority); generated-vs-reached split is what p150–151 clock-skew attacks.
+> Source: [[15-LO08e-Log-Storage-and-Log-Normalization]]
+>
+> [!question]- 1551 — What is log correlation and why is it critical _(Mod 15 p140)_?
+> "**Matching normalized log series to related events by rules**" (rule-based, statistical/algorithmic); correlated logs analyzed for incident cause; input is **normalized** data. "**Very critical and complicated**" because: plain vs cryptic/esoteric-code logs · siloed lenses (NIDS sees packets/streams, apps see sessions/users/requests) · **logs static, lack ongoing-event context** · same-version cross-system logs may disagree.
+> Source: [[15-LO08f-Log-Correlation-and-Log-Analysis]]
+>
+> [!question]- 1552 — What are micro-level and macro-level correlation _(Mod 15 pp140–141)_?
+> **Micro (atomic)**: fields **within single event/set**, **only when raw data normalized**; **field correlation** (find tasks in normalized data, e.g. dest port **80 or 443** for web-server targeting; also by event types) and **rule correlation** (custom rules: **stateful behavior, counting, timeout, rule reuse, language, activity priority, action on event**). **Macro (fusion)**: **pulls different sources to validate/gain intelligence** on the stream; six inputs: rule (micro rule convertible to macro), vulnerability, profile (fingerprint), anti-port, watch list, geographic location.
+> Source: [[15-LO08f-Log-Correlation-and-Log-Analysis]]
+>
+> [!question]- 1553 — What do the macro inputs mean _(Mod 15 p141)_?
+> **Vulnerability** (scan vulns, raise security level) · **Profile (fingerprint)** (**banner snatching, OS fingerprints, remote port scans, vulnerability scans**; attacker insight, post-attack remediation) · **Anti-port** (**open-port info** finds **slow/low** attacks) · **Watch list** and **Geographic location**: **named only, never described** anywhere pp140–141.
+> Source: [[15-LO08f-Log-Correlation-and-Log-Analysis]]
+>
+> [!question]- 1554 — What is log analysis and what are its best practices _(Mod 15 pp142–144)_?
+> "**Identifying patterns/anomalies in correlated data** signifying intrusion/policy violation" (correlated input; intelligent incident decision; filters relevant from huge cluster; finds failed processes, protocol failures, outages; trends; labeling enables distributed detailed monitoring in one place). Facilitates: policy/regulation/audit checks · incident ID/resolution · troubleshooting · user-behavior ID · forensics · pattern-change ID · security awareness. **Manual** (person, **no tools**, defender/examiner experience; must know system normality + recent changes; complex, **experts only**, format-bound) vs **Automated**/**automatic** (phases sequential, **minimal human interaction**; overcomes manual; **time- and cost-efficient**, highly preferred). Twelve best practices: **NTP sync** · **proactive not reactive** · automate (less time/interaction) · review regularly · baseline · log-data strategy · effective format · centralize off-production · end-to-end (holistic) · correlate sources · unique identifiers · always real-time monitoring (slide shows five: first five).
+> Source: [[15-LO08f-Log-Correlation-and-Log-Analysis]]
+>
+> [!question]- 1555 — What is Step 7 alerting and reporting _(Mod 15 p145)_?
+> Alerting system **alerts on suspicious events or calculated matrices** (as printed); centralized system must monitor for changes and **notify on abnormalities** via **email, desk tickets, etc.** in due time for precautions; gives **360-degree view**, improves security. Purposes: **Error reporting · Monitoring**. (Heading prints `Step Z` in prose OCR, `Step 7` on slide.)
+> Source: [[15-LO08g-Alerting-Reporting-Best-Practices-Tools-Challenges]]
+>
+> [!question]- 1556 — What are the nine centralized logging best practices _(Mod 15 p146)_?
+> Enable logging on network devices · admin can **quickly hand authority to security pros in emergency** · **consult legal** on storage/retrieval/analysis policy · safe transmission/storage · consider all sources, collect appropriate logs · data accessible for incidents **without compromising authentication/security** · consistent log structure · **set alert severity levels** · **index + store incident logs** for future reference/correlation (slide shows items 1, 3, 4, 5 only).
+> Source: [[15-LO08g-Alerting-Reporting-Best-Practices-Tools-Challenges]]
+>
+> [!question]- 1557 — What do the ten CLM tools do _(Mod 15 pp147–149)_?
+> **Splunk** (aggregates/analyzes; attack detection/response; org-wide visibility) · **Logmatic** (auto-detects unexpected behavior; granular; faster fixes) · **Logstash** (open-source server-side pipeline; ingests logs/metrics/web apps/data stores/AWS streaming → stash) · **Sumo Logic** (cloud challenges: log management, real-time monitoring, UX/performance; correlates AWS CloudFront + origin; enforces security) · **Papertrail** (search, live tail, groups, team access, PagerDuty/Slack; syslog, text, Apache, MySQL, Rails, Windows events, Tomcat, routers, firewalls) · **LogRhythm** (end-to-end patented distributed/available machine+forensic processing → contextualized) · **Retrace** (app performance for developers; code/exceptions insight) · **Graylog** (collection/storage/enrichment/analysis; simple search/visualize, no expert training; speed analysis) · **XpoLog** (discovers errors; filtered search + complex syntax → summary tables; **custom rules in predefined layer + auto-detected layer so all rules covered**) · **Loggly 3.0** (charts/dashboards for software/infra problems). **Logentries** and **LOGalyze** figure-only, undescribed.
+> Source: [[15-LO08g-Alerting-Reporting-Best-Practices-Tools-Challenges]]
+>
+> [!question]- 1558 — What are the three centralized logging challenge classes _(Mod 15 pp150–152)_?
+> Generation/storage variety-prevalence · CIA protection · skilled-people shortage. Generation/storage: **many sources** (one source, several logs; e.g. web app splits network vs auth logs) · **inconsistent content** (each stores only its important slice; A logs username not IP, B logs IP not username → hardly common values) · **inconsistent timestamps** (internal clocks; "**incorrect timestamps could display event M occurred 30 s before event N**" though **M was 1 min after N** — causal inversion; fix = **NTP**, normalization's generated-vs-reached split) · **inconsistent formats** (DBs, tab/comma text, XML, binary; standard vs proprietary; local vs transmit; fix = automated→standard = Step 4). Protection: secure confidentiality/integrity (logs hold credentials/emails, intentional + unintentional; breach → silent malicious activity, evidence tampering); **fixed size overwrites old with new** → save copies longer than sources support. Analysis: admins own it but rank it **low-priority**, untrained/untooled/uninterested → make it **proactive not reactive**, catch IoCs before critical problems. Summary _(Mod 15 p152)_ prints **eight** steps (splits alerting/reporting) vs body **seven** (Step 7 single); drops "logging" from triad; "CLM" never expanded; slide-only challenge bullets (resource growth, threat-landscape monitoring, data-source purpose) have no prose.
+> Source: [[15-LO08g-Alerting-Reporting-Best-Practices-Tools-Challenges]]
+
+### Module 16 (99 items)
+> [!question]- 1559 — What is incident response?
+> The process of taking organized and careful steps when reacting to a security incident, beginning with first identifying and reporting; systematic approach with minimal damage, recovery time, and costs. _(Mod 16 p5)_
+> Source: [[16-LO01a-Incident-Response-Concept-IRT-and-IR-Plan]]
+>
+> [!question]- 1560 — What are the seven printed goals of IR?
+> Detect actual incident vs false positive · maintain or restore Business Continuity · reduce impact · analyze cause · prevent future attacks · improve security and IR · prosecute illegal activity. _(Mod 16 p5)_
+> Source: [[16-LO01a-Incident-Response-Concept-IRT-and-IR-Plan]]
+>
+> [!question]- 1561 — What is the IRT and how is it usually staffed?
+> Group of specialized people who collectively respond, remediate, mitigate, recover, and communicate breach impact, working from an IR plan; a separate team is costly so orgs use current employees expert in their fields plus a few dedicated members. _(Mod 16 pp5–7)_
+> Source: [[16-LO01a-Incident-Response-Concept-IRT-and-IR-Plan]]
+>
+> [!question]- 1562 — Who first learns of an incident and who oversees all IR activities?
+> Management is the first entity to learn about an incident and decides steps once confirmed; the IR Officer oversees all IR activities at executive level with every IRT action reported through them to management. _(Mod 16 pp6–8)_
+> Source: [[16-LO01a-Incident-Response-Concept-IRT-and-IR-Plan]]
+>
+> [!question]- 1563 — What is the IR plan versus the IRP?
+> The IR plan determines the future course of action for establishing, managing, and strengthening IR capabilities; the IRP is the guideline set created by the IRT before handling incidents, reflecting company size, structure, and functions. _(Mod 16 p9)_
+> Source: [[16-LO01a-Incident-Response-Concept-IRT-and-IR-Plan]]
+>
+> [!question]- 1564 — Who is the first responder?
+> An individual who arrives first at the crime scene and brings the incident to others' attention; may be an end user, network administrator, law enforcement/investigation officer, or anyone in day-to-day network operations. _(Mod 16 p11)_
+> Source: [[16-LO02a-First-Responder-Role-and-Preparation]]
+>
+> [!question]- 1565 — What is the key value of the first responder?
+> Early detection, source, and impact plus evidence collection and preservation; the IRT works on the pretext (as printed) of the first responder. _(Mod 16 p11)_
+> Source: [[16-LO02a-First-Responder-Role-and-Preparation]]
+>
+> [!question]- 1566 — What is the evidence time-gap rule for the first responder?
+> The time gap between occurrence and transference of evidence is key; gather evidence without modifying any running services before it is lost, upholding availability, integrity, and reliability. _(Mod 16 p12)_
+> Source: [[16-LO02a-First-Responder-Role-and-Preparation]]
+>
+> [!question]- 1567 — What is the First Response Rule?
+> Under no circumstances should anyone except forensic analysts collect or recover data from any computer system or electronic device holding electronic information; everything inside is probable evidence and unqualified retrieval risks compromising integrity or inadmissibility. _(Mod 16 p12)_
+> Source: [[16-LO02a-First-Responder-Role-and-Preparation]]
+>
+> [!question]- 1568 — What must be documented before escalating an incident?
+> IP address plus physical location of affected systems · type of data on the systems · timeline of activities the system/user went through · how detected · number of users affected; review the IRP first. _(Mod 16 p13)_
+> Source: [[16-LO02a-First-Responder-Role-and-Preparation]]
+>
+> [!question]- 1569 — What is FUD and what is the rule on discovering an incident?
+> Fear, Uncertainty, and Doubt; do not panic, do not perform actions that damage evidence integrity, escalate and consult management or the in-house computer forensics investigation team quickly. _(Mod 16 p15)_
+> Source: [[16-LO03a-Avoid-FUD-Assessment-Severity-and-Types]]
+>
+> [!question]- 1570 — What are the two checks of initial assessment?
+> Check actual incident vs false positive, and identify category and severity; assessment determines source, false-positive-vs-actual status, and severity driving immediate actions. _(Mod 16 pp16–17)_
+> Source: [[16-LO03a-Avoid-FUD-Assessment-Severity-and-Types]]
+>
+> [!question]- 1571 — What are False Positive and True Positive as printed?
+> False Positive: alarm raised when no attack occurred, e.g. brute-force alert that was only an authenticated user retrying login; True Positive: alarm raised when an actual attack occurred, act immediately to stop it continuing. _(Mod 16 pp16–18)_
+> Source: [[16-LO03a-Avoid-FUD-Assessment-Severity-and-Types]]
+>
+> [!question]- 1572 — What are False Negative and True Negative as printed?
+> False Negative: no alarm raised when an actual attack occurred, caused by rules not defined properly; True Negative is printed as "An alarm is raised when no attack is detected. Non-malicious files are rejected successfully". _(Mod 16 p16)_
+> Source: [[16-LO03a-Avoid-FUD-Assessment-Severity-and-Types]]
+>
+> [!question]- 1573 — What are the six CND incident categories?
+> Unauthorized Access · Denial of Service (DOS) causing unavailability for authorized users · Malicious Code (virus, worm, Trojan horse, keyloggers, spywares, rootkits, backdoors) · Improper Usage · Scans/Probes/Attempted Access to identify open ports, protocols, or services · Multiple Component covering two or more types. _(Mod 16 p16)_
+> Source: [[16-LO03a-Avoid-FUD-Assessment-Severity-and-Types]]
+>
+> [!question]- 1574 — What determines severity level?
+> Impact of the incident · criticality of the service · confidentiality of the information · probability of spread; High affects many systems with financial-crisis potential, Medium affects at least half or a non-critical system with propagation tendency, Low affects only a few and will not propagate. _(Mod 16 p19)_
+> Source: [[16-LO03a-Avoid-FUD-Assessment-Severity-and-Types]]
+>
+> [!question]- 1575 — How must an incident be communicated?
+> Quickly identify who must be contacted inside and/or outside the organization and communicate the breach to the in-house IRT or Management; contact via phone, SMS, or e-mail with a dedicated team for external IR contact. _(Mod 16 p20)_
+> Source: [[16-LO03b-Communicate-Contain-Collect-Dos-and-Donts]]
+>
+> [!question]- 1576 — Who decides disconnect-vs-stay-connected and what is the downside of each?
+> Decided by the forensic examiner or IR team; disconnecting may lose evidence that would have been found if connected, while staying connected may let the attack proceed and cause further harm. _(Mod 16 p21)_
+> Source: [[16-LO03b-Communicate-Contain-Collect-Dos-and-Donts]]
+>
+> [!question]- 1577 — How is access to suspected devices controlled?
+> Secure the compromised device physically under observation without tampering; secure nearby mobiles, CDs, DVDs, flash media, and cables; control access by lock and key, locking down premises until the forensic team arrives. _(Mod 16 p22)_
+> Source: [[16-LO03b-Communicate-Contain-Collect-Dos-and-Donts]]
+>
+> [!question]- 1578 — What device information must be collected?
+> Who, what, when and how the problem was discovered · IP address · system time · system name · services or applications running · any other relevant crime information; record IP of all affected machines and keep them off the network to avoid data replication. _(Mod 16 p23)_
+> Source: [[16-LO03b-Communicate-Contain-Collect-Dos-and-Donts]]
+>
+> [!question]- 1579 — What is the rule for recording actions?
+> Note all actions for actual attacks and false positives with date/time and witnesses, in descriptive chronological series with facts not speculation; ideal example: "Unknown popups were displayed on a Google Chrome browser for thirty minutes after the incident occurred." _(Mod 16 p24)_
+> Source: [[16-LO03b-Communicate-Contain-Collect-Dos-and-Donts]]
+>
+> [!question]- 1580 — What are the don'ts on investigating, device state, and antivirus?
+> Do not start the investigation too early since non-expert collection becomes inadmissible and risks direct legal punishment; ON stays ON and OFF stays OFF since restart/shutdown destroys evidence; disable virus protection as AV changes time/date stamps and auto-deletes files and hacking tools. _(Mod 16 pp25–27)_
+> Source: [[16-LO03b-Communicate-Contain-Collect-Dos-and-Donts]]
+>
+> [!question]- 1581 — What are the IR process ground rules?
+> Restore the normal state in the shortest possible time · minimize impact on other systems · avoid further incidents · identify the root cause · assess damage and recover data · update policies · collect evidence for the investigation. _(Mod 16 p29)_
+> Source: [[16-LO04a-IR-Vision-Preparation-and-Recording]]
+>
+> [!question]- 1582 — What determines the need for IR?
+> Current security scenario, risk perception, business advantages, legal compliance requirements, other organizational policies, previous incidents; IR allows preventive activities from risk assessments but cannot prevent all incidents. _(Mod 16 p30)_
+> Source: [[16-LO04a-IR-Vision-Preparation-and-Recording]]
+>
+> [!question]- 1583 — What does the IR plan cover and where is the vision published?
+> How information passes to personnel · how an incident is assessed · containment and response strategy · how systems/resources are restored · documentation · preservation of evidence · how the incident is reported; publish the vision in an easily accessible repository after appropriate approvals. _(Mod 16 p31)_
+> Source: [[16-LO04a-IR-Vision-Preparation-and-Recording]]
+>
+> [!question]- 1584 — What are the sysadmin preparation duties?
+> Ensuring password policies · disabling default accounts · configuring security mechanisms · executing/enabling system logging and auditing · patch management · ensuring proper backups · ensuring filesystem integrity · identifying abnormal behavior. _(Mod 16 p33)_
+> Source: [[16-LO04a-IR-Vision-Preparation-and-Recording]]
+>
+> [!question]- 1585 — How are incidents recorded and assigned?
+> IT support raises a ticket after abnormal change, plus SIEM, IDS, antivirus, and integrity-checking alerts; flow runs employee calls IT support with the "preempted questionnaire" (as printed) to ticketed IR-team assignment, victim interview, first-responder analysis, previous-incident check, and high-first classification. _(Mod 16 pp34–36)_
+> Source: [[16-LO04a-IR-Vision-Preparation-and-Recording]]
+>
+> [!question]- 1586 — What is triage?
+> Incident analysis and validation plus incident classification plus incident prioritization; IRT correlates indicators with logs and system files, classifies by type, and the IRT manager prioritizes high, medium, low with high first. _(Mod 16 p37)_
+> Source: [[16-LO04b-Triage-Classification-and-Notification]]
+>
+> [!question]- 1587 — Why can an accurate indication still not be an incident?
+> Accurate indication does not necessarily mean an incident occurred; e.g. web server crash or modification of sensitive files can be human errors; outcomes are IRT handles it, register with no further action, or pass to other teams. _(Mod 16 p38)_
+> Source: [[16-LO04b-Triage-Classification-and-Notification]]
+>
+> [!question]- 1588 — What factors drive classification?
+> Nature of the incident · criticality of the systems impacted · number of systems impacted · legal and regulatory requirements; classify by severity, affected resources, and attack methodology. _(Mod 16 p39)_
+> Source: [[16-LO04b-Triage-Classification-and-Notification]]
+>
+> [!question]- 1589 — What governs prioritization order?
+> Prioritization is the most critical decision and is never first-come, first-served; it runs on Impact measured by number of systems impacted versus Urgency usually defined by the SLA, highest business impact first. _(Mod 16 pp39–40)_
+> Source: [[16-LO04b-Triage-Classification-and-Notification]]
+>
+> [!question]- 1590 — What governs notification to outsiders?
+> External parties get only part of the situation and only after management approval when external support is needed; obtain documented management approval first, do not hide info, and inform likely-affected people. _(Mod 16 pp42–43)_
+> Source: [[16-LO04b-Triage-Classification-and-Notification]]
+>
+> [!question]- 1591 — What is containment?
+> Controlling the effect of the incident immediately after its occurrence; at this phase evidence is collected and sent to the forensics department, aiming to reduce magnitude/complexity and prevent further damage. _(Mod 16 p44)_
+> Source: [[16-LO04c-Containment-Eradication-Recovery-Post-Incident]]
+>
+> [!question]- 1592 — What are the four containment techniques in order?
+> Disable specific system services temporarily · remove the computer from the network until the unknown vulnerability is rectified · change passwords and disable the account on all interacting systems · complete backups of the infected system; keep a low profile and do not tip off the intruder. _(Mod 16 pp44–45)_
+> Source: [[16-LO04c-Containment-Eradication-Recovery-Post-Incident]]
+>
+> [!question]- 1593 — What is eradication?
+> Eliminating root cause (vulnerabilities, weaknesses, misconfigurations) and closing all attack vectors; printed order includes update antivirus, install latest patches, independent audits, disable unnecessary services, change passwords, eliminate access paths, reinstall only after removing traces, rebuild, validate effectiveness. _(Mod 16 p47)_
+> Source: [[16-LO04c-Containment-Eradication-Recovery-Post-Incident]]
+>
+> [!question]- 1594 — What must be verified before restoring from backup?
+> Verify the backup is free of malware and attack vectors before restoring; recovery restores lost data from backup media after the cause is eliminated, then restarts all withheld processes and services. _(Mod 16 p48)_
+> Source: [[16-LO04c-Containment-Eradication-Recovery-Post-Incident]]
+>
+> [!question]- 1595 — What are the two recovery steps and the post-incident focus?
+> Determine the course of action per resources, criticality, and cost-benefit, then monitor and validate including penetration testing and watching for back doors; post-incident reviews limitations/problems, evaluates IR effectiveness, updates policies, and documents every step plus lessons learned. _(Mod 16 pp48–50)_
+> Source: [[16-LO04c-Containment-Eradication-Recovery-Post-Incident]]
+>
+> [!question]- 1596 — What are the four printed AI/ML roles in IR?
+> Proactive defense · incident triage · automated analysis · autonomous response; AI/ML detects, responds, and recovers faster with less human error via automated analysis, predictive insights, and continuous learning. _(Mod 16 pp52–54)_
+> Source: [[16-LO05a-AI-ML-Role-Detection-and-Triage]]
+>
+> [!question]- 1597 — What is AI/ML proactive defense?
+> Analyze historical security and threat-intelligence data to identify attack patterns; proactive steps are software upgrades, vulnerability patching, and access-control rule updates. _(Mod 16 pp53–54)_
+> Source: [[16-LO05a-AI-ML-Role-Detection-and-Triage]]
+>
+> [!question]- 1598 — What is AI/ML incident triage?
+> Consider severity, potential impact, and relevance; prioritize alerts by risk and urgency with critical alerts first, cutting false-positive noise and optimizing resource allocation. _(Mod 16 pp53–54)_
+> Source: [[16-LO05a-AI-ML-Role-Detection-and-Triage]]
+>
+> [!question]- 1599 — What is AI/ML automated analysis?
+> Streamline investigations over log data, system events, and network traffic; correlate threat intelligence from various sources with internal activity to spot known threats, vulnerabilities, and IOCs. _(Mod 16 pp53–54)_
+> Source: [[16-LO05a-AI-ML-Role-Detection-and-Triage]]
+>
+> [!question]- 1600 — What is AI/ML autonomous response?
+> Automate isolating compromised devices, blocking malicious IP addresses, implementing security patches, disabling compromised user accounts, and initiating remediation; also analyze large volumes in real time for patterns and anomalies while continuously updating models. _(Mod 16 pp53–55)_
+> Source: [[16-LO05a-AI-ML-Role-Detection-and-Triage]]
+>
+> [!question]- 1601 — What does AI/ML automated analysis add beyond triage?
+> Process threat-intel data from various sources on latest techniques, identify correlations and patterns between alerts and threat intel for attack vectors and preventative measures, and predict potential incidents via historical data and trend analysis. _(Mod 16 p59)_
+> Source: [[16-LO05b-AI-ML-Analysis-Response-and-Solutions]]
+>
+> [!question]- 1602 — Why automate incident response with AI/ML?
+> Automates isolating devices, blocking malicious IPs, and initiating remediation across containment, remediation, and recovery; tracks millions of security events per day since human delay is what adversaries exploit. _(Mod 16 p60)_
+> Source: [[16-LO05b-AI-ML-Analysis-Response-and-Solutions]]
+>
+> [!question]- 1603 — What do SIEM and UEBA do as AI/ML-driven solutions?
+> SIEM analyzes security events, detects patterns and anomalies, auto-initiates alerts, and orchestrates workflows; UEBA uses behavioral analytics plus ML to flag atypical or risky user and device behavior such as insider threats and compromised accounts. _(Mod 16 p61)_
+> Source: [[16-LO05b-AI-ML-Analysis-Response-and-Solutions]]
+>
+> [!question]- 1604 — What do SOAR, EDR, and XDR do as AI/ML-driven solutions?
+> SOAR integrates AI/ML with workflow automation for incident management and investigation; EDR detects and responds to endpoint incidents like malware and behavioral anomalies; XDR applies ML/AI analytics for patterns, anomalies, and indicators of compromise. _(Mod 16 p61)_
+> Source: [[16-LO05b-AI-ML-Analysis-Response-and-Solutions]]
+>
+> [!question]- 1605 — How does AI/ML triage cut alert fatigue?
+> Determine severity and criticality with AI/ML-driven automated processes, prioritize by risk and urgency with severe vulnerabilities first, cutting false positives and alert fatigue so manual operations run only when necessary. _(Mod 16 p57)_
+> Source: [[16-LO05a-AI-ML-Role-Detection-and-Triage]]
+>
+> [!question]- 1606 — What does SOAR stand for?
+> Security Orchestration, Automation, and Response; integrates orchestration, automation and response into one framework combining people, processes, and technology, cutting mean time to detect and mean time to respond. _(Mod 16 pp62–63)_
+> Source: [[16-LO06a-SOAR-Concept-Components-and-Integration]]
+>
+> [!question]- 1607 — What are the three SOAR core capabilities?
+> Threat and vulnerability management via formalized workflow, collaboration, and reporting · security operations automation with event enrichment, alert prioritization, and AI-recommended measures · security incident response from a centralized console without switching tools. _(Mod 16 p63)_
+> Source: [[16-LO06a-SOAR-Concept-Components-and-Integration]]
+>
+> [!question]- 1608 — What are the four SOAR components?
+> Threat Intelligence ingesting and analysing data with feeds prioritized by impact and severity · Security Orchestration connecting tools via built-in/custom integrations and application programming interfaces · Security Automation with log analysis and red-flag/anomaly detection · Security Incident Response with a single-view dashboard. _(Mod 16 pp65–66)_
+> Source: [[16-LO06a-SOAR-Concept-Components-and-Integration]]
+>
+> [!question]- 1609 — What does SOAR integrate with?
+> SIEMs, firewalls, IDS, endpoint security solutions, threat intelligence feeds, and ticketing systems; full prose list adds vulnerability scanners, UEBA, IPS, EDR, and other third-party sources. _(Mod 16 p67)_
+> Source: [[16-LO06a-SOAR-Concept-Components-and-Integration]]
+>
+> [!question]- 1610 — What does SOAR security incident response add?
+> Single-view dashboard to plan, manage, monitor, and report mitigation; correlates warnings into the bigger picture and suggests post-response activities, with data pinpointing previously undetected ongoing threats for hunting. _(Mod 16 pp63–66)_
+> Source: [[16-LO06a-SOAR-Concept-Components-and-Integration]]
+>
+> [!question]- 1611 — What does SOAR automate?
+> Autonomously strategize with active tactics · create playbooks · orchestrate response execution · leverage threat intelligence feeds · real-time team communication · centralized incident-lifecycle view · automatically triage alerts · post-incident review. _(Mod 16 p69)_
+> Source: [[16-LO06b-SOAR-Automation-and-Playbooks]]
+>
+> [!question]- 1612 — What is a SOAR playbook?
+> A predefined sequence of automated and manual actions guiding responders through detecting, analyzing, and responding; streamlines IR, reduces response times, ensures consistent actions, and is updated continuously. _(Mod 16 pp71–72)_
+> Source: [[16-LO06b-SOAR-Automation-and-Playbooks]]
+>
+> [!question]- 1613 — What are the first eight playbook fields in order?
+> Playbook Title · Description · Triggers · Incident Context and Data Gathering with IPs, hashes, systems, accounts · Data Enrichment · Alert Triage and Prioritization · Automated Response Actions such as isolate endpoints and block malicious IPs/domains · Manual Investigation and Analysis. _(Mod 16 p72)_
+> Source: [[16-LO06b-SOAR-Automation-and-Playbooks]]
+>
+> [!question]- 1614 — What are the last eight playbook fields in order?
+> Incident Resolution · Communication and Notification · Incident Documentation · Escalation Points · Metrics and Reporting · Closure and Review · Author and Reviewer · Version and Date. _(Mod 16 p72)_
+> Source: [[16-LO06b-SOAR-Automation-and-Playbooks]]
+>
+> [!question]- 1615 — What do the phishing and provisioning playbooks do?
+> Phishing scans attachments and URLs in sandboxes, leverages workflows for threat intel, and labels phishing verified with a Slack message to the business; provisioning automates per-account access via Okta or Active Directory and deprovisions immediately on exit. _(Mod 16 pp73–75)_
+> Source: [[16-LO06b-SOAR-Automation-and-Playbooks]]
+>
+> [!question]- 1616 — What do the malware, enrichment, hunting, and patching playbooks do?
+> Malware containment isolates affected sources from active networks after finding indicators like mis-spelled names; alert enrichment adds domain analysis and malware detonation while weeding out false positives; threat hunting follows standard protocols and standard operating procedures; patching automates service-ticket creation within compliances. _(Mod 16 pp76–79)_
+> Source: [[16-LO06b-SOAR-Automation-and-Playbooks]]
+>
+> [!question]- 1617 — What is Splunk SOAR?
+> A single source for observing, understanding, deciding upon and acting on security incidents; features are create a manual event, create playbook, contextual actions, configuring third-party tools, and automated account monitoring. _(Mod 16 p80)_
+> Source: [[16-LO06c-SOAR-Tools-Splunk-Products]]
+>
+> [!question]- 1618 — What is ManageEngine Log360?
+> A unified SIEM solution with integrated DLP and CASB capabilities that detects, prioritizes, investigates, and responds; combines threat intelligence, ML-based anomaly detection, and rule-based detection with an incident management console reducing MTTD and MTTR. _(Mod 16 p82)_
+> Source: [[16-LO06c-SOAR-Tools-Splunk-Products]]
+>
+> [!question]- 1619 — What does ServiceNow Security Incident Response do?
+> Tracks incidents from discovery and initial analysis through containment, eradication, recovery, and into post-incident review, knowledge base article creation, and closure; integrates the MITRE ATT&CK framework and automates assignments. _(Mod 16 p84)_
+> Source: [[16-LO06c-SOAR-Tools-Splunk-Products]]
+>
+> [!question]- 1620 — What are Heimdal and QRadar SOAR features?
+> Heimdal offers Visualize, Hunt, Action, and Eliminate on a single platform with the XTP engine and granular endpoint/network telemetry; QRadar fetches case artifacts with MITRE ATT&CK tactics in a chain graph and integrates privacy reporting into playbooks. _(Mod 16 pp84–85)_
+> Source: [[16-LO06c-SOAR-Tools-Splunk-Products]]
+>
+> [!question]- 1621 — What are Swimlane and Demisto?
+> Swimlane centralizes SecOps activities with flexible configuration and role based Access control; Demisto combines full incident management, security automation and orchestration, and real-time collaboration with automated alert ingestion via task-based playbooks. _(Mod 16 p85)_
+> Source: [[16-LO06c-SOAR-Tools-Splunk-Products]]
+>
+> [!question]- 1622 — What is EDR?
+> Detects, investigates, and responds to threats on individual endpoints like workstations, servers, and mobile devices; isolates compromised endpoints, blocks malicious network traffic, and initiates remediation before risks escalate. _(Mod 16 pp87–88)_
+> Source: [[16-LO07a-EDR-Concept-Workflow-and-Features]]
+>
+> [!question]- 1623 — How does EDR work?
+> Detect by continuous monitoring and flagging incoming files · Threat actors printed as its own list item · contain at the endpoint · investigate endpoint or network origin · remediate automatically back to pre-infestation state. _(Mod 16 p89)_
+> Source: [[16-LO07a-EDR-Concept-Workflow-and-Features]]
+>
+> [!question]- 1624 — What is the EDR workflow?
+> Initiates comprehensive monitoring upon installation, applies behavior-analysis algorithms for patterns and connections, keeps real-time threat awareness, traces routes to pinpoint the most probable compromise location, and has analysts and engineers assess the data. _(Mod 16 p90)_
+> Source: [[16-LO07a-EDR-Concept-Workflow-and-Features]]
+>
+> [!question]- 1625 — Which EDR features aid detection?
+> Continuous real-time monitoring · behavioral-analytics baselines of typical endpoint behavior · threat-intelligence integration with IOCs and malicious IPs/domains · SIEM and CSIR single-interface access (as printed) · integration with firewalls, TI platforms, and SIEM. _(Mod 16 pp91–92)_
+> Source: [[16-LO07a-EDR-Concept-Workflow-and-Features]]
+>
+> [!question]- 1626 — What are the printed EDR benefits?
+> Flexible working with less human intervention · identify undetected attacks via threat-score prioritization · prevention-first approach before malicious code executes · root-cause attack explanation · quick automated response · fewer false positives. _(Mod 16 p92)_
+> Source: [[16-LO07a-EDR-Concept-Workflow-and-Features]]
+>
+> [!question]- 1627 — How does EDR detect threats?
+> Real-time visibility into endpoint activities for early targeted response; detects APTs and sophisticated attacks that bypass traditional antivirus and firewall defenses; uses Wazuh file integrity monitoring (FIM) to locate malicious files plus robust Wazuh log-gathering. _(Mod 16 pp93–94)_
+> Source: [[16-LO07b-EDR-Detection-Investigation-Hunting-Response]]
+>
+> [!question]- 1628 — What are the first four EDR investigation steps?
+> Data collection from endpoint logs · threat detection by analyzing anomalies · alert generation up the hierarchy · incident prioritization by severity and impact with higher-risk threats first. _(Mod 16 p95)_
+> Source: [[16-LO07b-EDR-Detection-Investigation-Hunting-Response]]
+>
+> [!question]- 1629 — What are the last four EDR investigation steps?
+> Incident investigation via the EDR console · threat hunting as the proactive hidden-threat step · threat containment and eradication by isolation · remediation with preventive measures applied early before high impact. _(Mod 16 pp95–96)_
+> Source: [[16-LO07b-EDR-Detection-Investigation-Hunting-Response]]
+>
+> [!question]- 1630 — How does EDR hunt threats?
+> Proactive hunting by searching for IOCs and behavioral anomalies; the hunter examines network activity in minute detail and persists until the incident is confirmed harmless. _(Mod 16 p97)_
+> Source: [[16-LO07b-EDR-Detection-Investigation-Hunting-Response]]
+>
+> [!question]- 1631 — How does EDR respond and remediate?
+> Assigns severity scores by potential impact and relevance; automated response isolates the endpoint, blocks malicious network traffic, and initiates remediation; rogue processes trigger promptly shutting down devices to prevent pivot attacks. _(Mod 16 p99)_
+> Source: [[16-LO07b-EDR-Detection-Investigation-Hunting-Response]]
+>
+> [!question]- 1632 — What is Cybereason EDR?
+> Integrated endpoint tool to detect, contain, investigate, and eliminate threats higher in the cyber kill chain; proactive investigator across all operating systems with ML-powered correlation, threat intelligence, and instant remediation. _(Mod 16 p101)_
+> Source: [[16-LO07c-EDR-Tools]]
+>
+> [!question]- 1633 — What is RSA NetWitness Endpoint?
+> Continuous monitoring on and off the network with alert prioritization; minimizes dwell time via swift root cause analysis and simplifies collection via endpoint inventory scans with Microsoft Windows log forwarding and filtering. _(Mod 16 p103)_
+> Source: [[16-LO07c-EDR-Tools]]
+>
+> [!question]- 1634 — What are Sophos and CrowdStrike EDR features?
+> Sophos Intercept X provides EDR and XDR with web protection, anti-exploitation, and adaptive attack protection; CrowdStrike Falcon Insight gives continuous monitoring with forensic capabilities, risk-based vulnerability management, threat intelligence, and managed selection and response (as printed). _(Mod 16 pp105–106)_
+> Source: [[16-LO07c-EDR-Tools]]
+>
+> [!question]- 1635 — What are Malwarebytes and Cortex XDR features?
+> Malwarebytes fights ransomware, malware, and viruses with attack isolation, automated remediation, and ransomware rollback; Cortex XDR offers detection, response, automation, and attack surface management with ML-based detection and automated root-cause analysis. _(Mod 16 p106)_
+> Source: [[16-LO07c-EDR-Tools]]
+>
+> [!question]- 1636 — What are Huntress and Bitdefender EDR features?
+> Huntress is managed EDR backed by a 24/7 team of threat hunters that reviews all suspicious activity; Bitdefender runs on the GravityZone XDR platform with a per-agent event recorder, continuous monitoring, and a centralized Gravity Zone Control Center. _(Mod 16 pp107–108)_
+> Source: [[16-LO07c-EDR-Tools]]
+>
+> [!question]- 1637 — What is XDR?
+> Detects, investigates, and responds across multiple environments and layers including endpoints, networks, cloud, and applications; unifies EDR plus network, cloud, and email security data into one holistic view. _(Mod 16 p110)_
+> Source: [[16-LO08a-XDR-Concept-and-Features]]
+>
+> [!question]- 1638 — What are the three XDR stages?
+> Ingest and normalize large volumes from endpoints, cloud, identity, email, traffic, and containers · Detect by parsing and correlating with AI and ML for stealthy threats · Respond by prioritizing on severity and automating investigation and response. _(Mod 16 pp110–111)_
+> Source: [[16-LO08a-XDR-Concept-and-Features]]
+>
+> [!question]- 1639 — What are printed XDR benefits?
+> Block known and unknown attacks with AI-driven TI and antivirus · visibility across all data sources · automatic 24/7 detection of APTs and covert attacks · protection against insider, fileless, memory-only, and zero-day threats · IOC-based stage scoring · recovery by removing malicious files and registry keys · third-party data extension. _(Mod 16 p111)_
+> Source: [[16-LO08a-XDR-Concept-and-Features]]
+>
+> [!question]- 1640 — What are the five XDR key features?
+> Data collection and integration with TI plus ML for unknown and zero-day · advanced analytics that prioritizes risks and reduces alert volumes · contextual visibility via human-machine teaming with signal-to-noise reduction · automated response guided by cross-domain context · cross-domain threat hunting. _(Mod 16 p112)_
+> Source: [[16-LO08a-XDR-Concept-and-Features]]
+>
+> [!question]- 1641 — How do EDR and NDR fit inside XDR?
+> EDR inside XDR leverages AI and ML to automate responses per severity and impact; XDR integrates EDR plus NDR network telemetry to correlate network-based threats, hunting across domains from a single console. _(Mod 16 p110)_
+> Source: [[16-LO08a-XDR-Concept-and-Features]]
+>
+> [!question]- 1642 — What are Cynet and Log360 XDR?
+> Cynet auto XDR is an autonomous breach protection platform with Cynet 360 using AI and ML to detect and respond in real time without constant human intervention; Log360 is a unified SIEM with integrated DLP and CASB combining TI, ML anomaly detection, and rule-based detection. _(Mod 16 pp113–115)_
+> Source: [[16-LO08b-XDR-Tools-and-EDR-vs-MDR-vs-XDR]]
+>
+> [!question]- 1643 — What distinguish SentinelOne, ExtraHop, and Microsoft XDR?
+> SentinelOne Singularity unites endpoint, cloud, and identity telemetry in a large data lake; ExtraHop offers no vendor lock-in with Reveal(x) 360 workflows; Microsoft XDR is agentless, cloud-powered with automatic self-healing and customizable hunting queries. _(Mod 16 pp117–120)_
+> Source: [[16-LO08b-XDR-Tools-and-EDR-vs-MDR-vs-XDR]]
+>
+> [!question]- 1644 — What distinguish Cybereason, Mandiant, and CrowdStrike XDR?
+> Cybereason charts MalOps by severity with a full attack story per MalOp; Mandiant adds dark web monitoring, threat-actor data, and OSINT indicators with IOC research; CrowdStrike Falcon unifies third-party sources in one XDR command console with a cross-domain graph explorer. _(Mod 16 pp117–120)_
+> Source: [[16-LO08b-XDR-Tools-and-EDR-vs-MDR-vs-XDR]]
+>
+> [!question]- 1645 — How do EDR, XDR, and MDR differ in scope and nature?
+> EDR monitors and secures endpoints while XDR covers endpoints, cloud services, and networks and MDR spans hunting, monitoring, detection, and response workflows; EDR and XDR are a technology with XDR an extension of EDR, while MDR is a managed security service. _(Mod 16 p121)_
+> Source: [[16-LO08b-XDR-Tools-and-EDR-vs-MDR-vs-XDR]]
+>
+> [!question]- 1646 — How do EDR, XDR, and MDR differ in detection and response?
+> EDR uses signature and behavior-based analytics, XDR uses ML and AI over multiple sources, MDR uses analytics and human expertise; EDR isolates endpoints, XDR blocks malicious network connections, and MDR is usually more automated than EDR/XDR via third-party vendors. _(Mod 16 p121)_
+> Source: [[16-LO08b-XDR-Tools-and-EDR-vs-MDR-vs-XDR]]
+>
+> [!question]- 1647 — What is forensic investigation?
+> Methodological procedures and techniques to identify, gather, preserve, extract, interpret, document, and present evidence from incident-affected systems, acceptable in legal and/or administrative proceedings. _(Mod 16 p123)_
+> Source: [[16-LO09a-Forensics-Concept-and-People]]
+>
+> [!question]- 1648 — How does forensics relate to containment?
+> Conducted simultaneously with the containment process; IR contains events while forensics finds the root cause, with the goal of identifying the incident, the time, the perpetrator, and mitigation steps. _(Mod 16 p123)_
+> Source: [[16-LO09a-Forensics-Concept-and-People]]
+>
+> [!question]- 1649 — What are the five forensics objectives?
+> Track and prosecute perpetrators · gather evidence in a forensically sound manner · estimate impact and assess intent · minimize tangible and intangible losses · protect the organization from similar incidents. _(Mod 16 p123)_
+> Source: [[16-LO09a-Forensics-Concept-and-People]]
+>
+> [!question]- 1650 — Who is involved in forensics?
+> Three user groups are Investigators for incidents, IT Professionals as technical staff and administrators, and Incident handlers for response; analysis evaluates before-and-after data, builds the timeline, and balances operations vs security per budget. _(Mod 16 pp123–124)_
+> Source: [[16-LO09a-Forensics-Concept-and-People]]
+>
+> [!question]- 1651 — Which forensics roles handle evidence custody?
+> The Photographer photographs the scene and must be certified for evidence photography; the Evidence Manager holds name, type, time, and source per item so evidence stays admissible; the Evidence Documenter records every phase from occurrence to end. _(Mod 16 pp124–125)_
+> Source: [[16-LO09a-Forensics-Concept-and-People]]
+>
+> [!question]- 1652 — Which forensics roles analyze and testify?
+> The Evidence Examiner/Investigator sorts useful evidence by case relevance with an evidence hierarchy; the Incident Analyzer assesses type, system effect, threats, and vulnerabilities; the Expert Witness authenticates facts and is called to cross-examine witnesses and evidence. _(Mod 16 pp124–125)_
+> Source: [[16-LO09a-Forensics-Concept-and-People]]
+>
+> [!question]- 1653 — What are the nine forensics methodology steps in order?
+> Obtain a search warrant · evaluate and secure the scene · collect the evidence · secure the evidence · acquire the data · analyze the data · assess the evidence and the case · prepare the final report · testify as an expert witness. _(Mod 16 pp126–127)_
+> Source: [[16-LO09b-Forensics-Methodology-and-Module-Summary]]
+>
+> [!question]- 1654 — Why does the methodology start with a warrant and center on analysis?
+> Obtain a search warrant before investigating suspects; analyze the data including monitoring before, during, and after is the most important phase with more evidence via logs; the whole methodology keeps evidence admissible in court. _(Mod 16 pp126–127)_
+> Source: [[16-LO09b-Forensics-Methodology-and-Module-Summary]]
+>
+> [!question]- 1655 — What do the middle methodology steps require?
+> Collect all evidence neglecting no supporting items · secure it since loss weakens the case · acquire the affected data to identify the intrusion reason · assess the gathered evidence after analysis · report both investigator and suspect/attacker actions. _(Mod 16 pp126–127)_
+> Source: [[16-LO09b-Forensics-Methodology-and-Module-Summary]]
+>
+> [!question]- 1656 — What happens after forensics analysis?
+> Perpetrator identified means management chooses law enforcement prosecution vs organizational disciplinary team; not identified means close or pass to an external agency; severe incidents affecting employees, customers, or the public go to external law enforcement with a case filed. _(Mod 16 p128)_
+> Source: [[16-LO09b-Forensics-Methodology-and-Module-Summary]]
+>
+> [!question]- 1657 — What does the module summary restate?
+> Timely responses prevent major losses with the IRT working from first-responder information; incidents categorize as false positive, true positive, false negative, true negative; forensics runs simultaneously with containment to identify, gather, preserve, extract, interpret, document, and present evidence. _(Mod 16 p129)_
+> Source: [[16-LO09b-Forensics-Methodology-and-Module-Summary]]
+
+### Module 17 (30 items)
+> [!question]- 1658 — What is business continuity (BC) as defined in the module?
+> Processes and procedures ensuring continuity of critical business functions during and after a disaster; ISO form: capability to continue delivery of services or products at acceptable predefined levels. _(Mod 17 p5)_
+> Source: [[17-LO01a-BC-DR-Concepts-BIA-RTO-RPO]]
+>
+> [!question]- 1659 — How does the module contrast BC vs DR strategy focus?
+> BC is a business-centric strategy emphasising operations over IT; DR is a data-centric strategy emphasising restoring IT infrastructure and data. _(Mod 17 pp5, 9)_
+> Source: [[17-LO01a-BC-DR-Concepts-BIA-RTO-RPO]]
+>
+> [!question]- 1660 — What are two stated objectives of BC?
+> Maintain continuity of operations during and after a disruptive incident; protect reputation by providing continuous services; minimise effects via disaster preparedness. _(Mod 17 pp5–6)_
+> Source: [[17-LO01a-BC-DR-Concepts-BIA-RTO-RPO]]
+>
+> [!question]- 1661 — What does business continuity management (BCM) own?
+> Ensures continuity after disruptive incidents; responsible for business recovery, crisis management, incident management, emergency management, contingency management. _(Mod 17 p7)_
+> Source: [[17-LO01a-BC-DR-Concepts-BIA-RTO-RPO]]
+>
+> [!question]- 1662 — What are crisis management and emergency management under BCM?
+> Crisis management responds under crisis to minimise damage to brand, operations, revenue; emergency management covers procedures after a crisis to safeguard people from harm. _(Mod 17 pp7–8)_
+> Source: [[17-LO01a-BC-DR-Concepts-BIA-RTO-RPO]]
+>
+> [!question]- 1663 — What is a business impact analysis (BIA) and what does it explicitly not do?
+> Systematic process determining/evaluating potential effects of interruption to critical business operations; ascertains recovery time and requirements and ends in a report. Analysis tool only — does not itself design or implement recovery solutions. _(Mod 17 p10)_
+> Source: [[17-LO01a-BC-DR-Concepts-BIA-RTO-RPO]]
+>
+> [!question]- 1664 — Which BIA phases are printed in the module?
+> Phase 1 Initiation (objectives/scope, form project team); Phase 2 Acquisition of Information (interviews and questionnaire surveys); Phase 3 Analysis of Information (prioritised process list); Phase 5 Presentation of the BIA Report. No Phase 4 is printed. _(Mod 17 pp11–12)_
+> Source: [[17-LO01a-BC-DR-Concepts-BIA-RTO-RPO]]
+>
+> [!question]- 1665 — What are RTO and RPO as printed?
+> RTO = maximum tolerable length of time a computer, system, network, or application can be down, established by the process owner (e.g. 45 minutes). RPO = maximum time frame for which an organisation loses data, determining acceptable data loss and minimum backup frequency (e.g. 3-hourly backups for 3-hour RPO). _(Mod 17 pp13–14)_
+> Source: [[17-LO01a-BC-DR-Concepts-BIA-RTO-RPO]]
+>
+> [!question]- 1666 — What are the five BC/DR activities in order?
+> Prevention → response → resumption → recovery → restoration. _(Mod 17 pp15–18)_
+> Source: [[17-LO02a-BC-DR-Activities]]
+>
+> [!question]- 1667 — What is prevention, with the module's example?
+> Actions to prevent a natural phenomenon or potential hazard from harming the organisation; e.g. restricting spending capital on items not listed in the DRP or BCP. _(Mod 17 pp16–17)_
+> Source: [[17-LO02a-BC-DR-Activities]]
+>
+> [!question]- 1668 — What characterises an effective preventive control strategy?
+> Protects critical business areas and mitigates threat impact; does not allow unauthorised access and causes no availability problem. _(Mod 17 p17)_
+> Source: [[17-LO02a-BC-DR-Activities]]
+>
+> [!question]- 1669 — What happens during the response activity?
+> Post-disaster activities to assess business needs and reduce/limit negative impacts; e.g. evacuating personnel, shutting down systems; includes generating notifications, activating the business continuity team (BCT), and implementing the BCP. _(Mod 17 pp16–17)_
+> Source: [[17-LO02a-BC-DR-Activities]]
+>
+> [!question]- 1670 — What is resumption and what is its first decision?
+> Recommencement of business operations, continuing at a primary or alternate location; first decision is resume at primary vs shift to alternate; in large-scale destruction consult the emergency operations center on invoking the BCP. _(Mod 17 pp16–17)_
+> Source: [[17-LO02a-BC-DR-Activities]]
+>
+> [!question]- 1671 — How do recovery and restoration differ?
+> Recovery resumes services dependent on critical business applications, restoring the site to a stable and usable condition; restoration repairs the old primary site or sets up a completely new alternate site, migrating functions back to normalcy. _(Mod 17 p16)_
+> Source: [[17-LO02a-BC-DR-Activities]]
+>
+> [!question]- 1672 — When is restoration initiated and how is the team split?
+> Initiated only in case of physical damage to the primary site; operations team splits in two — one group keeps implementing DRP/BCP at the alternate site, the other manages restoration at the primary site; both often run simultaneously. _(Mod 17 p18)_
+> Source: [[17-LO02a-BC-DR-Activities]]
+>
+> [!question]- 1673 — What is a Business Continuity Plan (BCP)?
+> Comprehensive document formulated to ensure resilience against potential threats and allow operations to continue under adverse or abnormal conditions; built from several stakeholders' inputs; protects personnel and assets during disruption. _(Mod 17 p20)_
+> Source: [[17-LO03a-BCP-DRP-and-Elements]]
+>
+> [!question]- 1674 — Which goals belong to the BCP's seven-goal list?
+> Analysing potential risks and losses; enabling risk management; prioritising safety, health, and welfare; minimising infrastructural damage; restoring pre-disaster conditions; maintaining vital documents (telephone, employee, vendor, client details); staff training and awareness with a pre-defined communication plan. _(Mod 17 pp20–21)_
+> Source: [[17-LO03a-BCP-DRP-and-Elements]]
+>
+> [!question]- 1675 — What is a Disaster Recovery Plan (DRP)?
+> Plan developed for specific departments to help them recover from a disaster; responds to unexpected disruptive events with preventive mechanisms to continue or instantaneously resume critical business functions. _(Mod 17 p22)_
+> Source: [[17-LO03a-BCP-DRP-and-Elements]]
+>
+> [!question]- 1676 — What are the four DRP goals?
+> Reduce overall organizational risk (assess critical vulnerabilities first); alleviate senior-management concerns (approval smooths enforcement); ensure compliance with regulations; provide rapid response after a disruption. _(Mod 17 p22)_
+> Source: [[17-LO03a-BCP-DRP-and-Elements]]
+>
+> [!question]- 1677 — What does the Network Disaster Recovery Plan (NDRP) ensure?
+> Availability, integrity, and resilience of computer network infrastructure during a disaster; backs up all network services and resources against natural disasters, cyberattacks, hardware failures, or other unexpected incidents. _(Mod 17 p23)_
+> Source: [[17-LO03a-BCP-DRP-and-Elements]]
+>
+> [!question]- 1678 — Which NDRP considerations does the module name?
+> Follow BC standards; test and revise often; prioritize recovery objectives; build Zero Trust architecture (no implicit trust, continual inspection/monitoring); decide RTO and RPO for each essential service and data type before developing strategy. _(Mod 17 p23)_
+> Source: [[17-LO03a-BCP-DRP-and-Elements]]
+>
+> [!question]- 1679 — What are the key elements of a good BCP?
+> Risk assessment and business impact analysis; planning an effective response (employees, structures, procedures, technology); roles and responsibilities; communication; testing and training. _(Mod 17 p24)_
+> Source: [[17-LO03a-BCP-DRP-and-Elements]]
+>
+> [!question]- 1680 — What are the elements of a good DRP?
+> RTO (down-time limit), RPO (data-loss tolerance, backup time frame), communication plan (when/how plus backup channels), recovery protocols for clients and stakeholders, inventory of organization assets, employee protection and safety strategy. _(Mod 17 p26)_
+> Source: [[17-LO03a-BCP-DRP-and-Elements]]
+>
+> [!question]- 1681 — Which ISO standard states BCMS requirements?
+> ISO 22301:2019 — Security and Resilience — Business Continuity Management Systems — Requirements; generic, applies to all organizations or parts thereof regardless of size, industry, or nature. Source: `https://www.iso.org` _(Mod 17 p28)_
+> Source: [[17-LO04a-BC-DR-Standards-and-Module-Summary]]
+>
+> [!question]- 1682 — What is ISO 22313:2012's relationship to ISO 22301?
+> ISO 22313:2012 (Societal Security — BCMS — Guidance) guides ISO 22301 with good international practice for planning through continually improving a documented management system; not intended to imply uniformity — shape the BCMS to legal, regulatory, and industry needs. _(Mod 17 p29)_
+> Source: [[17-LO04a-BC-DR-Standards-and-Module-Summary]]
+>
+> [!question]- 1683 — What does ISO/IEC 27031:2011 cover?
+> Guidelines for ICT readiness for business continuity (IRBC): concepts and principles plus methods and processes to identify and specify ICT readiness aspects; applies to any organization developing an IRBC program. _(Mod 17 p30)_
+> Source: [[17-LO04a-BC-DR-Standards-and-Module-Summary]]
+>
+> [!question]- 1684 — What does FINRA Rule 4370 require of members?
+> Create and maintain a written BCP for emergency or significant business disruption, covering data backup and recovery, alternate communications, and alternate physical location of employees; senior-management registered principal approves it with annual review; written disclosure at account opening, on website, or mailed on request. _(Mod 17 pp31–32)_
+> Source: [[17-LO04a-BC-DR-Standards-and-Module-Summary]]
+>
+> [!question]- 1685 — How many emergency contacts does FINRA Rule 4370 require?
+> Two associated persons reported to FINRA, at least one a senior-management registered principal; a single-person member designates a knowledgeable outsider (e.g. attorney, accountant, clearing contact); update promptly. _(Mod 17 p32)_
+> Source: [[17-LO04a-BC-DR-Standards-and-Module-Summary]]
+>
+> [!question]- 1686 — Why can ASIS never be the answer to an enforcement question?
+> ASIS is a volunteer, nonprofit professional society with no regulatory, licensing, or enforcement power; it does not enforce compliance and does not list, certify, test, inspect, or approve practices or products. _(Mod 17 p33)_
+> Source: [[17-LO04a-BC-DR-Standards-and-Module-Summary]]
+>
+> [!question]- 1687 — Which further BCDR standards does the module list?
+> ISO 22320:2018 (emergency management, command and control); ISO 31000:2018 (risk management guidelines); ISO Guide 73:2009 (risk management vocabulary); IEC 31010:2019 (risk assessment techniques); ISO/TS 22317:2021 (BIA guidelines); NFPA 1600; NIST SP 800-34 Rev. 1 (contingency planning). _(Mod 17 pp34–35)_
+> Source: [[17-LO04a-BC-DR-Standards-and-Module-Summary]]
+
+### Module 18 (50 items)
+> [!question]- 1688 — What is risk management?
+> Process of reducing and maintaining risk at an acceptable level by means of a well-defined and actively employed security program; involves identifying, assessing, and responding to risks with controls, prominent throughout the system security life-cycle. _(Mod 18 p6)_
+> Source: [[18-LO01a-Risk-Concepts-Benefits-Roles-KRI]]
+
+> [!question]- 1689 — Which printed objectives require prioritizing and controlling risk?
+> Depending on impact/severity, prioritize the risks and use established risk management methods, tools, and techniques; control the risk and mitigate the risk impact. _(Mod 18 p6)_
+> Source: [[18-LO01a-Risk-Concepts-Benefits-Roles-KRI]]
+
+> [!question]- 1690 — Which printed benefit protects revenue?
+> Minimizes the effect of risk on the organization's revenue; alongside focusing on potential risk impact areas and addressing risks according to the risk level. _(Mod 18 pp6–7)_
+> Source: [[18-LO01a-Risk-Concepts-Benefits-Roles-KRI]]
+
+> [!question]- 1691 — Who makes trade-off decisions in the risk management process?
+> Business and Functional Managers; Senior Management supervises plans and develops common-risk policies, while the CIO executes IT plans and trains staff on IT risks. _(Mod 18 pp8–9)_
+> Source: [[18-LO01a-Risk-Concepts-Benefits-Roles-KRI]]
+
+> [!question]- 1692 — What is a KRI and what are its four printed features?
+> A metric showing the riskiness of an activity (risk appetite probability), giving early warning at an early stage; features: quantifiable (number, count, percentage), predictable, comparable, informational. Slide triad: define risk for an objective, identify adverse-effect possibility, send early warning. _(Mod 18 pp10–11)_
+> Source: [[18-LO01a-Risk-Concepts-Benefits-Roles-KRI]]
+
+> [!question]- 1693 — Why is risk identification the foundation and first step?
+> It lists risks and their characteristics before such risks harm the organization; identified risks are recorded in a risk register and the process is iterative, generating threats (prevent objectives) and opportunities (enhance them). _(Mod 18 p13)_
+> Source: [[18-LO02a-Risk-Context-Identification-Analysis]]
+
+> [!question]- 1694 — What are the three main elements of risk identification?
+> Description/Event: an occurrence or particular set of circumstances; Causes: factors that may contribute to a risk occurring; Consequences: impact of an event. Techniques: checklists, flow charts, and systems analysis. _(Mod 18 p14)_
+> Source: [[18-LO02a-Risk-Context-Identification-Analysis]]
+
+> [!question]- 1695 — What are the printed assessment severity bands?
+> 1–2: eliminate immediately (usually within 24 hours), or reduce with at least one control measure; 3–4: eliminate or control within a reasonable timeframe; 5–6: eliminate as soon as possible or control when possible. _(Mod 18 p15)_
+> Source: [[18-LO02a-Risk-Context-Identification-Analysis]]
+
+> [!question]- 1696 — What actions do Table 18.1 Extreme/High and Medium-lower levels require?
+> Extreme/High: immediate measures to isolate, eliminate, and substitute the risk through effective controls; Medium-lower: stop the activity unless the risk is reduced to a low or medium level. _(Mod 18 p17)_
+> Source: [[18-LO02a-Risk-Context-Identification-Analysis]]
+
+> [!question]- 1697 — What is the risk matrix formula, bands, and severity classes?
+> Risk rating = Probability (Likelihood) x Severity; probability bands 81–100% down to 1–20%; severity classes severe, major, moderate, minor, insignificant; quantitative/semi-quantitative tool with defined tolerable and non-tolerable ranges. _(Mod 18 p18)_
+> Source: [[18-LO02a-Risk-Context-Identification-Analysis]]
+
+> [!question]- 1698 — What are the p19 four risk-treatment wordings?
+> Avoiding the risk (avoiding activities that lead to increased risk probability); Reducing the risk (reducing likelihood and impact); Transferring the risk (shifting responsibilities to another party through insurance or partnership); Accepting the risk (if it cannot be avoided or transferred). _(Mod 18 p19)_
+> Source: [[18-LO02b-Risk-Treatment-Plan-and-Tracking]]
+
+> [!question]- 1699 — How do Eliminate, Transfer, and Mitigate differ in the six printed options?
+> Eliminate: applying controls to reduce the threat of exploiting the vulnerability to zero; Transfer: transferring the risk factor to a third party that can manage the risk levels; Mitigate: reducing risks by implementing direct or competing controls. _(Mod 18 p21)_
+> Source: [[18-LO02b-Risk-Treatment-Plan-and-Tracking]]
+
+> [!question]- 1700 — When do Accept and Risk Avoidance apply, with the printed example?
+> Accept: risk factor at an acceptable level, accepted when efforts to address, transfer, or mitigate exceed impact on the network; Risk Avoidance: avoiding the factor that enhances risk, e.g. not allowing laptops to avoid associated risks. Note: residual risks persist. _(Mod 18 pp21–22)_
+> Source: [[18-LO02b-Risk-Treatment-Plan-and-Tracking]]
+
+> [!question]- 1701 — What must a risk treatment plan contain, and which standard makes it essential?
+> Action plan with summary of identified risks, each designed response, responsible parties, and target date for treatment, plus proposed controls, priorities, deadlines, resources, roles, and monitoring; essential document of a certified ISO 27001 information security management system. _(Mod 18 p23)_
+> Source: [[18-LO02b-Risk-Treatment-Plan-and-Tracking]]
+
+> [!question]- 1702 — How do risk tracking and risk review differ?
+> Tracking identifies the chance of a new risk and monitors probability, impact, status, exposure; Review evaluates effectiveness of implemented strategies, finds shortcomings, and enhances controls. Risk reporting keeps management aware of the top risks. _(Mod 18 p24)_
+> Source: [[18-LO02b-Risk-Treatment-Plan-and-Tracking]]
+
+> [!question]- 1703 — What is the ERM framework in printed terms?
+> Methods and processes to minimize the impact of risks, involving planning, organizing, leading, and controlling; steps: identify events (risks and opportunities), assess likelihood and magnitude of impact, determine a response strategy, monitor. _(Mod 18 pp27–28)_
+> Source: [[18-LO03a-ERM-NIST-COSO-Frameworks]]
+
+> [!question]- 1704 — What are the nine printed ERM key activities in order?
+> Classification of the information system → selection of appropriate security controls → refinement from risk assessment → documentation in a system security plan → implementation → security controls assessment → agency-level risk decision → authorizing operation → continuous monitoring. _(Mod 18 pp27–28)_
+> Source: [[18-LO03a-ERM-NIST-COSO-Frameworks]]
+
+> [!question]- 1705 — What are the seven printed NIST RMF tasks in order?
+> Prepare → Categorize (impact analysis) → Select (NIST SP 800-53 baseline) → Implement → Assess (verify controls in place and effective) → Authorize (senior official risk-based decision) → Monitor (continuous monitoring). Source: `https://csrc.nist.gov`. _(Mod 18 pp30–31)_
+> Source: [[18-LO03a-ERM-NIST-COSO-Frameworks]]
+
+> [!question]- 1706 — What is the printed NIST assessment sub-step sequence?
+> Develop the security assessment plan → determine controls to assess → select procedures → determine depth and coverage → tailor procedures → finalize plan and obtain approval → conduct assessment → analyze results → create the security assessment report. _(Mod 18 p31)_
+> Source: [[18-LO03a-ERM-NIST-COSO-Frameworks]]
+
+> [!question]- 1707 — What is COSO ERM and which components does the prose detail?
+> The Committee of Sponsoring Organizations of the Treadway Commission, established in the mid-1980s as part of the National Commission on Fraudulent Financial Reporting; prose details four of five interrelated components: Governance and Culture, Strategy and Objective-Setting, Performance, Review and Revision. Source: `http://www.coso.org`. _(Mod 18 pp32–33)_
+> Source: [[18-LO03a-ERM-NIST-COSO-Frameworks]]
+
+> [!question]- 1708 — What is COBIT and who designed it?
+> Control Objectives for Information and Related Technologies (COBIT), an IT governance framework and supporting toolset designed by ISACA that lets managers bridge the gap between control requirements, technical issues and business risks; emphasizes regulatory compliance. Source: `http://www.isaca.org`. _(Mod 18 p35)_
+> Source: [[18-LO03b-Governance-Policy-Vendors]]
+
+> [!question]- 1709 — Which COBIT stakeholders manage risk and judge compliance?
+> Risk Management (internal): ensures identification and management of all IT-related risk; Regulators (external): determine whether the enterprise is compliant and has the right governance system to sustain compliance. _(Mod 18 pp35–36)_
+> Source: [[18-LO03b-Governance-Policy-Vendors]]
+
+> [!question]- 1710 — What are the printed COBIT governance framework principles?
+> Based on Conceptual Model; Open and Flexible; Aligned to Major Standards; plus goals cascade aligning all IT efforts with business objectives. Six governance system principles are the core requirements. _(Mod 18 pp36–37)_
+> Source: [[18-LO03b-Governance-Policy-Vendors]]
+
+> [!question]- 1711 — What are three printed objectives of an enterprise network risk management policy?
+> Equip the organization with skills to identify and treat risks; provide a consistent RMF; meet legal and regulatory requirements — plus manage risks with adequate mitigation techniques and combat existing and emerging risks. _(Mod 18 p38)_
+> Source: [[18-LO03b-Governance-Policy-Vendors]]
+
+> [!question]- 1712 — Which ERM vendors cover identification-to-resolution and scan-style reporting?
+> SAS Governance and Compliance Manager (`www.sas.com`): view of risk exposure through identification, assessment, monitoring, response, resolution; MetricStream ERM App (`www.metricstream.com`): real-time insights via analytics, heat maps, reports, dashboards, charts. _(Mod 18 pp40–42)_
+> Source: [[18-LO03b-Governance-Policy-Vendors]]
+
+> [!question]- 1713 — Why must organizations maintain a vulnerability management program?
+> Risk management frameworks require organizations to maintain a vulnerability management program; it is a continuous process of identifying, assessing, classifying, remediating, and mitigating vulnerabilities, and a superset of vulnerability assessment. Source: `http://www.tripwire.com`. _(Mod 18 pp44–45)_
+> Source: [[18-LO04a-Vuln-Mgmt-Program-and-Phases]]
+
+> [!question]- 1714 — What are the printed vulnerability management phases, and which is first?
+> Discovery, Asset Prioritization, Assessment, Reporting, Remediation, Verification; Discovery is stated as the first phase. Assessment scans and evaluates, Reporting reports results, Remediation reduces risks and removes root cause, Verification monitors continuously. _(Mod 18 pp45–47)_
+> Source: [[18-LO04a-Vuln-Mgmt-Program-and-Phases]]
+
+> [!question]- 1715 — What does the Discovery record hold per element?
+> Location, business processes, data classification, identified threats, risks; inventory covers inactive and active assets plus physical and logical elements, e.g. servers, internal applications, software licenses. _(Mod 18 p47)_
+> Source: [[18-LO04a-Vuln-Mgmt-Program-and-Phases]]
+
+> [!question]- 1716 — Which Discovery functions catch rogue devices and show the hacker's view?
+> Identifies all hosts including rogue devices; identifies services and ports on each device; provides a hacker's view of the network; plus risk-based ranking of remedial efforts. Uses automated network discovery tools. _(Mod 18 p47)_
+> Source: [[18-LO04a-Vuln-Mgmt-Program-and-Phases]]
+
+> [!question]- 1717 — What is the printed 0–5 asset prioritization scale?
+> AlienVault USM Appliance asset value 0 to 5, where 0 is least importance and 5 most important; prioritize based on impact of failure and reliability in the business, correlating asset value plus accessible information with vulnerabilities and known threats. _(Mod 18 p49)_
+> Source: [[18-LO04a-Vuln-Mgmt-Program-and-Phases]]
+
+> [!question]- 1718 — What is the goal of vulnerability assessment and who receives its reports?
+> Goal: scanning, examining, evaluating, and reporting vulnerabilities to minimize levels of risk; reports go to the security team, auditors, and management, including a prioritization matrix, risk summary, consolidated vulnerability list, exploit results, and network device details. _(Mod 18 p51)_
+> Source: [[18-LO04b-Assessment-Remediation-Verification]]
+
+> [!question]- 1719 — How do mitigation, remediation, and verification differ, with the printed example?
+> Mitigation acts without correcting: installing a web application firewall instead of fixing the web application vulnerability; Remediation corrects (fixes) the discovered vulnerability; Verification is another scan after remediation to ensure the vulnerability is fixed, closing the assessment. _(Mod 18 pp53–55)_
+> Source: [[18-LO04b-Assessment-Remediation-Verification]]
+
+> [!question]- 1720 — What are the printed spoofing-protection mitigation types?
+> `URPF` — protects packets from spoofing, with proper URPF mode configured before enabling; `IP Source Guard` — prevents IP traffic on non-routed and layer 2 interfaces by classifying packets; plus transit ACLs allowing only authorized traffic. _(Mod 18 p53)_
+> Source: [[18-LO04b-Assessment-Remediation-Verification]]
+
+> [!question]- 1721 — What does a remediation plan include, and what timing buckets does it use?
+> Actions for fixing, mitigating, or accepting; mode (automatic or manual); justification for accepting any vulnerability; phased strategy from host level to network level with deadlines per risk level; timing buckets immediate, 30 days, 6 months, future. _(Mod 18 p54)_
+> Source: [[18-LO04b-Assessment-Remediation-Verification]]
+
+> [!question]- 1722 — What does verification require after remediation?
+> Scan again after remediation plus an unlimited scan for all originally discovered vulnerabilities; verified fix reports ensure compliance; verification must not damage or malfunction any other network device, service, or application. _(Mod 18 p55)_
+> Source: [[18-LO04b-Assessment-Remediation-Verification]]
+
+> [!question]- 1723 — What are the printed external assessment steps?
+> Find all live hosts → fingerprint OSes → detect open ports → map open ports and running services → find version of all running services → map service version to associated vulnerabilities → check vulnerable vs patched; evaluates the security profile from the network perimeter. _(Mod 18 p59)_
+> Source: [[18-LO05a-Vuln-Assessment-and-Scanning]]
+
+> [!question]- 1724 — What is the printed external scanning example command?
+> `nmap -sv -T4 -f www.certifiedhacker.com` — output values garbled in OCR and not reproduced. _(Mod 18 p59)_
+> Source: [[18-LO05a-Vuln-Assessment-and-Scanning]]
+
+> [!question]- 1725 — What defect does the Four Stages of Vulnerability Assessment carry?
+> Printed as Four Stages but captures only three bullets: plan and configure (set up tasks and reports); resolve the vulnerabilities; maintain a security baseline for a network — one stage label missing, not reconstructed. _(Mod 18 p60)_
+> Source: [[18-LO05a-Vuln-Assessment-and-Scanning]]
+
+> [!question]- 1726 — What weaknesses does internal assessment target, with examples?
+> Weaknesses within the network such as password complexity and antivirus protection (scan with tools such as Nessus); examples: old passwords (older than one month), old patch levels, unnecessary services (multiple open ports), ineffective security-configuration procedures. _(Mod 18 p61)_
+> Source: [[18-LO05a-Vuln-Assessment-and-Scanning]]
+
+> [!question]- 1727 — Which scanners does the printed web-assessment list name?
+> OWASP ZAP, WebInspect (printed `Weblnspect`), IBM Security AppScan, Qualys, Vega — crawl the website to discover vulnerabilities, then report, aiming to make websites vulnerability free; Vega finds SQL injection, XSS, and inadvertently disclosed sensitive information. _(Mod 18 pp63–64)_
+> Source: [[18-LO05a-Vuln-Assessment-and-Scanning]]
+
+> [!question]- 1728 — What is a DPIA?
+> Data protection impact assessment — a structured and systematic approach to assess and manage privacy risks of specific data processing activities; essential for compliance with regulations such as GDPR; protects rights and freedoms of individuals. _(Mod 18 p66)_
+> Source: [[18-LO06a-PIA-DPIA-Process-and-Steps]]
+
+> [!question]- 1729 — What are the nine printed DPIA steps, ending with what?
+> Identify need → describe the processing → consider consultation → assess necessity and onality [truncated as printed] → identify and assess risks → identify mitigation measures → sign off and record outcome → integrate outcome into plan → keep under review, repeating on substantial changes to nature, scope, context, or purpose. _(Mod 18 pp66–67)_
+> Source: [[18-LO06a-PIA-DPIA-Process-and-Steps]]
+
+> [!question]- 1730 — What risks and wording do DPIA steps 5–6 print?
+> Step 5 risks: intrusion into private spaces, access to unauthorized assets, violation of regulations and compliances, access to age/content-restricted websites, financial harmful activities; step 6 mitigates the identified `risks and hams` [sic] and determines effect and severity of risk on assets. _(Mod 18 p67)_
+> Source: [[18-LO06a-PIA-DPIA-Process-and-Steps]]
+
+> [!question]- 1731 — What are the three PIA objectives and four triggers?
+> Objectives: ensure adherence to legal/regulatory/policy requirements; identify and address breach risks and effects; assess alternative processes and protections; conducted when: new PII technologies, risky fresh data designs, system updates introducing new risks, PII rulemaking. _(Mod 18 p68)_
+> Source: [[18-LO06a-PIA-DPIA-Process-and-Steps]]
+
+> [!question]- 1732 — What are the twelve printed PIA process steps?
+> Preliminary Assessment → Form the PIA Team → Data Mapping and Description → Data Privacy Compliance Check → Risk Assessment → Privacy Impact Identification → Risk Mitigation Measures → Documentation → Consultation → Report and Approval → Integration and Implementation → Ongoing Monitoring and Review. _(Mod 18 pp69–70)_
+> Source: [[18-LO06a-PIA-DPIA-Process-and-Steps]]
+
+> [!question]- 1733 — What do Mandatly and Seers do per the printed prose?
+> Mandatly (`https://mandatly.com`): intelligent assessment identifying case scenarios needing PIA/DPIA, with automatic risk flagging and an assessment portal for PIA/DPIA, Vendor, and Readiness; Seers (`https://seersco.com`): holistic PIA platform giving deep insight into data-processing privacy risks. _(Mod 18 pp72–74)_
+> Source: [[18-LO06b-PIA-Tools-and-Module-Summary]]
+
+> [!question]- 1734 — Which PIA tool URLs are preserved with verbatim damage?
+> Privado `https://ww.privahai/` [sic, as printed]; Smartsheet `https://www.smartsheet.corn/` [sic, as printed]; PrivacyEngine `https ://www.privacyengine.iO/` [sic, as printed]; Collibra `https ://www.collibra.com/` [sic spacing, as printed] — none corrected. _(Mod 18 pp75–76)_
+> Source: [[18-LO06b-PIA-Tools-and-Module-Summary]]
+
+> [!question]- 1735 — How does a PIA differ from a privacy risk assessment?
+> PIA identifies and reduces risks to personal information, mandatory if a project involves personal information, conducted by sub-agencies or third-party tools; privacy risk assessment is the internally managed early-warning framework that PIA and DPIA sit under, conducted by the security team. _(Mod 18 p77)_
+> Source: [[18-LO06b-PIA-Tools-and-Module-Summary]]
+
+> [!question]- 1736 — What does the module summary state about KRIs and impact level?
+> KRI = metric showing risk appetite probability; impact level depends on asset value and data criticality; risk management reduces and maintains risk at an acceptable level using a well-defined active security program. _(Mod 18 p78)_
+> Source: [[18-LO06b-PIA-Tools-and-Module-Summary]]
+
+> [!question]- 1737 — What does risk-based vulnerability assessment do per the summary?
+> Identifies, classifies, and analyzes vulnerabilities to mitigate or remediate them; organizations maintain vulnerability management for their RMFs, and ERM defines implementation activities for handling risk. _(Mod 18 p78)_
+> Source: [[18-LO06b-PIA-Tools-and-Module-Summary]]
+
+### Module 19 (42 items)
+> [!question]- 1738 — What is the attack surface?
+> The sum of all possible exposures (known, unknown, and potential) through which an unauthorized user or attacker can access assets, including protocols, interfaces, user input fields, and services. _(Mod 19 p5)_
+> Source: [[19-LO01a-Attack-Surface-Analysis-Concept]]
+>
+> [!question]- 1739 — What are the five attack surface categories with one printed example each?
+> Network (open ports/services on public IP) · Software (unvalidated input fields) · Physical (USB ports enabled on a laptop) · Human (fake calls giving up passwords, weakest point) · System (unused roles from Windows systems). _(Mod 19 pp6–8)_
+> Source: [[19-LO01a-Attack-Surface-Analysis-Concept]]
+>
+> [!question]- 1740 — Which network items does the page list as passing unencrypted data?
+> Unencrypted protocols Telnet, FTP, HTTP, SMTP; network file systems NFS and SMB; remote memory dump service (`netdump`); plus network printers. _(Mod 19 p7)_
+> Source: [[19-LO01a-Attack-Surface-Analysis-Concept]]
+>
+> [!question]- 1741 — What can an attacker with physical access do?
+> Scan network, ports, and services to create a network map; access running databases; upload malware; crack credentials; copy data to removable devices or remote servers. _(Mod 19 pp7–8)_
+> Source: [[19-LO01a-Attack-Surface-Analysis-Concept]]
+>
+> [!question]- 1742 — What are the four attack-surface-analysis steps in order?
+> 1. Understand and Visualize the Attack Surface 2. Identify the Indicators of Exposures (IoEs) 3. Simulate the Attack 4. Reduce the Attack Surface. Analysis is an assessment of all possible exploitable vulnerabilities. _(Mod 19 p9)_
+> Source: [[19-LO01a-Attack-Surface-Analysis-Concept]]
+>
+> [!question]- 1743 — What is attack surface visualization and what does it identify?
+> Monitoring the attack surface constantly; minimizes untrusted user access and unnecessary functionalities. Visualizing means identify assets (ultimate targets), topologies (systems, segments, data-flow paths), and policies. _(Mod 19 p11)_
+> Source: [[19-LO02a-Visualize-Attack-Surface-and-Tools]]
+>
+> [!question]- 1744 — Which topology elements must be mapped?
+> Servers (web, application, database); endpoints (laptops, desktops, mobiles); networks (segments, private/public clouds); networking devices (routers, switches, load balancers); security devices (firewalls, IPSs, VPN concentrators). _(Mod 19 p12)_
+> Source: [[19-LO02a-Visualize-Attack-Surface-and-Tools]]
+>
+> [!question]- 1745 — What three challenges block attack surface visualization?
+> Vast security data (firewall rules, IPS controls, constant change); security silos across teams; no planned mitigation approach to correlate vulnerability data, policy rules, and visualization for priorities and tracking. _(Mod 19 pp12–13)_
+> Source: [[19-LO02a-Visualize-Attack-Surface-and-Tools]]
+>
+> [!question]- 1746 — What does ThreatPath show the defender?
+> A topographical map of how an attacker can move laterally once engaged with the first endpoint and which systems are susceptible; exposes paths the attacker sees, misused/orphaned credentials, misconfigured systems, with automated remediation workflows. _(Mod 19 pp14–15)_
+> Source: [[19-LO02a-Visualize-Attack-Surface-and-Tools]]
+>
+> [!question]- 1747 — What are Skybox's three key features?
+> Visualize and Analyze IoEs (filter by severity/timeframe); Attack Surface Modelling and Simulation (multi-step simulations, predictive analysis of network changes, path analysis; physical, virtual, cloud in one view); Risk-Reduction History and Trends (track, measure, report progress; compare current vs past IoE levels). _(Mod 19 pp16–17)_
+> Source: [[19-LO02a-Visualize-Attack-Surface-and-Tools]]
+>
+> [!question]- 1748 — What is an Indicator of Exposure (IoE)?
+> A potential risk exposure attackers can use to breach security, visible before an incident; represents existence of vulnerabilities, absence of security controls, or insecure configuration. Includes software vulnerabilities, misconfigurations, missing controls, overly permissive rules, policy violations. _(Mod 19 p19)_
+> Source: [[19-LO03a-IoE-System-and-Application-Surfaces]]
+>
+> [!question]- 1749 — What does Microsoft Attack Surface Analyzer do?
+> Identifies security weaknesses introduced installing software on Windows, Linux, or macOS by taking a snapshot before and after installation; shows changes from added code and configuration changes that may be threats; determines severity by category. Source: www.microsoft.com _(Mod 19 pp21–22)_
+> Source: [[19-LO03a-IoE-System-and-Application-Surfaces]]
+>
+> [!question]- 1750 — Which OS components does Attack Surface Analyzer report on, and how are results stored?
+> File system, certificates, registry, COM objects, firewall settings, network ports, event logs, services, user accounts. Electron-based GUI plus CLI writing to local HTML or JSON; snapshots in a local SQLite database. _(Mod 19 p22)_
+> Source: [[19-LO03a-IoE-System-and-Application-Surfaces]]
+>
+> [!question]- 1751 — What is the Windows Sandbox Attack Surface Analysis Tool suite?
+> Google Project Zero tools analyzing the Windows OS attack surface via low-level inspection of applications and services: `CheckDeviceAccess`, `CheckFileAccess`, `CheckRegistryAccess`, `CheckNetworkAccess`, `CheckProcessAccess`, `TokenView`, `NtApiDotNet`, `NtObjectManager`, and others. Source: https://github.com/googleprojectzero _(Mod 19 pp23–24)_
+> Source: [[19-LO03a-IoE-System-and-Application-Surfaces]]
+>
+> [!question]- 1752 — What does the OWASP Attack Surface Detector uncover?
+> Endpoints of a web application, parameters endpoints accept, and parameter data types — including unlinked endpoints a spider misses and unused optional parameters; calculates attack-surface change between two versions; plugin for ZAP and Burp Suite plus CLI. Source: https://owasp.org _(Mod 19 p25)_
+> Source: [[19-LO03a-IoE-System-and-Application-Surfaces]]
+>
+> [!question]- 1753 — What ASD capabilities continue on p26?
+> Find endpoints; static code analysis parsing routes and parameters with results in OWASP ZAP and Burp Suite to improve testing coverage; find allowed parameters and data types; calculate surface change between versions; ZAP plugin and PortSwigger BApp Store. _(Mod 19 p26)_
+> Source: [[19-LO03b-IoE-Network-and-Human-Surfaces]]
+>
+> [!question]- 1754 — What does ThreatModeler do?
+> Automated threat modeling software managing the attack surface: define communication channels (protocols) between components, allocate data elements and widgets (Cookie, Session, Form, URL); the intelligent threat engine auto-recognizes and risk-prioritizes threats. Source: https://threatmodeler.com _(Mod 19 p27)_
+> Source: [[19-LO03b-IoE-Network-and-Human-Surfaces]]
+>
+> [!question]- 1755 — What is AttackSurfaceMapper?
+> A reconnaissance tool mixing open-source intelligence and active techniques; enumerates subdomains by brute forcing and passive lookups, other IPs of the same block owner, and IPs with multiple domains pointing to them. _(Mod 19 p28)_
+> Source: [[19-LO03b-IoE-Network-and-Human-Surfaces]]
+>
+> [!question]- 1756 — What is OWASP Amass?
+> A tool gathering target attack-surface information in multiple dimensions via OSINT reconnaissance: network mapping plus external asset discovery using DNS, certificate scraping, APIs, and web archives. Source: https://github.com/OWASP/Amass _(Mod 19 p29)_
+> Source: [[19-LO03b-IoE-Network-and-Human-Surfaces]]
+>
+> [!question]- 1757 — How is the human attack surface evaluated with OhPhish?
+> Run a phishing campaign with a simulation framework such as OhPhish (simulated attacks plus set-and-go training; templates, theme campaigns, trend monitoring, analytics) to find human-behavior IoEs and mitigate human-error/social-engineering risk. Source: www.shieldalliance.com _(Mod 19 p31)_
+> Source: [[19-LO03b-IoE-Network-and-Human-Surfaces]]
+>
+> [!question]- 1758 — Which other phishing frameworks does the module name?
+> SpeedPhish Framework (SPF, Python recon plus phishing exercises); SoSafe (training/simulation platform); Social-Engineer Toolkit (SET, open-source Python pentest social-engineering vectors); PhishGrid, Phishing Frenzy (Ruby on Rails campaign management), GoPhish (templates, targets, result tracking). _(Mod 19 pp32–33)_
+> Source: [[19-LO03b-IoE-Network-and-Human-Surfaces]]
+>
+> [!question]- 1759 — Why conduct an attack simulation?
+> To validate and manage security controls, assess flaws before any attack, and recognize how identified IoEs could become exploits — i.e. how the organization looks from the attacker's perspective — via virtual penetration testing. _(Mod 19 pp34–35)_
+> Source: [[19-LO04a-Attack-Simulation-and-Tools]]
+>
+> [!question]- 1760 — How does a simulation run and what five questions does a small change answer?
+> View the org as a single unit but attack one target (Network, Software, Application, Human): goal setting, reconnaissance, server/service attacks, social engineering, phishing simulation, exfiltration testing. A small input/change answers: how exposures become exploits; asset-move effects; topology/routing-change effects; policy add/remove effects; directional-attack results. _(Mod 19 p35)_
+> Source: [[19-LO04a-Attack-Simulation-and-Tools]]
+>
+> [!question]- 1761 — What does Infection Monkey do?
+> Open-source BAS tool testing network security configuration strength: infects a random server in Cloud or on-premises infrastructure, then moves through propagation paths to attack every identified vulnerability point. Source: www.guardicore.com _(Mod 19 p36)_
+> Source: [[19-LO04a-Attack-Simulation-and-Tools]]
+>
+> [!question]- 1762 — What does Cymulate do?
+> Simulates hacker strategies against network and endpoint infrastructures; one-click automatic gap identification with exact fix guidance; APT simulation; pre-exploitation tests (email, web-gateway, web apps) plus post-exploitation modules (Lateral movement, Endpoint, Data Exfiltration). Source: https://cymulate.com _(Mod 19 p37)_
+> Source: [[19-LO04a-Attack-Simulation-and-Tools]]
+>
+> [!question]- 1763 — What does Sophos PhishThreat do?
+> Educates and tests end users via automated attack simulations plus security-awareness training: easy campaigns with automated on-the-spot training, realistic phishing attacks, org-health view; printed features include larger-surface reduction, comprehensive reports, 9 languages. Source: https://www.sophos.com/en-us _(Mod 19 pp38–39)_
+> Source: [[19-LO04a-Attack-Simulation-and-Tools]]
+>
+> [!question]- 1764 — What do Picus, SafeBreach, FireMon, and WhiteHaX each do?
+> Picus: auto-tests detection-tool effectiveness, Mitigation Library, SIEM optimization. SafeBreach: continuous real-world attack validation of all security layers. FireMon: change detection, compliance, behavioral analysis (Security Manager, Cloud Defense). WhiteHaX: cloud-hosted readiness-verification pentesting against firewalls/controls, phishing, ransomware, malware. _(Mod 19 pp40–41)_
+> Source: [[19-LO04a-Attack-Simulation-and-Tools]]
+>
+> [!question]- 1765 — What is Attack Surface Reduction (ASR)?
+> Closing all but the needed doors to system assets and restricting the rest with access rights; fewer vulnerabilities means lower likelihood of compromise. Covers system, application, network, human, and physical surfaces. _(Mod 19 pp42–44)_
+> Source: [[19-LO05a-Reduce-the-Attack-Surface]]
+>
+> [!question]- 1766 — What is the application ASR rule?
+> Eliminate redundant/unnecessary functionalities, entry points, APIs, code, and complexity within the application architecture; the simplest code with least assumptions avoids bigger attack surfaces. _(Mod 19 pp43–45)_
+> Source: [[19-LO05a-Reduce-the-Attack-Surface]]
+>
+> [!question]- 1767 — Which browser-hardening disables does the printed list require?
+> Disable firewall traversal, network prediction, cloud-peripheral sharing, data sync, pop-ups, 3D APIs, JavaScript everywhere, autocomplete, session-only cookies, background processing, metrics, incognito, cleartext passwords, password manager, outdated/auto plugins, third-party cookies; enable revocation checks and safe browsing. _(Mod 19 pp45–46)_
+> Source: [[19-LO05a-Reduce-the-Attack-Surface]]
+>
+> [!question]- 1768 — Which tools audit network ports before the attacker scans?
+> Nmap first; also Unicornscan, Angry IP Scanner, and Netcat. Close all unnecessary/unused ports on public IPs since open-everything widens the surface. _(Mod 19 pp43–48)_
+> Source: [[19-LO05a-Reduce-the-Attack-Surface]]
+>
+> [!question]- 1769 — How do awareness programs reduce the human attack surface?
+> Periodic training on security policies, social engineering, physical security, and best practices drives policy compliance and preserves confidentiality, integrity, availability against phishing; covers what security is, why needed, where policies live, how to protect assets, applicable regulations, incident effects. _(Mod 19 pp44–48)_
+> Source: [[19-LO05a-Reduce-the-Attack-Surface]]
+>
+> [!question]- 1770 — What are the three cloud participant classes?
+> Service users, Service instances or Services, and Cloud provider; interactions involve at least two entities (e.g. user requesting a service, instance requesting more CPU). _(Mod 19 p50)_
+> Source: [[19-LO06a-Cloud-Attack-Surface]]
+>
+> [!question]- 1771 — What are the Service-to-User and User-to-Service cloud surfaces?
+> Service to User: server-to-client service interface; all client-server attacks (buffer overflow, SQL injection, privilege escalation); most important surface. User to Service: client program toward server; browser-app attacks, browser-cache attacks, email-client phishing. _(Mod 19 pp50–51)_
+> Source: [[19-LO06a-Cloud-Attack-Surface]]
+>
+> [!question]- 1772 — What are the Cloud-to-Service and Service-to-Cloud surfaces, and which is most critical?
+> Cloud to Service: resources exposed to instances; instance attacks on its host (resource exhaustion forcing DoS, hypervisor attacks). Service to Cloud: instance exposed to provider; all provider-on-service attacks — most critical, easy to exploit, high impact (shutdowns, data scanning, tampering, integrity/confidentiality attacks). _(Mod 19 pp51–52)_
+> Source: [[19-LO06a-Cloud-Attack-Surface]]
+>
+> [!question]- 1773 — What are the Cloud-to-User and User-to-Cloud surfaces?
+> Cloud to User: cloud-control service (adding/deleting instances); attacks a Cloud service faces from the user's point of view, attacks on Cloud control. User to Cloud: user exposed to Cloud; vectors originating at the Cloud targeting the user, e.g. phishing-like fake usage bill. _(Mod 19 p52)_
+> Source: [[19-LO06a-Cloud-Attack-Surface]]
+>
+> [!question]- 1774 — What are the seven cloud ASR recommendations?
+> Map all Cloud assets; map internal plus external infrastructure for a single view; know all vulnerabilities, misconfigurations, threats; control local network and Cloud; protect every endpoint; secure all data repositories; understand provider access control and contract before signing the SLA. _(Mod 19 p52)_
+> Source: [[19-LO06a-Cloud-Attack-Surface]]
+>
+> [!question]- 1775 — What is the IoT attack surface and its two printed components?
+> Combination of potential vulnerabilities/threats of the IoT, its applications and devices, on which attacks start. Devices (physical interfaces, memory, firmware, web/admin interfaces, network services, unsecured settings, outdated components); Communication Channels (how IoT components connect). _(Mod 19 p54)_
+> Source: [[19-LO06b-IoT-Attack-Surface-and-Module-Summary]]
+>
+> [!question]- 1776 — What flaws mark the Ecosystem Access Control, Device Memory, and Physical Interface areas?
+> Access control: auth/session flaws, implicit component trust, enrolment/decommissioning gaps. Memory: clear-text/third-party credentials, cipher-key access enabling decryption. Physical: firmware extraction, User/Admin CLI console access, privilege escalation, reset to insecure state, storage-media removal. _(Mod 19 p55)_
+> Source: [[19-LO06b-IoT-Attack-Surface-and-Module-Summary]]
+>
+> [!question]- 1777 — What flaws mark the Firmware, Network Service, and Administrative Interface areas?
+> Firmware: hardcoded/default credentials never reset, credential botnets, sensitive disclosure, version/last-update exposure. Network services: injection, DoS, Man-in-the-Middle, buffer overflow. Admin interface: SQL injection, XSS, username enumeration, weak passwords, lockout, known credentials. _(Mod 19 p56)_
+> Source: [[19-LO06b-IoT-Attack-Surface-and-Module-Summary]]
+>
+> [!question]- 1778 — What flaws mark the Cloud, Update, Mobile, Vendor, Ecosystem, and Traffic IoT areas?
+> Cloud web interface: standard web flaws plus no two-factor authentication. Update: unencrypted/unsigned/writable-location updates. Mobile app: implicitly trusted, known credentials, no transport encryption. Vendor APIs: weak auth/access control, injection. Ecosystem communication: one failure cascades (health checks, deprovisioning, pushed updates). Traffic: LAN, LAN-to-Internet, short-range, non-standard. _(Mod 19 pp54–58)_
+> Source: [[19-LO06b-IoT-Attack-Surface-and-Module-Summary]]
+>
+> [!question]- 1779 — What are the seven IoT ASR recommendations plus the module-summary tool list?
+> Secure-by-Design purchase; pre-connect risk review; secure configuration; disable unnecessary features; segmentation plus secure access/identity/remote access; physical protection; continuous monitoring. Summary tools: ThreatPath, securiCAD, Skybox for paths; Infection Monkey, Cymulate for simulation; patch then retest. _(Mod 19 pp58–59)_
+> Source: [[19-LO06b-IoT-Attack-Surface-and-Module-Summary]]
+
+### Module 20 (52 items)
+> [!question]- 1780 — What is CTI and what decisions does it inform?
+> CTI = collection and analysis of information about threats and adversaries → informed decisions on preparedness, prevention, response; lets defenders grasp what an attacker is doing + how to stop/prevent it. _(Mod 20 p5)_
+> Source: [[20-LO01a-CTI-Role-in-Network-Defense]]
+>
+> [!question]- 1781 — What are the three printed purposes for consuming CTI?
+> Defend information systems, data, network; forward-leaning strategic, operational, tactical decisions on existing/emerging threats; identify/mitigate business risks (unknown → known → advanced proactive defense strategies). _(Mod 20 p6)_
+> Source: [[20-LO01a-CTI-Role-in-Network-Defense]]
+>
+> [!question]- 1782 — How does CTI support the Respond and Recover objectives?
+> Respond: contextual info (IOCs, TTPs) → stop propagation, cut impact/duration, mitigations. _(Mod 20 p7)_ Recover: detects and removes persistent mechanisms (e.g. malicious files installed on systems). _(Mod 20 p8)_
+> Source: [[20-LO01a-CTI-Role-in-Network-Defense]]
+>
+> [!question]- 1783 — How does CTI improve incident detection per the page?
+> Malware systems catch malicious files; extract IOCs, threat actors, TTPs to find internal threats; real-time monitoring → rapid efficient detection with fewer irrelevant/false-positive alerts, uncovering hidden intrusions. _(Mod 20 p7)_
+> Source: [[20-LO01a-CTI-Role-in-Network-Defense]]
+>
+> [!question]- 1784 — How many TI types does the module print and what is the catch?
+> Four with prose each — Strategic, Tactical, Operational, Technical — but the p9/p10 framing announces only three; Technical is printed in full on p14 and counts. _(Mod 20 pp9–14)_
+> Source: [[20-LO02a-Types-of-Threat-Intelligence]]
+>
+> [!question]- 1785 — What defines Strategic TI and who consumes it?
+> High-level information on posture, financial impact of cyber activities, attack trends, business-decision impact; report form, pre-emptive; consumed by high-level executives, management (IT management, CISO); sources OSINT, CTI vendors, ISAOs/ISACs. _(Mod 20 pp10–11)_
+> Source: [[20-LO02a-Types-of-Threat-Intelligence]]
+>
+> [!question]- 1786 — What defines Tactical TI and what are its sources?
+> TTPs used by threat actors; highly technical malware, campaigns, techniques, tools as forensic reports; sources: campaign reports, malware, incident reports, attack group reports, human intelligence. _(Mod 20 p12)_
+> Source: [[20-LO02a-Types-of-Threat-Intelligence]]
+>
+> [!question]- 1787 — What defines Technical TI?
+> Security teams track new threats / investigate incidents from open-source feeds; attacker tools, channels, resources (phishing to advanced techniques; compromised websites, command servers); receives stealer logs, IOC feeds (high-risk IPs/domains), CVE data; transient, single-IoC scope. _(Mod 20 p14)_
+> Source: [[20-LO02a-Types-of-Threat-Intelligence]]
+>
+> [!question]- 1788 — What are IOCs and what is their printed limit?
+> IOCs = clues / artifacts / evidence of potential intrusion, technical indicators, digital footprints found in system files / log entries; they prevent repeated / unchanged / persistent threats but may not detect new or modified threats. _(Mod 20 pp16–17)_
+> Source: [[20-LO03a-IoCs-STIX-and-MAEC]]
+>
+> [!question]- 1789 — What is `OpenlOC` [sic] and what does it describe?
+> XML-based framework describing complex semantics of malware behavior; 500+ indicator terms mostly starting `file / driver / disk / system / process / registry`; stored as XML schema; readable by machine and human. _(Mod 20 p17)_
+> Source: [[20-LO03a-IoCs-STIX-and-MAEC]]
+>
+> [!question]- 1790 — What are the STIX data elements and TAXII sharing models?
+> STIX constructs: Observables; Cyber-attack campaigns; Exploit targets; Incidents; Indicators; Threat actors; TTPs. _(Mod 20 pp17–18)_ TAXII models: Hub and spoke (one repository); Source/subscriber (single source); Peer to peer (multiple groups sharing). _(Mod 20 p18)_
+> Source: [[20-LO03a-IoCs-STIX-and-MAEC]]
+>
+> [!question]- 1791 — What are the MAEC tiers?
+> Bundle (Tier 1) = data from analysis of a single malware instance; Package (Tier 2) = one or more malware subjects incl instance detail + analysis-derived data + metadata; Container (Tier 3) = collection incl one or more packages; plus default vocabularies. _(Mod 20 pp18–19)_
+> Source: [[20-LO03a-IoCs-STIX-and-MAEC]]
+>
+> [!question]- 1792 — What are IOAs and how do they differ from IOCs in focus?
+> IOAs = strategic indicators from attacker intent + end goal/purpose + series of pre-attack actions; IOAs focus on the "why", IOCs on the "what"; IOAs reveal an active attack before IOCs become visible; IOC knowledge not required. _(Mod 20 p21)_
+> Source: [[20-LO03b-IOAs-and-IOC-vs-IOA]]
+>
+> [!question]- 1793 — What are the printed IOA data types?
+> Real-time behavior incl endpoint behavioral analytics (EBA); persistent + stealth components; calling of dynamic-link libraries (DLLS) [sic]; TTPs linked to hostile data (malware); code-execution metadata. _(Mod 20 p21)_
+> Source: [[20-LO03b-IOAs-and-IOC-vs-IOA]]
+>
+> [!question]- 1794 — Why does an IOA-based system suit pre-entry prevention?
+> Attacker needs no malware to compromise; system requires no tools to identify attacks (both verbatim); gives a strategic view of threat-actor/group TTPs and proactively IDs new unknown threats. _(Mod 20 p22)_
+> Source: [[20-LO03b-IOAs-and-IOC-vs-IOA]]
+>
+> [!question]- 1795 — How does Table 20.1 contrast IOCs vs IOAs?
+> IOCs: reactive, only after a point in time, focus on malware/signatures/exploits/vulnerabilities/IPs, known universal bad news. IOAs: proactive, real-time, focus on code execution/persistence/stealth/C2/lateral movement, situational bad news. _(Mod 20 p24)_
+> Source: [[20-LO03b-IOAs-and-IOC-vs-IOA]]
+>
+> [!question]- 1796 — What are the four TI layers and what is a provider?
+> Four layers: sources, feeds, platforms, professional services — let orgs use threat data to identify malicious activity. _(Mod 20 pp25–26)_ Provider = open-source community, movement, private or commercial body providing TI as sources, feeds, platforms, professional services. _(Mod 20 p26)_
+> Source: [[20-LO04a-TI-Layers-Providers-Sources]]
+>
+> [!question]- 1797 — What are the typical TI source types?
+> Internal (employees well aware of handling/responding; SIEM tools, IOCs, honeypots), OSINT (open/public sources; easiest, low cost), Counterintelligence (protection against espionage; offensive = attack the attacker), HUMINT (listed, no prose definition). _(Mod 20 pp27–28)_
+> Source: [[20-LO04a-TI-Layers-Providers-Sources]]
+>
+> [!question]- 1798 — What are TI feeds and how are they used?
+> TI feeds = continuous streams / packaged collection re potential or current threats (domains, malicious IPs, botnet activity); actionable with technical controls; uses: couple to tools (e.g. blocking bad IPs after feeds accepted by some firewalls), generate alerts (SIEM + UEBA correlate with internal events), manual review. _(Mod 20 p30)_
+> Source: [[20-LO04a-TI-Layers-Providers-Sources]]
+>
+> [!question]- 1799 — What are the printed public vs commercial feed sources?
+> Publicly available: SHODAN, Threat Connect, Virus Total, AlienVaults Open Threat Exchange (OTX), Zeus Tracker, The dark web. _(Mod 20 pp30–31)_ Commercial (must purchase): Microsoft Cyber Trust Blog, SecureWorks Blog, Kaspersky Blog. _(Mod 20 pp30–31)_
+> Source: [[20-LO04a-TI-Layers-Providers-Sources]]
+>
+> [!question]- 1800 — What are the focus areas of TI feeds?
+> Compromised devices (botted nodes, botnet C2 servers); Malware indicators (IOCs and IOAs of known malicious/blacklisted files); IP reputation (known bad/suspicious IPs); C&C networks (track global C&C traffic); Phishing messages (email attack campaigns, business email compromise). _(Mod 20 pp32–33)_
+> Source: [[20-LO04b-TI-Feed-Providers]]
+>
+> [!question]- 1801 — Which government feed providers does the prose name?
+> AIS (DHS; exchange of cyber threat indicators at machine speed); DC3 (DoD center of excellence for digital/multimedia forensics); US-CERT (`https://www.us-cert.gov/`); ENISA (European Union Agency for Network and Information Security); FBI Cyber Crime (lead US federal agency for investigating cyber-attacks). _(Mod 20 pp35–36)_
+> Source: [[20-LO04b-TI-Feed-Providers]]
+>
+> [!question]- 1802 — What do Recorded Future and Trellix provide per the prose?
+> Recorded Future: Security Control Feeds give quality indicators and context to automate action; operationalizing trusted intelligence, automatic detection and blocking. _(Mod 20 p39)_ Trellix: threat actor/group attribution and TTP analysis, TI-driven risk assessments, malware analysis (static or dynamic limited reversing), malicious infrastructure analysis. _(Mod 20 p38)_
+> Source: [[20-LO04b-TI-Feed-Providers]]
+>
+> [!question]- 1803 — What do Broadcom, Team Cymru and Anomali provide per the prose?
+> Broadcom: comprehensive cybersecurity solutions (Threat Detection, Endpoint/Network Security, IAM, Security Analytics). _(Mod 20 p38)_ Team Cymru: TI and insight with a query tool for 50+ threat categories. _(Mod 20 p39)_ Anomali: TI Feeds, Threat Detection Analysis, Integration with Security Tools, Customizable alerts. _(Mod 20 p39)_
+> Source: [[20-LO04b-TI-Feed-Providers]]
+>
+> [!question]- 1804 — What is a TIP and what are its basic capabilities?
+> TIPs automate storing, analyzing, organizing, comparing multiple feeds from multiple sources in real time; TIP + SIEM = one feed correlated with security events into prioritized alerts; SaaS or on-premises. Capabilities: data collection, correlation, enrichment, contextualization, analysis, integration. _(Mod 20 p40)_
+> Source: [[20-LO04c-Threat-Intel-Platforms]]
+>
+> [!question]- 1805 — What are the three main aspects of TI processing?
+> Normalization (connected data across inputs/sources); De-duplication (deleting duplicates); Improvement (eliminating false positives, fake indicators); then correlate/pivot, enrich/contextualize, analyze, integrate to SIEM, firewalls, IDS/IPS, ticketing systems. _(Mod 20 p41)_
+> Source: [[20-LO04c-Threat-Intel-Platforms]]
+>
+> [!question]- 1806 — What does TC Complete improve per the page?
+> Improves visibility: aggregate + normalize from multiple sources, view observation frequency + relevance, identify platform ratings, team votes, false-positive counts per indicator/incident. Maximizes efficiency: one-click automated configurable playbooks without coding. _(Mod 20 pp42–43)_
+> Source: [[20-LO04c-Threat-Intel-Platforms]]
+>
+> [!question]- 1807 — What are IntelMQ and USM Anywhere per the prose?
+> IntelMQ: for CERTs/CSIRTs/abuse departments; collects/processes feeds via message queue protocol; JSON for all messages; stores into ElasticSearch, Splunk, PostgreSQL. _(Mod 20 p45)_ USM Anywhere: centralized monitoring for cloud/on-premises/hybrid incl Office 365 and G Suite; continuous TI updates from AlienVault Labs Security Research Team. _(Mod 20 pp45–46)_
+> Source: [[20-LO04c-Threat-Intel-Platforms]]
+>
+> [!question]- 1808 — What must be defined before consuming TI and what are the feed criteria?
+> Define goals, need, purpose around proactive defense (specific actor/group, location, business contacts). _(Mod 20 p51)_ Feed criteria: how/where sourced; global landscape coverage; age (when sourced + processing time); efficacy (false positives/negatives, correlation); relevance to specific needs. _(Mod 20 pp51–52)_
+> Source: [[20-LO05a-Consume-TI-and-SIEM-Integration]]
+>
+> [!question]- 1809 — What is Cisco Threat Intelligence Director?
+> Threat Intelligence Director runs on Firepower Management Center; ingests TI via open standards into Firepower NGFW / NGIPS; Firepower sensors supply host + user info, flows with source/destination IPs, port, protocol; surfaces actionable IOCs; automated detect/block actions. _(Mod 20 p53)_
+> Source: [[20-LO05a-Consume-TI-and-SIEM-Integration]]
+>
+> [!question]- 1810 — What are the benefits of feeding TI into SIEM?
+> Prevent high-impact evolving threats; real-time support on indications of compromise; fewer false-positive alarms; context expediting triage; combine internal logs with TI and verify historical data against current TI to uncover unknown threats. _(Mod 20 pp54–55)_
+> Source: [[20-LO05a-Consume-TI-and-SIEM-Integration]]
+>
+> [!question]- 1811 — What OSSIM rules are updated with TI feeds?
+> Correlation directives (pre-defined rules linking cross-network events); network IDS signatures; host IDS signatures; asset discovery signatures; vulnerability assessment signatures; reporting modules; dynamic IR templates; data source plugins. _(Mod 20 p56)_
+> Source: [[20-LO05a-Consume-TI-and-SIEM-Integration]]
+>
+> [!question]- 1812 — What is manual review of TI feeds?
+> Manual review = obtaining TI feeds and reviewing them manually to investigate threats relevant to the organization's security posture. _(Mod 20 p58)_
+> Source: [[20-LO05b-Manual-Review-and-Pyramid-of-Pain]]
+>
+> [!question]- 1813 — What is the Pyramid of Pain rule for resilience?
+> Move up to higher levels → greater cybersecurity resilience; higher = costlier for attackers; the more challenging an IOC is to utilize, the more effective it is; focus on TTPs and strategic insights for proactive defenses. _(Mod 20 p59)_
+> Source: [[20-LO05b-Manual-Review-and-Pyramid-of-Pain]]
+>
+> [!question]- 1814 — What are the six Pyramid levels bottom to top?
+> Trivial Hash Values → Easy IP Addresses → Simple Domain Names → Annoying Network/Host Artifacts → Challenging Tools → Tough! TTPs; bottom → top = least painful → most painful. _(Mod 20 pp59–60)_
+> Source: [[20-LO05b-Manual-Review-and-Pyramid-of-Pain]]
+>
+> [!question]- 1815 — How do hash values and IP addresses affect attackers per the Pyramid?
+> Trivial Hash Values: `SHAI`/MD5 refs to malware samples; metamorphic/polymorphic alteration; least advantageous, little significance. _(Mod 20 p60)_ Easy IP Addresses: recover quickly and easily; VPNs + anonymous proxies alter as required. _(Mod 20 p60)_
+> Source: [[20-LO05b-Manual-Review-and-Pyramid-of-Pain]]
+>
+> [!question]- 1816 — What is threat hunting and why is it needed?
+> Proactive approach actively searching for malicious signs missed by regular security measures; threat actors can remain undetected for months; does not rely on signatures; findings feed directly into the incident response process. _(Mod 20 p62)_
+> Source: [[20-LO06a-Threat-Hunting-Concept-and-Maturity]]
+>
+> [!question]- 1817 — What are the four threat-hunting steps?
+> Create Hypothesis → Investigate Via Tools and Techniques (raw + linked data incl. machine learning merge) → Uncover New Patterns and TTPs (definitive success criteria) → Inform and Enrich Analytics (automate each success). _(Mod 20 pp62–63)_
+> Source: [[20-LO06a-Threat-Hunting-Concept-and-Maturity]]
+>
+> [!question]- 1818 — What are the hunting maturity levels 0–2?
+> 0 Initial (HMMO): no collection, OSINT + lower-Pyramid data, lacks substantial TI capability. 1 Minimal: automated alerting directs IR, TIP enriches individually generated IOCs. 2 Procedural: uses processes created by others; most organizations prefer this. _(Mod 20 pp66–68)_
+> Source: [[20-LO06a-Threat-Hunting-Concept-and-Maturity]]
+>
+> [!question]- 1819 — What are hunting maturity levels 3–4 and what does OODA stand for?
+> 3 Innovative: creates new procedures; hunters fluent from basic stats to ML. 4 Leading: automates majority of successful procedures; continuous refinement. _(Mod 20 pp67–68)_ OODA = Observe, Orient, Detect, Act (as printed). _(Mod 20 p69)_
+> Source: [[20-LO06a-Threat-Hunting-Concept-and-Maturity]]
+>
+> [!question]- 1820 — What do CrowdStrike Falcon OverWatch and Trend Micro Managed XDR do?
+> Falcon OverWatch: real-time indicators of attack + tradecraft TI + enriched telemetry → detections, automated protection/remediation, elite hunting, via a single lightweight agent. _(Mod 20 p71)_ Managed XDR: 24/7 analysis correlating email, endpoint, server, cloud, workload, network sources; cross-layered detection and response. _(Mod 20 p71)_
+> Source: [[20-LO06b-Hunting-Tools-and-AI-ML]]
+>
+> [!question]- 1821 — What are Cynet 369 and YARA per the page?
+> Cynet 369: scan endpoints on demand per known IOCs; discovers files saved on the host even if not opened (vs continuous running-process scanning of Cynet 360). YARA: helps malware researchers identify/classify samples; descriptions of malware families from textual or binary patterns. _(Mod 20 pp71–72)_
+> Source: [[20-LO06b-Hunting-Tools-and-AI-ML]]
+>
+> [!question]- 1822 — What is ManageEngine Log360 in hunting?
+> SIEM solution with robust correlation engine for real-time aggregation of diverse network events; finds actors/attacks that slipped through via advanced threat analytics; high-speed flexible SQL search over the log bucket; notifies when threat patterns repeat. _(Mod 20 p73)_
+> Source: [[20-LO06b-Hunting-Tools-and-AI-ML]]
+>
+> [!question]- 1823 — How does AI/ML enhance threat hunting?
+> Analyze immense information; identify patterns/anomalies; ML-powered analysis of system logs, user behavior, network traffic; prioritize/triage by impact, urgency, severity; techniques: anomaly detection, pattern recognition, natural language processing, behavioral analysis. _(Mod 20 p74)_
+> Source: [[20-LO06b-Hunting-Tools-and-AI-ML]]
+>
+> [!question]- 1824 — How does AI/ML enhance CTI collection and detection?
+> Automated collection/analysis of network logs, security alerts, OSINT; extract IOCs (IP addresses, domain names, hashes) by removing unimportant data. _(Mod 20 p76)_ ML/deep learning learn from past and current data and adapt to new threats; prioritize critical dangers; suggest neutralization. _(Mod 20 p76)_
+> Source: [[20-LO07a-AI-ML-for-Threat-Intel]]
+>
+> [!question]- 1825 — What are the AI summarization, IOC and TTP extraction use cases?
+> Summarization: NLP models, LLMs condense volumes into summaries → useful insight. IOC extraction: auto-extract IOCs from unstructured sources like social media or dark web forums. TTP extraction: from lengthy threat research studies → defend against specific adversary behaviors. _(Mod 20 pp77–78)_
+> Source: [[20-LO07a-AI-ML-for-Threat-Intel]]
+>
+> [!question]- 1826 — What are the predictive, alert and LLM-exchange AI use cases?
+> Predictive intelligence: assess past data, forecast future trends, adjust posture. Alert generation: TI exchange creates automatic warnings. LLM-streamlined exchange: LLMs auto-create warnings/reports; streamline exchange and risk communication; plus real-time TI for quick response. _(Mod 20 pp77–78)_
+> Source: [[20-LO07a-AI-ML-for-Threat-Intel]]
+>
+> [!question]- 1827 — How do TI feeds enrich IOCs and detect phishing?
+> Enrichment: TI feeds add context to IPs/domains/hashes; evaluate risk; prioritize by impact on critical resources; block indicators on firewall and EDR. _(Mod 20 p79)_ Phishing: TI on known malicious domains, email addresses, techniques + compromised accounts; approaches: automated processes, proactive preventive tools, AI analyses. _(Mod 20 p80)_
+> Source: [[20-LO07a-AI-ML-for-Threat-Intel]]
+>
+> [!question]- 1828 — What are the printed AI/ML TI solutions Trellix GTI and IBM Watson?
+> Trellix GTI: comprehensive, real-time, cloud-based reputation service integrated into Trellix products; protects against known and emerging threats. _(Mod 20 p81)_ IBM Watson: advanced AI with ML algorithms and deep learning networks that get stronger and smarter over time. _(Mod 20 p81)_
+> Source: [[20-LO07b-TI-Tools-Guidelines-and-Summary]]
+>
+> [!question]- 1829 — What are the printed TCPWave, WILDFIRE and ThreatConnect solutions?
+> TCPWave: AI-driven TI analysis scanning real-time feeds; deep learning differentiates benign vs malicious; default-built anomaly detection. WILFIRE: automatically prevents unknown malware variants. ThreatConnect TIP: centralizes aggregation/management; normalizes, enriches, automates manual TI processes. _(Mod 20 pp81–82)_
+> Source: [[20-LO07b-TI-Tools-Guidelines-and-Summary]]
+>
+> [!question]- 1830 — What are the guidelines on proactive AI and tool integration?
+> Use AI proactively: identify vulnerabilities/exploits, categorize risky behaviors, attack-flow prediction, restrict access controls, patch systems. _(Mod 20 p83)_ TI is less effective when used alone; embed in automated systems; combine with SIEM (alerting, prioritizing, contextual data); also WAF, NGFW, endpoint. _(Mod 20 p83)_
+> Source: [[20-LO07b-TI-Tools-Guidelines-and-Summary]]
+>
+> [!question]- 1831 — What are the alert-quality, transparency and bias guidelines?
+> Alert quality: AI categorizes/prioritizes alerts, eliminates false positives vs feeds/databases; prevents alert fatigue. _(Mod 20 p84)_ Transparency: what data is AI- vs human-generated; accountability shared between vendors/creators and deployers. Bias: improve diversity, supervised learning algorithms, awareness tools. _(Mod 20 p84)_
+> Source: [[20-LO07b-TI-Tools-Guidelines-and-Summary]]
 
 ## Verified external items
 
