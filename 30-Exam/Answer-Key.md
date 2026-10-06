@@ -181,8 +181,8 @@ One line per item: quiz id, key letter, answer provenance. `published key` = as 
 - D01 — **A** — Daypo D01 · PDF-derived: Mod 18 pp13-24, CND v2 legacy wording.
 - D02 — **D** — Daypo D02 · PDF-derived: Mod 04 p8.
 - D05 — **C** — Daypo D05 · PDF-derived: Mod 03 p77.
-- D06 — **D** — Daypo D06 · PDF-derived: Mod 19 p50.
-- D08 — **D** — Daypo D08 · PDF-derived: Mod 03 pp75-78.
+- D06 — **C** — Daypo D06 · CORRECTED (published D contradicts PDFs): Mod 19 User-to-Cloud fake-bill example.
+- D08 — **A** — Daypo D08 · CORRECTED (published D contradicts PDFs): Mod 03 hashing/message-integrity.
 - D09 — **C** — Daypo D09 · PDF-derived: Mod 17 p15.
 - D11 — **C** — Daypo D11 · PDF-derived: Mod 11 p120.
 - D12 — **D** — Daypo D12 · PDF-derived: Mod 19 p11.
