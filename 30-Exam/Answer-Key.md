@@ -158,11 +158,8 @@ One line per item: quiz id, key letter, answer provenance. `published key` = as 
 
 - E01 — **A** — Edusum E01 · published key.
 - E02 — **C** — Edusum E02 · published key.
-- E03 — **D** — Edusum E03 · published key.
-- E04 — **B** — Edusum E04 · published key.
 - E05 — **A** — Edusum E05 · published key.
 - E06 — **C** — Edusum E06 · published key.
-- E07 — **D** — Edusum E07 · published key.
 - E08 — **A** — Edusum E08 · published key.
 - E09 — **C** — Edusum E09 · published key.
 - E10 — **D** — Edusum E10 · published key.
@@ -195,23 +192,18 @@ One line per item: quiz id, key letter, answer provenance. `published key` = as 
 - P04 — **B** — PracticeTestGeeks P04 · published key, low signal.
 - H02 — **B** — CertsHero H02 · published key, checks out: Mod 16 IRT Attorney role.
 - H03 — **A** — CertsHero H03 · published key, checks out: Mod 12 pp72-74.
-- H04 — **D** — CertsHero H04 · published key, NOT verifiable: update-rc.d appears in none of the 20 modules.
 - H05 — **A** — CertsHero H05 · published key, checks out: Mod 07.
 - H06 — **C** — CertsHero H06 · published key, checks out: Mod 05 p19.
 - H07 — **C** — CertsHero H07 · published key, checks out: Mod 18.
 - F01 — **A** — Fast2test F01 · published key, checks out: Mod 04 NIDS.
-- F02 — **C** — Fast2test F02 · published key, NOT verifiable: star topology appears in none of the 20 modules.
-- F03 — **B** — Fast2test F03 · published key, NOT verifiable: gaseous appears in none of the 20 modules.
 - F04 — **A** — Fast2test F04 · published key, checks out: Mod 05.
 - F05 — **B** — Fast2test F05 · published key, checks out: Mod 04.
-- F06 — **C** — Fast2test F06 · published key, NOT verifiable: acoustic modem appears in none of the 20 modules.
 - F07 — **B** — Fast2test F07 · published key, checks out: Mod 13.
 - F08 — **A** — Fast2test F08 · CORRECTED: published key C contradicts Mod 18 p24.
 - F09 — **B** — Fast2test F09 · published key, checks out: Mod 07 MCM.
 - F10 — **D** — Fast2test F10 · published key, checks out: Mod 10.
 - F11 — **B** — Fast2test F11 · published key, checks out: Mod 03.
 - F12 — **B** — Fast2test F12 · published key, checks out: Mod 03 DAC.
-- F13 — **D** — Fast2test F13 · published key, NOT verifiable: EGP appears in none of the 20 modules.
 - O041 — **A** — OEP cnd-041 · key confirmed, options rewritten: Mod 05 Windows System Integrity and Integrity Checking.
 - O042 — **A** — OEP cnd-042 · key confirmed, options rewritten: Mod 05 Windows System Integrity and Integrity Checking.
 - O043 — **A** — OEP cnd-043 · key confirmed, options rewritten: Mod 05 Windows Security Features.
@@ -279,3 +271,111 @@ One line per item: quiz id, key letter, answer provenance. `published key` = as 
 - O198 — **C** — OEP cnd-198 · key confirmed, options rewritten: Mod 20 Types of threat intelligence.
 - O199 — **A** — OEP cnd-199 · key confirmed, options rewritten: Mod 20 Types of threat intelligence.
 - O200 — **B** — OEP cnd-200 · key confirmed, options rewritten: Mod 20 Consume TI and SIEM Integration.
+- O001 — **A** — OEP cnd-001 · as published, key confirmed: Mod 01 Network-level Attack Techniques.
+- O002 — **B** — OEP cnd-002 · key confirmed, options rewritten: Mod 01 Defense-in-Depth Security Strategy.
+- O003 — **A** — OEP cnd-003 · key confirmed, options rewritten: Mod 01 Email Attack Techniques.
+- O004 — **B** — OEP cnd-004 · key confirmed, options rewritten: Mod 01 Defense-in-Depth Security Strategy.
+- O005 — **B** — OEP cnd-005 · key confirmed, options rewritten: Mod 01 Application-level Attack Techniques.
+- O006 — **A** — OEP cnd-006 · key confirmed, options rewritten: Mod 01 Cloud-specific Attack Techniques.
+- O007 — **A** — OEP cnd-007 · key confirmed, options rewritten: Mod 01 Wireless Network-specific Attack Techniques.
+- O008 — **B** — OEP cnd-008 · key confirmed, options rewritten: Mod 01 Supply Chain Attack Techniques.
+- O009 — **B** — OEP cnd-009 · key confirmed, options rewritten: Mod 01 Continual/Adaptive Security Strategy.
+- O010 — **B** — OEP cnd-010 · key confirmed, options rewritten: Mod 01 Attacker Hacking Methodologies and Frameworks.
+- O012 — **A** — OEP cnd-012 · key confirmed, options rewritten: Mod 02 IT Asset Management (ITAM).
+- O013 — **A** — OEP cnd-013 · key confirmed, options rewritten: Mod 02 Security Awareness Training.
+- O014 — **A** — OEP cnd-014 · key confirmed, options rewritten: Mod 02 regulatory frameworks and laws.
+- O015 — **A** — OEP cnd-015 · key confirmed, options rewritten: Mod 02 Obtain Regulatory Frameworks Compliance.
+- O016 — **A** — OEP cnd-016 · key confirmed, options rewritten: Mod 02 Security Policy — Design & Development Fundamentals.
+- O017 — **B** — OEP cnd-017 · key confirmed, options rewritten: Mod 02 IT Asset Management (ITAM).
+- O018 — **A** — OEP cnd-018 · key confirmed, options rewritten: Mod 02 Staying Up to Date on Security Trends and Threats.
+- O019 — **B** — OEP cnd-019 · key confirmed, options rewritten: Mod 18 vuln mgmt program and prioritization.
+- O021 — **A** — OEP cnd-021 · key confirmed, options rewritten: Mod 03 Access Control — Principles, Models, and Implementation.
+- O022 — **A** — OEP cnd-022 · key confirmed, options rewritten: Mod 11 VLAN Security.
+- O023 — **A** — OEP cnd-023 · key confirmed, options rewritten: Mod 03 Cryptographic Security Techniques.
+- O024 — **A** — OEP cnd-024 · key confirmed, options rewritten: Mod 03 Essential Network Security Protocols.
+- O025 — **B** — OEP cnd-025 · key confirmed, options rewritten: Mod 03 Network Segmentation.
+- O026 — **A** — OEP cnd-026 · key confirmed, options rewritten: Mod 03 Access Control — Principles, Models, and Implementation.
+- O027 — **A** — OEP cnd-027 · key confirmed, options rewritten: Mod 04 router and switch security.
+- O028 — **A** — OEP cnd-028 · key confirmed, options rewritten: Mod 03 Cryptographic Security Techniques.
+- O029 — **A** — OEP cnd-029 · key confirmed, options rewritten: Mod 11 VLAN Security.
+- O030 — **B** — OEP cnd-030 · key confirmed, options rewritten: Mod 03 Cryptographic Security Techniques.
+- O031 — **A** — OEP cnd-031 · key confirmed, options rewritten: Mod 04 Firewall Technologies and OSI Layers.
+- O032 — **A** — OEP cnd-032 · key confirmed, options rewritten: Mod 03 Network Segmentation.
+- O033 — **A** — OEP cnd-033 · key confirmed, options rewritten: Mod 04 IDs role, Capabilities, Limitations, Concerns.
+- O034 — **B** — OEP cnd-034 · key confirmed, options rewritten: Mod 04 False Positive & False Negative IDS Alerts.
+- O035 — **A** — OEP cnd-035 · key confirmed, options rewritten: Mod 03 essential security solutions.
+- O036 — **B** — OEP cnd-036 · key confirmed, options rewritten: Mod 04 Secure Firewall Implementation Best Practices.
+- O037 — **B** — OEP cnd-037 · key confirmed, options rewritten: Mod 04 router and switch security.
+- O038 — **A** — OEP cnd-038 · key confirmed, options rewritten: Mod 04 router and switch security.
+- O039 — **A** — OEP cnd-039 · key confirmed, options rewritten: Mod 04 Firewall Technologies and OSI Layers.
+- O040 — **B** — OEP cnd-040 · key confirmed, options rewritten: Mod 04 Zero-Trust Security with Software-Defined Perimeter (SDP).
+- O083 — **B** — OEP cnd-083 · key confirmed, options rewritten: Mod 03 Identity and Access Management (IAM).
+- O084 — **B** — OEP cnd-084 · key confirmed, options rewritten: Mod 11 Container Secrets Management.
+- O086 — **A** — OEP cnd-086 · key confirmed, options rewritten: Mod 09 web application firewalls.
+- O089 — **B** — OEP cnd-089 · key confirmed, options rewritten: Mod 03 Identity and Access Management (IAM).
+- O090 — **B** — OEP cnd-090 · key confirmed, options rewritten: Mod 03 Identity and Access Management (IAM).
+- O091 — **B** — OEP cnd-091 · key confirmed, options rewritten: Mod 10 data security importance.
+- O092 — **B** — OEP cnd-092 · key confirmed, options rewritten: Mod 10 data at rest encryption.
+- O093 — **B** — OEP cnd-093 · key confirmed, options rewritten: Mod 10 Data Masking — Algorithms, Techniques, Implementations.
+- O094 — **B** — OEP cnd-094 · key confirmed, options rewritten: Mod 10 data security importance.
+- O095 — **B** — OEP cnd-095 · key confirmed, options rewritten: Mod 10 database encryption.
+- O096 — **B** — OEP cnd-096 · key confirmed, options rewritten: Mod 10 Data Loss Prevention (DLP).
+- O097 — **B** — OEP cnd-097 · key confirmed, options rewritten: Mod 10 Data Integrity — Meaning, Types, Checking, Checklist.
+- O098 — **B** — OEP cnd-098 · key confirmed, options rewritten: Mod 10 Data Masking — Concepts, Types, Reasons.
+- O099 — **B** — OEP cnd-099 · key confirmed, options rewritten: Mod 10 Data Masking — Algorithms, Techniques, Implementations.
+- O100 — **B** — OEP cnd-100 · key confirmed, options rewritten: Mod 10 database encryption.
+- O101 — **B** — OEP cnd-101 · key confirmed, options rewritten: Mod 12 GCP defense in depth and VPC.
+- O102 — **B** — OEP cnd-102 · key confirmed, options rewritten: Mod 11 Container Security Measures.
+- O103 — **A** — OEP cnd-103 · key confirmed, options rewritten: Mod 11 NFV security measures.
+- O104 — **B** — OEP cnd-104 · key confirmed, options rewritten: Mod 11 SDN Concepts and Benefits.
+- O105 — **C** — OEP cnd-105 · key confirmed, options rewritten: Mod 11 Container Security Measures.
+- O106 — **B** — OEP cnd-106 · key confirmed, options rewritten: Mod 11 Kubernetes network policies and secrets.
+- O107 — **A** — OEP cnd-107 · key confirmed, options rewritten: Mod 11 Container concepts, CaaS and orchestration.
+- O108 — **A** — OEP cnd-108 · key confirmed, options rewritten: Mod 11 SDN Vulnerabilities and Attacks.
+- O109 — **B** — OEP cnd-109 · key confirmed, options rewritten: Mod 11 Container Security Measures.
+- O110 — **B** — OEP cnd-110 · key confirmed, options rewritten: Mod 11 NFV security measures.
+- O111 — **B** — OEP cnd-111 · as published, key confirmed: Mod 12 AWS shared responsibility models.
+- O112 — **B** — OEP cnd-112 · key confirmed, options rewritten: Mod 12 GCP monitoring, logging, audit.
+- O113 — **B** — OEP cnd-113 · key confirmed, options rewritten: Mod 12 Azure AD PIM and admin sign-in.
+- O114 — **B** — OEP cnd-114 · key confirmed, options rewritten: Mod 12 Azure Firewall, WAF and Network Security Groups.
+- O115 — **B** — OEP cnd-115 · key confirmed, options rewritten: Mod 12 Azure network security.
+- O116 — **B** — OEP cnd-116 · key confirmed, options rewritten: Mod 12 Cloud monitoring, logging, and compliance.
+- O117 — **B** — OEP cnd-117 · key confirmed, options rewritten: Mod 12 Cloud security shared responsibility model.
+- O118 — **B** — OEP cnd-118 · key confirmed, options rewritten: Mod 12 Amazon VPC security.
+- O119 — **B** — OEP cnd-119 · key confirmed, options rewritten: Mod 12 AWS data-at-rest encryption.
+- O120 — **B** — OEP cnd-120 · key confirmed, options rewritten: Mod 12 Amazon VPC security.
+- O121 — **C** — OEP cnd-121 · as published, key confirmed: Mod 13 WPA3 encryption.
+- O122 — **B** — OEP cnd-122 · key confirmed, options rewritten: Mod 13 WPA2 encryption.
+- O124 — **A** — OEP cnd-124 · key confirmed, options rewritten: Mod 13 centralized authentication server.
+- O125 — **B** — OEP cnd-125 · key confirmed, options rewritten: Mod 08 IoT isolation and monitoring.
+- O127 — **B** — OEP cnd-127 · key confirmed, options rewritten: Mod 13 WIDS/WIPS.
+- O128 — **A** — OEP cnd-128 · key confirmed, options rewritten: Mod 13 WPA3 encryption.
+- O131 — **B** — OEP cnd-131 · key confirmed, options rewritten: Mod 14 Network traffic signatures and baselining normal traffic.
+- O133 — **B** — OEP cnd-133 · key confirmed, options rewritten: Mod 14 scan traffic signatures.
+- O134 — **B** — OEP cnd-134 · key confirmed, options rewritten: Mod 14 Network behaviour analysis (NBA) and its tools.
+- O135 — **A** — OEP cnd-135 · key confirmed, options rewritten: Mod 14 scan traffic signatures.
+- O136 — **B** — OEP cnd-136 · key confirmed, options rewritten: Mod 14 Name service, encrypted and handshake traffic.
+- O137 — **A** — OEP cnd-137 · key confirmed, options rewritten: Mod 14 Bandwidth monitoring and best practices.
+- O138 — **A** — OEP cnd-138 · key confirmed, options rewritten: Mod 14 How network sniffers work and capture-machine placement.
+- O139 — **B** — OEP cnd-139 · key confirmed, options rewritten: Mod 14 User behaviour analytics (UBA) and its tools.
+- O141 — **B** — OEP cnd-141 · key confirmed, options rewritten: Mod 15 centralized logging.
+- O142 — **B** — OEP cnd-142 · key confirmed, options rewritten: Mod 15 log correlation and analysis.
+- O143 — **B** — OEP cnd-143 · key confirmed, options rewritten: Mod 14 SYN/FIN DDoS, UDP scan and password cracking traffic.
+- O144 — **A** — OEP cnd-144 · key confirmed, options rewritten: Mod 15 Linux logs and the critical /var/log files.
+- O145 — **B** — OEP cnd-145 · key confirmed, options rewritten: Mod 15 firewall logging and the firewall log analysis procedure.
+- O146 — **B** — OEP cnd-146 · key confirmed, options rewritten: Mod 04 router and switch security.
+- O148 — **B** — OEP cnd-148 · key confirmed, options rewritten: Mod 15 Apache access and error logs.
+- O149 — **A** — OEP cnd-149 · key confirmed, options rewritten: Mod 15 Mac OS logs and the Console app.
+- O150 — **B** — OEP cnd-150 · key confirmed, options rewritten: Mod 15 log types, sources, need.
+- O153 — **A** — OEP cnd-153 · key confirmed, options rewritten: Mod 16 SOAR automation and playbook examples.
+- O154 — **A** — OEP cnd-154 · key confirmed, options rewritten: Mod 16 EDR concept and workflow.
+- O156 — **A** — OEP cnd-156 · key confirmed, options rewritten: Mod 16 triage and prioritization.
+- O157 — **A** — OEP cnd-157 · key confirmed, options rewritten: Mod 16 contain, collect, record.
+- O158 — **A** — OEP cnd-158 · key confirmed, options rewritten: Mod 16 XDR tools and EDR vs MDR vs XDR comparison.
+- O160 — **A** — OEP cnd-160 · key confirmed, options rewritten: Mod 15 log correlation and analysis.
+- O161 — **A** — OEP cnd-161 · key confirmed, options rewritten: Mod 16 XDR tools and EDR vs MDR vs XDR comparison.
+- O162 — **A** — OEP cnd-162 · key confirmed, options rewritten: Mod 16 first responder role.
+- O164 — **A** — OEP cnd-164 · key confirmed, options rewritten: Mod 16 forensics methodology.
+- O165 — **A** — OEP cnd-165 · key confirmed, options rewritten: Mod 16 contain, collect, record.
+- O166 — **A** — OEP cnd-166 · key confirmed, options rewritten: Mod 16 SOAR automation and playbook examples.
+- O169 — **A** — OEP cnd-169 · key confirmed, options rewritten: Mod 16 containment and recovery.

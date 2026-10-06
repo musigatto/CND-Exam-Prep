@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "317147e26e346636",
+        "id": "655e5f85f6ff2b45",
         "type": "tabs",
         "children": [
           {
-            "id": "8233dd42d781086a",
+            "id": "4d2bc2a9480271a7",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "30-Exam/Answer-Key.md",
-                "bFile": "30-Exam/Answer-Key.md",
-                "aRef": ""
+                "file": "README.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: Answer-Key  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ]
@@ -199,15 +199,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8233dd42d781086a",
+  "active": "4d2bc2a9480271a7",
   "lastOpenFiles": [
+    "file:C:/Users/darlb/Desktop/CND-PDFs/OEP-Import-Ledger.md",
+    "file:C:/Users/darlb/Desktop/CND-PDFs/Fichas-CND-Study-for-Practice-Test.md",
+    "README.md",
     "20-Notes/Module-19/19-LO02a-Visualize-Attack-Surface-and-Tools.md",
     "20-Notes/Module-19/19-LO01a-Attack-Surface-Analysis-Concept.md",
     "10-MOCs/MOC-Module-19.md",
     "20-Notes/Module-01/01-LO04-Social-Engineering-Attacks.md",
     "00-Home.md",
     "30-Exam/Quick-Review.md",
-    "README.md",
     "30-Exam/Answer-Key.md",
     "20-Notes/Module-12/12-LO04n-AWS-Monitoring-Inspector-and-Checklist.md",
     "30-Exam/External-Flashcards-Verification.md",
@@ -243,8 +245,6 @@
     "20-Notes/Module-01/01-LO08-Wireless-Network-Attacks.md",
     "20-Notes/Module-01/01-LO06-Mobile-Device-Attacks.md",
     "20-Notes/Module-01/01-LO02-Network-Level-Attacks.md",
-    "20-Notes/Module-13/13-LO01b-Types-of-Wireless-Technologies.md",
-    "20-Notes/Module-13/13-LO01a-Wireless-Fundamentals-and-Terminologies.md",
-    "20-Notes/Module-15/15-LO01a-Log-Types-Sources-and-the-Need-for-Logs.md"
+    "20-Notes/Module-13/13-LO01b-Types-of-Wireless-Technologies.md"
   ]
 }
