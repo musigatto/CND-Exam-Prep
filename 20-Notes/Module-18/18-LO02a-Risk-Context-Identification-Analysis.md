@@ -1,4 +1,4 @@
-﻿---
+---
 type: note
 module: "18"
 lo: "02"
@@ -97,13 +97,13 @@ unresolved:
 - Severity classes: **severe, major, moderate, minor, insignificant** _(Mod 18 p18)_.
 - Probability bands (rows) vs consequences (columns), tile values as printed _(Mod 18 p18)_:
 
-| Probability | Insignificant | Minor | Moderate | Major | Severe |
-|---|---|---|---|---|---|
-| 81–100% | Low | Medium | High | Extreme | Extreme |
-| 61–80% | Low | Medium | High | High | Extreme |
-| 41–60% | Low | Medium | Medium | High | High |
-| 21–40% | Low | Low | Medium | Medium | High |
-| 1–20% | Low | Low | Medium | Medium | High |
+| Probability | Insignificant | Minor  | Moderate | Major   | Severe  |
+| ----------- | ------------- | ------ | -------- | ------- | ------- |
+| 81–100%     | Low           | Medium | High     | Extreme | Extreme |
+| 61–80%      | Low           | Medium | High     | High    | Extreme |
+| 41–60%      | Low           | Medium | Medium   | High    | High    |
+| 21–40%      | Low           | Low    | Medium   | Medium  | High    |
+| 1–20%       | Low           | Low    | Medium   | Medium  | High    |
 
 - Priority of an event is classified into **five categories** and mapped against **severity and probability** _(Mod 18 p18)_.
 - Features of a risk matrix _(Mod 18 p18)_: **quantitative/semi-quantitative** hazard analysis tool; **simple and easy to understand**; **clearly defined tolerable and non-tolerable ranges** before developing it; **detailed descriptions of all consequences**; uses **orders of magnitude and constant likelihood range** to cover total risks; good **qualitative** guidance that may not need prior knowledge; **flexible** for different organization-specific risk targets; **no prior software knowledge required**, executable using software.

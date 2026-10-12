@@ -137,6 +137,14 @@ unresolved: []
 - Q088 — **C** — Effective KRIs are **quantifiable** (measurable: number, count, or percentage), **predictable** (early-warning signals), **comparable** (trackable over a period of time), and **informational** (measuring risk and control status). A, B and D invent monetary, SIEM-feed, and backward-only requirements the page never states; the page's actual backward element is one of seven KRI *roles* (learning from past events), not a feature (Module 18 – 18.1 KRI; 18-LO01a).
 - Q089 — **B** — Table 18.1: **Extreme/High** takes **immediate measures — isolate, eliminate, and substitute** the risk through effective controls. A is the Medium-lower row (stop the activity); C is the Low row (preventive steps, periodical review); D is the Medium-upper row (controls with strict timelines while the system keeps running) (Module 18 – 18.2 Table 18.1; 18-LO02a).
 - Q090 — **A** — The nine DPIA steps in order: **identify need → describe the processing → consider consultation → assess necessity and proportionality** (label truncated as 'onality' in source) **→ identify and assess risks → identify mitigation measures → sign off and record → integrate outcome into plan → keep under review**, repeating the DPIA on substantial changes to nature, scope, context, or purpose. B scrambles the order; C fronts keep-under-review second; D starts at consultation and ends in permanent archiving, which the page never states (Module 18 – 18.6 DPIA steps; 18-LO06a).
+- Q101 — **D** — Table 18.1 Medium-upper: strict-timeline controls, system keeps running (Module 18 - 18.2 risk treatment; 18-LO02a).
+- Q102 — **D** — Table 18.1 Low: preventive steps with periodical review (Module 18 - 18.2 risk treatment; 18-LO02a).
+- Q103 — **B** — Table 18.1 Medium-lower: stop the activity unless reduced (Module 18 - 18.2 risk treatment; 18-LO02a).
+- Q104 — **A** — Matrix rates by estimated impact: asset value + damage severity (Module 18 - 18.2 risk matrix; 18-LO02a).
+- Q105 — **B** — Matrix 1–20% × Severe = High (Module 18 - 18.2 risk matrix; 18-LO02a).
+- Q106 — **C** — Matrix 81–100% × Insignificant = Low (Module 18 - 18.2 risk matrix; 18-LO02a).
+- Q107 — **D** — Matrix 41–60% × Moderate = Medium (Module 18 - 18.2 risk matrix; 18-LO02a).
+- Q108 — **B** — Matrix 81–100% × Major = Extreme (Module 18 - 18.2 risk matrix; 18-LO02a).
 
 ## Module 19
 - Q091 — **A** — The attack surface is the **sum of all possible exposures (known, unknown, and potential)** through which an unauthorized user or attacker can access assets, spanning protocols, interfaces, input fields, services, unpatched vulns, open ports, misconfiguration, excess privilege, bad segmentation, and unaware employees — and standard practice keeps it **as minimum as possible**. B drops unknown/potential and inverts the practice; C claims knowns are already patched (never stated); D shrinks the surface to web inputs validated once (Module 19 – 19.1 definition; 19-LO01a).

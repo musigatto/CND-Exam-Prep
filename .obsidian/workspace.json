@@ -11,10 +11,14 @@
             "id": "f30036e8958ae712",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "20-Notes/Module-18/18-LO02a-Risk-Context-Identification-Analysis.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "18-LO02a-Risk-Context-Identification-Analysis"
             }
           }
         ]
@@ -197,6 +201,12 @@
   },
   "active": "f30036e8958ae712",
   "lastOpenFiles": [
+    "20-Notes/Module-18/18-LO02b-Risk-Treatment-Plan-and-Tracking.md",
+    "20-Notes/Module-18/18-LO02a-Risk-Context-Identification-Analysis.md",
+    "20-Notes/Module-20/20-LO05b-Manual-Review-and-Pyramid-of-Pain.md",
+    "20-Notes/Module-20/20-LO06a-Threat-Hunting-Concept-and-Maturity.md",
+    "20-Notes/Module-20/20-LO06b-Hunting-Tools-and-AI-ML.md",
+    "20-Notes/Module-20/20-LO07a-AI-ML-for-Threat-Intel.md",
     "file:C:/Users/darlb/Downloads/protocolos-corregidos.canvas",
     "20-Notes/Module-16/16-LO03a-Avoid-FUD-Assessment-Severity-and-Types.md",
     "20-Notes/Module-10/10-LO06f-Database-Email-Web-Backups.md",
@@ -227,10 +237,6 @@
     "40-Canvas/15-network-logs-monitoring-and-analysis-map.canvas",
     "40-Canvas/20-threat-prediction-with-cyber-threat-intelligence-map.canvas",
     "10-MOCs/MOC-Module-20.md",
-    "20-Notes/Module-01/01-LO01-Essential-Terminologies.md",
-    "20-Notes/Module-01/01-LO03-Application-Level-Attacks.md",
-    "20-Notes/Module-01/01-LO12a-Continual-Adaptive-Security-Strategy.md",
-    "20-Notes/Module-01/01-LO13-Defense-in-Depth-Strategy.md",
     "tmp-diag2.ps1",
     "tmp-fixqr.ps1",
     "tmp-diag.ps1",
@@ -240,7 +246,6 @@
     "tmp-verified.json",
     "tmp-items.json",
     "tmp-cards-run.ps1",
-    "tmp-cards-dry.ps1",
-    "20-Notes/Module-01/01-LO08-Wireless-Network-Attacks.md"
+    "tmp-cards-dry.ps1"
   ]
 }
