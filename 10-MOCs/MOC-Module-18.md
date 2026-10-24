@@ -103,9 +103,10 @@ prints all six subjects including PIA.
   within 24 hours**, 3–4 reasonable timeframe, 5–6 as soon as possible. **Analysis**
   (p16): inherent vs **controlled** risks; nature of risk; prioritization of
   same-severity risks by goals/resources. **Table 18.1 levels** (p17): Extreme/High =
-  **isolate, eliminate, substitute** immediately · Medium-upper = controls + **strict
-  timelines**, system keeps running · Medium-lower = **stop the activity** until
-  reduced · Low = quick measures / preventive steps + **periodical review**. **Matrix**
+  three actions — **isolate, eliminate, substitute**; controls + **strict
+  timelines** while the system keeps running; **stop the activity** unless reduced ·
+  Medium = not immediate, but **quick** measures and controls **as soon as possible** ·
+  Low = preventive steps + **periodical review**. **Matrix**
   (p18): **Risk rating = Probability — Severity**; bands 81–100% to 1–20%; classes
   severe/major/moderate/minor/insignificant; quantitative/semi-quantitative, tolerable
   vs non-tolerable lines. **Treatment** (p19): select/implement controls to **modify**

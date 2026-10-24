@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3f4c7608a3db1ec2",
+        "id": "d5df9264952dad0b",
         "type": "tabs",
         "children": [
           {
-            "id": "f30036e8958ae712",
+            "id": "289ac71afc9b9eee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20-Notes/Module-18/18-LO02a-Risk-Context-Identification-Analysis.md",
+                "file": "20-Notes/Module-20/20-LO05b-Manual-Review-and-Pyramid-of-Pain.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "18-LO02a-Risk-Context-Identification-Analysis"
+              "title": "20-LO05b-Manual-Review-and-Pyramid-of-Pain"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 430.5
+    "width": 286.5
   },
   "right": {
     "id": "5dad8208df7d24fc",
@@ -199,14 +199,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f30036e8958ae712",
+  "active": "289ac71afc9b9eee",
   "lastOpenFiles": [
-    "20-Notes/Module-18/18-LO02b-Risk-Treatment-Plan-and-Tracking.md",
-    "20-Notes/Module-18/18-LO02a-Risk-Context-Identification-Analysis.md",
-    "20-Notes/Module-20/20-LO05b-Manual-Review-and-Pyramid-of-Pain.md",
     "20-Notes/Module-20/20-LO06a-Threat-Hunting-Concept-and-Maturity.md",
     "20-Notes/Module-20/20-LO06b-Hunting-Tools-and-AI-ML.md",
     "20-Notes/Module-20/20-LO07a-AI-ML-for-Threat-Intel.md",
+    "20-Notes/Module-20/20-LO07b-TI-Tools-Guidelines-and-Summary.md",
+    "assets/18-risk-levels.jpg",
+    "assets/18-risk-matrix.jpg",
+    "assets/20-pyramid-of-pain.jpg",
+    "assets/16-types-of-incidents.jpg",
+    "assets/16-edr-vs-mdr-vs-xdr.jpg",
+    "assets/14-uba-vs-ueba.jpg",
+    "assets/14-suspicious-signature-categories.jpg",
+    "assets/13-table-13-2-wep-wpa-wpa2-wpa3.jpg",
+    "assets/04-ids-deployment-locations.jpg",
+    "assets",
+    "file:C:/Users/darlb/Desktop/FOSScore/docs/forscore-ui-map.canvas",
+    "20-Notes/Module-18/18-LO02a-Risk-Context-Identification-Analysis.md",
+    "20-Notes/Module-18/18-LO02b-Risk-Treatment-Plan-and-Tracking.md",
+    "20-Notes/Module-20/20-LO05b-Manual-Review-and-Pyramid-of-Pain.md",
     "file:C:/Users/darlb/Downloads/protocolos-corregidos.canvas",
     "20-Notes/Module-16/16-LO03a-Avoid-FUD-Assessment-Severity-and-Types.md",
     "20-Notes/Module-10/10-LO06f-Database-Email-Web-Backups.md",
@@ -235,8 +247,6 @@
     "40-Canvas/08-iot-endpoint-map.canvas",
     "40-Canvas/14-network-traffic-monitoring-and-analysis-map.canvas",
     "40-Canvas/15-network-logs-monitoring-and-analysis-map.canvas",
-    "40-Canvas/20-threat-prediction-with-cyber-threat-intelligence-map.canvas",
-    "10-MOCs/MOC-Module-20.md",
     "tmp-diag2.ps1",
     "tmp-fixqr.ps1",
     "tmp-diag.ps1",
@@ -245,7 +255,6 @@
     "tmp-stray.ps1",
     "tmp-verified.json",
     "tmp-items.json",
-    "tmp-cards-run.ps1",
-    "tmp-cards-dry.ps1"
+    "tmp-cards-run.ps1"
   ]
 }

@@ -48,5 +48,6 @@ unresolved:
 
 
 
-![IMG-NEEDED: assets/20-pyramid-of-pain.png — Pyramid of Pain, bottom hash values to apex TTPs]
+![[20-pyramid-of-pain.jpg]]
+*Pyramid of Pain — Trivial (hash values) at the base to Tough! (TTPs) at the apex, with defenders moving up for resilience (Mod 20 p59).*
 

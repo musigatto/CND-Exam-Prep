@@ -26,6 +26,9 @@ Closes the LO with the printed comparison table, then the Module 14 summary.
 
 ## Differences between UBA and UEBA _(Mod 14 p113 — Table 14.2)_
 
+![[14-uba-vs-ueba.jpg]]
+*UBA vs UEBA — focus, data sources, actor classes, visibility and integration (Mod 14 p113).*
+
 | # | **UBA** | **UEBA** |
 |---|---|---|
 | 1 | "It **focuses on user behavior**" | "It **focuses on user and entity behavior**" |

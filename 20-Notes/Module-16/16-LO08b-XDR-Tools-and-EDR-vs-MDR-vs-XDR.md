@@ -64,6 +64,9 @@ Related: [[16-LO08a-XDR-Concept-and-Features]] · [[16-LO07c-EDR-Tools]]
 
 ## EDR vs MDR vs XDR — Table 16.1 _(Mod 16 p121)_
 
+![[16-edr-vs-mdr-vs-xdr.jpg]]
+*EDR vs XDR vs MDR — scope, nature, data sources, detection and response (Mod 16 p121).*
+
 | Row | EDR | XDR | MDR |
 |---|---|---|---|
 | Scope | **Monitors/secures endpoints** on a network | **Monitors/secures endpoints, cloud services, networks** | **Threat hunting, network monitoring, threat detection and response**, ingest analysis and workflows across the network |

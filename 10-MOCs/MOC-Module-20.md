@@ -8,7 +8,6 @@ status: done
 unresolved:
   - "pp9–10 SAY THREE TI TYPES WHILE p14 PRINTS A FOURTH (Technical). Intro and body frame strategic/tactical/operational; p14 adds Technical with full prose. Source contradicts itself; all four recorded."
   - "p25 SAYS FOUR TI LAYERS WHILE FIGURE 20.3 TILES FIVE (Providers / Sources / Feeds / Platforms / Professional Services). Prose defines four; the fifth tile is unasserted."
-  - "p24 TABLE 20.1 IOA CELLS GARBLED, QUOTED VERBATIM: 'Monitoring what (whom) recognize yet' and 'Used in real time we do not'. Not reconstructed."
   - "p23 'ADVANCE PERSISTENCE THREATS' KEPT VERBATIM (printed identically in figure and prose). p23 singular 'Connection using uncommon ports' vs figure plural — prose followed."
   - "p17 'OpenlOC' KEPT VERBATIM (lowercase-L throughout); slice never prints a clean form, so OpenIOC is presumed but not asserted."
   - "p18 STIX LIST SPANS THE COLUMN BREAK; TTPs reading order reconstructed, wording verbatim."
@@ -43,7 +42,7 @@ unresolved:
 > **fourth** (Technical) with full prose — every "how many types" item tests whether
 > you count the unannounced one. The second trap is **IoC-vs-IOA**: reactive/known/
 > post-point-in-time/malware vs proactive/unknown/real-time/behavior, with two
-> Table 20.1 cells too garbled to quote for meaning.
+> Table 20.1 read from the slide: IOA column = monitoring "what (whom) we do not recognize yet" / used in real time.
 
 ## Sections
 | LO   | §    | Section                                             | PDF pp. | Book pp.    | Notes |
@@ -99,7 +98,7 @@ against a clean seven-subject prose list.
   vs proactive · post-point-in-time vs real-time [truncated] · malware/signatures/
   exploits/vulns/IPs vs code-execution/persistence/stealth/C2/lateral · known
   universal bad news vs situational bad news · tool examples vs behavior examples —
-  with two garbled cells quoted, not read for meaning. _(Mod 20 pp15–24)_
+  with the IOA column read from the slide. _(Mod 20 pp15–24)_
   → [[20-LO03a-IoCs-STIX-and-MAEC]]
   [[20-LO03b-IOAs-and-IOC-vs-IOA]]
 
@@ -209,7 +208,7 @@ against a clean seven-subject prose list.
   - **"Most orgs are Leading"** — most are **Procedural**.
   - **"TI works best alone"** — less effective alone; embed it.
   - **"OpenIOC is spelled with capital I in source"** — printed `OpenlOC`.
-  - **"Table 20.1's garbled cells read X"** — quoted, never reconstructed.
+  - **"Table 20.1 IOA cells read X"** — read from the slide and quoted as printed.
   - **Any dashboard number, tile count, or figure-only label** — non-evidence.
 
 ## Notes
@@ -246,7 +245,7 @@ views:
 ## Unresolved
 - **Three-vs-four TI types** — Technical unannounced on p14, all four recorded.
 - **Four layers vs five figure tiles** — fifth unasserted.
-- **Table 20.1 garbled cells quoted, never reconstructed.**
+- **Table 20.1 cells read from the slide.**
 - **Advance persistence / uncommon-ports singular / OpenlOC / STIX break /
   figure-vs-prose p20 list** — all kept as printed.
 - **loc/IoC/lnformation/ISAO normalisations** logged in notes.
@@ -260,7 +259,7 @@ views:
 - **LO07a/07b split at pp80/81 against the manifest** — citations match actuals.
 - **p85 summary cut at 'before consuming threat intelligence'.**
 - **All dashboard/figure captures non-evidence** — 12+ locations in frontmatter.
-- **Deliberately not guessed**: the three-vs-four count · garbled cells ·
+- **Deliberately not guessed**: the three-vs-four count ·
   OpenIOC spelling · p20 figure-only item · missing tails · dashboard values ·
   out-of-scope providers · post-cutoff summary bullets.
 
@@ -283,7 +282,7 @@ Tactical: IT service managers, security operations managers, NOC staff, administ
 
 State the IoC-vs-IOA contrast as Table 20.1 prints it
 ?
-IOCs: monitoring what (who) we know · reactive · post-point-in-time only · malware/signatures/exploits/vulns/IPs · miss new threats · known universal bad news. IOAs: strategic intent/goal/action indicators · proactive · real-time · code-execution/persistence/stealth/C2/lateral · catch new unknown threats · situational bad news. Two IOA cells are garbled in source and quoted, never reconstructed
+IOCs: monitoring what (who) we know · reactive · post-point-in-time only · malware/signatures/exploits/vulns/IPs · miss new threats · known universal bad news. IOAs: strategic intent/goal/action indicators · proactive · real-time · code-execution/persistence/stealth/C2/lateral · catch new unknown threats · situational bad news. IOA column reads monitoring what (whom) we do not recognize yet / used in real time
 
 What do STIX, TAXII, and MAEC each do in the module
 ?

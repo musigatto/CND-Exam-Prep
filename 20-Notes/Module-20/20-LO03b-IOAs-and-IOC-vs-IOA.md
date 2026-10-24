@@ -7,7 +7,6 @@ topic: "IOAs and IOC-vs-IOA"
 exam_weight: unknown
 status: done
 unresolved:
-  - "p24 Table 20.1 IOA cells garbled, quoted verbatim: 'Monitoring what (whom) recognize yet' (words missing) and 'Used in real time we do not' (truncated); not reconstructed"
   - "p23 'Advance persistence threats' kept verbatim (printed identically in figure and prose lists)"
   - "p23 prose prints 'Connection using uncommon ports' (singular) vs figure 'Connections using uncommon ports'; prose followed"
   - "OCR variants 'loAs' and 'IoAs' normalised to IOAs throughout"
@@ -44,13 +43,13 @@ unresolved:
 - Unauthorized communication between public servers and internal host; multiple honeytoken notifications from a same host _(Mod 20 p23)_
 - Port scanning; communication with C&C; remote code execution; C&C heartbeat detection; data exfiltration; high SMTP traffic; connection using uncommon ports _(Mod 20 p23)_
 
-## Table 20.1 — IOCs vs IOAs (p24, cells verbatim)
+## Table 20.1 — IOCs vs IOAs (p24)
 
 | IOCs | IOAs |
 |---|---|
-| Monitoring "what (who) we know" | Monitoring "what (whom) recognize yet" [sic — garbled] |
+| Monitoring "what (who) we know" | Monitoring "what (whom) we do not recognize yet" |
 | Reactive indicators of compromise | Proactive indicators of attack |
-| Can be used only after a point in time | Used in real time we do not [sic — truncated] |
+| Can be used only after a point in time | Used in real time |
 | Focus on malware, signatures, exploits, vulnerabilities, an IP addresses [sic] | Focus on code execution, persistence, stealth, command and control, and lateral movement |
 | May not necessarily help detect new or modified threats | Identify new unknown threats and defensive strategies proactively |
 | Known, universal bad news | Become bad news only based on what they mean to the organization and the situation |

@@ -76,20 +76,24 @@ unresolved:
 
 ## Risk levels and actions (Table 18.1)
 
+![[18-risk-levels.jpg]]
+*Risk Levels slide — Extreme/High · Medium · Low with the condensed actions (Mod 18 p17).*
+
 - Risks are categorized into **high, medium, and low** (table prints **Extreme/High, Medium, Low**) according to **estimated impact on the system**; impact depends on the **value of assets and resources** affected and the **severity of the damage** _(Mod 18 p17)_.
 - Levels present the actions staff should take _(Mod 18 p17)_:
 
 | Risk level | Action (prose) |
 |---|---|
-| Extreme / High | Immediate measures: **isolate, eliminate, and substitute** the risk through effective risk controls _(Mod 18 p17)_ |
-| Medium (upper) | Identify and impose controls and **define strict timelines** to reduce risk to a reasonably lower level, though the existing system **can continue to operate** _(Mod 18 p17)_ |
-| Medium (lower) | **Stop the activity unless the risk is reduced** to a low or medium level _(Mod 18 p17)_ |
-| Low (upper) | Immediate action not required, but measures **implemented quickly**; implement controls **as soon as possible** to reduce risk to a reasonably lower level _(Mod 18 p17)_ |
-| Low (lower) | Take **preventive steps** to mitigate the impact; **ignore** as they generally pose no significant problem, with **periodical review** to keep controls effective _(Mod 18 p17)_ |
+| Extreme / High | Three actions: immediate measures: **isolate, eliminate, and substitute** the risk through effective risk controls · identify and impose controls and **define strict timelines** to reduce risk to a reasonably lower level, though the existing system **can continue to operate** · **stop the activity unless the risk is reduced** to a low or medium level _(Mod 18 p17)_ |
+| Medium | Immediate action **not required**, but measures **implemented quickly**; implement controls **as soon as possible** to reduce risk to a reasonably lower level _(Mod 18 p17)_ |
+| Low | Take **preventive steps** to mitigate the impact; **ignore** as they generally pose no significant problem, with **periodical review** to keep controls effective _(Mod 18 p17)_ |
 
 - Slide-condensed wording for the same levels: **immediate measures to combat risk; identify and impose controls to reduce risk to a reasonably low level; immediate action not required but implemented quickly; implement controls as soon as possible; take preventive steps** _(Mod 18 p17)_.
 
 ## Risk matrix
+
+![[18-risk-matrix.jpg]]
+*Risk matrix — probability rows (81–100% down to 1–20%) against consequence columns (insignificant → severe), Mod 18 p18.*
 
 - A **risk matrix scales risk** by considering the **probability, likelihood, and consequence/impact** of the risk _(Mod 18 p18)_.
 - The risk assessment matrix identifies the **probability of failure and high-risk areas**; a risk-level matrix must be developed to **measure or assess** a risk _(Mod 18 p18)_.

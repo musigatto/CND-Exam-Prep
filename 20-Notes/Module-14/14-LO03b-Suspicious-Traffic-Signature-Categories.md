@@ -51,6 +51,9 @@ Continuation of the normal-TCP-signature callout in
 
 ## The four suspicious traffic signature categories _(Mod 14 pp19–20)_
 
+![[14-suspicious-signature-categories.jpg]]
+*Informational · Reconnaissance · Unauthorized Access · Denial of Service — the four categories as presented (Mod 14 pp19–20).*
+
 *"Network traffic deviating from normal behavior is categorized as a suspicious traffic signature. It is
 classified into four categories as follows."* Figure text and body text are kept side by side — the
 figure is much terser than the body.
@@ -94,13 +97,3 @@ figure is much terser than the body.
 
 → Traffic corresponding to these signatures in the captures: `[[14-LO04d-Nmap-Scan-Traffic-Ping-Sweep-ARP-Sweep-and-TCP-Scans]]`
 · `[[14-LO04e-SYN-FIN-DDoS-UDP-Scan-and-Password-Cracking-Traffic]]` · `[[14-LO04f-MiTM-Sniffing-and-Malformed-Packets]]`
-
-
-
-
-
-
-
-
-![IMG-NEEDED: assets/14-illegal-packet-flags.png — illegal TCP flag combinations, Wireshark-style capture]
-

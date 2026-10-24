@@ -799,11 +799,11 @@ unresolved:
 > IDS management console first, then sensors incrementally at choke points/gateways/DMZ.
 > Source: [[04-LO12-IDs-Deployment-Network-Host]]
 
-> [!question]- 0195 — Outside-firewall sensor tuning (L1)?
+> [!question]- 0195 — Outside-firewall sensor tuning (L2)?
 > Least-sensitive attacks, logs attempts only (no alerts) to avoid false alarms.
 > Source: [[04-LO12-IDs-Deployment-Network-Host]]
 
-> [!question]- 0196 — DMZ sensor (L2) coverage?
+> [!question]- 0196 — DMZ sensor (L1) coverage?
 > Perimeter + firewall-bypass detection; web/FTP servers; low-moderate impact attacks; also outbound.
 > Source: [[04-LO12-IDs-Deployment-Network-Host]]
 
@@ -6855,8 +6855,8 @@ unresolved:
 > 1–2: eliminate immediately (usually within 24 hours), or reduce with at least one control measure; 3–4: eliminate or control within a reasonable timeframe; 5–6: eliminate as soon as possible or control when possible. _(Mod 18 p15)_
 > Source: [[18-LO02a-Risk-Context-Identification-Analysis]]
 
-> [!question]- 1696 — What actions do Table 18.1 Extreme/High and Medium-lower levels require?
-> Extreme/High: immediate measures to isolate, eliminate, and substitute the risk through effective controls; Medium-lower: stop the activity unless the risk is reduced to a low or medium level. _(Mod 18 p17)_
+> [!question]- 1696 — What actions do Table 18.1 Extreme/High and Medium levels require?
+> Extreme/High (three actions): immediate measures to isolate, eliminate, and substitute the risk through effective controls; controls with strict timelines while the system keeps running; stop the activity unless the risk is reduced to a low or medium level. Medium: immediate action not required, but measures implemented quickly and controls as soon as possible. _(Mod 18 p17)_
 > Source: [[18-LO02a-Risk-Context-Identification-Analysis]]
 
 > [!question]- 1697 — What is the risk matrix formula, bands, and severity classes?

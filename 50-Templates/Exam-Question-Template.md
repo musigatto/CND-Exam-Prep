@@ -27,4 +27,5 @@ then add the matching one-liner to `30-Exam/Answer-Key.md`.
 
 Rules: id unique (`001`–`100` bank, `E/C/D/P/H/F` + number external, `mod: "ext"` for third-party).
 No bare `<...>` placeholders outside backticks (they break Obsidian rendering as unclosed HTML).
-Optional `"img": "assets/NN-slug.png — description"` shows the image, else an IMG-NEEDED box.
+Optional `"img": "assets/NN-slug.jpg"` — **bare path only**, no description in the value (it is used verbatim as `src`). Pair it with `"cap": "short caption (Mod NN pN)"`, rendered under the image; a missing file falls back to an IMG-NEEDED box.
+Optional `"ex": "| col | col |\n|---|---|\n| … | … |"` — a markdown table exhibit (used for printed tables that are legible text, so no crop is needed). Rendered above the options.

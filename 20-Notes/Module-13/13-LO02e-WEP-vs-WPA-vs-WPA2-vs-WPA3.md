@@ -23,6 +23,9 @@ unresolved:
 
 ## Table 13.2 — Differences between WEP, WPA, WPA2, WPA3 _(Mod 13 p37)_
 
+![[13-table-13-2-wep-wpa-wpa2-wpa3.jpg]]
+*Table 13.2 — encryption algorithm, IV size, key length, key management and integrity check across WEP/WPA/WPA2/WPA3 (Mod 13 p37).*
+
 > [!info] Alignment reconstructed from two consistent OCR passes
 > p37 carries the **same table twice** (once at the head of the page, once above the caption).
 > In both passes every row label is followed by **exactly four cell values in WEP → WPA → WPA2 →

@@ -41,6 +41,9 @@ unresolved:
 
 ## Alert-based incident types _(Mod 16 pp16–18)_
 
+![[16-types-of-incidents.jpg]]
+*Types of incidents: False Positive · True Positive · False Negative · True Negative, as printed — the True Negative cell repeats the False Positive wording (Mod 16 p16).*
+
 | Type | Printed meaning |
 |---|---|
 | False Positive | **Alarm raised when no attack occurred**; non-malicious activities identified as dangerous _(Mod 16 p16)_ — e.g. brute-force alert that was only an **authenticated user retrying login** _(Mod 16 p18)_ |

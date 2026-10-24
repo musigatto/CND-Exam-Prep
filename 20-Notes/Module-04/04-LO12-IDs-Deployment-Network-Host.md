@@ -24,8 +24,8 @@ unresolved: []
 - Inside vs outside firewall: placing sensors **inside the firewall is more secure** (an outside sensor becomes an attack focus); more secure still = **behind the firewall in the DMZ**
 - If protecting web/mail servers: place a sensor **inside the firewall** on the segment connecting firewall↔internal network (firewall stops most attacks; IDS catches what passes)
 - 4 deployment locations:
-  - **L1 — outside the perimeter firewall**: detects inbound attacks (and some outbound); tuned to **least-sensitive** attacks (few false alarms); **logs attack attempts only, no alerts**
-  - **L2 — behind external firewall / in DMZ**: secures perimeter + identifies firewall-bypassing attacks; covers web/FTP servers; detects **low-to-moderate** impact attacks; monitors outbound too
+  - **L1 — behind the external firewall / in the DMZ**: secures perimeter + identifies firewall-bypassing attacks; covers web/FTP servers; detects **low-to-moderate** impact attacks; monitors outbound too
+  - **L2 — outside the external firewall**: detects inbound attacks (and some outbound); tuned to **least-sensitive** attacks (few false alarms); **logs attack attempts only, no alerts**
   - **L3 — major network backbones / internal network**: detects attacks bypassing internal firewall; inbound + outbound; tuned to **medium-to-high impact**
   - **L4 — critical subnets / sensitive hosts**: focuses on specific critical systems; inbound + outbound; **high-impact attacks**
 - Multiple hosts protected from a single location → can customize NIDS to secure the entire network
@@ -41,5 +41,6 @@ unresolved: []
 
 
 
-![IMG-NEEDED: assets/04-ids-sensor-placement.png — IDS sensor outside the perimeter firewall]
+![[04-ids-deployment-locations.jpg]]
+*Courseware slide: Location 1 = behind the external firewall / DMZ · Location 2 = outside the external firewall · Location 3 = network backbones · Location 4 = critical subnets (Mod 04 §4.12).*
 
