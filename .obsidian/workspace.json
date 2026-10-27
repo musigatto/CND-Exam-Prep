@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "20-LO05b-Manual-Review-and-Pyramid-of-Pain"
             }
+          },
+          {
+            "id": "d79f07bf9928d4f7",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.14.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.14.5"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -199,7 +212,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "289ac71afc9b9eee",
+  "active": "d79f07bf9928d4f7",
   "lastOpenFiles": [
     "20-Notes/Module-20/20-LO06a-Threat-Hunting-Concept-and-Maturity.md",
     "20-Notes/Module-20/20-LO06b-Hunting-Tools-and-AI-ML.md",
